@@ -1,11 +1,11 @@
 {
   "private": true,
-  "name": "dev-site-platform-template",
+  "name": "uxp-xd",
   "version": "0.0.1",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AdobeDocs/dev-site-platform-template"
+    "url": "https://github.com/AdobeDocs/uxp-xd"
   },
   "author": {
     "name": "Stephan Ringel",
@@ -15,7 +15,8 @@
     "@adobe/gatsby-theme-aio": "^2.14.0",
     "gatsby": "^2.23.11",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "uxp-documentation": "adobedocs/uxp"
   },
   "scripts": {
     "start": "gatsby build && gatsby serve",

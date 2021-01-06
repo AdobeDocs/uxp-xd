@@ -1,358 +1,114 @@
 ---
-title: Home - Creative Cloud
-description: This is the home page of Creative Cloud 
+title: Documentation-Adobe XD
+description: Build UXP plugins for Adobe XD with HTML, CSS, and JavaScript. Automate workflows, build new features, and more.
 ---
- 
-<Hero slots="image, heading, icon, text, buttons" variant="halfwidth" />
 
-![Creative Cloud banner](images/cc-hero.png)
+<Hero slots="image, heading, text" background="rgb(64, 34, 138)"/>
 
-# Creativity for all
+![Hero image](./illustration.png)
 
-![Creative Cloud icon](images/cc-icon.png)
+# Adobe XD Developer Documentation
 
-Creative Cloud services include tools and capabilities to streamline your workflows so that you, your team, and your stakeholders stay perfectly in sync across projects of any size 
+UXP (**U**nified E**x**tensibility **P**latform) lets you build plugins for XD and other Creative Cloud apps. Automate workflows, build new features, and connect to other software and services—all with HTML, CSS, and JavaScript.
 
-* [Get started](https://adobe.io)
-* [Sign up for the newsletter](https://adobe.io)
+<Resources slots="heading, links"/>
 
+#### Resources
 
+- [Develop: API documentation, code tutorials, and samples](/develop/)
+- [Design: UX patterns, UI elements, and design guidelines](/design/)
+- [Share: Submission checklist, packaging, and marketing](/distribution/)
 
+## Overview
 
-<AnnouncementBlock slots="heading, text, button" />
+This documentation helps developers build UXP plugins for Adobe XD versions 35 and later. If you're building UXP plugins for earlier versions of XD, see the [Adobe XD Platform page](https://adobexdplatform.com).
 
-### Try out the magic of Photoshop
+UXP provides modern JavaScript, a curated selection of UI components, and a more streamlined workflow for plugin developers.
 
-Pull together Photoshop, Lightroom and Adobe Sensei into one place. Reduce time spent in each app, freeing you up for more creative time.
+With UXP, you can develop:
 
-[Demo](https://www.adobe.io/apis/creativecloud/photo-imaging-api/api-demo.html)
+- Direct Actions - headless plugins that interface with XD, the host OS, and the network, free of any UI.
+- Modal Dialogs - plugins that implement one or more modal dialogs. Good for simple user interfaces that don't need to persist.
+- Panels - full-featured panels that look like any other panel in XD. UXP panels can contain as complex a UI as you wish to develop. They can be resized, docked, opened and closed just like native XD panels. And with appropriate CSS constructs, your UXP panels can be theme-aware and change as the user switches UI themes in XD.
 
+## Discover
 
+<DiscoverBlock slots="heading, link, text"/>
 
+### Guides
 
-<TextBlock slots="image, heading, text1, text2, links" />
+<DiscoverBlock slots="link, text"/>
 
-![Screenshot 1](images/intro1.png)
+[Overview](/overview/)
 
-### Extend Adobe CC Flagship Apps
+Shape the future of design by creating plugins for yourself, your team, or the world. To share a plugin for all XD users, submit it to Adobe. After review, you’ll be published in the XD Plugin Manager.
 
-Extend Creative Cloud desktop apps like [Photoshop](https://www.adobe.com/products/photoshop.html), [Premiere Pro](https://www.adobe.com/products/premiere.html), and [InDesign](https://www.adobe.com/products/indesign.html) through our APIs and SDKs. 
-Be sure to check out [Common Extensibility Platform (CEP)](https://www.adobe.io/apis/creativecloud/cep.html), which lets you build custom UI panels for multiple CC apps at once.
+<DiscoverBlock slots="link, text"/>
 
-When you're ready to ship, distribute your work on [Adobe Exchange](https://exchange.adobe.com/), the preferred marketplace for Adobe Creative Cloud users. 
-And be sure to join the [Exchange Program for Creative Cloud](https://partners.adobe.com/exchangeprogram/creativecloud) to unlock more benefits, including streamlined publishing and promotional opportunities.
+[Designing plugins for XD](/design/)
 
-* ![Adobe Premiere Pro](images/pr-icon.png) [Adobe Premiere Pro](https://www.adobe.com/products/premiere.html)
-* ![Adobe InDesign](images/ai-icon.png) [Adobe InDesign](https://www.adobe.com/products/indesign.html)
-* ![Adobe After Effect](images/ae-icon.png) [Adobe After Effect](https://www.adobe.com/products/aftereffects.html)   
+These guidelines will help you define the best user experience for your plugin. Based on your users workflow and the plugin action, different UX and UI patterns should be considered as you create a plugin.
 
+<DiscoverBlock slots="link, text"/>
 
+[Develop](/develop/)
 
+A quick overview of **what you can build** and **how to get started**.
 
-<TextBlock slots="heading, text, buttons, links, image"/>
+<DiscoverBlock slots="link, text"/>
 
-### Start Building Adobe XD Plugins
+[UXP Developer Tool](guides/uxp-developer-tool/)
 
-Create plugins for Adobe XD that push the boundaries of experience design by adding new features to the app, automating workflows, connecting XD to external services, and more—all on a quick, modern JavaScript engine with native UI components. 
-When you’re ready, you can ship your plugin to XD users right from within the app.
+The UXP Developer Tool is a GUI app that helps you create, debug, and distribute plugins. It's an essential part of any UXP plugin workflow.
 
-* [Get started](https://adobe.io)
-* [Sign up for the newsletter](https://adobe.io)
+<DiscoverBlock slots="link, text"/>
 
-- [No Icon Product](https://www.adobe.com/products/premiere.html)
+[Sample Code](https://github.com/AdobeXD/plugin-samples)
 
-![Screenshot 2](images/intro2.png)
+Want to jump right in building a plugin? Check out these code samples and make immediate progress.
 
+## API References
 
+The APIs come in two parts: the methods and properties unique to Photoshop, and those exposed by UXP to all UXP-enabled Creative Cloud applications.
 
+<DiscoverBlock slots="link, text"/>
 
-<TitleBlock slots="heading, text" theme="light" />
+[XD API](/reference/)
 
-### Collaborate better with Content Cloud APIs
+The API Reference for XD calls exposed through UXP.
 
-With the Cloud Content APIs, you can bring design work created in XD directly to your product or service.
+<DiscoverBlock slots="link, text"/>
 
+[UXP API](uxp/reference-js/)
 
+The API Reference for UXP itself. Includes UI APIs (including HTML and CSS), file and network I/O, and more.
 
+## Share
 
-<TextBlock slots="image, heading, text, links" width="33%" theme="light" isCentered />
+You've built the world's greatest plugin. What do you do now? This section explains how to package, distribute, and market your plugin.
 
-![MSFT Teams logo](images/msfteams.png)
+<DiscoverBlock slots="link, text"/>
 
-### Microsoft teams
+[Packaging Your Plugin](distribution/packaging-your-plugin/)
 
-Easily share Creative Cloud assets and files, and get comment notifications on your prototypes.
+Packaging your UXP plugin is a breeze. In many cases, it's just one click away.
 
-* [Learn more](https://www.microsoft.com/microsoft-365/microsoft-teams/group-chat-software)
+<DiscoverBlock slots="link, text"/>
 
+[Options for Distribution](distribution/distribution-options/)
 
+Did you build a plugin just for yourself, your friends, or your employer? Or do you want to distribute through the Creative Cloud Plugin Marketplace on millions of desktops? Read this section to help you decide.
 
+<DiscoverBlock slots="link, text"/>
 
-<TextBlock slots="image, heading, text, links" width="33%" theme="light" isCentered />
+[Submission and Review](distribution/submission-checklist/)
 
-![JIRA Cloud logo](images/jira.png)
+Learn about the review process and associated timelines for Creative Cloud plugins and integrations, and follow our review submission checklist.
 
-### JIRA Cloud
+<DiscoverBlock slots="link, text"/>
 
-Make designer to developer handoffs easy. Find the latest designs and specs and get thumbnail previews and asset info.
+[Marketing Your Plugin](distribution/marketing/)
 
-* [Learn more](https://www.atlassian.com/enterprise/cloud)
+Submitting your plugin is only half the battle. Now you have to tell people about it. Read this for some ideas on how to best market your plugin.
 
-
-
-
-<TextBlock slots="image, heading, text, links" width="33%" theme="light" isCentered />
-
-![Slack logo](images/slack.png)
-
-### Slack
-
-Instantly share Creative Cloud files, designs, specs, and notifications all in real time.
-
-* [Learn more](https://slack.com/enterprise)
-
-
-
-
-<TextBlock slots="video, icons, heading, text, buttons" theme="dark" />
-
-[Creative Cloud for a new era](https://www.youtube.com/watch?v=JemJbNJ4ZtU&ab_channel=AdobeCreativeCloud)
-
-* ![Adobe](images/adobe.png)
-* ![Microsoft](images/msft.png)
-
-### Partner Success Story
-
-Connect your users to Creative Cloud right from within your mobile or web apps with our service APIs. Give users access to 
-world-class creative assets with the Adobe Stock API, or sign up for early information on our upcoming CC Storage API.
-
-* [Learn more](https://adobe.io)
-* [Sign up for partner program](https://adobe.io)
-
-
-
-
-<TitleBlock slots="heading, text" />
-
-### Blogs and resources
-
-With the Cloud Content APIs, you can bring design work created in XD directly to your product or service.
-
-
-
-
-<ResourceCard slots="link, image, heading, text" width="50%" variant="vertical" />
-
-[Adobe I/O](https://adobe.io)
-
-![Resource 3](images/resource3.png)
-
-### Creating a Great Adobe XD Plugin Listing 
-
-Rob Kleiman, July 8th 2020
-
-
-
-<ResourceCard slots="link, image, heading, text" width="50%" />
-
-[Adobe I/O](https://adobe.io)
-
-![Resource 1](images/resource1.png)
-
-### Pattern Builder: A Behind the Scenes Look at Adobe Capture
-
-Nihil Gupta, July 24th 2020
-
-
-
-<ResourceCard slots="link, image, heading, text" width="50%" />
-
-[Adobe I/O](https://adobe.io)
-
-![Resource 1](images/resource2.png)
-
-### Photoshop Extensibility Enters a New Era Soon: How to get Involved Early
-
-Ash Ryan Arnwine, March 12th 2020
-
-
-
-
-<TitleBlock slots="heading" theme="light" />
-
-## Get started building with Creative Cloud
-
-
-
-
-<ProductCard slots="icon, heading, text, buttons" theme="light" width="33%" />
-
-![CC icon](images/cc-icon.png)
-
-#### CC Storage API
-
-CC Storage API lets you access and modify assets stored in the Creative Cloud, the world's most popular creative platform. 
-
-* [Learn more](https://adobe.io)
-* [View docs](https://adobe.io)
-
-
-
-
-<ProductCard slots="heading, text, buttons" theme="light" width="33%" />
-
-#### Adobe Stock
-
-Gives your users access to the perfect Adobe Stock asset to enhance their creative projects. 
-
-* [Learn more](https://adobe.io)
-* [View docs](https://adobe.io)
-
-
-
-
-<ProductCard slots="icon, heading, text, buttons" theme="light" width="33%" />
-
-![CC icon](images/cc-icon.png)
-
-#### Common Extensibility Platform
-
-Build extensions with HTML, CSS, Javascript and Node. Deploy across multiple Adobe apps. 
-
-* [Learn more](https://adobe.io)
-* [View docs](https://adobe.io)
-
-
-
-
-<ProductCard slots="icon, heading, text, buttons" theme="light" width="33%" />
-
-![CC icon](images/cc-icon.png)
-
-#### CC Storage API
-
-CC Storage API lets you access and modify assets stored in the Creative Cloud, the world's most popular creative platform. 
-
-* [Learn more](https://adobe.io)
-* [View docs](https://adobe.io)
-
-
-
-
-<ProductCard slots="heading, text, buttons" theme="light" width="33%" />
-
-#### Adobe Stock
-
-Gives your users access to the perfect Adobe Stock asset to enhance their creative projects. 
-
-* [Learn more](https://adobe.io)
-* [View docs](https://adobe.io)
-
-
-
-
-<ProductCard slots="icon, heading, text, buttons" theme="light" width="33%" />
-
-![CC icon](images/cc-icon.png)
-
-#### Common Extensibility Platform
-
-Build extensions with HTML, CSS, Javascript and Node. Deploy across multiple Adobe apps. 
-
-* [Learn more](https://adobe.io)
-* [View docs](https://adobe.io)
-
-
-
-
-<ProductCard slots="icon, heading, text, buttons" theme="light" width="33%" />
-
-![CC icon](images/cc-icon.png)
-
-#### CC Storage API
-
-CC Storage API lets you access and modify assets stored in the Creative Cloud, the world's most popular creative platform. 
-
-* [Learn more](https://adobe.io)
-* [View docs](https://adobe.io)
-
-
-
-
-<ProductCard slots="heading, text, buttons" theme="light" width="33%" />
-
-#### Adobe Stock
-
-Gives your users access to the perfect Adobe Stock asset to enhance their creative projects. 
-
-* [Learn more](https://adobe.io)
-* [View docs](https://adobe.io)
-
-
-
-
-<ProductCard slots="icon, heading, text, buttons" theme="light" width="33%" />
-
-![CC icon](images/cc-icon.png)
-
-#### Common Extensibility Platform
-
-Build extensions with HTML, CSS, Javascript and Node. Deploy across multiple Adobe apps. 
-
-* [Learn more](https://adobe.io)
-* [View docs](https://adobe.io)
-
-
-
-
-<ProductCard slots="icon, heading, text, buttons" theme="light" width="33%" />
-
-![CC icon](images/cc-icon.png)
-
-#### CC Storage API
-
-CC Storage API lets you access and modify assets stored in the Creative Cloud, the world's most popular creative platform. 
-
-* [Learn more](https://adobe.io)
-* [View docs](https://adobe.io)
-
-
-
-
-<ProductCard slots="heading, text, buttons" theme="light" width="33%" />
-
-#### Adobe Stock
-
-Gives your users access to the perfect Adobe Stock asset to enhance their creative projects. 
-
-* [Learn more](https://adobe.io)
-* [View docs](https://adobe.io)
-
-
-
-
-<ProductCard slots="icon, heading, text, buttons" theme="light" width="33%" />
-
-![CC icon](images/cc-icon.png)
-
-#### Common Extensibility Platform
-
-Build extensions with HTML, CSS, Javascript and Node. Deploy across multiple Adobe apps. 
-
-* [Learn more](https://adobe.io)
-* [View docs](https://adobe.io)
-
-
-
-
-<SummaryBlock slots="image, heading, text, buttons" background="rgb(246, 16, 27)" />
-
-![CC banner](images/cc-banner.png)
-
-## Subscribe to the Creative Cloud developers newsletter 
-
-A monthly newsletter featuring news for anyone who creates, develops, or build plugins, extensions, or integrations for the
-Creative Cloud family of products.
-
-* [Subscribe to the newsletter](https://adobe.io)
-* [Learn more](https://adobe.io)
+<Community />
