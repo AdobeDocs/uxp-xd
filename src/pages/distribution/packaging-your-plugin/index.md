@@ -1,38 +1,46 @@
-# Packaging Your Plugin
+# Packaging your plugin
 
-Taking your plugin code and packaging it has never been easier.
+Before you share your plugin, you'll need to package it up.
 
-UXP plugins for Photoshop are distributed in the form of a `.ccx` file. Under the hood, this is a zip file. Unless you have some special requirements, you should not be creating this zip file yourself.
+This tutorial describes how to package the files of an XD plugin. It's a simple process that can be summarized in three words: _compress_, _rename_, and _verify_.
 
-<InlineAlert variant="info" slots="text"/>
+## Prerequisite
 
-**IMPORTANT**:
-Before you package your plugin for distribution outside your own computer, make sure you've obtained a valid ID from the [Adobe Developer Console](https://console.adobe.io). Without an id (which goes in the `id` field of your plugin's `manifest.json` file), you won't be able to distribute your plugin in the Creative Cloud Marketplace.
+- A code-complete plugin (if you don't have one yet, try our [Quick Start Tutorial](/tutorials/quick-start))
 
-Using the [UXP Developer Tool](/guides/uxp-developer-tool/), choose `Package` from the Actions menu (the ellipsis on the right side of the Developer Tool window, on the same line as your plugin name):
+## Workflow
 
-![Package Menu](../images/udt-package-menu.png)
+### 1. Compress your files as a .ZIP file
 
-This shows a "Select target directory" dialog. Choose a directory where your built plugin `.ccx` file should reside.
+Select all files within your plugin's parent folder. On both macOS and Windows you can right-click to compress:
 
-After the `.ccx` file has been created, you should see this message at the bottom of the Developer Tool window:
+| Platform | Menu item                                            |
+| -------- | ---------------------------------------------------- |
+| macOS    | _Right-click > Compress items_                       |
+| Windows  | _Right-click > Send to > Compressed (zipped) folder_ |
 
-![Package Success](../images/package-success.png)
+If you plan to distribute via the XD plugin manager, your .ZIP file **must be less than 25MB in size and contain fewer than 3,000 files**. You'll only be able to submit for review if your file is under these limits.
 
-If instead, you see this:
+> **Danger**
+>
+> You should not compress the plugin's _parent_ folder. Instead, compress the _contents_ of the parent folder. Failure to do so will likely cause a rejection when submitting to the [Adobe Developer Console](https://console.adobe.io/projects).
 
-![Package Failed](../images/package-failed.png)
+### 2. Rename the .ZIP extension to .XDX
 
-Click on `Details` to view a window that shows why the packaging failed.
+Adobe XD recognizes the .XDX file extension as an XD plugin.
 
-Once your `.ccx` file has been built, you should test it locally before doing anything else. To install a .ccx file into any Creative Cloud application, double click it. This will open the Creative Cloud application, and you'll get a warning that your plugin hasn't been verified by Adobe:
+By using this file extension, your plugin automatically gets the "double-click to install" feature, meaning that if you share your plugin directly to users, all they have to do is double-click to install the plugin to Adobe XD.
 
-![Verify Failed](../images/verify-failed.png)
+If you plan to submit your plugin for distribution via the XD plugin manager, renaming your .ZIP to .XDX is required.
 
-Since you wrote the plugin, it's probably safe to install. Click `Install locally` and you'll see another warning:
+### 3. Verify the packaging worked
 
-![Install Warning](../images/install-warning.png)
+Try double-clicking your .XDX file. When your OS prompts you to install the plugin, click "Install".
 
-Since, in this case, *you* are the third-party developer, it's safe to click OK. Obviously, if someone else sends you a `.ccx` file and you get this dialog, you should make sure you trust the person who sent it.
+You'll get a success message upon installation, after which the plugin will show up in XD.
 
-Now that you have your plugin installed, test it again to make sure the packaged version performs correctly. Then move on to [Options for Distribution](../distribution-options) to get your plugin out into the world.
+## Next steps
+
+You've packaged your plugin! Now you're ready to distribute your plugin.
+
+[Learn about your options for distributing XD plugins to users](/distribution/options.html).
