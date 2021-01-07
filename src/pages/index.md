@@ -7,7 +7,7 @@ description: Build UXP plugins for Adobe XD with HTML, CSS, and JavaScript. Auto
 
 ![Hero image](./illustration.png)
 
-# Adobe XD Developer Documentation
+# UXP for Adobe XD documentation
 
 UXP (**U**nified E**x**tensibility **P**latform) lets you build plugins for XD and other Creative Cloud apps. Automate workflows, build new features, and connect to other software and services—all with HTML, CSS, and JavaScript.
 
@@ -36,12 +36,6 @@ With UXP, you can develop:
 <DiscoverBlock slots="heading, link, text"/>
 
 ### Guides
-
-<DiscoverBlock slots="link, text"/>
-
-[Overview](/overview/)
-
-Shape the future of design by creating plugins for yourself, your team, or the world. To share a plugin for all XD users, submit it to Adobe. After review, you’ll be published in the XD Plugin Manager.
 
 <DiscoverBlock slots="link, text"/>
 
