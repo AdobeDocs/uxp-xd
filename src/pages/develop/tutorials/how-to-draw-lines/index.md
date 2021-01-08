@@ -2,8 +2,8 @@
 
 This sample demonstrates how to create a plugin that adds colored lines to the user's document.
 
-
 ## Prerequisites
+
 - Basic knowledge of HTML, CSS, and JavaScript
 - [Quick Start Tutorial](/tutorials/quick-start/)
 - [Debugging Tutorial](/tutorials/debugging/)
@@ -12,7 +12,6 @@ This sample demonstrates how to create a plugin that adds colored lines to the u
 
 > **Info**
 > Complete code for this plugin can be found [on GitHub](https://github.com/AdobeXD/Plugin-Samples/tree/master/how-to-draw-lines).
-
 
 ### 1. Prepare your plugin scaffold
 
@@ -38,18 +37,17 @@ Replace the content of your `main.js` file with the following code:
 
 ```js
 function createLinesCommand(selection) {
-    // The body of this function is added later
+  // The body of this function is added later
 }
 
 module.exports = {
-    commands: {
-        createLinesCommand
-    }
+  commands: {
+    createLinesCommand,
+  },
 };
 ```
 
 The remaining steps in this tutorial describe additional edits to the `main.js` file.
-
 
 ### 2. Require in XD API dependencies
 
@@ -65,7 +63,6 @@ const commands = require("commands");
 
 Now the `Line` and `Color` classes and `commands` module are required in and ready to be used.
 
-
 ### 3. Create a helper function
 
 Our plugin is going to assigning random colors to the lines we create!
@@ -74,14 +71,18 @@ Add the lines of code below to your file:
 
 ```js
 function randomColor() {
-    const hexValues = ['00', '33', '66', '99', 'CC', 'FF'];
-    const color = "#" + Array.from({ length: 3 }, _ => hexValues[Math.floor(Math.random() * hexValues.length)]).join("");
-    return color;
+  const hexValues = ["00", "33", "66", "99", "CC", "FF"];
+  const color =
+    "#" +
+    Array.from(
+      { length: 3 },
+      (_) => hexValues[Math.floor(Math.random() * hexValues.length)]
+    ).join("");
+  return color;
 }
 ```
 
 This function returns a web-friendly color hex value (e.g., `"#FFFFFF"). This is just straight-up JavaScript; there's nothing specific to XD plugin APIs to cover here.
-
 
 ### 4. Create line data
 
@@ -91,11 +92,11 @@ Add this code to your file:
 
 ```js
 const lineData = [
-    { startX: 100, startY: 110, endX: 210, endY: 233 },
-    { startX: 210, startY: 233, endX: 320, endY: 156 },
-    { startX: 320, startY: 156, endX: 400, endY: 300 },
-    { startX: 400, startY: 300, endX: 500, endY: 120 }
-]
+  { startX: 100, startY: 110, endX: 210, endY: 233 },
+  { startX: 210, startY: 233, endX: 320, endY: 156 },
+  { startX: 320, startY: 156, endX: 400, endY: 300 },
+  { startX: 400, startY: 300, endX: 500, endY: 120 },
+];
 ```
 
 A couple of things to note:
@@ -106,37 +107,39 @@ A couple of things to note:
   - The array contains multiple objects that will be passed, one at a time, to the `Line` API.
   - Since we're drawing lines, each object has a _start_ and _end_ coordinates for X and Y.
 
-
 ### 5. Create the main function
 
 In this step, we'll build out the main function, `createLinesCommand`, that we added in the first step. Each of the numbered comments are explained below the code:
 
 ```js
-function createLinesCommand(selection) {            // [1]
+function createLinesCommand(selection) {
+  // [1]
 
-    let lines = [];                                 // [2]
+  let lines = []; // [2]
 
-    lineData.forEach(data => {                      // [3]
-        const line = new Line();                    // [4.i]
+  lineData.forEach((data) => {
+    // [3]
+    const line = new Line(); // [4.i]
 
-        line.setStartEnd(                           // [4.ii]
-            data.startX,
-            data.startY,
-            data.endX,
-            data.endY
-        );
+    line.setStartEnd(
+      // [4.ii]
+      data.startX,
+      data.startY,
+      data.endX,
+      data.endY
+    );
 
-        line.strokeEnabled = true;                  // [4.iii]
-        line.stroke = new Color(randomColor());     // [4.iv]
-        line.strokeWidth = 3;                       // [4.v]
+    line.strokeEnabled = true; // [4.iii]
+    line.stroke = new Color(randomColor()); // [4.iv]
+    line.strokeWidth = 3; // [4.v]
 
-        lines.push(line);                           // [4.vi]
+    lines.push(line); // [4.vi]
 
-        selection.editContext.addChild(line)        // [4.vii]
-    });
+    selection.editContext.addChild(line); // [4.vii]
+  });
 
-    selection.items = lines;                        // [5]
-    commands.group();                               // [6]
+  selection.items = lines; // [5]
+  commands.group(); // [6]
 }
 ```
 
@@ -144,13 +147,13 @@ function createLinesCommand(selection) {            // [1]
 2. Create an empty array to contain all the `Line` objects we'll create. This array will be used in a later step.
 3. Loop over the `lineData` array, getting an individual `data` object each time through the loop.
 4. For each `data` object:
-    1. Create a new instance of `Line`.
-    1. Use the `Line` object's setter, `.setStartEnd`, to set the line data from our `data` object.
-    1. Set the `strokeEnabled` property to `true` in order to draw a stroke for the line.
-    1. Set the stroke color using the `randomColor` helper function.
-    1. Set the width of the stroke using `strokeWidth` property.
-    1. Append the line object into the `lines` array.
-    1. Insert the line into the edit context using the `selection.editContext.addChild` method.  This step adds the line to the document's scenegraph.
+   1. Create a new instance of `Line`.
+   1. Use the `Line` object's setter, `.setStartEnd`, to set the line data from our `data` object.
+   1. Set the `strokeEnabled` property to `true` in order to draw a stroke for the line.
+   1. Set the stroke color using the `randomColor` helper function.
+   1. Set the width of the stroke using `strokeWidth` property.
+   1. Append the line object into the `lines` array.
+   1. Insert the line into the edit context using the `selection.editContext.addChild` method. This step adds the line to the document's scenegraph.
 5. Now that all of the `Line` objects have been added to the scenegraph, set the document's current selection to be those `Line` objects.
 6. Use the `group` command to combine all of the currently-selected objects (the `Line` objects) into a single group object.
 
@@ -159,17 +162,3 @@ function createLinesCommand(selection) {            // [1]
 After saving all of your changes, reload the plugin in XD and run it. The result should be similar to the following:
 
 ![Created lines](../../images/lines.png)
-
-
-## Next Steps
-
-Want to expand on what you learned here? Have a look at these references to see options for customizing this sample plugin:
-
-- [Line](/reference/scenegraph/)
-- [Color](/reference/Color/)
-- [Commands](/reference/commands/)
-
-Ready to explore further? Take a look at our other resources:
-
-- [Tutorials](/tutorials/)
-- [Sample code repos](https://github.com/AdobeXD/plugin-samples)

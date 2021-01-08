@@ -68,6 +68,7 @@ It's possible to have more files if you want, but these files are the bare minim
 In the previous step, you created a file named `manifest.json`. Open that file and paste in this JSON object:
 
 **TODO** Fix this manifest
+
 ```json
 {
   "id": "YOUR_ID_HERE",
@@ -98,7 +99,7 @@ Be sure to replace the `id` value with the unique plugin ID you got from the Ado
 "id": "1234ABCD",
 ```
 
-If you're curious about what each entry means, [see the manifest documentation](/reference/structure/manifest/), where you can also learn about all manifest requirements for a plugin to be published in the XD Plugin Manager. 
+If you're curious about what each entry means, [see the manifest documentation](/reference/structure/manifest/), where you can also learn about all manifest requirements for a plugin to be published in the XD Plugin Manager.
 
 The value of the `commandId` property may be any string; in this case, it's `createRectangle`. In the next section, we will see how this string is associated with the code for our plugin.
 
@@ -129,8 +130,8 @@ function rectangleHandlerFunction(selection) {
 // [6]
 module.exports = {
   commands: {
-    createRectangle: rectangleHandlerFunction
-  }
+    createRectangle: rectangleHandlerFunction,
+  },
 };
 ```
 
@@ -154,10 +155,3 @@ Alternatively, if XD was already open, select _Plugins > Development > Reload Pl
 ![A rectangle on the artboard](../../images/on-canvas.png)
 
 Congratulations! You’ve built your first plugin for Adobe XD!
-
-## Next Steps
-
-- Learn about [debugging plugins](/tutorials/debugging/)
-- Follow our [tutorials](/tutorials/)
-- See working code in our [sample repos on GitHub](https://github.com/AdobeXD/Plugin-Samples)
-- Browse the [API references](/reference/how-to-read/)

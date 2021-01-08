@@ -2,8 +2,8 @@
 
 This sample app will show you how to load an image in an XD object (Rectangle or Artboard) by making network requests using `XHR` and `fetch`.
 
-
 ## Prerequisites
+
 - Basic knowledge of HTML, CSS, and JavaScript
 - Basic knowledge of `XMLHttpRequest` and `fetch`
 - [Quick Start Tutorial](/tutorials/quick-start/)
@@ -30,7 +30,7 @@ Replace the `uiEntryPoints` field of the manifest with the following:
 ]
 ```
 
-If you're curious about what each entry means, [see the manifest documentation](/reference/structure/manifest/), where you can also learn about all manifest requirements for a plugin to be published in the XD Plugin Manager. 
+If you're curious about what each entry means, [see the manifest documentation](/reference/structure/manifest/), where you can also learn about all manifest requirements for a plugin to be published in the XD Plugin Manager.
 
 Then, update your `main.js` file, mapping the manifest's `commandId` to a handler function.
 
@@ -38,18 +38,17 @@ Replace the content of your `main.js` file with the following code:
 
 ```js
 function applyImage(selection) {
-    // The body of this function is added later
+  // The body of this function is added later
 }
 
 module.exports = {
-    commands: {
-        applyImage
-    }
+  commands: {
+    applyImage,
+  },
 };
 ```
 
 The remaining steps in this tutorial describe additional edits to the `main.js` file.
-
 
 ### 2. Require in XD API dependencies
 
@@ -64,32 +63,34 @@ const { ImageFill } = require("scenegraph");
 
 Now the `ImageFill` class is imported and ready to be used.
 
-### 3. Write a helper function to make XHR requests  
+### 3. Write a helper function to make XHR requests
 
 Our XHR helper `xhrBinary` will make an HTTP GET request to any URL it is passed, and a return a Promise with an `arraybuffer`.
 
 ```js
-function xhrBinary(url) {                                       // [1]
-    return new Promise((resolve, reject) => {                   // [2]
-        const req = new XMLHttpRequest();                       // [3]
-        req.onload = () => {
-            if (req.status === 200) {
-                try {
-                    const arr = new Uint8Array(req.response);   // [4]
-                    resolve(arr);                               // [5]
-                } catch (err) {
-                    reject(`Couldnt parse response. ${err.message}, ${req.response}`);
-                }
-            } else {
-                reject(`Request had an error: ${req.status}`);
-            }
+function xhrBinary(url) {
+  // [1]
+  return new Promise((resolve, reject) => {
+    // [2]
+    const req = new XMLHttpRequest(); // [3]
+    req.onload = () => {
+      if (req.status === 200) {
+        try {
+          const arr = new Uint8Array(req.response); // [4]
+          resolve(arr); // [5]
+        } catch (err) {
+          reject(`Couldnt parse response. ${err.message}, ${req.response}`);
         }
-        req.onerror = reject;
-        req.onabort = reject;
-        req.open('GET', url, true);
-        req.responseType = "arraybuffer";                       // [6]
-        req.send();
-    });
+      } else {
+        reject(`Request had an error: ${req.status}`);
+      }
+    };
+    req.onerror = reject;
+    req.onabort = reject;
+    req.open("GET", url, true);
+    req.responseType = "arraybuffer"; // [6]
+    req.send();
+  });
 }
 ```
 
@@ -105,9 +106,10 @@ function xhrBinary(url) {                                       // [1]
 This helper function will create an `ImageFill` instance that can be applied to a user-selected XD scengraph object:
 
 ```js
-function applyImagefill(selection, file) {                             // [1]
-    const imageFill = new ImageFill(file);                             // [2]
-    selection.items[0].fill = imageFill;                               // [3]
+function applyImagefill(selection, file) {
+  // [1]
+  const imageFill = new ImageFill(file); // [2]
+  selection.items[0].fill = imageFill; // [3]
 }
 ```
 
@@ -124,18 +126,19 @@ Ok, you've just made three helper functions. Now we're going to tie them all tog
 Note the use of the `async` keyword at the beginning of the function.
 
 ```js
-async function downloadImage(selection, jsonResponse) {                            // [1]
-    try {
-        const photoUrl = jsonResponse.message;                                     // [2]
-        const photoObj = await xhrBinary(photoUrl);                                // [3]
-        const tempFolder = await fs.getTemporaryFolder();                          // [4]
-        const tempFile = await tempFolder.createFile("tmp", { overwrite: true });  // [5]
-        await tempFile.write(photoObj, { format: uxp.formats.binary });            // [6]
-        applyImagefill(selection, tempFile);                                       // [7]
-    } catch (err) {
-        console.log("error")
-        console.log(err.message);
-    }
+async function downloadImage(selection, jsonResponse) {
+  // [1]
+  try {
+    const photoUrl = jsonResponse.message; // [2]
+    const photoObj = await xhrBinary(photoUrl); // [3]
+    const tempFolder = await fs.getTemporaryFolder(); // [4]
+    const tempFile = await tempFolder.createFile("tmp", { overwrite: true }); // [5]
+    await tempFile.write(photoObj, { format: uxp.formats.binary }); // [6]
+    applyImagefill(selection, tempFile); // [7]
+  } catch (err) {
+    console.log("error");
+    console.log(err.message);
+  }
 }
 ```
 
@@ -153,18 +156,19 @@ This is the function that will be called with the user runs our plugin command.
 
 ```js
 function applyImage(selection) {
-    if (selection.items.length) {                                   // [1]
-        const url = "https://dog.ceo/api/breeds/image/random";      // [2]
-        return fetch(url)                                           // [3]
-            .then(function (response) {
-                return response.json();                             // [4]
-            })
-            .then(function (jsonResponse) {
-                return downloadImage(selection, jsonResponse);      // [5]
-            });
-    } else {
-        console.log("Please select a shape to apply the downloaded image.");
-    }
+  if (selection.items.length) {
+    // [1]
+    const url = "https://dog.ceo/api/breeds/image/random"; // [2]
+    return fetch(url) // [3]
+      .then(function (response) {
+        return response.json(); // [4]
+      })
+      .then(function (jsonResponse) {
+        return downloadImage(selection, jsonResponse); // [5]
+      });
+  } else {
+    console.log("Please select a shape to apply the downloaded image.");
+  }
 }
 ```
 
@@ -172,17 +176,4 @@ function applyImage(selection) {
 2. This is an example public URL to an image
 3. Pass the URL to `fetch`
 4. The first `.then` block returns the response JSON object
-5. The second `.then` block passes the `selection` and our JSON reponse to our  `downloadImage` function, ultimately placing it in the document
-
-## Next Steps
-
-Want to expand on what you learned here? Have a look at these references to see options for customizing this sample plugin:
-
-- [Network I/O](/reference/uxp/network-index/)
-- [XMLHttpRequest](/reference/uxp/network-index/#xmlhttprequest-support)
-- [fetch](/reference/uxp/network-index/#fetch-support)
-
-Ready to explore further? Take a look at our other resources:
-
-- [Tutorials](/tutorials/)
-- [Sample code repos](https://github.com/AdobeXD/plugin-samples)
+5. The second `.then` block passes the `selection` and our JSON reponse to our `downloadImage` function, ultimately placing it in the document

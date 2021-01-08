@@ -9,9 +9,11 @@ Other times you'll need to display an _error_ alert, which looks like this:
 ![An error alert](./assets/ErrorAlert.png)
 
 ## Technology Used
+
 - [Plugin Toolkit](https://github.com/AdobeXD/plugin-toolkit)
 
 ## Prerequisites
+
 - Basic knowledge of HTML, CSS, and JavaScript.
 - [Quick Start Tutorial](/tutorials/quick-start/)
 - [Debugging Tutorial](/tutorials/debugging/)
@@ -50,9 +52,9 @@ Creating dialogs can take a lot of boilerplate code, but we've created a small l
 
 To add the library to your project, you can:
 
-* Click the "Clone or Download" button on the right side of the page
-* Uncompress the zip file after the download completes
-* Copy the `lib` folder to your plugin project
+- Click the "Clone or Download" button on the right side of the page
+- Uncompress the zip file after the download completes
+- Copy the `lib` folder to your plugin project
 
 ### 3. Require the `dialogs` module in `main.js`
 
@@ -68,7 +70,7 @@ This will import a `alert` function that we can call to display an alert. The `e
 
 ```js
 async function showAlert() {
-	/* we'll display a dialog here */
+  /* we'll display a dialog here */
 }
 ```
 
@@ -80,15 +82,17 @@ Next, inside this function, we call `alert` to render the message. This function
 Let's see what that looks like in code:
 
 ```js
-await alert("Connect to the Internet", //[1]
-    "In order to function correctly, this plugin requires access to the Internet. Please connect to a network that has Internet access."); //[2]
+await alert(
+  "Connect to the Internet", //[1]
+  "In order to function correctly, this plugin requires access to the Internet. Please connect to a network that has Internet access."
+); //[2]
 ```
 
 ### 5. Create a function to display an error alert
 
 ```js
 async function showError() {
-	/* we'll display a dialog here */
+  /* we'll display a dialog here */
 }
 ```
 
@@ -100,12 +104,14 @@ Inside this function, we call `error` to render the message. Just like `alert`, 
 Let's see what that looks like in code:
 
 ```js
-await error("Synchronization Failed", //[1]
-    "Failed to synchronize all your changes with our server. Some changes may have been lost.",
-    "Steps you can take:",
-    "* Save your document",
-    "* Check your network connection",
-    "* Try again in a few minutes"); //[2]
+await error(
+  "Synchronization Failed", //[1]
+  "Failed to synchronize all your changes with our server. Some changes may have been lost.",
+  "Steps you can take:",
+  "* Save your document",
+  "* Check your network connection",
+  "* Try again in a few minutes"
+); //[2]
 ```
 
 Note that the we passed several lines of text to `error`, including some markdown-like list items. The `dialogs` module understands a very limited subset of markdown; for more see the [Plugin Toolkit](https://github.com/AdobeXD/plugin-toolkit).
@@ -116,27 +122,20 @@ We need to export a menu handler from the `main.js` file so that XD knows what t
 
 ```js
 module.exports = {
-    commands: {
-        showAlert,
-        showError
-    }
-}
+  commands: {
+    showAlert,
+    showError,
+  },
+};
 ```
+
 Make sure to your commands match the manifest's `commandId`s written in the first step.
 
 ## Guidelines
 
 It's important to know _when_ to show an alert because they do obstruct the user's ability to interact with XD. As such, you should follow these guidelines:
 
-* **Don't** display "success" alerts when it's obvious that the plugin has been successful.
-* **Do** display a "success" alert if your plugin's operation is completed, but the user would have no way of knowing.
-* **Do** use human-readable language.
-* **Don't** use technical jargon unless it's language the user is already familiar with.
-
-## Next Steps
-
-Other than `alert` and `error`, there are other useful dialog helpers that you might be interested in.
-
-- [How to ask for confirmation](/tutorials/how-to-ask-user-for-confirmation/)
-- [User Interface design](/design/user-interface/)
-- [Other samples](https://github.com/AdobeXD/plugin-samples)
+- **Don't** display "success" alerts when it's obvious that the plugin has been successful.
+- **Do** display a "success" alert if your plugin's operation is completed, but the user would have no way of knowing.
+- **Do** use human-readable language.
+- **Don't** use technical jargon unless it's language the user is already familiar with.
