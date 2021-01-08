@@ -1,110 +1,62 @@
-<a name="LinearGradientFill"></a>
+# LinearGradientFill
 
-## LinearGradientFill
-**Kind**: class  
+**Kind**: class
 
 In a linear gradient, colors blend smoothly along a straight line, extending out perpendicularly from that line. The gradient fills the entire area of the shape it is
 applied to.
 
-* [LinearGradientFill](#LinearGradientFill)
-    * [new LinearGradientFill()](#new_LinearGradientFill_new)
-    * [.clone()](#LinearGradientFill-clone) ⇒ `!LinearGradientFill`
-    * [.colorStops](#LinearGradientFill-colorStops) : `!Array&lt;{stop:number, color:!Color}>`
-    * [.startX](#LinearGradientFill-startX) : `number`
-    * [.startY](#LinearGradientFill-startY) : `number`
-    * [.endX](#LinearGradientFill-endX) : `number`
-    * [.endY](#LinearGradientFill-endY) : `number`
-    * [.getEndPoints()](#LinearGradientFill-getEndPoints) ⇒ `!Array&lt;number>`
-    * [.setEndPoints(startX, startY, endX, endY)](#LinearGradientFill-setEndPoints)
+## new LinearGradientFill()
 
-
-* * *
-
-<a name="new_LinearGradientFill_new"></a>
-
-### new LinearGradientFill()
 Create a new LinearGradientFill instance.
 
+### _linearGradientFill.clone() ⇒ `!LinearGradientFill`_
 
-* * *
-
-<a name="LinearGradientFill-clone"></a>
-
-### *linearGradientFill.clone() ⇒ `!LinearGradientFill`*
 Returns a copy of this instance.
 
-**Kind**: instance method of [`LinearGradientFill`](#LinearGradientFill)  
+**Kind**: instance method of [`LinearGradientFill`](#LinearGradientFill)
 
+### _linearGradientFill.colorStops : `!Array&lt;{stop:number, color:\![Color](Color/)}>`_
 
-* * *
-
-<a name="LinearGradientFill-colorStops"></a>
-
-### *linearGradientFill.colorStops : `!Array&lt;{stop:number, color:\![Color](Color/)}>`*
 Array of objects representing each color and its position along the gradient line. The position (`stop` value) is a number 0.0 - 1.0.
 
-**Kind**: instance property of [`LinearGradientFill`](#LinearGradientFill)  
+**Kind**: instance property of [`LinearGradientFill`](#LinearGradientFill)
 
+### _linearGradientFill.startX : `number`_
 
-* * *
-
-<a name="LinearGradientFill-startX"></a>
-
-### *linearGradientFill.startX : `number`*
 X position of the start of the gradient line, as a multiple of the object's bounding box: X=0 indicates the left edge of the bounding box and X=1 indicates the right edge.
 The gradient line _may_ start or end outside the object's bounding box, so values may be &lt; 0 or > 1.
 
-**Kind**: instance property of [`LinearGradientFill`](#LinearGradientFill)  
+**Kind**: instance property of [`LinearGradientFill`](#LinearGradientFill)
 
+### _linearGradientFill.startY : `number`_
 
-* * *
-
-<a name="LinearGradientFill-startY"></a>
-
-### *linearGradientFill.startY : `number`*
 Y position of the start of the gradient line, as a multiple of the object's bounding box: Y=0 indicates the top edge of the bounding box and Y=1 indicates the bottom edge.
 The gradient line _may_ start or end outside the object's bounding box, so values may be &lt; 0 or > 1.
 
-**Kind**: instance property of [`LinearGradientFill`](#LinearGradientFill)  
+**Kind**: instance property of [`LinearGradientFill`](#LinearGradientFill)
 
+### _linearGradientFill.endX : `number`_
 
-* * *
-
-<a name="LinearGradientFill-endX"></a>
-
-### *linearGradientFill.endX : `number`*
 X position of the end of the gradient line, as a multiple of the object's bounding box: X=0 indicates the left edge of the bounding box and X=1 indicates the right edge.
 The gradient line _may_ start or end outside the object's bounding box, so values may be &lt; 0 or > 1.
 
-**Kind**: instance property of [`LinearGradientFill`](#LinearGradientFill)  
+**Kind**: instance property of [`LinearGradientFill`](#LinearGradientFill)
 
+### _linearGradientFill.endY : `number`_
 
-* * *
-
-<a name="LinearGradientFill-endY"></a>
-
-### *linearGradientFill.endY : `number`*
 Y position of the end of the gradient line, as a multiple of the object's bounding box: Y=0 indicates the top edge of the bounding box and Y=1 indicates the bottom edge.
 The gradient line _may_ start or end outside the object's bounding box, so values may be &lt; 0 or > 1.
 
-**Kind**: instance property of [`LinearGradientFill`](#LinearGradientFill)  
+**Kind**: instance property of [`LinearGradientFill`](#LinearGradientFill)
 
+### _linearGradientFill.getEndPoints() ⇒ `!Array&lt;number>`_
 
-* * *
-
-<a name="LinearGradientFill-getEndPoints"></a>
-
-### *linearGradientFill.getEndPoints() ⇒ `!Array&lt;number>`*
 Returns an array of \[startX, startY, endX, endY\].
 
-**Kind**: instance method of [`LinearGradientFill`](#LinearGradientFill)  
+**Kind**: instance method of [`LinearGradientFill`](#LinearGradientFill)
 
+### \*linearGradientFill.setEndPoints(startX, startY, endX, endY)
 
-* * *
-
-<a name="LinearGradientFill-setEndPoints"></a>
-
-### *linearGradientFill.setEndPoints(startX, startY, endX, endY)
 Shorthand for setting all four start/endpoint properties.
 
-**Kind**: instance method of [`LinearGradientFill`](#LinearGradientFill)  
+**Kind**: instance method of [`LinearGradientFill`](#LinearGradientFill)
