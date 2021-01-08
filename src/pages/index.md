@@ -91,7 +91,7 @@ The API Reference for XD calls exposed through UXP.
 
 <DiscoverBlock slots="link, text"/>
 
-[UXP API](uxp/reference-js/)
+[UXP API](/uxp/)
 
 The API Reference for UXP itself. Includes UI APIs (including HTML and CSS), file and network I/O, and more.
 
