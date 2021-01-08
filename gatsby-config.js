@@ -33,7 +33,7 @@ module.exports = {
     ],*/
     pages: [
       {
-        title: "Overview",
+        title: "UXP for Adobe XD",
         path: "/",
       },
       {
@@ -51,10 +51,10 @@ module.exports = {
       {
         title: "Share",
         path: "/distribution/",
-      }
+      },
     ],
-    subPages: 
-      [...require("./summary.js"),
+    subPages: [
+      ...require("./summary.js"),
       {
         title: "UXP API",
         path: "/uxp/reference-js/",
@@ -85,9 +85,9 @@ module.exports = {
             path: "/uxp/known-issues/",
           },
         ],
-      }
+      },
     ],
   },
   plugins: [`@adobe/gatsby-theme-aio`],
-  pathPrefix: process.env.PATH_PREFIX || '/xd/uxp'
+  pathPrefix: process.env.PATH_PREFIX || "/xd/uxp",
 };
