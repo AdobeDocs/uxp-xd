@@ -74,7 +74,7 @@ module.exports = {
   output: {
     path: __dirname,
     filename: "main.js",
-    libraryTarget: "commonjs2"
+    libraryTarget: "commonjs2",
   },
   devtool: "none",
   module: {
@@ -84,18 +84,18 @@ module.exports = {
         exclude: /node_modules/,
         loader: "babel-loader",
         options: {
-          plugins: ["transform-react-jsx"]
-        }
+          plugins: ["transform-react-jsx"],
+        },
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"]
-      }
-    ]
+        use: ["style-loader", "css-loader"],
+      },
+    ],
   },
   externals: {
-    scenegraph: "scenegraph"
-  }
+    scenegraph: "scenegraph",
+  },
 };
 ```
 
@@ -190,20 +190,20 @@ First of all, as noted earlier, we need `react-shim.js` file to make React run w
 
 ```js
 if (window.setTimeout == null) {
-  window.setTimeout = function(fn) {
+  window.setTimeout = function (fn) {
     fn();
   };
 }
 
 if (window.clearTimeout == null) {
-  window.clearTimeout = function() {};
+  window.clearTimeout = function () {};
 }
 
 if (window.cancelAnimationFrame == null) {
-  window.cancelAnimationFrame = function() {};
+  window.cancelAnimationFrame = function () {};
 }
 if (window.requestAnimationFrame == null) {
-  window.requestAnimationFrame = function() {
+  window.requestAnimationFrame = function () {
     console.log("requestAnimationFrame is not supported yet");
   };
 }
@@ -232,12 +232,12 @@ class HelloForm extends React.Component {
     this.state = { name: "" }; // [5]
 
     // [6]
-    this.onInputChange = e => {
+    this.onInputChange = (e) => {
       this.setState({ name: e.target.value });
     };
 
     // [7]
-    this.onDoneClick = e => {
+    this.onDoneClick = (e) => {
       // [8]
       const selection = this.props.selection;
       // [9]
@@ -248,8 +248,8 @@ class HelloForm extends React.Component {
         {
           length: newText.text.length,
           fill: new Color("#00F"),
-          fontSize: 50
-        }
+          fontSize: 50,
+        },
       ];
 
       // [11]
@@ -332,8 +332,8 @@ function main(selection) {
 // [7]
 module.exports = {
   commands: {
-    main
-  }
+    main,
+  },
 };
 ```
 
@@ -364,10 +364,3 @@ Alternatively, if XD was already open, select _Plugins > Development > Reload Pl
 ![XD dialog drops down](../../images/react-hello-xd.png)
 
 Congratulations! You’ve built your first plugin using React!
-
-## Next Steps
-
-- Learn about [debugging plugins](/tutorials/debugging/)
-- Follow our [tutorials](/tutorials/)
-- See working code in our [sample repos on GitHub](https://github.com/AdobeXD/Plugin-Samples)
-- Browse the [API references](/reference/how-to-read/)

@@ -5,7 +5,6 @@ This tutorial will show you how to implement the OAuth workflow in an XD plugin,
 > **info**
 > Auth workflows are necessarily complex, so this tutorial will be on the longer side and make use of some advanced concepts. Please read the each section carefully, especially the Prerequisites and Configuration sections.
 
-
 ## Prerequisites
 
 - Basic knowledge of HTML, CSS, and JavaScript.
@@ -15,10 +14,9 @@ This tutorial will show you how to implement the OAuth workflow in an XD plugin,
 - Familiarity with [OAuth](https://oauth.net/2/)
 - [A registered app on Dropbox](https://www.dropbox.com/developers/apps/create) with the following settings:
 
-	1. Choose "Dropbox API"
-	1. Choose "Full Dropbox" for the access type
-	1. In `Redirect URIs`, add your own `https` `ngrok` URL (example: "https://476322de.ngrok.io/callback") or a secure public URL if you have one
-
+  1.  Choose "Dropbox API"
+  1.  Choose "Full Dropbox" for the access type
+  1.  In `Redirect URIs`, add your own `https` `ngrok` URL (example: "https://476322de.ngrok.io/callback") or a secure public URL if you have one
 
 ## Technology Used
 
@@ -26,7 +24,6 @@ This tutorial will show you how to implement the OAuth workflow in an XD plugin,
 1. [OAuth](https://oauth.net/2/)
 1. [ngrok](https://ngrok.com/)
 1. [Dropbox API](https://www.dropbox.com/developers/documentation/http/overview)
-
 
 ## Overview of the OAuth workflow
 
@@ -47,14 +44,12 @@ The high-level workflow is as follows:
 1. The plugin polls the server to check if the access token is available for the session ID. If the token is available, the server sends the access token back
 1. The plugin uses the access token to make API calls to the service API
 
-
 ## Configuration
 
 > **Info**
 > Complete code for this plugin can be found [on GitHub](https://github.com/AdobeXD/Plugin-Samples/tree/master/how-to-integrate-with-OAuth).
 
 The following steps will help you get the sample code from our GitHub repo up and running.
-
 
 ### 1. Install Node.js packages
 
@@ -87,7 +82,6 @@ Now `ngrok` is forwarding all HTTP requests from port `8000` to a public SSL end
 
 You can see the forwarding endpoint currently being used in the `ngrok` terminal output. Note the forwarding endpoint; we'll use it in the next step.
 
-
 ### 3. Set your API credentials and public URL
 
 Enter the required credentials in `public/config.js`. You'll need:
@@ -102,21 +96,19 @@ const dropboxApiSecret = "YOUR-DROPBOX-SECRET";
 const publicUrl = "YOUR-PUBLIC-URL"; // e.g. https://476322de.ngrok.io/
 
 try {
-	if (module) {
-		module.exports = {
-			dropboxApiKey: dropboxApiKey,
-			dropboxApiSecret: dropboxApiSecret,
-			publicUrl: publicUrl
-		}
-	}
-}
-catch (err) {
-	console.log(err);
+  if (module) {
+    module.exports = {
+      dropboxApiKey: dropboxApiKey,
+      dropboxApiSecret: dropboxApiSecret,
+      publicUrl: publicUrl,
+    };
+  }
+} catch (err) {
+  console.log(err);
 }
 ```
 
 Our server will make use of these settings in a later step.
-
 
 ### 4. Start the server
 
@@ -127,7 +119,6 @@ $ npm start
 ```
 
 Now you have a running server with an HTTPS endpoint and your Dropbox credentials ready to go.
-
 
 ## Development Steps
 
@@ -157,13 +148,13 @@ Replace the content of your `main.js` file with the following code (note the pre
 
 ```js
 async function launchOAuth(selection) {
-    // The body of this function is added later
+  // The body of this function is added later
 }
 
 module.exports = {
-    commands: {
-        launchOAuth
-    }
+  commands: {
+    launchOAuth,
+  },
 };
 ```
 
@@ -181,17 +172,15 @@ const { Text, Color } = require("scenegraph");
 
 Now the `Text` and `Color` classes are required in and ready to be used.
 
-
 ### 3. Store the public URL
 
 Your plugin will also need to know your public URL. Since we used `ngrok` earlier, we'll make a constant with that URL:
 
 ```js
-const publicUrl = "YOUR-PUBLIC-URL"; 	// e.g. https://476322de.ngrok.io/
+const publicUrl = "YOUR-PUBLIC-URL"; // e.g. https://476322de.ngrok.io/
 ```
 
 This url will be used to send requests to your server.
-
 
 ### 4. Create a variable to store the access token
 
@@ -203,38 +192,38 @@ let accessToken;
 
 We'll assign the value later.
 
-
 ### 5. Write a helper function for XHR requests
 
 ```js
 // XHR helper function
 function xhrRequest(url, method) {
-	return new Promise((resolve, reject) => { // [1]
-		const req = new XMLHttpRequest();
-		req.timeout = 6000; // [2]
-		req.onload = () => {
-			if (req.status === 200) {
-				try {
-					resolve(req.response); // [3]
-				} catch (err) {
-					reject(`Couldn't parse response. ${err.message}, ${req.response}`);
-				}
-			} else {
-				reject(`Request had an error: ${req.status}`);
-			}
-		}
-		req.ontimeout = () => {
-			console.log("polling..") // [4]
-			resolve(xhrRequest(url, method))
-		}
-		req.onerror = (err) => {
-			console.log(err)
-      reject(err)
-		}
-		req.open(method, url, true); // [5]
-		req.responseType = 'json';
-		req.send();
-	});
+  return new Promise((resolve, reject) => {
+    // [1]
+    const req = new XMLHttpRequest();
+    req.timeout = 6000; // [2]
+    req.onload = () => {
+      if (req.status === 200) {
+        try {
+          resolve(req.response); // [3]
+        } catch (err) {
+          reject(`Couldn't parse response. ${err.message}, ${req.response}`);
+        }
+      } else {
+        reject(`Request had an error: ${req.status}`);
+      }
+    };
+    req.ontimeout = () => {
+      console.log("polling.."); // [4]
+      resolve(xhrRequest(url, method));
+    };
+    req.onerror = (err) => {
+      console.log(err);
+      reject(err);
+    };
+    req.open(method, url, true); // [5]
+    req.responseType = "json";
+    req.send();
+  });
 }
 ```
 
@@ -249,10 +238,11 @@ function xhrRequest(url, method) {
 We'll make an XHR request.
 
 ```js
-const rid = await xhrRequest(`${publicUrl}/getRequestId`, 'GET')
-			.then(response => {
-				return response.id;
-			})
+const rid = await xhrRequest(`${publicUrl}/getRequestId`, "GET").then(
+  (response) => {
+    return response.id;
+  }
+);
 ```
 
 This part of the function sends a `GET` request to your server's `getRequestId` endpoint and returns `response.id`.
@@ -263,29 +253,29 @@ Let's take a look at the code on the server side:
 /* Authorized Request IDs (simulating database) */
 const requestIds = {}; // [1]
 
-app.get('/getRequestId', function (req, res) {
-	/* Simulating writing to a database */
-	for (let i = 1; i < 100; i++) { // [2]
-		if (!(i in requestIds)) {
-			requestIds[i] = {};
-			console.log(i)
-			res.json({ id: i })
-			break;
-		}
-	}
-})
+app.get("/getRequestId", function (req, res) {
+  /* Simulating writing to a database */
+  for (let i = 1; i < 100; i++) {
+    // [2]
+    if (!(i in requestIds)) {
+      requestIds[i] = {};
+      console.log(i);
+      res.json({ id: i });
+      break;
+    }
+  }
+});
 ```
 
 1. Note that there is a global variable, `requestIDs`, which is an empty JavaScript object. For the sake of simplicity, we are using this object to simulate a database
 2. This loop function simulates writing to a database by creating a new id, save the id in the global object, and `res.json` with the id
-
 
 ### 7. Open the default browser with the URL pointing to your server
 
 To open the machine's default browser from an XD plugin, we can use UXP's `shell` module:
 
 ```js
-require("uxp").shell.openExternal(`${publicUrl}/login?requestId=${rid}`)
+require("uxp").shell.openExternal(`${publicUrl}/login?requestId=${rid}`);
 ```
 
 This will open the browser with the url pointing to an endpoint on your server.
@@ -293,38 +283,41 @@ This will open the browser with the url pointing to an endpoint on your server.
 Let's take a look at the code on the server side.
 
 ```js
-app.get('/login', function (req, res) {
-	let requestId = req.query.requestId; // [1]
-	/* This will prompt user with the Dropbox auth screen */
-	res.redirect(`https://www.dropbox.com/oauth2/authorize?response_type=code&client_id=${dropboxApiKey}&redirect_uri=${publicUrl}/callback&state=${requestId}`) // [2]
-})
+app.get("/login", function (req, res) {
+  let requestId = req.query.requestId; // [1]
+  /* This will prompt user with the Dropbox auth screen */
+  res.redirect(
+    `https://www.dropbox.com/oauth2/authorize?response_type=code&client_id=${dropboxApiKey}&redirect_uri=${publicUrl}/callback&state=${requestId}`
+  ); // [2]
+});
 
-app.get('/callback', function (req, res) {
-	/* Retrieve authorization code from request */
-	let code = req.query.code; // [3]
-	let requestId = req.query.state;
+app.get("/callback", function (req, res) {
+  /* Retrieve authorization code from request */
+  let code = req.query.code; // [3]
+  let requestId = req.query.state;
 
-	/* Set options with required paramters */
-	let requestOptions = { // [4]
-		uri: `https://api.dropboxapi.com/oauth2/token?grant_type=authorization_code&code=${code}&client_id=${dropboxApiKey}&client_secret=${dropboxApiSecret}&redirect_uri=${publicUrl}/callback`,
-		method: 'POST',
-		json: true
-	}
+  /* Set options with required paramters */
+  let requestOptions = {
+    // [4]
+    uri: `https://api.dropboxapi.com/oauth2/token?grant_type=authorization_code&code=${code}&client_id=${dropboxApiKey}&client_secret=${dropboxApiSecret}&redirect_uri=${publicUrl}/callback`,
+    method: "POST",
+    json: true,
+  };
 
-	/* Send a POST request using the request library */
-	request(requestOptions) // [5]
-		.then(function (response) {
-			/* Store the token in req.session.token */
-			req.session.token = response.access_token; // [6]
+  /* Send a POST request using the request library */
+  request(requestOptions) // [5]
+    .then(function (response) {
+      /* Store the token in req.session.token */
+      req.session.token = response.access_token; // [6]
 
-			/* Simulating writing to a database */
-			requestIds[requestId]["accessToken"] = response.access_token; // [7]
-			res.end()
-		})
-		.catch(function (error) {
-			res.json({ 'response': 'Log in failed!' });
-		});
-})
+      /* Simulating writing to a database */
+      requestIds[requestId]["accessToken"] = response.access_token; // [7]
+      res.end();
+    })
+    .catch(function (error) {
+      res.json({ response: "Log in failed!" });
+    });
+});
 ```
 
 1. `/login` route grabs the `requestId` from the query parameter
@@ -335,17 +328,18 @@ app.get('/callback', function (req, res) {
 6. Store the access token received from Dropbox in the session object
 7. Simulate writing to a database by paring the access token with `requestId` and storing it to `requestIds` global object
 
-
 ### 8. Poll the server until access token is received
 
 ```js
-accessToken = await xhrRequest(`${publicUrl}/getCredentials?requestId=${rid}`, 'GET')
-			.then(tokenResponse => {
-				return tokenResponse.accessToken;
-			})
+accessToken = await xhrRequest(
+  `${publicUrl}/getCredentials?requestId=${rid}`,
+  "GET"
+).then((tokenResponse) => {
+  return tokenResponse.accessToken;
+});
 ```
-As noted in step #4, the `xhrRequest` helper function is designed to poll the server if the initial request is not responded in 6000 miliseconds. Once the user completes the OAuth workflow in the browser, polling should stop and this request should be returned with the access token.
 
+As noted in step #4, the `xhrRequest` helper function is designed to poll the server if the initial request is not responded in 6000 miliseconds. Once the user completes the OAuth workflow in the browser, polling should stop and this request should be returned with the access token.
 
 ### 9. Show a dialog indicating the token has been received
 
@@ -369,16 +363,18 @@ let closeButton = document.createElement("button"); // [4]
 closeButton.textContent = "Got it!";
 container.appendChild(closeButton);
 
-closeButton.onclick = (e) => { // [5]
-    dialog.close();
-}
+closeButton.onclick = (e) => {
+  // [5]
+  dialog.close();
+};
 
 document.body.appendChild(dialog); // [6]
 dialog.appendChild(container);
-dialog.showModal()
+dialog.showModal();
 ```
 
 Just like HTML DOM APIs, you can use `document.createElement` method to create UI objects. Elements have the `style` property which contains metrics properties you can set
+
 1. The `dialog` element is the modal window that pops down in XD
 2. Create a container `div` element
 3. Create a `h3` element to let the user know the auth workflow has been completed
@@ -386,29 +382,28 @@ Just like HTML DOM APIs, you can use `document.createElement` method to create U
 5. Create a listener for the click event and close the dialog
 6. Attach the dialog to the document, add the container, and use `showModal` method to show the modal
 
-
 ### 10. Make an API call to Dropbox
 
 ```js
 const dropboxProfileUrl = `https://api.dropboxapi.com/2/users/get_current_account?authorization=Bearer%20${accessToken}`; // [1]
-const dropboxProfile = await xhrRequest(dropboxProfileUrl, 'POST'); // [2]
+const dropboxProfile = await xhrRequest(dropboxProfileUrl, "POST"); // [2]
 ```
 
 1. Note that received `accessToken` is included in this Dropbox API call to retrieve the current account's profile
 2. `xhrRequest` helper function is used again to make this `POST` call
-
 
 ### 10. Create a text element to show the profile information inside the current artboard
 
 ```js
 const text = new Text(); // [1]
 text.text = JSON.stringify(dropboxProfile); // [2]
-text.styleRanges = [ // [3]
+text.styleRanges = [
+  // [3]
   {
     length: text.text.length,
     fill: new Color("#0000ff"),
-    fontSize: 10
-  }
+    fontSize: 10,
+  },
 ];
 selection.insertionParent.addChild(text); // [4]
 text.moveInParentCoordinates(100, 100); // [5]
@@ -419,11 +414,3 @@ text.moveInParentCoordinates(100, 100); // [5]
 3. Add the `styleRanges` for the text
 4. Insert the text
 5. Move the text inside the artboard to make it visible
-
-
-## Next Steps
-
-Ready to explore further? Take a look at our other resources:
-
-- [Tutorials](/tutorials)
-- [Sample code repos](https://github.com/AdobeXD/plugin-samples)

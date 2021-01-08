@@ -3,9 +3,11 @@
 There are many times when a plugin will need to ask the user whether or not it should proceed with a given course of action. This tutorial will show you an easy way to get user confirmation before proceeding with a task.
 
 ## Technology Used
+
 - [Plugin Toolkit](https://github.com/AdobeXD/plugin-toolkit)
 
 ## Prerequisites
+
 - Basic knowledge of HTML, CSS, and JavaScript.
 - [Quick Start Tutorial](/tutorials/quick-start/)
 - [Debugging Tutorial](/tutorials/debugging/)
@@ -39,9 +41,9 @@ Creating dialogs can take a lot of boilerplate code, but we've created a small l
 
 To add the library to your project, you can:
 
-* Click the "Clone or Download" button on the right side of the page
-* Uncompress the zip file after the download completes
-* Copy the `lib` folder to your plugin project
+- Click the "Clone or Download" button on the right side of the page
+- Uncompress the zip file after the download completes
+- Copy the `lib` folder to your plugin project
 
 ### 3. Require the `dialogs` module in `main.js`
 
@@ -57,7 +59,7 @@ This will import a `confirm` function that we can call to display a confirmation
 
 ```js
 async function showConfirm() {
-	/* we'll display a dialog here */
+  /* we'll display a dialog here */
 }
 ```
 
@@ -70,9 +72,11 @@ Next, inside this function, we call `confirm` to actually show the confirmation 
 Let's see what that looks like in code:
 
 ```js
-const feedback = await confirm("Enable Smart Filters?", //[1]
-	"Smart filters are nondestructive and will preserve your original images.", //[2]
-	["Cancel", "Enable"] /*[3]*/ );
+const feedback = await confirm(
+  "Enable Smart Filters?", //[1]
+  "Smart filters are nondestructive and will preserve your original images.", //[2]
+  ["Cancel", "Enable"] /*[3]*/
+);
 ```
 
 Note that the third argument is an array of strings. These identify the names of the two buttons that will display in the confirmation dialog. These are given in the order they would appear on a macOS machine, which means that the "cancel" or negative button is listed first, and the "ok" or acceptance button is listed last.
@@ -83,12 +87,12 @@ When the dialog is closed, some useful information about which button was presse
 
 ```js
 switch (feedback.which) {
-	case 0:
-		/* User canceled */
-		break;
-	case 1:
-		/* User clicked Enable */
-		break;
+  case 0:
+    /* User canceled */
+    break;
+  case 1:
+    /* User clicked Enable */
+    break;
 }
 ```
 
@@ -100,18 +104,10 @@ We need to export a menu handler from the `main.js` file so that XD knows what t
 
 ```js
 module.exports = {
-    commands: {
-        showConfirm
-    }
-}
+  commands: {
+    showConfirm,
+  },
+};
 ```
 
 Make sure to your commands match the manifest's `commandId`s written in the first step.
-
-## Next Steps
-
-Ready to explore further? Take a look at our other resources:
-
-- [Tutorials](/tutorials)
-- [Sample code repos](https://github.com/AdobeXD/plugin-samples)
-

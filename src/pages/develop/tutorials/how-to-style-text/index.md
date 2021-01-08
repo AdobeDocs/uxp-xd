@@ -2,8 +2,8 @@
 
 Creating styled text in Adobe XD is easy! In this tutorial, we'll show you how to create a text element with a specific color and font size, and also a text element with multiple inline colors.
 
-
 ## Prerequisites
+
 - Basic knowledge of HTML, CSS, and JavaScript
 - [Quick Start Tutorial](/tutorials/quick-start/)
 - [Debugging Tutorial](/tutorials/debugging/)
@@ -37,18 +37,17 @@ Replace the content of your `main.js` file with the following code:
 
 ```js
 function createStyledTextHandlerFunction(selection) {
-    // The body of this function is added later
+  // The body of this function is added later
 }
 
 module.exports = {
-    commands: {
-        "createStyledTextCommand": createStyledTextHandlerFunction
-    }
+  commands: {
+    createStyledTextCommand: createStyledTextHandlerFunction,
+  },
 };
 ```
 
 The remaining steps in this tutorial describe additional edits to the `main.js` file.
-
 
 ### 2. Require in XD API dependencies
 
@@ -63,7 +62,6 @@ const { Text, Color } = require("scenegraph");
 
 Now the `Text` and `Color` classes are required in and ready to be used.
 
-
 ### 3. Create the main function
 
 In this step, we'll build out the main function, `createStyledTextHandlerFunction`, that we added in the first step. This function will add red text to the user's doucment.
@@ -72,13 +70,13 @@ Each of the numbered comments are explained below the code:
 
 ```js
 function createStyledTextHandlerFunction(selection) {
-    const node = new Text();                    // [1]
-    node.text = "This is some red text";        // [2]
-    node.fill = new Color("#FF0000");           // [3]
-    node.fontSize = 24;
+  const node = new Text(); // [1]
+  node.text = "This is some red text"; // [2]
+  node.fill = new Color("#FF0000"); // [3]
+  node.fontSize = 24;
 
-    selection.insertionParent.addChild(node);   // [4]
-    node.moveInParentCoordinates(20, 50);       // [5]
+  selection.insertionParent.addChild(node); // [4]
+  node.moveInParentCoordinates(20, 50); // [5]
 }
 ```
 
@@ -90,7 +88,6 @@ function createStyledTextHandlerFunction(selection) {
 
 Character styles such as color and font size can also vary within the text. Read more below for details.
 
-
 ### 4. Test the plugin
 
 If you reload the plugin and run it, you should see the following result:
@@ -98,7 +95,6 @@ If you reload the plugin and run it, you should see the following result:
 ![Red text](../../images/red.png)
 
 Not bad for a few lines of code! Let's push it a little further.
-
 
 ### 5. Update the main function
 
@@ -108,29 +104,31 @@ The `styleRanges` property lets us apply different styles to different ranges of
 
 ```js
 function createStyledTextHandlerFunction(selection) {
-    const node = new Text();
+  const node = new Text();
 
-    const textData = [                                     // [1]
-    	{text: "This ", color: "red"},
-    	{text: "is ",   color: "orange"},
-    	{text: "some ", color: "yellow"},
-    	{text: "ra",    color: "green"},
-    	{text: "in",    color: "blue"},
-    	{text: "bow ",  color: "indigo"},
-    	{text: "text",  color: "violet"}
-    ];
+  const textData = [
+    // [1]
+    { text: "This ", color: "red" },
+    { text: "is ", color: "orange" },
+    { text: "some ", color: "yellow" },
+    { text: "ra", color: "green" },
+    { text: "in", color: "blue" },
+    { text: "bow ", color: "indigo" },
+    { text: "text", color: "violet" },
+  ];
 
-    node.text = textData.map(item => item.text).join("");   // [2]
+  node.text = textData.map((item) => item.text).join(""); // [2]
 
-    node.styleRanges = textData.map(item => ({              // [3]
-        length: item.text.length,
-        fill: new Color(item.color)
-    }));
+  node.styleRanges = textData.map((item) => ({
+    // [3]
+    length: item.text.length,
+    fill: new Color(item.color),
+  }));
 
-    node.fontSize = 24;                                     // [4]
+  node.fontSize = 24; // [4]
 
-    selection.insertionParent.addChild(node);
-    node.moveInParentCoordinates(20, 50);
+  selection.insertionParent.addChild(node);
+  node.moveInParentCoordinates(20, 50);
 }
 ```
 
@@ -145,27 +143,13 @@ Here's what's changed:
 > The `Color` constructor understands some color names, but you have plenty of other options for defining colors precisely, including hex, rgba, and more. [See the `Color` reference for more information](/reference/Color/).
 
 Here are a few things to notice about the `styleRanges` property of `Text` objects:
-* `styleRanges` is an array of objects; you can have more than one style for a text node.
-* Each range is given a `length` which determines the number of characters to which the style is applied, starting from the end of the previous style range.
-* Character styles such as `fill` or `fontSize` can be set to different values in each style range, or they can be set on the `Text` node overall to apply the setting to _all_ existing style ranges.
 
+- `styleRanges` is an array of objects; you can have more than one style for a text node.
+- Each range is given a `length` which determines the number of characters to which the style is applied, starting from the end of the previous style range.
+- Character styles such as `fill` or `fontSize` can be set to different values in each style range, or they can be set on the `Text` node overall to apply the setting to _all_ existing style ranges.
 
 ### 6. Run the plugin
 
 After saving all of your changes, reload the plugin in XD and run it. You'll now have rainbow-colored text:
 
 ![Rainbow text](../../images/rainbow.png)
-
-
-## Next Steps
-
-Want to expand on what you learned here? Have a look at these references to see options for customizing this sample plugin:
-
-- [Text](/reference/scenegraph/)
-- [Color](/reference/Color/)
-
-
-Ready to explore further? Take a look at our other resources:
-
-- [Tutorials](/tutorials/)
-- [Sample code repos](https://github.com/AdobeXD/plugin-samples)

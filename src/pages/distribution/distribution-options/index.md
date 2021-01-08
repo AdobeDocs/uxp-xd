@@ -26,8 +26,3 @@ If you distribute a .XDX file, installation is as simple as one double-click.
 > - Gmail notifies the sender that the message will be blocked.
 >
 > If you also have the same listing in the Plugin Manager, make sure the `name` field in the manifest matches the same field in the Plugin Manager listing. If there is a discrepancy, the name in the Plugin Manager will be used.
-
-## Next steps
-
-- If you plan to publish on the XD plugin manager, see our [publishing tutorial](./how-to-submit-to-plugin-manager.md)
-- No matter how you plan to distribute, be sure to see our [plugin marketing tutorial](./marketing.md)

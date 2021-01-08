@@ -120,9 +120,9 @@ module.exports = {
   panels: {
     enlargeRectangle: {
       show,
-      update
-    }
-  }
+      update,
+    },
+  },
 };
 ```
 
@@ -181,13 +181,16 @@ function create() {
 <p id="warning">This plugin requires you to select a rectangle in the document. Please select a rectangle.</p>
 `;
 
-  function increaseRectangleSize() { // [2]
+  function increaseRectangleSize() {
+    // [2]
     const { editDocument } = require("application"); // [3]
     const height = Number(document.querySelector("#txtV").value); // [4]
     const width = Number(document.querySelector("#txtH").value); // [5]
 
     // [6]
-    editDocument({ editLabel: "Increase rectangle size" }, function(selection) {
+    editDocument({ editLabel: "Increase rectangle size" }, function (
+      selection
+    ) {
       const selectedRectangle = selection.items[0]; // [7]
       selectedRectangle.width += width; // [8]
       selectedRectangle.height += height;
@@ -222,7 +225,8 @@ This code does the following:
 Next, let's look at the `show` function. The `show` function is one of the _lifecycle methods_ for a panel plugin, and the only one that is required. The `show` function is called when your plugin is made visible to the user.
 
 ```js
-function show(event) { // [1]
+function show(event) {
+  // [1]
   if (!panel) event.node.appendChild(create()); // [2]
 }
 ```
@@ -241,13 +245,15 @@ The last lifecycle method, `update`, is an optional function which is called whe
 We'll look at this code below:
 
 ```js
-function update(selection) { // [1]
+function update(selection) {
+  // [1]
   const { Rectangle } = require("scenegraph"); // [2]
 
   const form = document.querySelector("form"); // [3]
   const warning = document.querySelector("#warning"); // [4]
 
-  if (!selection || !(selection.items[0] instanceof Rectangle)) { // [5]
+  if (!selection || !(selection.items[0] instanceof Rectangle)) {
+    // [5]
     form.className = "hide";
     warning.className = "show";
   } else {
@@ -274,9 +280,9 @@ module.exports = {
   panels: {
     enlargeRectangle: {
       show,
-      update
-    }
-  }
+      update,
+    },
+  },
 };
 ```
 
@@ -293,10 +299,3 @@ If you haven’t already done so, launch XD and open a new document. Then naviga
 ![A panel with input boxes and a button](../../images/panel-success.png)
 
 Congratulations! You’ve built your first panel plugin for Adobe XD!
-
-## Next Steps
-
-- Learn about [debugging plugins](/tutorials/debugging/)
-- Follow our [tutorials](/tutorials/)
-- See working code in our [sample repos on GitHub](https://github.com/AdobeXD/Plugin-Samples)
-- Browse the [API references](/reference/how-to-read/)

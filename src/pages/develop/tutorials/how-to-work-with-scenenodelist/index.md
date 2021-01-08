@@ -2,8 +2,8 @@
 
 This sample demonstrates how to work with a SceneNodeList in Adobe XD. The short version of this story is that a `SceneNodeList` is _not an Array_. Read on for details.
 
-
 ## Prerequisites
+
 - Basic knowledge of HTML, CSS, and JavaScript.
 - [Quick Start Tutorial](/tutorials/quick-start/)
 - [Debugging Tutorial](/tutorials/debugging/)
@@ -42,25 +42,24 @@ Replace the content of your `main.js` file with the code below.
 
 ```js
 function createElements(selection) {
-	// The body of this function is added later
+  // The body of this function is added later
 }
 
 function filterAndColor(selection, documentRoot) {
-	// The body of this function is added later
+  // The body of this function is added later
 }
 
 module.exports = {
-	commands: {
-		createElements,
-		filterAndColor
-	}
+  commands: {
+    createElements,
+    filterAndColor,
+  },
 };
 ```
 
 Note the different use of [contextual arguments](/reference/structure/handlers/#contextual-arguments) in each function: the first function only makes use of `selection`, which the second makes use of both `selection` and `documentRoot`. We'll look at why `documentRoot` is used in a later step.
 
 The remaining steps in this tutorial describe additional edits to the `main.js` file.
-
 
 ### 2. Require in XD API dependencies
 
@@ -72,8 +71,8 @@ Add the following lines to the top of your `main.js` file:
 // Add this to the top of your main.js file
 const { Artboard, Rectangle, Ellipse, Text, Color } = require("scenegraph");
 ```
-Now the `Artboard`, `Rectangle`, `Ellipse`, `Text`, and `Color` classes are required in and ready to be used.
 
+Now the `Artboard`, `Rectangle`, `Ellipse`, `Text`, and `Color` classes are required in and ready to be used.
 
 ### 3. Create the handler function for `createElements`
 
@@ -83,38 +82,37 @@ Because of that, we won't go into detail about the `createElements` function. In
 
 ```js
 function createElements(selection) {
-	for (let i = 0; i < 5; i++) {
-		let rectangle = new Rectangle();
-		rectangle.width = 30 * i;
-		rectangle.height = 20 * i;
-		rectangle.fill = new Color("gray");
-		selection.insertionParent.addChild(rectangle);
-		rectangle.moveInParentCoordinates(50 * i, 50 * i);
+  for (let i = 0; i < 5; i++) {
+    let rectangle = new Rectangle();
+    rectangle.width = 30 * i;
+    rectangle.height = 20 * i;
+    rectangle.fill = new Color("gray");
+    selection.insertionParent.addChild(rectangle);
+    rectangle.moveInParentCoordinates(50 * i, 50 * i);
 
-		let ellipse = new Ellipse();
-		ellipse.radiusX = 20 * i;
-		ellipse.radiusY = 20 * i;
-		ellipse.fill = new Color("gray");
-		selection.insertionParent.addChild(ellipse);
-		ellipse.moveInParentCoordinates(100 * i, 200 * i);
+    let ellipse = new Ellipse();
+    ellipse.radiusX = 20 * i;
+    ellipse.radiusY = 20 * i;
+    ellipse.fill = new Color("gray");
+    selection.insertionParent.addChild(ellipse);
+    ellipse.moveInParentCoordinates(100 * i, 200 * i);
 
-		let text = new Text();
-		text.text = `example text ${i}`
-		text.styleRanges = [
-			{
-				length: text.text.length,
-				fill: new Color("gray"),
-				fontSize: 20
-			}
-		];
-		selection.insertionParent.addChild(text);
-		text.moveInParentCoordinates(200 * i, 100 * i);
-	}
+    let text = new Text();
+    text.text = `example text ${i}`;
+    text.styleRanges = [
+      {
+        length: text.text.length,
+        fill: new Color("gray"),
+        fontSize: 20,
+      },
+    ];
+    selection.insertionParent.addChild(text);
+    text.moveInParentCoordinates(200 * i, 100 * i);
+  }
 }
 ```
 
 We'll run the command for this function in a later step.
-
 
 ### 4. Create the handler function for `filterAndColor`
 
@@ -133,25 +131,28 @@ Let's fill out our handler function. Each of the numbered comments are explained
 
 ```js
 function filterAndColor(selection, documentRoot) {
-	documentRoot.children.forEach(node => { 							 // [1]
-		if (node instanceof Artboard) { 								 // [2]
-			let artboard = node;
-			let rectangles = artboard.children.filter(artboardChild => { // [3]
-				return artboardChild instanceof Rectangle;
-			})
-			rectangles.forEach(rectangle => { 							 // [4]
-				rectangle.fill = new Color("red");
-			})
-		}
-	})
+  documentRoot.children.forEach((node) => {
+    // [1]
+    if (node instanceof Artboard) {
+      // [2]
+      let artboard = node;
+      let rectangles = artboard.children.filter((artboardChild) => {
+        // [3]
+        return artboardChild instanceof Rectangle;
+      });
+      rectangles.forEach((rectangle) => {
+        // [4]
+        rectangle.fill = new Color("red");
+      });
+    }
+  });
 }
 ```
 
 1. Start from the `documentRoot` node and traverse down the tree using the `.children` property. Since `.children` is a `SceneNodeList`, it has a `#forEach` method that will let us iterate through the list, node by node.
 1. Since we started at the `documentRoot` level, the first thing we need to do is look for the artboards in the document. This line ensures that we only traverse down further if the current child `node` is an artboard.
-1. Once we've found an artboard, we look at its `.children` property, which is also a `SceneNodeList`. This `SceneNodeList will contain all of the elements we created earlier. We use the `SceneNodeList#filter` method to filter the artboard's children down to a `rectangles` array.
+1. Once we've found an artboard, we look at its `.children` property, which is also a `SceneNodeList`. This `SceneNodeList will contain all of the elements we created earlier. We use the `SceneNodeList#filter`method to filter the artboard's children down to a`rectangles` array.
 1. Finally, we iteracte over the `rectangles` array with `#forEach`, coloring each rectangle red as we go.
-
 
 ### 5. Run the plugin
 
@@ -163,23 +164,4 @@ Then, run the "Filter and Color" command:
 
 ![multiple texts, rectangles, and circles](../../images/filter-and-color.png)
 
-
 You've worked with a `SceneNodeList` to iterate through an artboard's contents and filter based on element type!
-
-
-## Next Steps
-
-Want to expand on what you learned here? Have a look at these references to see options for customizing this sample plugin:
-
-- [SceneNodeList](/reference/SceneNodeList/)
-- [SceneNode](/reference/scenegraph/#scenenode)
-- [Artboard](/reference/scenegraph/#artboard)
-- [Rectangle](/reference/scenegraph/#rectangle)
-- [Ellipse](/reference/scenegraph/#ellipse)
-- [Text](/reference/scenegraph/#text)
-- [Color](/reference/Color/)
-
-Ready to explore further? Take a look at our other resources:
-
-- [Tutorials](/tutorials/)
-- [Sample code repos](https://github.com/AdobeXD/plugin-samples)

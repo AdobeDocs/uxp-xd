@@ -1,8 +1,9 @@
 # How to export a rendition
+
 This sample describes how an XD plugin can invoke the default folder picker and generate a rendition of the selected artboard for export.
 
-
 ## Prerequisites
+
 - Basic knowledge of HTML, CSS, and JavaScript.
 - [Quick Start Tutorial](/tutorials/quick-start/)
 - [Debugging Tutorial](/tutorials/debugging/)
@@ -27,6 +28,7 @@ Replace the `uiEntryPoints` field of the manifest with the following:
     }
 ]
 ```
+
 If you're curious about what each entry means, [see the manifest documentation](/reference/structure/manifest/), where you can also learn about all manifest requirements for a plugin to be published in the XD Plugin Manager.
 
 Then, update your `main.js` file, mapping the manifest's `commandId` to a handler function.
@@ -35,15 +37,15 @@ Replace the content of your `main.js` file with the following code:
 
 ```js
 async function exportRendition(selection) {
-    if (selection.items.length > 0) {
-        // The body of this function is added later
-    }
+  if (selection.items.length > 0) {
+    // The body of this function is added later
+  }
 }
 
 module.exports = {
-    commands: {
-        exportRendition
-    }
+  commands: {
+    exportRendition,
+  },
 };
 ```
 
@@ -53,7 +55,6 @@ A couple of notes about the handler function shell above:
 1. Since this plugin will require user to select an object, we use an `if` statement to check if there is an XD object selected.
 
 The remaining steps in this tutorial describe additional edits to the `main.js` file.
-
 
 ### 2. Require in XD API dependencies
 
@@ -69,7 +70,6 @@ const fs = require("uxp").storage.localFileSystem;
 
 Now the `application` module and `localFileSystem` class are required in and ready to be used. These modules are required to invoke the folder picker and export renditions.
 
-
 ### 3. Invoke the folder picker
 
 Here, we'll use `uxp.storage.localFileSystem` (our `fs` constant) to invoke the folder picker:
@@ -81,7 +81,6 @@ const file = await folder.createFile("rendition.png");
 
 This will invoke the default folder picker for user to choose the save directory and create a file named `rendition.png`.
 
-
 ### 4. Define your rendition settings
 
 Next, we'll define the settings for our desired renditions.
@@ -91,12 +90,14 @@ Note the data structure in the code below: an array of objects (in this case, on
 Each of the numbered comments are explained below the code:
 
 ```js
-let renditionSettings = [{
-    node: selection.items[0],               // [1]
-    outputFile: file,                       // [2]
-    type: application.RenditionType.PNG,    // [3]
-    scale: 2                                // [4]
-}];
+let renditionSettings = [
+  {
+    node: selection.items[0], // [1]
+    outputFile: file, // [2]
+    type: application.RenditionType.PNG, // [3]
+    scale: 2, // [4]
+  },
+];
 ```
 
 1. `selection.items[0]` refers to the first user-selected item in the document
@@ -106,25 +107,28 @@ let renditionSettings = [{
 
 We'll use this data structure containing our settings in the next step.
 
-
 ### 5. Create renditions
 
 This is where we attempt to create the renditions:
 
 ```js
-application.createRenditions(renditionSettings)    // [1]
-    .then(results => {                             // [2]
-        console.log(`PNG rendition has been saved at ${results[0].outputFile.nativePath}`);
-    })
-    .catch(error => {                              // [3]
-        console.log(error);
-    });
+application
+  .createRenditions(renditionSettings) // [1]
+  .then((results) => {
+    // [2]
+    console.log(
+      `PNG rendition has been saved at ${results[0].outputFile.nativePath}`
+    );
+  })
+  .catch((error) => {
+    // [3]
+    console.log(error);
+  });
 ```
 
 1. The `application#createRenditions` method accepts as an argument the `renditionSettings` data structure that we created in step #4.
 2. `createRenditions` returns a Promise. We log success to the developer console.
 3. Any errors will land in `.catch`, which we also log to the developer console.
-
 
 ### 6. Run the plugin
 
@@ -134,20 +138,6 @@ You should see a folder picker like this one:
 
 ![System folder picker screen](../../images/export-rendition-pick-file.png)
 
-
 The rendition will be saved at the specified location.
 
 Open the developer console to see your success or error message from the previous step.
-
-
-## Next Steps
-
-Want to expand on what you learned here? Have a look at these references to see options for customizing this sample plugin:
-
-- [File I/O](/reference/uxp/storage-index/)
-- [Export Renditions](/reference/application/#applicationcreaterenditionsrenditions)
-
-Ready to explore further? Take a look at our other resources:
-
-- [Tutorials](/tutorials/)
-- [Sample code repos](https://github.com/AdobeXD/plugin-samples)
