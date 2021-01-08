@@ -35,13 +35,31 @@ With UXP, you can develop:
 
 <DiscoverBlock slots="heading, link, text"/>
 
-### Guides
+### Get started
+
+[Quick Start: Direct Action](/develop/tutorials/quick-start/)
+
+With this Quick Start, you'll get a solid grasp of how to create your own XD plugin.
 
 <DiscoverBlock slots="link, text"/>
 
+[Quick Start: Panel](/develop/tutorials/quick-start-panel/)
+
+Let’s walk through creating your first Adobe XD panel plugin together.
+
+<DiscoverBlock slots="link, text"/>
+
+[Quick Start: React](/develop/tutorials/quick-start-react/)
+
+UXP supports many popular JavaScript frameworks. Let's build a panel-based plugin with React.
+
+<DiscoverBlock slots="heading, link, text"/>
+
+### Guides
+
 [Designing plugins for XD](/design/)
 
-These guidelines will help you define the best user experience for your plugin. Based on your users workflow and the plugin action, different UX and UI patterns should be considered as you create a plugin.
+These guidelines will help you define the best user experience for your plugin.
 
 <DiscoverBlock slots="link, text"/>
 
