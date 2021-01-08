@@ -85,7 +85,7 @@ The APIs come in two parts: the methods and properties unique to Photoshop, and 
 
 <DiscoverBlock slots="link, text"/>
 
-[XD API](/reference/)
+[XD API](/develop/reference/xd-index)
 
 The API Reference for XD calls exposed through UXP.
 
