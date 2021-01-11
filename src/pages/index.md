@@ -69,7 +69,7 @@ A quick overview of **what you can build** and **how to get started**.
 
 <DiscoverBlock slots="link, text"/>
 
-[UXP Developer Tool](guides/uxp-developer-tool/)
+[UXP Developer Tool](/develop/guides/uxp-developer-tool/)
 
 The UXP Developer Tool is a GUI app that helps you create, debug, and distribute plugins. It's an essential part of any UXP plugin workflow.
 

@@ -8,7 +8,7 @@ Once you're done, you'll have a solid grasp of the steps to take when starting t
 
 - Basic knowledge of HTML, CSS, JavaScript, and React
 - A text editor to write your code in (like VSCode, Sublime Text, Brackets, Atom, etc)
-- [Quick Start tutorial](/tutorials/quick-start/index/)
+- [Quick Start tutorial](/develop/tutorials/quick-start/)
 - [node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/get-npm) installed
 
 ## Development Steps
@@ -123,7 +123,11 @@ All dependencies are installed and we are good to go!
 
 Now, let's create your plugin files. Open your favorite text editor and create the following files and folders (we'll add code to them in later steps):
 
+<<<<<<< HEAD
+- `manifest.json` is your plugin’s manifest. This file includes information about the plugin, such as its name, the menu item(s) it adds to XD, and so on. [Learn about the manifest here](/develop/reference/structure/manifest/).
+=======
 - `manifest.json` is your plugin’s manifest. This file includes information about the plugin, such as its name, the menu item(s) it adds to XD, and so on. [Learn about the manifest here](/develop/plugin-development/plugin-structure/manifest/).
+>>>>>>> main
 
 - `src` is your plugin's folder that contains all JavaScript files that are going to be compiled
   - `main.jsx` is the main file for the plugin
@@ -165,15 +169,19 @@ Be sure to replace the `id` value with the unique plugin ID you get from the Ado
 ```
 
 > **Info**
-> Make sure to read [Quick Start tutorial](/tutorials/quick-start/index/) to learn how to get your unique plugin ID from the Adobe Developer Console.
+> Make sure to read [Quick Start tutorial](/develop/tutorials/quick-start/) to learn how to get your unique plugin ID from the Adobe Developer Console.
 
+<<<<<<< HEAD
+If you're curious about what each entry in the manifest means, [see the manifest documentation](/develop/reference/structure/manifest/), where you can also learn about all manifest requirements for a plugin to be published in the XD Plugin Manager.
+=======
 If you're curious about what each entry in the manifest means, [see the manifest documentation](/develop/plugin-development/plugin-structure/manifest/), where you can also learn about all manifest requirements for a plugin to be published in the XD Plugin Manager.
+>>>>>>> main
 
 The value of the `commandId` property may be any string; in this case, it's `main`. In the next section, we will see how this string is associated with the code for our plugin.
 
 ### 4. Create your plugin’s code
 
-Next, we need to create the JavaScript code for our plugin. As noted in the [Quick Start tutorial](/tutorials/quick-start/index/), the code lives in a file named `main.js`. This file will be automatically created when Webpack compiles all JavaScript files in your `src` folder.
+Next, we need to create the JavaScript code for our plugin. As noted in the [Quick Start tutorial](/develop/tutorials/quick-start/), the code lives in a file named `main.js`. This file will be automatically created when Webpack compiles all JavaScript files in your `src` folder.
 
 In this tutorial, the `src` folder will contain the following:
 
@@ -287,7 +295,11 @@ module.exports = HelloForm;
 This code does the following:
 
 1.  Gets reference to `react` module installed in an earlier step
+<<<<<<< HEAD
+2.  Gets references to the `Text` and `Color` classes from XD’s `scenegraph` module. There are several different [API modules you can load using `require()`](/develop/reference/core/apis/).
+=======
 2.  Gets references to the `Text` and `Color` classes from XD’s `scenegraph` module. There are several different [API modules you can load using `require()`](/develop/plugin-development/xd-concepts/apis.html).
+>>>>>>> main
 3.  Creates a react component called `HelloForm`
 4.  Since you are going to initialize state and bind methods, implements a constructor for this React component and calls `super(props)` to use props passed down from the parent
 5.  Initializes a state property called `name` with an empty string
@@ -295,7 +307,7 @@ This code does the following:
 7.  `onDoneClick` is triggered after the submission happens and manipulates XD objects
 8.  Creates a reference to `selection` passed down as a prop
 9.  Creates a `Text` instance and sets the `text` value as the input stored in the `name` state
-10. Styles the text. More info on styling text can be found in [`how-to-style-text` tutorial](/tutorials/how-to-style-text)
+10. Styles the text. More info on styling text can be found in [`how-to-style-text` tutorial](/develop/tutorials/how-to-style-text)
 11. `addChild` method inserts the created text into the ideal insertion point determined by the `insertionParent` property of the `selection` object
 12. Moves the added text `100` pixels from the top and `100` pixels from the left of the insertion point
 13. Closes the dialog
