@@ -6,7 +6,7 @@ This tutorial describes how to package the files of an XD plugin. It's a simple 
 
 ## Prerequisite
 
-- A code-complete plugin (if you don't have one yet, try our [Quick Start Tutorial](/tutorials/quick-start))
+- A code-complete plugin (if you don't have one yet, try our [Quick Start Tutorial](/develop/tutorials/quick-start/))
 
 ## Workflow
 
@@ -38,9 +38,3 @@ If you plan to submit your plugin for distribution via the XD plugin manager, re
 Try double-clicking your .XDX file. When your OS prompts you to install the plugin, click "Install".
 
 You'll get a success message upon installation, after which the plugin will show up in XD.
-
-## Next steps
-
-You've packaged your plugin! Now you're ready to distribute your plugin.
-
-[Learn about your options for distributing XD plugins to users](/distribution/options.html).

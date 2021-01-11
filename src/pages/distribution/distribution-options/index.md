@@ -4,13 +4,13 @@ Once you have a packaged plugin, you're ready to distribute. You can make your p
 
 ## Prerequisite
 
-- [A packaged plugin](./packaging.md)
+- [A packaged plugin](/distribution/packaging-your-plugin/)
 
 ## The XD plugin manager
 
 The XD plugin manager lets users discover and install XD plugin right from within the app. Installation is as easy as a single click.
 
-To learn how to publish your plugin on the XD plugin manager, [see our publishing tutorial](./how-to-submit-to-plugin-manager.md).
+To learn how to publish your plugin on the XD plugin manager, [see our publishing tutorial](/distribution/submission-checklist/).
 
 ## Direct distribution
 

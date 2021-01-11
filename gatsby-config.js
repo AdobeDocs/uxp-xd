@@ -57,7 +57,7 @@ module.exports = {
       ...require("./summary.js"),
       {
         title: "UXP API",
-        path: "/uxp/reference-js/",
+        path: "/uxp/",
         header: true,
         pages: [
           {

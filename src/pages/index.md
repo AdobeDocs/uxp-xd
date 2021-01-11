@@ -69,12 +69,6 @@ A quick overview of **what you can build** and **how to get started**.
 
 <DiscoverBlock slots="link, text"/>
 
-[UXP Developer Tool](/develop/guides/uxp-developer-tool/)
-
-The UXP Developer Tool is a GUI app that helps you create, debug, and distribute plugins. It's an essential part of any UXP plugin workflow.
-
-<DiscoverBlock slots="link, text"/>
-
 [Sample Code](https://github.com/AdobeXD/plugin-samples)
 
 Want to jump right in building a plugin? Check out these code samples and make immediate progress.
