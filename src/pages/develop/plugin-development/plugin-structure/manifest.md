@@ -57,7 +57,7 @@ Key path | Type | Description | Required
 
 ## UI entry points
 
-The `uiEntryPoints` field is an _array_ of objects matching the MenuItemDefinition format specified below. These entries appear both in the _Plugins_ menu in the native menubar, and the "plugin launchpad" sidebar panel. See [Plugin menu structure](/reference/structure/menu-structure/) for details on how these entries are displayed.
+The `uiEntryPoints` field is an _array_ of objects matching the MenuItemDefinition format specified below. These entries appear both in the _Plugins_ menu in the native menubar, and the "plugin launchpad" sidebar panel. See [Plugin menu structure](/develop/plugin-development/plugin-structure/menu-structure/) for details on how these entries are displayed.
 
 Each entry point specifies either `commandId` _or_ `panelId`, to create either a direct-action command or a panel show/hide command.
 
@@ -67,8 +67,8 @@ Key | Type | Description
 ----|------|------------
 `type` | `string` | Entry point type: either `"menu"` or `"panel"`.
 `label` | `?string&#124;[LocaleMap](#menu-localization)` | _Required_ if multiple `MenuItemDefinition` objects defined; _ignored_ if only one defined.<br/><br/> Label for this menu item that the user will select to run your plugin. May be a single string _or_ a dictionary of localized strings. 
-`commandId` | `string` | Specify `commandId` to create a menu item that runs plugin code directly -- either a headless command, or a command with modal dialog UI. This identifier links the menu item to a [_handler function_](/reference/structure/handlers/#command) in your plugin's JavaScript code. This identifier needs to be unique within your plugin. Don't specify `commandId` and `panelId` at the same time.
-`panelId` | `string` | Specify `panelId` to create a menu item that opens panel UI for your plugin. This identifier links the menu item to a [_panel definition object_](/reference/structure/handlers/#panel) in your plugin's JavaScript code. This identifier needs to be unique within your plugin. Don't specify `commandId` and `panelId` at the same time.
+`commandId` | `string` | Specify `commandId` to create a menu item that runs plugin code directly -- either a headless command, or a command with modal dialog UI. This identifier links the menu item to a [_handler function_](/develop/plugin-development/plugin-structure/handlers/#command) in your plugin's JavaScript code. This identifier needs to be unique within your plugin. Don't specify `commandId` and `panelId` at the same time.
+`panelId` | `string` | Specify `panelId` to create a menu item that opens panel UI for your plugin. This identifier links the menu item to a [_panel definition object_](/develop/plugin-development/plugin-structure/handlers/#panel) in your plugin's JavaScript code. This identifier needs to be unique within your plugin. Don't specify `commandId` and `panelId` at the same time.
 `shortcut` | `Object` | _Optional._ Object defining Mac and Windows keyboard shortcuts for this menu item. See "Keyboard shortcuts" below for details.
 
 ### Keyboard shortcuts

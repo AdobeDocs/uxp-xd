@@ -4,9 +4,9 @@ The `application` module exposes APIs for exporting content, initiating edits fr
 
 ### _application.editDocument(options, editFunction) | (editFunction)_
 
-Call `editDocument()` from a **plugin panel UI** event listener to initiate an [edit operation](/reference/core/lifecycle/#edit-operations) batch in order to modify the XD document. This API is irrelevant for plugin menu item commands, which are wrapped in an edit batch automatically.
+Call `editDocument()` from a **plugin panel UI** event listener to initiate an [edit operation](/develop/plugin-development/xd-concepts/lifecycle/#edit-operations) batch in order to modify the XD document. This API is irrelevant for plugin menu item commands, which are wrapped in an edit batch automatically.
 
-XD calls the `editFunction()` synchronously (before `editDocument()` returns). This function is treated the same as a [menu command handler](/reference/structure/handlers/#command):
+XD calls the `editFunction()` synchronously (before `editDocument()` returns). This function is treated the same as a [menu command handler](/develop/plugin-development/plugin-structure/handlers/#command):
 
 - It is passed two arguments, the selection and the root node of the scenegraph
 - It can return a Promise to extend the duration of the edit asynchronously
@@ -46,7 +46,7 @@ panelButton.addEventListener("click", (event) => {
 ```
 
 > **Info**
-> For comparison, plugin [menu command handlers](/reference/structure/handlers/#command) are effectively run as if they were passed to `editDocument()` with `editLabel` set to the menu item's label and `mergeId` set to null.
+> For comparison, plugin [menu command handlers](/develop/plugin-development/plugin-structure/handlers/#command) are effectively run as if they were passed to `editDocument()` with `editLabel` set to the menu item's label and `mergeId` set to null.
 
 ---
 
@@ -165,7 +165,7 @@ console.log("OS locale:", application.systemLocale); // e.g. "en_US"
 Information about the document which this instance of the plugin is attached to.
 
 > **Tip** > _This does **not** indicate the frontmost "active" document window in the XD application._
-> In XD, each document window [loads a separate copy of your plugin](/reference/core/lifecycle/#plugin-loading). When a given instance of your plugin calls this API, you will always receive information about the document that this instance of the plugin is attached to, even if it's not the active window.
+> In XD, each document window [loads a separate copy of your plugin](/develop/plugin-development/xd-concepts/lifecycle/#plugin-loading). When a given instance of your plugin calls this API, you will always receive information about the document that this instance of the plugin is attached to, even if it's not the active window.
 
 **Kind**: static property of [`application`](#module_application)  
 **Read only**: true

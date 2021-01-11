@@ -34,7 +34,7 @@ Replace the `uiEntryPoints` field of the manifest with the following:
 ]
 ```
 
-If you're curious about what each entry means, [see the manifest documentation](/reference/structure/manifest/), where you can also learn about all manifest requirements for a plugin to be published in the XD Plugin Manager.
+If you're curious about what each entry means, [see the manifest documentation](/develop/plugin-development/plugin-structure/manifest/), where you can also learn about all manifest requirements for a plugin to be published in the XD Plugin Manager.
 
 Then, update your `main.js` file, mapping _both_ of the manifest's `commandId` to their respective handler functions.
 
@@ -57,7 +57,7 @@ module.exports = {
 };
 ```
 
-Note the different use of [contextual arguments](/reference/structure/handlers/#contextual-arguments) in each function: the first function only makes use of `selection`, which the second makes use of both `selection` and `documentRoot`. We'll look at why `documentRoot` is used in a later step.
+Note the different use of [contextual arguments](/develop/plugin-development/plugin-structure/handlers/#contextual-arguments) in each function: the first function only makes use of `selection`, which the second makes use of both `selection` and `documentRoot`. We'll look at why `documentRoot` is used in a later step.
 
 The remaining steps in this tutorial describe additional edits to the `main.js` file.
 
@@ -120,7 +120,7 @@ So let's take a look at working with a `SceneNodeList`!
 
 The function we create in this step will filter all content on the artboard for rectangles, and then color only the rectangles red.
 
-Recall that in the first step, we made a note of [contextual arguments in command handlers](/reference/structure/handlers/#contextual-arguments), and particularly that this `filterAndColor` function makes use of the second `documentRoot` argument.
+Recall that in the first step, we made a note of [contextual arguments in command handlers](/develop/plugin-development/plugin-structure/handlers/#contextual-arguments), and particularly that this `filterAndColor` function makes use of the second `documentRoot` argument.
 
 Like any [`SceneNode`](/reference/scenegraph/#scenenode), `documentRoot` has a `.children` property that returns a `SceneNodeList`.
 

@@ -21,7 +21,7 @@ Example:
 let req = new XMLHttpRequest();
 ```
 
-APIs that are specific to XD are reachable via [the `require` method](/reference/javascript/javascript-support.html#can-i-use-require). Examples include `scenegraph`, `application`, `uxp`, and more.
+APIs that are specific to XD are reachable via [the `require` method](/develop/plugin-development/javascript-and-xd/javascript-support.html#can-i-use-require). Examples include `scenegraph`, `application`, `uxp`, and more.
 
 Example:
 

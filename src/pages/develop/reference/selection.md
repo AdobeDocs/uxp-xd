@@ -8,7 +8,7 @@ Group nodes, or half the selection could be inside a Group and half inside its p
 multiple different artboards along with items on the pasteboard (immediate children of the root node).
 
 Your plugin can only modify nodes in the "neighborhood" of the user's selection, a subset of the scenegraph tree called the
-**_[edit context](/reference/core/edit-context/)_**. You can only set the selection to other nodes within the edit context.
+**_[edit context](/develop/plugin-development/xd-concepts/edit-context/)_**. You can only set the selection to other nodes within the edit context.
 The edit context does not update to reflect any changes to the selection until after a plugin operation completes.
 
 **Other restrictions on selection**
@@ -54,7 +54,7 @@ If the user selected by other means, e.g. dragging a marquee, the order has no m
 Returns a fresh array each time, so modifying the array returned by the getter does not change the selection -- only invoking
 the 'items' setter changes selection.
 
-The selection can only contain items which are in the current _[edit context](/reference/core/edit-context/)._
+The selection can only contain items which are in the current _[edit context](/develop/plugin-development/xd-concepts/edit-context/)._
 
 **Kind**: instance property of [`selection`](#selection)  
 **Example**
@@ -106,7 +106,7 @@ True if the selection isn’t empty and consists of one or more Artboards. Never
 The preferred parent to insert newly added content into. Takes into account the current edit context as well as the "focused artboard" if in the root context.
 Typically this is the same parent where, for example, XD's shape drawing tools would add items.
 
-_Selected items are not necessarily all immediate children of the `insertionParent`._ They can be anywhere within the [edit context's](/reference/core/edit-context/) scope.
+_Selected items are not necessarily all immediate children of the `insertionParent`._ They can be anywhere within the [edit context's](/develop/plugin-development/xd-concepts/edit-context/) scope.
 
 **Kind**: instance property of [`selection`](#selection)  
 **Read only**: true
@@ -120,7 +120,7 @@ The artboard the user is currently most focused on (via recent selection or edit
 
 ### selection.editContext : `\![SceneNode](scenegraph/#SceneNode)`
 
-The common ancestor node of all selected items - also the root node of the subtree containing the "[edit context](/reference/core/edit-context/),"
+The common ancestor node of all selected items - also the root node of the subtree containing the "[edit context](/develop/plugin-development/xd-concepts/edit-context/),"
 which is the scope in which selection and edit operations must occur for the current plugin command. The scope does not
 necessarily cover the entire subtree rooted at the editContext root node -- it may only cover a subset of this tree. See
 edit context documentation page for more details.
