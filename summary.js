@@ -448,11 +448,19 @@ module.exports = [
     header: true,
     pages: [
       {
+        title: "Packaging Your Plugin",
+        path: "/distribution/packaging-your-plugin/",
+      },
+      {
         title: "Distribution Options",
         path: "/distribution/distribution-options/",
       },
       {
-        title: "Marketing",
+        title: "Submission and Review",
+        path: "/distribution/submission-checklist/",
+      },
+      {
+        title: "Marketing Your Plugin",
         path: "/distribution/marketing/",
       },
     ],

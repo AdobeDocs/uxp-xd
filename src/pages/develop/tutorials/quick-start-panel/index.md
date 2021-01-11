@@ -45,21 +45,13 @@ Now, let's create your plugin files. Open your favorite text editor and create t
 
 This file includes information about the plugin, such as its name, the menu item(s) it adds to XD, and so on.
 
-<<<<<<< HEAD
-[Learn about the manifest here](/develop/reference/structure/manifest/).
-=======
 [Learn about the manifest here](/develop/plugin-development/plugin-structure/manifest/).
->>>>>>> main
 
 2.  `main.js`
 
 This file contains your JavaScript code that implements your plugin's functionality.
 
-<<<<<<< HEAD
-[Learn more about `main.js` here](/develop/reference/structure/handlers/).
-=======
 [Learn more about `main.js` here](/develop/plugin-development/plugin-structure/handlers/).
->>>>>>> main
 
 These two files go into your plugin's parent directory. When you have the right structure, it will look like this:
 
@@ -105,11 +97,7 @@ Be sure to replace the `id` value with the unique plugin ID you got from the Ado
 "id": "1234ABCD",
 ```
 
-<<<<<<< HEAD
-If you're curious about what each entry means, [see the manifest documentation](/develop/reference/structure/manifest/), where you can also learn about all manifest requirements for a plugin to be published in the XD Plugin Manager.
-=======
 If you're curious about what each entry means, [see the manifest documentation](/develop/plugin-development/plugin-structure/manifest/), where you can also learn about all manifest requirements for a plugin to be published in the XD Plugin Manager.
->>>>>>> main
 
 The value of the `panelId` property may be any string; in this case, it's `enlargeRectangle`. In the next section, we will see how this string is associated with the code for our plugin.
 
