@@ -1,11 +1,11 @@
 # Panel update() callback
 
-The `update()` function is an _optional_ lifecycle method in [panel objects](/reference/structure/handlers/#panel). XD calls `update()` whenever your panel UI content should be refreshed:
+The `update()` function is an _optional_ lifecycle method in [panel objects](/develop/plugin-development/plugin-structure/handlers/#panel). XD calls `update()` whenever your panel UI content should be refreshed:
 * When the user changes the selection
 * When the user modifies a node within the current selection. This can include actions such as move, resize, changing fill color, etc.
 * When your panel is reopened after having been closed
 
-The `update` function receives [`selection` and `root` arguments](/reference/structure/handlers/#contextual-arguments):
+The `update` function receives [`selection` and `root` arguments](/develop/plugin-development/plugin-structure/handlers/#contextual-arguments):
 
 ```js
 function update(selection, root) {

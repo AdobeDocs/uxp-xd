@@ -1,49 +1,7 @@
 module.exports = [
   {
-    "title": "Community",
-    "path": "/community/"
-  },
-  {
-    "title": "Design",
-    "path": "/design/",
-    "header": true,
-    "pages": [
-      {
-        "title": "User Interface",
-        "path": "/design/user-interface/"
-      },
-      {
-        "title": "UX Patterns",
-        "path": "/design/ux-patterns/",
-        "header": true,
-        "pages": [
-          {
-            "path": "/design/ux-patterns/branding/",
-            "title": "Branding"
-          },
-          {
-            "path": "/design/ux-patterns/messaging/",
-            "title": "Messaging"
-          },
-          {
-            "path": "/design/ux-patterns/modal-ux/",
-            "title": "Modal UX"
-          },
-          {
-            "path": "/design/ux-patterns/navigation/",
-            "title": "Navigation"
-          },
-          {
-            "path": "/design/ux-patterns/onboarding/",
-            "title": "Onboarding"
-          },
-          {
-            "path": "/design/ux-patterns/panel-ux/",
-            "title": "Panel UX"
-          }
-        ]
-      }
-    ]
+    "title": "Overview",
+    "path": "/overview/"
   },
   {
     "title": "Develop",
@@ -53,6 +11,125 @@ module.exports = [
       {
         "title": "Overview",
         "path": "/develop/",
+      },
+      {
+        "title": "Plugin Development",
+        "path": "/develop/plugin-development/",
+        "header": true,
+        pages: [
+          {
+            "title": "Plugin Structure",
+            "path": "/develop/plugin-development/plugin-structure/",
+            "header": true,
+            "pages": [
+              {
+                "path": "/develop/plugin-development/plugin-structure/location/",
+                "title": "Location"
+              },
+              {
+                "path": "/develop/plugin-development/plugin-structure/folder-structure/",
+                "title": "Folder Structure"
+              },
+              {
+                "path": "/develop/plugin-development/plugin-structure/manifest/",
+                "title": "Manifest"
+              },
+              {
+                "path": "/develop/plugin-development/plugin-structure/handlers/",
+                "title": "Handlers"
+              },
+              {
+                "path": "/develop/plugin-development/plugin-structure/menu-structure/",
+                "title": "Menu Structure"
+              }
+            ]
+          },
+          {
+            "title": "JavaScript and XD",
+            "path": "/develop/plugin-development/javascript-and-xd/",
+            "header": true,
+            "pages": [
+              {
+                "path": "/develop/plugin-development/javascript-and-xd/environment/",
+                "title": "Environment"
+              },
+              {
+                "path": "/develop/plugin-development/javascript-and-xd/javascript-support/",
+                "title": " JavaScript Support"
+              },
+              {
+                "path": "/develop/plugin-development/javascript-and-xd/sync-async/",
+                "title": "Sync Async"
+              }
+            ]
+          },
+          {
+            "title": "XD Concepts",
+            "path": "/develop/plugin-development/xd-concepts/",
+            "header": true,
+            "pages": [
+              {
+                "path": "/develop/plugin-development/xd-concepts/lifecycle/",
+                "title": "Lifecycle"
+              },
+              {
+                "path": "/develop/plugin-development/xd-concepts/scenegraph/",
+                "title": "Scenegraph"
+              },
+              {
+                "path": "/develop/plugin-development/xd-concepts/edit-context/",
+                "title": "Edit Context"
+              },
+              {
+                "path": "/develop/plugin-development/xd-concepts/properties-with-object-values/",
+                "title": "Properties With Object Values"
+              },
+              {
+                "path": "/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/",
+                "title": "Coordinate Spaces And Units"
+              },
+              {
+                "path": "/develop/plugin-development/xd-concepts/automatic-cleanups/",
+                "title": "Automatic Cleanups"
+              },
+              {
+                "path": "/develop/plugin-development/xd-concepts/apis/",
+                "title": "Apis"
+              },
+            ]
+          },
+          {
+            "title": "Best Practices",
+            "path": "/develop/plugin-development/devbestpractices/",
+            "header": true,
+            "pages": [
+              {
+                "path": "/develop/plugin-development/devbestpractices/intro/",
+                "title": "Introduction"
+              },
+              {
+                "path": "/develop/plugin-development/devbestpractices/1-performance/",
+                "title": "Performance"
+              },
+              {
+                "path": "/develop/plugin-development/devbestpractices/2-scenegraph/",
+                "title": "Scenegraph"
+              },
+              {
+                "path": "/develop/plugin-development/devbestpractices/3-network-io/",
+                "title": "Network IO"
+              },
+              {
+                "path": "/develop/plugin-development/devbestpractices/4-file-io/",
+                "title": "File IO"
+              },
+              {
+                "path": "/develop/plugin-development/devbestpractices/5-ui/",
+                "title": "User Interface"
+              },
+            ]
+          },
+        ]
       },
       {
         "title": "Tutorials",
@@ -117,7 +194,7 @@ module.exports = [
           },
         ]
       },
-      {
+      /*{
         "title": "Guides",
         "path": "/develop/guides/",
         "header": true,
@@ -130,7 +207,7 @@ module.exports = [
             "title": "UXP Developer Tool",
             "path": "/develop/guides/uxp-developer-tool/"
           },
-          /*{
+          {
             "title": "UXP Misc",
             "path": "/develop/guides/uxp-misc/",
             "header": true,
@@ -164,40 +241,9 @@ module.exports = [
                 "path": "/develop/guides/uxp-misc/spectrum-css/"
               }
             ]
-          }*/
+          }
         ]
-      },
-      {
-        "title": "Best Practices",
-        "path": "/develop/devbestpractices/",
-        "header": true,
-        "pages": [
-          {
-            "path": "/develop/devbestpractices/intro/",
-            "title": "Introduction"
-          },
-          {
-            "path": "/develop/devbestpractices/1-performance/",
-            "title": "Performance"
-          },
-          {
-            "path": "/develop/devbestpractices/2-scenegraph/",
-            "title": "Scenegraph"
-          },
-          {
-            "path": "/develop/devbestpractices/3-network-io/",
-            "title": "Network IO"
-          },
-          {
-            "path": "/develop/devbestpractices/4-file-io/",
-            "title": "File IO"
-          },
-          {
-            "path": "/develop/devbestpractices/5-ui/",
-            "title": "User Interface"
-          },
-        ]
-      },
+      },*/
       {
         "title": "Reference",
         "path": "/develop/reference/",
@@ -256,62 +302,8 @@ module.exports = [
             "title": "Commands"
           },
           {
-            "title": "Core",
-            "path": "/develop/reference/core/",
-            "header": true,
-            "pages": [
-              {
-                "path": "/develop/reference/core/apis/",
-                "title": "Apis"
-              },
-              {
-                "path": "/develop/reference/core/automatic-cleanups/",
-                "title": "Automatic Cleanups"
-              },
-              {
-                "path": "/develop/reference/core/coordinate-spaces-and-units/",
-                "title": "Coordinate Spaces And Units"
-              },
-              {
-                "path": "/develop/reference/core/edit-context/",
-                "title": "Edit Context"
-              },
-              {
-                "path": "/develop/reference/core/lifecycle/",
-                "title": "Lifecycle"
-              },
-              {
-                "path": "/develop/reference/core/properties-with-object-values/",
-                "title": "Properties With Object Values"
-              },
-              {
-                "path": "/develop/reference/core/scenegraph/",
-                "title": "Scenegraph"
-              }
-            ]
-          },
-          {
             "path": "/develop/reference/interactions/",
             "title": "Interactions"
-          },
-          {
-            "title": "JavaScript",
-            "path": "/develop/reference/javascript/",
-            "header": true,
-            "pages": [
-              {
-                "path": "/develop/reference/javascript/environment/",
-                "title": "Environment"
-              },
-              {
-                "path": "/develop/reference/javascript/javascript-support/",
-                "title": " JavaScript Support"
-              },
-              {
-                "path": "/develop/reference/javascript/sync-async/",
-                "title": "Sync Async"
-              }
-            ]
           },
           {
             "path": "/develop/reference/scenegraph/",
@@ -321,34 +313,7 @@ module.exports = [
             "path": "/develop/reference/selection/",
             "title": "Selection"
           },
-          {
-            "title": "Structure",
-            "path": "/develop/reference/structure/",
-            "header": true,
-            "pages": [
-              {
-                "path": "/develop/reference/structure/folder-structure/",
-                "title": "Folder Structure"
-              },
-              {
-                "path": "/develop/reference/structure/handlers/",
-                "title": "Handlers"
-              },
-              {
-                "path": "/develop/reference/structure/location/",
-                "title": "Location"
-              },
-              {
-                "path": "/develop/reference/structure/manifest/",
-                "title": "Manifest"
-              },
-              {
-                "path": "/develop/reference/structure/menu-structure/",
-                "title": "Menu Structure"
-              }
-            ]
-          },
-          {
+          /*{
             "title": "UI",
             "path": "/develop/reference/ui/",
             "header": true,
@@ -388,7 +353,7 @@ module.exports = [
                 ]
               }
             ]
-          },
+          },*/
           {
             "path": "/develop/reference/viewport/",
             "title": "Viewport"
@@ -401,7 +366,7 @@ module.exports = [
       },
     ]
   },
-  {
+  /*{
     "title": "Developer Tool",
     "path": "/devtool/",
     "header": true,
@@ -421,6 +386,48 @@ module.exports = [
       {
         "path": "/devtool/working-with-react/",
         "title": "Working With React"
+      }
+    ]
+  },*/
+  {
+    "title": "Design",
+    "path": "/design/",
+    "header": true,
+    "pages": [
+      {
+        "title": "User Interface",
+        "path": "/design/user-interface/"
+      },
+      {
+        "title": "UX Patterns",
+        "path": "/design/ux-patterns/",
+        "header": true,
+        "pages": [
+          {
+            "path": "/design/ux-patterns/branding/",
+            "title": "Branding"
+          },
+          {
+            "path": "/design/ux-patterns/messaging/",
+            "title": "Messaging"
+          },
+          {
+            "path": "/design/ux-patterns/modal-ux/",
+            "title": "Modal UX"
+          },
+          {
+            "path": "/design/ux-patterns/navigation/",
+            "title": "Navigation"
+          },
+          {
+            "path": "/design/ux-patterns/onboarding/",
+            "title": "Onboarding"
+          },
+          {
+            "path": "/design/ux-patterns/panel-ux/",
+            "title": "Panel UX"
+          }
+        ]
       }
     ]
   },
@@ -448,11 +455,7 @@ module.exports = [
     ]
   },
   {
-    "title": "Overview",
-    "path": "/overview/"
+    "title": "Community",
+    "path": "/community/"
   },
-  {
-    "title": "Plugin Development Guidelines",
-    "path": "/plugin-development-guidelines/"
-  }
 ]

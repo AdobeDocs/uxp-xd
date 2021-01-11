@@ -29,7 +29,7 @@ Replace the `uiEntryPoints` field of the manifest with the following:
 ]
 ```
 
-If you're curious about what each entry means, [see the manifest documentation](/reference/structure/manifest/), where you can also learn about all manifest requirements for a plugin to be published in the XD Plugin Manager.
+If you're curious about what each entry means, [see the manifest documentation](/develop/plugin-development/plugin-structure/manifest/), where you can also learn about all manifest requirements for a plugin to be published in the XD Plugin Manager.
 
 Then, update your `main.js` file, mapping the manifest's `commandId` to a handler function.
 

@@ -1,6 +1,6 @@
 # The `main.js` file
 
-Every _UI entry point_ you declare in [`manifest.json`](/reference/structure/manifest/) must be fulfilled by a definition exported from your `main.js` module.
+Every _UI entry point_ you declare in [`manifest.json`](/develop/plugin-development/plugin-structure/manifest/) must be fulfilled by a definition exported from your `main.js` module.
 
 _Exporting_ happens by setting the value of `module.exports`:
 
@@ -52,7 +52,7 @@ Notice how the exported map object makes the connection from manifest to code:
 1. The `commandId` from the manifest, `helloCommand`, is the _key_
 2. The handler function, `sayHello`, is the _value_ that the key maps to
 
-The handler is called each time the command is invoked, and XD passes it [two arguments providing useful context](#contextual-arguments). Your handler function can [show UI in a dialog box](/reference/ui/dialogs/) and/or [edit the XD document](/reference/core/lifecycle/#edit-operations).
+The handler is called each time the command is invoked, and XD passes it [two arguments providing useful context](#contextual-arguments). Your handler function can [show UI in a dialog box](/reference/ui/dialogs/) and/or [edit the XD document](/develop/plugin-development/xd-concepts/lifecycle/#edit-operations).
 
 
 <a name="panel"></a>
@@ -114,7 +114,7 @@ The panel object implements this interface:
 
 - [`update` (optional)](/reference/ui/panels/update/): called whenever panel UI content should be updated. This includes when the panel is is shown, when the selection changes, or when the selected objects are mutated (move, resize, fill color change, etc.). This function should execute quickly since it's triggered for essentially every user action in XD while your panel is open. XD passes `update()` [two arguments providing useful context](#contextual-arguments).
 
-Typically, you'll attach UI event listeners to the DOM nodes in your panel, and these event listeners may [edit the XD document using an `application.editDocument()` operation](/reference/core/lifecycle/#edit-operations).
+Typically, you'll attach UI event listeners to the DOM nodes in your panel, and these event listeners may [edit the XD document using an `application.editDocument()` operation](/develop/plugin-development/xd-concepts/lifecycle/#edit-operations).
 
 
 ## Contextual arguments
@@ -129,4 +129,4 @@ The argument names `selection` and `documentRoot` seen in the code samples above
 
 ## Accessing app APIs
 
-XD calls _into_ your plugin code via the above exports. To call into XD's APIs from your plugin code, see [Accessing APIs](/reference/core/apis/).
+XD calls _into_ your plugin code via the above exports. To call into XD's APIs from your plugin code, see [Accessing APIs](/develop/plugin-development/xd-concepts/apis/).

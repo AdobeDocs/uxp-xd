@@ -29,7 +29,7 @@ Replace the `uiEntryPoints` field of the manifest with the following:
 ]
 ```
 
-If you're curious about what each entry means, [see the manifest documentation](/reference/structure/manifest/), where you can also learn about all manifest requirements for a plugin to be published in the XD Plugin Manager.
+If you're curious about what each entry means, [see the manifest documentation](/develop/plugin-development/plugin-structure/manifest/), where you can also learn about all manifest requirements for a plugin to be published in the XD Plugin Manager.
 
 Then, update your `main.js` file, mapping the manifest's `commandId` to a handler function.
 
@@ -92,7 +92,7 @@ async function insertTextFromFileHandler(selection) {
 }
 ```
 
-1. This example uses XD's asynchronous Filo I/O APIs, so the handler function must be declared as an async method. To learn more about async support in XD plugin APIs, see [our document on sync and async support](/reference/javascript/sync-async/).
+1. This example uses XD's asynchronous Filo I/O APIs, so the handler function must be declared as an async method. To learn more about async support in XD plugin APIs, see [our document on sync and async support](/develop/plugin-development/javascript-and-xd/sync-async/).
 2. A file picker dialog is displayed, and the function waits for the user to select a text file. The selected file is assigned to `aFile`. The `#getFileForOpening` method is asynchronous, so the `await` keyword is used.
 3. If `aFile` is undefined (because the user did not select a file), then plugin exits.
 4. The contents of the file is read in, and returned as a string. See below for more detail. The `#read` method is asynchronous, so the `await` keyword is used.

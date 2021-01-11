@@ -1,6 +1,6 @@
 # Plugin menu structure
 
-In your [manifest.json](/reference/structure/manifest/), The `uiEntryPoints` field is an array of objects including all UI entry points your plugin has available. All entries listed in this array appear both in the Plugins menu in the native menubar and the "plugin launchpad" sidebar panel. Let's learn how these items appear in XD.
+In your [manifest.json](/develop/plugin-development/plugin-structure/manifest/), The `uiEntryPoints` field is an array of objects including all UI entry points your plugin has available. All entries listed in this array appear both in the Plugins menu in the native menubar and the "plugin launchpad" sidebar panel. Let's learn how these items appear in XD.
 
 ## Top level name
 

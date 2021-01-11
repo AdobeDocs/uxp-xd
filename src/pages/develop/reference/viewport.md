@@ -88,7 +88,7 @@ The region can be defined by passing a SceneNode, or by explicitly specifying a 
 
 ### _viewport.bounds : `!{x:number, y:number, width:number, height:number}`_
 
-The current viewport bounds expressed in [global coordinates](/reference/core/coordinate-spaces-and-units/).
+The current viewport bounds expressed in [global coordinates](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/).
 
 **Kind**: static property of [`viewport`](#module_viewport)
 **Read only**: true

@@ -20,11 +20,11 @@ Several different situations can cause code in your plugin to get executed:
 * When loading, any "top-level" code in each module (JS file) is executed immediately. You can't edit the document or show UI at this point. Only perform tasks that are absolutely necessary for basic loading and initialization -- defer as much as possible until later, when the user invokes your plugin for the first time.
 
 ##### Direct-action menu commands
-* Invocation -- Each time one of your plugin's menu commands is invoked, XD calls your [_command handler function_ for the relevant `commandId`](/reference/structure/handlers/#command). Your command handler can edit the document or open a dialog box; if you return a Promise, these privileges extend until the Promise completes. See ["Edit operations"](#edit-operations) for details.
+* Invocation -- Each time one of your plugin's menu commands is invoked, XD calls your [_command handler function_ for the relevant `commandId`](/develop/plugin-development/plugin-structure/handlers/#command). Your command handler can edit the document or open a dialog box; if you return a Promise, these privileges extend until the Promise completes. See ["Edit operations"](#edit-operations) for details.
 * Dialog box DOM events -- Since dialogs are typically open during an [edit operation](#edit-operations), this event handler code can edit the document too.
 
 ##### Panel UI
-* Panel lifecycle callbacks -- XD invokes your plugin's [panel callbacks](/reference/structure/handlers/#panel) when a panel is shown, hidden, or needs updating. These callbacks can update the UI only; you cannot edit the document.
+* Panel lifecycle callbacks -- XD invokes your plugin's [panel callbacks](/develop/plugin-development/plugin-structure/handlers/#panel) when a panel is shown, hidden, or needs updating. These callbacks can update the UI only; you cannot edit the document.
 * Panel UI DOM events -- Most UI events in panels allow you to edit the document, but you must [initiate an edit operation _explicitly_](#initiating-an-edit-operation-from-panel-ui).
 
 ##### Network responses and timers
@@ -43,7 +43,7 @@ Edit operations can only occur via user-initiated actions in your plugin: invoki
 
 #### Edit operation duration
 * An edit operation begins when:
-    * a) Your plugin's menu [command handler](/reference/structure/handlers/#command) is called (this is automatically wrapped in an edit operation)
+    * a) Your plugin's menu [command handler](/develop/plugin-development/plugin-structure/handlers/#command) is called (this is automatically wrapped in an edit operation)
     * a) Your plugin's panel UI code explicitly [calls `application.editDocument()`](#initiating-an-edit-operation-from-panel-ui)
 * If the edit code returns synchronously, the edit operation is done as soon as it returns.
 * If the edit code returns a Promise, the edit operation continues asynchronously until the Promise completes. _The user can't do anything else in XD_ until the operation completes, so normally you'd only return a Promise if your plugin has a dialog box open that the user is interacting with or that is showing a progress indicator.
