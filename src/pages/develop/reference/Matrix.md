@@ -161,7 +161,7 @@ Returns x & y coordinates of the given point after transformation described by t
 
 Transforms a rectangle using this matrix, returning the _axis-aligned_ bounds of the resulting rectangle. If this matrix has
 rotation, then the result will have different width & height from the original rectangle, due to axis alignment. See
-["Coordinate Spaces"](/reference/core/coordinate-spaces-and-units/) for some illustrations of this.
+["Coordinate Spaces"](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/) for some illustrations of this.
 
 **Kind**: instance method of [`Matrix`](#Matrix)  
 **Returns**: `!{x:number, y:number, width:number, height:number}`

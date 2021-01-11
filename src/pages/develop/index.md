@@ -18,18 +18,23 @@ The XD plugin APIs enable you to build plugins for a number of use cases, to hel
 
 1. **The plugin workflow** - Identify the user stories for your plugin
 2. **Key plugin action** - What are the key interactions for you plugin that would be valuable to your users
-3. **Entry point and UI for your plugin in XD** - consider the users intention in XD when interacting with your plugin
+3. **Entry point and UI for your plugin in XD** - consider the user's intention in XD when interacting with your plugin
 
-### Users workflow in XD
+### User's workflow in XD
 
-![Example of a users workflow with plugins](../images/users_workflow_plugins.png)
+![Example of a user's workflow with plugins](../images/users_workflow_plugins.png)
 
 ## Getting Started
 
-There are lots of ways to journey through the documentation on your way to building the next great XD plugin. If you're just getting started, we recommend following the left-hand navigation on this site from top to bottom (or until you're ready to plot your own course!).
+There are lots of ways to journey through the documentation on your way to building the next great XD plugin. If you're just getting started, we recommend following the left-hand navigation on this site from top to bottom (or until you're ready to plot your own course!), and then proceed through the top-level navigation from left to right.
 
 Here are some highlights you won't want to miss:
 
 1. **Get Started**: To begin, try our [Quick Start tutorial](/develop/tutorials/quick-start/), then follow along with [the API feature tutorials](/develop/tutorials/).
+<<<<<<< HEAD
 1. **Go deep**: Learn more about how to build an XD plugin by reading [the plugin development 101](/plugin-development-guidelines/) and then dig into the [API reference](/develop/reference/).
 1. **See code**: If you prefer to learn from working code, we have a [samples repo on GitHub](https://github.com/AdobeXD/Plugin-Samples) for you to take a look at.
+=======
+1. **Go deep**: Learn more about how to build an XD plugin by reading [the plugin development 101](/develop/plugin-development/) and then dig into the [API reference](/develop/reference/).
+1. **See code**: If you prefer to learn from working code, we have a [samples repo on GitHub](https://github.com/AdobeXD/Plugin-Samples) for you to take a look at.
+>>>>>>> main

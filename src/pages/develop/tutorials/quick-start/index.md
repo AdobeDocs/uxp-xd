@@ -51,7 +51,7 @@ This file includes information about the plugin, such as its name, the menu item
 
 This file contains your JavaScript code that implements your plugin's functionality.
 
-[Learn more about `main.js` here](/develop/reference/structure/handlers/).
+[Learn more about `main.js` here](/develop/plugin-development/plugin-structure/handlers/).
 
 These two files go into your plugin's parent directory. When you have the right structure, it will look like this:
 
@@ -99,7 +99,7 @@ Be sure to replace the `id` value with the unique plugin ID you got from the Ado
 "id": "1234ABCD",
 ```
 
-If you're curious about what each entry means, [see the manifest documentation](/develop/reference/structure/manifest/), where you can also learn about all manifest requirements for a plugin to be published in the XD Plugin Manager.
+If you're curious about what each entry means, [see the manifest documentation](/develop/plugin-development/plugin-structure/manifest/), where you can also learn about all manifest requirements for a plugin to be published in the XD Plugin Manager.
 
 The value of the `commandId` property may be any string; in this case, it's `createRectangle`. In the next section, we will see how this string is associated with the code for our plugin.
 
@@ -137,7 +137,7 @@ module.exports = {
 
 This code does the following:
 
-1.  Gets references to the `Rectangle` and `Color` classes from XD’s `scenegraph` module. There are several different [API modules you can load using `require()`](/develop/reference/core/apis/).
+1.  Gets references to the `Rectangle` and `Color` classes from XD’s `scenegraph` module. There are several different [API modules you can load using `require()`](/develop/plugin-development/xd-concepts/apis.html).
 2.  Defines our handler function. The handler function will run when the user selects the _Plugins > Create Rectangle_ menu item.
 3.  Creates a new `Rectangle` object with width, height, and color properties.
 4.  Adds the `Rectangle` object to the scenegraph at the top-left (coordinates `0, 0`).

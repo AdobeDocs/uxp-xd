@@ -29,7 +29,7 @@ Replace the `uiEntryPoints` field of the manifest with the following:
 ]
 ```
 
-If you're curious about what each entry means, [see the manifest documentation](/reference/structure/manifest/), where you can also learn about all manifest requirements for a plugin to be published in the XD Plugin Manager.
+If you're curious about what each entry means, [see the manifest documentation](/develop/plugin-development/plugin-structure/manifest/), where you can also learn about all manifest requirements for a plugin to be published in the XD Plugin Manager.
 
 Then, update your `main.js` file, mapping the manifest's `commandId` to a handler function.
 
@@ -143,7 +143,7 @@ function createLinesCommand(selection) {
 }
 ```
 
-1. This function only needs the first [contextual argument](/reference/structure/handlers/#contextual-arguments), `selection`, which gives access to the selection object inside XD.
+1. This function only needs the first [contextual argument](/develop/plugin-development/plugin-structure/handlers/#contextual-arguments), `selection`, which gives access to the selection object inside XD.
 2. Create an empty array to contain all the `Line` objects we'll create. This array will be used in a later step.
 3. Loop over the `lineData` array, getting an individual `data` object each time through the loop.
 4. For each `data` object:

@@ -29,7 +29,7 @@ The console output for _all_ installed XD plugins is mixed together in one singl
 
 ### 2. Reload your plugin after making fixes
 
-You can easily iterate on your plugin code without heaving to restart XD. Click _Plugins > Development > Reload Plugins_ to reload all plugins in your `develop` folder. This will reflect any changes in [manifest.json](/reference/structure/manifest/) in addition to any changes to your JS code.
+You can easily iterate on your plugin code without heaving to restart XD. Click _Plugins > Development > Reload Plugins_ to reload all plugins in your `develop` folder. This will reflect any changes in [manifest.json](/develop/plugin-development/plugin-structure/manifest/) in addition to any changes to your JS code.
 
 There's also a handy keyboard shortcut to make reloading easier:
 
