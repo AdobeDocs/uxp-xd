@@ -1,198 +1,209 @@
 module.exports = [
   {
-    "title": "Overview",
-    "path": "/overview/"
+    title: "Overview",
+    path: "/overview/",
   },
   {
-    "title": "Develop",
-    "path": "/develop/",
-    "header": true,
-    "pages": [
+    title: "Develop",
+    path: "/develop/",
+    header: true,
+    pages: [
       {
-        "title": "Overview",
-        "path": "/develop/",
+        title: "Overview",
+        path: "/develop/",
       },
       {
-        "title": "Plugin Development",
-        "path": "/develop/plugin-development/",
-        "header": true,
+        title: "Plugin Development",
+        path: "/develop/plugin-development/",
+        header: true,
         pages: [
           {
-            "title": "Plugin Structure",
-            "path": "/develop/plugin-development/plugin-structure/",
-            "header": true,
-            "pages": [
+            title: "Plugin Structure",
+            path: "/develop/plugin-development/plugin-structure/",
+            header: true,
+            pages: [
               {
-                "path": "/develop/plugin-development/plugin-structure/location/",
-                "title": "Location"
+                path: "/develop/plugin-development/plugin-structure/location/",
+                title: "Location",
               },
               {
-                "path": "/develop/plugin-development/plugin-structure/folder-structure/",
-                "title": "Folder Structure"
+                path:
+                  "/develop/plugin-development/plugin-structure/folder-structure/",
+                title: "Folder Structure",
               },
               {
-                "path": "/develop/plugin-development/plugin-structure/manifest/",
-                "title": "Manifest"
+                path: "/develop/plugin-development/plugin-structure/manifest/",
+                title: "Manifest",
               },
               {
-                "path": "/develop/plugin-development/plugin-structure/handlers/",
-                "title": "Handlers"
+                path: "/develop/plugin-development/plugin-structure/handlers/",
+                title: "Handlers",
               },
               {
-                "path": "/develop/plugin-development/plugin-structure/menu-structure/",
-                "title": "Menu Structure"
-              }
-            ]
+                path:
+                  "/develop/plugin-development/plugin-structure/menu-structure/",
+                title: "Menu Structure",
+              },
+            ],
           },
           {
-            "title": "JavaScript and XD",
-            "path": "/develop/plugin-development/javascript-and-xd/",
-            "header": true,
-            "pages": [
+            title: "JavaScript and XD",
+            path: "/develop/plugin-development/javascript-and-xd/",
+            header: true,
+            pages: [
               {
-                "path": "/develop/plugin-development/javascript-and-xd/environment/",
-                "title": "Environment"
+                path:
+                  "/develop/plugin-development/javascript-and-xd/environment/",
+                title: "Environment",
               },
               {
-                "path": "/develop/plugin-development/javascript-and-xd/javascript-support/",
-                "title": " JavaScript Support"
+                path:
+                  "/develop/plugin-development/javascript-and-xd/javascript-support/",
+                title: " JavaScript Support",
               },
               {
-                "path": "/develop/plugin-development/javascript-and-xd/sync-async/",
-                "title": "Sync Async"
-              }
-            ]
+                path:
+                  "/develop/plugin-development/javascript-and-xd/sync-async/",
+                title: "Sync Async",
+              },
+            ],
           },
           {
-            "title": "XD Concepts",
-            "path": "/develop/plugin-development/xd-concepts/",
-            "header": true,
-            "pages": [
+            title: "XD Concepts",
+            path: "/develop/plugin-development/xd-concepts/",
+            header: true,
+            pages: [
               {
-                "path": "/develop/plugin-development/xd-concepts/lifecycle/",
-                "title": "Lifecycle"
+                path: "/develop/plugin-development/xd-concepts/lifecycle/",
+                title: "Lifecycle",
               },
               {
-                "path": "/develop/plugin-development/xd-concepts/scenegraph/",
-                "title": "Scenegraph"
+                path: "/develop/plugin-development/xd-concepts/scenegraph/",
+                title: "Scenegraph",
               },
               {
-                "path": "/develop/plugin-development/xd-concepts/edit-context/",
-                "title": "Edit Context"
+                path: "/develop/plugin-development/xd-concepts/edit-context/",
+                title: "Edit Context",
               },
               {
-                "path": "/develop/plugin-development/xd-concepts/properties-with-object-values/",
-                "title": "Properties With Object Values"
+                path:
+                  "/develop/plugin-development/xd-concepts/properties-with-object-values/",
+                title: "Properties With Object Values",
               },
               {
-                "path": "/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/",
-                "title": "Coordinate Spaces And Units"
+                path:
+                  "/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/",
+                title: "Coordinate Spaces And Units",
               },
               {
-                "path": "/develop/plugin-development/xd-concepts/automatic-cleanups/",
-                "title": "Automatic Cleanups"
+                path:
+                  "/develop/plugin-development/xd-concepts/automatic-cleanups/",
+                title: "Automatic Cleanups",
               },
               {
-                "path": "/develop/plugin-development/xd-concepts/apis/",
-                "title": "Apis"
+                path: "/develop/plugin-development/xd-concepts/apis/",
+                title: "Apis",
               },
-            ]
+            ],
           },
           {
-            "title": "Best Practices",
-            "path": "/develop/plugin-development/devbestpractices/",
-            "header": true,
-            "pages": [
+            title: "Best Practices",
+            path: "/develop/plugin-development/devbestpractices/",
+            header: true,
+            pages: [
               {
-                "path": "/develop/plugin-development/devbestpractices/intro/",
-                "title": "Introduction"
+                path: "/develop/plugin-development/devbestpractices/intro/",
+                title: "Introduction",
               },
               {
-                "path": "/develop/plugin-development/devbestpractices/1-performance/",
-                "title": "Performance"
+                path:
+                  "/develop/plugin-development/devbestpractices/1-performance/",
+                title: "Performance",
               },
               {
-                "path": "/develop/plugin-development/devbestpractices/2-scenegraph/",
-                "title": "Scenegraph"
+                path:
+                  "/develop/plugin-development/devbestpractices/2-scenegraph/",
+                title: "Scenegraph",
               },
               {
-                "path": "/develop/plugin-development/devbestpractices/3-network-io/",
-                "title": "Network IO"
+                path:
+                  "/develop/plugin-development/devbestpractices/3-network-io/",
+                title: "Network IO",
               },
               {
-                "path": "/develop/plugin-development/devbestpractices/4-file-io/",
-                "title": "File IO"
+                path: "/develop/plugin-development/devbestpractices/4-file-io/",
+                title: "File IO",
               },
               {
-                "path": "/develop/plugin-development/devbestpractices/5-ui/",
-                "title": "User Interface"
+                path: "/develop/plugin-development/devbestpractices/5-ui/",
+                title: "User Interface",
               },
-            ]
+            ],
           },
-        ]
+        ],
       },
       {
-        "title": "Tutorials",
-        "path": "/develop/tutorials/",
-        "header": true,
-        "pages": [
+        title: "Tutorials",
+        path: "/develop/tutorials/",
+        header: true,
+        pages: [
           {
-            "title": "Quick Start",
-            "path": "/develop/tutorials/quick-start/"
+            title: "Quick Start",
+            path: "/develop/tutorials/quick-start/",
           },
           {
-            "title": "Quick Start Panel",
-            "path": "/develop/tutorials/quick-start-panel/"
+            title: "Quick Start Panel",
+            path: "/develop/tutorials/quick-start-panel/",
           },
           {
-            "title": "Quick Start React",
-            "path": "/develop/tutorials/quick-start-react/"
+            title: "Quick Start React",
+            path: "/develop/tutorials/quick-start-react/",
           },
           {
-            "title": "Debugging",
-            "path": "/develop/tutorials/debugging/"
+            title: "Debugging",
+            path: "/develop/tutorials/debugging/",
           },
           {
-            "title": "How To Ask User For Confirmation",
-            "path": "/develop/tutorials/how-to-ask-user-for-confirmation/"
+            title: "How To Ask User For Confirmation",
+            path: "/develop/tutorials/how-to-ask-user-for-confirmation/",
           },
           {
-            "title": "How To Create Paths",
-            "path": "/develop/tutorials/how-to-create-paths/"
+            title: "How To Create Paths",
+            path: "/develop/tutorials/how-to-create-paths/",
           },
           {
-            "title": "How To Draw Lines",
-            "path": "/develop/tutorials/how-to-draw-lines/"
+            title: "How To Draw Lines",
+            path: "/develop/tutorials/how-to-draw-lines/",
           },
           {
-            "title": "How To Export A Rendition",
-            "path": "/develop/tutorials/how-to-export-a-rendition/"
+            title: "How To Export A Rendition",
+            path: "/develop/tutorials/how-to-export-a-rendition/",
           },
           {
-            "title": "How To Integrate With OAuth",
-            "path": "/develop/tutorials/how-to-integrate-with-OAuth/"
+            title: "How To Integrate With OAuth",
+            path: "/develop/tutorials/how-to-integrate-with-OAuth/",
           },
           {
-            "title": "How To Make Network Requests",
-            "path": "/develop/tutorials/how-to-make-network-requests/"
+            title: "How To Make Network Requests",
+            path: "/develop/tutorials/how-to-make-network-requests/",
           },
           {
-            "title": "How To Read A File",
-            "path": "/develop/tutorials/how-to-read-a-file/"
+            title: "How To Read A File",
+            path: "/develop/tutorials/how-to-read-a-file/",
           },
           {
-            "title": "How To Show An Alert",
-            "path": "/develop/tutorials/how-to-show-an-alert/"
+            title: "How To Show An Alert",
+            path: "/develop/tutorials/how-to-show-an-alert/",
           },
           {
-            "title": "How To Style Text",
-            "path": "/develop/tutorials/how-to-style-text/"
+            title: "How To Style Text",
+            path: "/develop/tutorials/how-to-style-text/",
           },
           {
-            "title": "How To Work With Scenenodelist",
-            "path": "/develop/tutorials/how-to-work-with-scenenodelist/"
+            title: "How To Work With Scenenodelist",
+            path: "/develop/tutorials/how-to-work-with-scenenodelist/",
           },
-        ]
+        ],
       },
       /*{
         "title": "Guides",
@@ -200,8 +211,8 @@ module.exports = [
         "header": true,
         "pages": [
           {
-            "title": "UDT Walkthrough",
-            "path": "/develop/guides/udt-walkthrough/"
+            path: "/develop/devbestpractices/intro/",
+            title: "Introduction",
           },
           {
             "title": "UXP Developer Tool",
@@ -245,73 +256,73 @@ module.exports = [
         ]
       },*/
       {
-        "title": "Reference",
-        "path": "/develop/reference/",
-        "header": true,
-        "pages": [
+        title: "Reference",
+        path: "/develop/reference/",
+        header: true,
+        pages: [
           {
-            "path": "/develop/reference/Blur/",
-            "title": "Blur"
+            path: "/develop/reference/Blur/",
+            title: "Blur",
           },
           {
-            "path": "/develop/reference/Color/",
-            "title": "Color"
+            path: "/develop/reference/Color/",
+            title: "Color",
           },
           {
-            "path": "/develop/reference/ImageFill/",
-            "title": "ImageFill"
+            path: "/develop/reference/ImageFill/",
+            title: "ImageFill",
           },
           {
-            "path": "/develop/reference/LinearGradientFill/",
-            "title": "LinearGradientFill"
+            path: "/develop/reference/LinearGradientFill/",
+            title: "LinearGradientFill",
           },
           {
-            "path": "/develop/reference/Matrix/",
-            "title": "Matrix"
+            path: "/develop/reference/Matrix/",
+            title: "Matrix",
           },
           {
-            "path": "/develop/reference/PerPluginStorage/",
-            "title": "PerPluginStorage"
+            path: "/develop/reference/PerPluginStorage/",
+            title: "PerPluginStorage",
           },
           {
-            "path": "/develop/reference/SceneNodeList/",
-            "title": "SceneNodeList"
+            path: "/develop/reference/SceneNodeList/",
+            title: "SceneNodeList",
           },
           {
-            "path": "/develop/reference/Shadow/",
-            "title": "Shadow"
+            path: "/develop/reference/Shadow/",
+            title: "Shadow",
           },
           {
-            "path": "/develop/reference/application/",
-            "title": "Application"
+            path: "/develop/reference/application/",
+            title: "Application",
           },
           {
-            "path": "/develop/reference/assets/",
-            "title": "Assets"
+            path: "/develop/reference/assets/",
+            title: "Assets",
           },
           {
-            "path": "/develop/reference/clipboard/",
-            "title": "Clipboard"
+            path: "/develop/reference/clipboard/",
+            title: "Clipboard",
           },
           {
-            "path": "/develop/reference/cloud/",
-            "title": "Cloud"
+            path: "/develop/reference/cloud/",
+            title: "Cloud",
           },
           {
-            "path": "/develop/reference/commands/",
-            "title": "Commands"
+            path: "/develop/reference/commands/",
+            title: "Commands",
           },
           {
-            "path": "/develop/reference/interactions/",
-            "title": "Interactions"
+            path: "/develop/reference/interactions/",
+            title: "Interactions",
           },
           {
-            "path": "/develop/reference/scenegraph/",
-            "title": "Scenegraph"
+            path: "/develop/reference/scenegraph/",
+            title: "Scenegraph",
           },
           {
-            "path": "/develop/reference/selection/",
-            "title": "Selection"
+            path: "/develop/reference/selection/",
+            title: "Selection",
           },
           /*{
             "title": "UI",
@@ -319,32 +330,32 @@ module.exports = [
             "header": true,
             "pages": [
               {
-                "title": "Dialogs",
-                "path": "/develop/reference/ui/dialogs/",
-                "header": true,
-                "pages": [
+                title: "Dialogs",
+                path: "/develop/reference/ui/dialogs/",
+                header: true,
+                pages: [
                   {
-                    "path": "/develop/reference/ui/dialogs/dismissal/",
-                    "title": "Dismissal"
+                    path: "/develop/reference/ui/dialogs/dismissal/",
+                    title: "Dismissal",
                   },
                   {
-                    "path": "/develop/reference/ui/dialogs/showing/",
-                    "title": "Showing"
-                  }
-                ]
+                    path: "/develop/reference/ui/dialogs/showing/",
+                    title: "Showing",
+                  },
+                ],
               },
               {
-                "title": "Panels",
-                "path": "/develop/reference/ui/panels/",
-                "header": true,
-                "pages": [
+                title: "Panels",
+                path: "/develop/reference/ui/panels/",
+                header: true,
+                pages: [
                   {
-                    "path": "/develop/reference/ui/panels/hide/",
-                    "title": "Hide"
+                    path: "/develop/reference/ui/panels/hide/",
+                    title: "Hide",
                   },
                   {
-                    "path": "/develop/reference/ui/panels/show/",
-                    "title": "Show"
+                    path: "/develop/reference/ui/panels/show/",
+                    title: "Show",
                   },
                   {
                     "path": "/develop/reference/ui/panels/update/",
@@ -355,16 +366,16 @@ module.exports = [
             ]
           },*/
           {
-            "path": "/develop/reference/viewport/",
-            "title": "Viewport"
-          }
-        ]
+            path: "/develop/reference/viewport/",
+            title: "Viewport",
+          },
+        ],
       },
       {
-        "path": "/develop/known-issues/",
-        "title": "Known Issues"
+        path: "/develop/known-issues/",
+        title: "Known Issues",
       },
-    ]
+    ],
   },
   /*{
     "title": "Developer Tool",
@@ -372,16 +383,16 @@ module.exports = [
     "header": true,
     "pages": [
       {
-        "path": "/devtool/installation/",
-        "title": "Installation"
+        title: "Distribution Options",
+        path: "/distribution/distribution-options/",
       },
       {
-        "path": "/devtool/plugin-management/",
-        "title": "Plugin Management"
+        title: "Marketing",
+        path: "/distribution/marketing/",
       },
       {
-        "path": "/devtool/plugin-workflows/",
-        "title": "Plugin Workflows"
+        title: "Packaging Your Plugin",
+        path: "/distribution/packaging-your-plugin/",
       },
       {
         "path": "/devtool/working-with-react/",
@@ -390,72 +401,64 @@ module.exports = [
     ]
   },*/
   {
-    "title": "Design",
-    "path": "/design/",
-    "header": true,
-    "pages": [
+    title: "Design",
+    path: "/design/",
+    header: true,
+    pages: [
       {
-        "title": "User Interface",
-        "path": "/design/user-interface/"
+        title: "User Interface",
+        path: "/design/user-interface/",
       },
       {
-        "title": "UX Patterns",
-        "path": "/design/ux-patterns/",
-        "header": true,
-        "pages": [
+        title: "UX Patterns",
+        path: "/design/ux-patterns/",
+        header: true,
+        pages: [
           {
-            "path": "/design/ux-patterns/branding/",
-            "title": "Branding"
+            path: "/design/ux-patterns/branding/",
+            title: "Branding",
           },
           {
-            "path": "/design/ux-patterns/messaging/",
-            "title": "Messaging"
+            path: "/design/ux-patterns/messaging/",
+            title: "Messaging",
           },
           {
-            "path": "/design/ux-patterns/modal-ux/",
-            "title": "Modal UX"
+            path: "/design/ux-patterns/modal-ux/",
+            title: "Modal UX",
           },
           {
-            "path": "/design/ux-patterns/navigation/",
-            "title": "Navigation"
+            path: "/design/ux-patterns/navigation/",
+            title: "Navigation",
           },
           {
-            "path": "/design/ux-patterns/onboarding/",
-            "title": "Onboarding"
+            path: "/design/ux-patterns/onboarding/",
+            title: "Onboarding",
           },
           {
-            "path": "/design/ux-patterns/panel-ux/",
-            "title": "Panel UX"
-          }
-        ]
-      }
-    ]
+            path: "/design/ux-patterns/panel-ux/",
+            title: "Panel UX",
+          },
+        ],
+      },
+    ],
   },
   {
-    "title": "Distribution",
-    "path": "/distribution/",
-    "header": true,
-    "pages": [
+    title: "Distribution",
+    path: "/distribution/",
+    header: true,
+    pages: [
       {
-        "title": "Distribution Options",
-        "path": "/distribution/distribution-options/"
+        title: "Distribution Options",
+        path: "/distribution/distribution-options/",
       },
       {
-        "title": "Marketing",
-        "path": "/distribution/marketing/"
+        title: "Marketing",
+        path: "/distribution/marketing/",
       },
-      {
-        "title": "Packaging Your Plugin",
-        "path": "/distribution/packaging-your-plugin/"
-      },
-      {
-        "title": "Submission Checklist",
-        "path": "/distribution/submission-checklist/"
-      }
-    ]
+    ],
   },
   {
-    "title": "Community",
-    "path": "/community/"
+    title: "Community",
+    path: "/community/",
   },
-]
+];

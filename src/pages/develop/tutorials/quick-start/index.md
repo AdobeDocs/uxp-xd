@@ -45,7 +45,7 @@ Now, let's create your plugin files. Open your favorite text editor and create t
 
 This file includes information about the plugin, such as its name, the menu item(s) it adds to XD, and so on.
 
-[Learn about the manifest here](/guides/uxp-misc/manifest-v4/).
+[Learn about the manifest here](/develop/reference/structure/manifest/).
 
 2.  `main.js`
 
