@@ -4,17 +4,17 @@ XD plugins extend the capabilities of [Adobe XD](https://www.adobe.com/products/
 
 On this page, we'll give you a quick overview of **what you can build** and **how to get started**.
 
-From there, you can **choose your own adventure**: build a "Hello, World" plugin in our [Quick Start tutorial](/tutorials/quick-start/), follow our [tutorials](/tutorials/), try code-complete [sample plugins](https://github.com/AdobeXD/plugin-samples), or browse the [API references](/reference/how-to-read/).
+From there, you can **choose your own adventure**: build a "Hello, World" plugin in our [Quick Start tutorial](/develop/tutorials/quick-start/), follow our [tutorials](/develop/tutorials/), try code-complete [sample plugins](https://github.com/AdobeXD/plugin-samples), or browse the [API references](/reference/how-to-read/).
 
 Oh, and be sure to [join the developer community](/community/) while you're here! We want you to say hi (we'll say hi back).
 
 Now, let’s supercharge the future of design together with XD plugins!
 
-
 ## What can you build?
+
 Plugins can be **tools** that help users create or automate their workflow, they can streamline collaboration by allowing users to **import** and **export**, and they can also provide users with external **information**.
 
-The XD plugin APIs enable you to build plugins for a number of use cases, to help you get started here are three points to think about. 
+The XD plugin APIs enable you to build plugins for a number of use cases, to help you get started here are three points to think about.
 
 1. **The plugin workflow** - Identify the user stories for your plugin
 2. **Key plugin action** - What are the key interactions for you plugin that would be valuable to your users
@@ -30,6 +30,6 @@ There are lots of ways to journey through the documentation on your way to build
 
 Here are some highlights you won't want to miss:
 
-1. **Get Started**: To begin, try our [Quick Start tutorial](/tutorials/quick-start/), then follow along with [the API feature tutorials](/tutorials/).
-1. **Go deep**: Learn more about how to build an XD plugin by reading [the plugin development 101](/plugin-development-guidelines/) and then dig into the [API reference](/reference/how-to-read/).
+1. **Get Started**: To begin, try our [Quick Start tutorial](/develop/tutorials/quick-start/), then follow along with [the API feature tutorials](/develop/tutorials/).
+1. **Go deep**: Learn more about how to build an XD plugin by reading [the plugin development 101](/plugin-development-guidelines/) and then dig into the [API reference](/develop/reference/).
 1. **See code**: If you prefer to learn from working code, we have a [samples repo on GitHub](https://github.com/AdobeXD/Plugin-Samples) for you to take a look at.
