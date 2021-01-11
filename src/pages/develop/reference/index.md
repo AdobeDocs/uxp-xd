@@ -2,8 +2,8 @@
 
 Use this section to access the API references, know what are the currently known issues, and learn what is new and what has changed.
 
-- [API references](/reference/how-to-read/)
-- [Known issues](/known-issues/)
+- [API references](/develop/reference/how-to-read/)
+- [Known issues](/develop/known-issues/)
 - [Change log](/changes/)
 
 Here are some of the recommended next steps for you:
