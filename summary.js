@@ -1,9 +1,5 @@
 module.exports = [
   {
-    title: "Overview",
-    path: "/overview/",
-  },
-  {
     title: "Develop",
     path: "/develop/",
     header: true,
@@ -370,6 +366,10 @@ module.exports = [
             title: "Viewport",
           },
         ],
+      },
+      {
+        path: "/develop/changelog/",
+        title: "Changelog",
       },
       {
         path: "/develop/known-issues/",
