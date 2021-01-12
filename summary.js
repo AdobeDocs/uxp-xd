@@ -463,6 +463,10 @@ module.exports = [
         title: "Marketing Your Plugin",
         path: "/distribution/marketing/",
       },
+      {
+        title: "Creating Deep Links",
+        path: "/distribution/deep-links/",
+      },
     ],
   },
   {
