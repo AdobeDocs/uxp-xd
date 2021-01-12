@@ -52,7 +52,7 @@ Iterate all children in the list, in reverse order (highest z order to lowest).
 | callback | `!function(!SceneNode, number)` | Callback, passed each child node and its index.        |
 | thisArg  | `?Object`                       | Optional value for `this` when executing the callback. |
 
-### sceneNodeList.filter(callback, thisArg) ⇒ `Array.&lt;!SceneNode&gt;`
+### sceneNodeList.filter(callback, thisArg) ⇒ `Array.<!SceneNode&gt;`
 
 Iterates all children and returns an array of just the children that passed the filter function's test.
 
@@ -63,7 +63,7 @@ Iterates all children and returns an array of just the children that passed the 
 | callback | `!function(!SceneNode, number): boolean` | Filter function, passed each child node and its index. |
 | thisArg  | `?Object`                                | Optional value for `this` when executing the callback. |
 
-### sceneNodeList.map(callback, thisArg) ⇒ `Array.&lt;\*&gt;`
+### sceneNodeList.map(callback, thisArg) ⇒ `Array.<\*&gt;`
 
 Iterates all children and returns an array of the map function's result value for each child node.
 

@@ -63,9 +63,9 @@ given time, so wait for the Promise it returns before calling it again.
 the same `outputFile`s that were originally passed in, or rejected with an error string if one or more renditions failed for
 any reason.
 
-| Param      | Type                        | Description                    |
-| ---------- | --------------------------- | ------------------------------ |
-| renditions | Array&lt;RenditionSettings> | List of renditions to generate |
+| Param      | Type                     | Description                    |
+| ---------- | ------------------------ | ------------------------------ |
+| renditions | Array<RenditionSettings> | List of renditions to generate |
 
 **Typedef RenditionSettings**
 

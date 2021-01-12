@@ -189,7 +189,7 @@ In case there are multiple interactive prototype experiences (flows), implying m
 
 **See**: [`Artboard.isHomeArtboard`](/develop/reference/scenegraph/#Artboard-isHomeArtboard)
 
-### _interactions.flows : `!Array&lt;\![FlowInfo](#FlowInfo)&gt;`_
+### _interactions.flows : `!Array<\![FlowInfo](#FlowInfo)&gt;`_
 
 **Since**: XD 33
 
@@ -200,7 +200,7 @@ A `flow` is a series or set of artboards starting from one artboard (called a ho
 **Kind**: static property of [`interactions`](#module_interactions)
 **Read only**: true
 
-### _interactions.allInteractions : `!Array&lt;!{triggerNode: !SceneNode, interactions: !Array&lt;\![Interaction](#Interaction)&gt;}&gt;`_
+### _interactions.allInteractions : `!Array<!{triggerNode: !SceneNode, interactions: !Array<\![Interaction](#Interaction)&gt;}&gt;`_
 
 Returns a collection of _all_ interactions across the entire document, grouped by triggering scenenode. Each entry in this array
 specifies a `triggerNode` and the result of getting [`triggerNode.triggeredInteractions`](/develop/reference/scenegraph/#SceneNode-triggeredInteractions).

@@ -40,7 +40,7 @@ You can also access this object from the [`scenegraph.selection`](/develop/refer
 
 **Kind**: object
 
-### selection.items : `!Array&lt;\![SceneNode](scenegraph/#SceneNode)&gt;`
+### selection.items : `!Array<\![SceneNode](scenegraph/#SceneNode)&gt;`
 
 Array representing the current selection. Empty array if nothing is selected (never null). _Items might not all have the same
 parent node._ Never includes locked nodes. Never mixes artboards with other nodes: a selection is either all artboards or all
@@ -68,7 +68,7 @@ selection.items = rectangle; // select 1 node (convenience)
 selection.items = null; // deselect all (convenience)
 ```
 
-### selection.itemsIncludingLocked : `!Array&lt;\![SceneNode](scenegraph/#SceneNode)&gt;`
+### selection.itemsIncludingLocked : `!Array<\![SceneNode](scenegraph/#SceneNode)&gt;`
 
 Array representing the current selection _plus_ any locked items that the user has attempted to select.
 

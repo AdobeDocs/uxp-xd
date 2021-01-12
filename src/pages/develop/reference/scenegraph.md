@@ -415,7 +415,7 @@ fixed, walk up the parent chain and check this property on the topmost ancestor 
 **Kind**: instance property of [`SceneNode`](#scenenode)
 **See**: [Artboard.viewportHeight](#artboard-viewportheight)
 
-### _sceneNode.triggeredInteractions : `!Arrray&lt;\![Interaction](/develop/reference/interactions/#Interaction)&gt;`_
+### _sceneNode.triggeredInteractions : `!Arrray<\![Interaction](/develop/reference/interactions/#Interaction)&gt;`_
 
 **Since**: XD 19
 
@@ -918,7 +918,7 @@ Expressed as a multiple of stroke width. Only used when [`strokeJoins`](#graphic
 
 **Kind**: instance property of [`GraphicNode`](#graphicnode)
 
-### _graphicNode.strokeDashArray : `!Array&lt;number&gt;`_
+### _graphicNode.strokeDashArray : `!Array<number&gt;`_
 
 **Default**: `[]`
 
@@ -1074,7 +1074,7 @@ If Artboard is scrollable, this is the height of the viewport (e.g. mobile devic
 **Kind**: instance property of [`Artboard`](#artboard)
 **See**: [height](#artboard-height)
 
-### artboard.incomingInteractions : `!Array&lt;!{ triggerNode: !SceneNode, interactions: !Array&lt;!Interaction&gt; }&gt;`
+### artboard.incomingInteractions : `!Array<!{ triggerNode: !SceneNode, interactions: !Array<!Interaction&gt; }&gt;`
 
 **Since**: XD 19
 
@@ -1195,7 +1195,7 @@ then set size back to the saved values.
 
 **Kind**: instance property of [`Polygon`](#polygon)
 
-### polygon.cornerRadii : `!Array&lt;number&gt;`
+### polygon.cornerRadii : `!Array<number&gt;`
 
 List of corner radius for each corner of the polygon. To set corner radius, use [`setAllCornerRadii()`](#polygon-setallcornerradii).
 
@@ -1356,7 +1356,7 @@ the new string's indices unless you explicitly change styleRanges as well.
 
 **Kind**: instance property of [`Text`](#text)
 
-### text.styleRanges : `!Array&lt;!{length:number, fontFamily:string, fontStyle:string, fontSize:number, fill:\![Color](Color/), charSpacing:number, underline:boolean, strikethrough:boolean, textTransform:string, textScript:string}&gt;`
+### text.styleRanges : `!Array<!{length:number, fontFamily:string, fontStyle:string, fontSize:number, fill:\![Color](Color/), charSpacing:number, underline:boolean, strikethrough:boolean, textTransform:string, textScript:string}&gt;`
 
 Array of text ranges and their character style settings. Each range covers a set number of characters in the text content. Ranges
 are contiguous, with each one starting immediately after the previous one. Any characters past the end of the last range use the
@@ -1669,10 +1669,10 @@ You can call this API from either of _two different edit contexts_:
 
 **Kind**: instance method of [`RepeatGrid`](#repeatgrid)
 
-| Param      | Type                   | Description                                                                                                                                                                                                                         |
-| ---------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| textNode   | `!Text`                | A Text node exemplar that would be in scope for editing if the current edit context was one of this RepeatGrid's cells. The data series will be bound to this text node and all corresponding copies of it in the other grid cells. |
-| textValues | `!Array&lt;string&gt;` | Array of one or more strings. Empty strings are ignored.                                                                                                                                                                            |
+| Param      | Type                | Description                                                                                                                                                                                                                         |
+| ---------- | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| textNode   | `!Text`             | A Text node exemplar that would be in scope for editing if the current edit context was one of this RepeatGrid's cells. The data series will be bound to this text node and all corresponding copies of it in the other grid cells. |
+| textValues | `!Array<string&gt;` | Array of one or more strings. Empty strings are ignored.                                                                                                                                                                            |
 
 ### repeatGrid.attachImageDataSeries(shapeNode, images)
 
@@ -1689,10 +1689,10 @@ You can call this API from either of _two different edit contexts_:
 
 **Kind**: instance method of [`RepeatGrid`](#repeatgrid)
 
-| Param     | Type                       | Description                                                                                                                                                                                                                                                                                                            |
-| --------- | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| shapeNode | `!GraphicNode`             | A shape node exemplar that would be in scope for editing if the current edit context was one of this RepeatGrid's cells. The image series will be bound to this node and all corresponding copies of it in the other grid cells. Must be a node type that supports image fills (e.g. Rectangle, but not Text or Line). |
-| images    | `!Array&lt;!ImageFill&gt;` | Array of one or more ImageFills.                                                                                                                                                                                                                                                                                       |
+| Param     | Type                    | Description                                                                                                                                                                                                                                                                                                            |
+| --------- | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| shapeNode | `!GraphicNode`          | A shape node exemplar that would be in scope for editing if the current edit context was one of this RepeatGrid's cells. The image series will be bound to this node and all corresponding copies of it in the other grid cells. Must be a node type that supports image fills (e.g. Rectangle, but not Text or Line). |
+| images    | `!Array<!ImageFill&gt;` | Array of one or more ImageFills.                                                                                                                                                                                                                                                                                       |
 
 ## ScrollableGroup
 

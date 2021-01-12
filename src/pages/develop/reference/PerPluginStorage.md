@@ -37,7 +37,7 @@ if (jsonString) {
 }
 ```
 
-## perPluginStorage.getAll() ⇒ `!Object&lt; string, !Object&lt;string, string&gt; &gt;`
+## perPluginStorage.getAll() ⇒ `!Object< string, !Object<string, string&gt; &gt;`
 
 Returns a map where key is plugin ID and value is a nested map containing all the shared metadata for that plugin ID (i.e. the result of calling `getForPluginId()` with that ID).
 
@@ -61,7 +61,7 @@ console.log(
 );
 ```
 
-## perPluginStorage.getForPluginId(pluginId) ⇒ `!Object&lt;string, string&gt;`
+## perPluginStorage.getForPluginId(pluginId) ⇒ `!Object<string, string&gt;`
 
 Returns a map of key-value string pairs containing all shared metadata stored on this node by the given plugin. May be an empty object (zero keys), but is never null.
 
@@ -88,7 +88,7 @@ console.log(
 );
 ```
 
-## perPluginStorage.keys(pluginId) ⇒ `!Array&lt;string&gt;`
+## perPluginStorage.keys(pluginId) ⇒ `!Array<string&gt;`
 
 Returns a list of all keys stored on this node by the given plugin. May be empty (length zero), but is never null.
 
