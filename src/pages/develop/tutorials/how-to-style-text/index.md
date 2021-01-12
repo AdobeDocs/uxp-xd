@@ -140,7 +140,7 @@ Here's what's changed:
 1. We can still apply styles to the entire text node at once, as in the earlier example. Here, the font size will be set to the same value across _all_ the style ranges we just created.
 
 > **tip**
-> The `Color` constructor understands some color names, but you have plenty of other options for defining colors precisely, including hex, rgba, and more. [See the `Color` reference for more information](/reference/Color/).
+> The `Color` constructor understands some color names, but you have plenty of other options for defining colors precisely, including hex, rgba, and more. [See the `Color` reference for more information](/develop/reference/Color/).
 
 Here are a few things to notice about the `styleRanges` property of `Text` objects:
 

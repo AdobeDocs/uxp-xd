@@ -1,6 +1,6 @@
 # SceneNodeList
 
-Represents the children of a scenenode. Typically accessed via the [SceneNode.children](/reference/scenegraph/#SceneNode-children) property.
+Represents the children of a scenenode. Typically accessed via the [SceneNode.children](/develop/reference/scenegraph/#SceneNode-children) property.
 
 This is _not an Array_, so you must use [`.at(i)`](#SceneNodeList-at) instead of `[i]` to access children by index. It has a
 number of Array-like methods such as [forEach](#SceneNodeList-forEach) for convenience, however. For best performance, iterate
@@ -21,7 +21,7 @@ node.children.forEach(function (childNode, i) {
 });
 ```
 
-**See**: [SceneNode.children](/reference/scenegraph/#SceneNode-children)
+**See**: [SceneNode.children](/develop/reference/scenegraph/#SceneNode-children)
 
 ### sceneNodeList.length : `number`
 

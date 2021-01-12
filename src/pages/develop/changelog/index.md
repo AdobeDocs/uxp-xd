@@ -157,7 +157,7 @@ XD 25 is a minor bug-fix release with no new features for end users. But it adds
 
 - **Live Co-editing _beta_**
 
-  - Plugin [edit operations](./reference/core/lifecycle.md#edit-operations) (`editDocument()` or menu commands) are still fully atomic. Outside those blocks, edits from a remote user can come in at any time, just like edits from the local user could. Edits made by remote users will trigger a plugin panel's `update()` method, just the same as edits made by the local user.
+  - Plugin [edit operations](/develop/plugin-development/xd-concepts/lifecycle) (`editDocument()` or menu commands) are still fully atomic. Outside those blocks, edits from a remote user can come in at any time, just like edits from the local user could. Edits made by remote users will trigger a plugin panel's `update()` method, just the same as edits made by the local user.
   - If a plugin edit conflicts with a remote user's edit that started slightly sooner, the plugin edit will get cleanly reverted (in favor of the other user's edit) _after_ the plugin operation has fully completed.
   - Remote updates are paused in a known-good document state while a plugin edit is in progress (including the lifespan of any modal dialogs), so the scenegraph state won't change while your code is in the middle of processing it. Similarly, updates made by the plugin are sent atomically to remote users once the entire plugin edit operation has finished.
 
@@ -413,12 +413,12 @@ No new known issues. See the [Known Issues page](./known-issues.md) for a compre
 
 ### New API Features
 
-- **[Select & edit across groups](./reference/core/edit-context.md):** Users can now select multiple items that are in different containers at the same time. This has several effects on plugins:
+- **[Select & edit across groups](/develop/plugin-development/xd-concepts/edit-context/):** Users can now select multiple items that are in different containers at the same time. This has several effects on plugins:
   - _Do not assume all selected items have the same parent node._ Previously, this was already true in certain special cases -- for example, users could select items that are the immediate
     children of several different artboards. Now, it can happen in far more cases, so plugins must take extra care to avoid any assumptions about node parents.
   - _Wider "edit scope" surrounding the selection._ Previously, plugins could edit the selected nodes and all their siblings (with a slightly broader scope as a special case in the "root edit
     context"). Now, plugins can edit any nodes in the subtree of the common ancestor of all the selected nodes, _if_ those nodes are connected to the common ancestor through a parent chain
-    consisting entirely of plain Groups (or Artboards). See the [edit context documentation](./reference/core/edit-context.md) for details and examples.
+    consisting entirely of plain Groups (or Artboards). See the [edit context documentation](/develop/plugin-development/xd-concepts/edit-context/) for details and examples.
   - _Plugins still cannot edit globally across the entire document at once, even though in very simple testing it may \_appear_ that this works. Non-Group containers act as blockades that
     the edit scope cannot cross - if the selection is outside such a container, you cannot edit inside it; and if the selection is inside such a container, you cannot edit outside it.
 - **Additional manifest fields required for publishing:** As of March 5, submitting a new or updated plugin for the in-app plugins listing requires providing new `summary`, `author`, and `languages`

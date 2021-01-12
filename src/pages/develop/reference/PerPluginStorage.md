@@ -8,7 +8,7 @@ Stores metadata accessible to multiple plugins, separated into silos by plugin I
 
 Each per-plugin storage silo is a collection of key-value pairs. Keys and values must both be strings.
 
-_Each_ scenenode has its own metadata storage, accessed via [`SceneNode.sharedPluginData`](/reference/scenegraph/#SceneNode-sharedPluginData). To store general metadata that is not specific to one scenenode, use `sharedPluginData` on the [document's scenegraph root](/reference/scenegraph/#module_scenegraph-root).
+_Each_ scenenode has its own metadata storage, accessed via [`SceneNode.sharedPluginData`](/develop/reference/scenegraph/#SceneNode-sharedPluginData). To store general metadata that is not specific to one scenenode, use `sharedPluginData` on the [document's scenegraph root](/develop/reference/scenegraph/#module_scenegraph-root).
 
 **Example**
 

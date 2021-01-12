@@ -4,4 +4,4 @@ The `hide()` function is an _optional_ lifecycle method in [panel objects](/deve
 
 The `event` argument provides the same `event.node` object as was passed to your `show()` callback earlier.
 
-You can choose to remove your UI at the time `hide` is called, or if you prefer to reuse your UI, you can leave it attached. See the [`show()` documentation page](/reference/ui/panels/show/) for examples of both approaches.
+You can choose to remove your UI at the time `hide` is called, or if you prefer to reuse your UI, you can leave it attached. See the [`show()` documentation page](/develop/reference/ui/panels/show/) for examples of both approaches.

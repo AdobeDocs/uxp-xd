@@ -122,10 +122,10 @@ The function we create in this step will filter all content on the artboard for 
 
 Recall that in the first step, we made a note of [contextual arguments in command handlers](/develop/plugin-development/plugin-structure/handlers/#contextual-arguments), and particularly that this `filterAndColor` function makes use of the second `documentRoot` argument.
 
-Like any [`SceneNode`](/reference/scenegraph/#scenenode), `documentRoot` has a `.children` property that returns a `SceneNodeList`.
+Like any [`SceneNode`](/develop/reference/scenegraph/#scenenode), `documentRoot` has a `.children` property that returns a `SceneNodeList`.
 
 > **info**
-> A `SceneNodeList` is _not an Array_. One notable difference is that, with a `SceneNodeList`, you access elements in the list using the `#at` method (for example, `node.children.at(0)` to get the first node in the list). [You can learn more about the `SceneNodeList` class here](/reference/SceneNodeList/).
+> A `SceneNodeList` is _not an Array_. One notable difference is that, with a `SceneNodeList`, you access elements in the list using the `#at` method (for example, `node.children.at(0)` to get the first node in the list). [You can learn more about the `SceneNodeList` class here](/develop/reference/SceneNodeList/).
 
 Let's fill out our handler function. Each of the numbered comments are explained below the code:
 

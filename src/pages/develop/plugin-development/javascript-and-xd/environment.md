@@ -6,10 +6,9 @@ If you're used to writing JavaScript for web pages or Node.js servers, there are
 
 While it may feel like it, the XD plugin API environment is not a browser, nor is it Node.js. This means that you shouldn't make assumptions about what APIs are available based on your experience in other JavaScript environments.
 
-However, we do follow standards for API surfaces where appropriate. For example, you'll find our implementation of [`XMLHttpRequest`](/reference/uxp/class/XMLHttpRequest/) to work as you would expect.
+However, we do follow standards for API surfaces where appropriate. For example, you'll find our implementation of [`XMLHttpRequest`](/develop/reference/uxp/class/XMLHttpRequest/) to work as you would expect.
 
-In some cases, we follow standards, but only support a _subset_ of features you might expect in a browser. As an example, see our document on [CSS support](/reference/uxp/namespace/css/).
-
+In some cases, we follow standards, but only support a _subset_ of features you might expect in a browser. As an example, see our document on [CSS support](/develop/reference/uxp/namespace/css/).
 
 ## Accessing global APIs
 

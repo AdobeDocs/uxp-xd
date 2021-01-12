@@ -2,10 +2,9 @@
 
 XD plugin APIs support both synchronous and asynchronous code (commonly referred to as _sync_ and _async_).
 
-Below, we'll talk a little about the difference, and what it means for your XD plugins. 
+Below, we'll talk a little about the difference, and what it means for your XD plugins.
 
 **Note:** "Sync vs async" is a topic frequently covered in JavaScript tutorials and articles around the web. For a broader introduction, consult your favorite search engine.
-
 
 ## Synchronous code
 
@@ -24,13 +23,13 @@ newElement.fill = new Color("Purple");
 
 XD plugins also support _asynchronous_ code with both Promises and async/await. Some XD plugin APIs are asynchronous in nature. You can also create your own Promises as you would in any JavaScript environment.
 
-Here's an example using [the File API](/reference/uxp/storage-index/) and Promise syntax:
+Here's an example using [the File API](/develop/reference/uxp/storage-index/) and Promise syntax:
 
 ```js
 function sayHello(selection, documentRoot) {
-    return fs.getFileForSaving().then(file => {
-        return file.write("Hello, world!");
-    });
+  return fs.getFileForSaving().then((file) => {
+    return file.write("Hello, world!");
+  });
 }
 ```
 
@@ -38,8 +37,8 @@ Here's that same example using async/await syntax:
 
 ```js
 async function sayHello(selection, documentRoot) {
-    let file = await fs.getFileForSaving();
-    file.write("Hello, world!");
+  let file = await fs.getFileForSaving();
+  file.write("Hello, world!");
 }
 ```
 

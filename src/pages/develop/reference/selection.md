@@ -1,7 +1,7 @@
 # selection
 
 The `selection` object represents the currently selected set of nodes in the UI. You can change the selection to use it as input
-for [commands](/reference/commands/), or to control what is left selected for the user when your plugin's edit operation completes.
+for [commands](/develop/reference/commands/), or to control what is left selected for the user when your plugin's edit operation completes.
 
 **Selected items might not all have the same parent node.** For example, the selection could be split between two sibling
 Group nodes, or half the selection could be inside a Group and half inside its parent. Or the selection could be split between
@@ -36,7 +36,7 @@ module.exports = {
 };
 ```
 
-You can also access this object from the [`scenegraph.selection`](/reference/scenegraph/#module_scenegraph-selection) property.
+You can also access this object from the [`scenegraph.selection`](/develop/reference/scenegraph/#module_scenegraph-selection) property.
 
 **Kind**: object
 
