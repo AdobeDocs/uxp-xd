@@ -1,4 +1,3 @@
-
 <a name="htmlformelement" id="htmlformelement"></a>
 
 ## HTMLFormElement
@@ -7,102 +6,103 @@
 
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement
 
-* [HTMLFormElement](#HTMLFormElement)
-    * [.elements](#htmlformelement-elements)
-    * [.dataset](#htmlelement-dataset)
-    * [.nodeName](#element-nodename) : `string`
-    * [.localName](#element-localname) : `string`
-    * [.tagName](#element-tagname) : `string`
-    * [.nodeType](#element-nodetype) : `number`
-    * [.namespaceURI](#element-namespaceuri) : `string`
-    * [.id](#element-id) : `string`
-    * [.tabIndex](#element-tabindex) : `number`
-    * [.className](#element-classname) : `string`
-    * [.attributes](#Element+attributes) : [`NamedNodeMap`](#namednodemap)
-    * [.style](#element-style) : `Style`
-    * [.clientLeft](#element-clientleft) : `number`
-    * [.clientTop](#element-clienttop) : `number`
-    * [.clientWidth](#element-clientwidth) : `number`
-    * [.clientHeight](#element-clientheight) : `number`
-    * [.height](#element-height) : `string` \| `Number`
-    * [.width](#element-width) : `string` \| `Number`
-    * [.offsetParent](#Element+offsetParent) : [`Element`](#element)
-    * [.offsetLeft](#element-offsetleft) : `number`
-    * [.offsetTop](#element-offsettop) : `number`
-    * [.offsetWidth](#element-offsetwidth) : `number`
-    * [.offsetHeight](#element-offsetheight) : `number`
-    * [.scrollLeft](#element-scrollleft) : `number`
-    * [.scrollTop](#element-scrolltop) : `number`
-    * [.scrollWidth](#element-scrollwidth) : `number`
-    * [.scrollHeight](#element-scrollheight) : `number`
-    * [.uxpContainer](#Element+uxpContainer) : [`UXPContainer`](#uxpcontainer)
-    * [.disabled](#element-disabled) : `boolean`
-    * [.innerHTML](#element-innerhtml) : `string`
-    * [.outerHTML](#element-outerhtml) : `string`
-    * [.contentEditable](#node-contenteditable)
-    * [.isConnected](#node-isconnected) : `boolean`
-    * [.parentNode](#Node+parentNode) : [`Node`](#node)
-    * [.parentElement](#Node+parentElement) : [`Element`](#element)
-    * [.firstChild](#Node+firstChild) : [`Node`](#node)
-    * [.lastChild](#Node+lastChild) : [`Node`](#node)
-    * [.previousSibling](#Node+previousSibling) : [`Node`](#node)
-    * [.nextSibling](#Node+nextSibling) : [`Node`](#node)
-    * [.firstElementChild](#Node+firstElementChild) : [`Node`](#node)
-    * [.lastElementChild](#Node+lastElementChild) : [`Node`](#node)
-    * [.previousElementSibling](#Node+previousElementSibling) : [`Node`](#node)
-    * [.nextElementSibling](#Node+nextElementSibling) : [`Node`](#node)
-    * [.textContent](#node-textcontent) : `string`
-    * [.childNodes](#Node+childNodes) : [`NodeList`](#nodelist)
-    * [.children](#Node+children) : [`HTMLCollection`](#htmlcollection)
-    * [.ownerDocument](#node-ownerdocument)
-    * [.scrollIntoView()](#element-scrollintoview)
-    * [.scrollIntoViewIfNeeded()](#element-scrollintoviewifneeded)
-    * [.focus()](#element-focus)
-    * [.blur()](#element-blur)
-    * [.getAttribute(name)](#element-getattribute)
-    * [.setAttribute(name, value)](#element-setattribute)
-    * [.removeAttribute(name)](#element-removeattribute)
-    * [.hasAttribute(name)](#element-hasattribute)
-    * [.getAttributeNode(name)](#element-getattributenode)
-    * [.setAttributeNode(newAttr)](#element-setattributenode)
-    * [.removeAttributeNode(oldAttr)](#element-removeattributenode)
-    * [.click()](#element-click)
-    * [.getElementsByClassName(name)](#Element+getElementsByClassName)
-    * [.getElementsByTagName(name)](#Element+getElementsByTagName)
-    * [.querySelector(selector)](#Element+querySelector)
-    * [.querySelectorAll(selector)](#Element+querySelectorAll)
-    * [.getBoundingClientRect()](#element-getboundingclientrect)
-    * [.insertAdjacentHTML(position, value)](#element-insertadjacenthtml)
-    * [.insertAdjacentElement(position, node)](#Element+insertAdjacentElement)
-    * [.insertAdjacentText(position, text)](#element-insertadjacenttext)
-    * [.hasChildNodes()](#node-haschildnodes)
-    * [.cloneNode(deep)](#Node+cloneNode)
-    * [.appendChild(child)](#Node+appendChild)
-    * [.insertBefore(child, before)](#Node+insertBefore)
-    * [.replaceChild(newChild, oldChild)](#Node+replaceChild)
-    * [.removeChild(child)](#Node+removeChild)
-    * [.remove()](#node-remove)
-    * [.before(...nodes)](#node-before)
-    * [.after(...nodes)](#node-after)
-    * [.replaceWith(...nodes)](#node-replacewith)
-    * [.contains(node)](#node-contains)
-    * [.addEventListener(eventName, callback, [capture])](#eventtarget-addeventlistener)
-    * [.removeEventListener(eventName, callback, [capture])](#eventtarget-removeeventlistener)
-    * [.dispatchEvent(event)](#eventtarget-dispatchevent)
+- [HTMLFormElement](#HTMLFormElement)
+  - [.elements](#htmlformelement-elements)
+  - [.dataset](#htmlelement-dataset)
+  - [.nodeName](#element-nodename) : `string`
+  - [.localName](#element-localname) : `string`
+  - [.tagName](#element-tagname) : `string`
+  - [.nodeType](#element-nodetype) : `number`
+  - [.namespaceURI](#element-namespaceuri) : `string`
+  - [.id](#element-id) : `string`
+  - [.tabIndex](#element-tabindex) : `number`
+  - [.className](#element-classname) : `string`
+  - [.attributes](#Element+attributes) : [`NamedNodeMap`](#namednodemap)
+  - [.style](#element-style) : `Style`
+  - [.clientLeft](#element-clientleft) : `number`
+  - [.clientTop](#element-clienttop) : `number`
+  - [.clientWidth](#element-clientwidth) : `number`
+  - [.clientHeight](#element-clientheight) : `number`
+  - [.height](#element-height) : `string` \| `Number`
+  - [.width](#element-width) : `string` \| `Number`
+  - [.offsetParent](#Element+offsetParent) : [`Element`](#element)
+  - [.offsetLeft](#element-offsetleft) : `number`
+  - [.offsetTop](#element-offsettop) : `number`
+  - [.offsetWidth](#element-offsetwidth) : `number`
+  - [.offsetHeight](#element-offsetheight) : `number`
+  - [.scrollLeft](#element-scrollleft) : `number`
+  - [.scrollTop](#element-scrolltop) : `number`
+  - [.scrollWidth](#element-scrollwidth) : `number`
+  - [.scrollHeight](#element-scrollheight) : `number`
+  - [.uxpContainer](#Element+uxpContainer) : [`UXPContainer`](#uxpcontainer)
+  - [.disabled](#element-disabled) : `boolean`
+  - [.innerHTML](#element-innerhtml) : `string`
+  - [.outerHTML](#element-outerhtml) : `string`
+  - [.contentEditable](#node-contenteditable)
+  - [.isConnected](#node-isconnected) : `boolean`
+  - [.parentNode](#Node+parentNode) : [`Node`](#node)
+  - [.parentElement](#Node+parentElement) : [`Element`](#element)
+  - [.firstChild](#Node+firstChild) : [`Node`](#node)
+  - [.lastChild](#Node+lastChild) : [`Node`](#node)
+  - [.previousSibling](#Node+previousSibling) : [`Node`](#node)
+  - [.nextSibling](#Node+nextSibling) : [`Node`](#node)
+  - [.firstElementChild](#Node+firstElementChild) : [`Node`](#node)
+  - [.lastElementChild](#Node+lastElementChild) : [`Node`](#node)
+  - [.previousElementSibling](#Node+previousElementSibling) : [`Node`](#node)
+  - [.nextElementSibling](#Node+nextElementSibling) : [`Node`](#node)
+  - [.textContent](#node-textcontent) : `string`
+  - [.childNodes](#Node+childNodes) : [`NodeList`](#nodelist)
+  - [.children](#Node+children) : [`HTMLCollection`](#htmlcollection)
+  - [.ownerDocument](#node-ownerdocument)
+  - [.scrollIntoView()](#element-scrollintoview)
+  - [.scrollIntoViewIfNeeded()](#element-scrollintoviewifneeded)
+  - [.focus()](#element-focus)
+  - [.blur()](#element-blur)
+  - [.getAttribute(name)](#element-getattribute)
+  - [.setAttribute(name, value)](#element-setattribute)
+  - [.removeAttribute(name)](#element-removeattribute)
+  - [.hasAttribute(name)](#element-hasattribute)
+  - [.getAttributeNode(name)](#element-getattributenode)
+  - [.setAttributeNode(newAttr)](#element-setattributenode)
+  - [.removeAttributeNode(oldAttr)](#element-removeattributenode)
+  - [.click()](#element-click)
+  - [.getElementsByClassName(name)](#Element+getElementsByClassName)
+  - [.getElementsByTagName(name)](#Element+getElementsByTagName)
+  - [.querySelector(selector)](#Element+querySelector)
+  - [.querySelectorAll(selector)](#Element+querySelectorAll)
+  - [.getBoundingClientRect()](#element-getboundingclientrect)
+  - [.insertAdjacentHTML(position, value)](#element-insertadjacenthtml)
+  - [.insertAdjacentElement(position, node)](#Element+insertAdjacentElement)
+  - [.insertAdjacentText(position, text)](#element-insertadjacenttext)
+  - [.hasChildNodes()](#node-haschildnodes)
+  - [.cloneNode(deep)](#Node+cloneNode)
+  - [.appendChild(child)](#Node+appendChild)
+  - [.insertBefore(child, before)](#Node+insertBefore)
+  - [.replaceChild(newChild, oldChild)](#Node+replaceChild)
+  - [.removeChild(child)](#Node+removeChild)
+  - [.remove()](#node-remove)
+  - [.before(...nodes)](#node-before)
+  - [.after(...nodes)](#node-after)
+  - [.replaceWith(...nodes)](#node-replacewith)
+  - [.contains(node)](#node-contains)
+  - [.addEventListener(eventName, callback, [capture])](#eventtarget-addeventlistener)
+  - [.removeEventListener(eventName, callback, [capture])](#eventtarget-removeeventlistener)
+  - [.dispatchEvent(event)](#eventtarget-dispatchevent)
 
 <a name="htmlformelement-elements" id="htmlformelement-elements"></a>
 
 ### htmlFormElement.elements
+
 Returns an HTMLCollection containing all of the form controls.
 It should technicaly be an HTMLFormControlsCollection which subclasses HTMLCollection.
-TODO: Implement HTMLFormControlsCollection and use it here.
 
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/elements
 
 <a name="htmlelement-dataset" id="htmlelement-dataset"></a>
 
 ### htmlFormElement.dataset
-Access to all the custom data attributes (data-*) set.
+
+Access to all the custom data attributes (data-\*) set.
 
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset
 
@@ -187,11 +187,13 @@ Access to all the custom data attributes (data-*) set.
 <a name="element-height" id="element-height"></a>
 
 ### htmlFormElement.height : `string` \| `Number`
+
 The height of the element
 
 <a name="element-width" id="element-width"></a>
 
 ### htmlFormElement.width : `string` \| `Number`
+
 The width of the element
 
 <a name="element-offsetparent" id="element-offsetparent"></a>
@@ -376,57 +378,57 @@ The width of the element
 
 ### htmlFormElement.getAttribute(name)
 
-| Param | Type |
-| --- | --- |
-| name | `string` |
+| Param | Type     |
+| ----- | -------- |
+| name  | `string` |
 
 <a name="element-setattribute" id="element-setattribute"></a>
 
 ### htmlFormElement.setAttribute(name, value)
 
-| Param | Type |
-| --- | --- |
-| name | `string` |
+| Param | Type     |
+| ----- | -------- |
+| name  | `string` |
 | value | `string` |
 
 <a name="element-removeattribute" id="element-removeattribute"></a>
 
 ### htmlFormElement.removeAttribute(name)
 
-| Param | Type |
-| --- | --- |
-| name | `string` |
+| Param | Type     |
+| ----- | -------- |
+| name  | `string` |
 
 <a name="element-hasattribute" id="element-hasattribute"></a>
 
 ### htmlFormElement.hasAttribute(name)
 
-| Param | Type |
-| --- | --- |
-| name | `string` |
+| Param | Type     |
+| ----- | -------- |
+| name  | `string` |
 
 <a name="element-getattributenode" id="element-getattributenode"></a>
 
 ### htmlFormElement.getAttributeNode(name)
 
-| Param | Type |
-| --- | --- |
-| name | `string` |
+| Param | Type     |
+| ----- | -------- |
+| name  | `string` |
 
 <a name="element-setattributenode" id="element-setattributenode"></a>
 
 ### htmlFormElement.setAttributeNode(newAttr)
 
-| Param | Type |
-| --- | --- |
+| Param   | Type |
+| ------- | ---- |
 | newAttr | `\*` |
 
 <a name="element-removeattributenode" id="element-removeattributenode"></a>
 
 ### htmlFormElement.removeAttributeNode(oldAttr)
 
-| Param | Type |
-| --- | --- |
+| Param   | Type |
+| ------- | ---- |
 | oldAttr | `\*` |
 
 <a name="element-click" id="element-click"></a>
@@ -437,32 +439,32 @@ The width of the element
 
 ### htmlFormElement.getElementsByClassName(name)
 
-| Param | Type |
-| --- | --- |
-| name | `string` |
+| Param | Type     |
+| ----- | -------- |
+| name  | `string` |
 
 <a name="element-getelementsbytagname" id="element-getelementsbytagname"></a>
 
 ### htmlFormElement.getElementsByTagName(name)
 
-| Param | Type |
-| --- | --- |
-| name | `string` |
+| Param | Type     |
+| ----- | -------- |
+| name  | `string` |
 
 <a name="element-queryselector" id="element-queryselector"></a>
 
 ### htmlFormElement.querySelector(selector)
 
-| Param | Type |
-| --- | --- |
+| Param    | Type     |
+| -------- | -------- |
 | selector | `string` |
 
 <a name="element-queryselectorall" id="element-queryselectorall"></a>
 
 ### htmlFormElement.querySelectorAll(selector)
 
-| Param | Type |
-| --- | --- |
+| Param    | Type     |
+| -------- | -------- |
 | selector | `string` |
 
 <a name="element-getboundingclientrect" id="element-getboundingclientrect"></a>
@@ -473,28 +475,28 @@ The width of the element
 
 ### htmlFormElement.insertAdjacentHTML(position, value)
 
-| Param | Type |
-| --- | --- |
-| position |  |
-| value | `string` |
+| Param    | Type     |
+| -------- | -------- |
+| position |          |
+| value    | `string` |
 
 <a name="element-insertadjacentelement" id="element-insertadjacentelement"></a>
 
 ### htmlFormElement.insertAdjacentElement(position, node)
 
-| Param | Type |
-| --- | --- |
+| Param    | Type |
+| -------- | ---- |
 | position | `\*` |
-| node | `\*` |
+| node     | `\*` |
 
 <a name="element-insertadjacenttext" id="element-insertadjacenttext"></a>
 
 ### htmlFormElement.insertAdjacentText(position, text)
 
-| Param | Type |
-| --- | --- |
+| Param    | Type |
+| -------- | ---- |
 | position | `\*` |
-| text | `\*` |
+| text     | `\*` |
 
 <a name="node-haschildnodes" id="node-haschildnodes"></a>
 
@@ -504,33 +506,33 @@ The width of the element
 
 ### htmlFormElement.cloneNode(deep)
 
-| Param | Type |
-| --- | --- |
-| deep | `boolean` |
+| Param | Type      |
+| ----- | --------- |
+| deep  | `boolean` |
 
 <a name="node-appendchild" id="node-appendchild"></a>
 
 ### htmlFormElement.appendChild(child)
 
-| Param | Type |
-| --- | --- |
+| Param | Type            |
+| ----- | --------------- |
 | child | [`Node`](#node) |
 
 <a name="node-insertbefore" id="node-insertbefore"></a>
 
 ### htmlFormElement.insertBefore(child, before)
 
-| Param | Type |
-| --- | --- |
-| child | [`Node`](#node) |
+| Param  | Type            |
+| ------ | --------------- |
+| child  | [`Node`](#node) |
 | before | [`Node`](#node) |
 
 <a name="node-replacechild" id="node-replacechild"></a>
 
 ### htmlFormElement.replaceChild(newChild, oldChild)
 
-| Param | Type |
-| --- | --- |
+| Param    | Type            |
+| -------- | --------------- |
 | newChild | [`Node`](#node) |
 | oldChild | [`Node`](#node) |
 
@@ -538,8 +540,8 @@ The width of the element
 
 ### htmlFormElement.removeChild(child)
 
-| Param | Type |
-| --- | --- |
+| Param | Type            |
+| ----- | --------------- |
 | child | [`Node`](#node) |
 
 <a name="node-remove" id="node-remove"></a>
@@ -550,52 +552,52 @@ The width of the element
 
 ### htmlFormElement.before(...nodes)
 
-| Param | Type |
-| --- | --- |
+| Param    | Type                    |
+| -------- | ----------------------- |
 | ...nodes | [`Array.<Node>`](#node) |
 
 <a name="node-after" id="node-after"></a>
 
 ### htmlFormElement.after(...nodes)
 
-| Param | Type |
-| --- | --- |
+| Param    | Type                    |
+| -------- | ----------------------- |
 | ...nodes | [`Array.<Node>`](#node) |
 
 <a name="node-replacewith" id="node-replacewith"></a>
 
 ### htmlFormElement.replaceWith(...nodes)
 
-| Param | Type |
-| --- | --- |
+| Param    | Type                    |
+| -------- | ----------------------- |
 | ...nodes | [`Array.<Node>`](#node) |
 
 <a name="node-contains" id="node-contains"></a>
 
 ### htmlFormElement.contains(node)
 
-| Param | Type |
-| --- | --- |
-| node | [`Node`](#node) |
+| Param | Type            |
+| ----- | --------------- |
+| node  | [`Node`](#node) |
 
 <a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"></a>
 
 ### htmlFormElement.addEventListener(eventName, callback, [capture])
 
-| Param | Type | Default |
-| --- | --- | --- |
-| eventName | `\*` |  |
-| callback | `\*` |  |
+| Param     | Type      | Default |
+| --------- | --------- | ------- |
+| eventName | `\*`      |         |
+| callback  | `\*`      |         |
 | [capture] | `boolean` | `false` |
 
 <a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"></a>
 
 ### htmlFormElement.removeEventListener(eventName, callback, [capture])
 
-| Param | Type | Default |
-| --- | --- | --- |
-| eventName | `\*` |  |
-| callback | `\*` |  |
+| Param     | Type      | Default |
+| --------- | --------- | ------- |
+| eventName | `\*`      |         |
+| callback  | `\*`      |         |
 | [capture] | `boolean` | `false` |
 
 <a name="eventtarget-dispatchevent" id="eventtarget-dispatchevent"></a>
@@ -603,6 +605,5 @@ The width of the element
 ### htmlFormElement.dispatchEvent(event)
 
 | Param | Type |
-| --- | --- |
+| ----- | ---- |
 | event | `\*` |
-

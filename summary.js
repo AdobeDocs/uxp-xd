@@ -257,16 +257,40 @@ module.exports = [
         header: true,
         pages: [
           {
+            path: "/develop/reference/application/",
+            title: "Application",
+          },
+          {
+            path: "/develop/reference/assets/",
+            title: "Assets",
+          },
+          {
             path: "/develop/reference/Blur/",
             title: "Blur",
+          },
+          {
+            path: "/develop/reference/clipboard/",
+            title: "Clipboard",
+          },
+          {
+            path: "/develop/reference/cloud/",
+            title: "Cloud",
           },
           {
             path: "/develop/reference/Color/",
             title: "Color",
           },
           {
+            path: "/develop/reference/commands/",
+            title: "Commands",
+          },
+          {
             path: "/develop/reference/ImageFill/",
             title: "ImageFill",
+          },
+          {
+            path: "/develop/reference/interactions/",
+            title: "Interactions",
           },
           {
             path: "/develop/reference/LinearGradientFill/",
@@ -281,6 +305,10 @@ module.exports = [
             title: "PerPluginStorage",
           },
           {
+            path: "/develop/reference/scenegraph/",
+            title: "Scenegraph",
+          },
+          {
             path: "/develop/reference/SceneNodeList/",
             title: "SceneNodeList",
           },
@@ -289,36 +317,12 @@ module.exports = [
             title: "Shadow",
           },
           {
-            path: "/develop/reference/application/",
-            title: "Application",
-          },
-          {
-            path: "/develop/reference/assets/",
-            title: "Assets",
-          },
-          {
-            path: "/develop/reference/clipboard/",
-            title: "Clipboard",
-          },
-          {
-            path: "/develop/reference/cloud/",
-            title: "Cloud",
-          },
-          {
-            path: "/develop/reference/commands/",
-            title: "Commands",
-          },
-          {
-            path: "/develop/reference/interactions/",
-            title: "Interactions",
-          },
-          {
-            path: "/develop/reference/scenegraph/",
-            title: "Scenegraph",
-          },
-          {
             path: "/develop/reference/selection/",
             title: "Selection",
+          },
+          {
+            path: "/develop/reference/viewport/",
+            title: "Viewport",
           },
           /*{
             "title": "UI",
@@ -361,10 +365,6 @@ module.exports = [
               }
             ]
           },*/
-          {
-            path: "/develop/reference/viewport/",
-            title: "Viewport",
-          },
         ],
       },
       {

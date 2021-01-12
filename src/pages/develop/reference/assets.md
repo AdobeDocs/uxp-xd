@@ -26,11 +26,11 @@ Assets library entry representing a solid color.
 
 Assets library entry representing a linear or radial gradient.
 
-| Property     | Type                                        | Description                                                                                                                                                                                                    |
-| ------------ | ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| name         | ?string                                     | Name of the Assets entry, if it is explicitly named. (The UI shows an auto-generated label for any unnamed assets).                                                                                            |
-| gradientType | !GradientType                               | Either `GradientType.LINEAR` or `GradientType.RADIAL`                                                                                                                                                          |
-| colorStops   | !Array.&lt; {stop: number, color: !Color} > | Array of color stops used in the gradient, where `stop` >= 0 and <= 1, and the values are strictly increasing. Same format as the `colorStops` property of a [LinearGradientFill](LinearGradientFill/) object. |
+| Property     | Type                                     | Description                                                                                                                                                                                                    |
+| ------------ | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name         | ?string                                  | Name of the Assets entry, if it is explicitly named. (The UI shows an auto-generated label for any unnamed assets).                                                                                            |
+| gradientType | !GradientType                            | Either `GradientType.LINEAR` or `GradientType.RADIAL`                                                                                                                                                          |
+| colorStops   | !Array.< {stop: number, color: !Color} > | Array of color stops used in the gradient, where `stop` >= 0 and <= 1, and the values are strictly increasing. Same format as the `colorStops` property of a [LinearGradientFill](LinearGradientFill/) object. |
 
 ### Typedef CharacterStyleAsset
 
@@ -100,9 +100,9 @@ color/gradient already exists in the collection, _regardless of its name_.
 
 **Returns**: `number` - number of assets added (may be less than requested if duplicates already exist)
 
-| Param       | Type                                                                                                                                                                                                            |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| colorAssets | `! Color &#124; ColorAsset &#124; LinearGradientFill &#124; RadialGradientFill &#124; GradientAsset &#124; Array.&lt;Color&#124;ColorAsset&#124;LinearGradientFill&#124;RadialGradientFill&#124;GradientAsset>` |
+| Param       | Type                                                                                                                                                                                                         |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| colorAssets | `! Color &#124; ColorAsset &#124; LinearGradientFill &#124; RadialGradientFill &#124; GradientAsset &#124; Array.<Color&#124;ColorAsset&#124;LinearGradientFill&#124;RadialGradientFill&#124;GradientAsset>` |
 
 **Example**
 
@@ -137,9 +137,9 @@ Typically you will pass asset objects returned from [`get()`](#module_assets-col
 
 **Returns**: `number` - number of assets deleted (may be less than requested if some didn't exist)
 
-| Param       | Type                                                                                                                                                                                                            |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| colorAssets | `! Color &#124; ColorAsset &#124; LinearGradientFill &#124; RadialGradientFill &#124; GradientAsset &#124; Array.&lt;Color&#124;ColorAsset&#124;LinearGradientFill&#124;RadialGradientFill&#124;GradientAsset>` |
+| Param       | Type                                                                                                                                                                                                         |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| colorAssets | `! Color &#124; ColorAsset &#124; LinearGradientFill &#124; RadialGradientFill &#124; GradientAsset &#124; Array.<Color&#124;ColorAsset&#124;LinearGradientFill&#124;RadialGradientFill&#124;GradientAsset>` |
 
 **Example**
 
@@ -185,9 +185,9 @@ All character style properties must be fully specified (no properties are option
 
 **Returns**: `number` - number of assets added (may be less than requested if duplicates already exist)
 
-| Param           | Type                                                          |
-| --------------- | ------------------------------------------------------------- |
-| charStyleAssets | `! CharacterStyleAsset &#124; Array.&lt;CharacterStyleAsset>` |
+| Param           | Type                                                       |
+| --------------- | ---------------------------------------------------------- |
+| charStyleAssets | `! CharacterStyleAsset &#124; Array.<CharacterStyleAsset>` |
 
 **Example**
 
@@ -234,9 +234,9 @@ to this function.
 
 **Returns**: `number` - number of assets deleted (may be less than requested if some didn't exist)
 
-| Param           | Type                                                          |
-| --------------- | ------------------------------------------------------------- |
-| charStyleAssets | `! CharacterStyleAsset &#124; Array.&lt;CharacterStyleAsset>` |
+| Param           | Type                                                       |
+| --------------- | ---------------------------------------------------------- |
+| charStyleAssets | `! CharacterStyleAsset &#124; Array.<CharacterStyleAsset>` |
 
 **Example**
 

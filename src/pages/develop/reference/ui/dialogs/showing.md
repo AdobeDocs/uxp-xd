@@ -1,13 +1,12 @@
 # Showing a Modal Dialog
 
-Dialogs are shown using the [`HTMLDialogElement#showModal`](/reference/uxp/class/HTMLDialogElement/#htmldialogelement-showmodal) method. This method will render the dialog. The method will return a `Promise`, which you can use to easily wait for the dialog to be dismissed.
+Dialogs are shown using the [`HTMLDialogElement#showModal`](/develop/reference/uxp/class/HTMLDialogElement/#htmldialogelement-showmodal) method. This method will render the dialog. The method will return a `Promise`, which you can use to easily wait for the dialog to be dismissed.
 
 ```js
-dialog.showModal()
-    .then(result => {
-        // handle dialog result
-        // if canceled by ESC, will be "reasonCanceled"
-    });
+dialog.showModal().then((result) => {
+  // handle dialog result
+  // if canceled by ESC, will be "reasonCanceled"
+});
 ```
 
 > **Info**

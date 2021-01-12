@@ -15,7 +15,7 @@ Returns a copy of this instance.
 
 **Kind**: instance method of [`LinearGradientFill`](#LinearGradientFill)
 
-### _linearGradientFill.colorStops : `!Array&lt;{stop:number, color:\![Color](Color/)}>`_
+### _linearGradientFill.colorStops : `!Array<{stop:number, color:\![Color](Color/)}>`_
 
 Array of objects representing each color and its position along the gradient line. The position (`stop` value) is a number 0.0 - 1.0.
 
@@ -24,32 +24,32 @@ Array of objects representing each color and its position along the gradient lin
 ### _linearGradientFill.startX : `number`_
 
 X position of the start of the gradient line, as a multiple of the object's bounding box: X=0 indicates the left edge of the bounding box and X=1 indicates the right edge.
-The gradient line _may_ start or end outside the object's bounding box, so values may be &lt; 0 or > 1.
+The gradient line _may_ start or end outside the object's bounding box, so values may be < 0 or > 1.
 
 **Kind**: instance property of [`LinearGradientFill`](#LinearGradientFill)
 
 ### _linearGradientFill.startY : `number`_
 
 Y position of the start of the gradient line, as a multiple of the object's bounding box: Y=0 indicates the top edge of the bounding box and Y=1 indicates the bottom edge.
-The gradient line _may_ start or end outside the object's bounding box, so values may be &lt; 0 or > 1.
+The gradient line _may_ start or end outside the object's bounding box, so values may be < 0 or > 1.
 
 **Kind**: instance property of [`LinearGradientFill`](#LinearGradientFill)
 
 ### _linearGradientFill.endX : `number`_
 
 X position of the end of the gradient line, as a multiple of the object's bounding box: X=0 indicates the left edge of the bounding box and X=1 indicates the right edge.
-The gradient line _may_ start or end outside the object's bounding box, so values may be &lt; 0 or > 1.
+The gradient line _may_ start or end outside the object's bounding box, so values may be < 0 or > 1.
 
 **Kind**: instance property of [`LinearGradientFill`](#LinearGradientFill)
 
 ### _linearGradientFill.endY : `number`_
 
 Y position of the end of the gradient line, as a multiple of the object's bounding box: Y=0 indicates the top edge of the bounding box and Y=1 indicates the bottom edge.
-The gradient line _may_ start or end outside the object's bounding box, so values may be &lt; 0 or > 1.
+The gradient line _may_ start or end outside the object's bounding box, so values may be < 0 or > 1.
 
 **Kind**: instance property of [`LinearGradientFill`](#LinearGradientFill)
 
-### _linearGradientFill.getEndPoints() ⇒ `!Array&lt;number>`_
+### _linearGradientFill.getEndPoints() ⇒ `!Array<number>`_
 
 Returns an array of \[startX, startY, endX, endY\].
 

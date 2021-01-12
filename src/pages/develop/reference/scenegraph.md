@@ -8,9 +8,9 @@ contained by any artboard).
 ![example of scenegraph tree](../images/scenegraphExample.png)
 
 You can modify properties on any scenenodes within the current [_edit context_](/develop/plugin-development/xd-concepts/edit-context/), and add leaf nodes to the current
-edit context, but you cannot make structural changes directly to the scenegraph tree. Instead, use [commands](/reference/commands/).
+edit context, but you cannot make structural changes directly to the scenegraph tree. Instead, use [commands](/develop/reference/commands/).
 
-Typically, you access scenegraph nodes via the [`selection`](/reference/selection/) argument that is passed to your plugin command, or by
+Typically, you access scenegraph nodes via the [`selection`](/develop/reference/selection/) argument that is passed to your plugin command, or by
 traversing the entire document tree using the [`documentRoot`](#rootnode) argument that is passed to your plugin command. These
 objects are also accessible [on the scenegraph module](#other-module-members) for convenience.
 
@@ -80,22 +80,22 @@ function myCommand(selection) {
 
 These classes are not scenenode types, but are used extensively in the scenegraph API:
 
-- [Color](/reference/Color/) - Value object for `fill`, `stroke`, and other properties
-- [ImageFill](/reference/ImageFill/) - Value object for `fill` property
-- [LinearGradientFill](/reference/LinearGradientFill/) - Value object for `fill` property
-- [Matrix](/reference/Matrix/) - Value object for `transform` property
-- [Shadow](/reference/Shadow/) - Value object for `shadow` property
-- [Blur](/reference/Blur/) - Value object for `blur` property
+- [Color](/develop/reference/Color/) - Value object for `fill`, `stroke`, and other properties
+- [ImageFill](/develop/reference/ImageFill/) - Value object for `fill` property
+- [LinearGradientFill](/develop/reference/LinearGradientFill/) - Value object for `fill` property
+- [Matrix](/develop/reference/Matrix/) - Value object for `transform` property
+- [Shadow](/develop/reference/Shadow/) - Value object for `shadow` property
+- [Blur](/develop/reference/Blur/) - Value object for `blur` property
 
 ## Other module members
 
-- [selection](#module_scenegraph-selection) : \![`Selection`](/reference//selection/)
+- [selection](#module_scenegraph-selection) : \![`Selection`](/develop/reference//selection/)
 - [root](#module_scenegraph-root) : \![`RootNode`](#rootnode)
 - [getNodeByGUID(guid)](#module_scenegraph-getnodebyguid) ⇒ `?SceneNode`
 
-### _scenegraph.selection : \![`Selection`](/reference//selection/)_
+### _scenegraph.selection : \![`Selection`](/develop/reference//selection/)_
 
-Object representing the current selection state and [edit context](/reference//core/edit-context/). Also available as the first argument passed to your plugin command handler function.
+Object representing the current selection state and [edit context](/develop/plugin-development/xd-concepts/edit-context/). Also available as the first argument passed to your plugin command handler function.
 
 **Kind**: static property of [`scenegraph`](#module_scenegraph)
 **Read only**: true
@@ -150,7 +150,7 @@ Returns a unique identifier for this node that stays the same when the file is c
 
 The GUID is guaranteed unique _within_ the current document, but _other_ documents may contain the same GUID value. For example, if the user makes a copy of an XD file, both files will use the same GUIDs.
 
-The GUID of the [root node](#module_scenegraph-root) changes if the document is duplicated via Save As. See [`application.activeDocument.guid`](/reference/application/#module_application-activeDocument) for details.
+The GUID of the [root node](#module_scenegraph-root) changes if the document is duplicated via Save As. See [`application.activeDocument.guid`](/develop/reference/application/#module_application-activeDocument) for details.
 
 Node objects can be destroyed and recreated during operations such as Undo/Redo, so if you need to store a reference to a node even between operations in the _same_ session, it's best to store the GUID and then retrieve the node later via [`getNodeByGuid()`](#module_scenegraph-getnodebyguid).
 
@@ -203,11 +203,11 @@ True if this node is a type that could have children (e.g. an Artboard, Group, B
 
 ### _sceneNode.selected : `boolean`_
 
-True if this node is part of the current selection. To get a list of _all_ selected nodes or change which nodes are selected, use [selection](/reference/selection/).
+True if this node is part of the current selection. To get a list of _all_ selected nodes or change which nodes are selected, use [selection](/develop/reference/selection/).
 
 **Kind**: instance property of [`SceneNode`](#scenenode)
 **Read only**: true
-**See**: [selection](/reference/selection/)
+**See**: [selection](/develop/reference/selection/)
 
 ### _sceneNode.visible : `boolean`_
 
@@ -415,12 +415,12 @@ fixed, walk up the parent chain and check this property on the topmost ancestor 
 **Kind**: instance property of [`SceneNode`](#scenenode)
 **See**: [Artboard.viewportHeight](#artboard-viewportheight)
 
-### _sceneNode.triggeredInteractions : `!Arrray&lt;\![Interaction](/reference/interactions/#Interaction)&gt;`_
+### _sceneNode.triggeredInteractions : `!Arrray<\![Interaction](/develop/reference/interactions/#Interaction)&gt;`_
 
 **Since**: XD 19
 
 Get all interactions that are triggered by this node in the document's interactive prototype. Each element in the array
-is an [Interaction object](/reference/interactions/#Interaction) which describes a gesture/event plus the action it produces.
+is an [Interaction object](/develop/reference/interactions/#Interaction) which describes a gesture/event plus the action it produces.
 
 Note: If this node (or one of its ancestors) has `visible` = false, tap and drag interactions on it will not be triggered.
 
@@ -442,7 +442,7 @@ node.triggeredInteractions.forEach((interaction) => {
 
 **Kind**: instance property of [`SceneNode`](#scenenode)
 **Read only**: true
-**See**: [interactions.allInteractions](/reference/interactions/#module_interactions-allInteractions)
+**See**: [interactions.allInteractions](/develop/reference/interactions/#module_interactions-allInteractions)
 
 ### _sceneNode.horizontalConstraints : `?{position:string, size:string}`_
 
@@ -555,15 +555,15 @@ with other plugins, use [`sharedPluginData`](#scenenode-sharedplugindata).
 
 **Kind**: instance property of [`SceneNode`](#scenenode)
 
-### _sceneNode.sharedPluginData : \![`PerPluginStorage`](/reference/PerPluginStorage/)_
+### _sceneNode.sharedPluginData : \![`PerPluginStorage`](/develop/reference/PerPluginStorage/)_
 
 **Since**: XD 29
 
 Metadata storage accessible by other plugins, separated into silos by plugin ID. Your plugin can read & write the storage for its own plugin ID,
-but storage for other plugin IDs is _read-only_. This property returns a [PerPluginStorage API object](/reference/PerPluginStorage/).
+but storage for other plugin IDs is _read-only_. This property returns a [PerPluginStorage API object](/develop/reference/PerPluginStorage/).
 
 _Each_ scenenode has its own metadata storage. To store general metadata that is not specific to one scenenode, use `sharedPluginData` on the
-[document's scenegraph root](/reference/scenegraph/#module_scenegraph-root).
+[document's scenegraph root](/develop/reference/scenegraph/#module_scenegraph-root).
 
 Metadata is persisted with the document when it is saved. See [`pluginMetadata`](#scenenode-plugindata) for info on how metadata is duplicated when nodes are
 copied or synced.
@@ -707,7 +707,7 @@ Group nodes represent two types of simple containers in XD:
 
 Groups and other containers cannot be created directly using scenenode constructors, since you can't add a populated Group to the
 scenegraph (you can't add subtrees all at once) nor can you add an empty Group and then add children to it (can't add nodes outside
-the scope of the current _edit context_). Instead, to create Groups and other nested structures, use [commands](/reference/commands/).
+the scope of the current _edit context_). Instead, to create Groups and other nested structures, use [commands](/develop/reference/commands/).
 
 Plain Groups (as well as some other node types, like SymbolInstances) can have dynamic layout features enabled such as padding and
 stack layouts. These are sometimes referred to as Content-Aware Groups or Stack containers, but ultimately these appear in the API as
@@ -738,7 +738,7 @@ let group = selection.items[0];  // selection has been set to the new Group node
 #### group.addChild(node, index)
 
 Adds a child node to this container node. You can only add leaf nodes this way; to create structured subtrees of content,
-use [commands](/reference/commands/).
+use [commands](/develop/reference/commands/).
 
 **Kind**: instance method of [`Group`](#group) and other container nodes
 
@@ -807,7 +807,7 @@ let group = ...;
 console.log("Type of group is: " + (group.mask ? "Masked Group" : "Plain Group"));
 ```
 
-To create a Masked Group, use [commands.createMaskGroup](/reference/commands/#module_commands-createMaskGroup) instead of [commands.group](/reference/commands/#module_commands-group).
+To create a Masked Group, use [commands.createMaskGroup](/develop/reference/commands/#module_commands-createMaskGroup) instead of [commands.group](/develop/reference/commands/#module_commands-group).
 
 ## _GraphicNode_
 
@@ -918,7 +918,7 @@ Expressed as a multiple of stroke width. Only used when [`strokeJoins`](#graphic
 
 **Kind**: instance property of [`GraphicNode`](#graphicnode)
 
-### _graphicNode.strokeDashArray : `!Array&lt;number&gt;`_
+### _graphicNode.strokeDashArray : `!Array<number&gt;`_
 
 **Default**: `[]`
 
@@ -1074,12 +1074,12 @@ If Artboard is scrollable, this is the height of the viewport (e.g. mobile devic
 **Kind**: instance property of [`Artboard`](#artboard)
 **See**: [height](#artboard-height)
 
-### artboard.incomingInteractions : `!Array&lt;!{ triggerNode: !SceneNode, interactions: !Array&lt;!Interaction&gt; }&gt;`
+### artboard.incomingInteractions : `!Array<!{ triggerNode: !SceneNode, interactions: !Array<!Interaction&gt; }&gt;`
 
 **Since**: XD 19
 
 Get all interactions whose destination is this artboard (either navigating the entire view, i.e. a `"goToArtboard"` action, or
-showing this artboard as an overlay, i.e. an `"overlay"` action). Each element in the array is an [Interaction object](/reference/interactions/#Interaction)
+showing this artboard as an overlay, i.e. an `"overlay"` action). Each element in the array is an [Interaction object](/develop/reference/interactions/#Interaction)
 which describes a gesture/event plus the action it produces.
 
 May include interactions that are impossible to trigger because the trigger node (or one of its ancestors) has `visible` = false.
@@ -1089,11 +1089,11 @@ Note: currently, this API excludes any applicable keyboard/gamepad interactions.
 **Kind**: instance property of [`Artboard`](#artboard)
 **Read only**: true
 **See**: [SceneNode.triggeredInteractions](#scenenode-triggeredinteractions)
-**See**: [interactions.allInteractions](/reference/interactions/#module_interactions-allInteractions)
+**See**: [interactions.allInteractions](/develop/reference/interactions/#module_interactions-allInteractions)
 
 ### artboard.isHomeArtboard : `boolean`
 
-**Deprecated**: XD 33 - Please use [`flows`](/reference/interactions/#module_interactions-flows) which supports multple flows.
+**Deprecated**: XD 33 - Please use [`flows`](/develop/reference/interactions/#module_interactions-flows) which supports multple flows.
 
 **Since**: XD 19
 
@@ -1105,7 +1105,7 @@ In case there are multiple interactive prototype experiences (flows), implying m
 
 **Kind**: instance property of [`Artboard`](#artboard)
 **Read only**: true
-**See**: [interactions.homeArtboard](/reference/interactions/#module_interactions-homeArtboard)
+**See**: [interactions.homeArtboard](/develop/reference/interactions/#module_interactions-homeArtboard)
 
 ## Ellipse
 
@@ -1195,7 +1195,7 @@ then set size back to the saved values.
 
 **Kind**: instance property of [`Polygon`](#polygon)
 
-### polygon.cornerRadii : `!Array&lt;number&gt;`
+### polygon.cornerRadii : `!Array<number&gt;`
 
 List of corner radius for each corner of the polygon. To set corner radius, use [`setAllCornerRadii()`](#polygon-setallcornerradii).
 
@@ -1296,7 +1296,7 @@ BooleanGroup container node - although it has fill/stroke/etc. properties like a
 with children. Its visual appearance is determined by generating a path via a nondestructive boolean operation on all
 its children's paths.
 
-It is not currently possible for plugins to _create_ a new BooleanGroup node, aside from using [commands.duplicate](/reference/commands/#module_commands-duplicate)
+It is not currently possible for plugins to _create_ a new BooleanGroup node, aside from using [commands.duplicate](/develop/reference/commands/#module_commands-duplicate)
 to clone existing BooleanGroups.
 
 ### booleanGroup.pathOp : `string`
@@ -1356,7 +1356,7 @@ the new string's indices unless you explicitly change styleRanges as well.
 
 **Kind**: instance property of [`Text`](#text)
 
-### text.styleRanges : `!Array&lt;!{length:number, fontFamily:string, fontStyle:string, fontSize:number, fill:\![Color](Color/), charSpacing:number, underline:boolean, strikethrough:boolean, textTransform:string, textScript:string}&gt;`
+### text.styleRanges : `!Array<!{length:number, fontFamily:string, fontStyle:string, fontSize:number, fill:\![Color](Color/), charSpacing:number, underline:boolean, strikethrough:boolean, textTransform:string, textScript:string}&gt;`
 
 Array of text ranges and their character style settings. Each range covers a set number of characters in the text content. Ranges
 are contiguous, with each one starting immediately after the previous one. Any characters past the end of the last range use the
@@ -1580,7 +1580,7 @@ Note that overrides vary somewhat in granularity. In some but not all cases, ove
 on the same node from receiving future updates from the master instance.
 
 It is not currently possible for plugins to _create_ a new component definition or a new SymbolInstance node, aside from using
-[commands.duplicate](/reference/commands/#module_commands-duplicate) to clone existing SymbolInstances.
+[commands.duplicate](/develop/reference/commands/#module_commands-duplicate) to clone existing SymbolInstances.
 
 ### symbolInstance.symbolId : `string`
 
@@ -1609,7 +1609,7 @@ determines how may cells are visible (new cells are automatically generated as n
 Each grid cell is a Group that is an immediate child of the RepeatGrid. These groups are automatically created and destroyed as
 needed when the RepeatGrid is resized.
 
-It is not currently possible for plugins to _create_ a new RepeatGrid node, aside from using [commands.duplicate](/reference/commands/#module_commands-duplicate)
+It is not currently possible for plugins to _create_ a new RepeatGrid node, aside from using [commands.duplicate](/develop/reference/commands/#module_commands-duplicate)
 to clone existing RepeatGrids.
 
 ### repeatGrid.width : `number`
@@ -1669,10 +1669,10 @@ You can call this API from either of _two different edit contexts_:
 
 **Kind**: instance method of [`RepeatGrid`](#repeatgrid)
 
-| Param      | Type                   | Description                                                                                                                                                                                                                         |
-| ---------- | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| textNode   | `!Text`                | A Text node exemplar that would be in scope for editing if the current edit context was one of this RepeatGrid's cells. The data series will be bound to this text node and all corresponding copies of it in the other grid cells. |
-| textValues | `!Array&lt;string&gt;` | Array of one or more strings. Empty strings are ignored.                                                                                                                                                                            |
+| Param      | Type                | Description                                                                                                                                                                                                                         |
+| ---------- | ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| textNode   | `!Text`             | A Text node exemplar that would be in scope for editing if the current edit context was one of this RepeatGrid's cells. The data series will be bound to this text node and all corresponding copies of it in the other grid cells. |
+| textValues | `!Array<string&gt;` | Array of one or more strings. Empty strings are ignored.                                                                                                                                                                            |
 
 ### repeatGrid.attachImageDataSeries(shapeNode, images)
 
@@ -1689,10 +1689,10 @@ You can call this API from either of _two different edit contexts_:
 
 **Kind**: instance method of [`RepeatGrid`](#repeatgrid)
 
-| Param     | Type                       | Description                                                                                                                                                                                                                                                                                                            |
-| --------- | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| shapeNode | `!GraphicNode`             | A shape node exemplar that would be in scope for editing if the current edit context was one of this RepeatGrid's cells. The image series will be bound to this node and all corresponding copies of it in the other grid cells. Must be a node type that supports image fills (e.g. Rectangle, but not Text or Line). |
-| images    | `!Array&lt;!ImageFill&gt;` | Array of one or more ImageFills.                                                                                                                                                                                                                                                                                       |
+| Param     | Type                    | Description                                                                                                                                                                                                                                                                                                            |
+| --------- | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| shapeNode | `!GraphicNode`          | A shape node exemplar that would be in scope for editing if the current edit context was one of this RepeatGrid's cells. The image series will be bound to this node and all corresponding copies of it in the other grid cells. Must be a node type that supports image fills (e.g. Rectangle, but not Text or Line). |
+| images    | `!Array<!ImageFill&gt;` | Array of one or more ImageFills.                                                                                                                                                                                                                                                                                       |
 
 ## ScrollableGroup
 

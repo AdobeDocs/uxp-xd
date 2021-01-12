@@ -11,16 +11,15 @@ described in [the previous version of these docs](https://github.com/AdobeXD/plu
 
 The current edit context's scope is derived from the current selection:
 
-* The **"edit context root"** is the node which is the closest common ancestor of all the selected nodes. It's typically indicated
+- The **"edit context root"** is the node which is the closest common ancestor of all the selected nodes. It's typically indicated
   by a ![soft blue outline](../../images/edit-context-outline.png) in the UI:
 
   As a special case, if the edit context root would be an Artboard, it is moved up to the root of the entire scenegraph instead.
 
-* Nodes within this subtree are "in scope" for editing (or selection) _if_ they are connected to the edit context root by a parent
+- Nodes within this subtree are "in scope" for editing (or selection) _if_ they are connected to the edit context root by a parent
   chain consisting entirely of plain Groups or Artboards. (A "plain Group" is a Group node with no [mask](../scenegraph/#Group-mask)).
 
-* You can always safely assume that all selected nodes are in scope for editing.
-
+- You can always safely assume that all selected nodes are in scope for editing.
 
 ### Examples
 
@@ -53,27 +52,26 @@ other immediate children of the root node (aka the pasteboard), and all immediat
 containing the selection). If any of those nodes is a plain Group, its children are also in scope for editing (recursively, if any
 of those are Groups too).
 
-
 ### What changes are allowed within the edit context?
 
 **Simple changes** can be made directly to the scenegraph nodes that are in scope:
+
 - Change a property
 - Delete a node
 - Add a new _leaf node_ (basic shape node)
 
 **Structural changes** _cannot_ be made directly, since their impact extends to nodes outside the edit context's scope. You can make
 structural changes by scripting XD commands:
-- Ungroup (or break apart other container types) - use the [`ungroup()` command](/reference/commands/#module_commands-ungroup)
-- Create new Groups (add a whole _tree_ of new nodes) - use the [`group()` command](/reference/commands/#module_commands-group)
-- Rearrange Z order - use commands such as [`bringToFront()`](/reference/commands/#module_commands-bringToFront)
+
+- Ungroup (or break apart other container types) - use the [`ungroup()` command](/develop/reference/commands/#module_commands-ungroup)
+- Create new Groups (add a whole _tree_ of new nodes) - use the [`group()` command](/develop/reference/commands/#module_commands-group)
+- Rearrange Z order - use commands such as [`bringToFront()`](/develop/reference/commands/#module_commands-bringToFront)
 
 If a plugin breaks any of these rules, its entire edit operation will be reverted to protect the user's document from corruption.
 
-
 ### Exceptions to these rules
 
-* You can set [`pluginData`](../scenegraph/#SceneNode-pluginData) on the root node of the scenegraph regardless of the current edit
+- You can set [`pluginData`](../scenegraph/#SceneNode-pluginData) on the root node of the scenegraph regardless of the current edit
   context, making it useful for storing plugin settings that are document-specific.
-* The RepeatGrid APIs [`attachTextDataSeries()`](../scenegraph/#RepeatGrid-attachTextDataSeries) and [`attachImageDataSeries()`](
-  ../scenegraph/#RepeatGrid-attachImageDataSeries) can be called when _either_ the RepeatGrid node _or_ the target node being
+- The RepeatGrid APIs [`attachTextDataSeries()`](../scenegraph/#RepeatGrid-attachTextDataSeries) and [`attachImageDataSeries()`](../scenegraph/#RepeatGrid-attachImageDataSeries) can be called when _either_ the RepeatGrid node _or_ the target node being
   attached to is in the current edit context.

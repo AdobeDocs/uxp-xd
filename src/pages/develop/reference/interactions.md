@@ -4,13 +4,13 @@ The `interactions` module and related APIs provide _read only_ information about
 
 - The blue "wires" seen in XD's prototyping UI, known as "interactions," which specify gestures/events which trigger actions to
   occur in the prototype. Accessible as a single consolidated global listing via this module's [`allInteractions`](#module_interactions-allInteractions) API,
-  or you can access information from specific nodes in the scenegraph via [`SceneNode.triggeredInteractions`](/reference/scenegraph/#SceneNode-triggeredInteractions)
-  and [`Artboard.incomingInteractions`](/reference/scenegraph/#Artboard-incomingInteractions).
+  or you can access information from specific nodes in the scenegraph via [`SceneNode.triggeredInteractions`](/develop/reference/scenegraph/#SceneNode-triggeredInteractions)
+  and [`Artboard.incomingInteractions`](/develop/reference/scenegraph/#Artboard-incomingInteractions).
 
 - Designers can author multiple prototype or interaction flows in a single document and publish unique shareable links for each flow. Developers can access all document flows using the [`flows`](#module_interactions-flows) API. With multiple flow support the [`homeArtboard`](#module_interactions-homeArtboard) API is being deprecated as XD no longer has a single home artboard restriction.
 
-- Properties that affect Artboard scrolling behavior: Artboard [`viewportHeight`](/reference/scenegraph/#Artboard-viewportHeight) and
-  node [`fixedWhenScrolling`](/reference/scenegraph/#SceneNode-fixedWhenScrolling).
+- Properties that affect Artboard scrolling behavior: Artboard [`viewportHeight`](/develop/reference/scenegraph/#Artboard-viewportHeight) and
+  node [`fixedWhenScrolling`](/develop/reference/scenegraph/#SceneNode-fixedWhenScrolling).
 
 > **Tip**
 > Interactions are a **fast-changing area** in XD. APIs here have a higher likelihood of becoming deprecated, or lagging behind new XD features, than other parts of XD's plugin APIs.
@@ -121,11 +121,11 @@ Action performed when the trigger occurs.
 
 Navigate the entire screen to view a different artboard. Additional Action properties:
 
-| Property               | Type                        | Description                                                                                                                                                                                 |
-| ---------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| destination            | !Artboard                   | Artboard to navigate to.                                                                                                                                                                    |
-| transition             | \![Transition](#Transition) | Animation style with which the view transitions from the old Artboard to the new one.                                                                                                       |
-| preserveScrollPosition | boolean                     | If both Artboards are [taller than the viewport](/reference/scenegraph/#Artboard-viewportHeight), attempts to keep the user's current scroll position the same as in the outgoing artboard. |
+| Property               | Type                        | Description                                                                                                                                                                                         |
+| ---------------------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| destination            | !Artboard                   | Artboard to navigate to.                                                                                                                                                                            |
+| transition             | \![Transition](#Transition) | Animation style with which the view transitions from the old Artboard to the new one.                                                                                                               |
+| preserveScrollPosition | boolean                     | If both Artboards are [taller than the viewport](/develop/reference/scenegraph/#Artboard-viewportHeight), attempts to keep the user's current scroll position the same as in the outgoing artboard. |
 
 ##### "overlay"
 
@@ -166,13 +166,13 @@ Animation style with which `"goToArtboard"` and `"overlay"` actions transition f
 
 Information related to a particular flow
 
-| Property     | Type                                          | Description                                                                                                                      |
-| ------------ | --------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
-| name         | string                                        | Auto-generated or user-defined label for a particular flow.                                                                      |
-| homeArtboard | \![Artboard](/reference/scenegraph/#Artboard) | Artboard from which a particular flow or a prototype experience begins.                                                          |
-| url          | string                                        | URL is the latest published link associated with a particular flow and can be `null` in case no link is published for that flow. |
+| Property     | Type                                                  | Description                                                                                                                      |
+| ------------ | ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
+| name         | string                                                | Auto-generated or user-defined label for a particular flow.                                                                      |
+| homeArtboard | \![Artboard](/develop/reference/scenegraph/#Artboard) | Artboard from which a particular flow or a prototype experience begins.                                                          |
+| url          | string                                                | URL is the latest published link associated with a particular flow and can be `null` in case no link is published for that flow. |
 
-NOTE: All `url` returned via [flows](#module_interactions-flows) are related to published flows and are usually a subset of the URLs returned via [getSharedArtifacts](/reference/cloud/#module_cloud-getSharedArtifacts). However, the reverse may or may not always hold true.
+NOTE: All `url` returned via [flows](#module_interactions-flows) are related to published flows and are usually a subset of the URLs returned via [getSharedArtifacts](/develop/reference/cloud/#module_cloud-getSharedArtifacts). However, the reverse may or may not always hold true.
 
 ### _interactions.homeArtboard : `?Artboard`_
 
@@ -187,9 +187,9 @@ In case there are multiple interactive prototype experiences (flows), implying m
 **Kind**: static property of [`interactions`](#module_interactions)
 **Read only**: true
 
-**See**: [`Artboard.isHomeArtboard`](/reference/scenegraph/#Artboard-isHomeArtboard)
+**See**: [`Artboard.isHomeArtboard`](/develop/reference/scenegraph/#Artboard-isHomeArtboard)
 
-### _interactions.flows : `!Array&lt;\![FlowInfo](#FlowInfo)&gt;`_
+### _interactions.flows : `!Array<\![FlowInfo](#FlowInfo)&gt;`_
 
 **Since**: XD 33
 
@@ -200,10 +200,10 @@ A `flow` is a series or set of artboards starting from one artboard (called a ho
 **Kind**: static property of [`interactions`](#module_interactions)
 **Read only**: true
 
-### _interactions.allInteractions : `!Array&lt;!{triggerNode: !SceneNode, interactions: !Array&lt;\![Interaction](#Interaction)&gt;}&gt;`_
+### _interactions.allInteractions : `!Array<!{triggerNode: !SceneNode, interactions: !Array<\![Interaction](#Interaction)&gt;}&gt;`_
 
 Returns a collection of _all_ interactions across the entire document, grouped by triggering scenenode. Each entry in this array
-specifies a `triggerNode` and the result of getting [`triggerNode.triggeredInteractions`](/reference/scenegraph/#SceneNode-triggeredInteractions).
+specifies a `triggerNode` and the result of getting [`triggerNode.triggeredInteractions`](/develop/reference/scenegraph/#SceneNode-triggeredInteractions).
 
 May include interactions that are impossible to trigger because the trigger node (or one of its ancestors) has `visible` = false.
 

@@ -170,10 +170,10 @@ rotation, then the result will have different width & height from the original r
 | ----- | ---------------------------------------------------- |
 | rect  | `!{x:number, y:number, width:number, height:number}` |
 
-### matrix.getTranslate() ⇒ `!Array.&lt;number&gt;`
+### matrix.getTranslate() ⇒ `!Array.<number&gt;`
 
 **Kind**: instance method of [`Matrix`](#Matrix)  
-**Returns**: `!Array.&lt;number&gt;` - The translation component of this matrix: [tx, ty]. Equals the `e` and `f` components of this matrix.
+**Returns**: `!Array.<number&gt;` - The translation component of this matrix: [tx, ty]. Equals the `e` and `f` components of this matrix.
 
 ### matrix.scaleFactors() ⇒ `!{scaleX:number, scaleY:number}`
 
