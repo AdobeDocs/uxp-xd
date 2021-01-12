@@ -6,8 +6,8 @@ This sample demonstrates how to create path objects in XD. The path objects are 
 
 - Basic knowledge of HTML, CSS, and JavaScript
 - Basic knowledge of [Paths](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths)
-- [Quick Start Tutorial](/tutorials/quick-start/)
-- [Debugging Tutorial](/tutorials/debugging/)
+- [Quick Start Tutorial](/develop/tutorials/quick-start/)
+- [Debugging Tutorial](/develop/tutorials/debugging/)
 
 ## Development Steps
 
@@ -16,7 +16,7 @@ This sample demonstrates how to create path objects in XD. The path objects are 
 
 ### 1. Create plugin scaffold
 
-First, edit the manifest file for the plugin you created in our [Quick Start Tutorial](/tutorials/quick-start/).
+First, edit the manifest file for the plugin you created in our [Quick Start Tutorial](/develop/tutorials/quick-start/).
 
 Replace the `uiEntryPoints` field of the manifest with the following:
 

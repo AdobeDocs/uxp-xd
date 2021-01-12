@@ -88,7 +88,7 @@ Keyboard shortcuts are defined separately for each platform. Each definition is 
   - Other keys (including punctuation, arrow keys, or F1-F12) are currently _not supported_.
 
 > **Info**
-> If your shortcut collides with a built-in XD command _or_ another plugin's shortcut, your shortcut will be ignored and you'll see a warning printed to the [developer console](/tutorials/debugging/#1-look-for-errors-in-the-developer-console).
+> If your shortcut collides with a built-in XD command _or_ another plugin's shortcut, your shortcut will be ignored and you'll see a warning printed to the [developer console](/develop/tutorials/debugging/#1-look-for-errors-in-the-developer-console).
 
 ## Menu Localization
 

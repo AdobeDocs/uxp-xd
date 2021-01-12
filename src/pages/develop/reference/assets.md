@@ -26,11 +26,11 @@ Assets library entry representing a solid color.
 
 Assets library entry representing a linear or radial gradient.
 
-| Property     | Type                                     | Description                                                                                                                                                                                                    |
-| ------------ | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| name         | ?string                                  | Name of the Assets entry, if it is explicitly named. (The UI shows an auto-generated label for any unnamed assets).                                                                                            |
-| gradientType | !GradientType                            | Either `GradientType.LINEAR` or `GradientType.RADIAL`                                                                                                                                                          |
-| colorStops   | !Array.< {stop: number, color: !Color} > | Array of color stops used in the gradient, where `stop` >= 0 and <= 1, and the values are strictly increasing. Same format as the `colorStops` property of a [LinearGradientFill](LinearGradientFill/) object. |
+| Property     | Type                                     | Description                                                                                                                                                                                                                       |
+| ------------ | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name         | ?string                                  | Name of the Assets entry, if it is explicitly named. (The UI shows an auto-generated label for any unnamed assets).                                                                                                               |
+| gradientType | !GradientType                            | Either `GradientType.LINEAR` or `GradientType.RADIAL`                                                                                                                                                                             |
+| colorStops   | !Array.< {stop: number, color: !Color} > | Array of color stops used in the gradient, where `stop` >= 0 and <= 1, and the values are strictly increasing. Same format as the `colorStops` property of a [LinearGradientFill](/develop/reference/LinearGradientFill/) object. |
 
 ### Typedef CharacterStyleAsset
 
@@ -43,7 +43,7 @@ Assets library entry representing a set of text character styles.
 
 ### Typedef CharacterStyle
 
-Character style properties. See documentation for the [Text](scenegraph/#Text) node type for more details.
+Character style properties. See documentation for the [Text](/develop/reference/scenegraph/#text) node type for more details.
 
 When creating a new character style, all properties are mandatory except those with default values specified here. When deleting
 an existing character style, always pass the exact object returned by [`characterStyles.get()`](#module_assets-characterStyles-get) (with all properties fully

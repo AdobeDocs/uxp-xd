@@ -6,8 +6,8 @@ This sample app will show you how to load an image in an XD object (Rectangle or
 
 - Basic knowledge of HTML, CSS, and JavaScript
 - Basic knowledge of `XMLHttpRequest` and `fetch`
-- [Quick Start Tutorial](/tutorials/quick-start/)
-- [Debugging Tutorial](/tutorials/debugging/)
+- [Quick Start Tutorial](/develop/tutorials/quick-start/)
+- [Debugging Tutorial](/develop/tutorials/debugging/)
 
 ## Development Steps
 
@@ -16,7 +16,7 @@ This sample app will show you how to load an image in an XD object (Rectangle or
 
 ### 1. Create plugin scaffold
 
-First, edit the manifest file for the plugin you created in our [Quick Start Tutorial](/tutorials/quick-start).
+First, edit the manifest file for the plugin you created in our [Quick Start Tutorial](/develop/tutorials/quick-start).
 
 Replace the `uiEntryPoints` field of the manifest with the following:
 
