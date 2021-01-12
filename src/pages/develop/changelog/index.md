@@ -202,8 +202,8 @@ Information shown in the plugin listing has moved out of `manifest.json` and is 
 
 - Submitting a plugin also now requires at least one _screenshot image_.
 - Icons seen in the Plugin Manager list must be provided online during submission, but icons seen in the Plugins side panel must still be part of the plugin package folder.
-- As of XD 23, the Plugin Manager UI ignores description, author, links, etc. in `manifest.json`. Submitting to the public listing is now the _only_ way to display this info in Plugin Manager. See [updated manifest documentation](/develop/reference/structure/manifest.md).
-- As of September 24, submitting a new or updated plugin to the public listing requires supplying all these details via the developer submission portal online. See [How to submit to Plugin Manager](distribution/how-to-submit-to-plugin-manager.md).
+- As of XD 23, the Plugin Manager UI ignores description, author, links, etc. in `manifest.json`. Submitting to the public listing is now the _only_ way to display this info in Plugin Manager. See [updated manifest documentation](/develop/plugin-development/plugin-structure/manifest).
+- As of September 24, submitting a new or updated plugin to the public listing requires supplying all these details via the developer submission portal online. See [How to submit to Plugin Manager](/distribution/submission-checklist).
 
 ### Smaller fixes and improvements
 
@@ -240,7 +240,7 @@ Also note that this release has an issue where transactions being wrapped by `ed
 ### Plugin Panel UI
 
 - Plugins can now display UI persistently in a side panel. More information:
-  - [How to define a panel](/develop/reference/structure/handlers.md#panel)
+  - [How to define a panel](/develop/plugin-development/plugin-structure/handlers/#panel-ui-panelid)
   - [Panel overview / reference](/develop/reference/ui/panels/index.md)
   - [Panel Quick Start tutorial](/develop/tutorials/quick-start-panel/index.md)
 - A new default stylesheet is provided for plugin UI that renders inside a plugin. This means that UI that renders in one manner in a modal dialog may not render in the same exact manner in a panel.
@@ -280,7 +280,7 @@ In order to gain access to most of these features, your plugin must _opt-in_ to 
 
 ### Known Issues
 
-See the [Known Issues page](./known-issues.md) for a comprehensive list of existing known issues.
+See the [Known Issues page](/develop/known-issues/) for a comprehensive list of existing known issues.
 
 ---
 
@@ -307,7 +307,7 @@ See the [Known Issues page](./known-issues.md) for a comprehensive list of exist
 
 ### Known Issues
 
-No new known issues. See the [Known Issues page](./known-issues.md) for a comprehensive list of existing known issues.
+No new known issues. See the [Known Issues page](/develop/known-issues/) for a comprehensive list of existing known issues.
 
 ---
 
@@ -345,7 +345,7 @@ No new known issues. See the [Known Issues page](./known-issues.md) for a compre
 
 ### Known Issues
 
-No new known issues. See the [Known Issues page](./known-issues.md) for a comprehensive list of existing known issues.
+No new known issues. See the [Known Issues page](/develop/known-issues/) for a comprehensive list of existing known issues.
 
 ---
 
@@ -402,7 +402,7 @@ No new known issues. See the [Known Issues page](./known-issues.md) for a compre
 
 ### Known Issues
 
-No new known issues. See the [Known Issues page](./known-issues.md) for a comprehensive list of existing known issues.
+No new known issues. See the [Known Issues page](/develop/known-issues/) for a comprehensive list of existing known issues.
 
 ---
 
@@ -419,7 +419,7 @@ No new known issues. See the [Known Issues page](./known-issues.md) for a compre
   - _Plugins still cannot edit globally across the entire document at once, even though in very simple testing it may \_appear_ that this works. Non-Group containers act as blockades that
     the edit scope cannot cross - if the selection is outside such a container, you cannot edit inside it; and if the selection is inside such a container, you cannot edit outside it.
 - **Additional manifest fields required for publishing:** As of March 5, submitting a new or updated plugin for the in-app plugins listing requires providing new `summary`, `author`, and `languages`
-  fields, as well as several additional icon sizes. See [manifest documentation](/develop/reference/structure/manifest.md).
+  fields, as well as several additional icon sizes. See [manifest documentation](/develop/plugin-development/plugin-structure/manifest).
 
 ### Breaking Changes
 
@@ -435,7 +435,7 @@ No other API changes.
 
 ### Known Issues
 
-No new known issues. See the [Known Issues page](./known-issues.md) for a comprehensive list of existing known issues.
+No new known issues. See the [Known Issues page](/develop/known-issues/) for a comprehensive list of existing known issues.
 
 ---
 
@@ -457,7 +457,7 @@ No other API changes.
 
 ### Known Issues
 
-No new known issues. See the [Known Issues page](./known-issues.md) for a comprehensive list of existing known issues.
+No new known issues. See the [Known Issues page](/develop/known-issues/) for a comprehensive list of existing known issues.
 
 ---
 
@@ -466,7 +466,7 @@ No new known issues. See the [Known Issues page](./known-issues.md) for a compre
 ### New API Features
 
 - **[Assets panel colors & text styles](/develop/reference/assets.md):** Get/add/remove any colors, gradients, and text styles saved in the Assets panel.
-- **[Deep link to plugin listings](./distribution/how-to-create-deep-links.md):** Link from web sites, social media, etc. directly to your plugin listing in XD's UI so users can easily install the plugin.
+- **[Deep link to plugin listings](/distribution/how-to-create-deep-links.md):** Link from web sites, social media, etc. directly to your plugin listing in XD's UI so users can easily install the plugin.
 
 ### Breaking Changes
 
@@ -488,7 +488,7 @@ No other API changes.
 
 - _New:_ Plugins can modify the Assets panel contents while running in the background. Do not rely on this - in a future release, it will be blocked.
 
-See the [Known Issues page](./known-issues.md) for a comprehensive list of existing known issues.
+See the [Known Issues page](/develop/known-issues/) for a comprehensive list of existing known issues.
 
 ---
 
@@ -521,7 +521,7 @@ See the [Known Issues page](./known-issues.md) for a comprehensive list of exist
 
 ### Known Issues
 
-No new known issues. See the [Known Issues page](./known-issues.md) for a comprehensive list of existing known issues.
+No new known issues. See the [Known Issues page](/develop/known-issues/) for a comprehensive list of existing known issues.
 
 ---
 
