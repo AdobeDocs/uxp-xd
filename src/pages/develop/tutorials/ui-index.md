@@ -10,8 +10,8 @@ The tutorials contained in this section will get you on your way to building plu
 
 Now you're ready to display simple messages to your users!
 
-- [How to show an alert](/tutorials/how-to-show-an-alert/)
-- [How to ask user for confirmation](/tutorials/how-to-ask-user-for-confirmation/)
+- [How to show an alert](/develop/tutorials/how-to-show-an-alert/)
+- [How to ask user for confirmation](/develop/tutorials/how-to-ask-user-for-confirmation/)
 
 ## More complex UI
 

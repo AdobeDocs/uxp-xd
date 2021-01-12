@@ -9,8 +9,8 @@ There are many times when a plugin will need to ask the user whether or not it s
 ## Prerequisites
 
 - Basic knowledge of HTML, CSS, and JavaScript.
-- [Quick Start Tutorial](/tutorials/quick-start/)
-- [Debugging Tutorial](/tutorials/debugging/)
+- [Quick Start Tutorial](/develop/tutorials/quick-start/)
+- [Debugging Tutorial](/develop/tutorials/debugging/)
 
 ## Development Steps
 
@@ -19,7 +19,7 @@ There are many times when a plugin will need to ask the user whether or not it s
 
 ### 1. Prepare your manifest.json file
 
-First, edit the manifest file for the plugin you created in our [Quick Start Tutorial](/tutorials/quick-start/).
+First, edit the manifest file for the plugin you created in our [Quick Start Tutorial](/develop/tutorials/quick-start/).
 
 Replace the `uiEntryPoints` field of the manifest with the following:
 

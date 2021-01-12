@@ -8,8 +8,8 @@ This tutorial will show you how to implement the OAuth workflow in an XD plugin,
 ## Prerequisites
 
 - Basic knowledge of HTML, CSS, and JavaScript.
-- [Quick Start Tutorial](/tutorials/quick-start/)
-- [Debugging Tutorial](/tutorials/debugging/)
+- [Quick Start Tutorial](/develop/tutorials/quick-start/)
+- [Debugging Tutorial](/develop/tutorials/debugging/)
 - Familiarity with your OS's command line application
 - Familiarity with [OAuth](https://oauth.net/2/)
 - [A registered app on Dropbox](https://www.dropbox.com/developers/apps/create) with the following settings:
@@ -126,7 +126,7 @@ Now we can get back to the XD plugin side of things!
 
 ### 1. Create plugin scaffold
 
-First, edit the manifest file for the plugin you created in our [Quick Start Tutorial](/tutorials/quick-start).
+First, edit the manifest file for the plugin you created in our [Quick Start Tutorial](/develop/tutorials/quick-start).
 
 Replace the `uiEntryPoints` field of the manifest with the following:
 

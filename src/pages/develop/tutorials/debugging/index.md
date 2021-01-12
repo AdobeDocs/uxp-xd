@@ -4,7 +4,7 @@ Bugs happen! In this tutorial, you will learn how to debug your Adobe XD plugin.
 
 ### Prerequisite
 
-At least one plugin in your `develop` folder (you can create one using our [Quick Start tutorial](/tutorials/quick-start/)).
+At least one plugin in your `develop` folder (you can create one using our [Quick Start tutorial](/develop/tutorials/quick-start/)).
 
 ### Debugging Options
 

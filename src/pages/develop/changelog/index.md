@@ -4,26 +4,26 @@
 
 ### New feature
 
-- **Auto Height Text** -- This new "auto height" text node type will adjust (grow/shrink) its height so that it always fits the content inside. Content changes, style changes and area width changes will make the area text height resize accordingly. A new text [layoutBox](./reference/scenegraph.md#Text-layoutBox) API will return the type of text node and the text frame width and/or height contraints if applicable. This API should be used instead of the text [areaBox](./reference/scenegraph.md#Text-areaBox) API going forward.
+- **Auto Height Text** -- This new "auto height" text node type will adjust (grow/shrink) its height so that it always fits the content inside. Content changes, style changes and area width changes will make the area text height resize accordingly. A new text [layoutBox](/develop/reference/scenegraph.md#Text-layoutBox) API will return the type of text node and the text frame width and/or height contraints if applicable. This API should be used instead of the text [areaBox](/develop/reference/scenegraph.md#Text-areaBox) API going forward.
 
 ## XD Release 33.0.12 (September 2020)
 
 ### New API features
 
-[Read multiple flows](./reference/interactions.md#module_interactions-flows)
+[Read multiple flows](/develop/reference/interactions.md#module_interactions-flows)
 
 ## XD Release 32.0.22 (August 2020)
 
 ### New feature
 
 - **Multiple Flows** -- Designers can now author multiple prototype or interaction flows in a single document. For any document that includes multiple flow support the
-  [HomeArtboard](./reference/interactions.md#module_interactions-homeArtboard) API will return the most upper left artboard and [isHomeArtBoard](./reference/scenegraph.md#Artboard-isHomeArtBoard) will only return `true` for the most upper left artboard.
+  [HomeArtboard](/develop/reference/interactions.md#module_interactions-homeArtboard) API will return the most upper left artboard and [isHomeArtBoard](/develop/reference/scenegraph.md#Artboard-isHomeArtBoard) will only return `true` for the most upper left artboard.
 
 ## XD Release 30.0.12 (June 2020)
 
 ### New features
 
-- **Scrollable Groups** -- Plugins will see a new [ScrollableGroup](./reference/scenegraph.md#ScrollableGroup) node type and can read the scroll direction(s) and viewport size. Plugins cannot yet create a ScrollableGroup or modify its viewport, however.
+- **Scrollable Groups** -- Plugins will see a new [ScrollableGroup](/develop/reference/scenegraph.md#ScrollableGroup) node type and can read the scroll direction(s) and viewport size. Plugins cannot yet create a ScrollableGroup or modify its viewport, however.
 
 ### Known Issues
 
@@ -35,9 +35,9 @@
 
 ### New API features
 
-- **[Read & modify Responsive Resize constraints](./reference/scenegraph.md#SceneNode-horizontalConstraints)**
-- **[Set metadata readable by other plugins](./reference/scenegraph.md#SceneNode-sharedPluginData)**
-- [Check if two nodes share the same raster image asset](./reference/ImageFill.md#ImageFill-assetId)
+- **[Read & modify Responsive Resize constraints](/develop/reference/scenegraph.md#SceneNode-horizontalConstraints)**
+- **[Set metadata readable by other plugins](/develop/reference/scenegraph.md#SceneNode-sharedPluginData)**
+- [Check if two nodes share the same raster image asset](/develop/reference/ImageFill.md#ImageFill-assetId)
 
 ### UXP upgrade
 
@@ -80,14 +80,14 @@ Bug fixes:
 
 XD 28 is a minor update for plugin developers:
 
-- `SceneNode.BLEND_MODE_*` constants for use with the [`SceneNode.blendMode`](./reference/scenegraph.md#SceneNode-blendMode) property (which was introduced in XD 27).
-- Quickly look up a scenenode by its GUID with [`scenegraph.getNodeByGUID()`](./reference/scenegraph.md#module_scenegraph-getNodeByGUID).
-- Easily check if a scenenode is currently in scope for editing with [`isInEditContext()`](./reference/selection.md#selection-isInEditContext).
+- `SceneNode.BLEND_MODE_*` constants for use with the [`SceneNode.blendMode`](/develop/reference/scenegraph.md#SceneNode-blendMode) property (which was introduced in XD 27).
+- Quickly look up a scenenode by its GUID with [`scenegraph.getNodeByGUID()`](/develop/reference/scenegraph.md#module_scenegraph-getNodeByGUID).
+- Easily check if a scenenode is currently in scope for editing with [`isInEditContext()`](/develop/reference/selection.md#selection-isInEditContext).
 
 ### Known Issues
 
 - XD 28 introduces two new types of interaction actions: audio-file playback, and "scroll to" actions. Interactions using these features are not visible to plugins yet (_speech_
-  playback interactions _are_ exposed though). See the [interactions API documentation](./reference/interactions.md#module_interactions-allInteractions) for a complete list of
+  playback interactions _are_ exposed though). See the [interactions API documentation](/develop/reference/interactions.md#module_interactions-allInteractions) for a complete list of
   which interaction types are & aren't exposed to plugins at this time.
 
 [Read more about XD 28 new features for end users on the Adobe blog](https://theblog.adobe.com/xd-march-2020-audio-prototyping-anchor-links-more).
@@ -96,7 +96,7 @@ XD 28 is a minor update for plugin developers:
 
 XD 27 is a minor update for plugin developers, with one new added API:
 
-- Get and set [`SceneNode.blendMode`](./reference/scenegraph.md#SceneNode-blendMode)
+- Get and set [`SceneNode.blendMode`](/develop/reference/scenegraph.md#SceneNode-blendMode)
 
 [Read more about XD 27 new features for end users on the Adobe blog](https://theblog.adobe.com/announcing-mac-os-voice-control-adobe-xd).
 
@@ -111,7 +111,7 @@ UXP now supports the [HTML5 Drag & Drop specification](https://html.spec.whatwg.
   - On the drop target in your UI, defined `dragenter`, `dragover`, and `drop` event handlers that react appropriately.
 - **Drag from plugin panel UI into XD document**
   - Only bitmap images, SVG content, or text can be dropped into the document.
-  - Provide the mimetype `text/uri-list` and populate it only with local file paths (see [`File.nativePath`](./reference/uxp/module/storage.md#module-storage-entry-nativepath)) and/or `data:` image URIs.
+  - Provide the mimetype `text/uri-list` and populate it only with local file paths (see [`File.nativePath`](/develop/reference/uxp/module/storage.md#module-storage-entry-nativepath)) and/or `data:` image URIs.
   - This will behave exactly the same as if the user had dropped files onto XD -- dropping an image onto a shape will use it as a mask, dropping multiline text onto a Repeat Grid text node will populate each grid cell with each line from the text content, etc.
 - It is not yet supported to drag content _onto_ your plugin from an outside source (e.g. dropping files on your plugin UI, or dragging images from another app into your plugin UI).
 
@@ -119,7 +119,7 @@ For more, [see this **sample plugin code**](https://github.com/AdobeXD/plugin-sa
 
 ### Debugging with Chrome DevTools _(beta)_
 
-You can now use the Chrome DevTools UI (CDT) to debug your JS code -- and _to a limited extent_, inspect your UI DOM structure. **Read the updated [debugging tutorial](./tutorials/debugging/index.md)** for details.
+You can now use the Chrome DevTools UI (CDT) to debug your JS code -- and _to a limited extent_, inspect your UI DOM structure. **Read the updated [debugging tutorial](/develop/tutorials/debugging/index.md)** for details.
 
 **What works:**
 
@@ -140,13 +140,13 @@ You can now use the Chrome DevTools UI (CDT) to debug your JS code -- and _to a 
 
 ### Other API updates
 
-- Polygon scenenodes can now take on a star shape - see [`Polygon.starRatio`](./reference/scenegraph.md#Polygon-starRatio)
+- Polygon scenenodes can now take on a star shape - see [`Polygon.starRatio`](/develop/reference/scenegraph.md#Polygon-starRatio)
 
 ## XD Release 25.1.12 (December 2019)
 
 XD 25 is a minor bug-fix release with no new features for end users. But it adds two small improvements for plugins:
 
-- New [`application.activeDocument` API](./reference/application.md#module_application-activeDocument) providing information about the document.
+- New [`application.activeDocument` API](/develop/reference/application.md#module_application-activeDocument) providing information about the document.
 - Fixed bug where `scenegraph.root.guid` did not return a valid guid; it now returns the same value as `application.activeDocument.guid`.
 
 ## XD Release 24.0.22 (November 2019)
@@ -165,7 +165,7 @@ XD 25 is a minor bug-fix release with no new features for end users. But it adds
 
   - For each Component instance, only the currently active state is visible in the scenegraph hierarchy. Content in other, non-visible states is not accessible to plugins yet.
   - Hover and state-change interactions are not exposed to plugins yet, but will be in the future. If your plugin is reading interactions/prototyping data, be sure to always have a default case if your code encounters unexpected types.
-  - Reminder: a single scenenode can return multiple interactions from [`node.triggeredInteractions`](./reference/scenegraph.md#SceneNode-triggeredInteractions). This was possible before in some cases, but is allowed in more cases now (for example, one node can have a click/tap trigger, a drag trigger, _and_ a hover trigger).
+  - Reminder: a single scenenode can return multiple interactions from [`node.triggeredInteractions`](/develop/reference/scenegraph.md#SceneNode-triggeredInteractions). This was possible before in some cases, but is allowed in more cases now (for example, one node can have a click/tap trigger, a drag trigger, _and_ a hover trigger).
 
 - **New Plugin Manager UI**
 
@@ -175,7 +175,7 @@ XD 25 is a minor bug-fix release with no new features for end users. But it adds
   - If you have a plugin in development _and_ an installed plugin with the same id, Plugin Manager now shows both for clarity. You can still only enable one of them at a time, though.
 
 - **Sharing enhancements**
-  - The [`cloud.getSharedArtifacts()` API](./reference/cloud.md#module_cloud-getSharedArtifacts) may now return an arbitrary number of shared links, and there may be more than one link of the same type (e.g. multiple specs links).
+  - The [`cloud.getSharedArtifacts()` API](/develop/reference/cloud.md#module_cloud-getSharedArtifacts) may now return an arbitrary number of shared links, and there may be more than one link of the same type (e.g. multiple specs links).
   - The distinction between link types has blurred a bit: links that are `ArtifactType.SPECS` may _also_ include access to an interactive prototype view, just like links of type `ArtifactType.PROTOTYPE`.
 
 ### Smaller fixes and improvements
@@ -202,7 +202,7 @@ Information shown in the plugin listing has moved out of `manifest.json` and is 
 
 - Submitting a plugin also now requires at least one _screenshot image_.
 - Icons seen in the Plugin Manager list must be provided online during submission, but icons seen in the Plugins side panel must still be part of the plugin package folder.
-- As of XD 23, the Plugin Manager UI ignores description, author, links, etc. in `manifest.json`. Submitting to the public listing is now the _only_ way to display this info in Plugin Manager. See [updated manifest documentation](./reference/structure/manifest.md).
+- As of XD 23, the Plugin Manager UI ignores description, author, links, etc. in `manifest.json`. Submitting to the public listing is now the _only_ way to display this info in Plugin Manager. See [updated manifest documentation](/develop/reference/structure/manifest.md).
 - As of September 24, submitting a new or updated plugin to the public listing requires supplying all these details via the developer submission portal online. See [How to submit to Plugin Manager](distribution/how-to-submit-to-plugin-manager.md).
 
 ### Smaller fixes and improvements
@@ -240,10 +240,9 @@ Also note that this release has an issue where transactions being wrapped by `ed
 ### Plugin Panel UI
 
 - Plugins can now display UI persistently in a side panel. More information:
-  - [How to define a panel](./reference/structure/handlers.md#panel)
-  - [Panel overview / reference](./reference/ui/panels/index.md)
-  - [Panel Quick Start tutorial](./tutorials/quick-start-panel/index.md)
-  - [Migrating from dialogs to panels](./migrations/how-to-migrate-from-modal-to-panel.md)
+  - [How to define a panel](/develop/reference/structure/handlers.md#panel)
+  - [Panel overview / reference](/develop/reference/ui/panels/index.md)
+  - [Panel Quick Start tutorial](/develop/tutorials/quick-start-panel/index.md)
 - A new default stylesheet is provided for plugin UI that renders inside a plugin. This means that UI that renders in one manner in a modal dialog may not render in the same exact manner in a panel.
 
 ### UXP 3 HTML/CSS changes
@@ -255,8 +254,6 @@ In order to gain access to most of these features, your plugin must _opt-in_ to 
         "minVersion": "21.0"
     }
 ```
-
-> **NOTE:** Without this change, your plugin will run in [backwards-compatibility mode](./migrations/uxp-2-to-3.md).
 
 - **Layout engine**
   - **Inline layout** -- You now have the ability to write code like `<p>This is <a href="...">a link</a></p>` and have the link render _inline_ with the rest of the text
@@ -305,7 +302,7 @@ See the [Known Issues page](./known-issues.md) for a comprehensive list of exist
 
 ### API Improvements
 
-- **Text scenenode super/subscript** -- Work with Text nodes and style assets using the new [textScript](./reference/scenegraph.md#Text-textScript)
+- **Text scenenode super/subscript** -- Work with Text nodes and style assets using the new [textScript](/develop/reference/scenegraph.md#Text-textScript)
   feature.
 
 ### Known Issues
@@ -318,9 +315,9 @@ No new known issues. See the [Known Issues page](./known-issues.md) for a compre
 
 ### New API Features
 
-- **[Read prototyping interactions](./reference/interactions.md)** -- Read-only access to the interactivity settings in the document (e.g. the blue "wires"
+- **[Read prototyping interactions](/develop/reference/interactions.md)** -- Read-only access to the interactivity settings in the document (e.g. the blue "wires"
   seen in XD's prototyping UI).
-- **New [Polygon](./reference/scenegraph.md#Polygon) node type**
+- **New [Polygon](/develop/reference/scenegraph.md#Polygon) node type**
 
 ### Breaking Changes
 
@@ -333,13 +330,13 @@ No new known issues. See the [Known Issues page](./known-issues.md) for a compre
 
   In many cases, this partial application of your plugin's changes will feel natural to users as an expected consequence of the overrides they have authored.
   However, you can also choose to mitigate potential confusion by warning users or disabling some editing features while the user is editing a Component
-  "master" by checking [`isMaster`](./reference/scenegraph.md#SymbolInstance-isMaster) on `selection.editContext` and its parent chain. There is currently
+  "master" by checking [`isMaster`](/develop/reference/scenegraph.md#SymbolInstance-isMaster) on `selection.editContext` and its parent chain. There is currently
   no way to force all changes made by your plugin command to be applied atomically (i.e. all or nothing).
 
 ### Fixes and improvements
 
-- **Additional Text scenenode styles** -- Work with Text nodes and style assets using the new [strikethrough](./reference/scenegraph.md#Text-strikethrough)
-  and [text transform](./reference/scenegraph.md#Text-textTransform) features.
+- **Additional Text scenenode styles** -- Work with Text nodes and style assets using the new [strikethrough](/develop/reference/scenegraph.md#Text-strikethrough)
+  and [text transform](/develop/reference/scenegraph.md#Text-textTransform) features.
 
 ### User-facing plugin features
 
@@ -422,7 +419,7 @@ No new known issues. See the [Known Issues page](./known-issues.md) for a compre
   - _Plugins still cannot edit globally across the entire document at once, even though in very simple testing it may \_appear_ that this works. Non-Group containers act as blockades that
     the edit scope cannot cross - if the selection is outside such a container, you cannot edit inside it; and if the selection is inside such a container, you cannot edit outside it.
 - **Additional manifest fields required for publishing:** As of March 5, submitting a new or updated plugin for the in-app plugins listing requires providing new `summary`, `author`, and `languages`
-  fields, as well as several additional icon sizes. See [manifest documentation](./reference/structure/manifest.md).
+  fields, as well as several additional icon sizes. See [manifest documentation](/develop/reference/structure/manifest.md).
 
 ### Breaking Changes
 
@@ -468,7 +465,7 @@ No new known issues. See the [Known Issues page](./known-issues.md) for a compre
 
 ### New API Features
 
-- **[Assets panel colors & text styles](./reference/assets.md):** Get/add/remove any colors, gradients, and text styles saved in the Assets panel.
+- **[Assets panel colors & text styles](/develop/reference/assets.md):** Get/add/remove any colors, gradients, and text styles saved in the Assets panel.
 - **[Deep link to plugin listings](./distribution/how-to-create-deep-links.md):** Link from web sites, social media, etc. directly to your plugin listing in XD's UI so users can easily install the plugin.
 
 ### Breaking Changes
@@ -499,10 +496,10 @@ See the [Known Issues page](./known-issues.md) for a comprehensive list of exist
 
 ### New API Features
 
-- **[Document & node metadata](./reference/scenegraph.md#SceneNode-pluginData):** Store plugin-specific info on individual scenegraph nodes or in the document in general.
-- **[Viewport](./reference/viewport.md):** Pan and zoom the view of the document, and get information about the current viewport bounds.
-- **[Text](./reference/scenegraph.md#Text):** Get/set paragraph spacing; create/modify area text; more easily work with uniform-styled text via convenience getter/setter APIs for character attributes.
-- **[Published links](./reference/cloud.md):** Get latest links for prototypes & design specs that have been shared from the current document.
+- **[Document & node metadata](/develop/reference/scenegraph.md#SceneNode-pluginData):** Store plugin-specific info on individual scenegraph nodes or in the document in general.
+- **[Viewport](/develop/reference/viewport.md):** Pan and zoom the view of the document, and get information about the current viewport bounds.
+- **[Text](/develop/reference/scenegraph.md#Text):** Get/set paragraph spacing; create/modify area text; more easily work with uniform-styled text via convenience getter/setter APIs for character attributes.
+- **[Published links](/develop/reference/cloud.md):** Get latest links for prototypes & design specs that have been shared from the current document.
 
 ### Breaking Changes
 

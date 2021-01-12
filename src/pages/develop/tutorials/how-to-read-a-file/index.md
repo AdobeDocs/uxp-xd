@@ -5,8 +5,8 @@ This tutorial will show you how an XD plugin can read in a file from the file sy
 ## Prerequisites
 
 - Basic knowledge of HTML, CSS, and JavaScript.
-- [Quick Start Tutorial](/tutorials/quick-start/)
-- [Debugging Tutorial](/tutorials/debugging/)
+- [Quick Start Tutorial](/develop/tutorials/quick-start/)
+- [Debugging Tutorial](/develop/tutorials/debugging/)
 
 ## Development Steps
 
@@ -15,7 +15,7 @@ This tutorial will show you how an XD plugin can read in a file from the file sy
 
 ### 1. Prepare your plugin scaffold
 
-First, edit the manifest file for the plugin you created in our [Quick Start Tutorial](/tutorials/quick-start).
+First, edit the manifest file for the plugin you created in our [Quick Start Tutorial](/develop/tutorials/quick-start).
 
 Replace the `uiEntryPoints` field of the manifest with the following:
 
@@ -96,7 +96,7 @@ async function insertTextFromFileHandler(selection) {
 2. A file picker dialog is displayed, and the function waits for the user to select a text file. The selected file is assigned to `aFile`. The `#getFileForOpening` method is asynchronous, so the `await` keyword is used.
 3. If `aFile` is undefined (because the user did not select a file), then plugin exits.
 4. The contents of the file is read in, and returned as a string. See below for more detail. The `#read` method is asynchronous, so the `await` keyword is used.
-5. The contents of the string is added to a `Text` object. For details on `Text` properties, see the "[How to style text](/tutorials/how-to-style-text)" tutorial.
+5. The contents of the string is added to a `Text` object. For details on `Text` properties, see the "[How to style text](/develop/tutorials/how-to-style-text)" tutorial.
 6. The `text` object is added to and positioned on the selected artboard.
 
 ### 4. Run the plugin

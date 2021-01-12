@@ -4,7 +4,7 @@ Use this section to access the API references, know what are the currently known
 
 - [API references](/develop/reference/how-to-read/)
 - [Known issues](/develop/known-issues/)
-- [Change log](/changes/)
+- [Change log](/develop/changelog/)
 
 Here are some of the recommended next steps for you:
 

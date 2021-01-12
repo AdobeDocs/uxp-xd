@@ -32,11 +32,11 @@
 - When tabbing in a scroll view, the scroll view is not automatically scrolled to ensure the target control is in view (macOS Only).
 - When using `<input type="radio" />`, be sure to include a `name` attribute. If you forget, you'll get different behavior on macOS and Windows 10. On macOS, radio buttons will not be exclusive to each other just because they are in the same container, whereas on Windows 10, radio buttons _will_ be exclusive within the same container. As such, you should _always_ use `name` to determine radio button exclusivity.
 - Emojis are rendered in the font color on Windows 10, instead of using the emoji's colors.
-- When a control in a panel is disabled and enabled, it is no longer reachable via TAB. This may also impact controls added *after* a panel is shown for the first time.
+- When a control in a panel is disabled and enabled, it is no longer reachable via TAB. This may also impact controls added _after_ a panel is shown for the first time.
 
 ### HTML Elements
 
-- `<option>` tags *must* have a `value` attribute, or referencing the `select`'s `value` property will return `undefined`.
+- `<option>` tags _must_ have a `value` attribute, or referencing the `select`'s `value` property will return `undefined`.
 - `<select value="…"/>` does not show the value as selected. Instead, get a reference to the element and call `setAttribute("value", …)` or use the `selected` attribute on the `option` tags.
 - If you don’t specify a width for your `form`, block elements inside may not take up the entire width. Workaround: always set a width for your `form` elements.
 - `form`s only support `method="dialog"`. They do not submit to a URL automatically.
@@ -56,7 +56,7 @@
 
 - When rendering text on a screen that is not HiDPI, descenders may be clipped when using `overflow: hidden`. The workaround is to add a little bit of `padding` to the bottom of the element.
 - When rendering inline elements in plugins with a `host.minVersion` of `21` or better, spaces between elements may be ignored. This is most obvious when using constructs like `<p><b>Click this link:</b> <a href="#">link</a></p>`. Currently UXP will ignore the space between the `b` tag and the anchor, resulting in the following visual rendering: `Click this link:link` instead of `Click this link: link`. This will be addressed in the next release.
-    - To work around this issue, include a space *inside* one of the tags, like so: `<b>Click this link: </b><a href="#">link</a>`
+  - To work around this issue, include a space _inside_ one of the tags, like so: `<b>Click this link: </b><a href="#">link</a>`
 - When rendering inline text that wraps, borders, outlines, and backgrounds only apply to the first line. You should place borders, outlines, and backgrounds on elements with block layout semantics.
 - Mixing inline text with UI controls is unlikely to result in a pleasant appearance. `vertical-align` is not yet supported, which makes it difficult to properly align widgets and labels. As such, you should use `flex` or `inline-flex` when using UI elements.
 
@@ -110,15 +110,15 @@
 
 ## Debugging
 
-* XD may be unstable while debugging a plugin. Don't debug when you have important XD documents open.
-* Debugging on Windows requires some extra steps run with admin rights -- see [tutorial](/tutorials/debugging/) for details.
-* Elements tab:
-    - If you leave CDT on the Elements tab, XD will crash the next time you open it. If this happens, keep CDT open after XD crashes and switch to a different tab. Then close CDT, restart XD, and begin debugging again.
-    - The CSS pane on the right is missing some data and cannot be used to edit CSS.
-    - Selecting/hovering elements does not highlight the corresponding region in the XD UI.
-    - The "Select an element" button does nothing.
-* Error messages are often missing from the Console view. Use the _Plugins > Development > Developer Console_ view in XD to be sure you are not missing any important information.
-* Other DevTools features such as the Network or Profiling tabs are not supported and may behave erratically if you attempt to use them.
-* XD will be partially frozen while paused on a JS breakpoint. Don't try to interact with XD while paused.
-* You may see a blank white panel to the left of the DevTools UI. Ignore this, as it does nothing.
-* If debugging exposes any private fields and methods, do not attempt to use them. Plugins referring to private APIs will be rejected or removed from XD's plugin listing.
+- XD may be unstable while debugging a plugin. Don't debug when you have important XD documents open.
+- Debugging on Windows requires some extra steps run with admin rights -- see [tutorial](/develop/tutorials/debugging/) for details.
+- Elements tab:
+  - If you leave CDT on the Elements tab, XD will crash the next time you open it. If this happens, keep CDT open after XD crashes and switch to a different tab. Then close CDT, restart XD, and begin debugging again.
+  - The CSS pane on the right is missing some data and cannot be used to edit CSS.
+  - Selecting/hovering elements does not highlight the corresponding region in the XD UI.
+  - The "Select an element" button does nothing.
+- Error messages are often missing from the Console view. Use the _Plugins > Development > Developer Console_ view in XD to be sure you are not missing any important information.
+- Other DevTools features such as the Network or Profiling tabs are not supported and may behave erratically if you attempt to use them.
+- XD will be partially frozen while paused on a JS breakpoint. Don't try to interact with XD while paused.
+- You may see a blank white panel to the left of the DevTools UI. Ignore this, as it does nothing.
+- If debugging exposes any private fields and methods, do not attempt to use them. Plugins referring to private APIs will be rejected or removed from XD's plugin listing.
