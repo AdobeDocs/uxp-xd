@@ -43,15 +43,15 @@ Now, let's create your plugin files. Open your favorite text editor and create t
 
 1.  `manifest.json`
 
-This file includes information about the plugin, such as its name, the menu item(s) it adds to XD, and so on.
+    This file includes information about the plugin, such as its name, the menu item(s) it adds to XD, and so on.
 
-[Learn about the manifest here](/develop/reference/structure/manifest/).
+    [Learn about the manifest here](/develop/reference/structure/manifest/).
 
 2.  `main.js`
 
-This file contains your JavaScript code that implements your plugin's functionality.
+    This file contains your JavaScript code that implements your plugin's functionality.
 
-[Learn more about `main.js` here](/develop/plugin-development/plugin-structure/handlers/).
+    [Learn more about `main.js` here](/develop/plugin-development/plugin-structure/handlers/).
 
 These two files go into your plugin's parent directory. When you have the right structure, it will look like this:
 
@@ -66,8 +66,6 @@ It's possible to have more files if you want, but these files are the bare minim
 ### 3. Create your plugin’s manifest
 
 In the previous step, you created a file named `manifest.json`. Open that file and paste in this JSON object:
-
-**TODO** Fix this manifest
 
 ```json
 {
