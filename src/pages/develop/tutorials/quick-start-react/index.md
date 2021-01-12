@@ -214,7 +214,7 @@ if (window.HTMLIFrameElement == null) {
 
 Since XD currently does not currently support `cancelAnimationFrame`, `requestAnimationFrame`, and `HTMLIFrameElement`, we create these empty functions and classes to prevent your plugin from crashing.
 
-As of XD 16, `setTimeout` and `clearTimeout` are [supported in the XD plugin API](/changes.html#xd-release-16012-february-2019), but are still included in the shim for compatibility with older versions of XD.
+As of XD 16, `setTimeout` and `clearTimeout` are [supported in the XD plugin API](/develop/changelog/#xd-release-16012-february-2019), but are still included in the shim for compatibility with older versions of XD.
 
 Next, let's create a React component. Paste the following code in `HelloForm.jsx`:
 

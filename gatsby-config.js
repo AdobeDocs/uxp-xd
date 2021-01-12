@@ -80,10 +80,6 @@ module.exports = {
             path: "/uxp/reference-spectrum/",
             pages: require("./reference-spectrum.js"),
           },
-          {
-            title: "Known Issues",
-            path: "/uxp/known-issues/",
-          },
         ],
       },
     ],
