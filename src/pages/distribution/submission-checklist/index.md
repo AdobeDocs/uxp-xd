@@ -79,6 +79,7 @@ Once users install your plugin, we want to make sure they have a great experienc
 
 ### User Interface
 
+- While XD plugins are able to display a sub-menu when selected in the Plugins Panel, a plugin should never display a sub-menu with only 1 item. To avoid this, ensure that the plugin launches immediately when the user selects it by making sure that 1) the `name` and `label` values in your manifest match, 2) the "Public plugin name" you submit via the Adobe Developer Console matches the `name` and `label` values in your manifest.
 - For modal plugins, the plugin must be functional when the XD application window is at the minimum size that XD itself supports.
 - For panel plugins, no content should be clipped when XD’s plugins panel is at minimum width.
 - For panel plugins, the plugin's UI content must adapt appropriately when the panel width is increased.
