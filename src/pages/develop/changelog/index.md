@@ -1,5 +1,16 @@
 # Changelog
 
+## XD Release 38.0.32 (March 2021)
+
+### New API features
+
+- **Read & write node [layout](/develop/reference/scenegraph/#SceneNode-layout) properties**
+On each SceneNode, we have defined a new property called " layout ", with getter and setter, which encapsulates all the Layout properties: Responsive Resize, Padding and Stacks. By design, the Stack property is conditioned by the presence of Padding property which, in turn, is conditioned by the presence of Responsive Resize property.
+- **Read only [contentChildren](/develop/reference/scenegraph/#SceneNode-contentChildren) property]**
+returns the children of a SceneNode, skipping the background node, when present. The children order is the
+z-index one, from lower to higher
+- **[makeBackground](/develop/reference/commands/#makeBackground) and [replaceBackground](/develop/reference/commands/#replaceBackground) commands**
+
 ## XD Release 34.0.12 (October 2020)
 
 ### New feature

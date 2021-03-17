@@ -173,3 +173,65 @@ Shifts all selected objects and their content so they align crisply with the pix
 Pixel Grid_.
 
 **Kind**: static method of [`commands`](#module_commands)
+
+### commands.makeBackground()
+
+Makes a stack background
+Equivalent to _Object > Make Background_, which is available when selecting a single SceneNode that simultaneously meets the following conditions:
+- is a stack cell
+- is a valid background candidate
+- belongs to a Stack that has no background
+- the Stack contains at least two stack cells
+
+For the example below, see [layout](/develop/reference/scenegraph/#SceneNodeLayout) for examples of creating Stack without background.
+
+**Example**  
+```js
+const stack = ...;
+// suppose this node is a Stack containing at least two stack cells
+if (stack.layout.type === scenegraph.SceneNode.LAYOUT_STACK && stack.contentChildren.length > 1) {
+    // assume the first stack cell is a valid background candidate
+    const futureBackground = stack.contentChildren.at(0);
+
+   // suppose the Stack has no background
+   if (!stack.layout.padding.background) {
+        console.log(stack.layout.padding.background); // prints `null`
+        selection.items = [futureBackground];
+        commands.makeBackground();
+        console.log(stack.layout.padding.background.name); // prints the name of the "featureBackground" node
+    }
+}
+```
+
+**Kind**: static method of [`commands`](#module_commands)
+
+### commands.replaceBackground()
+
+Replaces a stack background
+Equivalent to _Object > Replace Background_, which is available when selecting a single SceneNode that simultaneously meets the following conditions:
+- is a stack cell
+- is a valid background candidate
+- belongs to a Stack that has a background, which is different from the selected stack cell
+- the Stack contains at least two stack cells
+
+For the example below, see [layout](/develop/reference/scenegraph/#SceneNode-layout) for examples of creating Stack without background.
+
+**Example**  
+```js
+const stack = ...;
+// suppose this node is a Stack containing at least two stack cells
+if (stack.layout.type === scenegraph.SceneNode.LAYOUT_STACK && stack.contentChildren.length > 1) {
+    // assume the first stack cell is a valid background candidate
+    const futureBackground = stack.contentChildren.at(0);
+
+    // suppose the Stack contains a background, which is different from the selected one
+    if (stack.layout.padding.background && featureBackground.guid !== stack.layout.padding.background.guid) {
+        console.log(stack.layout.padding.background.name); // prints the name of the actual background node
+        selection.items = [futureBackground];
+        commands.replaceBackground();
+        console.log(stack.layout.padding.background.name); // prints the name of the "featureBackground" node
+    }
+}
+```
+
+**Kind**: static method of [`commands`](#module_commands)
