@@ -1,4 +1,4 @@
 
-import Content from "uxp-documentation/src/pages/uxp/reference-js/Global Members/Data Storage/index/";
+import Content from "uxp-documentation/src/pages/uxp/reference-js/Global Members/Data Storage/index";
 
 <Content query="product=photoshop"/>

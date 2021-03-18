@@ -1,4 +1,4 @@
 
-import Content from "uxp-documentation/src/pages/uxp/reference-html//Hierarchy/index/";
+import Content from "uxp-documentation/src/pages/uxp/reference-html//Hierarchy/index";
 
 <Content query="product=photoshop"/>
