@@ -444,6 +444,124 @@ node.triggeredInteractions.forEach((interaction) => {
 **Read only**: true
 **See**: [interactions.allInteractions](/develop/reference/interactions/#module_interactions-allInteractions)
 
+
+### _sceneNode.contentChildren : \![`SceneNodeList`](#SceneNodeList)_
+**Since**: XD 38
+
+Returns a list of this node's children, skipping the background node when present. The list is z-index ordered, from lowest to highest. This list is _**not an Array**_, so you must use `at(i)` instead of `[i]` to access content children by index.
+
+**Example**
+```js
+const node = ...; // supposing that this node has the Stack property enabled
+console.log("Node has " + node.contentChildren.length + " stack cells");
+console.log("First stack cell: " + node.contentChildren.at(0));  // do not use `[0]` - it will not work!
+
+node.contentChildren.forEach(function (stackCell, i) {
+    console.log("Stack cell " + i + " is a " + stackCell.constructor.name);
+});
+```
+
+**Kind**: instance property of [`SceneNode`](#scenenode)
+**Read only**: true
+
+
+### _sceneNode.layout : LayoutProperties_
+**Since**: XD 38
+
+Encapsulates all the Layout properties: Responsive Resize, Padding and Stacks. By design, the Stack property is conditioned by the presence of Padding property which, in turn, is conditioned by the presence of Responsive Resize property.
+
+Object containing all layout properties for the node
+
+| Param | Type | Description |
+| --- | --- | --- |
+| type | `!String` | SceneNode.LAYOUT_NONE, LAYOUT_RESPONSIVE_RESIZE, LAYOUT_PADDING or LAYOUT_STACK depending on which layout properties are enabled |
+| ?stack | `!Object` | Included if layout type is LAYOUT_STACK |
+| ?padding | `!Object` | Included if layout type is LAYOUT_STACK or LAYOUT_PADDING |
+| ?resizeConstraints | `!Object` | Included if layout type is LAYOUT_STACK, LAYOUT_PADDING or LAYOUT_RESPONSIVE_RESIZE |
+
+
+Object representing layout.stack
+
+| Param | Type | Description |
+| --- | --- | --- |
+| orientation | `string` | SceneNode.STACK_HORIZONTAL or STACK_VERTICAL |
+| spacings | `Array<Number>` or `Number` | a numbde if each cell is equidistant or an array of spaces between cells in order provided by [contentChildren](#contentChildren)  |
+
+
+Object representing layout.padding
+
+| Param | Type | Description |
+| --- | --- | --- |
+| background | `sceneNode` of NULL | SceneNode used as the background or null if no background set |
+| values | `Object` or `Number` | top, right, bottom, left are all numbers which determines each side padding amount. A single number represents the padding used by all four sides. |
+
+
+Object reporesenting layout.resizeConstraints
+
+| Param | Type | Description |
+| --- | --- | --- |
+| type | `String` | SceneNode.RESPONSIVE_RESIZE_AUTO or RESPONSIVE_RESIZE_MANUAL |
+| values | `Object` | top, right, bottom, left, width and height are all Boolean vaues set to true when enabled. |
+
+
+In a `LayoutProperties` object:
+- `SceneNode.layout.padding.background` is either a SceneNode, if the current SceneNode has a background, or null, otherwise
+- `SceneNode.layout.padding.values` represents either a number, if all the padding values are equal, or an object with `top`, `right`, `bottom` and `left` attributes, otherwise
+- `SceneNode.layout.stack.spacings` represents either a number, if the stack cells are equidistant, or an array of spaces between the stack cells, in the order mentioned by `SceneNode.contentChildren`,
+otherwise; the `SceneNode.contentChildren`, being z-index ordered, contains the stack cells in the reverse order to the natural one, from the last cell in stack to the first one; so, in a Stack
+with N non-background stack cells:
+  - `SceneNode.layout.stack.spacings[i]` = the space between `SceneNode.contentChildren[i]` and `SceneNode.contentChildren[i + 1]` for i = 0, N - 1
+  - To access the space coming before/after a stack cell, then the index of the desired stack cell must be searched in `SceneNode.contentChildren` and due to the z-index order:
+    - after space = `SceneNode.layout.stack.spacings[index - 1]`
+    - before space = `SceneNode.layout.stack.spacings[index]`       
+
+The setter expects a `PluginLayoutProperties` object which must contain the desired layout type:
+- SceneNode.LAYOUT_NONE:
+    - all the Layout properties will be disabled
+    - any other attributes contained in the provided Object will be ignored
+- SceneNode.LAYOUT_RESPONSIVE_RESIZE:
+    - only the Responsive Resize layout-specific property will be enabled
+    - the only attribute that will be taken into account from the provided Object is `resizeConstraints`; if this attribute:
+        - is provided: if Responsive Resize is not enabled, this property is first enabled like switching its toggle from off to on in the Property Inspector; then the specified resize constraints are applied
+        - is missing: if Responsive Resize is not enabled, this property is enabled like switching its toggle from off to on in the Property Inspector; otherwise nothing happens
+- SceneNode.LAYOUT_PADDING:
+    - the Responsive Resize and Padding layout-specific properties will be enabled
+    - the attributes that will be taken into account from the provided Object are `resizeConstraints` and `padding`
+    - for the `resizeConstraints` attribute, the behaviour is just the same as in the case of the SceneNode.LAYOUT_RESPONSIVE_RESIZE desired layout type
+    - for the `padding` attribute:
+        - is provided: if Padding is not enabled, this property is first enabled like checking its checkbox in the Property Inspector; then the specified padding values are applied
+        - is missing: if Padding is not enabled, this property is enabled like checking its checkbox in the Property Inspector; otherwise nothing happens
+- SceneNode.LAYOUT_STACK:
+    - the Responsive Resize, Padding and Stack layout-specific properties will be enabled
+    - the attributes that will be taken into account from the provided Object are `resizeConstraints`, `padding` and `stack`
+    - for the `resizeConstraints` attribute, the behaviour is just the same as in the case of the SceneNode.LAYOUT_RESPONSIVE_RESIZE desired layout type
+    - for `padding` and `stack` attributes:
+        - if the `stack` attribute is provided, then:
+            - Padding will be enabled (if it’s not), without computing a background and having all the padding values equal to 0; afterwards, the padding values will be updated with those specified, if the `padding` attribute is provided
+            - Stack will be enabled (if it’s not), without clustering and reordering the stack cells - this can be called "manual stack mode"; then the orientation and spacings will be updated with those specified
+        - if the `stack` attribute is missing, then:
+            - Padding behaviour is just the same as in the case of the SceneNode.LAYOUT_PADDING desired layout type
+            - Stack will be enabled (if it’s not) like checking its checkbox in the Property Inpector - this can be called "auto stack mode"
+
+Getter Remarks:
+- If `SceneNode.layout.type` is:
+    - SceneNode.LAYOUT_NONE: there’s no Layout property enabled or available, hence the getter will return an Object containing only the `type` attribute
+    - SceneNode.LAYOUT_RESPONSIVE_RESIZE: the only Layout-specific property available and enabled is Responsive Resize, hence the getter will return an Object containing the `type` and `resizeConstraints` attributes
+    - SceneNode.LAYOUT_PADDING: Padding is enabled, so the object returned by the getter will contain the `type`, `resizeConstraints` and `padding` attributes
+    - SceneNode.LAYOUT_STACK: Stack is enabled, so the object returned by the getter will contain the `type`, `resizeConstraints`, `padding` and `stack` attributes
+    
+Setter Remarks:
+ - If `SceneNode.layout.resizeConstraints.type` is set to SceneNode.RESPONSIVE_RESIZE_AUTO, then the values of the resize pins are no longer required, so the
+attribute `SceneNode.layout.resizeConstraints.values` is considered as read-only, being ignored if set
+ - `SceneNode.layout.paddingbackground` is a read-only attribute, so it will be ignored if set. If you’d like to manipulate the
+background, look for the `makeBackground()` and `replaceBackground()` methods.
+
+
+**Kind**: instance property of [`SceneNode`](#scenenode)
+
+* * *
+
+
 ### _sceneNode.horizontalConstraints : `?{position:string, size:string}`_
 
 **Since**: XD 29

@@ -1,5 +1,75 @@
 # Changelog
 
+## XD Release 38.0.32 (March 2021)
+
+### New API features
+
+- **Read & write node [layout](/develop/reference/scenegraph/#scenenodelayout--layoutproperties) properties**
+On each SceneNode, we have defined a new property called " layout ", with getter and setter, which encapsulates all the Layout properties: Responsive Resize, Padding and Stacks. By design, the Stack property is conditioned by the presence of Padding property which, in turn, is conditioned by the presence of Responsive Resize property.
+- **Read only [contentChildren](/develop/reference/scenegraph/#scenenodecontentchildren--scenenodelist) property**
+returns the children of a SceneNode, skipping the background node, when present. The children order is the
+z-index one, from lower to higher
+- **[makeBackground](/develop/reference/commands/#commandsmakebackground) and [replaceBackground](/develop/reference/commands/#commandsreplacebackground) commands**
+
+### UXP 4.4.1.170
+
+* Device information API added. Adds `cpus()`,  `totalmem`,  `freemem` to the `OS` module.
+* `sp-overlay` support.
+* `sp-avatar` support.
+* `sp-button-group` support.
+* Addressed a race condition while closing a dialog.
+* UDT support enabled for XD on Windows 10.
+
+## XD Release 37.0.32 (February 2021)
+
+### UXP 4.4.0.19
+
+* Addressed some issues on Windows with regard to `font-family` case sensitivity.
+
+## XD Release 36.0.32 (January 2021)
+
+### UXP 4.3.2.1
+
+* `secureStorage` added.
+* Keyboard handling in Spectrum UXP components now properly sets the component to active state.
+* Fix incorrect `sp-textfield` color on Windows.
+* Min/Max support for Spectrum UXP number fields.
+* `maxlength` now supported on text fields
+* Addressed an issue where web sockets could cause a hang
+* Fixed a crash in `sp-slider`.
+* `sp-textfield` now has a default width.
+* Fixed issues around checkbox/radio layouts being broken on window resizes.
+* `sp-dropdown` now scrolls to selected index.
+* Fixed issue with menu separator in flyout where it required `id` to be "-" instead of the name.
+* Fixed some Windows focus issues.
+* `sp-dialog` was not closing on ESC.
+* File pickers now accept a file path for the default location. 
+* `sp-meter` support.
+* `sp-switch` support.
+* `mousedown` event comes before `focus` now.
+
+## XD Release 35.0.12 (December 2020)
+
+### UXP 4.2.1.22
+
+* `sp-tooltip` now supports `max-width` to enable word wrap.
+* Fixed some issues with radial gradients.
+* Support relative units in radial gradients.
+* Fixed some word-wrapping issues on Windows.
+* Accessibility support added for Spectrum UXP components.
+* Persistent File permission support.
+* Fixed some crashes when Ps and Xd quit.
+* Can now access OS architecture data (`require("os").arch()`).
+* Fixed issues with dragging on `sp-slider`.
+* `sp-tooltip` supports `tip` attribute; set to `"false"` to remove the tip (`false`  here is a string!).
+* `uxpShowModal` API (aliases `showModal`). `showModal` will eventually only support Standards-based options.
+* HTML attributes are now case insensitive.
+* Radio buttons are now grouped correctly in macOS.
+* Addressed some issues with `line-clamp`.
+* Added `Document#createEvent` to address issues with the Vue framework.
+* Fixed some crashes around reloading while a dialog is visible.
+* When using TAB to focus, the selected control now scrolls into view.
+
 ## XD Release 34.0.12 (October 2020)
 
 ### New feature
