@@ -12,7 +12,7 @@ The Adobe UXP Developer Tool makes it easy to create, load, debug, and package U
 
 ## Overview
 
-The Adobe UXP Developer Tool allows you to manage plugins that you are developing for Photoshop (and other UXP-powered host applications). This tool makes it easy to create plugins based on templates, and also load and debug plugins that you're building.
+The Adobe UXP Developer Tool allows you to manage plugins that you are developing for Adobe XD (and other UXP-powered host applications). This tool makes it easy to create plugins based on templates, and also load and debug plugins that you're building.
 
 <InlineAlert variant="info" slots="text"/>
 

@@ -75,7 +75,7 @@ Want to jump right in building a plugin? Check out these code samples and make i
 
 ## API References
 
-The APIs come in two parts: the methods and properties unique to Photoshop, and those exposed by UXP to all UXP-enabled Creative Cloud applications.
+The APIs come in two parts: the methods and properties unique to Adobe XD, and those exposed by UXP to all UXP-enabled Creative Cloud applications.
 
 <DiscoverBlock slots="link, text"/>
 

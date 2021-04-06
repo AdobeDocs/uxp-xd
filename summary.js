@@ -103,6 +103,12 @@ module.exports = [
             ],
           },
           {
+            title: "Developer Tool",
+            path: "/develop/plugin-development/devtool/",
+            header: true, 
+            pages: require("./reference-devtool.js")
+          },
+          {
             title: "Best Practices",
             path: "/develop/plugin-development/devbestpractices/",
             header: true,

@@ -14,6 +14,9 @@
   "dependencies": {
     "@adobe/gatsby-theme-aio": "^3.0.9",
     "gatsby": "^3.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "pngquant": "^4.0.0",
+    "pngquant-bin": "^6.0.0",
     "uxp-documentation": "adobedocs/uxp"
   },
   "scripts": {

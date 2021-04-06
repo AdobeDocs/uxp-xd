@@ -4,20 +4,17 @@ Bugs happen! In this tutorial, you will learn how to debug your Adobe XD plugin.
 
 ### Prerequisite
 
-At least one plugin in your `develop` folder (you can create one using our [Quick Start tutorial](/develop/tutorials/quick-start/)).
+At least one plugin created and added to the [UXP Developer Tool](/develop/plugin-development/devtool).
 
 ### Debugging Options
 
-There are two ways you can debug an XD plugin:
-
-- For **quick, simple debugging**, [use the Developer Console built into XD](#quick-debugging-with-developer-console)
-- For **in-depth debugging**, set up your plugin for [debugging with Chrome DevTools](#debugging-with-chrome-devtools-beta) _(beta)_
+To debug your Adobe XD plugins, you'll be using the [UXP Developer Tool](/develop/plugin-development/devtool). However, you can glean some useful information by using the built-in Developer Console provided by Adobe XD. (Note that this is a legacy feature and _will_ be going away in the future.)
 
 ## Quick debugging with Developer Console
 
 ### 1. Check the Developer Console
 
-In XD, click _Plugins > Development > Developer Console_.
+In XD, click _Plugins > Development > Developer Console (Legacy)_.
 
 This displays information similar to what you'd find in the JS debugger's console view:
 
@@ -29,9 +26,9 @@ The console output for _all_ installed XD plugins is mixed together in one singl
 
 ### 2. Reload your plugin after making fixes
 
-You can easily iterate on your plugin code without heaving to restart XD. Click _Plugins > Development > Reload Plugins_ to reload all plugins in your `develop` folder. This will reflect any changes in [manifest.json](/develop/plugin-development/plugin-structure/manifest/) in addition to any changes to your JS code.
+You can easily iterate on your plugin code without heaving to restart XD. Switch to the UXP Developer Tool, and click _Actions > Reload All_, which will force the developer tool to reload all loaded plugins. 
 
-There's also a handy keyboard shortcut to make reloading easier:
+There's also a handy keyboard shortcut in the UXP Developer Tool to make reloading easier:
 
 | Platform | Keyboard shortcut |
 | -------- | ----------------- |
@@ -42,46 +39,30 @@ If there are any errors blocking the plugin from loading, they will appear in th
 
 ![Error during reload](../../images/reload-error.png)
 
-## Debugging with Chrome DevTools _(beta)_
+## Debugging with the UXP Developer Tool
 
-### 1. Enable debugging on your plugin
+### 1. Load your plugin
 
-Navigate to the root folder of your plugin and **create a `debug.json` file**:
+1. If you haven't already, launch the UXP Developer Tool application.
+2. Next to the plugin you want to debug, find the **•••** button and click it. Select **Load** to load this into XD.
 
-```json
-{
-  "port": 9345,
-  "breakOnStart": false
-}
-```
+### 2. Launch Debugger
 
-- Debugging is only supported for plugins in the **`develop` folder** (not plugins installed from the Plugin Manager UI).
-- Specify any port number you want.
-- Advanced: Set `breakOnStart` to true if you want the debugger to immediately pause on the first line of code in your plugin the moment it starts loading. This is useful since you won't have a chance to open DevTools _before_ this moment to set breakpoints before that initial code runs.
+1. Click **••• > Debug**. This will launch a Chrome Developer Tools environment that you can use to debug your plugins.
 
-### 2. Launch Chrome DevTools
-
-1. Windows only: _before_ launching XD, open an admin command prompt and run `CheckNetIsolation LoopbackExempt -is -n="Adobe.CC.XD_adky2gkssdxte"` -- do this _each time_ you want to debug a plugin.
-2. Open Google Chrome and navigate to **`chrome://inspect`** _(you must use Chrome)_
-3. One-time setup: ensure "Discover Network Targets" is enabled. Click the Configure button next to this and add `localhost:9345` (or whatever port number your `debug.json` file used).
-4. Click the "inspect" link under your plugin's ID.
-
-### Beta: What works, what doesn't
+### What works, what doesn't
 
 Currently, you **can**...
 
 - Set breakpoints, pause & step through code, inspect the values of variables
 - View objects and run code in the Console view
 - View and edit the DOM structure of your plugin's UXP UI
-
-Most other DevTools features are not supported and may behave erratically if you attempt to use them.
+- View networking requests (for XHR, `fetch`, and Websockets only)
 
 **Important caveats:**
 
 - XD may be unstable while debugging a plugin. Don't debug when you have important XD documents open.
-- Error messages are often _missing_ from the DevTools Console. Use the Developer Console within XD (see "Quick debugging" above) to be sure you are not missing any important information.
+- Error messages are often _missing_ from the DevTools Console. Use the Developer Console within XD to be sure you are not missing any important information.
 - XD will be partially frozen while paused on a JS breakpoint. Don't try to interact with XD while paused.
 - You may see a blank white panel to the left of the DevTools UI. Ignore this, as it does nothing.
-- If debugging exposes any private fields and methods, do not attempt to use them. Plugins referring to private APIs will be rejected or removed from XD's plugin listing.
-
-Read the [known issues](/known-issues/ for more details.
+- If debugging exposes any private fields and methods, do not attempt to use them. Plugins referring to private APIs may be rejected or removed from the plugin marketplace.
