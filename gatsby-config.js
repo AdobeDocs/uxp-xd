@@ -12,15 +12,6 @@
 
 module.exports = {
   siteMetadata: {
-    /*versions: [
-      {
-        title: 'v4.1'
-      },
-      {
-        title: 'v1.4',
-        path: 'https://github.com/AdobeDocs/uxp-xd'
-      }
-    ],*/
     pages: [
       {
         title: "UXP for Adobe XD",
@@ -75,5 +66,5 @@ module.exports = {
     ],
   },
   plugins: [`@adobe/gatsby-theme-aio`],
-  pathPrefix: process.env.PATH_PREFIX || "/xd/uxp",
+  pathPrefix: process.env.PATH_PREFIX || "/xd/uxp/",
 };
