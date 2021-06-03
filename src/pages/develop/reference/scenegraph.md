@@ -249,7 +249,8 @@ skew or scale components, and if this node is an Artboard the matrix never has r
 directly, it may be easier to use the [translation](#scenenode-translation) and [rotation](#scenenode-rotation) properties.
 
 **Since**: XD 40
-Since XD 40 transform will return a Matrix3D objects for 3D transformed nodes. Again, rather than reading the raw matrix values directly, it may be easier to use the [zDepth](#scenenode-zDepth), [rotationX](#scenenode-rotationX) and [rotationY](#scenenode-rotationY) for 3D specific properties.
+
+Transform will return a Matrix3D objects for 3D transformed nodes. Again, rather than reading the raw matrix values directly, it may be easier to use the [zDepth](#scenenode-zDepth), [rotationX](#scenenode-rotationX) and [rotationY](#scenenode-rotationY) for 3D specific properties.
 
 To move or resize a node, use the [translation](#scenenode-translation) property or APIs like [placeInParentCoordinates()](#scenenode-placeinparentcoordinates) or [rotateAround()](#scenenode-rotatearound).
 Setting the entire transform matrix directly is not allowed. To resize a node, use [resize()](#scenenode-resize).
@@ -271,7 +272,6 @@ This getter returns a fresh Matrix each time, so its fields can be mutated by th
 - [localBounds](#scenenode-localbounds)
 - [boundsInParent](#scenenode-boundsinparent)
 - [topLeftInParent](#scenenode-topleftinparent)
-**Since**: XD 40
 - [zDepth](#scenenode-zDepth)
 - [rotationX](#scenenode-rotationX)
 - [rotationY](#scenenode-rotationY)
@@ -349,7 +349,7 @@ For an overview of node bounding boxes & coordinate systems, see [Coordinate spa
 - [localBounds](#scenenode-localbounds)
 - [topLeftInParent](#scenenode-topleftinparent)
 
-### _sceneNode.topLeftInParent : \![`Point`](#point)_
+### sceneNode.topLeftInParent : \![`Point`](#point)
 
 The position of the node's upper-left corner (localBounds.x, localBounds.y) in its parent's coordinate space. If the node is
 rotated, this is not the same as the top-left corner of boundsInParent.
@@ -364,7 +364,7 @@ For an overview of node bounding boxes & coordinate systems, see [Coordinate spa
 - [boundsInParent](#scenenode-boundsinparent)
 - [localBounds](#scenenode-localbounds)
 
-### _sceneNode.localCenterPoint : \![`Point`](#point)_
+### sceneNode.localCenterPoint : \![`Point`](#point)
 
 The position of the node's centerpoint in its own local coordinate space. Useful as an argument to [rotateAround](#scenenode-rotatearound).
 This is a shortcut for `{x: localBounds.x + localBounds.width/2, y: localBounds.y + localBounds.height/2})`
@@ -752,7 +752,7 @@ let nodeTopLeft = { x: nodeBounds.x, y: nodeBounds.y }; // node's top left corne
 node.placeInParentCoordinates(nodeTopLeft, parentCenter);
 ```
 
-### _sceneNode.placeInParentCoordinates3D(registrationPoint, parentPoint)_
+### sceneNode.placeInParentCoordinates3D(registrationPoint, parentPoint)
 **Since** XD 40
 
 Move the node so the given point in its local coordinates is placed at the given point in its parent's coordinates (taking into account any rotation on this node, etc.).
@@ -776,7 +776,7 @@ var nodeTopLeft = {x: nodeBounds.x, y: nodeBounds.y, z:100};  // node's top left
 node.placeInParentCoordinates3D(nodeTopLeft, parentCenter);
 ```
 
-### _sceneNode.perspectiveCenterInParentCoordinates : \![`Point`](#point)__
+### sceneNode.perspectiveCenterInParentCoordinates : \![`Point`](#point)
 **Since** XD 40
 
 The perspective center component of this node, in parent coordinates. It represents the point in canvas plane where the viewer eye is placed. The perspective center exists for the top level 3D transformed node in a hierarchy and it is null otherwise.
@@ -787,21 +787,25 @@ For an overview of node positioning & coordinate systems, see [Coordinate spaces
 
 **Kind**: instance property of [`SceneNode`](#scenenode)
 
-### _sceneNode.zDepth : `number`
+### sceneNode.zDepth : `number`
 **Since** XD 40
 
 The zDepth component of this node's [`SceneNode`](#transform}. Since zDepth is applied after any rotation in the transform Matrix, zDepth occurs along the parent's Z axis, not the node's own local Z axis. This is equivalent to the `mz` field in the transform Matrix. zDepth is 0 for 2D nodes.
 
 If portions of objects are placed at z greater than 800 (e.g. an unrotated shape with zDepth >= 800 or a 90 deg Y-rotated shape having width = 2000) rendering artifacts will appear.
 
-**Kind**: instance property of [`SceneNode`](#scenenode)
 For an overview of node positioning & coordinate systems, see [Coordinate spaces](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/).
-**See**: [moveZDepth](#scenenode-moveZDepth)
-**See**: [moveInParentCoordinates](#scenenode-moveInParentCoordinates)
-**See**: [placeInParentCoordinates3D](#scenenode-placeinparentcoordinates3D)
-**See**: [topLeftInParent](#scenenode-topLeftInParent)
 
-### _sceneNode.moveZDepth(deltaZ)
+**Kind**: instance property of [`SceneNode`](#scenenode)
+
+**See**: 
+
+- [moveZDepth](#scenenode-moveZDepth)
+- [moveInParentCoordinates](#scenenode-moveInParentCoordinates)
+- [placeInParentCoordinates3D](#scenenode-placeinparentcoordinates3D)
+- [topLeftInParent](#scenenode-topLeftInParent)
+
+### sceneNode.moveZDepth(deltaZ)
 **Since** XD 40
 
 Move the node by the given number of pixels along the parent's Z axis (if this node has no 3D rotation, this is identical to moving the node along its own local Z axis).
@@ -809,9 +813,12 @@ Move the node by the given number of pixels along the parent's Z axis (if this n
 For an overview of node positioning & coordinate systems, see [Coordinate spaces](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/).
 
 **Kind**: instance method of [`SceneNode`](#scenenode)
-**See**: [zDepth](#scenenode-zDepth)
-**See**: [placeInParentCoordinates3D](#scenenode-placeinparentcoordinates3D)
-**See**: [moveInParentCoordinates](#scenenode-moveInParentCoordinates)
+
+**See**:
+
+- [zDepth](#scenenodezDepth), 
+- [placeInParentCoordinates3D](#scenenode-placeinparentcoordinates3D)
+- [moveInParentCoordinates](#scenenode-moveInParentCoordinates)
 
 | Param      | Type           |
 | ---------- | ---------------|
@@ -843,7 +850,7 @@ let rotationDelta = 180 - node.rotation;
 node.rotateAround(rotationDelta, node.localCenterPoint);
 ```
 
-### _scenenode.rotationX : `number`
+### scenenode.rotationX : `number`
 **Since** XD 40
 
 The rotation around X axis component of this node's [`SceneNode`](#transform), in degrees. (A positive rotation on X means the upper side of the object is moving away from the viewer)
@@ -854,7 +861,7 @@ For an overview of node transforms & coordinate systems, see [Coordinate spaces]
 **Read only**: true
 **See** [`SceneNode`](#rotateXAround)
 
-### _scenenode.rotationY : `number`
+### scenenode.rotationY : `number`
 **Since** XD 40
 
 The rotation around Y axis component of this node's [`SceneNode`](#transform), in degrees. (A positive rotation on Y means the right side of the object is moving away from the viewer)
@@ -865,7 +872,7 @@ For an overview of node transforms & coordinate systems, see [Coordinate spaces]
 **Read only**: true
 **See** [`SceneNode`](#rotateYAround)
 
-### _scenenode.rotateXAround(deltaAngle, rotationCenter)
+### scenenode.rotateXAround(deltaAngle, rotationCenter)
 **Since** XD 40
 
 Rotate the node around X axis by the given number of degrees around the given point in the plugin's local coordinate space. If this node already has nonzero rotation on X axis, this operation _adds_ to its existing angle. The rotation around Z and the rotation around Y are left unmodified. The rotations around the 3D axes are applied in the following order: rotation around X axis is applied first, followed by rotation around Y and then rotation around Z (2D rotation)
@@ -891,7 +898,7 @@ var rotationDelta = 180 - node.rotationX;
 node.rotateXAround(rotationDelta, node.localCenterPoint);
 ```
 
-### _scenenode.rotateYAround
+### scenenode.rotateYAround
 **Since** XD 40
 
 Rotate the node around Y axis by the given number of degrees around the given point in the plugin's local coordinate space. If this node already has nonzero rotation on Y axis, this operation _adds_ to its existing angle. The rotation around Z and the rotation around X are left unmodified. The rotations around the 3D axes are applied in the following order: rotation around X axis is applied first, followed by rotation around Y and then rotation around Z (2D rotation)
