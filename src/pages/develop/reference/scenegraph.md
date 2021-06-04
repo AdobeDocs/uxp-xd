@@ -84,6 +84,7 @@ These classes are not scenenode types, but are used extensively in the scenegrap
 - [ImageFill](/develop/reference/ImageFill/) - Value object for `fill` property
 - [LinearGradientFill](/develop/reference/LinearGradientFill/) - Value object for `fill` property
 - [Matrix](/develop/reference/Matrix/) - Value object for `transform` property
+- [Matrix3D](/develop/reference/Matrix3D/) - Value object for `3D transform` property
 - [Shadow](/develop/reference/Shadow/) - Value object for `shadow` property
 - [Blur](/develop/reference/Blur/) - Value object for `blur` property
 
@@ -248,9 +249,7 @@ Affine transform matrix that converts from the node's _local coordinate space_ t
 skew or scale components, and if this node is an Artboard the matrix never has rotation either. Rather than reading the raw matrix values
 directly, it may be easier to use the [translation](#scenenode-translation) and [rotation](#scenenode-rotation) properties.
 
-**Since**: XD 40
-
-Transform will return a Matrix3D objects for 3D transformed nodes. Again, rather than reading the raw matrix values directly, it may be easier to use the [zDepth](#scenenode-zDepth), [rotationX](#scenenode-rotationX) and [rotationY](#scenenode-rotationY) for 3D specific properties.
+**Since**: XD 40 transform will return a Matrix3D [Matrix3D](/develop/reference/Matrix3D/) objects for 3D transformed nodes. Again, rather than reading the raw matrix values directly, it may be easier to use the [zDepth](#scenenode-zDepth), [rotationX](#scenenode-rotationX) and [rotationY](#scenenode-rotationY) for 3D specific properties.
 
 To move or resize a node, use the [translation](#scenenode-translation) property or APIs like [placeInParentCoordinates()](#scenenode-placeinparentcoordinates) or [rotateAround()](#scenenode-rotatearound).
 Setting the entire transform matrix directly is not allowed. To resize a node, use [resize()](#scenenode-resize).
