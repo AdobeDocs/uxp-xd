@@ -244,13 +244,13 @@ node.blendMode = scenegraph.SceneNode.BLEND_MODE_LUMINOSITY;
 
 **Kind**: instance property of [`SceneNode`](#scenenode)
 
-### _sceneNode.transform : `\![Matrix](Matrix/)`_
+### _sceneNode.transform : [`Matrix`](/develop/reference/Matrix/)|[`Matrix3D`](/develop/reference/Matrix3D/)_
 
 Affine transform matrix that converts from the node's _local coordinate space_ to its parent's coordinate space. The matrix never has
 skew or scale components, and if this node is an Artboard the matrix never has rotation either. Rather than reading the raw matrix values
 directly, it may be easier to use the [translation](#scenenode-translation) and [rotation](#scenenode-rotation) properties.
 
-**Since**: XD 40 transform will return a Matrix3D [Matrix3D](/develop/reference/Matrix3D/) objects for 3D transformed nodes. Again, rather than reading the raw matrix values directly, it may be easier to use the [zDepth](#scenenode-zDepth), [rotationX](#scenenode-rotationX) and [rotationY](#scenenode-rotationY) for 3D specific properties.
+**Since**: XD 40 transform will return a [Matrix3D](/develop/reference/Matrix3D/) objects for 3D transformed nodes. Again, rather than reading the raw matrix values directly, it may be easier to use the [zDepth](#scenenode-zDepth), [rotationX](#scenenode-rotationX) and [rotationY](#scenenode-rotationY) for 3D specific properties.
 
 To move or resize a node, use the [translation](#scenenode-translation) property or APIs like [placeInParentCoordinates()](#scenenode-placeinparentcoordinates) or [rotateAround()](#scenenode-rotatearound).
 Setting the entire transform matrix directly is not allowed. To resize a node, use [resize()](#scenenode-resize).
@@ -713,6 +713,8 @@ Move the node by the given number of pixels along the parent's X/Y axes (if this
 moving the node along its own local X/Y axes). This is equivalent to modifying the value returned by 'translation' and then
 setting it back.
 
+The third parameter, deltaZ (optional), allows the movement of the object on Z axis.
+
 For an overview of node positioning & coordinate systems, see [Coordinate spaces](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/).
 
 **Kind**: instance method of [`SceneNode`](#scenenode)
@@ -756,6 +758,8 @@ node.placeInParentCoordinates(nodeTopLeft, parentCenter);
 **Since** XD 40
 
 Move the node so the given point in its local coordinates is placed at the given point in its parent's coordinates (taking into account any rotation on this node, etc.).
+
+If a 2D point is passed as parameter for either registrationPoint or parentPoint it will be treated as a 3D point with z = 0 (a point in node's plane).
 
 For an overview of node positioning & coordinate systems, see [Coordinate spaces](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/).
 
