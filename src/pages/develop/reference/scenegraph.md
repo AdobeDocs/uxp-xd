@@ -87,6 +87,7 @@ These classes are not scenenode types, but are used extensively in the scenegrap
 - [Matrix3D](/develop/reference/Matrix3D/) - Value object for `3D transform` property
 - [Shadow](/develop/reference/Shadow/) - Value object for `shadow` property
 - [Blur](/develop/reference/Blur/) - Value object for `blur` property
+- [InnerShadow](/develop/reference/InnerShadow/) - Value object for `innerShadow` property
 
 ## Other module members
 
@@ -957,6 +958,17 @@ let originalBounds = node.localBounds;
 node.resize(originalBounds.width * 2, originalBounds.height);
 ```
 
+### _sceneNode.innerShadow : \![`InnerShadow`](/develop/reference/InnerShadow/)_
+**Since** XD 40
+
+**Default**: `null`
+
+The node's inner shadow, if any. If this property is null _or_ `innerShadow.visible` is false, no inner shadow is drawn. Artboard, Line and any container object like Group, ScrollableGroup, SymbolInstance and Repeat Grid don't support inner shadow.
+
+To modify an existing inner shadow, always be sure to re-invoke the `innerShadow` setter rather than just changing the InnerShadow object's properties inline.See ["Properties with object values"](/develop/plugin-development/xd-concepts/properties-with-object-values/).
+
+**Kind**: instance property of [`SceneNode`](#scenenode)
+
 ## RootNode
 
 **Kind**: class
@@ -1096,7 +1108,9 @@ Base class for nodes that have a stroke and/or fill. This includes leaf nodes su
 which is a container node. If you create a shape node, it will not be visible unless you explicitly give it either a stroke
 or a fill.
 
-### _graphicNode.fill : `?[Color](Color/)` \| `[LinearGradientFill](LinearGradientFill/)` \| `RadialGradientFill` \| `[ImageFill](ImageFill/)`_
+### _graphicNode.fill : `?[Color](Color/)` \| `[LinearGradientFill](LinearGradientFill/)` \| `RadialGradientFill` \| `AngularGradientFill` \| `[ImageFill](ImageFill/)`_
+
+**Updated** XD 41
 
 **Default**: `null`
 
@@ -1117,7 +1131,7 @@ To modify an existing fill, always be sure to re-invoke the `fill` setter rather
 See ["Properties with object values"](/develop/plugin-development/xd-concepts/properties-with-object-values/).
 
 > **Danger**
-> The RadialGradientFill type is not documented and its API may change. Plugins currently cannot modify or otherwise work with radial gradients.
+> The RadialGradientFill and AngularGradientFill types are not documented and their API may change. Plugins currently cannot modify or otherwise work with radial or angular gradients.
 
 ### _graphicNode.fillEnabled : `boolean`_
 
