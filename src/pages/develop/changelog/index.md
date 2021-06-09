@@ -1,5 +1,19 @@
 # Changelog
 
+## XD Release 41.0.12 (June 2021)
+
+### New API Features
+
+[InnerShadow](/develop/reference/scenegraph/#scenenodeinnershadow--innershadow) APIs.
+
+Note: `AngularGradientFill` may be a returned graphic [fill](/develop/reference/scenegraph/#graphicnodefill--colorcolor--lineargradientfilllineargradientfill--radialgradientfill--angulargradientfill--imagefillimagefill) type in XD 41. The APIs to support angular gradients are not yet available.
+
+## XD Release 40.0.22 (May 2021)
+
+### 3D Transform APIs
+
+Updated [transform](/develop/reference/scenegraph/#scenenodetransform--matrixmatrix3d) properties for 3D support
+
 ## XD Release 38.0.32 (March 2021)
 
 ### New API features
