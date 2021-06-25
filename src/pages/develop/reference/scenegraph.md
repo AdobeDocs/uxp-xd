@@ -525,7 +525,7 @@ with N non-background stack cells:
   - `SceneNode.layout.stack.spacings[i]` = the space between `SceneNode.contentChildren[i]` and `SceneNode.contentChildren[i + 1]` for i = 0, N - 1
   - To access the space coming before/after a stack cell, then the index of the desired stack cell must be searched in `SceneNode.contentChildren` and due to the z-index order:
     - after space = `SceneNode.layout.stack.spacings[index - 1]`
-    - before space = `SceneNode.layout.stack.spacings[index]`       
+    - before space = `SceneNode.layout.stack.spacings[index]`
 
 The setter expects a `PluginLayoutProperties` object which must contain the desired layout type:
 - SceneNode.LAYOUT_NONE:
@@ -561,7 +561,7 @@ Getter Remarks:
     - SceneNode.LAYOUT_RESPONSIVE_RESIZE: the only Layout-specific property available and enabled is Responsive Resize, hence the getter will return an Object containing the `type` and `resizeConstraints` attributes
     - SceneNode.LAYOUT_PADDING: Padding is enabled, so the object returned by the getter will contain the `type`, `resizeConstraints` and `padding` attributes
     - SceneNode.LAYOUT_STACK: Stack is enabled, so the object returned by the getter will contain the `type`, `resizeConstraints`, `padding` and `stack` attributes
-    
+
 Setter Remarks:
  - If `SceneNode.layout.resizeConstraints.type` is set to SceneNode.RESPONSIVE_RESIZE_AUTO, then the values of the resize pins are no longer required, so the
 attribute `SceneNode.layout.resizeConstraints.values` is considered as read-only, being ignored if set
@@ -802,7 +802,7 @@ For an overview of node positioning & coordinate systems, see [Coordinate spaces
 
 **Kind**: instance property of [`SceneNode`](#scenenode)
 
-**See**: 
+**See**:
 
 - [moveZDepth](#scenenode-moveZDepth)
 - [moveInParentCoordinates](#scenenode-moveInParentCoordinates)
@@ -820,7 +820,7 @@ For an overview of node positioning & coordinate systems, see [Coordinate spaces
 
 **See**:
 
-- [zDepth](#scenenodezDepth), 
+- [zDepth](#scenenodezDepth),
 - [placeInParentCoordinates3D](#scenenode-placeinparentcoordinates3D)
 - [moveInParentCoordinates](#scenenode-moveInParentCoordinates)
 
@@ -1336,6 +1336,7 @@ The actual corner radius that is rendered may be capped by the size of the recta
 are currently in effect, which may be smaller than the `cornerRadii` values as a result.
 
 **Kind**: instance property of [`Rectangle`](#rectangle)
+**Read only**: true
 
 ## Artboard
 
