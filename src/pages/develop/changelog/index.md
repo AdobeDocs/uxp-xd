@@ -6,7 +6,7 @@
 
 [InnerShadow](/develop/reference/scenegraph/#scenenodeinnershadow--innershadow) APIs.
 
-Note: `AngularGradientFill` may be a returned graphic [fill](/develop/reference/scenegraph/#graphicnodefill--colorcolor--lineargradientfilllineargradientfill--radialgradientfill--angulargradientfill--imagefillimagefill) type in XD 41. The APIs to support angular gradients are not yet available.
+Note: `AngularGradient` may be a returned graphic [fill](/develop/reference/scenegraph/#graphicnodefill--colorcolor--lineargradientlineargradient--radialgradient--angulargradient--imagefillimagefill) type in XD 41. The APIs to support angular gradients are not yet available.
 
 ## XD Release 40.0.22 (May 2021)
 
@@ -57,7 +57,7 @@ z-index one, from lower to higher
 * Fixed issue with menu separator in flyout where it required `id` to be "-" instead of the name.
 * Fixed some Windows focus issues.
 * `sp-dialog` was not closing on ESC.
-* File pickers now accept a file path for the default location. 
+* File pickers now accept a file path for the default location.
 * `sp-meter` support.
 * `sp-switch` support.
 * `mousedown` event comes before `focus` now.

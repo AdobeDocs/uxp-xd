@@ -30,7 +30,7 @@ Assets library entry representing a linear or radial gradient.
 | ------------ | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | name         | ?string                                  | Name of the Assets entry, if it is explicitly named. (The UI shows an auto-generated label for any unnamed assets).                                                                                                               |
 | gradientType | !GradientType                            | Either `GradientType.LINEAR` or `GradientType.RADIAL`                                                                                                                                                                             |
-| colorStops   | !Array.< {stop: number, color: !Color} > | Array of color stops used in the gradient, where `stop` >= 0 and <= 1, and the values are strictly increasing. Same format as the `colorStops` property of a [LinearGradientFill](/develop/reference/LinearGradientFill/) object. |
+| colorStops   | !Array.< {stop: number, color: !Color} > | Array of color stops used in the gradient, where `stop` >= 0 and <= 1, and the values are strictly increasing. Same format as the `colorStops` property of a [LinearGradient](/develop/reference/LinearGradient/) object. |
 
 ### Typedef CharacterStyleAsset
 
@@ -102,7 +102,7 @@ color/gradient already exists in the collection, _regardless of its name_.
 
 | Param       | Type                                                                                                                                                                                                         |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| colorAssets | `! Color &#124; ColorAsset &#124; LinearGradientFill &#124; RadialGradientFill &#124; GradientAsset &#124; Array.<Color&#124;ColorAsset&#124;LinearGradientFill&#124;RadialGradientFill&#124;GradientAsset>` |
+| colorAssets | `! Color &#124; ColorAsset &#124; LinearGradient &#124; RadialGradient &#124; GradientAsset &#124; Array.<Color&#124;ColorAsset&#124;LinearGradient&#124;RadialGradient&#124;GradientAsset>` |
 
 **Example**
 
@@ -139,7 +139,7 @@ Typically you will pass asset objects returned from [`get()`](#module_assets-col
 
 | Param       | Type                                                                                                                                                                                                         |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| colorAssets | `! Color &#124; ColorAsset &#124; LinearGradientFill &#124; RadialGradientFill &#124; GradientAsset &#124; Array.<Color&#124;ColorAsset&#124;LinearGradientFill&#124;RadialGradientFill&#124;GradientAsset>` |
+| colorAssets | `! Color &#124; ColorAsset &#124; LinearGradient &#124; RadialGradient &#124; GradientAsset &#124; Array.<Color&#124;ColorAsset&#124;LinearGradient&#124;RadialGradient&#124;GradientAsset>` |
 
 **Example**
 

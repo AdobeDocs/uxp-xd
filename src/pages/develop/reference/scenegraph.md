@@ -82,7 +82,7 @@ These classes are not scenenode types, but are used extensively in the scenegrap
 
 - [Color](/develop/reference/Color/) - Value object for `fill`, `stroke`, and other properties
 - [ImageFill](/develop/reference/ImageFill/) - Value object for `fill` property
-- [LinearGradientFill](/develop/reference/LinearGradientFill/) - Value object for `fill` property
+- [LinearGradient](/develop/reference/LinearGradient/) - Value object for `fill` property
 - [Matrix](/develop/reference/Matrix/) - Value object for `transform` property
 - [Matrix3D](/develop/reference/Matrix3D/) - Value object for `3D transform` property
 - [Shadow](/develop/reference/Shadow/) - Value object for `shadow` property
@@ -1112,7 +1112,7 @@ Base class for nodes that have a stroke and/or fill. This includes leaf nodes su
 which is a container node. If you create a shape node, it will not be visible unless you explicitly give it either a stroke
 or a fill.
 
-### _graphicNode.fill : `?[Color](Color/)` \| `[LinearGradientFill](LinearGradientFill/)` \| `RadialGradientFill` \| `AngularGradientFill` \| `[ImageFill](ImageFill/)`_
+### _graphicNode.fill : `?[Color](Color/)` \| `[LinearGradient](LinearGradient/)` \| `RadialGradient` \| `AngularGradient` \| `[ImageFill](ImageFill/)`_
 
 **Updated** XD 41
 
@@ -1133,9 +1133,6 @@ ellipse.fill = new Color("red");
 
 To modify an existing fill, always be sure to re-invoke the `fill` setter rather than just changing the fill object's properties inline.
 See ["Properties with object values"](/develop/plugin-development/xd-concepts/properties-with-object-values/).
-
-> **Danger**
-> The RadialGradientFill and AngularGradientFill types are not documented and their API may change. Plugins currently cannot modify or otherwise work with radial or angular gradients.
 
 ### _graphicNode.fillEnabled : `boolean`_
 

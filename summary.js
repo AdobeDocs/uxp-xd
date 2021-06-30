@@ -105,7 +105,7 @@ module.exports = [
           {
             title: "Developer Tool",
             path: "/develop/plugin-development/devtool/",
-            header: true, 
+            header: true,
             pages: require("./reference-devtool.js")
           },
           {
@@ -299,8 +299,8 @@ module.exports = [
             title: "Interactions",
           },
           {
-            path: "/develop/reference/LinearGradientFill/",
-            title: "LinearGradientFill",
+            path: "/develop/reference/LinearGradient/",
+            title: "LinearGradient",
           },
           {
             path: "/develop/reference/Matrix/",
