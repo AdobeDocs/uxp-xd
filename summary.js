@@ -263,6 +263,10 @@ module.exports = [
         header: true,
         pages: [
           {
+            path: "/develop/reference/AngularGradient/",
+            title: "AngularGradient",
+          },
+          {
             path: "/develop/reference/application/",
             title: "Application",
           },
@@ -309,6 +313,10 @@ module.exports = [
           {
             path: "/develop/reference/PerPluginStorage/",
             title: "PerPluginStorage",
+          },
+          {
+            path: "/develop/reference/RadialGradient/",
+            title: "RadialGradient",
           },
           {
             path: "/develop/reference/scenegraph/",

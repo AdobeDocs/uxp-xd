@@ -508,7 +508,7 @@ Object representing layout.padding
 | values | `Object` or `Number` | top, right, bottom, left are all numbers which determines each side padding amount. A single number represents the padding used by all four sides. |
 
 
-Object reporesenting layout.resizeConstraints
+Object representing layout.resizeConstraints
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -1112,9 +1112,9 @@ Base class for nodes that have a stroke and/or fill. This includes leaf nodes su
 which is a container node. If you create a shape node, it will not be visible unless you explicitly give it either a stroke
 or a fill.
 
-### _graphicNode.fill : `?[Color](Color/)` \| `[LinearGradient](LinearGradient/)` \| `RadialGradient` \| `AngularGradient` \| `[ImageFill](ImageFill/)`_
+### _graphicNode.fill_ : [Color](/develop/reference/Color) | [LinearGradient](/develop/reference/LinearGradient) | [RadialGradient](/develop/reference/RadialGradient) | [AngularGradient](/develop/reference/AngularGradient) | [ImageFill](/develop/reference/ImageFill)
 
-**Updated** XD 41
+**Updated** XD 42
 
 **Default**: `null`
 
@@ -1142,7 +1142,7 @@ If false, the `fill` is not rendered. The user can toggle this via a checkbox in
 
 **Kind**: instance property of [`GraphicNode`](#graphicnode)
 
-### _graphicNode.stroke : `?[Color](Color/)`_
+### _graphicNode.stroke_ : [Color](/develop/reference/Color)
 
 **Default**: `null`
 

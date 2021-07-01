@@ -18,7 +18,7 @@ console.log(selection.items); // [Group]
 
 ### commands.group()
 
-Wraps the selected objects in a [Group](/develop/reference/scenegraph/#Group), leaving the Group selected afterward. Equivalent to _Object >
+Wraps the selected objects in a [Group](/develop/reference/scenegraph/#group), leaving the Group selected afterward. Equivalent to _Object >
 Group_ in the UI.
 
 **Kind**: static method of [`commands`](#module_commands)
@@ -50,8 +50,8 @@ _Object > Ungroup_.
 
 ### commands.createMaskGroup()
 
-Creates a masked [Group](/develop/reference/scenegraph/#Group) from the selected objects, using the object that is highest in the z order as
-the mask shape. The mask shape must be a leaf node or [Boolean Group](/develop/reference/scenegraph/#BooleanGroup). Equivalent to
+Creates a masked [Group](/develop/reference/scenegraph/#group) from the selected objects, using the object that is highest in the z order as
+the mask shape. The mask shape must be a leaf node or [Boolean Group](/develop/reference/scenegraph/#booleangroup). Equivalent to
 _Object > Mask With Shape_.
 
 **Kind**: static method of [`commands`](#module_commands)
@@ -76,8 +76,32 @@ let maskedGroup = selection.items[0];
 
 ### commands.convertToPath()
 
-Converts each selected object to a [Path](/develop/reference/scenegraph/#Path) with the exact same visual appearance. Only applies to leaf
-nodes and [Boolean Groups](/develop/reference/scenegraph/#BooleanGroup). Equivalent to _Object > Path > Convert to Path_.
+Converts each selected object to a [Path](/develop/reference/scenegraph/#path) with the exact same visual appearance. Only applies to leaf
+nodes and [Boolean Groups](/develop/reference/scenegraph/#booleangroup). Equivalent to _Object > Path > Convert to Path_.
+
+**Kind**: static method of [`commands`](#module_commands)
+
+### commands.outlineStroke()
+
+**Since**: XD 42
+
+Converts each selected object's stroke to a [Path](/develop/reference/scenegraph/#path) with the exact same visual appearance.
+Only applies to leaf nodes, [Groups](/develop/reference/scenegraph/#group) and [Boolean Groups](/develop/reference/scenegraph/#booleangroup).
+Equivalent to _Object > Path > Outline Stroke_.
+
+**Example**
+```js
+const commands = require("commands");
+
+// Newly created shape nodes.
+let shape1 = ...,
+    shape2 = ...;
+
+// Select both shapes, then run the Outline Stroke command.
+selection.items = [shape1, shape2];
+commands.outlineStroke();
+console.log(selection.items);  // [shape1, outline1, shape2, outline2]
+```
 
 **Kind**: static method of [`commands`](#module_commands)
 
@@ -183,9 +207,9 @@ Equivalent to _Object > Make Background_, which is available when selecting a si
 - belongs to a Stack that has no background
 - the Stack contains at least two stack cells
 
-For the example below, see [layout](/develop/reference/scenegraph/#SceneNodeLayout) for examples of creating Stack without background.
+For the example below, see [layout](/develop/reference/scenegraph/#scenenodelayout--layoutproperties) for examples of creating Stack without background.
 
-**Example**  
+**Example**
 ```js
 const stack = ...;
 // suppose this node is a Stack containing at least two stack cells
@@ -216,7 +240,7 @@ Equivalent to _Object > Replace Background_, which is available when selecting a
 
 For the example below, see [layout](/develop/reference/scenegraph/#SceneNode-layout) for examples of creating Stack without background.
 
-**Example**  
+**Example**
 ```js
 const stack = ...;
 // suppose this node is a Stack containing at least two stack cells
