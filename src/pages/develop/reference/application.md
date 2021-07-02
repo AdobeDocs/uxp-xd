@@ -17,7 +17,7 @@ You can _only_ call `editDocument()` in response to a user action, such as a but
 
 For UI events that often occur in rapid-fire clusters, such as dragging a slider or pressing keys in a text field, XD tries to smartly merge consecutive edits into a single atomic Undo step. See the `mergeId` option below to customize this behavior.
 
-**Kind**: static method of [`application`](#module_application)
+**Kind**: static method of [application](#module_application)
 
 | Param          | Type                                   | Description                                                         |
 | ------------   | -------------------------------------- | ------------------------------------------------------------------- |
@@ -60,7 +60,7 @@ A single `createRenditions()` call can generate any number of renditions, includ
 different output settings) or renditions of multiple different nodes. Only one `createRenditions()` call can be executing at any
 given time, so wait for the Promise it returns before calling it again.
 
-**Kind**: static method of [`application`](#module_application)
+**Kind**: static method of [application](#module_application)
 **Returns**: `Promise<Array<RenditionResult>, string>` - Promise which is fulfilled with an array of RenditionResults (pointing to
 the same `outputFile`s that were originally passed in, or rejected with an error string if one or more renditions failed for
 any reason.
@@ -118,7 +118,7 @@ application.createRenditions(renditions).then(function (results) {
 
 Adobe XD version number in the form "major.minor.patch.build"
 
-**Kind**: static property of [`application`](#module_application)
+**Kind**: static property of [application](#module_application)
 **Read only**: true
 
 **Example**
@@ -135,7 +135,7 @@ Current language the application UI is using. This may not equal the user's OS l
 locale _supported by XD_ - use this when you want your plugin's UI to be consistent with XD's UI. Specifies
 language only, with no region info (e.g. "fr", not "fr_FR").
 
-**Kind**: static property of [`application`](#module_application)
+**Kind**: static property of [application](#module_application)
 **Read only**: true
 
 **Example**
@@ -151,7 +151,7 @@ console.log("XD locale:", application.appLanguage); // e.g. "en"
 User's OS-wide locale setting. May not match the XD UI, since XD does not support all world languages. Includes both
 language _and_ region (e.g. "fr_CA" or "en_US").
 
-**Kind**: static property of [`application`](#module_application)
+**Kind**: static property of [application](#module_application)
 **Read only**: true
 
 **Example**
@@ -169,7 +169,7 @@ Information about the document which this instance of the plugin is attached to.
 > **Tip** > _This does **not** indicate the frontmost "active" document window in the XD application._
 > In XD, each document window [loads a separate copy of your plugin](/develop/plugin-development/xd-concepts/lifecycle/#plugin-loading). When a given instance of your plugin calls this API, you will always receive information about the document that this instance of the plugin is attached to, even if it's not the active window.
 
-**Kind**: static property of [`application`](#module_application)
+**Kind**: static property of [application](#module_application)
 **Read only**: true
 
 **Typedef DocumentInfo**

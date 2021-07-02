@@ -16,7 +16,7 @@ clipboard.copyText(selection.items[0].name);
 
 Write plain text to the clipboard.
 
-**Kind**: static method of [`clipboard`](#module_clipboard)
+**Kind**: static method of [clipboard](#module_clipboard)
 
 | Param | Type   | Description                                                             |
 | ----- | ------ | ----------------------------------------------------------------------- |

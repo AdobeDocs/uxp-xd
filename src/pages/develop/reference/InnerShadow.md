@@ -6,7 +6,7 @@
 
 ## new InnerShadow()
 
-▸ new InnerShadow(`?x`, `?y`, `?blur`, `?color`, `?visible`)
+▸ new InnerShadow(`?x`, `?y`, `?blur`, `?color`, `?visible`): [InnerShadow](#InnerShadow)
 
 Creates an innerShadow object with the x, y, blur and color properties. You may omit all properties to create an InnerShadow with default values. The `visible` argument is always optional and defaults to true.
 
@@ -32,4 +32,4 @@ Sets the x, y, blur, color, visible members for the InnerShadow object. The `vis
 | `color`   | [Color](/develop/reference/Color) |
 | `visible` | `?boolean`        |
 
-**Kind**: instance method of [`InnerShadow`](#InnerShadow)
+**Kind**: instance method of [InnerShadow](#InnerShadow)

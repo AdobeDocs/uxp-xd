@@ -46,7 +46,7 @@ Assets library entry representing a set of text character styles.
 Character style properties. See documentation for the [Text](/develop/reference/scenegraph/#text) node type for more details.
 
 When creating a new character style, all properties are mandatory except those with default values specified here. When deleting
-an existing character style, always pass the exact object returned by [`characterStyles.get()`](#module_assets-characterStyles-get) (with all properties fully
+an existing character style, always pass the exact object returned by [characterStyles.get()](#module_assets-characterStyles-get) (with all properties fully
 specified) to avoid any ambiguity.
 
 | Property      | Type     | Description                                                                                |
@@ -83,7 +83,7 @@ Get a list of all color/gradient assets, in the order they appear in the Assets 
 The list may contain a mix of solid Color assets and/or gradient assets.
 If there are no color/gradient assets, an empty array is returned.
 
-**Kind**: static method of [`colors`](#module_assets-colors)
+**Kind**: static method of [colors](#module_assets-colors)
 
 **Returns**: `Array.<ColorAsset|GradientAsset>`
 
@@ -104,7 +104,7 @@ Add color/gradient assets to the collection.
 The list may contain a mix of solid Color assets and/or gradient assets. Items are not added if a duplicate
 color/gradient already exists in the collection, _regardless of its name_.
 
-**Kind**: static method of [`colors`](#module_assets-colors)
+**Kind**: static method of [colors](#module_assets-colors)
 
 **Returns**: `number` - number of assets added (may be less than requested if duplicates already exist)
 
@@ -142,9 +142,9 @@ Delete color/gradient assets from the collection.
 
 The list may contain a mix of solid Color assets and/or gradient assets. Assets with the same color/gradient are
 removed _even if their names differ_. Assets that already don't exist in the collection are silently ignored.
-Typically you will pass asset objects returned from [`get()`](#module_assets-colors-get) directly to this function.
+Typically you will pass asset objects returned from [get()](#module_assets-colors-get) directly to this function.
 
-**Kind**: static method of [`colors`](#module_assets-colors)
+**Kind**: static method of [colors](#module_assets-colors)
 
 **Returns**: `number` - number of assets deleted (may be less than requested if some didn't exist)
 
@@ -179,7 +179,7 @@ Get a list of all character style assets, in the order they appear in the Assets
 
 If there are no character style assets, an empty array is returned.
 
-**Kind**: static method of [`characterStyles`](#module_assets-characterStyles)
+**Kind**: static method of [characterStyles](#module_assets-characterStyles)
 
 **Returns**: `Array.<CharacterStyleAsset>`
 
@@ -200,7 +200,7 @@ Add one or more character style assets to the collection.
 Items are not added if a duplicate character style already exists in the collection, _regardless of its name_.
 All character style properties must be fully specified (no properties are optional).
 
-**Kind**: static method of [`characterStyles`](#module_assets-characterStyles)
+**Kind**: static method of [characterStyles](#module_assets-characterStyles)
 
 **Returns**: `number` - number of assets added (may be less than requested if duplicates already exist)
 
@@ -249,10 +249,10 @@ Delete one or more character style assets from the collection.
 Assets with the same character style are removed _even if their names differ_. Assets that already don't exist in the
 collection are silently ignored. All character style properties must be fully specified (no properties are optional).
 
-To avoid ambiguity, pass the exact asset objects returned from [`get()`](#module_assets-characterStyles-get) directly
+To avoid ambiguity, pass the exact asset objects returned from [get()](#module_assets-characterStyles-get) directly
 to this function.
 
-**Kind**: static method of [`characterStyles`](#module_assets-characterStyles)
+**Kind**: static method of [characterStyles](#module_assets-characterStyles)
 
 **Returns**: `number` - number of assets deleted (may be less than requested if some didn't exist)
 

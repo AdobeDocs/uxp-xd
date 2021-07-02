@@ -4,7 +4,7 @@
 
 ## new Blur()
 
-▸ **new Blur**(): [`Blur`](#Blur)
+▸ **new Blur**(): [Blur](#Blur)
 
 Creates an object blur or background blur effect object with the given properties.
 
@@ -20,7 +20,7 @@ Creates an object blur or background blur effect object with the given propertie
 
 ▸ **blurAmount**: `number` 0 - 50
 
-**Kind**: instance property of [`Blur`](#Blur)
+**Kind**: instance property of [Blur](#Blur)
 
 ## brightnessAmount
 
@@ -28,7 +28,7 @@ Creates an object blur or background blur effect object with the given propertie
 
 For background blur effects, the amount to increase or decrease the brightness of the background. Ignored for object blur effects.
 
-**Kind**: instance property of [`Blur`](#Blur)
+**Kind**: instance property of [Blur](#Blur)
 
 ## fillOpacity
 
@@ -38,7 +38,7 @@ For background blur effects, the a multiplier on the opacity of the object's fil
 
 Ignored for object blur effects.
 
-**Kind**: instance property of [`Blur`](#Blur)
+**Kind**: instance property of [Blur](#Blur)
 
 ## isBackgroundEffect
 
@@ -48,7 +48,7 @@ If true, renders a background blur effect: all objects beneath the shape are blu
 
 If false, renders an object blur effect: the shape itself is blurred, and objects beneath it are unaffected.
 
-**Kind**: instance property of [`Blur`](#Blur)
+**Kind**: instance property of [Blur](#Blur)
 
 ## visible
 
@@ -56,4 +56,4 @@ If false, renders an object blur effect: the shape itself is blurred, and object
 
 If false, the blur effect is not rendered. The user can toggle this via a checkbox in the Properties panel.
 
-**Kind**: instance property of [`Blur`](#Blur)
+**Kind**: instance property of [Blur](#Blur)

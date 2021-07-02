@@ -7,7 +7,7 @@ applied to.
 
 ## new LinearGradient()
 
-▸ **new LinearGradient**(): `LinearGradient`
+▸ **new LinearGradient**(): [LinearGradient](#LinearGradient)
 
 Create a new LinearGradient instance.
 
@@ -17,7 +17,7 @@ Create a new LinearGradient instance.
 
 Returns a copy of this instance.
 
-**Kind**: instance method of [`LinearGradient`](#LinearGradient)
+**Kind**: instance method of [LinearGradient](#LinearGradient)
 
 ## colorStops
 
@@ -33,7 +33,7 @@ gradient.colorStops = [{ stop: 0, color: new Color("Red") },
 selection.items[0].fill = gradient;
 ```
 
-**Kind**: instance property of [`LinearGradient`](#LinearGradient)
+**Kind**: instance property of [LinearGradient](#LinearGradient)
 
 ## startX
 
@@ -42,7 +42,7 @@ selection.items[0].fill = gradient;
 X position of the start of the gradient line, as a multiple of the object's bounding box: X=0 indicates the left edge of the bounding box and X=1 indicates the right edge.
 The gradient line _may_ start or end outside the object's bounding box, so values may be < 0 or > 1.
 
-**Kind**: instance property of [`LinearGradient`](#LinearGradient)
+**Kind**: instance property of [LinearGradient](#LinearGradient)
 
 ## startY
 
@@ -51,7 +51,7 @@ The gradient line _may_ start or end outside the object's bounding box, so value
 Y position of the start of the gradient line, as a multiple of the object's bounding box: Y=0 indicates the top edge of the bounding box and Y=1 indicates the bottom edge.
 The gradient line _may_ start or end outside the object's bounding box, so values may be < 0 or > 1.
 
-**Kind**: instance property of [`LinearGradient`](#LinearGradient)
+**Kind**: instance property of [LinearGradient](#LinearGradient)
 
 ## endX
 
@@ -60,7 +60,7 @@ The gradient line _may_ start or end outside the object's bounding box, so value
 X position of the end of the gradient line, as a multiple of the object's bounding box: X=0 indicates the left edge of the bounding box and X=1 indicates the right edge.
 The gradient line _may_ start or end outside the object's bounding box, so values may be < 0 or > 1.
 
-**Kind**: instance property of [`LinearGradient`](#LinearGradient)
+**Kind**: instance property of [LinearGradient](#LinearGradient)
 
 ## endY
 
@@ -69,7 +69,7 @@ The gradient line _may_ start or end outside the object's bounding box, so value
 Y position of the end of the gradient line, as a multiple of the object's bounding box: Y=0 indicates the top edge of the bounding box and Y=1 indicates the bottom edge.
 The gradient line _may_ start or end outside the object's bounding box, so values may be < 0 or > 1.
 
-**Kind**: instance property of [`LinearGradient`](#LinearGradient)
+**Kind**: instance property of [LinearGradient](#LinearGradient)
 
 ## getEndPoints()
 
@@ -77,7 +77,7 @@ The gradient line _may_ start or end outside the object's bounding box, so value
 
 Returns an array of \[startX, startY, endX, endY\].
 
-**Kind**: instance method of [`LinearGradient`](#LinearGradient)
+**Kind**: instance method of [LinearGradient](#LinearGradient)
 
 ## setEndPoints()
 
@@ -85,7 +85,7 @@ Returns an array of \[startX, startY, endX, endY\].
 
 Shorthand for setting all four start/endpoint properties.
 
-**Kind**: instance method of [`LinearGradient`](#LinearGradient)
+**Kind**: instance method of [LinearGradient](#LinearGradient)
 
 ## type
 
@@ -95,4 +95,4 @@ Shorthand for setting all four start/endpoint properties.
 
 String representing the type of the gradient, in this case linear gradient.
 
-**Kind**: instance property of [`LinearGradient`](#LinearGradient)
+**Kind**: instance property of [LinearGradient](#LinearGradient)

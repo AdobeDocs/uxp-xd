@@ -94,4 +94,4 @@ server may be.
 The list may contain a mix of PrototypeArtifact and/or SpecsArtifact, and items are listed in no
 particular order. If nothing has been shared from this document, an empty array is returned.
 
-**Kind**: static method of [`cloud`](#module_cloud)
+**Kind**: static method of [cloud](#module_cloud)

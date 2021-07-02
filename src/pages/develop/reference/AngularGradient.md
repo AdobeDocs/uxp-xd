@@ -8,7 +8,7 @@ In an angular (also known as "conical") gradient, colors blend together in a swe
 
 ## new AngularGradient()
 
-▸ **new AngularGradient**(): `AngularGradient`
+▸ **new AngularGradient**(): [AngularGradient](#AngularGradient)
 
 Create a new AngularGradient instance.
 
@@ -18,7 +18,7 @@ Create a new AngularGradient instance.
 
 Returns a copy of this instance.
 
-**Kind**: instance method of [`AngularGradient`](#AngularGradient)
+**Kind**: instance method of [AngularGradient](#AngularGradient)
 
 ## colorStops
 
@@ -34,7 +34,7 @@ gradient.colorStops = [{ stop: 0, color: new Color("Red") },
 selection.items[0].fill = gradient;
 ```
 
-**Kind**: instance property of [`AngularGradient`](#AngularGradient)
+**Kind**: instance property of [AngularGradient](#AngularGradient)
 
 ## startX
 
@@ -45,7 +45,7 @@ bounding box: X=0 indicates the left edge of the bounding box and X=1
 indicates the right edge. The gradient circle center may start or end outside
 the object's bounding box, so values may be < 0 or > 1.
 
-**Kind**: instance property of [`AngularGradient`](#AngularGradient)
+**Kind**: instance property of [AngularGradient](#AngularGradient)
 
 ## startY
 
@@ -56,7 +56,7 @@ bounding box: Y=0 indicates the top edge of the bounding box and Y=1
 indicates the bottom edge. The gradient circle center may start or end outside
 the object's bounding box, so values may be < 0 or > 1.
 
-**Kind**: instance property of [`AngularGradient`](#AngularGradient)
+**Kind**: instance property of [AngularGradient](#AngularGradient)
 
 ## getEndPoints()
 
@@ -64,7 +64,7 @@ the object's bounding box, so values may be < 0 or > 1.
 
 Returns an array of \[startX, startY, endX, endY\].
 
-**Kind**: instance method of [`AngularGradient`](#AngularGradient)
+**Kind**: instance method of [AngularGradient](#AngularGradient)
 
 ## setEndPoints()
 
@@ -72,7 +72,7 @@ Returns an array of \[startX, startY, endX, endY\].
 
 Method for setting all four start/endpoint properties. _(endX, endY)_ point is the end of the gradient circle radius.
 
-**Kind**: instance method of [`AngularGradient`](#AngularGradient)
+**Kind**: instance method of [AngularGradient](#AngularGradient)
 
 ## rotation
 
@@ -80,7 +80,7 @@ Method for setting all four start/endpoint properties. _(endX, endY)_ point is t
 
 Rotation of the gradient in degrees.
 
-**Kind**: instance property of [`AngularGradient`](#AngularGradient)
+**Kind**: instance property of [AngularGradient](#AngularGradient)
 
 ## type
 
@@ -88,4 +88,4 @@ Rotation of the gradient in degrees.
 
 String representing the type of the gradient, in this case angular gradient.
 
-**Kind**: instance property of [`AngularGradient`](#AngularGradient)
+**Kind**: instance property of [AngularGradient](#AngularGradient)

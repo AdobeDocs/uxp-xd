@@ -373,7 +373,7 @@ Transforms a rectangle using the matrix.
 
 Check if the matrix will introduce any skew on the XY plane.  Returns true, if the matrix contains skew.
 
-**Kind**: instance method of [`3DMatrix`](#3DMatrix)
+**Kind**: instance method of [3DMatrix](#3DMatrix)
 
 ## hasSkewXZ()
 
@@ -381,7 +381,7 @@ Check if the matrix will introduce any skew on the XY plane.  Returns true, if t
 
 Check if the matrix will introduce any skew on the XZ plane.  Returns true, if the matrix contains skew.
 
-**Kind**: instance method of [`3DMatrix`](#3DMatrix)
+**Kind**: instance method of [3DMatrix](#3DMatrix)
 
 ## hasSkewYZ()
 
@@ -389,7 +389,7 @@ Check if the matrix will introduce any skew on the XZ plane.  Returns true, if t
 
 Check if the matrix will introduce any skew on the YZ plane.  Returns true, if the matrix contains skew.
 
-**Kind**: instance method of [`3DMatrix`](#3DMatrix)
+**Kind**: instance method of [3DMatrix](#3DMatrix)
 
 ## isTranslationOnly()
 
@@ -397,7 +397,7 @@ Check if the matrix will introduce any skew on the YZ plane.  Returns true, if t
 
 Returns true if there are no scale, skew, or rotation values, and the matrix is all translation. (Although identity is still considered all translation.) This is equivalent to `this.strictEquals(new Matrix3D().translate(...this.getTranslate()))`
 
-**Kind**: instance method of [`3DMatrix`](#3DMatrix)
+**Kind**: instance method of [3DMatrix](#3DMatrix)
 
 ## getRotation()
 
@@ -405,7 +405,7 @@ Returns true if there are no scale, skew, or rotation values, and the matrix is 
 
 Get the rotation of this matrix.
 
-**Kind**: instance method of [`3DMatrix`](#3DMatrix)
+**Kind**: instance method of [3DMatrix](#3DMatrix)
 
 ## flip()
 
@@ -431,7 +431,7 @@ Compare a matrix for equality with a tolerance.  Returns true if current matrix 
 | ----------- | ------------------------- | --------------------------- |
 | otherMatrix | [Matrix3D](#Matrix3D) | the matrix to compare with. |
 
-**Kind**: instance method of [`3DMatrix`](#3DMatrix)
+**Kind**: instance method of [3DMatrix](#3DMatrix)
 
 ## strictEquals()
 
@@ -443,7 +443,7 @@ Compare a matrix with strict equality / zero tolerance.  Returns true if current
 | ----------- | ------------------------- | --------------------------- |
 | otherMatrix | [Matrix3D](#Matrix3D) | the matrix to compare with. |
 
-**Kind**: instance method of [`3DMatrix`](#3DMatrix)
+**Kind**: instance method of [3DMatrix](#3DMatrix)
 
 ## toTransformString()
 
@@ -451,7 +451,7 @@ Compare a matrix with strict equality / zero tolerance.  Returns true if current
 
 Returns transform string that represents given matrix.
 
-**Kind**: instance method of [`3DMatrix`](#3DMatrix)
+**Kind**: instance method of [3DMatrix](#3DMatrix)
 
 ## roundToSinglePrecision()
 

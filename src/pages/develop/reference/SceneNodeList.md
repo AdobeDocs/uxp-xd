@@ -2,7 +2,7 @@
 
 Represents the children of a scenenode. Typically accessed via the [SceneNode.children](/develop/reference/scenegraph/#SceneNode-children) property.
 
-This is _not an Array_, so you must use [`.at(i)`](#SceneNodeList-at) instead of `[i]` to access children by index. It has a
+This is _not an Array_, so you must use [.at(i)](#SceneNodeList-at) instead of `[i]` to access children by index. It has a
 number of Array-like methods such as [forEach](#SceneNodeList-forEach) for convenience, however. For best performance, iterate
 the list using these methods rather than repeatedly calling `at()`.
 

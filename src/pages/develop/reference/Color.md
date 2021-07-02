@@ -19,7 +19,7 @@ Create a new color instance.
 
 Integer 0-255. Get/set the alpha channel value.
 
-**Kind**: instance property of [`Color`](#Color)
+**Kind**: instance property of [Color](#Color)
 
 ## r
 
@@ -27,7 +27,7 @@ Integer 0-255. Get/set the alpha channel value.
 
 Integer 0-255. Get/set the red channel value.
 
-**Kind**: instance property of [`Color`](#Color)
+**Kind**: instance property of [Color](#Color)
 
 ## g
 
@@ -35,7 +35,7 @@ Integer 0-255. Get/set the red channel value.
 
 Integer 0-255. Get/set the green channel value.
 
-**Kind**: instance property of [`Color`](#Color)
+**Kind**: instance property of [Color](#Color)
 
 ## b
 
@@ -43,7 +43,7 @@ Integer 0-255. Get/set the green channel value.
 
 Integer 0-255. Get/set the blue channel value.
 
-**Kind**: instance property of [`Color`](#Color)
+**Kind**: instance property of [Color](#Color)
 
 ## toRgba()
 
@@ -52,7 +52,7 @@ Integer 0-255. Get/set the blue channel value.
 Convert to an object with r, g, b, a keys where
 r, g, b, a range from 0 - 255.
 
-**Kind**: instance method of [`Color`](#Color)
+**Kind**: instance method of [Color](#Color)
 
 ## toHex()
 
@@ -61,7 +61,7 @@ r, g, b, a range from 0 - 255.
 Convert to hex string with "#" prefix. Ignores the Color's alpha value.
 Returns a 3-digit string if possible, otherwise returns a 6-digit string.
 
-**Kind**: instance method of [`Color`](#Color)
+**Kind**: instance method of [Color](#Color)
 **Returns**: `string` - Hex color string in the form #123 or #456ABC.
 
 | Param          | Type      | Description                                          |
@@ -70,8 +70,8 @@ Returns a 3-digit string if possible, otherwise returns a 6-digit string.
 
 ## clone()
 
-▸ **clone**(): [`Color`](#Color)
+▸ **clone**(): [Color](#Color)
 
 Returns a clone of the current color object
 
-**Kind**: instance method of [`Color`](#Color)
+**Kind**: instance method of [Color](#Color)

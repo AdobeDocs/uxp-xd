@@ -36,7 +36,7 @@ module.exports = {
 };
 ```
 
-You can also access this object from the [`scenegraph.selection`](/develop/reference/scenegraph/#module_scenegraph-selection) property.
+You can also access this object from the [scenegraph.selection](/develop/reference/scenegraph/#module_scenegraph-selection) property.
 
 **Kind**: object
 

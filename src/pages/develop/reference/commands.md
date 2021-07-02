@@ -23,7 +23,7 @@ console.log(selection.items); // [Group]
 Wraps the selected objects in a [Group](/develop/reference/scenegraph/#group), leaving the Group selected afterward. Equivalent to _Object >
 Group_ in the UI.
 
-**Kind**: static method of [`commands`](#module_commands)
+**Kind**: static method of [commands](#module_commands)
 
 **Example**
 
@@ -50,7 +50,7 @@ let group = selection.items[0]; // the new Group node is what's selected afterwa
 Ungroups any of the selected objects that are ungroupable containers (Group, SymbolInstance, RepeatGrid, etc.). Equivalent to
 _Object > Ungroup_.
 
-**Kind**: static method of [`commands`](#module_commands)
+**Kind**: static method of [commands](#module_commands)
 
 ## createMaskGroup()
 
@@ -60,7 +60,7 @@ Creates a masked [Group](/develop/reference/scenegraph/#group) from the selected
 the mask shape. The mask shape must be a leaf node or [Boolean Group](/develop/reference/scenegraph/#booleangroup). Equivalent to
 _Object > Mask With Shape_.
 
-**Kind**: static method of [`commands`](#module_commands)
+**Kind**: static method of [commands](#module_commands)
 
 **Example**
 
@@ -87,7 +87,7 @@ let maskedGroup = selection.items[0];
 Converts each selected object to a [Path](/develop/reference/scenegraph/#path) with the exact same visual appearance. Only applies to leaf
 nodes and [Boolean Groups](/develop/reference/scenegraph/#booleangroup). Equivalent to _Object > Path > Convert to Path_.
 
-**Kind**: static method of [`commands`](#module_commands)
+**Kind**: static method of [commands](#module_commands)
 
 ## outlineStroke()
 
@@ -113,7 +113,7 @@ commands.outlineStroke();
 console.log(selection.items);  // [shape1, outline1, shape2, outline2]
 ```
 
-**Kind**: static method of [`commands`](#module_commands)
+**Kind**: static method of [commands](#module_commands)
 
 ## duplicate()
 
@@ -129,7 +129,7 @@ Duplicates all selected objects, leaving the duplicates selected afterward.
 Interactions triggered from the selected objects are only duplicated if the user is currently in the Prototype workspace.
 Equivalent to _Edit > Duplicate_.
 
-**Kind**: static method of [`commands`](#module_commands)
+**Kind**: static method of [commands](#module_commands)
 
 ## bringToFront()
 
@@ -137,7 +137,7 @@ Equivalent to _Edit > Duplicate_.
 
 Brings selected objects to the front of the z order. Equivalent to _Object > Arrange > Bring to Front_.
 
-**Kind**: static method of [`commands`](#module_commands)
+**Kind**: static method of [commands](#module_commands)
 
 ## bringForward()
 
@@ -145,7 +145,7 @@ Brings selected objects to the front of the z order. Equivalent to _Object > Arr
 
 Brings each selected object one step closer to the front of the z order. Equivalent to _Object > Arrange > Bring Forward_.
 
-**Kind**: static method of [`commands`](#module_commands)
+**Kind**: static method of [commands](#module_commands)
 
 ## sendToBack()
 
@@ -153,7 +153,7 @@ Brings each selected object one step closer to the front of the z order. Equival
 
 Sends selected objects to the back of the z order. Equivalent to _Object > Arrange > Send to Back_.
 
-**Kind**: static method of [`commands`](#module_commands)
+**Kind**: static method of [commands](#module_commands)
 
 ## sendBackward()
 
@@ -161,7 +161,7 @@ Sends selected objects to the back of the z order. Equivalent to _Object > Arran
 
 Sends each selected object one step closer to the back of the z order. Equivalent to _Object > Arrange > Send Backward_.
 
-**Kind**: static method of [`commands`](#module_commands)
+**Kind**: static method of [commands](#module_commands)
 
 ## alignLeft()
 
@@ -169,7 +169,7 @@ Sends each selected object one step closer to the back of the z order. Equivalen
 
 Aligns all selected objects flush left. Equivalent to _Object > Align > Left_.
 
-**Kind**: static method of [`commands`](#module_commands)
+**Kind**: static method of [commands](#module_commands)
 
 ## alignRight()
 
@@ -177,7 +177,7 @@ Aligns all selected objects flush left. Equivalent to _Object > Align > Left_.
 
 Aligns all selected objects flush right. Equivalent to _Object > Align > Right_.
 
-**Kind**: static method of [`commands`](#module_commands)
+**Kind**: static method of [commands](#module_commands)
 
 ## alignHorizontalCenter()
 
@@ -185,7 +185,7 @@ Aligns all selected objects flush right. Equivalent to _Object > Align > Right_.
 
 Aligns all selected objects along their horizontal centerlines. Equivalent to _Object > Align > Center (Horizontally)_.
 
-**Kind**: static method of [`commands`](#module_commands)
+**Kind**: static method of [commands](#module_commands)
 
 ## alignTop()
 
@@ -193,7 +193,7 @@ Aligns all selected objects along their horizontal centerlines. Equivalent to _O
 
 Aligns all selected objects flush top. Equivalent to _Object > Align > Top_.
 
-**Kind**: static method of [`commands`](#module_commands)
+**Kind**: static method of [commands](#module_commands)
 
 ## alignBottom()
 
@@ -201,7 +201,7 @@ Aligns all selected objects flush top. Equivalent to _Object > Align > Top_.
 
 Aligns all selected objects flush bottom. Equivalent to _Object > Align > Bottom_.
 
-**Kind**: static method of [`commands`](#module_commands)
+**Kind**: static method of [commands](#module_commands)
 
 ## alignVerticalCenter()
 
@@ -209,7 +209,7 @@ Aligns all selected objects flush bottom. Equivalent to _Object > Align > Bottom
 
 Aligns all selected objects along their vertical centerlines. Equivalent to _Object > Align > Center (Vertically)_.
 
-**Kind**: static method of [`commands`](#module_commands)
+**Kind**: static method of [commands](#module_commands)
 
 ## distributeHorizontal()
 
@@ -217,7 +217,7 @@ Aligns all selected objects along their vertical centerlines. Equivalent to _Obj
 
 Distributes all selected objects evenly along the X axis. Equivalent to _Object > Distribute > Horizontally_.
 
-**Kind**: static method of [`commands`](#module_commands)
+**Kind**: static method of [commands](#module_commands)
 
 ## distributeVertical()
 
@@ -225,7 +225,7 @@ Distributes all selected objects evenly along the X axis. Equivalent to _Object 
 
 Distributes all selected objects evenly along the Y axis. Equivalent to _Object > Distribute > Vertically_.
 
-**Kind**: static method of [`commands`](#module_commands)
+**Kind**: static method of [commands](#module_commands)
 
 ## alignToPixelGrid()
 
@@ -234,7 +234,7 @@ Distributes all selected objects evenly along the Y axis. Equivalent to _Object 
 Shifts all selected objects and their content so they align crisply with the pixel grid. Equivalent to _Object > Align to
 Pixel Grid_.
 
-**Kind**: static method of [`commands`](#module_commands)
+**Kind**: static method of [commands](#module_commands)
 
 ## makeBackground()
 
@@ -267,7 +267,7 @@ if (stack.layout.type === scenegraph.SceneNode.LAYOUT_STACK && stack.contentChil
 }
 ```
 
-**Kind**: static method of [`commands`](#module_commands)
+**Kind**: static method of [commands](#module_commands)
 
 ## replaceBackground()
 
@@ -300,4 +300,4 @@ if (stack.layout.type === scenegraph.SceneNode.LAYOUT_STACK && stack.contentChil
 }
 ```
 
-**Kind**: static method of [`commands`](#module_commands)
+**Kind**: static method of [commands](#module_commands)

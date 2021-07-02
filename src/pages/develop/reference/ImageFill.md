@@ -35,7 +35,7 @@ selection.items[0].fill = fill;
 
 Returns a new copy of this ImageFill.
 
-**Kind**: instance method of [`ImageFill`](#ImageFill)
+**Kind**: instance method of [ImageFill](#ImageFill)
 **Returns**: `ImageFill`
 
 ## assetId
@@ -47,7 +47,7 @@ Returns a new copy of this ImageFill.
 A unique identifier for the image asset used by this ImageFill. May be shared by other ImageFills, including those with different cropping, size,
 rotation, or mirroring. If identical images are imported into XD from separate sources, they may have different `assetId`s however.
 
-**Kind**: instance property of [`ImageFill`](#ImageFill)
+**Kind**: instance property of [ImageFill](#ImageFill)
 
 ## scaleBehavior
 
@@ -65,7 +65,7 @@ How the image is scaled when the aspect ratio of the shape does not match the as
 
 Image size and scaling are also affected by _cropping settings_, but these are not yet exposed to plugins.
 
-**Kind**: instance property of [`ImageFill`](#ImageFill)
+**Kind**: instance property of [ImageFill](#ImageFill)
 
 ## naturalWidth
 
@@ -73,7 +73,7 @@ Image size and scaling are also affected by _cropping settings_, but these are n
 
 Pixel dimensions of the underlying bitmap image data.
 
-**Kind**: instance property of [`ImageFill`](#ImageFill)
+**Kind**: instance property of [ImageFill](#ImageFill)
 **Read only**: true
 
 ## naturalHeight
@@ -82,7 +82,7 @@ Pixel dimensions of the underlying bitmap image data.
 
 Pixel dimensions of the underlying bitmap image data.
 
-**Kind**: instance property of [`ImageFill`](#ImageFill)
+**Kind**: instance property of [ImageFill](#ImageFill)
 **Read only**: true
 
 ## mimeType
@@ -91,7 +91,7 @@ Pixel dimensions of the underlying bitmap image data.
 
 Format the image data was originally encoded in, such as `image/gif` or `image/jpeg`.
 
-**Kind**: instance property of [`ImageFill`](#ImageFill)
+**Kind**: instance property of [ImageFill](#ImageFill)
 **Read only**: true
 
 ## isLinkedContent
@@ -100,5 +100,5 @@ Format the image data was originally encoded in, such as `image/gif` or `image/j
 
 True if the image comes from a link to an external resource, such as Creative Cloud Libraries.
 
-**Kind**: instance property of [`ImageFill`](#ImageFill)
+**Kind**: instance property of [ImageFill](#ImageFill)
 **Read only**: true
