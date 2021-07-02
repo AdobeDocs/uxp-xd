@@ -10,7 +10,9 @@ let clipboard = require("clipboard");
 clipboard.copyText(selection.items[0].name);
 ```
 
-### clipboard.copyText()
+## copyText()
+
+▸ **copyText**()
 
 Write plain text to the clipboard.
 

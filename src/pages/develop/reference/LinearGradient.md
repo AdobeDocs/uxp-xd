@@ -7,15 +7,21 @@ applied to.
 
 ## new LinearGradient()
 
+▸ **new LinearGradient**(): `LinearGradient`
+
 Create a new LinearGradient instance.
 
-### linearGradient.clone() ⇒ `LinearGradient`
+## clone()
+
+▸ **clone()**: `LinearGradient`
 
 Returns a copy of this instance.
 
 **Kind**: instance method of [`LinearGradient`](#LinearGradient)
 
-### linearGradient.colorStops : `Array<{stop:number, color:`[Color](/develop/reference/Color)`}>`
+## colorStops
+
+▸ **colorStops**: `Array<{stop:number, color:`[Color](/develop/reference/Color)`}>`
 
 Array of objects representing each color and its position along the gradient line. The position (`stop` value) is a number 0.0 - 1.0.
 
@@ -29,47 +35,61 @@ selection.items[0].fill = gradient;
 
 **Kind**: instance property of [`LinearGradient`](#LinearGradient)
 
-### linearGradient.startX : `number`
+## startX
+
+▸ **startX**: `number`
 
 X position of the start of the gradient line, as a multiple of the object's bounding box: X=0 indicates the left edge of the bounding box and X=1 indicates the right edge.
 The gradient line _may_ start or end outside the object's bounding box, so values may be < 0 or > 1.
 
 **Kind**: instance property of [`LinearGradient`](#LinearGradient)
 
-### linearGradient.startY : `number`
+## startY
+
+▸ **startY**: `number`
 
 Y position of the start of the gradient line, as a multiple of the object's bounding box: Y=0 indicates the top edge of the bounding box and Y=1 indicates the bottom edge.
 The gradient line _may_ start or end outside the object's bounding box, so values may be < 0 or > 1.
 
 **Kind**: instance property of [`LinearGradient`](#LinearGradient)
 
-### linearGradient.endX : `number`
+## endX
+
+▸ **endX**: `number`
 
 X position of the end of the gradient line, as a multiple of the object's bounding box: X=0 indicates the left edge of the bounding box and X=1 indicates the right edge.
 The gradient line _may_ start or end outside the object's bounding box, so values may be < 0 or > 1.
 
 **Kind**: instance property of [`LinearGradient`](#LinearGradient)
 
-### linearGradient.endY : `number`
+## endY
+
+▸ **endY**: `number`
 
 Y position of the end of the gradient line, as a multiple of the object's bounding box: Y=0 indicates the top edge of the bounding box and Y=1 indicates the bottom edge.
 The gradient line _may_ start or end outside the object's bounding box, so values may be < 0 or > 1.
 
 **Kind**: instance property of [`LinearGradient`](#LinearGradient)
 
-### linearGradient.getEndPoints() ⇒ `Array<number>`
+## getEndPoints()
+
+▸ **getEndPoints()**: `Array<number>`
 
 Returns an array of \[startX, startY, endX, endY\].
 
 **Kind**: instance method of [`LinearGradient`](#LinearGradient)
 
-### linearGradient.setEndPoints(startX, startY, endX, endY)
+## setEndPoints()
+
+▸ **setEndPoints**(startX, startY, endX, endY)
 
 Shorthand for setting all four start/endpoint properties.
 
 **Kind**: instance method of [`LinearGradient`](#LinearGradient)
 
-### linearGradient.type : `string`
+## type
+
+▸ **type**: `string`
 
 **Since**: XD 42
 

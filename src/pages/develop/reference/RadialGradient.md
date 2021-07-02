@@ -16,7 +16,7 @@ Returns a copy of this instance.
 
 **Kind**: instance method of [`RadialGradient`](#RadialGradient)
 
-### radialGradient.colorStops : `Array<{stop:number, color:`[Color](/develop/reference/Color)`}>`
+### radialGradient.colorStops : `Array<{stop:number, color:`[`Color`](/develop/reference/Color)`}>`
 
 Array of objects representing each color and its position along the gradient line. The position (`stop` value) is a number 0.0 - 1.0.
 

@@ -54,7 +54,7 @@ function myCommand(selection) {
   - [GraphicNode](#graphicnode)
     - [Artboard](#artboard)
     - [Rectangle](#rectangle)
-    - [Ellipse](#ellipse)
+    - [Ellipse](#ellipse)♦
     - [Polygon](#polygon)
     - [Line](#line)
     - [Path](#path)
@@ -80,19 +80,21 @@ function myCommand(selection) {
 
 These classes are not scenenode types, but are used extensively in the scenegraph API:
 
+- [AngularGradient](/develop/reference/AngularGradient/) - Value object for `fill` property
+- [Blur](/develop/reference/Blur/) - Value object for `blur` property
 - [Color](/develop/reference/Color/) - Value object for `fill`, `stroke`, and other properties
 - [ImageFill](/develop/reference/ImageFill/) - Value object for `fill` property
+- [InnerShadow](/develop/reference/InnerShadow/) - Value object for `innerShadow` property
 - [LinearGradient](/develop/reference/LinearGradient/) - Value object for `fill` property
 - [Matrix](/develop/reference/Matrix/) - Value object for `transform` property
 - [Matrix3D](/develop/reference/Matrix3D/) - Value object for `3D transform` property
+- [RadialGradient](/develop/reference/RadialGradient/) - Value object for `fill` property
 - [Shadow](/develop/reference/Shadow/) - Value object for `shadow` property
-- [Blur](/develop/reference/Blur/) - Value object for `blur` property
-- [InnerShadow](/develop/reference/InnerShadow/) - Value object for `innerShadow` property
 
 ## Other module members
 
 - [selection](#module_scenegraph-selection) : \![`Selection`](/develop/reference//selection/)
-- [root](#module_scenegraph-root) : \![`RootNode`](#rootnode)
+- [root](#rootnode) : \![`RootNode`](#rootnode)
 - [getNodeByGUID(guid)](#module_scenegraph-getnodebyguid) ⇒ `?SceneNode`
 
 ### _scenegraph.selection : \![`Selection`](/develop/reference//selection/)_
@@ -115,7 +117,7 @@ Root node of the current document's scenegraph. Also available as the second arg
 
 **Since**: XD 28
 
-Returns the scenenode in this document that has the given [node GUID](#scenenode-guid). Returns undefined if no such node exists connected
+Returns the scenenode in this document that has the given [node GUID](#scenenodeguid--string). Returns undefined if no such node exists connected
 to the scenegraph tree (detached/orphan nodes will not be found). This provides a fast way of persistently remembering a node across plugin
 operations and even across document open/closes.
 
@@ -124,7 +126,7 @@ operations and even across document open/closes.
 
 | Param | Type   | Description                                                                                   |
 | ----- | ------ | --------------------------------------------------------------------------------------------- |
-| guid  | string | SceneNode GUID -- must be all lowercase, as returned by the [`guid` getter](#scenenode-guid). |
+| guid  | string | SceneNode GUID -- must be all lowercase, as returned by the [`guid` getter](#scenenodeguid--string). |
 
 **Example**
 
@@ -152,7 +154,7 @@ Returns a unique identifier for this node that stays the same when the file is c
 
 The GUID is guaranteed unique _within_ the current document, but _other_ documents may contain the same GUID value. For example, if the user makes a copy of an XD file, both files will use the same GUIDs.
 
-The GUID of the [root node](#module_scenegraph-root) changes if the document is duplicated via Save As. See [`application.activeDocument.guid`](/develop/reference/application/#module_application-activeDocument) for details.
+The GUID of the [root node](#rootnode) changes if the document is duplicated via Save As. See [`application.activeDocument.guid`](/develop/reference/application/#module_application-activeDocument) for details.
 
 Node objects can be destroyed and recreated during operations such as Undo/Redo, so if you need to store a reference to a node even between operations in the _same_ session, it's best to store the GUID and then retrieve the node later via [`getNodeByGuid()`](#module_scenegraph-getnodebyguid).
 
@@ -173,7 +175,7 @@ Returns a list of this node's children. List is length 0 if the node has no chil
 This list is _**not an Array**_, so you must use `at(i)` instead of `[i]` to access children by index. It has a number of Array-like
 methods such as `forEach()` for convenience and improved performance, however.
 
-The list is immutable. Use [removeFromParent](#scenenode-removefromparent) and [addChild](#group-addchild) to add/remove child nodes.
+The list is immutable. Use [removeFromParent](#scenenoderemovefromparent) and [addChild](#groupaddchildnode-index) to add/remove child nodes.
 
 **Kind**: instance property of [`SceneNode`](#scenenode)
 **Read only**: true
@@ -425,14 +427,14 @@ For other nodes, this property returns undefined and cannot be set. To determine
 fixed, walk up the parent chain and check this property on the topmost ancestor in the Artboard.
 
 **Kind**: instance property of [`SceneNode`](#scenenode)
-**See**: [Artboard.viewportHeight](#artboard-viewportheight)
+**See**: [Artboard.viewportHeight](#artboardviewportheight--number)
 
-### _sceneNode.triggeredInteractions : `!Arrray<\![Interaction](/develop/reference/interactions/#Interaction)&gt;`_
+### sceneNode.triggeredInteractions : `Array<`[Interaction](/develop/reference/interactions/#typedef-interaction)`>`
 
 **Since**: XD 19
 
 Get all interactions that are triggered by this node in the document's interactive prototype. Each element in the array
-is an [Interaction object](/develop/reference/interactions/#Interaction) which describes a gesture/event plus the action it produces.
+is an [Interaction object](/develop/reference/interactions/#typedef-interaction) which describes a gesture/event plus the action it produces.
 
 Note: If this node (or one of its ancestors) has `visible` = false, tap and drag interactions on it will not be triggered.
 
@@ -454,7 +456,7 @@ node.triggeredInteractions.forEach((interaction) => {
 
 **Kind**: instance property of [`SceneNode`](#scenenode)
 **Read only**: true
-**See**: [interactions.allInteractions](/develop/reference/interactions/#module_interactions-allInteractions)
+**See**: [interactions.allInteractions](/develop/reference/interactions#interactionsallinteractions--arraytriggernode-scenenode-interactions-arrayinteraction)
 
 
 ### _sceneNode.contentChildren : \![`SceneNodeList`](#SceneNodeList)_
@@ -590,7 +592,7 @@ Both fields _must_ be provided together when setting this property.
 Returns undefined if node's parent is a container where Responsive Resize is unavailable:
 
 - Certain containers such as RepeatGrid and the pasteboard (scenegraph root) do not support Responsive Resize.
-- Container may have Responsive Resize layout explicitly turned off (see [`dynamicLayout` flag](#group-dynamiclayout)).
+- Container may have Responsive Resize layout explicitly turned off (see [`dynamicLayout` flag](#groupdynamiclayout--boolean)).
 
 Attempting to set this property when Responsive Resize is unavailable results in an error.
 
@@ -616,12 +618,12 @@ Vertical dynamic-layout settings used with the Responsive Resize feature. Settin
 
 | Property                     | Type   | Description                                                                                                                                                                                                      |
 | ---------------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| verticalConstraints.position | string | Vertical position anchoring, one of `SceneNode.FIXED_TOP`, `FIXED_BOTTOM`, `FIXED_BOTH` or `POSITION_PROPORTIONAL`.<br/><br/>For details, see [`horizontalConstraints`](#scenenode-horizontalconstraints) above. |
-| verticalConstraints.size     | string | Vertical sizing behavior, either `SceneNode.SIZE_FIXED` or `SceneNode.SIZE_RESIZES`.<br/><br/>For details, see [`horizontalConstraints`](#scenenode-horizontalconstraints) above.                                |
+| verticalConstraints.position | string | Vertical position anchoring, one of `SceneNode.FIXED_TOP`, `FIXED_BOTTOM`, `FIXED_BOTH` or `POSITION_PROPORTIONAL`.<br/><br/>For details, see [`horizontalConstraints`](#scenenodehorizontalconstraints--positionstring-sizestring) above. |
+| verticalConstraints.size     | string | Vertical sizing behavior, either `SceneNode.SIZE_FIXED` or `SceneNode.SIZE_RESIZES`.<br/><br/>For details, see [`horizontalConstraints`](#scenenodehorizontalconstraints--positionstring-sizestring) above.                                |
 
 Both fields _must_ be provided together when setting this property.
 
-See [`horizontalConstraints`](#scenenode-horizontalconstraints) above for other important notes.
+See [`horizontalConstraints`](#scenenodehorizontalconstraints--positionstring-sizestring) above for other important notes.
 
 **Example**
 
@@ -641,7 +643,7 @@ node.verticalConstraints = {
 
 True if this node's Responsive Resize layout settings, which are normally automatically inferred by XD, have been overridden with specific desired values. Constraints on a node are either all overridden, or all automatic -- never mixed.
 
-If false, each time the parent resizes XD will automatically guess the best layout settings to used based on the current size & position of this node within its parent. You can use the [`horizontalConstraints`](#scenenode-horizontalconstraints) and [`verticalConstraints`](#scenenode-verticalconstraints) getters to check what computed settings XD would use based on the node's current size & position.
+If false, each time the parent resizes XD will automatically guess the best layout settings to used based on the current size & position of this node within its parent. You can use the [`horizontalConstraints`](#scenenodehorizontalconstraints--positionstring-sizestring) and [`verticalConstraints`](#scenenodeverticalconstraints--positionstring-sizestring) getters to check what computed settings XD would use based on the node's current size & position.
 
 Automatically becomes true any time you set `horizontalConstraints` or `verticalConstraints`. To reset to false, call [`resetToAutoConstraints()`](#scenenode-resettoautoconstraints).
 
@@ -677,7 +679,7 @@ Metadata is persisted with the document when it is saved. Duplicating a node (in
 will duplicate the metadata with it. If the node lies within a Component or Repeat Grid, all instances of the node will have
 identical metadata (changes in one copy will automatically be synced to the other copy).
 
-To store general metadata for the document overall, set pluginData on the [root](#module_scenegraph-root) node of the scenegraph. Metadata on
+To store general metadata for the document overall, set pluginData on the [root](#rootnode) node of the scenegraph. Metadata on
 the root node can be changed from _any_ edit context.
 
 Metadata stored in pluginData cannot be accessed by other plugins -- each plugin has its own isolated storage. To share metadata
@@ -693,7 +695,7 @@ Metadata storage accessible by other plugins, separated into silos by plugin ID.
 but storage for other plugin IDs is _read-only_. This property returns a [PerPluginStorage API object](/develop/reference/PerPluginStorage/).
 
 _Each_ scenenode has its own metadata storage. To store general metadata that is not specific to one scenenode, use `sharedPluginData` on the
-[document's scenegraph root](/develop/reference/scenegraph/#module_scenegraph-root).
+[document's scenegraph root](/develop/reference/scenegraph/#rootnode).
 
 Metadata is persisted with the document when it is saved. See [`pluginMetadata`](#scenenode-plugindata) for info on how metadata is duplicated when nodes are
 copied or synced.
@@ -983,10 +985,10 @@ does not lie within an Artboard. Artboards must be grouped contiguously at the b
 visual appearance of its own.
 
 - [RootNode](#rootnode)
-  - [.addChild(node, index)](#group-addchild)
-  - [.addChildAfter(node, relativeTo)](#group-addchildafter)
-  - [.addChildBefore(node, relativeTo)](#group-addchildbefore)
-  - [.removeAllChildren()](#group-removeallchildren)
+  - [.addChild(node, index)](#groupaddchildnode-index)
+  - [.addChildAfter(node, relativeTo)](#groupaddchildafternode-relativeto)
+  - [.addChildBefore(node, relativeTo)](#groupaddchildbeforenode-relativeto)
+  - [.removeAllChildren()](#groupremoveallchildren)
 
 ## Group
 
@@ -1075,15 +1077,15 @@ Removes all children from this node. Equivalent to calling removeFromParent() on
 
 If true, Responsive Resize is enabled, and this node's children will use an intelligent layout algorithm whenever this node is resized.
 
-Returns undefined on node types that do not support Responsive Resize (such as RepeatGrid; see [`horizontalConstraints`](#scenenode-horizontalconstraints) docs for a
+Returns undefined on node types that do not support Responsive Resize (such as RepeatGrid; see [`horizontalConstraints`](#scenenodehorizontalconstraints--positionstring-sizestring) docs for a
 complete list). Attempting to set this property on such node types results in an error.
 
 **Kind**: instance property of [`Group`](#group)
 
 **See**:
 
-- [horizontalConstraints](#scenenode-horizontalconstraints)
-- [verticalConstraints](#scenenode-verticalconstraints)
+- [horizontalConstraints](#scenenodehorizontalconstraints--positionstring-sizestring)
+- [verticalConstraints](#scenenodeverticalconstraints--positionstring-sizestring)
 
 ### group.mask : ?[`SceneNode`](#scenenode)
 
@@ -1101,7 +1103,7 @@ let group = ...;
 console.log("Type of group is: " + (group.mask ? "Masked Group" : "Plain Group"));
 ```
 
-To create a Masked Group, use [commands.createMaskGroup](/develop/reference/commands/#module_commands-createMaskGroup) instead of [commands.group](/develop/reference/commands/#module_commands-group).
+To create a Masked Group, use [commands.createMaskGroup](/develop/reference/commands/#commandscreatemaskgroup) instead of [commands.group](/develop/reference/commands/#commandsgroup).
 
 ## _GraphicNode_
 
@@ -1112,7 +1114,7 @@ Base class for nodes that have a stroke and/or fill. This includes leaf nodes su
 which is a container node. If you create a shape node, it will not be visible unless you explicitly give it either a stroke
 or a fill.
 
-### _graphicNode.fill_ : [Color](/develop/reference/Color) | [LinearGradient](/develop/reference/LinearGradient) | [RadialGradient](/develop/reference/RadialGradient) | [AngularGradient](/develop/reference/AngularGradient) | [ImageFill](/develop/reference/ImageFill)
+### _graphicNode.fill_ : [`Color`](/develop/reference/Color) | [`LinearGradient`](/develop/reference/LinearGradient) | [`RadialGradient`](/develop/reference/RadialGradient) | [`AngularGradient`](/develop/reference/AngularGradient) | [`ImageFill`](/develop/reference/ImageFill)
 
 **Updated** XD 42
 
@@ -1220,7 +1222,7 @@ stroke's dash pattern, repeated along the length of the stroke. The first value 
 If the array is odd length, the items are copied to double the array length. For example, `[3]` produces the same effect
 as `[3, 3]`.
 
-The appearance of each segment's start/end follows the [strokeEndCaps](#graphicnode#strokeEndCaps) setting.
+The appearance of each segment's start/end follows the [strokeEndCaps](#graphicnodestrokeendcaps--string) setting.
 
 **Kind**: instance property of [`GraphicNode`](#graphicnode)
 
@@ -1257,7 +1259,7 @@ See ["Properties with object values"](/develop/plugin-development/xd-concepts/pr
 
 ### _graphicNode.pathData : `string`_
 
-Returns a representation of the node's outline in SVG `<path>` syntax. Note that only nodes with [strokePosition](#graphicnode#strokePosition) ==
+Returns a representation of the node's outline in SVG `<path>` syntax. Note that only nodes with [strokePosition](#graphicnodestrokeposition--string) ==
 `GraphicNode.CENTER_STROKE` can be faithfully rendered in actual SVG using the exact pathData shown here.
 
 **Kind**: instance property of [`GraphicNode`](#graphicnode)
@@ -1359,21 +1361,21 @@ Artboard, its parent will automatically be changed accordingly after the edit op
 For scrollable Artboards, this is the total height encompassing all content - not just the viewport size (i.e. screen height).
 
 **Kind**: instance property of [`Artboard`](#artboard)
-**See**: [viewportHeight](#artboard-viewportheight)
+**See**: [viewportHeight](#artboardviewportheight--number)
 
 ### artboard.viewportHeight : `?number`
 
 If Artboard is scrollable, this is the height of the viewport (e.g. mobile device screen size). Null if Artboard isn't scrollable.
 
 **Kind**: instance property of [`Artboard`](#artboard)
-**See**: [height](#artboard-height)
+**See**: [height](#artboardheight--number--0)
 
-### artboard.incomingInteractions : `!Array<!{ triggerNode: !SceneNode, interactions: !Array<!Interaction&gt; }&gt;`
+### artboard.incomingInteractions : `Array<{ triggerNode: `[`SceneNode`](#scenenode)`, interactions: Array<`[`Interaction`](/develop/reference/interactions#typedef-interaction)`> }>`
 
 **Since**: XD 19
 
 Get all interactions whose destination is this artboard (either navigating the entire view, i.e. a `"goToArtboard"` action, or
-showing this artboard as an overlay, i.e. an `"overlay"` action). Each element in the array is an [Interaction object](/develop/reference/interactions/#Interaction)
+showing this artboard as an overlay, i.e. an `"overlay"` action). Each element in the array is an [Interaction object](/develop/reference/interactions#typedef-interaction)
 which describes a gesture/event plus the action it produces.
 
 May include interactions that are impossible to trigger because the trigger node (or one of its ancestors) has `visible` = false.
@@ -1383,11 +1385,11 @@ Note: currently, this API excludes any applicable keyboard/gamepad interactions.
 **Kind**: instance property of [`Artboard`](#artboard)
 **Read only**: true
 **See**: [SceneNode.triggeredInteractions](#scenenode-triggeredinteractions)
-**See**: [interactions.allInteractions](/develop/reference/interactions/#module_interactions-allInteractions)
+**See**: [interactions.allInteractions](/develop/reference/interactions#interactionsallinteractions--arraytriggernode-scenenode-interactions-arrayinteraction)
 
 ### artboard.isHomeArtboard : `boolean`
 
-**Deprecated**: XD 33 - Please use [`flows`](/develop/reference/interactions/#module_interactions-flows) which supports multple flows.
+**Deprecated**: XD 33 - Please use [`flows`](/develop/reference/interactions/#interactionsflows--arrayflowinfo) which supports multple flows.
 
 **Since**: XD 19
 

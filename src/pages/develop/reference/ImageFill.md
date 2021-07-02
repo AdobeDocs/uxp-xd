@@ -21,20 +21,26 @@ let fill = new ImageFill(imageFile);
 selection.items[0].fill = fill;
 ```
 
-## ImageFill()
+## new ImageFill()
+
+▸ **new ImageFill**(`fileOrDataURI`): `ImageFill`
 
 | Param         | Type                            | Description                                                                                               |
 | ------------- | ------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| fileOrDataURI | `!uxp.storage.File` or `string` | File object pointing to an image file; or a string containing a `data:` URI with a base-64 encoded image. |
+| fileOrDataURI | `uxp.storage.File` or `string` | File object pointing to an image file; or a string containing a `data:` URI with a base-64 encoded image. |
 
-### imageFill.clone() ⇒ `!ImageFill`
+## clone()
+
+▸ **clone**(): `ImageFill`
 
 Returns a new copy of this ImageFill.
 
 **Kind**: instance method of [`ImageFill`](#ImageFill)
-**Returns**: `!ImageFill`
+**Returns**: `ImageFill`
 
-### _imageFill.assetId : `string`_
+## assetId
+
+▸ **assetId**: `string`
 
 **Since**: XD 29
 
@@ -43,7 +49,9 @@ rotation, or mirroring. If identical images are imported into XD from separate s
 
 **Kind**: instance property of [`ImageFill`](#ImageFill)
 
-### _imageFill.scaleBehavior : `string`_
+## scaleBehavior
+
+▸ **scaleBehavior**: `string`
 
 **Default**: `SCALE_COVER`
 
@@ -59,28 +67,36 @@ Image size and scaling are also affected by _cropping settings_, but these are n
 
 **Kind**: instance property of [`ImageFill`](#ImageFill)
 
-### _imageFill.naturalWidth : `number`_
+## naturalWidth
+
+▸ **naturalWidth**: `number`
 
 Pixel dimensions of the underlying bitmap image data.
 
 **Kind**: instance property of [`ImageFill`](#ImageFill)
 **Read only**: true
 
-### _imageFill.naturalHeight : `number`_
+## naturalHeight
+
+▸ **naturalHeight**: `number`
 
 Pixel dimensions of the underlying bitmap image data.
 
 **Kind**: instance property of [`ImageFill`](#ImageFill)
 **Read only**: true
 
-### _imageFill.mimeType : `string`_
+## mimeType
+
+▸ **mimeType**: `string`
 
 Format the image data was originally encoded in, such as `image/gif` or `image/jpeg`.
 
 **Kind**: instance property of [`ImageFill`](#ImageFill)
 **Read only**: true
 
-### _imageFill.isLinkedContent : `boolean`_
+## isLinkedContent
+
+▸ **isLinkedContent**: `boolean`
 
 True if the image comes from a link to an external resource, such as Creative Cloud Libraries.
 

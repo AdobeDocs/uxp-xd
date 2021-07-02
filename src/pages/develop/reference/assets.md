@@ -5,7 +5,7 @@ there's no guarantee that these styles are currently used anywhere in the docume
 
 **Since**: XD 15
 
-### Enums
+## Enums
 
 <dl>
 <dt><a name="GradientType"></a> GradientType : </dt><dd>LINEAR, RADIAL - Type of gradient color element: linear gradient or radial gradient</dd>
@@ -20,17 +20,17 @@ Assets library entry representing a solid color.
 | Property | Type    | Description                                                                                                         |
 | -------- | ------- | ------------------------------------------------------------------------------------------------------------------- |
 | name     | ?string | Name of the Assets entry, if it is explicitly named. (The UI shows an auto-generated label for any unnamed assets). |
-| color    | !Color  | Color of the asset                                                                                                  |
+| color    | Color  | Color of the asset                                                                                                  |
 
 ### Typedef GradientAsset
 
 Assets library entry representing a linear or radial gradient.
 
-| Property     | Type                                     | Description                                                                                                                                                                                                                       |
-| ------------ | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| name         | ?string                                  | Name of the Assets entry, if it is explicitly named. (The UI shows an auto-generated label for any unnamed assets).                                                                                                               |
-| gradientType | !GradientType                            | Either `GradientType.LINEAR` or `GradientType.RADIAL`                                                                                                                                                                             |
-| colorStops   | !Array.< {stop: number, color: !Color} > | Array of color stops used in the gradient, where `stop` >= 0 and <= 1, and the values are strictly increasing. Same format as the `colorStops` property of a [LinearGradient](/develop/reference/LinearGradient/) object. |
+| Property     | Type                                   | Description                                                                                                                                                                                                                       |
+| ------------ | -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name         | ?string                                | Name of the Assets entry, if it is explicitly named. (The UI shows an auto-generated label for any unnamed assets).                                                                                                               |
+| gradientType | GradientType                           | Either `GradientType.LINEAR` or `GradientType.RADIAL`                                                                                                                                                                             |
+| colorStops   | Array.< {stop: number, color: Color} > | Array of color stops used in the gradient, where `stop` >= 0 and <= 1, and the values are strictly increasing. Same format as the `colorStops` property of a [LinearGradient](/develop/reference/LinearGradient/) object. |
 
 ### Typedef CharacterStyleAsset
 
@@ -39,7 +39,7 @@ Assets library entry representing a set of text character styles.
 | Property | Type            | Description                                                                                                         |
 | -------- | --------------- | ------------------------------------------------------------------------------------------------------------------- |
 | name     | ?string         | Name of the Assets entry, if it is explicitly named. (The UI shows an auto-generated label for any unnamed assets). |
-| style    | !CharacterStyle | Object containing the style properties                                                                              |
+| style    | CharacterStyle | Object containing the style properties                                                                              |
 
 ### Typedef CharacterStyle
 
@@ -51,27 +51,32 @@ specified) to avoid any ambiguity.
 
 | Property      | Type     | Description                                                                                |
 | ------------- | -------- | ------------------------------------------------------------------------------------------ |
-| fontFamily    | !string  | the font family                                                                            |
-| fontStyle     | !string  | the style of the font                                                                      |
-| fontSize      | !number  | the size of the font                                                                       |
-| fill          | !Color   | the Color of the font fill                                                                 |
-| charSpacing   | !number  | the character spacing                                                                      |
-| lineSpacing   | !number  | the line spacing                                                                           |
-| underline     | !boolean | whether underline is turned on                                                             |
+| fontFamily    | string   | the font family                                                                            |
+| fontStyle     | string   | the style of the font                                                                      |
+| fontSize      | number   | the size of the font                                                                       |
+| fill          | Color    | the Color of the font fill                                                                 |
+| charSpacing   | number   | the character spacing                                                                      |
+| lineSpacing   | number   | the line spacing                                                                           |
+| underline     | boolean  | whether underline is turned on                                                             |
 | strikethrough | ?boolean | (**Since**: XD 19) Default false; whether strikethrough is turned on                       |
 | textTransform | ?string  | (**Since**: XD 19) Default "none"; one of "none", "uppercase", "lowercase", or "titlecase" |
 | textScript    | ?string  | (**Since**: XD 20) Default "none"; one of "none", "superscript", or "subscript"            |
 
-### assets.colors
+## colors
+
+▸ **colors**
 
 The collection of colors and gradients saved in this document's Assets library.
 
 - [.colors](#module_assets-colors)
-  - [.get()](#module_assets-colors-get) ⇒ `!Array.<ColorAsset|GradientAsset>`
+  - [.get()](#module_assets-colors-get) ⇒ `Array.<ColorAsset|GradientAsset>`
   - [.add(colorAssets)](#module_assets-colors-add) ⇒ `number`
   - [.delete(colorAssets)](#module_assets-colors-delete) ⇒ `number`
 
-### assets.colors.get() ⇒ `!Array.<ColorAsset|GradientAsset>`
+---
+### colors.get()
+
+▸ **colors.get**(): `Array.<ColorAsset|GradientAsset>`
 
 Get a list of all color/gradient assets, in the order they appear in the Assets panel.
 
@@ -80,7 +85,7 @@ If there are no color/gradient assets, an empty array is returned.
 
 **Kind**: static method of [`colors`](#module_assets-colors)
 
-**Returns**: `!Array.<ColorAsset|GradientAsset>`
+**Returns**: `Array.<ColorAsset|GradientAsset>`
 
 **Example**
 
@@ -89,7 +94,10 @@ var assets = require("assets"),
   allColors = assets.colors.get();
 ```
 
-### assets.colors.add(colorAssets) ⇒ `number`
+---
+### colors.add()
+
+▸ **colors.add**(colorAssets): `number`
 
 Add color/gradient assets to the collection.
 
@@ -102,7 +110,7 @@ color/gradient already exists in the collection, _regardless of its name_.
 
 | Param       | Type                                                                                                                                                                                                         |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| colorAssets | `! Color &#124; ColorAsset &#124; LinearGradient &#124; RadialGradient &#124; GradientAsset &#124; Array.<Color&#124;ColorAsset&#124;LinearGradient&#124;RadialGradient&#124;GradientAsset>` |
+| colorAssets | `Color` &#124; `ColorAsset` &#124; `LinearGradient` &#124; `RadialGradient` &#124; `GradientAsset` &#124; `Array.<Color` &#124; `ColorAsset` &#124; `LinearGradient` &#124; `RadialGradient` &#124; `GradientAsset`> |
 
 **Example**
 
@@ -125,7 +133,10 @@ var assets = require("assets"),
   ]);
 ```
 
-### assets.colors.delete(colorAssets) ⇒ `number`
+---
+### colors.delete()
+
+▸ **colors.delete**(colorAssets): `number`
 
 Delete color/gradient assets from the collection.
 
@@ -139,7 +150,7 @@ Typically you will pass asset objects returned from [`get()`](#module_assets-col
 
 | Param       | Type                                                                                                                                                                                                         |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| colorAssets | `! Color &#124; ColorAsset &#124; LinearGradient &#124; RadialGradient &#124; GradientAsset &#124; Array.<Color&#124;ColorAsset&#124;LinearGradient&#124;RadialGradient&#124;GradientAsset>` |
+| colorAssets | `Color` &#124; `ColorAsset` &#124; `LinearGradient` &#124; `RadialGradient` &#124; `GradientAsset` &#124; `Array.<Color` &#124; `ColorAsset` &#124; `LinearGradient` &#124; `RadialGradient` &#124; `GradientAsset`> |
 
 **Example**
 
@@ -148,16 +159,21 @@ var assets = require("assets"),
   numDeleted = assets.colors.delete(new Color("red"));
 ```
 
-### assets.characterStyles
+## characterStyles
+
+▸ **characterStyles**
 
 The collection of character styles saved in this document's Assets library.
 
 - [.characterStyles](#module_assets-characterStyles)
-  - [.get()](#module_assets-characterStyles-get) ⇒ `!Array.<CharacterStyleAsset>`
+  - [.get()](#module_assets-characterStyles-get) ⇒ `Array.<CharacterStyleAsset>`
   - [.add(charStyleAssets)](#module_assets-characterStyles-add) ⇒ `number`
   - [.delete(charStyleAssets)](#module_assets-characterStyles-delete) ⇒ `number`
 
-### assets.characterStyles.get() ⇒ `!Array.<CharacterStyleAsset>`
+---
+### characterStyles.get()
+
+▸ **characterStyles.get**(): `Array.<CharacterStyleAsset>`
 
 Get a list of all character style assets, in the order they appear in the Assets panel.
 
@@ -165,7 +181,7 @@ If there are no character style assets, an empty array is returned.
 
 **Kind**: static method of [`characterStyles`](#module_assets-characterStyles)
 
-**Returns**: `!Array.<CharacterStyleAsset>`
+**Returns**: `Array.<CharacterStyleAsset>`
 
 **Example**
 
@@ -174,7 +190,10 @@ var assets = require("assets"),
   allCharacterStyles = assets.characterStyles.get();
 ```
 
-### assets.characterStyles.add(charStyleAssets) ⇒ `number`
+---
+### characterStyles.add()
+
+▸ **characterStyles.add**(charStyleAssets): `number`
 
 Add one or more character style assets to the collection.
 
@@ -187,7 +206,7 @@ All character style properties must be fully specified (no properties are option
 
 | Param           | Type                                                       |
 | --------------- | ---------------------------------------------------------- |
-| charStyleAssets | `! CharacterStyleAsset &#124; Array.<CharacterStyleAsset>` |
+| charStyleAssets | `CharacterStyleAsset` &#124; `Array.<CharacterStyleAsset>` |
 
 **Example**
 
@@ -220,7 +239,10 @@ var assets = require("assets"),
   ]);
 ```
 
-### assets.characterStyles.delete(charStyleAssets) ⇒ `number`
+---
+### characterStyles.delete()
+
+▸ **characterStyles.delete**(charStyleAssets): `number`
 
 Delete one or more character style assets from the collection.
 
@@ -236,7 +258,7 @@ to this function.
 
 | Param           | Type                                                       |
 | --------------- | ---------------------------------------------------------- |
-| charStyleAssets | `! CharacterStyleAsset &#124; Array.<CharacterStyleAsset>` |
+| charStyleAssets | `CharacterStyleAsset` &#124; `Array.<CharacterStyleAsset>` |
 
 **Example**
 

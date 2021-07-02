@@ -299,6 +299,10 @@ module.exports = [
             title: "ImageFill",
           },
           {
+            path: "/develop/reference/InnerShadow/",
+            title: "InnerShadow",
+          },
+          {
             path: "/develop/reference/interactions/",
             title: "Interactions",
           },
@@ -309,6 +313,10 @@ module.exports = [
           {
             path: "/develop/reference/Matrix/",
             title: "Matrix",
+          },
+          {
+            path: "/develop/reference/Matrix3D/",
+            title: "Matrix3D",
           },
           {
             path: "/develop/reference/PerPluginStorage/",
