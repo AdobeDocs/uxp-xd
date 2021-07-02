@@ -335,12 +335,12 @@ module.exports = [
             title: "SceneNodeList",
           },
           {
-            path: "/develop/reference/Shadow/",
-            title: "Shadow",
-          },
-          {
             path: "/develop/reference/selection/",
             title: "Selection",
+          },
+          {
+            path: "/develop/reference/Shadow/",
+            title: "Shadow",
           },
           {
             path: "/develop/reference/viewport/",

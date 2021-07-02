@@ -23,77 +23,90 @@ node.children.forEach(function (childNode, i) {
 
 **See**: [SceneNode.children](/develop/reference/scenegraph/#SceneNode-children)
 
-### sceneNodeList.length : `number`
+## length
+
+▸ **length**: `number`
 
 Number of children in the list.
 
-**Kind**: instance property of [`SceneNodeList`](#SceneNodeList)  
+**Kind**: instance property of [SceneNodeList](#SceneNodeList)
 **Read only**: true
 
-### sceneNodeList.forEach(callback, thisArg) ⇒ `void`
+## forEach()
+
+▸ **forEach**(callback, thisArg)
 
 Iterate all children in the list.
 
-**Kind**: instance method of [`SceneNodeList`](#SceneNodeList)
-
 | Param    | Type                            | Description                                            |
 | -------- | ------------------------------- | ------------------------------------------------------ |
-| callback | `!function(!SceneNode, number)` | Callback, passed each child node and its index.        |
+| callback | `function(SceneNode, number)` | Callback, passed each child node and its index.        |
 | thisArg  | `?Object`                       | Optional value for `this` when executing the callback. |
 
-### sceneNodeList.forEachRight(callback, thisArg) ⇒ `void`
+**Kind**: instance method of [SceneNodeList](#SceneNodeList)
+
+## forEachRight()
+
+▸ **forEachRight**(callback, thisArg)
 
 Iterate all children in the list, in reverse order (highest z order to lowest).
 
-**Kind**: instance method of [`SceneNodeList`](#SceneNodeList)
-
 | Param    | Type                            | Description                                            |
 | -------- | ------------------------------- | ------------------------------------------------------ |
-| callback | `!function(!SceneNode, number)` | Callback, passed each child node and its index.        |
+| callback | `function(SceneNode, number)` | Callback, passed each child node and its index.        |
 | thisArg  | `?Object`                       | Optional value for `this` when executing the callback. |
 
-### sceneNodeList.filter(callback, thisArg) ⇒ `Array.<!SceneNode&gt;`
+**Kind**: instance method of [SceneNodeList](#SceneNodeList)
+
+## filter()
+
+▸ **filter**(callback, thisArg): `Array.<SceneNode>`
 
 Iterates all children and returns an array of just the children that passed the filter function's test.
 
-**Kind**: instance method of [`SceneNodeList`](#SceneNodeList)
-
 | Param    | Type                                     | Description                                            |
 | -------- | ---------------------------------------- | ------------------------------------------------------ |
-| callback | `!function(!SceneNode, number): boolean` | Filter function, passed each child node and its index. |
+| callback | `function(SceneNode, number): boolean` | Filter function, passed each child node and its index. |
 | thisArg  | `?Object`                                | Optional value for `this` when executing the callback. |
 
-### sceneNodeList.map(callback, thisArg) ⇒ `Array.<\*&gt;`
+**Kind**: instance method of [SceneNodeList](#SceneNodeList)
+
+## map()
+
+▸ **map**(callback, thisArg): `Array.<*>`
 
 Iterates all children and returns an array of the map function's result value for each child node.
 
-**Kind**: instance method of [`SceneNodeList`](#SceneNodeList)
-
 | Param    | Type                               | Description                                            |
 | -------- | ---------------------------------- | ------------------------------------------------------ |
-| callback | `!function(!SceneNode, number): *` | Map function, passed each child node and its index.    |
+| callback | `function(SceneNode, number): *` | Map function, passed each child node and its index.    |
 | thisArg  | `?Object`                          | Optional value for `this` when executing the callback. |
 
-### sceneNodeList.some(callback, thisArg) ⇒ `boolean`
+**Kind**: instance method of [SceneNodeList](#SceneNodeList)
 
-Iterates children until the test returns true for at least one child.
+## some()
 
-**Kind**: instance method of [`SceneNodeList`](#SceneNodeList)  
-**Returns**: `boolean` - True if the test function returned true for at least one child.
+▸ **some**(callback, thisArg): `boolean`
+
+Iterates children until the test returns true for at least one child.  Returns true if the test function returned true for at least one child.
 
 | Param    | Type                                     | Description                                            |
 | -------- | ---------------------------------------- | ------------------------------------------------------ |
-| callback | `!function(!SceneNode, number): boolean` | Test function, passed each child node and its index.   |
+| callback | `function(SceneNode, number): boolean` | Test function, passed each child node and its index.   |
 | thisArg  | `?Object`                                | Optional value for `this` when executing the callback. |
 
-### sceneNodeList.at() ⇒ `SceneNode`
+**Kind**: instance method of [SceneNodeList](#SceneNodeList)
 
-Note: calling `at()` repeatedly (e.g. in a `for` loop) is not as fast as using SceneNodeList's iteration methods such as `forEach()`,
-`some()`, or `map()`.
+## at()
 
-**Kind**: instance method of [`SceneNodeList`](#SceneNodeList)  
-**Returns**: `?SceneNode` - Child node at the specified index in the list, or null if index is out of bounds.
+▸ **at**(index): `SceneNode`
+
+Returns the child node at the specified index in the list, or null if index is out of bounds.
+
+Note: calling `at()` repeatedly (e.g. in a `for` loop) is not as fast as using SceneNodeList's iteration methods such as `forEach()`, `some()`, or `map()`.
 
 | Param | Type     |
 | ----- | -------- |
 | index | `number` |
+
+**Kind**: instance method of [SceneNodeList](#SceneNodeList)

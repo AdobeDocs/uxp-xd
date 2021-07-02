@@ -40,7 +40,9 @@ You can also access this object from the [`scenegraph.selection`](/develop/refer
 
 **Kind**: object
 
-### selection.items : `!Array<\![SceneNode](scenegraph/#SceneNode)&gt;`
+## items
+
+▸ **items**: `Array<`[SceneNode](scenegraph/#SceneNode)`>`
 
 Array representing the current selection. Empty array if nothing is selected (never null). _Items might not all have the same
 parent node._ Never includes locked nodes. Never mixes artboards with other nodes: a selection is either all artboards or all
@@ -56,7 +58,6 @@ the 'items' setter changes selection.
 
 The selection can only contain items which are in the current _[edit context](/develop/plugin-development/xd-concepts/edit-context/)._
 
-**Kind**: instance property of [`selection`](#selection)  
 **Example**
 
 ```js
@@ -68,12 +69,14 @@ selection.items = rectangle; // select 1 node (convenience)
 selection.items = null; // deselect all (convenience)
 ```
 
-### selection.itemsIncludingLocked : `!Array<\![SceneNode](scenegraph/#SceneNode)&gt;`
+**Kind**: instance property of [selection](#selection)
+
+## itemsIncludingLocked
+
+▸ **itemsIncludingLocked**: `Array<`[SceneNode](scenegraph/#SceneNode)`>`
 
 Array representing the current selection _plus_ any locked items that the user has attempted to select.
 
-**Kind**: instance property of [`selection`](#selection)  
-**Read only**: true  
 **Example**
 
 ```js
@@ -87,38 +90,51 @@ console.log(
 );
 ```
 
-### selection.hasArtwork : `boolean`
+**Kind**: instance property of [selection](#selection)
+**Read only**: true
+
+## hasArtwork
+
+▸ **hasArtwork**: `boolean`
 
 True if the selection isn’t empty and consists of one or more non-Artboards. Never true at the same time as [hasArtboards](#selection-hasArtboards).
 
-**Kind**: instance property of [`selection`](#selection)  
+**Kind**: instance property of [selection](#selection)
 **Read only**: true
 
-### selection.hasArtboards : `boolean`
+## hasArtboards
+
+▸ **hasArtboards**: `boolean`
 
 True if the selection isn’t empty and consists of one or more Artboards. Never true at the same time as [hasArtwork](#selection-hasArtwork).
 
-**Kind**: instance property of [`selection`](#selection)  
+**Kind**: instance property of [selection](#selection)
 **Read only**: true
 
-### selection.insertionParent : `\![SceneNode](scenegraph/#SceneNode)`
+## insertionParent
+
+▸ **insertionParent**: [SceneNode](scenegraph/#SceneNode)
 
 The preferred parent to insert newly added content into. Takes into account the current edit context as well as the "focused artboard" if in the root context.
 Typically this is the same parent where, for example, XD's shape drawing tools would add items.
 
 _Selected items are not necessarily all immediate children of the `insertionParent`._ They can be anywhere within the [edit context's](/develop/plugin-development/xd-concepts/edit-context/) scope.
 
-**Kind**: instance property of [`selection`](#selection)  
+**Kind**: instance property of [selection](#selection)
 **Read only**: true
 
-### selection.focusedArtboard : `?[Artboard](scenegraph/#Artboard)`
+## focusedArtboard
+
+▸ **focusedArtboard**: ?[Artboard](scenegraph/#Artboard)
 
 The artboard the user is currently most focused on (via recent selection or edit operations). May be null, for example if no artboards exist or if the user just deleted an artboard.
 
-**Kind**: instance property of [`selection`](#selection)  
+**Kind**: instance property of [selection](#selection)
 **Read only**: true
 
-### selection.editContext : `\![SceneNode](scenegraph/#SceneNode)`
+## editContext
+
+▸ **editContext**: [SceneNode](scenegraph/#SceneNode)
 
 The common ancestor node of all selected items - also the root node of the subtree containing the "[edit context](/develop/plugin-development/xd-concepts/edit-context/),"
 which is the scope in which selection and edit operations must occur for the current plugin command. The scope does not
@@ -134,10 +150,12 @@ operation ends:
 - If your plugin has deleted nodes such that the current container is now empty, the edit context will pop up a level and the now-empty
   container is automatically cleaned up.
 
-**Kind**: instance property of [`selection`](#selection)  
+**Kind**: instance property of [selection](#selection)
 **Read only**: true
 
-### _selection.isInEditContext(node)_
+## isInEditContext()
+
+▸ **isInEditContext**(node): `boolean`
 
 **Since**: XD 28
 
@@ -145,9 +163,8 @@ Returns true if the node is accessible for editing in the scope of the current e
 If false, the node cannot be edited given the user's current selection.
 Nodes that are currently selected are always in the current edit context.
 
-**Kind**: instance method of [`selection`](#selection)  
-**Returns**: `boolean`
-
 | Param | Type       |
 | ----- | ---------- |
-| node  | !SceneNode |
+| node  | SceneNode |
+
+**Kind**: instance method of [selection](#selection)

@@ -37,7 +37,9 @@ if (jsonString) {
 }
 ```
 
-## perPluginStorage.getAll() ⇒ `!Object< string, !Object<string, string&gt; &gt;`
+## getAll()
+
+▸ **getAll**(): `Object< string, Object<string, string> >`
 
 Returns a map where key is plugin ID and value is a nested map containing all the shared metadata for that plugin ID (i.e. the result of calling `getForPluginId()` with that ID).
 
@@ -61,7 +63,9 @@ console.log(
 );
 ```
 
-## perPluginStorage.getForPluginId(pluginId) ⇒ `!Object<string, string&gt;`
+## getForPluginId()
+
+▸ **getForPluginId**(pluginId): `Object<string, string>`
 
 Returns a map of key-value string pairs containing all shared metadata stored on this node by the given plugin. May be an empty object (zero keys), but is never null.
 
@@ -88,7 +92,9 @@ console.log(
 );
 ```
 
-## perPluginStorage.keys(pluginId) ⇒ `!Array<string&gt;`
+## keys()
+
+▸ **keys**(pluginId): `Array<string>`
 
 Returns a list of all keys stored on this node by the given plugin. May be empty (length zero), but is never null.
 
@@ -105,7 +111,9 @@ console.log(
 );
 ```
 
-## perPluginStorage.getItem(pluginId, key) ⇒ `?string`
+## getItem()
+
+▸ **getItem**(pluginId, key): `?string`
 
 Returns the value stored under the given key on this node by the given plugin, or undefined if the plugin hasn't stored anything under the given key.
 
@@ -130,7 +138,9 @@ console.log(
 );
 ```
 
-## perPluginStorage.setItem(pluginId, key, value)
+## setItem()
+
+▸ **setItem**(pluginId, key, value)
 
 Set a metadata key which can be read by any other plugin.
 
@@ -152,7 +162,9 @@ node.sharedPluginData.setItem("other_plugin_id", "foo", "42");
 console.log(node.sharedPluginData.getItem(MY_PLUGIN_ID, "foo")); // "42"
 ```
 
-## perPluginStorage.removeItem(pluginId, key)
+## removeItem()
+
+▸ **removeItem**(pluginId, key)
 
 Clears a shared metadata key stored by your plugin.
 
@@ -172,11 +184,15 @@ node.sharedPluginData.removeItem(MY_PLUGIN_ID, "foo");
 console.log(node.sharedPluginData.getItem(MY_PLUGIN_ID, "foo")); // undefined
 ```
 
-## perPluginStorage.toString() ⇒ `string`
+## toString()
+
+▸ **toString**(): `string`
 
 Provided for convenience: you can `console.log(node.sharedPluginData)` to see the value of `getAll()`.
 
-## perPluginStorage.toJSON() ⇒ `!Object`
+## toJSON()
+
+▸ **toJSON**(): `Object`
 
 Provided for convenience: you can include a PerPluginStorage object inside data you are going to convert to JSON, even though it is not a plain JavaScript object. Returns the same value as `getAll()`.
 
