@@ -13,18 +13,13 @@ There are three types of Text nodes:
   breaks ("\n").
 - **Area Text** - Fixed width and height. Text is automatically wrapped (soft line wrapping) to fit the width. If it does not fit the
   height, any remaining text is clipped.
+- (**Since**: XD 34) **Auto-height Text** - Fixed width. Text is automatically wrapped (soft line wrapping) to fit the width. The height is expanded to match all the text lines.
 
-**Since**: XD 34
-
-- **Auto-height Text** - Fixed width. Text is automatically wrapped (soft line wrapping) to fit the width. The height is expanded to match all the text lines.
-
-**Since**: XD 34
-
-Use [layoutBox](#text-layoutbox) to determine the type of a text node.
+Use [layoutBox](#layoutbox) to determine the type of a text node.
 
 **Deprecated**: XD 34
 
-Check whether [areaBox](#text-areabox) is null to determine if the type of a Text node.
+- Check whether [areaBox](#areabox) is null to determine if the type of a Text node.
 
 Text bounds and layout work differently depending on the type of text:
 
@@ -51,7 +46,7 @@ the new string's indices unless you explicitly change styleRanges as well.
 
 ## styleRanges
 
-▸ **styleRanges**: `Array<{length:number, fontFamily:string, fontStyle:string, fontSize:number, fill:`[Color](#Color)`, charSpacing:number, underline:boolean, strikethrough:boolean, textTransform:string, textScript:string}>`
+▸ **styleRanges**: `Array<{length:number, fontFamily:string, fontStyle:string, fontSize:number, fill:`[Color](/develop/reference/Color)`, charSpacing:number, underline:boolean, strikethrough:boolean, textTransform:string, textScript:string}>`
 
 Array of text ranges and their character style settings. Each range covers a set number of characters in the text content. Ranges
 are contiguous, with each one starting immediately after the previous one. Any characters past the end of the last range use the
@@ -99,7 +94,7 @@ fontSize.
 
 ## fill
 
-▸ **fill**: ?[Color](#Color)
+▸ **fill**: ?[Color](/develop/reference/Color)
 
 **Default**: `null`
 
@@ -114,6 +109,7 @@ supported.
 ▸ **charSpacing**: `number`
 
 **Default**: `0`
+
 **Since**: XD 14
 
 Character spacing in increments of 1/1000th of the fontSize, in addition to the font's default character kerning. May be
@@ -129,6 +125,7 @@ spacing of all the text if one range covers all the text).
 ▸ **underline**: `boolean`
 
 **Default**: `false`
+
 **Since**: XD 14
 
 Set underline across all style ranges, or get the underline of the last style range (underline of all the text if one
@@ -141,6 +138,7 @@ range covers all the text).
 ▸ **strikethrough**: `boolean`
 
 **Default**: `false`
+
 **Since**: XD 19
 
 Set strikethrough across all style ranges, or get the strikethrough of the last style range (strikethrough of all the text if one
@@ -153,6 +151,7 @@ range covers all the text).
 ▸ **textTransform**: `string`
 
 **Default**: `"none"`
+
 **Since**: XD 19
 
 Set textTransform ("none", "uppercase", "lowercase", or "titlecase") across all style ranges, or get the textTransform of the last style range.
@@ -164,9 +163,10 @@ Set textTransform ("none", "uppercase", "lowercase", or "titlecase") across all 
 ▸ **textScript**: `string`
 
 **Default**: `"none"`
+
 **Since**: XD 20
 
-Set textScript ("none" or "superscript" or "subscript") across all style ranges, or get the textScript of the last style range.
+Set textScript ("_none_" or "_superscript_" or "_subscript_") across all style ranges, or get the textScript of the last style range.
 
 **Kind**: instance property of [Text](#text)
 
@@ -223,6 +223,7 @@ font settings.
 ▸ **paragraphSpacing**: `number` >= 0
 
 **Default**: `0`
+
 **Since**: XD 14
 
 Additional distance between paragraphs, in document pixels, added to the lineSpacing amount (soft line breaks in area text are
@@ -238,7 +239,7 @@ fixed while the font size changes, shifting the spacing's proportional relations
 
 ▸ **areaBox**: `?{width:number, height:number}`
 
-**Deprecated**: XD 34 - Please use [layoutBox](#text-layoutbox) which supports all text types.
+**Deprecated**: XD 34 - Please use [layoutBox](#layoutbox) which supports all text types.
 
 Null for point text and starting with XD 34 null for auto height text.
 For area text, specifies the size of the rectangle within which text is wrapped and clipped.
@@ -263,7 +264,7 @@ Width: number between 0-999999. This is ignored and can be omitted for Text.POIN
 
 Height: number between 0-999999. This is ignored and can be omitted for Text.POINT and Text.AUTO_HEIGHT
 
-Changing POINT text to FIXED_HEIGHT or AUTO_HEIGHT text or vice versa will change the origin / anchor point of the text, thus changing its localBounds, but it will also automatically change the node's transform so its `globalBounds` and `boundsInParent` origins remain unchanged.
+Changing POINT text to FIXED_HEIGHT or AUTO_HEIGHT text or vice versa will change the origin / anchor point of the text, thus changing its localBounds, but it will also automatically change the node's transform so its [globalBounds](/develop/reference/SceneNode/#globalbounds) and [boundsInParent](/develop/reference/SceneNode/#boundsinparent) origins remain unchanged.
 
 Changing FIXED_HEIGHT or AUTO_HEIGHT text to POINT text will automatically insert hard line break ("\n") into the text to match the previous line wrapping's appearance exactly.
 

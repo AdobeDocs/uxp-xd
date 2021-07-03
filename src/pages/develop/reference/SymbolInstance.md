@@ -7,9 +7,9 @@
 Container node representing one instance of a Component (previously known as "Symbols" in XD's UI). Changes made to the contents of a
 SymbolInstance are treated in one of two ways:
 
-- If [isMaster](#symbolinstance-ismaster) is **false**: The changes affect _only_ this one instance. This creates an "override":
+- If [isMaster](#ismaster) is **false**: The changes affect _only_ this one instance. This creates an "override":
   changes made to the corresponding part of the master later will no longer get synced to this particular instance.
-- If [isMaster](#symbolinstance-ismaster) is **true**: The changes are automatically synced to all other other instances of the
+- If [isMaster](#ismaster) is **true**: The changes are automatically synced to all other other instances of the
   component - _except_ for instances where the affected nodes have instance-specific overrides. As a result, your plugin's batch
   of edits **may not be applied atomically** in some instances.
 
@@ -23,7 +23,7 @@ Note that overrides vary somewhat in granularity. In some but not all cases, ove
 on the same node from receiving future updates from the master instance.
 
 It is not currently possible for plugins to _create_ a new component definition or a new SymbolInstance node, aside from using
-[commands.duplicate](/develop/reference/commands/#module_commands-duplicate) to clone existing SymbolInstances.
+[commands.duplicate](/develop/reference/commands/#duplicate) to clone existing SymbolInstances.
 
 ## symbolId
 

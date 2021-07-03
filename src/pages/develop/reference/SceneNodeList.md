@@ -1,14 +1,14 @@
 # SceneNodeList
 
-Represents the children of a scenenode. Typically accessed via the [SceneNode.children](/develop/reference/scenegraph/#SceneNode-children) property.
+**Kind**: class
 
-This is _not an Array_, so you must use [.at(i)](#SceneNodeList-at) instead of `[i]` to access children by index. It has a
-number of Array-like methods such as [forEach](#SceneNodeList-forEach) for convenience, however. For best performance, iterate
+Represents the children of a scenenode. Typically accessed via the [SceneNode.children](/develop/reference/SceneNode/#children) property.
+
+This is _not an Array_, so you must use [.at(i)](#at) instead of `[i]` to access children by index. It has a
+number of Array-like methods such as [forEach](#foreach) for convenience, however. For best performance, iterate
 the list using these methods rather than repeatedly calling `at()`.
 
 Items in this list are ordered from lowest z order to highest.
-
-**Kind**: class
 
 **Example**
 
@@ -21,7 +21,7 @@ node.children.forEach(function (childNode, i) {
 });
 ```
 
-**See**: [SceneNode.children](/develop/reference/scenegraph/#SceneNode-children)
+**See**: [SceneNode.children](/develop/reference/SceneNode/#children)
 
 ## length
 
@@ -60,7 +60,7 @@ Iterate all children in the list, in reverse order (highest z order to lowest).
 
 ## filter()
 
-▸ **filter**(callback, thisArg): `Array.<SceneNode>`
+▸ **filter**(callback, thisArg): `Array.<`[SceneNode](/develop/reference/SceneNode)`>`
 
 Iterates all children and returns an array of just the children that passed the filter function's test.
 
@@ -99,7 +99,7 @@ Iterates children until the test returns true for at least one child.  Returns t
 
 ## at()
 
-▸ **at**(index): `SceneNode`
+▸ **at**(index): [SceneNode](/develop/reference/SceneNode)
 
 Returns the child node at the specified index in the list, or null if index is out of bounds.
 

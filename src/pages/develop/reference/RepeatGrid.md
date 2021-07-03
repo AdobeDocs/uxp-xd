@@ -87,7 +87,7 @@ You can call this API from either of _two different edit contexts_:
 
 | Param      | Type            | Description                                                                                                                                                                                                                         |
 | ---------- | ----------------| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| textNode   | `Text`          | A Text node exemplar that would be in scope for editing if the current edit context was one of this RepeatGrid's cells. The data series will be bound to this text node and all corresponding copies of it in the other grid cells. |
+| textNode   | [Text](/develop/reference/Text) | A Text node exemplar that would be in scope for editing if the current edit context was one of this RepeatGrid's cells. The data series will be bound to this text node and all corresponding copies of it in the other grid cells. |
 | textValues | `Array<string>` | Array of one or more strings. Empty strings are ignored.                                                                                                                                                                            |
 
 **Kind**: instance method of [RepeatGrid](#repeatgrid)
@@ -109,7 +109,7 @@ You can call this API from either of _two different edit contexts_:
 
 | Param     | Type               | Description                                                                                                                                                                                                                                                                                                            |
 | --------- | -------------------| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| shapeNode | `GraphicNode`      | A shape node exemplar that would be in scope for editing if the current edit context was one of this RepeatGrid's cells. The image series will be bound to this node and all corresponding copies of it in the other grid cells. Must be a node type that supports image fills (e.g. Rectangle, but not Text or Line). |
-| images    | `Array<ImageFill>` | Array of one or more ImageFills.                                                                                                                                                                                                                                                                                       |
+| shapeNode | [GraphicNode](/develop/reference/GraphicNode) | A shape node exemplar that would be in scope for editing if the current edit context was one of this RepeatGrid's cells. The image series will be bound to this node and all corresponding copies of it in the other grid cells. Must be a node type that supports image fills (e.g. Rectangle, but not Text or Line). |
+| images    | `Array<`[ImageFill](/develop/reference/ImageFill)`>` | Array of one or more ImageFills.                                                                                                                                                                                                                                                                                       |
 
 **Kind**: instance method of [RepeatGrid](#repeatgrid)

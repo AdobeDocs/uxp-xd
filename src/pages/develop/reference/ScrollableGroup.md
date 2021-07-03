@@ -6,7 +6,7 @@
 
 **Extends**: [SceneNode](/develop/reference/SceneNode)
 
-ScrollableGroup nodes are content that users can interactively scroll around. Content is viewed through a [viewport](#scrollablegroup-viewport),
+ScrollableGroup nodes are content that users can interactively scroll around. Content is viewed through a [viewport](#viewport),
 with everything else clipped. If a ScrollableGroup is set to only scroll on one axis, on the other axis the viewport is
 automatically sized to exactly fit the bounds of the content so nothing is clipped.
 
@@ -36,8 +36,7 @@ content on non-scrolling axes:
 
 For example, if scrollingType == VERTICAL, the top of the viewport is `viewport.offsetY` in the ScrollableGroup's
 local coordinates, the bottom of the viewport is `viewport.offsetY + viewport.viewportHeight` in local coordinates,
-and horizontally there is no viewport clipping -- the entire current [localBounds](#scenenode-localbounds) range is visible. The
+and horizontally there is no viewport clipping -- the entire current [localBounds](/develop/reference/SceneNode/#localbounds) range is visible. The
 `viewport` object will only contain `offsetY` and `viewportHeight` properties in this case.
 
 **Kind**: instance property of [ScrollableGroup](#scrollablegroup)
-

@@ -1,5 +1,7 @@
 # selection
 
+**Kind**: object
+
 The `selection` object represents the currently selected set of nodes in the UI. You can change the selection to use it as input
 for [commands](/develop/reference/commands/), or to control what is left selected for the user when your plugin's edit operation completes.
 
@@ -18,7 +20,7 @@ The edit context does not update to reflect any changes to the selection until a
 - The selection cannot contain both a node and one of its ancestors at the same time.
 
 - Items that are _locked_ cannot be in the selection. If the user or your plugin attempts to select any locked items, they are
-  automatically filtered into a separate list ([itemsIncludingLocked](#selection-itemsIncludingLocked)) which is generally only used by the Unlock
+  automatically filtered into a separate list ([itemsIncludingLocked](#itemsincludinglocked)) which is generally only used by the Unlock
   command.
 
 **Accessing the selection**
@@ -36,13 +38,11 @@ module.exports = {
 };
 ```
 
-You can also access this object from the [scenegraph.selection](/develop/reference/scenegraph/#module_scenegraph-selection) property.
-
-**Kind**: object
+You can also access this object from the [scenegraph.selection](/develop/reference/scenegraph/#selection) property.
 
 ## items
 
-▸ **items**: `Array<`[SceneNode](scenegraph/#SceneNode)`>`
+▸ **items**: `Array<`[SceneNode](/develop/reference/SceneNode)`>`
 
 Array representing the current selection. Empty array if nothing is selected (never null). _Items might not all have the same
 parent node._ Never includes locked nodes. Never mixes artboards with other nodes: a selection is either all artboards or all
@@ -73,7 +73,7 @@ selection.items = null; // deselect all (convenience)
 
 ## itemsIncludingLocked
 
-▸ **itemsIncludingLocked**: `Array<`[SceneNode](scenegraph/#SceneNode)`>`
+▸ **itemsIncludingLocked**: `Array<`[SceneNode](/develop/reference/SceneNode)`>`
 
 Array representing the current selection _plus_ any locked items that the user has attempted to select.
 
@@ -97,7 +97,7 @@ console.log(
 
 ▸ **hasArtwork**: `boolean`
 
-True if the selection isn’t empty and consists of one or more non-Artboards. Never true at the same time as [hasArtboards](#selection-hasArtboards).
+True if the selection isn’t empty and consists of one or more non-Artboards. Never true at the same time as [hasArtboards](#hasartboards).
 
 **Kind**: instance property of [selection](#selection)
 **Read only**: true
@@ -106,14 +106,14 @@ True if the selection isn’t empty and consists of one or more non-Artboards. N
 
 ▸ **hasArtboards**: `boolean`
 
-True if the selection isn’t empty and consists of one or more Artboards. Never true at the same time as [hasArtwork](#selection-hasArtwork).
+True if the selection isn’t empty and consists of one or more Artboards. Never true at the same time as [hasArtwork](#hasartwork).
 
 **Kind**: instance property of [selection](#selection)
 **Read only**: true
 
 ## insertionParent
 
-▸ **insertionParent**: [SceneNode](scenegraph/#SceneNode)
+▸ **insertionParent**: [SceneNode](/develop/reference/SceneNode)
 
 The preferred parent to insert newly added content into. Takes into account the current edit context as well as the "focused artboard" if in the root context.
 Typically this is the same parent where, for example, XD's shape drawing tools would add items.
@@ -125,7 +125,7 @@ _Selected items are not necessarily all immediate children of the `insertionPare
 
 ## focusedArtboard
 
-▸ **focusedArtboard**: ?[Artboard](scenegraph/#Artboard)
+▸ **focusedArtboard**: ?[Artboard](/develop/reference/Artboard)
 
 The artboard the user is currently most focused on (via recent selection or edit operations). May be null, for example if no artboards exist or if the user just deleted an artboard.
 
@@ -134,7 +134,7 @@ The artboard the user is currently most focused on (via recent selection or edit
 
 ## editContext
 
-▸ **editContext**: [SceneNode](scenegraph/#SceneNode)
+▸ **editContext**: [SceneNode](/develop/reference/SceneNode)
 
 The common ancestor node of all selected items - also the root node of the subtree containing the "[edit context](/develop/plugin-development/xd-concepts/edit-context/),"
 which is the scope in which selection and edit operations must occur for the current plugin command. The scope does not

@@ -12,9 +12,9 @@ Returns a unique identifier for this node that stays the same when the file is c
 
 The GUID is guaranteed unique _within_ the current document, but _other_ documents may contain the same GUID value. For example, if the user makes a copy of an XD file, both files will use the same GUIDs.
 
-The GUID of the [root node](#rootnode) changes if the document is duplicated via Save As. See [application.activeDocument.guid](/develop/reference/application/#module_application-activeDocument) for details.
+The GUID of the [root node](/develop/reference/RootNode) changes if the document is duplicated via Save As. See [application.activeDocument.guid](/develop/reference/application/#activedocument) for details.
 
-Node objects can be destroyed and recreated during operations such as Undo/Redo, so if you need to store a reference to a node even between operations in the _same_ session, it's best to store the GUID and then retrieve the node later via [getNodeByGuid()](#module_scenegraph-getnodebyguid).
+Node objects can be destroyed and recreated during operations such as Undo/Redo, so if you need to store a reference to a node even between operations in the _same_ session, it's best to store the GUID and then retrieve the node later via [getNodeByGuid()](/develop/reference/scenegraph/#getnodebyguid).
 
 **Kind**: instance property of [SceneNode](#scenenode)
 **Read only**: true
@@ -30,17 +30,15 @@ Returns the parent node. Null if this is the root node, or a freshly constructed
 
 ## children
 
-▸ **children**: [SceneNodeList](SceneNodeList)
+▸ **children**: [SceneNodeList](/develop/reference/SceneNodeList)
 
 Returns a list of this node's children. List is length 0 if the node has no children. The first child is lowest in the z order.
 
 This list is _**not an Array**_, so you must use `at(i)` instead of `[i]` to access children by index. It has a number of Array-like
 methods such as `forEach()` for convenience and improved performance, however.
 
-The list is immutable. Use [removeFromParent](#scenenoderemovefromparent) and [addChild](#groupaddchildnode-index) to add/remove child nodes.
+The list is immutable. Use [removeFromParent](#removefromparent) and [addChild](/develop/reference/Group/#addchild) to add/remove child nodes.
 
-**Kind**: instance property of [SceneNode](#scenenode)
-**Read only**: true
 **Example**
 
 ```js
@@ -52,6 +50,9 @@ node.children.forEach(function (childNode, i) {
     console.log("Child " + i + " is a " + childNode.constructor.name);
 });
 ```
+
+**Kind**: instance property of [SceneNode](#scenenode)
+**Read only**: true
 
 ## isInArtworkTree
 
@@ -77,9 +78,10 @@ True if this node is a type that could have children (e.g. an Artboard, Group, B
 
 True if this node is part of the current selection. To get a list of _all_ selected nodes or change which nodes are selected, use [selection](/develop/reference/selection/).
 
+**See**: [selection](/develop/reference/selection/)
+
 **Kind**: instance property of [SceneNode](#scenenode)
 **Read only**: true
-**See**: [selection](/develop/reference/selection/)
 
 ## visible
 
@@ -126,87 +128,92 @@ node.blendMode = scenegraph.SceneNode.BLEND_MODE_LUMINOSITY;
 
 Affine transform matrix that converts from the node's _local coordinate space_ to its parent's coordinate space. The matrix never has
 skew or scale components, and if this node is an Artboard the matrix never has rotation either. Rather than reading the raw matrix values
-directly, it may be easier to use the [translation](#scenenode-translation) and [rotation](#scenenode-rotation) properties.
+directly, it may be easier to use the [translation](#translation) and [rotation](#rotation) properties.
 
-**Since**: XD 40 transform will return a [Matrix3D](/develop/reference/Matrix3D/) objects for 3D transformed nodes. Again, rather than reading the raw matrix values directly, it may be easier to use the [zDepth](#scenenode-zDepth), [rotationX](#scenenode-rotationX) and [rotationY](#scenenode-rotationY) for 3D specific properties.
+**Since**: XD 40 transform will return a [Matrix3D](/develop/reference/Matrix3D/) objects for 3D transformed nodes. Again, rather than reading the raw matrix values directly, it may be easier to use the [zDepth](#zdepth), [rotationX](#rotationx) and [rotationY](#rotationy) for 3D specific properties.
 
-To move or resize a node, use the [translation](#scenenode-translation) property or APIs like [placeInParentCoordinates()](#scenenode-placeinparentcoordinates) or [rotateAround()](#scenenode-rotatearound).
-Setting the entire transform matrix directly is not allowed. To resize a node, use [resize()](#scenenode-resize).
+To move or resize a node, use the [translation](#translation) property or APIs like [placeInParentCoordinates()](#placeinparentcoordinates) or [rotateAround()](#rotatearound).
+Setting the entire transform matrix directly is not allowed. To resize a node, use [resize()](#resize).
 
 For an overview of node transforms & coordinate systems, see [Coordinate spaces](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/).
 
 This getter returns a fresh Matrix each time, so its fields can be mutated by the caller without interfering with the node's state.
 
-**Kind**: instance property of [SceneNode](#scenenode)
-**Read only**: true
 **See**
 
-- [translation](#scenenode-translation)
-- [rotation](#scenenode-rotation)
-- [moveInParentCoordinates](#scenenode-moveinparentcoordinates)
-- [placeInParentCoordinates](#scenenode-placeinparentcoordinates)
-- [rotateAround](#scenenode-rotatearound)
-- [globalBounds](#scenenode-globalbounds)
-- [localBounds](#scenenode-localbounds)
-- [boundsInParent](#scenenode-boundsinparent)
-- [topLeftInParent](#scenenode-topleftinparent)
-- [zDepth](#scenenode-zDepth)
-- [rotationX](#scenenode-rotationX)
-- [rotationY](#scenenode-rotationY)
-- [placeInParentCoordinates3D](#scenenode-placeinparentcoordinates3D)
-- [moveZDepth](#scenenode-moveZDepth)
-- [rotateXAround](#scenenode-rotateXAround)
-- [rotateYAround](#scenenode-rotateYAround)
-- [perspectiveCenterInParentCoordinates](#scenenode-perspectiveCenterInParentCoordinates)
+- [translation](#translation)
+- [rotation](#rotation)
+- [moveInParentCoordinates](#moveinparentcoordinates)
+- [placeInParentCoordinates](#placeinparentcoordinates)
+- [placeInParentCoordinates3D](#placeinparentcoordinates3d)
+- [rotateAround](#rotatearound)
+- [globalBounds](#globalbounds)
+- [localBounds](#localbounds)
+- [boundsInParent](#boundsinparent)
+- [topLeftInParent](#topleftinparent)
+- [zDepth](#zdepth)
+- [rotationX](#rotationx)
+- [rotationY](#rotationy)
+- [placeInParentCoordinates3D](#placeinparentcoordinates3d)
+- [moveZDepth](#movezdepth)
+- [rotateXAround](#rotatexaround)
+- [rotateYAround](#rotateyaround)
+- [perspectiveCenterInParentCoordinates](#perspectivecenterinparentcoordinates)
+
+**Kind**: instance property of [SceneNode](#scenenode)
+**Read only**: true
 
 ## translation
 
 ▸ **translation**: `{x:number, y:number}`
 
-The translate component of this node's [transform](#scenenode-transform). Since translation is applied after any rotation in
+The translate component of this node's [transform](#transform). Since translation is applied after any rotation in
 the transform Matrix, translation occurs along the parent's X/Y axes, not the node's own local X/Y axes. This is equivalent to
 the `e` & `f` fields in the transform Matrix.
 
 For an overview of node positioning & coordinate systems, see [Coordinate spaces](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/).
 
-**Kind**: instance property of [SceneNode](#scenenode)
 **See**
 
-- [moveInParentCoordinates](#scenenode-moveinparentcoordinates)
-- [placeInParentCoordinates](#scenenode-placeinparentcoordinates)
-- [topLeftInParent](#scenenode-topleftinparent)
+- [moveInParentCoordinates](#moveinparentcoordinates)
+- [placeInParentCoordinates](#placeinparentcoordinates)
+- [topLeftInParent](#topleftinparent)
+
+**Kind**: instance property of [SceneNode](#scenenode)
 
 ## rotation
 
 ▸ **rotation**: `number`
 
-The rotation component of this node's [transform](#scenenode-transform), in clockwise degrees.
+The rotation component of this node's [transform](#transform), in clockwise degrees.
 
 For an overview of node transforms & coordinate systems, see [Coordinate spaces](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/).
 
+**See**: [rotateAround](#rotatearound)
+
 **Kind**: instance property of [SceneNode](#scenenode)
 **Read only**: true
-**See**: [rotateAround](#scenenode-rotatearound)
 
 ## globalBounds
 
-▸ **globalBounds**: [Bounds](#bounds)
+▸ **globalBounds**: [Bounds](/develop/reference/scenegraph/#typedef-bounds)
 
 The node's _path bounds_ in document-global coordinate space (represented by a bounding box aligned with global X/Y axes). Path bounds match the selection outline seen in the XD, but exclude some visual parts of the node (outer stroke, drop shadow / blur, etc.).
 
 For an overview of node bounding boxes & coordinate systems, see [Coordinate spaces](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/).
 
-**Kind**: instance property of [SceneNode](#scenenode)
-**Read only**: true
 **See**
 
-- [globalDrawBounds](#scenenode-globaldrawbounds)
-- [localBounds](#scenenode-localbounds)
-- [boundsInParent](#scenenode-boundsinparent)
+- [globalDrawBounds](#globaldrawbounds)
+- [localBounds](#localbounds)
+- [boundsInParent](#boundsinparent)
+
+**Kind**: instance property of [SceneNode](#scenenode)
+**Read only**: true
 
 ## localBounds
 
-▸ **localBounds**: [Bounds](#bounds)
+▸ **localBounds**: [Bounds](/develop/reference/scenegraph/#typedef-bounds)
 
 The node's _path bounds_ in its own local coordinate space. This coordinate space may be rotated and translated relative to the parent's coordinate space. Path bounds match the selection outline seen in XD, but exclude some visual parts of the node (outerstroke, drop shadow / blur, etc.).
 
@@ -214,32 +221,34 @@ The visual top-left of a node's path bounds is located at (localBounds.x, localB
 
 For an overview of node bounding boxes & coordinate systems, see [Coordinate spaces](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/).
 
-**Kind**: instance property of [SceneNode](#scenenode)
-**Read only**: true
 **See**
 
-- [globalBounds](#scenenode-globalbounds)
-- [boundsInParent](#scenenode-boundsinparent)
+- [globalBounds](#globalbounds)
+- [boundsInParent](#boundsinparent)
+
+**Kind**: instance property of [SceneNode](#scenenode)
+**Read only**: true
 
 ## boundsInParent
 
-▸ **boundsInParent**: [Bounds](#bounds)
+▸ **boundsInParent**: [Bounds](/develop/reference/scenegraph/#typedef-bounds)
 
 The node's _path bounds_ in its parent's coordinate space (represented by a bounding box aligned with the parent's X/Y axes - so if the node has rotation, the top-left of the node is not necessarily located at the top-left of boundsInParent). Path bounds match the selection outline seen in XD, but exclude some visual parts of the node (outer stroke, drop shadow / blur, etc.).
 
 For an overview of node bounding boxes & coordinate systems, see [Coordinate spaces](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/).
 
-**Kind**: instance property of [SceneNode](#scenenode)
-**Read only**: true
 **See**
 
-- [globalBounds](#scenenode-globalbounds)
-- [localBounds](#scenenode-localbounds)
-- [topLeftInParent](#scenenode-topleftinparent)
+- [globalBounds](#globalbounds)
+- [localBounds](#localbounds)
+- [topLeftInParent](#topleftinparent)
+
+**Kind**: instance property of [SceneNode](#scenenode)
+**Read only**: true
 
 ## topLeftInParent
 
-▸ **topLeftInParent**: [Point](#point)
+▸ **topLeftInParent**: [Point](/develop/reference/scenegraph/#typedef-point)
 
 The position of the node's upper-left corner (localBounds.x, localBounds.y) in its parent's coordinate space. If the node is
 rotated, this is not the same as the top-left corner of boundsInParent.
@@ -247,36 +256,38 @@ This is a shortcut for `node.transform.transformPoint({x: node.localBounds.x, y:
 
 For an overview of node bounding boxes & coordinate systems, see [Coordinate spaces](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/).
 
-**Kind**: instance property of [SceneNode](#scenenode)
-**Read only**: true
 **See**
 
-- [boundsInParent](#scenenode-boundsinparent)
-- [localBounds](#scenenode-localbounds)
+- [boundsInParent](#boundsinparent)
+- [localBounds](#localbounds)
+
+**Kind**: instance property of [SceneNode](#scenenode)
+**Read only**: true
 
 ## localCenterPoint
 
-▸ **localCenterPoint**: [Point](#point)
+▸ **localCenterPoint**: [Point](/develop/reference/scenegraph/#typedef-point)
 
-The position of the node's centerpoint in its own local coordinate space. Useful as an argument to [rotateAround](#scenenode-rotatearound).
+The position of the node's centerpoint in its own local coordinate space. Useful as an argument to [rotateAround](#rotatearound).
 This is a shortcut for `{x: localBounds.x + localBounds.width/2, y: localBounds.y + localBounds.height/2})`
 
 For an overview of node bounding boxes & coordinate systems, see [Coordinate spaces](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/).
 
+**See**: [localBounds](#localbounds)
+
 **Kind**: instance property of [SceneNode](#scenenode)
 **Read only**: true
-**See**: [localBounds](#scenenode-localbounds)
 
 ## globalDrawBounds
 
-▸ **globalDrawBounds**: [Bounds](#bounds)
+▸ **globalDrawBounds**: [Bounds](/develop/reference/scenegraph/#typedef-bounds)
 
 The node's _draw bounds_ in document-global coordinate space. Draw bounds are larger than the selection outline seen in XD, including outer stroke, drop shadow / blur, etc. - every visible pixel of the node is encompassed by these bounds. This matches the image dimensions if the node is exported as a PNG/JPEG bitmap.
 
 For an overview of node bounding boxes & coordinate systems, see [Coordinate spaces](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/).
 
 **See**
-- [globalBounds](#scenenode-globalbounds)
+- [globalBounds](#globalbounds)
 
 **Kind**: instance property of [SceneNode](#scenenode)
 **Read only**: true
@@ -287,7 +298,7 @@ For an overview of node bounding boxes & coordinate systems, see [Coordinate spa
 
 Node name as seen in the Layers panel. Also used as filename during Export.
 
-Setting this property will cause [hasDefaultName](#scenenode-hasdefaultname) to become false.
+Setting this property will cause [hasDefaultName](#hasdefaultname) to become false.
 
 **Kind**: instance property of [SceneNode](#scenenode)
 
@@ -295,7 +306,7 @@ Setting this property will cause [hasDefaultName](#scenenode-hasdefaultname) to 
 
 ▸ **hasDefaultName**: `boolean`
 
-True if [name](#scenenode-name) is a generic, auto-generated string (e.g. "Rectangle 5"). False if name has been explicitly set.
+True if [name](#name) is a generic, auto-generated string (e.g. "Rectangle 5"). False if name has been explicitly set.
 
 **Kind**: instance property of [SceneNode](#scenenode)
 **Read only**: true
@@ -328,8 +339,9 @@ _Only applicable for nodes whose immediate parent is an Artboard_ -- this does n
 For other nodes, this property returns undefined and cannot be set. To determine whether those nodes scroll or remain
 fixed, walk up the parent chain and check this property on the topmost ancestor in the Artboard.
 
+**See**: [Artboard.viewportHeight](/develop/reference/Artboard/#viewportheight)
+
 **Kind**: instance property of [SceneNode](#scenenode)
-**See**: [Artboard.viewportHeight](#artboardviewportheight--number)
 
 ## triggeredInteractions
 
@@ -358,14 +370,14 @@ node.triggeredInteractions.forEach((interaction) => {
 });
 ```
 
-**See**: [interactions.allInteractions](/develop/reference/interactions#interactionsallinteractions--arraytriggernode-scenenode-interactions-arrayinteraction)
+**See**: [interactions.allInteractions](/develop/reference/interactions/#allinteractions)
 
 **Kind**: instance property of [SceneNode](#scenenode)
 **Read only**: true
 
 ## contentChildren
 
-▸ **contentChildren**: [SceneNodeList](#SceneNodeList)
+▸ **contentChildren**: [SceneNodeList](/develop/reference/SceneNodeList)
 
 **Since**: XD 38
 
@@ -403,23 +415,23 @@ Object containing all layout properties for the node
 | ?resizeConstraints | `Object` | Included if layout type is LAYOUT_STACK, LAYOUT_PADDING or LAYOUT_RESPONSIVE_RESIZE |
 
 
-Object representing layout.stack
+Object representing `layout.stack`
 
 | Param | Type | Description |
 | --- | --- | --- |
 | orientation | `string` | SceneNode.STACK_HORIZONTAL or STACK_VERTICAL |
-| spacings | `Array<Number>` or `Number` | a numbde if each cell is equidistant or an array of spaces between cells in order provided by [contentChildren](#contentChildren)  |
+| spacings | `Array<Number>` or `Number` | a numbde if each cell is equidistant or an array of spaces between cells in order provided by [contentChildren](#contentchildren)  |
 
 
-Object representing layout.padding
+Object representing `layout.padding`
 
 | Param | Type | Description |
 | --- | --- | --- |
-| background | `sceneNode` of NULL | SceneNode used as the background or null if no background set |
+| background | [SceneNode](/develop/reference/SceneNode) or NULL | SceneNode used as the background or null if no background set |
 | values | `Object` or `Number` | top, right, bottom, left are all numbers which determines each side padding amount. A single number represents the padding used by all four sides. |
 
 
-Object representing layout.resizeConstraints
+Object representing `layout.resizeConstraints`
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -499,11 +511,11 @@ Both fields _must_ be provided together when setting this property.
 Returns undefined if node's parent is a container where Responsive Resize is unavailable:
 
 - Certain containers such as RepeatGrid and the pasteboard (scenegraph root) do not support Responsive Resize.
-- Container may have Responsive Resize layout explicitly turned off (see [dynamicLayout flag](#groupdynamiclayout--boolean)).
+- Container may have Responsive Resize layout explicitly turned off (see [dynamicLayout flag](/develop/reference/Group/#dynamiclayout)).
 
 Attempting to set this property when Responsive Resize is unavailable results in an error.
 
-Setting this property will cause [hasCustomConstraints](#scenenode-hascustomconstraints) to become true.
+Setting this property will cause [hasCustomConstraints](#hascustomconstraints) to become true.
 
 **Example**
 
@@ -527,12 +539,12 @@ Vertical dynamic-layout settings used with the Responsive Resize feature. Settin
 
 | Property                     | Type   | Description                                                                                                                                                                                                      |
 | ---------------------------- | ------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| verticalConstraints.position | string | Vertical position anchoring, one of `SceneNode.FIXED_TOP`, `FIXED_BOTTOM`, `FIXED_BOTH` or `POSITION_PROPORTIONAL`.<br/><br/>For details, see [horizontalConstraints](#scenenodehorizontalconstraints--positionstring-sizestring) above. |
-| verticalConstraints.size     | string | Vertical sizing behavior, either `SceneNode.SIZE_FIXED` or `SceneNode.SIZE_RESIZES`.<br/><br/>For details, see [horizontalConstraints](#scenenodehorizontalconstraints--positionstring-sizestring) above.                                |
+| verticalConstraints.position | string | Vertical position anchoring, one of `SceneNode.FIXED_TOP`, `FIXED_BOTTOM`, `FIXED_BOTH` or `POSITION_PROPORTIONAL`.<br/><br/>For details, see [horizontalConstraints](#horizontalconstraints) above. |
+| verticalConstraints.size     | string | Vertical sizing behavior, either `SceneNode.SIZE_FIXED` or `SceneNode.SIZE_RESIZES`.<br/><br/>For details, see [horizontalConstraints](#horizontalconstraints) above.                                |
 
 Both fields _must_ be provided together when setting this property.
 
-See [horizontalConstraints](#scenenodehorizontalconstraints--positionstring-sizestring) above for other important notes.
+See [horizontalConstraints](#horizontalconstraints) above for other important notes.
 
 **Example**
 
@@ -554,9 +566,9 @@ node.verticalConstraints = {
 
 True if this node's Responsive Resize layout settings, which are normally automatically inferred by XD, have been overridden with specific desired values. Constraints on a node are either all overridden, or all automatic -- never mixed.
 
-If false, each time the parent resizes XD will automatically guess the best layout settings to used based on the current size & position of this node within its parent. You can use the [horizontalConstraints](#scenenodehorizontalconstraints--positionstring-sizestring) and [verticalConstraints](#scenenodeverticalconstraints--positionstring-sizestring) getters to check what computed settings XD would use based on the node's current size & position.
+If false, each time the parent resizes XD will automatically guess the best layout settings to used based on the current size & position of this node within its parent. You can use the [horizontalConstraints](#horizontalconstraints) and [verticalConstraints](#verticalconstraints) getters to check what computed settings XD would use based on the node's current size & position.
 
-Automatically becomes true any time you set `horizontalConstraints` or `verticalConstraints`. To reset to false, call [resetToAutoConstraints()](#scenenode-resettoautoconstraints).
+Automatically becomes true any time you set `horizontalConstraints` or `verticalConstraints`. To reset to false, call [resetToAutoConstraints()](#resettoautoconstraints).
 
 **Kind**: instance property of [SceneNode](#scenenode)
 **Read only**: true _(but is modified indirectly; see above)_
@@ -569,7 +581,7 @@ Automatically becomes true any time you set `horizontalConstraints` or `vertical
 
 Erase any overridden Responsive Resize layout settings, restoring the default behavior where XD will automatically guess the best layout settings for this node the next time its parent is resized. This function does not change the node's _current_ size & position, however.
 
-Calling this will cause [hasCustomConstraints](#scenenode-hascustomconstraints) to become false.
+Calling this will cause [hasCustomConstraints](#hascustomconstraints) to become false.
 
 **Kind**: instance method of [SceneNode](#scenenode)
 
@@ -596,11 +608,11 @@ Metadata is persisted with the document when it is saved. Duplicating a node (in
 will duplicate the metadata with it. If the node lies within a Component or Repeat Grid, all instances of the node will have
 identical metadata (changes in one copy will automatically be synced to the other copy).
 
-To store general metadata for the document overall, set pluginData on the [root](#rootnode) node of the scenegraph. Metadata on
+To store general metadata for the document overall, set pluginData on the [root](/develop/reference/RootNode) node of the scenegraph. Metadata on
 the root node can be changed from _any_ edit context.
 
 Metadata stored in pluginData cannot be accessed by other plugins -- each plugin has its own isolated storage. To share metadata
-with other plugins, use [sharedPluginData](#scenenode-sharedplugindata).
+with other plugins, use [sharedPluginData](#sharedplugindata).
 
 **Kind**: instance property of [SceneNode](#scenenode)
 
@@ -614,9 +626,9 @@ Metadata storage accessible by other plugins, separated into silos by plugin ID.
 but storage for other plugin IDs is _read-only_. This property returns a [PerPluginStorage API object](/develop/reference/PerPluginStorage/).
 
 _Each_ scenenode has its own metadata storage. To store general metadata that is not specific to one scenenode, use `sharedPluginData` on the
-[document's scenegraph root](/develop/reference/scenegraph/#rootnode).
+[document's scenegraph root](/develop/reference/RootNode).
 
-Metadata is persisted with the document when it is saved. See [pluginMetadata](#scenenode-plugindata) for info on how metadata is duplicated when nodes are
+Metadata is persisted with the document when it is saved. See [pluginMetadata](#plugindata) for info on how metadata is duplicated when nodes are
 copied or synced.
 
 **Kind**: instance property of [SceneNode](#scenenode)
@@ -643,15 +655,15 @@ The third parameter, deltaZ (optional), allows the movement of the object on Z a
 
 For an overview of node positioning & coordinate systems, see [Coordinate spaces](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/).
 
-**See**
-- [placeInParentCoordinates](#scenenode-placeinparentcoordinates)
-- [translation](#scenenode-translation)
-
 | Param   | Type     | Description                                     |
 | ------- | -------- |-------------------------------------------------|
-| deltaX  | `number` |                                                 |
-| deltaY  | `number` |                                                 |
+| deltaX  | `number` | Amount to move along X axis |
+| deltaY  | `number` | Amount to move along Y axis |
 | ?deltaZ | `number` | Optional: number of pixels to change depth with |
+
+**See**
+- [placeInParentCoordinates](#placeinparentcoordinates)
+- [translation](#translation)
 
 **Kind**: instance method of [SceneNode](#scenenode)
 
@@ -664,12 +676,10 @@ any rotation on this node, etc.).
 
 For an overview of node positioning & coordinate systems, see [Coordinate spaces](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/).
 
-**Kind**: instance method of [SceneNode](#scenenode)
-
 | Param             | Type                | Description                                                                 |
 | ----------------- | ------------------- | --------------------------------------------------------------------------- |
-| registrationPoint | [Point](#point) | Point in this node's local coordinate space to align with parentPoint       |
-| parentPoint       | [Point](#point) | Point in this node's parent's coordinate space to move registrationPoint to |
+| registrationPoint | [Point](/develop/reference/scenegraph/#typedef-point) | Point in this node's local coordinate space to align with parentPoint       |
+| parentPoint       | [Point](/develop/reference/scenegraph/#typedef-point) | Point in this node's parent's coordinate space to move registrationPoint to |
 
 **Example**
 
@@ -680,6 +690,8 @@ let nodeBounds = node.localBounds; // node's bounds in its own local coordinates
 let nodeTopLeft = { x: nodeBounds.x, y: nodeBounds.y }; // node's top left corner in its own local coordinates
 node.placeInParentCoordinates(nodeTopLeft, parentCenter);
 ```
+
+**Kind**: instance method of [SceneNode](#scenenode)
 
 ## placeInParentCoordinates3D()
 
@@ -693,12 +705,10 @@ If a 2D point is passed as parameter for either registrationPoint or parentPoint
 
 For an overview of node positioning & coordinate systems, see [Coordinate spaces](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/).
 
-**Kind**: instance method of [SceneNode](#scenenode)
-
 | Param             | Type                  | Description                                                                          |
 | ----------------- | --------------------- | ------------------------------------------------------------------------------------ |
-| registrationPoint | [Point](#point3D) | 2D or 3D point in this node's local coordinate space to align with parentPoint       |
-| parentPoint       | [Point](#point3D) | 2D or 3D point in this node's parent's coordinate space to move registrationPoint to |
+| registrationPoint | [Point](/develop/reference/scenegraph/#typedef-point) | 2D or 3D point in this node's local coordinate space to align with parentPoint       |
+| parentPoint       | [Point](/develop/reference/scenegraph/#typedef-point) | 2D or 3D point in this node's parent's coordinate space to move registrationPoint to |
 
 **Example**
 
@@ -710,9 +720,11 @@ var nodeTopLeft = {x: nodeBounds.x, y: nodeBounds.y, z:100};  // node's top left
 node.placeInParentCoordinates3D(nodeTopLeft, parentCenter);
 ```
 
+**Kind**: instance method of [SceneNode](#scenenode)
+
 ## perspectiveCenterInParentCoordinates
 
-▸ **perspectiveCenterInParentCoordinates**: [Point](#point)
+▸ **perspectiveCenterInParentCoordinates**: [Point](/develop/reference/scenegraph/#typedef-point)
 
 **Since** XD 40
 
@@ -730,20 +742,20 @@ For an overview of node positioning & coordinate systems, see [Coordinate spaces
 
 **Since** XD 40
 
-The zDepth component of this node's [SceneNode](#transform}. Since zDepth is applied after any rotation in the transform Matrix, zDepth occurs along the parent's Z axis, not the node's own local Z axis. This is equivalent to the `mz` field in the transform Matrix. zDepth is 0 for 2D nodes.
+The zDepth component of this node's [transform](#transform). Since zDepth is applied after any rotation in the transform Matrix, zDepth occurs along the parent's Z axis, not the node's own local Z axis. This is equivalent to the `mz` field in the transform Matrix. zDepth is 0 for 2D nodes.
 
 If portions of objects are placed at z greater than 800 (e.g. an unrotated shape with zDepth >= 800 or a 90 deg Y-rotated shape having width = 2000) rendering artifacts will appear.
 
 For an overview of node positioning & coordinate systems, see [Coordinate spaces](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/).
 
-**Kind**: instance property of [SceneNode](#scenenode)
-
 **See**:
 
-- [moveZDepth](#scenenode-moveZDepth)
-- [moveInParentCoordinates](#scenenode-moveInParentCoordinates)
-- [placeInParentCoordinates3D](#scenenode-placeinparentcoordinates3D)
-- [topLeftInParent](#scenenode-topLeftInParent)
+- [moveZDepth](#movezdepth)
+- [moveInParentCoordinates](#moveinparentcoordinates)
+- [placeInParentCoordinates3D](#placeinparentcoordinates3d)
+- [topLeftInParent](#topleftinparent)
+
+**Kind**: instance property of [SceneNode](#scenenode)
 
 ## moveZDepth()
 
@@ -756,9 +768,9 @@ Move the node by the given number of pixels along the parent's Z axis (if this n
 For an overview of node positioning & coordinate systems, see [Coordinate spaces](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/).
 
 **See**:
-- [zDepth](#scenenodezDepth),
-- [placeInParentCoordinates3D](#scenenode-placeinparentcoordinates3D)
-- [moveInParentCoordinates](#scenenode-moveInParentCoordinates)
+- [zDepth](#zdepth),
+- [placeInParentCoordinates3D](#placeinparentcoordinates3d)
+- [moveInParentCoordinates](#moveinparentcoordinates)
 
 | Param      | Type           |
 | ---------- | ---------------|
@@ -775,13 +787,12 @@ already has nonzero rotation, this operation _adds_ to its existing angle.
 
 For an overview of node transforms & coordinate systems, see [Coordinate spaces](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/).
 
-**Kind**: instance method of [SceneNode](#scenenode)
-**See**: [rotation](#scenenode-rotation)
+**See**: [rotation](#rotation)
 
 | Param          | Type              | Description                                          |
 | -------------- | ----------------- | ---------------------------------------------------- |
 | deltaAngle     | `number`          | In degrees.                                          |
-| rotationCenter | [Point](#point) | Point to rotate around, in node's local coordinates. |
+| rotationCenter | [Point](/develop/reference/scenegraph/#typedef-point) | Point to rotate around, in node's local coordinates. |
 
 **Example**
 
@@ -794,17 +805,19 @@ let rotationDelta = 180 - node.rotation;
 node.rotateAround(rotationDelta, node.localCenterPoint);
 ```
 
+**Kind**: instance method of [SceneNode](#scenenode)
+
 ## rotationX
 
 ▸ **rotationX**: `number`
 
 **Since** XD 40
 
-The rotation around X axis component of this node's [SceneNode](#transform), in degrees. (A positive rotation on X means the upper side of the object is moving away from the viewer)
+The rotation around X axis component of this node's [transform](#transform), in degrees. (A positive rotation on X means the upper side of the object is moving away from the viewer)
 
 For an overview of node transforms & coordinate systems, see [Coordinate spaces](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/).
 
-**See** [SceneNode](#rotateXAround)
+**See** [SceneNode](#rotatexaround)
 
 **Kind**: instance property of [SceneNode](#scenenode)
 **Read only**: true
@@ -834,12 +847,12 @@ Rotate the node around X axis by the given number of degrees around the given po
 
 For an overview of node transforms & coordinate systems, see [Coordinate spaces](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/).
 
-**See** [SceneNode](#rotationX}
+**See** [rotationx](#rotationx}
 
 | Param          | Type      | Description                                          |
 | -------------- | --------- | ---------------------------------------------------- |
 | deltaAngle     | `number`  | In degrees                                           |
-| rotationCenter | `Point`   | Point to rotate around, in node's local coordinates. |
+| rotationCenter | [Point](/develop/reference/scenegraph/#typedef-point) | Point to rotate around, in node's local coordinates. |
 
 **Example**
 
@@ -854,7 +867,7 @@ node.rotateXAround(rotationDelta, node.localCenterPoint);
 
 **Kind**: instance method of [SceneNode](#scenenode)
 
-## rotateYAround
+## rotateYAround()
 
 ▸ **rotateYAround**(deltaAngle, rotationCenter)
 
@@ -864,12 +877,12 @@ Rotate the node around Y axis by the given number of degrees around the given po
 
 For an overview of node transforms & coordinate systems, see [Coordinate spaces](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/).
 
-**See** [SceneNode](#rotationY}
+**See** [rotationy](#rotationy)
 
 | Param          | Type      | Description                                          |
 | -------------- | --------- | ---------------------------------------------------- |
 | deltaAngle     | `number`  | In degrees                                           |
-| rotationCenter | `Point`   | Point to rotate around, in node's local coordinates. |
+| rotationCenter | [Point](/develop/reference/scenegraph/#typedef-point) | Point to rotate around, in node's local coordinates. |
 
 **Example**
 
@@ -928,7 +941,7 @@ node.resize(originalBounds.width * 2, originalBounds.height);
 
 **Default**: `null`
 
-The node's inner shadow, if any. If this property is null _or_ `innerShadow.visible` is false, no inner shadow is drawn. Artboard, Line and any container object like Group, ScrollableGroup, SymbolInstance and Repeat Grid don't support inner shadow.
+The node's inner shadow, if any. If this property is null _or_ [innerShadow.visible](/develop/reference/InnerShadow) is false, no inner shadow is drawn. Artboard, Line and any container object like Group, ScrollableGroup, SymbolInstance and Repeat Grid don't support inner shadow.
 
 To modify an existing inner shadow, always be sure to re-invoke the `innerShadow` setter rather than just changing the InnerShadow object's properties inline.See ["Properties with object values"](/develop/plugin-development/xd-concepts/properties-with-object-values/).
 

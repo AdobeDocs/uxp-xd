@@ -17,7 +17,7 @@ use [commands](/develop/reference/commands/).
 
 | Param | Type         | Description                                                                                               |
 | ----- | ------------ | --------------------------------------------------------------------------------------------------------- |
-| node  | SceneNode | Child to add                                                                                              |
+| node  | [SceneNode](/develop/reference/SceneNode) | Child to add |
 | index | `?number`    | Optional: index to insert child at. Child is appended to end of children list (top of z order) otherwise. |
 
 **Kind**: instance method of [RootNode](#rootnode) and other container nodes
@@ -30,8 +30,8 @@ Inserts a child node after the given reference node.
 
 | Param      | Type         | Description                                              |
 | ---------- | ------------ | -------------------------------------------------------- |
-| node       | SceneNode | Child to add                                             |
-| relativeTo | SceneNode | New child is added immediately after this existing child |
+| node       | [SceneNode](/develop/reference/SceneNode) | Child to add                                             |
+| relativeTo | [SceneNode](/develop/reference/SceneNode) | New child is added immediately after this existing child |
 
 **Kind**: instance method of [RootNode](#rootnode) and other container nodes
 
@@ -43,8 +43,8 @@ Inserts a child node before the given reference node.
 
 | Param      | Type         | Description                                               |
 | ---------- | ------------ | --------------------------------------------------------- |
-| node       | SceneNode | Child to add                                              |
-| relativeTo | SceneNode | New child is added immediately before this existing child |
+| node       | [SceneNode](/develop/reference/SceneNode) | Child to add                                              |
+| relativeTo | [SceneNode](/develop/reference/SceneNode) | New child is added immediately before this existing child |
 
 **Kind**: instance method of [RootNode](#rootnode) and other container nodes
 

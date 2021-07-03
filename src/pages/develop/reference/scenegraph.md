@@ -7,8 +7,9 @@ contained by any artboard).
 
 ![example of scenegraph tree](../images/scenegraphExample.png)
 
-You can modify properties on any scenenodes within the current [_edit context_](/develop/plugin-development/xd-concepts/edit-context/), and add leaf nodes to the current
-edit context, but you cannot make structural changes directly to the scenegraph tree. Instead, use [commands](/develop/reference/commands/).
+You can modify properties on any scenenodes within the current [_edit context_](/develop/plugin-development/xd-concepts/edit-context/),
+and add leaf nodes to the current edit context, but you cannot make structural changes directly to the scenegraph tree. Instead, use
+[commands](/develop/reference/commands/).
 
 Typically, you access scenegraph nodes via the [selection](/develop/reference/selection/) argument that is passed to your plugin command, or by
 traversing the entire document tree using the [documentRoot](/develop/reference/RootNode) argument that is passed to your plugin command. These

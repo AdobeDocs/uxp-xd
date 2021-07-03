@@ -38,7 +38,7 @@ The region can be defined by passing a SceneNode, or by explicitly specifying a 
 
 | Param | Type       |
 | ----- | ---------- |
-| node  | SceneNode |
+| node  | [SceneNode](/develop/reference/SceneNode) |
 
 ### scrollIntoView(x, y, width, height)
 
@@ -79,7 +79,7 @@ The region can be defined by passing a SceneNode, or by explicitly specifying a 
 
 | Param | Type       |
 | ----- | ---------- |
-| node  | SceneNode |
+| node  | [SceneNode](/develop/reference/SceneNode) |
 
 ### zoomToRect(x, y, width, height)
 
