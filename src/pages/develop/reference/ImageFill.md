@@ -23,7 +23,7 @@ selection.items[0].fill = fill;
 
 ## new ImageFill()
 
-▸ **new ImageFill**(`fileOrDataURI`): `ImageFill`
+▸ **new ImageFill**(`fileOrDataURI`): [ImageFill](#ImageFill)
 
 | Param         | Type                            | Description                                                                                               |
 | ------------- | ------------------------------- | --------------------------------------------------------------------------------------------------------- |
@@ -31,12 +31,11 @@ selection.items[0].fill = fill;
 
 ## clone()
 
-▸ **clone**(): `ImageFill`
+▸ **clone**(): [ImageFill](#ImageFill)
 
 Returns a new copy of this ImageFill.
 
 **Kind**: instance method of [ImageFill](#ImageFill)
-**Returns**: `ImageFill`
 
 ## assetId
 

@@ -8,7 +8,7 @@ The `application` module exposes APIs for exporting content, initiating edits fr
 
 Call `editDocument()` from a **plugin panel UI** event listener to initiate an [edit operation](/develop/plugin-development/xd-concepts/lifecycle/#edit-operations) batch in order to modify the XD document. This API is irrelevant for plugin menu item commands, which are wrapped in an edit batch automatically.
 
-XD calls the `editFunction()` synchronously (before `editDocument()` returns). This function is treated the same as a [menu command handler](/develop/plugin-development/plugin-structure/handlers/#command):
+XD calls the `editFunction()` synchronously (before `editDocument()` returns). This function is treated the same as a [menu command handler](/develop/plugin-development/plugin-structure/handlers/#direct-action-commands-commandid):
 
 - It is passed two arguments, the selection and the root node of the scenegraph
 - It can return a Promise to extend the duration of the edit asynchronously
@@ -17,12 +17,12 @@ You can _only_ call `editDocument()` in response to a user action, such as a but
 
 For UI events that often occur in rapid-fire clusters, such as dragging a slider or pressing keys in a text field, XD tries to smartly merge consecutive edits into a single atomic Undo step. See the `mergeId` option below to customize this behavior.
 
-**Kind**: static method of [application](#module_application)
-
 | Param          | Type                                   | Description                                                         |
 | ------------   | -------------------------------------- | ------------------------------------------------------------------- |
 | `options`      | EditSettings                           | Optional settings object (see below). This argument can be omitted. |
 | `editFunction` | function(Selection, RootNode):?Promise | Function which will perform your plugin's edits to the scenegraph.  |
+
+**Kind**: static method of [application](#module_application)
 
 **Typedef EditSettings**
 
@@ -48,7 +48,7 @@ panelButton.addEventListener("click", (event) => {
 ```
 
 > **Info**
-> For comparison, plugin [menu command handlers](/develop/plugin-development/plugin-structure/handlers/#command) are effectively run as if they were passed to `editDocument()` with `editLabel` set to the menu item's label and `mergeId` set to null.
+> For comparison, plugin [menu command handlers](/develop/plugin-development/plugin-structure/handlers/#direct-action-commands-commandid) are effectively run as if they were passed to `editDocument()` with `editLabel` set to the menu item's label and `mergeId` set to null.
 
 ## createRenditions()
 

@@ -1,7 +1,8 @@
 # RepeatGrid
 
 **Kind**: class
-**Extends**: [SceneNode](#scenenode)
+
+**Extends**: [SceneNode](/develop/reference/SceneNode)
 
 Repeat Grid container node containing multiple grid cells, each one a child Group. Changes within one cell are automatically synced
 to all the other cells - with certain exceptions, called "overrides." A Repeat Grid also defines a rectangular clipping mask which
@@ -10,7 +11,7 @@ determines how may cells are visible (new cells are automatically generated as n
 Each grid cell is a Group that is an immediate child of the RepeatGrid. These groups are automatically created and destroyed as
 needed when the RepeatGrid is resized.
 
-It is not currently possible for plugins to _create_ a new RepeatGrid node, aside from using [commands.duplicate](/develop/reference/commands/#module_commands-duplicate)
+It is not currently possible for plugins to _create_ a new RepeatGrid node, aside from using [commands.duplicate](/develop/reference/commands/#duplicate)
 to clone existing RepeatGrids.
 
 ## width

@@ -1,7 +1,8 @@
 # Text
 
 **Kind**: class
-**Extends**: [GraphicNode](#graphicnode)
+
+**Extends**: [GraphicNode](/develop/reference/GraphicNode)
 
 Text leaf node shape. Text can have a fill and/or stroke, but only a solid-color fill is allowed (gradient or image
 fill will be rejected).

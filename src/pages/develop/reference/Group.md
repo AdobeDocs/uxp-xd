@@ -1,7 +1,8 @@
 # Group
 
 **Kind**: class
-**Extends**: [SceneNode](#scenenode)
+
+**Extends**: [SceneNode](/develop/reference/SceneNode)
 
 Group nodes represent two types of simple containers in XD:
 
@@ -95,18 +96,18 @@ Removes all children from this node. Equivalent to calling removeFromParent() on
 
 If true, Responsive Resize is enabled, and this node's children will use an intelligent layout algorithm whenever this node is resized.
 
-Returns undefined on node types that do not support Responsive Resize (such as RepeatGrid; see [horizontalConstraints](#scenenodehorizontalconstraints--positionstring-sizestring) docs for a
+Returns undefined on node types that do not support Responsive Resize (such as RepeatGrid; see [horizontalConstraints](/develop/reference/SceneNode/#horizontalconstraints) docs for a
 complete list). Attempting to set this property on such node types results in an error.
 
 **See**:
-- [horizontalConstraints](#scenenodehorizontalconstraints--positionstring-sizestring)
-- [verticalConstraints](#scenenodeverticalconstraints--positionstring-sizestring)
+- [horizontalConstraints](/develop/reference/SceneNode/#horizontalconstraints)
+- [verticalConstraints](/develop/reference/SceneNode/#verticalconstraints)
 
 **Kind**: instance property of [Group](#group)
 
 ## mask
 
-▸ **mask**: ?[SceneNode](#scenenode)
+▸ **mask**: ?[SceneNode](/develop/reference/SceneNode)
 
 The mask shape applied to this group, if any. This object is also present in the group's `children` list. Though it has no direct visual appearance of its own, the mask affects the entire group's appearance by clipping all its other content.
 
@@ -119,7 +120,7 @@ let group = ...;
 console.log("Type of group is: " + (group.mask ? "Masked Group" : "Plain Group"));
 ```
 
-To create a Masked Group, use [commands.createMaskGroup](/develop/reference/commands/#commandscreatemaskgroup) instead of [commands.group](/develop/reference/commands/#commandsgroup).
+To create a Masked Group, use [commands.createMaskGroup](/develop/reference/commands/#createmaskgroup) instead of [commands.group](/develop/reference/commands/#group).
 
 **Kind**: instance property of [Group](#group)
 **Read only**: true

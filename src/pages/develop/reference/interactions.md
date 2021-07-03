@@ -3,14 +3,14 @@
 The `interactions` module and related APIs provide _read only_ information about the document's interactive prototype mode, including:
 
 - The blue "wires" seen in XD's prototyping UI, known as "interactions," which specify gestures/events which trigger actions to
-  occur in the prototype. Accessible as a single consolidated global listing via this module's [allInteractions](#module_interactions-allInteractions) API,
-  or you can access information from specific nodes in the scenegraph via [SceneNode.triggeredInteractions](/develop/reference/scenegraph/#SceneNode-triggeredInteractions)
-  and [Artboard.incomingInteractions](/develop/reference/scenegraph/#Artboard-incomingInteractions).
+  occur in the prototype. Accessible as a single consolidated global listing via this module's [allInteractions](#allinteractions) API,
+  or you can access information from specific nodes in the scenegraph via [SceneNode.triggeredInteractions](/develop/reference/SceneNode/#triggeredinteractions)
+  and [Artboard.incomingInteractions](/develop/reference/Artboard/#incominginteractions).
 
-- Designers can author multiple prototype or interaction flows in a single document and publish unique shareable links for each flow. Developers can access all document flows using the [flows](#module_interactions-flows) API. With multiple flow support the [homeArtboard](#module_interactions-homeArtboard) API is being deprecated as XD no longer has a single home artboard restriction.
+- Designers can author multiple prototype or interaction flows in a single document and publish unique shareable links for each flow. Developers can access all document flows using the [flows](#flows) API. With multiple flow support the [homeArtboard](#homeartboard) API is being deprecated as XD no longer has a single home artboard restriction.
 
-- Properties that affect Artboard scrolling behavior: Artboard [viewportHeight](/develop/reference/scenegraph/#Artboard-viewportHeight) and
-  node [fixedWhenScrolling](/develop/reference/scenegraph/#SceneNode-fixedWhenScrolling).
+- Properties that affect Artboard scrolling behavior: Artboard [viewportHeight](/develop/reference/Artboard/#viewportheight) and
+  node [fixedWhenScrolling](/develop/reference/SceneNode/#fixedwhenscrolling).
 
 > **Tip**
 > Interactions are a **fast-changing area** in XD. APIs here have a higher likelihood of becoming deprecated, or lagging behind new XD features, than other parts of XD's plugin APIs.
@@ -125,9 +125,9 @@ Navigate the entire screen to view a different artboard. Additional Action prope
 
 | Property               | Type                        | Description                                                                                                                                                                                         |
 | ---------------------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| destination            | [Artboard](/develop/reference/scenegraph#artboard) | Artboard to navigate to.                                                                                                                                                                            |
+| destination            | [Artboard](/develop/reference/Artboard) | Artboard to navigate to.                                                                                                                                                                            |
 | transition             | [Transition](#typedef-transition) | Animation style with which the view transitions from the old Artboard to the new one.                                                                                                               |
-| preserveScrollPosition | boolean                     | If both Artboards are [taller than the viewport](/develop/reference/scenegraph#artboardviewportheight--number), attempts to keep the user's current scroll position the same as in the outgoing artboard. |
+| preserveScrollPosition | boolean                     | If both Artboards are [taller than the viewport](/develop/reference/Artboard/#viewportheight), attempts to keep the user's current scroll position the same as in the outgoing artboard. |
 
 #### "overlay"
 
@@ -135,7 +135,7 @@ Displays a second artboard overlaid on top of the current one. Additional Action
 
 | Property       | Type                        | Description                                                                                                                 |
 | -------------- | --------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| overlay        | [Artboard](/develop/reference/scenegraph#artboard) | Artboard to show on top.                                                                                                    |
+| overlay        | [Artboard](/develop/reference/Artboard) | Artboard to show on top.                                                                                                    |
 | transition     | [Transition](#typedef-transition) | Animation style in which the second Artboard transitions into view. Only certain transition types are allowed for overlays. |
 | overlayTopLeft | `{x:number, y:number}`     | Position of the overlay Artboard, in the current/base Artboard's coordinate space.                                          |
 
@@ -172,18 +172,18 @@ Information related to a particular flow
 | Property     | Type                                                  | Description                                                                                                                      |
 | ------------ | ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- |
 | name         | string                                                | Auto-generated or user-defined label for a particular flow.                                                                      |
-| homeArtboard | [Artboard](/develop/reference/scenegraph/#Artboard) | Artboard from which a particular flow or a prototype experience begins.                                                          |
+| homeArtboard | [Artboard](/develop/reference/Artboard) | Artboard from which a particular flow or a prototype experience begins.                                                          |
 | url          | string                                                | URL is the latest published link associated with a particular flow and can be `null` in case no link is published for that flow. |
 
-NOTE: All `url` returned via [flows](#interactionsflows--arrayflowinfo) are related to published flows and are usually a subset of the URLs returned via [getSharedArtifacts](/develop/reference/cloud/#cloudgetsharedartifacts). However, the reverse may or may not always hold true.
+NOTE: All `url` returned via [flows](#flows) are related to published flows and are usually a subset of the URLs returned via [getSharedArtifacts](/develop/reference/cloud/#getsharedartifacts). However, the reverse may or may not always hold true.
 
 ## homeArtboard
 
-▸ homeArtboard: [?Artboard](/develop/reference/scenegraph#artboard)
+▸ homeArtboard: [?Artboard](/develop/reference/Artboard)
 
 The starting Artboard seen when the interactive prototype is launched.
 
-**Deprecated**: XD 33 - Please use [flows](#interactionsflows--arrayflowinfo) which supports multple flows.
+**Deprecated**: XD 33 - Please use [flows](#flows) which supports multple flows.
 
 **Since**: XD 32
 
@@ -192,7 +192,7 @@ In case there are multiple interactive prototype experiences (flows), implying m
 **Kind**: static property of [interactions](#module_interactions)
 **Read only**: true
 
-**See**: [Artboard.isHomeArtboard](/develop/reference/scenegraph/#Artboard-isHomeArtboard)
+**See**: [Artboard.isHomeArtboard](/develop/reference/Artboard/#ishomeartboard)
 
 ## flows
 
@@ -209,10 +209,10 @@ A `flow` is a series or set of artboards starting from one artboard (called a ho
 
 ## allInteractions
 
-▸ allInteractions: `Array<{triggerNode:` [SceneNode](/develop/reference/scenegraph#scenenode)`, interactions: Array<`[Interaction](#typedef-interaction)`}>`
+▸ allInteractions: `Array<{triggerNode:` [SceneNode](/develop/reference/SceneNode)`, interactions: Array<`[Interaction](#typedef-interaction)`}>`
 
 Returns a collection of _all_ interactions across the entire document, grouped by triggering scenenode. Each entry in this array
-specifies a `triggerNode` and the result of getting [triggerNode.triggeredInteractions](/develop/reference/scenegraph/#SceneNode-triggeredInteractions).
+specifies a `triggerNode` and the result of getting [triggerNode.triggeredInteractions](/develop/reference/SceneNode/#triggeredinteractions).
 
 May include interactions that are impossible to trigger because the trigger node (or one of its ancestors) has `visible` = false.
 

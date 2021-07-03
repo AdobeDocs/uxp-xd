@@ -1,7 +1,8 @@
 # SymbolInstance
 
 **Kind**: class
-**Extends**: [SceneNode](#scenenode)
+
+**Extends**: [SceneNode](/develop/reference/SceneNode)
 
 Container node representing one instance of a Component (previously known as "Symbols" in XD's UI). Changes made to the contents of a
 SymbolInstance are treated in one of two ways:

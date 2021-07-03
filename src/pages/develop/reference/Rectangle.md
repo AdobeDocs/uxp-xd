@@ -1,7 +1,8 @@
 # Rectangle
 
 **Kind**: class
-**Extends**: [GraphicNode](#graphicnode)
+
+**Extends**: [GraphicNode](/develop/reference/GraphicNode)
 
 Rectangle leaf node shape, with or without rounded corners. Like all shape nodes, has no fill or stroke by default unless you set one.
 
@@ -37,9 +38,9 @@ All numbers >= 0.
 **Default**: `{topLeft:0, topRight:0, bottomRight:0, bottomLeft:0}`
 
 The actual corner radius that is rendered is capped based on the size of the rectangle even if the radius value set here is higher (see
-[effectiveCornerRadii](#rectangle-effectivecornerradii).
+[effectiveCornerRadii](#effectivecornerradii).
 
-To set all corners to the same value, use [setAllCornerRadii](#rectangle-setallcornerradii).
+To set all corners to the same value, use [setAllCornerRadii](#setallcornerradii).
 
 **Kind**: instance property of [Rectangle](#rectangle)
 
@@ -57,9 +58,9 @@ True if any of the Rectangle's four corners is rounded (corner radius > 0).
 ▸ **setAllCornerRadii**(radius)
 
 Set the rounding radius of all four corners of the Rectangle to the same value. The actual corner radius that is rendered is capped based on
-the size of the rectangle even if the radius value set here is higher (see [effectiveCornerRadii](#rectangle-effectivecornerradii).
+the size of the rectangle even if the radius value set here is higher (see [effectiveCornerRadii](#effectivecornerradii).
 
-To set the corners to different radius values, use [cornerRadii](#rectangle-cornerradii).
+To set the corners to different radius values, use [cornerRadii](#cornerradii).
 
 **Kind**: instance method of [Rectangle](#rectangle)
 

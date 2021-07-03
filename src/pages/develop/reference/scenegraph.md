@@ -11,8 +11,8 @@ You can modify properties on any scenenodes within the current [_edit context_](
 edit context, but you cannot make structural changes directly to the scenegraph tree. Instead, use [commands](/develop/reference/commands/).
 
 Typically, you access scenegraph nodes via the [selection](/develop/reference/selection/) argument that is passed to your plugin command, or by
-traversing the entire document tree using the [documentRoot](#rootnode) argument that is passed to your plugin command. These
-objects are also accessible [on the scenegraph module](#other-module-members) for convenience.
+traversing the entire document tree using the [documentRoot](/develop/reference/RootNode) argument that is passed to your plugin command. These
+objects are also accessible on the scenegraph module for convenience.
 
 **Example**
 
@@ -83,18 +83,18 @@ function myCommand(selection) {
 
 Object representing the current selection state and [edit context](/develop/plugin-development/xd-concepts/edit-context/). Also available as the first argument passed to your plugin command handler function.
 
-**Kind**: static property of [scenegraph](#module_scenegraph)
+**Kind**: static property of [scenegraph](#scenegraph)
 **Read only**: true
 
 ## root
 
-▸ **root**: [RootNode](#rootnode)
+▸ **root**: [RootNode](/develop/reference/RootNode)
 
 **Since**: XD 14
 
 Root node of the current document's scenegraph. Also available as the second argument passed to your plugin command handler function.
 
-**Kind**: static property of [scenegraph](#module_scenegraph)
+**Kind**: static property of [scenegraph](#scenegraph)
 **Read only**: true
 
 ## getNodeByGUID()
@@ -103,13 +103,13 @@ Root node of the current document's scenegraph. Also available as the second arg
 
 **Since**: XD 28
 
-Returns the scenenode in this document that has the given [node GUID](#scenenodeguid--string). Returns undefined if no such node exists connected
+Returns the scenenode in this document that has the given [node GUID](/develop/reference/SceneNode/#guid). Returns undefined if no such node exists connected
 to the scenegraph tree (detached/orphan nodes will not be found). This provides a fast way of persistently remembering a node across plugin
 operations and even across document open/closes.
 
 | Param | Type   | Description                                                                                   |
 | ----- | ------ | --------------------------------------------------------------------------------------------- |
-| guid  | string | SceneNode GUID -- must be all lowercase, as returned by the [guid getter](#scenenodeguid--string) |
+| guid  | string | SceneNode GUID -- must be all lowercase, as returned by the [guid getter](/develop/reference/SceneNode/#guid) |
 
 **Example**
 
@@ -125,4 +125,4 @@ if (sameNode) {
 }
 ```
 
-**Kind**: static method of [scenegraph](#module_scenegraph)
+**Kind**: static method of [scenegraph](#scenegraph)

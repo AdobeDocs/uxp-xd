@@ -1,9 +1,10 @@
 # Path
 
 **Kind**: class
-**Extends**: [GraphicNode](#graphicnode)
 
-Arbitrary vector Path leaf node shape. Paths can be open or closed, and a Path may include multiple disjoint sections (aka a "compound
+**Extends**: [GraphicNode](/develop/reference/GraphicNode)
+
+Arbitrary vector Path leaf node shape. Paths can be open or closed, and a Path may include multiple disjoint sections (a.k.a. a "compound
 path"). Even open Paths may have a fill - the fill is drawn as if the Path were closed with a final "Z" segment.
 
 The path may not start at (0,0) in local coordinates, for example if it starts with a move ("M") segment.

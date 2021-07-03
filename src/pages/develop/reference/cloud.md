@@ -1,5 +1,7 @@
 # cloud
 
+**Since**: XD 14
+
 The `cloud` module lets you get information about shared prototypes and design specs.
 
 **Example**
@@ -30,21 +32,13 @@ specs.forEach((artifact) => {
 });
 ```
 
-**Since**: XD 14
-
-- [cloud](#module_cloud)
-  - [.getSharedArtifacts()](#module_cloud-getSharedArtifacts) ⇒ `Array.<PrototypeArtifact|SpecsArtifact>`
-
 ## Enums
 
 <dl>
 <dt><a name="ArtifactType"></a> ArtifactType : </dt><dd>`PROTOTYPE, SPECS` - Type of shared artifact: interactive prototype only, or developer-focused specs view (which may <i>also</i> include access to an interactive prototype view)</dd>
-
 <dt><a name="TargetPlatform"></a> TargetPlatform : </dt><dd>`WEB, IOS, ANDROID` - Target platform for published design specs</dd>
-
 <dt><a name="AccessLevel"></a> AccessLevel : </dt><dd>`LINKABLE, PASSWORD_PROTECTED, INVITE_ONLY` - Access level of the shared link: accessible to anyone with the link, anyone with the link + password, or only specific
 Creative Cloud user accounts</dd>
-
 </dl>
 
 ## Typedefs

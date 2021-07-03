@@ -1,8 +1,10 @@
 # Polygon
 
-**Since**: XD 19
 **Kind**: class
-**Extends**: [GraphicNode](#graphicnode)
+
+**Extends**: [GraphicNode](/develop/reference/GraphicNode)
+
+**Since**: XD 19
 
 Leaf node shape that is either a convex polygon _or_ a star shape. May have rounded corners. The sides are not necessarily all equal in length:
 this is true only when the Polygon's width and height matches the aspect ratio of a regular (equilateral) polygon with the given number of
@@ -74,7 +76,7 @@ then set size back to the saved values.
 
 ▸ **cornerRadii**: `Array<number>`
 
-List of corner radius for each corner of the polygon. To set corner radius, use [setAllCornerRadii()](#polygon-setallcornerradii).
+List of corner radius for each corner of the polygon. To set corner radius, use [setAllCornerRadii()](#setallcornerradii).
 
 **Kind**: instance property of [Polygon](#polygon)
 **Read only**: true

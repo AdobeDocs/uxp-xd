@@ -1,8 +1,10 @@
 # ScrollableGroup
 
 **Since:** XD 30
+
 **Kind**: class
-**Extends**: [SceneNode](#scenenode)
+
+**Extends**: [SceneNode](/develop/reference/SceneNode)
 
 ScrollableGroup nodes are content that users can interactively scroll around. Content is viewed through a [viewport](#scrollablegroup-viewport),
 with everything else clipped. If a ScrollableGroup is set to only scroll on one axis, on the other axis the viewport is

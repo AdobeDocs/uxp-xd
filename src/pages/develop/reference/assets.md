@@ -43,10 +43,10 @@ Assets library entry representing a set of text character styles.
 
 ### Typedef CharacterStyle
 
-Character style properties. See documentation for the [Text](/develop/reference/scenegraph/#text) node type for more details.
+Character style properties. See documentation for the [Text](/develop/reference/Text) node type for more details.
 
 When creating a new character style, all properties are mandatory except those with default values specified here. When deleting
-an existing character style, always pass the exact object returned by [characterStyles.get()](#module_assets-characterStyles-get) (with all properties fully
+an existing character style, always pass the exact object returned by [characterStyles.get()](#characterstylesget) (with all properties fully
 specified) to avoid any ambiguity.
 
 | Property      | Type     | Description                                                                                |
@@ -69,9 +69,9 @@ specified) to avoid any ambiguity.
 The collection of colors and gradients saved in this document's Assets library.
 
 - [.colors](#module_assets-colors)
-  - [.get()](#module_assets-colors-get) ⇒ `Array.<ColorAsset|GradientAsset>`
-  - [.add(colorAssets)](#module_assets-colors-add) ⇒ `number`
-  - [.delete(colorAssets)](#module_assets-colors-delete) ⇒ `number`
+  - [.get()](#colorsget): `Array.<ColorAsset|GradientAsset>`
+  - [.add(colorAssets)](#colorsadd): `number`
+  - [.delete(colorAssets)](#colorsdelete): `number`
 
 ---
 ### colors.get()
@@ -142,7 +142,7 @@ Delete color/gradient assets from the collection.
 
 The list may contain a mix of solid Color assets and/or gradient assets. Assets with the same color/gradient are
 removed _even if their names differ_. Assets that already don't exist in the collection are silently ignored.
-Typically you will pass asset objects returned from [get()](#module_assets-colors-get) directly to this function.
+Typically you will pass asset objects returned from [get()](#colorsget) directly to this function.
 
 **Kind**: static method of [colors](#module_assets-colors)
 
@@ -166,9 +166,9 @@ var assets = require("assets"),
 The collection of character styles saved in this document's Assets library.
 
 - [.characterStyles](#module_assets-characterStyles)
-  - [.get()](#module_assets-characterStyles-get) ⇒ `Array.<CharacterStyleAsset>`
-  - [.add(charStyleAssets)](#module_assets-characterStyles-add) ⇒ `number`
-  - [.delete(charStyleAssets)](#module_assets-characterStyles-delete) ⇒ `number`
+  - [.get()](#characterstylesget): `Array.<CharacterStyleAsset>`
+  - [.add(charStyleAssets)](#characterstylesadd): `number`
+  - [.delete(charStyleAssets)](#characterstylesdelete): `number`
 
 ---
 ### characterStyles.get()
@@ -249,7 +249,7 @@ Delete one or more character style assets from the collection.
 Assets with the same character style are removed _even if their names differ_. Assets that already don't exist in the
 collection are silently ignored. All character style properties must be fully specified (no properties are optional).
 
-To avoid ambiguity, pass the exact asset objects returned from [get()](#module_assets-characterStyles-get) directly
+To avoid ambiguity, pass the exact asset objects returned from [get()](#characterstylesget) directly
 to this function.
 
 **Kind**: static method of [characterStyles](#module_assets-characterStyles)

@@ -1,24 +1,25 @@
 # Line
 
 **Kind**: class
-**Extends**: [GraphicNode](#graphicnode)
+
+**Extends**: [GraphicNode](/develop/reference/GraphicNode)
 
 Line leaf node shape. Lines have a stroke but no fill.
 
 ## start
 
-▸ **start**: [Point](#point)
+▸ **start**: [Point](/develop/reference/scenegraph/#typedef-point)
 
-Start point of the Line in local coordinate space. To change the start point, use [setStartEnd](#line-setstartend).
+Start point of the Line in local coordinate space. To change the start point, use [setStartEnd](#setstartend).
 
 **Kind**: instance property of [Line](#line)
 **Read only**: true
 
 ## end
 
-▸ **end**: [Point](#point)
+▸ **end**: [Point](/develop/reference/scenegraph/#typedef-point)
 
-Endpoint of the Line in local coordinate space. To change the endpoint, use [setStartEnd](#line-setstartend).
+Endpoint of the Line in local coordinate space. To change the endpoint, use [setStartEnd](#setstartend).
 
 **Kind**: instance property of [Line](#line)
 **Read only**: true

@@ -1,7 +1,8 @@
 # GraphicNode
 
 **Kind**: abstract class
-**Extends**: [SceneNode](#scenenode)
+
+**Extends**: [SceneNode](/develop/reference/SceneNode)
 
 Base class for nodes that have a stroke and/or fill. This includes leaf nodes such as Rectangle, as well as BooleanGroup
 which is a container node. If you create a shape node, it will not be visible unless you explicitly give it either a stroke
@@ -21,7 +22,6 @@ Freshly created nodes have no fill by default.
 For Line nodes, fill is ignored. For Text nodes, _only_ solid Color fill values are allowed. For Artboard nodes, image fill values
 are not allowed.
 
-**Kind**: instance property of [GraphicNode](#graphicnode)
 **Example**
 
 ```js
@@ -30,6 +30,8 @@ ellipse.fill = new Color("red");
 
 To modify an existing fill, always be sure to re-invoke the `fill` setter rather than just changing the fill object's properties inline.
 See ["Properties with object values"](/develop/plugin-development/xd-concepts/properties-with-object-values/).
+
+**Kind**: instance property of [GraphicNode](#graphicnode)
 
 ## fillEnabled
 
@@ -50,7 +52,7 @@ If false, the `fill` is not rendered. The user can toggle this via a checkbox in
 The stroke color applied to this shape, if any. If this property is null _or_ `strokeEnabled` is false, no stroke is drawn.
 Freshly created nodes have no stroke by default. Artboard objects ignore stroke settings.
 
-Depending on the [strokeWidth](#graphicnode-strokewidth) and [strokePosition](#graphicnode-strokeposition), the path outline
+Depending on the [strokeWidth](#strokewidth) and [strokePosition](#strokeposition), the path outline
 of a node may need to be positioned on fractional pixels in order for the stroke itself to be crisply aligned to the pixel grid.
 For example, if a horizontal line uses a 1px center stroke, the line's y should end in .5 to keep the stroke on-pixel.
 
@@ -121,7 +123,7 @@ How sharp corners in the shape are rendered: GraphicNode.STROKE_JOIN_BEVEL, STRO
 
 **Default**: `4`
 
-Expressed as a multiple of stroke width. Only used when [strokeJoins](#graphicnode-strokejoins) = STROKE_JOIN_MITER.
+Expressed as a multiple of stroke width. Only used when [strokeJoins](#strokejoins) = STROKE_JOIN_MITER.
 
 **Kind**: instance property of [GraphicNode](#graphicnode)
 
@@ -136,7 +138,7 @@ stroke's dash pattern, repeated along the length of the stroke. The first value 
 If the array is odd length, the items are copied to double the array length. For example, `[3]` produces the same effect
 as `[3, 3]`.
 
-The appearance of each segment's start/end follows the [strokeEndCaps](#graphicnodestrokeendcaps--string) setting.
+The appearance of each segment's start/end follows the [strokeEndCaps](#strokeendcaps) setting.
 
 **Kind**: instance property of [GraphicNode](#graphicnode)
 
@@ -181,7 +183,7 @@ See ["Properties with object values"](/develop/plugin-development/xd-concepts/pr
 
 ▸ **pathData**: `string`
 
-Returns a representation of the node's outline in SVG `<path>` syntax. Note that only nodes with [strokePosition](#graphicnodestrokeposition--string) ==
+Returns a representation of the node's outline in SVG `<path>` syntax. Note that only nodes with [strokePosition](#strokeposition) ==
 `GraphicNode.CENTER_STROKE` can be faithfully rendered in actual SVG using the exact pathData shown here.
 
 **Kind**: instance property of [GraphicNode](#graphicnode)

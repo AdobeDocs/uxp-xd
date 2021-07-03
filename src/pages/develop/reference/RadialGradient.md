@@ -2,9 +2,9 @@
 
 **Kind**: class
 
-In a radial gradient, colors blend smoothly in a radius around a center point. The gradient fills the entire area of the shape it is applied to.
-
 **Since**: XD 42
+
+In a radial gradient, colors blend smoothly in a radius around a center point. The gradient fills the entire area of the shape it is applied to.
 
 ## new RadialGradient()
 

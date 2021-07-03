@@ -1,7 +1,8 @@
 # RootNode
 
 **Kind**: class
-**Extends**: [SceneNode](#scenenode)
+
+**Extends**: [SceneNode](/develop/reference/SceneNode)
 
 Class representing the root node of the document. All Artboards are children of this node, as well as any pasteboard content that
 does not lie within an Artboard. Artboards must be grouped contiguously at the bottom of this node's z order. The root node has no

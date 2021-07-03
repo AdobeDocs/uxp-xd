@@ -217,7 +217,7 @@ Translate with Point.  Returns the modified matrix.
 
 ## getTranslate()
 
-▸ **getTranslate**(): [Array](#Array)
+▸ **getTranslate**(): `Array`
 
 Get the translate component of this matrix, as an array.
 
@@ -281,7 +281,7 @@ Rotate the matrix around the Y axis.
 
 Returns the x coordinate for a given point after transformation described by the matrix.
 
-**See**: [Matrix3D.y](#Matrix3Dyx-y-z-⇒-number), [Matrix3D.z](#Matrix3Dzx-y-z-⇒-number)
+**See**: [Matrix3D.y](#y), [Matrix3D.z](#z)
 
 | Param | Type      | Description                         |
 | ----- | --------- | ----------------------------------- |
@@ -297,7 +297,7 @@ Returns the x coordinate for a given point after transformation described by the
 
 Returns the y coordinate for a given point after transformation described by the matrix.
 
-**See**: [Matrix3D.x](#Matrix3Dxx-y-z-⇒-number), [Matrix3D.z](#Matrix3Dzx-y-z-⇒-number)
+**See**: [Matrix3D.x](#x), [Matrix3D.z](#z)
 
 | Param | Type      | Description                         |
 | ----- | --------- | ----------------------------------- |
@@ -313,7 +313,7 @@ Returns the y coordinate for a given point after transformation described by the
 
 Returns the z coordinate for a given point after transformation described by the matrix.
 
-**See**: [Matrix3D.x](#Matrix3Dxx-y-z-⇒-number), [Matrix3D.y](#Matrix3Dyx-y-z-⇒-number)
+**See**: [Matrix3D.x](#x), [Matrix3D.y](#y)
 
 | Param | Type      | Description                         |
 | ----- | --------- | ----------------------------------- |

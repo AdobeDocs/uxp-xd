@@ -24,11 +24,11 @@ If no arguments, creates a new identity matrix by default.
 
 Copies another matrix's values into this matrix.
 
-**Kind**: instance method of [Matrix](#Matrix)
-
 | Param       | Type                  | Description                     |
 | ----------- | --------------------- | ------------------------------- |
 | otherMatrix | [Matrix](#Matrix) | The matrix to copy values from. |
+
+**Kind**: instance method of [Matrix](#Matrix)
 
 ## clone()
 
@@ -92,7 +92,7 @@ Returns an inverted version of the matrix. Returns a brand new matrix - does _no
 
 ▸ **translate**(tx, ty): [Matrix](#Matrix)
 
-Applies translation _before_ the current transform of this matrix, as if using the [add()](#Matrix-add) method.
+Applies translation _before_ the current transform of this matrix, as if using the [add()](#add) method.
 Modifies this matrix object and also returns it so calls can be chained.
 
 **Kind**: instance method of [Matrix](#Matrix)
@@ -106,7 +106,7 @@ Modifies this matrix object and also returns it so calls can be chained.
 
 ▸ **scale**(sx, sy, cx, cy): [Matrix](#Matrix)
 
-Applies scaling _before_ the current transform of this matrix, as if using the [add()](#Matrix-add) method.
+Applies scaling _before_ the current transform of this matrix, as if using the [add()](#add) method.
 Modifies this matrix object and also returns it so calls can be chained.
 
 Note: scale transforms are not generally permitted in XD.
@@ -124,7 +124,7 @@ Note: scale transforms are not generally permitted in XD.
 
 ▸ **rotate**(angle, cx, cy): [Matrix](#Matrix)
 
-Applies clockwise rotation _before_ the current transform of this matrix, as if using the [add()](#Matrix-add) method.
+Applies clockwise rotation _before_ the current transform of this matrix, as if using the [add()](#add) method.
 Modifies this matrix object and also returns it so calls can be chained.
 
 **Kind**: instance method of [Matrix](#Matrix)
@@ -139,8 +139,8 @@ Modifies this matrix object and also returns it so calls can be chained.
 
 ▸ **x**(x, y): `number`
 
-Returns x coordinate of the given point after transformation described by this matrix. See also [Matrix.y](#Matrix-y) and
-[Matrix.transformPoint](#Matrix-transformPoint).
+Returns x coordinate of the given point after transformation described by this matrix. See also [Matrix.y](#y) and
+[Matrix.transformPoint](#transformpoint).
 
 **Kind**: instance method of [Matrix](#Matrix)
 
@@ -153,8 +153,8 @@ Returns x coordinate of the given point after transformation described by this m
 
 ▸ **y**(x, y): `number`
 
-Returns y coordinate of the given point after transformation described by this matrix. See also [Matrix.x](#Matrix-x) and
-[Matrix.transformPoint](#Matrix-transformPoint).
+Returns y coordinate of the given point after transformation described by this matrix. See also [Matrix.x](#x) and
+[Matrix.transformPoint](#transformpoint).
 
 **Kind**: instance method of [Matrix](#Matrix)
 
@@ -211,7 +211,7 @@ This method assumes that there is no skew in the matrix.
 ▸ **removedScaleMatrix**(scaleX, scaleY): [Matrix](#Matrix)
 
 Returns a new matrix that contains only the translate and rotate components of the current matrix, with the given scale
-factors stripped out. Must be passed the exact scale factors returned by [scaleFactors()](#Matrix-scaleFactors) for this
+factors stripped out. Must be passed the exact scale factors returned by [scaleFactors()](#scalefactors) for this
 matrix, and this matrix must have no skew/shear component.
 
 Returns a brand new matrix, and does _not_ modify this matrix object.

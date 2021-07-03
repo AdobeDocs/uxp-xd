@@ -1,7 +1,8 @@
 # Artboard
 
 **Kind**: class
-**Extends**: [GraphicNode](#graphicnode)
+
+**Extends**: [GraphicNode](/develop/reference/GraphicNode)
 
 Artboard container node. All Artboards must be children of the root node (they cannot be nested), and they must be placed _below_ all
 pasteboard content in the z order.
@@ -17,7 +18,7 @@ Artboard, its parent will automatically be changed accordingly after the edit op
 
 ▸ **width**: `number` > 0
 
-**Kind**: instance property of [Artboard](#artboard)
+**Kind**: instance property of [Artboard](#Artboard)
 
 ## height
 
@@ -25,9 +26,9 @@ Artboard, its parent will automatically be changed accordingly after the edit op
 
 For scrollable Artboards, this is the total height encompassing all content - not just the viewport size (i.e. screen height).
 
-**See**: [viewportHeight](#artboardviewportheight--number)
+**See**: [viewportHeight](#viewportheight)
 
-**Kind**: instance property of [Artboard](#artboard)
+**Kind**: instance property of [Artboard](#Artboard)
 
 ## viewportHeight
 
@@ -35,36 +36,36 @@ For scrollable Artboards, this is the total height encompassing all content - no
 
 If Artboard is scrollable, this is the height of the viewport (e.g. mobile device screen size). Null if Artboard isn't scrollable.
 
-**See**: [height](#artboardheight--number--0)
+**See**: [height](#height)
 
-**Kind**: instance property of [Artboard](#artboard)
+**Kind**: instance property of [Artboard](#Artboard)
 
 ## incomingInteractions
 
-▸ **incomingInteractions**: `Array<{ triggerNode: `[SceneNode](#scenenode)`, interactions: Array<`[Interaction](/develop/reference/interactions#typedef-interaction)`> }>`
+▸ **incomingInteractions**: `Array<{ triggerNode: `[SceneNode](/develop/reference/SceneNode)`, interactions: Array<`[Interaction](/develop/reference/interactions/#typedef-interaction)`> }>`
 
 **Since**: XD 19
 
 Get all interactions whose destination is this artboard (either navigating the entire view, i.e. a `"goToArtboard"` action, or
-showing this artboard as an overlay, i.e. an `"overlay"` action). Each element in the array is an [Interaction object](/develop/reference/interactions#typedef-interaction)
+showing this artboard as an overlay, i.e. an `"overlay"` action). Each element in the array is an [Interaction object](/develop/reference/interactions/#typedef-interaction)
 which describes a gesture/event plus the action it produces.
 
 May include interactions that are impossible to trigger because the trigger node (or one of its ancestors) has `visible` = false.
 
 Note: currently, this API excludes any applicable keyboard/gamepad interactions.
 
-**See**: [SceneNode.triggeredInteractions](#scenenode-triggeredinteractions)
+**See**: [SceneNode.triggeredInteractions](/develop/reference/SceneNode/#triggeredinteractions)
 
-**See**: [interactions.allInteractions](/develop/reference/interactions#interactionsallinteractions--arraytriggernode-scenenode-interactions-arrayinteraction)
+**See**: [interactions.allInteractions](/develop/reference/interactions/#allinteractions)
 
-**Kind**: instance property of [Artboard](#artboard)
+**Kind**: instance property of [Artboard](#Artboard)
 **Read only**: true
 
 ## isHomeArtboard
 
 ▸ **isHomeArtboard**: `boolean`
 
-**Deprecated**: XD 33 - Please use [flows](/develop/reference/interactions/#interactionsflows--arrayflowinfo) which supports multple flows.
+**Deprecated**: XD 33 - Please use [flows](/develop/reference/interactions/#flows) which supports multple flows.
 
 **Since**: XD 19
 
@@ -74,7 +75,7 @@ True if this is the starting Artboard seen when the interactive prototype is lau
 
 In case there are multiple interactive prototype experiences (flows), implying multiple home artboards, this API returns true only for the top-left artboard among all of those home artboards.
 
-**See**: [interactions.homeArtboard](/develop/reference/interactions/#module_interactions-homeArtboard)
+**See**: [interactions.homeArtboard](/develop/reference/interactions/#homeartboard)
 
-**Kind**: instance property of [Artboard](#artboard)
+**Kind**: instance property of [Artboard](#Artboard)
 **Read only**: true
