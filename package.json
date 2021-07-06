@@ -26,7 +26,7 @@
     "start:prefix": "gatsby build --prefix-paths && gatsby serve --prefix-paths",
     "dev": "gatsby develop",
     "dev:https": "gatsby develop --https --host localhost.corp.adobe.com --port 9000",
-    "build": "gatsby build",
+    "build": "NODE_OPTIONS=--max-old-space-size=4096 gatsby build",
     "build:incremental": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
