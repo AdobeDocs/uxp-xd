@@ -28,7 +28,7 @@ module.exports = [
                 title: "Folder Structure",
               },
               {
-                path: "/develop/plugin-development/plugin-structure/manifest/",
+                path: "/develop/plugin-development/plugin-structure/manifest-v3/",
                 title: "Manifest",
               },
               {
