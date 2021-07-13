@@ -60,16 +60,16 @@ The top level of the manifest JSON object contains high-level information about 
 | `name`            | `string`                                              | The name should be 3 - 45 characters. <br/> **Note:** We recommend your plugin name matches the _project name_ you created when getting your plugin ID from the Adobe Developer Console.                                                                                                                                                                                                                           | Develop / Publish |
 | `version`         | `string`                                              | Version number of your plugin in `x.y.z` format. <br/>Version must be three segments and each version component must be between `0` and `99`.                                                                                                                                                                                                                                                                      | Develop / Publish |
 | `main`   | `string` | Path to the your plugin initialization code. This can be a JavaScript file or an HTML file. | Optional (defaults to `main.js`) |
-| `icons`           | `array<object>`                                       | Icons displayed in XD's plugins panel. <br/> PNG, JPG/JPEG formats are supported and the max file size for each icon is 1MB. <br/> Two sizes are required - 24px and 48px. <br/> **Note:** Icons for XD's Plugin Manager are uploaded directly via the Adobe Developer Console, not included within your plugin itself. See our ["Publishing your plugin" guide](/distribution/packaging-your-plugin/) to learn more. | Publish           |
-| `host.app`        | `string`                                              | Indicates that this is a plugin for Adobe XD (currently, the only valid value here is `"XD"`).                                                                                                                                                                                                                                                                                                                     | Develop / Publish |
-| `host.minVersion` | `string`                                              | Minimum required version of the host app (in `x.y` format) that can run this plugin. The lowest valid version for manifest V4 plugins is version `36.0`. <br/> **Note:** The version number must be at least two segments. Typically, you'll leave the minor segment set to `0`, e.g. `16.0`.                                                                          | Develop / Publish |
-| `host.maxVersion` | `string`                                              | Maximum version of host app that can run this plugin. Same formatting as `host.minVersion`.                                                                                                                                                                                                                                                                                                                        | Optional          |
-| `entryPoints` | `EntryPointDefinition]`| Describes the entries your plugin adds to the _Plugins_ menu & plugin panel. See the next section for details. | Develop / Publish |
+| `icons`           | `array<IconDefinition>`                                       | Icons displayed in XD's plugins panel. <br/> PNG, JPG/JPEG formats are supported and the max file size for each icon is 1MB. <br/> Two sizes are required - 24px and 48px. <br/> **Note:** Icons for XD's Plugin Manager are uploaded directly via the Adobe Developer Console, not included within your plugin itself. See our ["Publishing your plugin" guide](/distribution/packaging-your-plugin/) to learn more. | Publish           |
+| `host`            | `array<HostDefinition>`                                       | Describes the supported applications that can be used with this plugin. This can include the type of application, the minimum required version, or the maximum version of the host app that the plugin supports.  | Develop / Publish |
+| `entryPoints` | `array<EntryPointDefinition>`| Describes the entries your plugin adds to the _Plugins_ menu & plugin panel. See the next section for details. | Develop / Publish |
 
 ## Icons
 
 Icons are not required during development, but *must be provided* when distributing through the Plugin Marketplace.
 The `icons` field is an array of a `IconDefinition`s:
+
+### IconDefinition
 
 Key | Type | Description
 ----|------|----------------
@@ -80,9 +80,21 @@ Key | Type | Description
 `theme` | `string[]` | Array of themes this icon supports. XD doesn't yet support themes, so you can remove this key, or you can use `all`. (Default is `all`).
 `species` | `string[]` | Identifies the type of icon and where it would make sense to display it. The default is `generic`, meaning that XD is free to use this icon anywhere. For XD panels, you should generally use `pluginList` -- this tells XD that the icon is suitable for display in the Plugins Panel.
 
+## Hosts
+
+The `host` field is an _array_ of objects matching the `HostDefinition` format specified below. These entries allow your plugin to be ran on multiple apps such as Adobe XD or Photoshop. Optionally, the field can contain a HostDefinition instead of a full array if only one type of app is being supported.
+
+### HostDefinition
+
+Key | Type | Description | Required
+----|------|-------------| --------
+`app` | `string` | Indicates that this is a plugin for Adobe XD (currently, the only valid values here are `"XD"` and `"PS"`). | Develop / Publish |
+`minVersion` | `string` | Minimum required version of the host app (in `x.y` format) that can run this plugin. The lowest valid version for manifest V4 plugins is version `36.0`. <br/> **Note:** The version number must be at least two segments. Typically, you'll leave the minor segment set to `0`, e.g. `16.0`. | Develop / Publish |
+`maxVersion` | `string` | Maximum version of host app that can run this plugin. Same formatting as `host.minVersion`. | Optional |
+
 ## Entry Points
 
-The `entryPoints` field is an _array_ of objects matching the EntryPointDefinition format specified below. These entries appear both in the _Plugins_ menu in the native menubar, and the "plugin launchpad" sidebar panel. See [Plugin menu structure](/develop/plugin-development/plugin-structure/menu-structure/) for details on how these entries are displayed.
+The `entryPoints` field is an _array_ of objects matching the `EntryPointDefinition` format specified below. These entries appear both in the _Plugins_ menu in the native menubar, and the "plugin launchpad" sidebar panel. See [Plugin menu structure](/develop/plugin-development/plugin-structure/menu-structure/) for details on how these entries are displayed.
 
 Each entry point specifies a `type`, to create either a direct-action command or a panel show/hide command.
 
