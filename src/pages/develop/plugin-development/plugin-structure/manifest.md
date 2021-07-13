@@ -67,7 +67,7 @@ The top level of the manifest JSON object contains high-level information about 
 ## Icons
 
 Icons are not required during development, but *must be provided* when distributing through the Plugin Marketplace.
-The `icons` field is an array of a `IconDefinition`s:
+The `icons` field is an array of a `IconDefinition`s.
 
 ### IconDefinition
 
@@ -88,9 +88,9 @@ The `host` field is an _array_ of objects matching the `HostDefinition` format s
 
 Key | Type | Description | Required
 ----|------|-------------| --------
-`app` | `string` | Indicates that this is a plugin for Adobe XD (currently, the only valid values here are `"XD"` and `"PS"`). | Develop / Publish |
-`minVersion` | `string` | Minimum required version of the host app (in `x.y` format) that can run this plugin. The lowest valid version for manifest V4 plugins is version `36.0`. <br/> **Note:** The version number must be at least two segments. Typically, you'll leave the minor segment set to `0`, e.g. `16.0`. | Develop / Publish |
-`maxVersion` | `string` | Maximum version of host app that can run this plugin. Same formatting as `host.minVersion`. | Optional |
+`app` | `string` | Indicates that this is a plugin for Adobe XD (currently, the only valid values here are `"XD"` and `"PS"`). | Develop / Publish
+`minVersion` | `string` | Minimum required version of the host app (in `x.y` format) that can run this plugin. The lowest valid version for manifest V4 plugins is version `36.0`. <br/> **Note:** The version number must be at least two segments. Typically, you'll leave the minor segment set to `0`, e.g. `16.0`. | Develop / Publish
+`maxVersion` | `string` | Maximum version of host app that can run this plugin. Same formatting as `host.minVersion`. | Optional
 
 ## Entry Points
 
