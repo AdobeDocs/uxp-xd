@@ -7,7 +7,7 @@
 
 ▸ new InnerShadow(`?x`, `?y`, `?blur`, `?color`, `?visible`): [InnerShadow](#InnerShadow)
 
-Creates an innerShadow object with the x, y, blur and color properties. You may omit all properties to create an InnerShadow with default values. The `visible` argument is always optional and defaults to true.
+Creates an InnerShadow object with the x, y, blur and color properties. You may omit all properties to create an InnerShadow with default values. The `visible` argument is always optional and defaults to true.
 
 | Param   | Type                |
 | ------- | ------------------- |
