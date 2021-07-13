@@ -1,10 +1,9 @@
 # AngularGradient
 
 **Kind**: class
+**Since**: XD 42
 
 In an angular (also known as "conical") gradient, colors blend together in a sweeping pattern around a shape from the center of a circle. The gradient fills the entire area of the shape it is applied to.
-
-**Since**: XD 42
 
 ## new AngularGradient()
 
@@ -68,7 +67,7 @@ Returns an array of \[startX, startY, endX, endY\].
 
 ## setEndPoints()
 
-▸ **setEndPoints**(startX, startY, endX, endY)
+▸ **setEndPoints**(`startX`, `startY`, `endX`, `endY`)
 
 Method for setting all four start/endpoint properties. _(endX, endY)_ point is the end of the gradient circle radius.
 

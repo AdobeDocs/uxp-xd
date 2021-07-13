@@ -4,7 +4,7 @@
 
 ## new Matrix()
 
-▸ **new Matrix**(): [Matrix](#Matrix)
+▸ **new Matrix**(`a`, `b`, `c`, `d`, `e`, `f`): [Matrix](#Matrix)
 
 Creates a new transform matrix with the following structure:
 
@@ -20,7 +20,7 @@ If no arguments, creates a new identity matrix by default.
 
 ## setFrom()
 
-▸ **setFrom**(otherMatrix)
+▸ **setFrom**(`otherMatrix`)
 
 Copies another matrix's values into this matrix.
 
@@ -40,7 +40,7 @@ Returns a copy of the matrix
 
 ## add()
 
-▸ **add**(aOrMatrix, b, c, d, e, f): [Matrix](#Matrix)
+▸ **add**(`aOrMatrix`, `b`, `c`, `d`, `e`, `f`): [Matrix](#Matrix)
 
 Returns the current matrix after right multiply.
 
@@ -48,8 +48,6 @@ Multiplies a passed affine transform to the right: this \* M. The result effecti
 the transform of the passed in matrix first, followed by the transform of this matrix second.
 Modifies this matrix object and also returns it so calls can be chained.
 
-**Kind**: instance method of [Matrix](#Matrix)
-
 | Param     | Type      | Description                               |
 | --------- | --------- | ----------------------------------------- |
 | aOrMatrix | `number` &#124; [Matrix](#Matrix) | A Matrix or the `a` component of an affine transform. |
@@ -59,9 +57,11 @@ Modifies this matrix object and also returns it so calls can be chained.
 | e         | `?number` | The `e` component of an affine transform. |
 | f         | `?number` | The `f` component of an affine transform. |
 
+**Kind**: instance method of [Matrix](#Matrix)
+
 ## multLeft()
 
-▸ **multLeft**(aOrMatrix, b, c, d, e, f): [Matrix](#Matrix)
+▸ **multLeft**(`aOrMatrix`, `b`, `c`, `d`, `e`, `f`): [Matrix](#Matrix)
 
 Returns the current matrix after left multiply.
 
@@ -69,8 +69,6 @@ Multiplies a passed affine transform to the left: M \* this. The result effectiv
 the transform of this matrix first, followed by the transform of the passed in matrix second.
 Modifies this matrix object and also returns it so calls can be chained.
 
-**Kind**: instance method of [Matrix](#Matrix)
-
 | Param     | Type      | Description                               |
 | --------- | --------- | ----------------------------------------- |
 | aOrMatrix | `number` &#124; [Matrix](#Matrix) | A Matrix or the `a` component of an affine transform. |
@@ -79,6 +77,8 @@ Modifies this matrix object and also returns it so calls can be chained.
 | d         | `?number` | The `d` component of an affine transform. |
 | e         | `?number` | The `e` component of an affine transform. |
 | f         | `?number` | The `f` component of an affine transform. |
+
+**Kind**: instance method of [Matrix](#Matrix)
 
 ## invert()
 
@@ -90,28 +90,26 @@ Returns an inverted version of the matrix. Returns a brand new matrix - does _no
 
 ## translate()
 
-▸ **translate**(tx, ty): [Matrix](#Matrix)
+▸ **translate**(`tx`, `ty`): [Matrix](#Matrix)
 
 Applies translation _before_ the current transform of this matrix, as if using the [add()](#add) method.
 Modifies this matrix object and also returns it so calls can be chained.
-
-**Kind**: instance method of [Matrix](#Matrix)
 
 | Param | Type     | Description                |
 | ----- | -------- | -------------------------- |
 | tx    | `number` | horizontal offset distance |
 | ty    | `number` | vertical offset distance   |
 
+**Kind**: instance method of [Matrix](#Matrix)
+
 ## matrix.scale()
 
-▸ **scale**(sx, sy, cx, cy): [Matrix](#Matrix)
+▸ **scale**(`sx`, `sy`, `cx`, `cy`): [Matrix](#Matrix)
 
 Applies scaling _before_ the current transform of this matrix, as if using the [add()](#add) method.
 Modifies this matrix object and also returns it so calls can be chained.
 
 Note: scale transforms are not generally permitted in XD.
-
-**Kind**: instance method of [Matrix](#Matrix)
 
 | Param | Type      | Description                                                                                                   |
 | ----- | --------- | ------------------------------------------------------------------------------------------------------------- |
@@ -120,14 +118,14 @@ Note: scale transforms are not generally permitted in XD.
 | cx    | `?number` | horizontal origin point from which to scale (if unspecified, scales from the local coordinates' origin point) |
 | cy    | `?number` | vertical origin point from which to scale                                                                     |
 
+**Kind**: instance method of [Matrix](#Matrix)
+
 ## matrix.rotate()
 
-▸ **rotate**(angle, cx, cy): [Matrix](#Matrix)
+▸ **rotate**(`angle`, `cx`, `cy`): [Matrix](#Matrix)
 
 Applies clockwise rotation _before_ the current transform of this matrix, as if using the [add()](#add) method.
 Modifies this matrix object and also returns it so calls can be chained.
-
-**Kind**: instance method of [Matrix](#Matrix)
 
 | Param | Type      | Description                                                                                                    |
 | ----- | --------- | -------------------------------------------------------------------------------------------------------------- |
@@ -135,59 +133,61 @@ Modifies this matrix object and also returns it so calls can be chained.
 | cx    | `?number` | horizontal origin point from which to rotate (if unspecified, scales from the local coordinates' origin point) |
 | cy    | `?number` | vertical origin point from which to rotate                                                                     |
 
+**Kind**: instance method of [Matrix](#Matrix)
+
 ## x()
 
-▸ **x**(x, y): `number`
+▸ **x**(`x`, `y`): `number`
 
 Returns x coordinate of the given point after transformation described by this matrix. See also [Matrix.y](#y) and
 [Matrix.transformPoint](#transformpoint).
 
-**Kind**: instance method of [Matrix](#Matrix)
-
 | Param | Type     |
 | ----- | -------- |
 | x     | `number` |
 | y     | `number` |
 
+**Kind**: instance method of [Matrix](#Matrix)
+
 ## y()
 
-▸ **y**(x, y): `number`
+▸ **y**(`x`, `y`): `number`
 
 Returns y coordinate of the given point after transformation described by this matrix. See also [Matrix.x](#x) and
 [Matrix.transformPoint](#transformpoint).
 
-**Kind**: instance method of [Matrix](#Matrix)
-
 | Param | Type     |
 | ----- | -------- |
 | x     | `number` |
 | y     | `number` |
 
+**Kind**: instance method of [Matrix](#Matrix)
+
 ## transformPoint()
 
-▸ **transformPoint**(point): `{x:number, y:number}`
+▸ **transformPoint**(`point`): `{x:number, y:number}`
 
 Returns x & y coordinates of the given point after transformation described by this matrix.
-
-**Kind**: instance method of [Matrix](#Matrix)
 
 | Param | Type                    |
 | ----- | ----------------------- |
 | point | `{x:number, y:number}` |
 
+**Kind**: instance method of [Matrix](#Matrix)
+
 ## transformRect()
 
-▸ **transformRect**(rect): `{x:number, y:number, width:number, height:number}`
+▸ **transformRect**(`rect`): `{x:number, y:number, width:number, height:number}`
 
 Transforms a rectangle using this matrix, returning the _axis-aligned_ bounds of the resulting rectangle. If this matrix has
 rotation, then the result will have different width & height from the original rectangle, due to axis alignment. See
 ["Coordinate Spaces"](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/) for some illustrations of this.
 
-**Kind**: instance method of [Matrix](#Matrix)
-
 | Param | Type                                                 |
 | ----- | ---------------------------------------------------- |
 | rect  | `{x:number, y:number, width:number, height:number}` |
+
+**Kind**: instance method of [Matrix](#Matrix)
 
 ## getTranslate()
 
@@ -208,7 +208,7 @@ This method assumes that there is no skew in the matrix.
 
 ## removedScaleMatrix()
 
-▸ **removedScaleMatrix**(scaleX, scaleY): [Matrix](#Matrix)
+▸ **removedScaleMatrix**(`scaleX`, `scaleY`): [Matrix](#Matrix)
 
 Returns a new matrix that contains only the translate and rotate components of the current matrix, with the given scale
 factors stripped out. Must be passed the exact scale factors returned by [scaleFactors()](#scalefactors) for this
@@ -216,12 +216,12 @@ matrix, and this matrix must have no skew/shear component.
 
 Returns a brand new matrix, and does _not_ modify this matrix object.
 
-**Kind**: instance method of [Matrix](#Matrix)
-
 | Param  | Type     | Description                           |
 | ------ | -------- | ------------------------------------- |
 | scaleX | `number` | horrizontal scale component to remove |
 | scaleY | `number` | vertical scale component to remove    |
+
+**Kind**: instance method of [Matrix](#Matrix)
 
 ## hasSkew()
 

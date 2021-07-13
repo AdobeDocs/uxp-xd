@@ -27,7 +27,7 @@ console.log("Zoom:", viewport.zoomFactor); // e.g. "0.66"
 
 ## scrollIntoView()
 
-▸ **scrollIntoView**(node) | (x, y, width, height)
+▸ **scrollIntoView**(`node`) | (`x`, `y`, `width`, `height`)
 
 Smoothly pan the viewport to bring the entire given region into view. If the region is already fully in view, does
 nothing. If the given region is too large to fit entirely in view, it is simply centered (zoom remains unchanged).
@@ -53,7 +53,7 @@ The region can be defined by passing a SceneNode, or by explicitly specifying a 
 
 ## scrollToCenter()
 
-▸ **scrollToCenter**(x, y)
+▸ **scrollToCenter**(`x`, `y`)
 
 Smoothly pan the viewport to center on a specific point in the document's global coordinates. Even if the point is
 already in view, the view pans until it is centered.
@@ -67,7 +67,7 @@ already in view, the view pans until it is centered.
 
 ## zoomToRect()
 
-▸ **zoomToRect**(node) | (x, y, width, height)
+▸ **zoomToRect**(`node`) | (`x`, `y`, `width`, `height`)
 
 Zoom & pan the view as needed so the given region fills the viewport (with some padding). If the region is large, zooms
 out as needed so it fits entirely in view. If the region is smaller, zooms _in_ so the region fills the entire viewport -

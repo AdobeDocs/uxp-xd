@@ -1,7 +1,6 @@
 # Group
 
 **Kind**: class
-
 **Extends**: [SceneNode](/develop/reference/SceneNode)
 
 Group nodes represent two types of simple containers in XD:
@@ -42,7 +41,7 @@ let group = selection.items[0];  // selection has been set to the new Group node
 
 ## addChild()
 
-▸ **addChild**(node, index)
+▸ **addChild**(`node`, `index`)
 
 Adds a child node to this container node. You can only add leaf nodes this way; to create structured subtrees of content,
 use [commands](/develop/reference/commands/).
@@ -56,7 +55,7 @@ use [commands](/develop/reference/commands/).
 
 ## addChildAfter()
 
-▸ **addChildAfter**(node, relativeTo)
+▸ **addChildAfter**(`node`, `relativeTo`)
 
 Inserts a child node after the given reference node.
 
@@ -69,7 +68,7 @@ Inserts a child node after the given reference node.
 
 ## addChildBefore()
 
-▸ **addChildBefore**(node, relativeTo)
+▸ **addChildBefore**(`node`, `relativeTo`)
 
 Inserts a child node before the given reference node.
 
@@ -90,7 +89,7 @@ Removes all children from this node. Equivalent to calling removeFromParent() on
 
 ## dynamicLayout
 
-▸ **dynamicLayout**: ?boolean
+▸ **dynamicLayout**: `?boolean`
 
 **Since:** XD 29
 

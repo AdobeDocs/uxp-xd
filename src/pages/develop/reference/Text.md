@@ -1,7 +1,6 @@
 # Text
 
 **Kind**: class
-
 **Extends**: [GraphicNode](/develop/reference/GraphicNode)
 
 Text leaf node shape. Text can have a fill and/or stroke, but only a solid-color fill is allowed (gradient or image
@@ -46,7 +45,7 @@ the new string's indices unless you explicitly change styleRanges as well.
 
 ## styleRanges
 
-▸ **styleRanges**: `Array<{length:number, fontFamily:string, fontStyle:string, fontSize:number, fill:`[Color](/develop/reference/Color)`, charSpacing:number, underline:boolean, strikethrough:boolean, textTransform:string, textScript:string}>`
+▸ **styleRanges**: `Array<{length:number`, `fontFamily:string`, `fontStyle:string`, `fontSize:number`, `fill:`[Color](/develop/reference/Color), `charSpacing:number`, `underline:boolean`, `strikethrough:boolean`, `textTransform:string`, `textScript:string}>`
 
 Array of text ranges and their character style settings. Each range covers a set number of characters in the text content. Ranges
 are contiguous, with each one starting immediately after the previous one. Any characters past the end of the last range use the
@@ -73,6 +72,7 @@ if one range covers all the text). Plugins should not assume any particular defa
 ▸ **fontStyle**: `string`
 
 **Default**: non-italic normal weight style
+
 **Since**: XD 14
 
 Set the font style across all style ranges, or get the font style of the last style range (font style of all the text

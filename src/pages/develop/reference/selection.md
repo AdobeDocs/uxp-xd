@@ -155,7 +155,7 @@ operation ends:
 
 ## isInEditContext()
 
-▸ **isInEditContext**(node): `boolean`
+▸ **isInEditContext**(`node`): `boolean`
 
 **Since**: XD 28
 

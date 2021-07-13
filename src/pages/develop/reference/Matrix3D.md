@@ -4,7 +4,7 @@
 
 ## new Matrix3D()
 
-▸ **new Matrix3D**(a, b, c, d, e, f, m20, m21, m02, m12, m22, z): [Matrix3D](#Matrix3D)
+▸ **new Matrix3D**(`a`, `b`, `c`, `d`, `e`, `f`, `m20`, `m21`, `m02`, `m12`, `m22`, `z`): [Matrix3D](#Matrix3D)
 
 Creates a new 3D transform matrix with the following structure:
 
@@ -17,7 +17,7 @@ Creates a new 3D transform matrix with the following structure:
 
 ## newFrom()
 
-▸ **newFrom**(m): [Matrix3D](#Matrix3D)
+▸ **newFrom**(`m`): [Matrix3D](#Matrix3D)
 
 Create a new Matrix3D object starting from the given Matrix2D or Matrix3D parameter.
 
@@ -29,7 +29,7 @@ Create a new Matrix3D object starting from the given Matrix2D or Matrix3D parame
 
 ## setFrom()
 
-▸ **setFrom**(otherMatrix)
+▸ **setFrom**(`otherMatrix`)
 
 Copies another matrix's values into this matrix.
 
@@ -49,7 +49,7 @@ Clone the matrix
 
 ## add()
 
-▸ **add**(m1, m2): [Matrix](/develop/reference/Matrix/) | [Matrix3D](#Matrix3D)
+▸ **add**(`m1`, `m2`): [Matrix](/develop/reference/Matrix/) | [Matrix3D](#Matrix3D)
 
 Safely add a mixture of Matrix and Matrix3D without dropping the 3D part.
 
@@ -90,7 +90,7 @@ Check if this matrix has 3D components, with an epsilon.  Returns true if we hav
 
 ## set6()
 
-▸ **set6**(a, b, c, d, e, f)
+▸ **set6**(`a`, `b`, `c`, `d`, `e`, `f`)
 
 Set the 2D components of this matrix and clear the 3D ones.
 
@@ -130,7 +130,7 @@ Return the inverse of this matrix. The original matrix is not modified.
 
 ## setConcat()
 
-▸ **setConcat**(a, b): [Matrix3D](#Matrix3D)
+▸ **setConcat**(`a`, `b`): [Matrix3D](#Matrix3D)
 
 Set this matrix to the concatenation of A * B.
 
@@ -143,7 +143,7 @@ Set this matrix to the concatenation of A * B.
 
 ## multRight()
 
-▸ **multRight**(a, b, c, d, e, f): [Matrix3D](#Matrix3D)
+▸ **multRight**(`a`, `b`, `c`, `d`, `e`, `f`): [Matrix3D](#Matrix3D)
 
 Multiplies a passed affine transform to the right: this * M.
 
@@ -160,7 +160,7 @@ Multiplies a passed affine transform to the right: this * M.
 
 ## multLeft()
 
-▸ **multLeft**(a, b, c, d, e, f): [Matrix3D](#Matrix3D)
+▸ **multLeft**(`a`, `b`, `c`, `d`, `e`, `f`): [Matrix3D](#Matrix3D)
 
 Multiplies a passed affine transform to the left: this * M.
 
@@ -177,7 +177,7 @@ Multiplies a passed affine transform to the left: this * M.
 
 ## translate()
 
-▸ **translate**(tx, ty, tz): [Matrix3D](#Matrix3D)
+▸ **translate**(`tx`, `ty`, `tz`): [Matrix3D](#Matrix3D)
 
 Translate the matrix
 
@@ -191,7 +191,7 @@ Translate the matrix
 
 ## translateLeft()
 
-▸ **translateLeft**(tx, ty, tz): [Matrix3D](#Matrix3D)
+▸ **translateLeft**(`tx`, `ty`, `tz`): [Matrix3D](#Matrix3D)
 
 Translate the matrix, but in global coordinates. Mathematically, this is the same thing as adding the delta directly to the translation column (last column) of the matrix.
 
@@ -205,7 +205,7 @@ Translate the matrix, but in global coordinates. Mathematically, this is the sam
 
 ## translateWithPoint()
 
-▸ **translateWithPoint**(point): [Matrix3D](#Matrix3D)
+▸ **translateWithPoint**(`point`): [Matrix3D](#Matrix3D)
 
 Translate with Point.  Returns the modified matrix.
 
@@ -225,7 +225,7 @@ Get the translate component of this matrix, as an array.
 
 ## scale()
 
-▸ **scale**(scale, sy, sz): [Matrix3D](#Matrix3D)
+▸ **scale**(`scale`, `sy`, `sz`): [Matrix3D](#Matrix3D)
 
 Scale the matrix
 
@@ -239,7 +239,7 @@ Scale the matrix
 
 ## rotate()
 
-▸ **rotate**(a, x, y): [Matrix3D](#Matrix3D)
+▸ **rotate**(`a`, `x`, `y`): [Matrix3D](#Matrix3D)
 
 Rotate the matrix around the Z axis (optionally, around a point).
 
@@ -253,7 +253,7 @@ Rotate the matrix around the Z axis (optionally, around a point).
 
 ## rotateX()
 
-▸ **rotateX**(a): [Matrix3D](#Matrix3D)
+▸ **rotateX**(`a`): [Matrix3D](#Matrix3D)
 
 Rotate the matrix around the X axis.
 
@@ -265,7 +265,7 @@ Rotate the matrix around the X axis.
 
 ## rotateY()
 
-▸ **rotateY**(a): [Matrix3D](#Matrix3D)
+▸ **rotateY**(`a`): [Matrix3D](#Matrix3D)
 
 Rotate the matrix around the Y axis.
 
@@ -277,7 +277,7 @@ Rotate the matrix around the Y axis.
 
 ## x()
 
-▸ **x**(x, y, z): `number`
+▸ **x**(`x`, `y`, `z`): `number`
 
 Returns the x coordinate for a given point after transformation described by the matrix.
 
@@ -293,7 +293,7 @@ Returns the x coordinate for a given point after transformation described by the
 
 ## y()
 
-▸ **y**(x, y, z): `number`
+▸ **y**(`x`, `y`, `z`): `number`
 
 Returns the y coordinate for a given point after transformation described by the matrix.
 
@@ -309,7 +309,7 @@ Returns the y coordinate for a given point after transformation described by the
 
 ## z()
 
-▸ **z**(x, y, z): `number`
+▸ **z**(`x`, `y`, `z`): `number`
 
 Returns the z coordinate for a given point after transformation described by the matrix.
 
@@ -325,7 +325,7 @@ Returns the z coordinate for a given point after transformation described by the
 
 ## transformPoint()
 
-▸ **transformPoint**(point): `{x:number, y:number}`
+▸ **transformPoint**(`point`): `{x:number, y:number}`
 
 Transforms a 2D point using the matrix.
 
@@ -345,7 +345,7 @@ Transform the point (0, 0).
 
 ## transformPoint3D()
 
-▸ **transformPoint3D**(point): `{x:number, y:number, z:number}`
+▸ **transformPoint3D**(`point`): `{x:number, y:number, z:number}`
 
 Transforms a 3D point using the matrix.
 
@@ -357,7 +357,7 @@ Transforms a 3D point using the matrix.
 
 ## transformRect()
 
-▸ **transformRect**(rect): `{x:number, y:number, width:number, height:number}`
+▸ **transformRect**(`rect`): `{x:number, y:number, width:number, height:number}`
 
 Transforms a rectangle using the matrix.
 
@@ -409,7 +409,7 @@ Get the rotation of this matrix.
 
 ## flip()
 
-▸ **flip**(flipInfo, width, height)
+▸ **flip**(`flipInfo`, `width`, `height`)
 
 Performs a flip to the matrix according to the passed FlipInfo. If the width and height of an object on which the transform matrix would be applied is passed, the required translation is performed to keep the object in place.
 
@@ -423,7 +423,7 @@ Performs a flip to the matrix according to the passed FlipInfo. If the width and
 
 ## equals()
 
-▸ **equals**(otherMatrix): `boolean`
+▸ **equals**(`otherMatrix`): `boolean`
 
 Compare a matrix for equality with a tolerance.  Returns true if current matrix is identical upto ZERO_TOLERANCE with otherMatrix.
 
@@ -435,7 +435,7 @@ Compare a matrix for equality with a tolerance.  Returns true if current matrix 
 
 ## strictEquals()
 
-▸ **strictEquals**(otherMatrix): `boolean`
+▸ **strictEquals**(`otherMatrix`): `boolean`
 
 Compare a matrix with strict equality / zero tolerance.  Returns true if current matrix is identical.
 

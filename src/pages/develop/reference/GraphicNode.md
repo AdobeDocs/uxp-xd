@@ -1,7 +1,6 @@
 # GraphicNode
 
 **Kind**: abstract class
-
 **Extends**: [SceneNode](/develop/reference/SceneNode)
 
 Base class for nodes that have a stroke and/or fill. This includes leaf nodes such as Rectangle, as well as BooleanGroup
@@ -154,7 +153,7 @@ Ignored unless `strokeDashArray` is non-empty. Shifts the "phase" of the repeati
 
 ## shadow
 
-▸ **shadow**: `?[Shadow](Shadow/)`
+▸ **shadow**: ?[Shadow](/develop/reference/Shadow)
 
 **Default**: `null`
 
@@ -167,7 +166,7 @@ See ["Properties with object values"](/develop/plugin-development/xd-concepts/pr
 
 ## blur
 
-▸ **blur**: `?[Blur](Blur/)`
+▸ **blur**: ?[Blur](/develop/reference/Blur)
 
 **Default**: `null`
 

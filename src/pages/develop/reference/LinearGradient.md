@@ -13,7 +13,7 @@ Create a new LinearGradient instance.
 
 ## clone()
 
-▸ **clone()**: `LinearGradient`
+▸ **clone()**: [LinearGradient](#LinearGradient)
 
 Returns a copy of this instance.
 
@@ -81,7 +81,7 @@ Returns an array of \[startX, startY, endX, endY\].
 
 ## setEndPoints()
 
-▸ **setEndPoints**(startX, startY, endX, endY)
+▸ **setEndPoints**(`startX`, `startY`, `endX`, `endY`)
 
 Shorthand for setting all four start/endpoint properties.
 

@@ -1,7 +1,6 @@
 # BooleanGroup
 
 **Kind**: class
-
 **Extends**: [GraphicNode](/develop/reference/GraphicNode)
 
 BooleanGroup container node - although it has fill/stroke/etc. properties like a leaf shape node, it is a container

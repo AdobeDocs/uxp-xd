@@ -1,7 +1,6 @@
 # Path
 
 **Kind**: class
-
 **Extends**: [GraphicNode](/develop/reference/GraphicNode)
 
 Arbitrary vector Path leaf node shape. Paths can be open or closed, and a Path may include multiple disjoint sections (a.k.a. a "compound

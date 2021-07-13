@@ -4,7 +4,7 @@
 
 ## new Shadow()
 
-▸ **new Shadow**(x, y, blur, color, visible): [Shadow](#Shadow)
+▸ **new Shadow**(`x`, `y`, `blur`, `color`, `visible`): [Shadow](#Shadow)
 
 Creates a drop shadow style object with the given properties.
 

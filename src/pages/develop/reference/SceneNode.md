@@ -643,7 +643,7 @@ Remove this node from its parent, effectively deleting it from the document.
 
 ## moveInParentCoordinates()
 
-▸ **moveInParentCoordinates**(deltaX, deltaY, ?deltaZ)
+▸ **moveInParentCoordinates**(`deltaX`, `deltaY`, ?`deltaZ`)
 
 **Updated** XD 40
 
@@ -669,7 +669,7 @@ For an overview of node positioning & coordinate systems, see [Coordinate spaces
 
 ## placeInParentCoordinates()
 
-▸ **placeInParentCoordinates**(registrationPoint, parentPoint)
+▸ **placeInParentCoordinates**(`registrationPoint`, `parentPoint`)
 
 Move the node so the given point in its local coordinates is placed at the given point in its parent's coordinates (taking into account
 any rotation on this node, etc.).
@@ -695,7 +695,7 @@ node.placeInParentCoordinates(nodeTopLeft, parentCenter);
 
 ## placeInParentCoordinates3D()
 
-▸ **placeInParentCoordinates3D**(registrationPoint, parentPoint)
+▸ **placeInParentCoordinates3D**(`registrationPoint`, `parentPoint`)
 
 **Since** XD 40
 
@@ -759,11 +759,15 @@ For an overview of node positioning & coordinate systems, see [Coordinate spaces
 
 ## moveZDepth()
 
-▸ **moveZDepth**(deltaZ)
+▸ **moveZDepth**(`deltaZ`)
 
 **Since** XD 40
 
 Move the node by the given number of pixels along the parent's Z axis (if this node has no 3D rotation, this is identical to moving the node along its own local Z axis).
+
+| Param      | Type           |
+| ---------- | ---------------|
+| deltaZ     | `number`       |
 
 For an overview of node positioning & coordinate systems, see [Coordinate spaces](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/).
 
@@ -772,27 +776,21 @@ For an overview of node positioning & coordinate systems, see [Coordinate spaces
 - [placeInParentCoordinates3D](#placeinparentcoordinates3d)
 - [moveInParentCoordinates](#moveinparentcoordinates)
 
-| Param      | Type           |
-| ---------- | ---------------|
-| deltaZ     | `number`       |
-
 **Kind**: instance method of [SceneNode](#scenenode)
 
 ## rotateAround()
 
-▸ **rotateAround**(deltaAngle, rotationCenter)
+▸ **rotateAround**(`deltaAngle`, `rotationCenter`)
 
 Rotate the node clockwise by the given number of degrees around the given point in the plugin's local coordinate space. If this node
 already has nonzero rotation, this operation _adds_ to its existing angle.
-
-For an overview of node transforms & coordinate systems, see [Coordinate spaces](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/).
-
-**See**: [rotation](#rotation)
 
 | Param          | Type              | Description                                          |
 | -------------- | ----------------- | ---------------------------------------------------- |
 | deltaAngle     | `number`          | In degrees.                                          |
 | rotationCenter | [Point](/develop/reference/scenegraph/#typedef-point) | Point to rotate around, in node's local coordinates. |
+
+For an overview of node transforms & coordinate systems, see [Coordinate spaces](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/).
 
 **Example**
 
@@ -804,6 +802,8 @@ node.rotateAround(45, node.localCenterPoint);
 let rotationDelta = 180 - node.rotation;
 node.rotateAround(rotationDelta, node.localCenterPoint);
 ```
+
+**See**: [rotation](#rotation)
 
 **Kind**: instance method of [SceneNode](#scenenode)
 
@@ -839,7 +839,7 @@ For an overview of node transforms & coordinate systems, see [Coordinate spaces]
 
 ## rotateXAround()
 
-▸ **rotateXAround**(deltaAngle, rotationCenter)
+▸ **rotateXAround**(`deltaAngle`, `rotationCenter`)
 
 **Since** XD 40
 
@@ -847,7 +847,7 @@ Rotate the node around X axis by the given number of degrees around the given po
 
 For an overview of node transforms & coordinate systems, see [Coordinate spaces](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/).
 
-**See** [rotationx](#rotationx}
+**See** [rotationx](#rotationx)
 
 | Param          | Type      | Description                                          |
 | -------------- | --------- | ---------------------------------------------------- |
@@ -869,7 +869,7 @@ node.rotateXAround(rotationDelta, node.localCenterPoint);
 
 ## rotateYAround()
 
-▸ **rotateYAround**(deltaAngle, rotationCenter)
+▸ **rotateYAround**(`deltaAngle`, `rotationCenter`)
 
 **Since** XD 40
 
@@ -899,7 +899,7 @@ node.rotateYAround(rotationDelta, node.localCenterPoint);
 
 ## resize()
 
-▸ **resize**(width, height)
+▸ **resize**(`width`, `height`)
 
 Attempts to change `localBounds.width` & `height` to match the specified sizes. The result is not guaranteed to
 match your requested size, since some nodes have limits on their ability to resize.

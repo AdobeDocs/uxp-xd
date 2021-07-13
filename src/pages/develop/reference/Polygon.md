@@ -1,9 +1,7 @@
 # Polygon
 
 **Kind**: class
-
 **Extends**: [GraphicNode](/develop/reference/GraphicNode)
-
 **Since**: XD 19
 
 Leaf node shape that is either a convex polygon _or_ a star shape. May have rounded corners. The sides are not necessarily all equal in length:
@@ -92,7 +90,7 @@ True if any of the Polygon's corners is rounded (corner radius > 0).
 
 ## setAllCornerRadii()
 
-▸ **setAllCornerRadii**(radius)
+▸ **setAllCornerRadii**(`radius`)
 
 Set the corner radius of all corners of the Polygon to the same value.
 

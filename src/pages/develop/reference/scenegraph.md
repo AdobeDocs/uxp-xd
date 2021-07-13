@@ -100,7 +100,7 @@ Root node of the current document's scenegraph. Also available as the second arg
 
 ## getNodeByGUID()
 
-▸ **getNodeByGUID**(guid): [SceneNode](/develop/reference/SceneNode)
+▸ **getNodeByGUID**(`guid`): [SceneNode](/develop/reference/SceneNode)
 
 **Since**: XD 28
 

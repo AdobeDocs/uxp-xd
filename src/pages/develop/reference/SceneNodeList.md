@@ -34,7 +34,7 @@ Number of children in the list.
 
 ## forEach()
 
-▸ **forEach**(callback, thisArg)
+▸ **forEach**(`callback`, `thisArg`)
 
 Iterate all children in the list.
 
@@ -47,7 +47,7 @@ Iterate all children in the list.
 
 ## forEachRight()
 
-▸ **forEachRight**(callback, thisArg)
+▸ **forEachRight**(`callback`, `thisArg`)
 
 Iterate all children in the list, in reverse order (highest z order to lowest).
 
@@ -60,7 +60,7 @@ Iterate all children in the list, in reverse order (highest z order to lowest).
 
 ## filter()
 
-▸ **filter**(callback, thisArg): `Array.<`[SceneNode](/develop/reference/SceneNode)`>`
+▸ **filter**(`callback`, `thisArg`): `Array.<`[SceneNode](/develop/reference/SceneNode)`>`
 
 Iterates all children and returns an array of just the children that passed the filter function's test.
 
@@ -73,7 +73,7 @@ Iterates all children and returns an array of just the children that passed the 
 
 ## map()
 
-▸ **map**(callback, thisArg): `Array.<*>`
+▸ **map**(`callback`, `thisArg`): `Array.<*>`
 
 Iterates all children and returns an array of the map function's result value for each child node.
 
@@ -86,7 +86,7 @@ Iterates all children and returns an array of the map function's result value fo
 
 ## some()
 
-▸ **some**(callback, thisArg): `boolean`
+▸ **some**(`callback`, `thisArg`): `boolean`
 
 Iterates children until the test returns true for at least one child.  Returns true if the test function returned true for at least one child.
 
@@ -99,7 +99,7 @@ Iterates children until the test returns true for at least one child.  Returns t
 
 ## at()
 
-▸ **at**(index): [SceneNode](/develop/reference/SceneNode)
+▸ **at**(`index`): [SceneNode](/develop/reference/SceneNode)
 
 Returns the child node at the specified index in the list, or null if index is out of bounds.
 

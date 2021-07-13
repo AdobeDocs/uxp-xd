@@ -1,7 +1,6 @@
 # Line
 
 **Kind**: class
-
 **Extends**: [GraphicNode](/develop/reference/GraphicNode)
 
 Line leaf node shape. Lines have a stroke but no fill.
@@ -26,7 +25,7 @@ Endpoint of the Line in local coordinate space. To change the endpoint, use [set
 
 ## setStartEnd()
 
-▸ **setStartEnd**(startX, startY, endX, endY)
+▸ **setStartEnd**(`startX`, `startY`, `endX`, `endY`)
 
 Set the start and end points of the Line in local coordinate space. The values may be normalized by this setter, shifting the node's
 translation and counter-shifting the start/end points. So the start/end getters may return values different from the values you

@@ -1,8 +1,7 @@
 # InnerShadow
 
-**Since**: XD 41
-
 **Kind**: class
+**Since**: XD 41
 
 ## new InnerShadow()
 

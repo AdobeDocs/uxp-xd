@@ -59,14 +59,13 @@ r, g, b, a range from 0 - 255.
 ▸ **toHex**(`forceSixDigits`): `string`
 
 Convert to hex string with "#" prefix. Ignores the Color's alpha value.
-Returns a 3-digit string if possible, otherwise returns a 6-digit string.
-
-**Kind**: instance method of [Color](#Color)
-**Returns**: `string` - Hex color string in the form #123 or #456ABC.
+Returns a 3-character string in the form `#123` if possible, otherwise returns a 6-character string in the form `#456ABC`.
 
 | Param          | Type      | Description                                          |
 | -------------- | --------- | ---------------------------------------------------- |
 | forceSixDigits | `boolean` | True if you want the result to always have 6 digits. |
+
+**Kind**: instance method of [Color](#Color)
 
 ## clone()
 

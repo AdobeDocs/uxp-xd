@@ -1,7 +1,6 @@
 # RootNode
 
 **Kind**: class
-
 **Extends**: [SceneNode](/develop/reference/SceneNode)
 
 Class representing the root node of the document. All Artboards are children of this node, as well as any pasteboard content that
@@ -10,7 +9,7 @@ visual appearance of its own.
 
 ## addChild()
 
-▸ **addChild**(node, index)
+▸ **addChild**(`node`, `index`)
 
 Adds a child node to this container node. You can only add leaf nodes this way; to create structured subtrees of content,
 use [commands](/develop/reference/commands/).
@@ -24,7 +23,7 @@ use [commands](/develop/reference/commands/).
 
 ## addChildAfter()
 
-▸ **addChildAfter**(node, relativeTo)
+▸ **addChildAfter**(`node`, `relativeTo`)
 
 Inserts a child node after the given reference node.
 
@@ -37,7 +36,7 @@ Inserts a child node after the given reference node.
 
 ## addChildBefore()
 
-▸ **addChildBefore**(node, relativeTo)
+▸ **addChildBefore**(`node`, `relativeTo`)
 
 Inserts a child node before the given reference node.
 

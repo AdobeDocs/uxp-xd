@@ -12,7 +12,7 @@ clipboard.copyText(selection.items[0].name);
 
 ## copyText()
 
-▸ **copyText**(text)
+▸ **copyText**(`text`)
 
 Write plain text to the clipboard.
 

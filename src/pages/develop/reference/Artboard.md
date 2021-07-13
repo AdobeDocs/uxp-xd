@@ -1,7 +1,6 @@
 # Artboard
 
 **Kind**: class
-
 **Extends**: [GraphicNode](/develop/reference/GraphicNode)
 
 Artboard container node. All Artboards must be children of the root node (they cannot be nested), and they must be placed _below_ all

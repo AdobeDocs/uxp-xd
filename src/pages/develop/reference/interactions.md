@@ -1,5 +1,7 @@
 # interactions
 
+**Since**: XD 19+ (some APIs added later)
+
 The `interactions` module and related APIs provide _read only_ information about the document's interactive prototype mode, including:
 
 - The blue "wires" seen in XD's prototyping UI, known as "interactions," which specify gestures/events which trigger actions to
@@ -14,8 +16,6 @@ The `interactions` module and related APIs provide _read only_ information about
 
 > **Tip**
 > Interactions are a **fast-changing area** in XD. APIs here have a higher likelihood of becoming deprecated, or lagging behind new XD features, than other parts of XD's plugin APIs.
-
-**Since**: XD 19+ (some APIs added later)
 
 **Example**
 
@@ -179,7 +179,7 @@ NOTE: All `url` returned via [flows](#flows) are related to published flows and 
 
 ## homeArtboard
 
-▸ homeArtboard: [?Artboard](/develop/reference/Artboard)
+▸ homeArtboard: ?[Artboard](/develop/reference/Artboard)
 
 The starting Artboard seen when the interactive prototype is launched.
 

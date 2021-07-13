@@ -1,7 +1,6 @@
 # RepeatGrid
 
 **Kind**: class
-
 **Extends**: [SceneNode](/develop/reference/SceneNode)
 
 Repeat Grid container node containing multiple grid cells, each one a child Group. Changes within one cell are automatically synced
@@ -72,7 +71,7 @@ The size of each grid cell. The size of each cell's content can vary slightly du
 
 ## attachTextDataSeries()
 
-▸ **attachTextDataSeries**(textNode, textValues)
+▸ **attachTextDataSeries**(`textNode`, `textValues`)
 
 Attach a sequence of text values to the instances of a given text node across all the cells of a Repeat Grid. The sequence is
 repeated as necessary to cover all the grid cells. This is a persistent data binding, so if the Repeat Grid is resized _later_
@@ -94,7 +93,7 @@ You can call this API from either of _two different edit contexts_:
 
 ## attachImageDataSeries()
 
-▸ **attachImageDataSeries**(shapeNode, images)
+▸ **attachImageDataSeries**(`shapeNode`, `images`)
 
 Attach a sequence of image fills to the instances of a given shape node across all the cells of a Repeat Grid. The sequence is
 repeated as necessary to cover all the grid cells. This is a persistent data binding, so if the Repeat Grid is resized _later_

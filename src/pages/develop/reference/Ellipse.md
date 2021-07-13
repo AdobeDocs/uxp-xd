@@ -1,7 +1,6 @@
 # Ellipse
 
 **Kind**: class
-
 **Extends**: [GraphicNode](/develop/reference/GraphicNode)
 
 Ellipse leaf node shape.

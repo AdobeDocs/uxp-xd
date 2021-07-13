@@ -1,7 +1,6 @@
 # PerPluginStorage
 
 **Kind**: interface
-
 **Since**: XD 29
 
 Stores metadata accessible to multiple plugins, separated into silos by plugin ID. Your plugin can read & write the storage for its own plugin ID, but storage for other plugin IDs is _read-only_.
@@ -39,7 +38,7 @@ if (jsonString) {
 
 ## getAll()
 
-▸ **getAll**(): `Object< string, Object<string, string> >`
+▸ **getAll**(): `Object< string`, `Object<string`, `string> >`
 
 Returns a map where key is plugin ID and value is a nested map containing all the shared metadata for that plugin ID (i.e. the result of calling `getForPluginId()` with that ID).
 
@@ -65,7 +64,7 @@ console.log(
 
 ## getForPluginId()
 
-▸ **getForPluginId**(pluginId): `Object<string, string>`
+▸ **getForPluginId**(`pluginId`): `Object<string`, `string>`
 
 Returns a map of key-value string pairs containing all shared metadata stored on this node by the given plugin. May be an empty object (zero keys), but is never null.
 
@@ -94,7 +93,7 @@ console.log(
 
 ## keys()
 
-▸ **keys**(pluginId): `Array<string>`
+▸ **keys**(`pluginId`): `Array<string>`
 
 Returns a list of all keys stored on this node by the given plugin. May be empty (length zero), but is never null.
 
@@ -113,7 +112,7 @@ console.log(
 
 ## getItem()
 
-▸ **getItem**(pluginId, key): `?string`
+▸ **getItem**(`pluginId`, `key`): `?string`
 
 Returns the value stored under the given key on this node by the given plugin, or undefined if the plugin hasn't stored anything under the given key.
 
@@ -140,7 +139,7 @@ console.log(
 
 ## setItem()
 
-▸ **setItem**(pluginId, key, value)
+▸ **setItem**(`pluginId`, `key`, `value`)
 
 Set a metadata key which can be read by any other plugin.
 
@@ -164,7 +163,7 @@ console.log(node.sharedPluginData.getItem(MY_PLUGIN_ID, "foo")); // "42"
 
 ## removeItem()
 
-▸ **removeItem**(pluginId, key)
+▸ **removeItem**(`pluginId`, `key`)
 
 Clears a shared metadata key stored by your plugin.
 

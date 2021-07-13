@@ -1,7 +1,6 @@
 # RadialGradient
 
 **Kind**: class
-
 **Since**: XD 42
 
 In a radial gradient, colors blend smoothly in a radius around a center point. The gradient fills the entire area of the shape it is applied to.
@@ -22,7 +21,7 @@ Returns a copy of this instance.
 
 ## colorStops
 
-▸ **colorStops**: `Array<{stop:number, color:`[Color](/develop/reference/Color)`}>`
+▸ **colorStops**: `Array<{stop:number`, `color:`[Color](/develop/reference/Color)`}>`
 
 Array of objects representing each color and its position along the gradient line. The position (`stop` value) is a number 0.0 - 1.0.
 
@@ -55,7 +54,7 @@ the gradient inside the object's bounding box, or the values may be < 0 or > 1 f
 
 ## setCenterPoint()
 
-▸ **setCenterPoint**(cx, cy)
+▸ **setCenterPoint**(`cx`, `cy`)
 
 Method for setting the gradient center.
 
