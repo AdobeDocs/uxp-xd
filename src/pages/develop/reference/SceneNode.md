@@ -420,7 +420,7 @@ Object representing `layout.stack`
 | Param | Type | Description |
 | --- | --- | --- |
 | orientation | `string` | SceneNode.STACK_HORIZONTAL or STACK_VERTICAL |
-| spacings | `Array<Number>` or `Number` | a numbde if each cell is equidistant or an array of spaces between cells in order provided by [contentChildren](#contentchildren)  |
+| spacings | `Array<Number>` or `Number` | a number if each cell is equidistant or an array of spaces between cells in order provided by [contentChildren](#contentchildren)  |
 
 
 Object representing `layout.padding`
@@ -438,6 +438,24 @@ Object representing `layout.resizeConstraints`
 | type | `String` | SceneNode.RESPONSIVE_RESIZE_AUTO or RESPONSIVE_RESIZE_MANUAL |
 | values | `Object` | top, right, bottom, left, width and height are all Boolean vaues set to true when enabled. |
 
+**Example**
+
+```js
+// Assume user has selected a group of shapes
+let selectedGroup = selection.items[0];
+
+// Define a new layout
+let layoutStack = {
+        type: SceneNode.LAYOUT_STACK,
+        stack: {
+            orientation: SceneNode.STACK_HORIZONTAL,
+            spacings: 20
+        }
+    };
+
+// Apply layout to the group
+selectedGroup.layout = layoutStack;
+```
 
 In a `LayoutProperties` object:
 - `SceneNode.layout.padding.background` is either a SceneNode, if the current SceneNode has a background, or null, otherwise
