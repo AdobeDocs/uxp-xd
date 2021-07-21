@@ -33,7 +33,7 @@ In this section, we’ll go over what we’re checking for to ensure that your p
 - Placeholder icons will not be accepted. Icons must be unique and must be property of the plugin author. Submissions that contain icons from sample projects (or variations thereof) will be rejected.
 - Plugin icons may not contain Adobe product assets or icons.
 - Plugin icons must be clear and free of distortion.
-- All required plugin icons must be provided at the appropriate dimensions and file sizes. See the [manifest documentation](https://adobexdplatform.com/plugin-docs/reference/structure/manifest.html) and ["Publishing your plugin" guide](https://adobexdplatform.com/plugin-docs/distribution/how-to-submit-to-plugin-manager.html) to learn more about which icons to include in your plugin package versus which to upload via the Adobe Developer Console.
+- All required plugin icons must be provided at the appropriate dimensions and file sizes. See the [manifest documentation](/develop/plugin-development/plugin-structure/manifest-v3) and ["Publishing your plugin" guide](https://adobexdplatform.com/plugin-docs/distribution/how-to-submit-to-plugin-manager.html) to learn more about which icons to include in your plugin package versus which to upload via the Adobe Developer Console.
 
 ### Adobe Branding
 

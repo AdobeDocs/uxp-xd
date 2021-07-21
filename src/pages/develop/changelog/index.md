@@ -1,29 +1,44 @@
 # Changelog
 
+## XD Release 42 (July 2021)
+
+### New API Features
+
+* [AngularGradient](/develop/reference/AngularGradient) fill type
+* [RadialGradient](/develop/reference/RadialGradient) fill type
+* [LinearGradient.type](/develop/reference/LinearGradient/#type) property
+* [outlineStroke()](/develop/reference/commands/#outlinestroke) command
+
+### Other
+
+* Corrected documentation to refer to the [LinearGradient](/develop/reference/LinearGradient) class, not "LinearGradientFill"
+* Marked [rectangle.effectiveCornerRadii](/develop/reference/Rectangle/#effectivecornerradii) as read-only
+* Restructured XD's plugin API documentation (*links have changed*)
+
 ## XD Release 41.0.12 (June 2021)
 
 ### New API Features
 
-[InnerShadow](/develop/reference/scenegraph/#scenenodeinnershadow--innershadow) APIs.
+[InnerShadow](/develop/reference/InnerShadow) APIs
 
-Note: `AngularGradientFill` may be a returned graphic [fill](/develop/reference/scenegraph/#graphicnodefill--colorcolor--lineargradientfilllineargradientfill--radialgradientfill--angulargradientfill--imagefillimagefill) type in XD 41. The APIs to support angular gradients are not yet available.
+Note: [AngularGradient](/develop/reference/AngularGradient) may be a returned graphic [fill](/develop/reference/GraphicNode/#fill) type in XD 41. The APIs to support angular gradients are not yet available.
 
 ## XD Release 40.0.22 (May 2021)
 
 ### 3D Transform APIs
 
-Updated [transform](/develop/reference/scenegraph/#scenenodetransform--matrixmatrix3d) properties for 3D support
+Updated [transform](/develop/reference/SceneNode/#transform) properties for [3D support](/develop/reference/Matrix3D)
 
 ## XD Release 38.0.32 (March 2021)
 
 ### New API features
 
-- **Read & write node [layout](/develop/reference/scenegraph/#scenenodelayout--layoutproperties) properties**
+- **Read & write node [layout](/develop/reference/SceneNode/#layout) properties**
 On each SceneNode, we have defined a new property called " layout ", with getter and setter, which encapsulates all the Layout properties: Responsive Resize, Padding and Stacks. By design, the Stack property is conditioned by the presence of Padding property which, in turn, is conditioned by the presence of Responsive Resize property.
-- **Read only [contentChildren](/develop/reference/scenegraph/#scenenodecontentchildren--scenenodelist) property**
+- **Read only [contentChildren](/develop/reference/SceneNode/#contentchildren) property**
 returns the children of a SceneNode, skipping the background node, when present. The children order is the
 z-index one, from lower to higher
-- **[makeBackground](/develop/reference/commands/#commandsmakebackground) and [replaceBackground](/develop/reference/commands/#commandsreplacebackground) commands**
+- **[makeBackground](/develop/reference/commands/#makebackground) and [replaceBackground](/develop/reference/commands/#replacebackground) commands**
 
 ### UXP 4.4.1.170
 
@@ -57,7 +72,7 @@ z-index one, from lower to higher
 * Fixed issue with menu separator in flyout where it required `id` to be "-" instead of the name.
 * Fixed some Windows focus issues.
 * `sp-dialog` was not closing on ESC.
-* File pickers now accept a file path for the default location. 
+* File pickers now accept a file path for the default location.
 * `sp-meter` support.
 * `sp-switch` support.
 * `mousedown` event comes before `focus` now.
@@ -88,26 +103,26 @@ z-index one, from lower to higher
 
 ### New feature
 
-- **Auto Height Text** -- This new "auto height" text node type will adjust (grow/shrink) its height so that it always fits the content inside. Content changes, style changes and area width changes will make the area text height resize accordingly. A new text [layoutBox](/develop/reference/scenegraph.md#Text-layoutBox) API will return the type of text node and the text frame width and/or height contraints if applicable. This API should be used instead of the text [areaBox](/develop/reference/scenegraph.md#Text-areaBox) API going forward.
+- **Auto Height Text** -- This new "auto height" text node type will adjust (grow/shrink) its height so that it always fits the content inside. Content changes, style changes and area width changes will make the area text height resize accordingly. A new text [layoutBox](/develop/reference/Text/#layoutbox) API will return the type of text node and the text frame width and/or height contraints if applicable. This API should be used instead of the text [areaBox](/develop/reference/Text/#areabox) API going forward.
 
 ## XD Release 33.0.12 (September 2020)
 
 ### New API features
 
-[Read multiple flows](/develop/reference/interactions.md#module_interactions-flows)
+[Read multiple flows](/develop/reference/interactions/#flows)
 
 ## XD Release 32.0.22 (August 2020)
 
 ### New feature
 
 - **Multiple Flows** -- Designers can now author multiple prototype or interaction flows in a single document. For any document that includes multiple flow support the
-  [HomeArtboard](/develop/reference/interactions.md#module_interactions-homeArtboard) API will return the most upper left artboard and [isHomeArtBoard](/develop/reference/scenegraph.md#Artboard-isHomeArtBoard) will only return `true` for the most upper left artboard.
+  [HomeArtboard](/develop/reference/interactions/#homeartboard) API will return the most upper left artboard and [isHomeArtBoard](/develop/reference/Artboard/#ishomeartboard) will only return `true` for the most upper left artboard.
 
 ## XD Release 30.0.12 (June 2020)
 
 ### New features
 
-- **Scrollable Groups** -- Plugins will see a new [ScrollableGroup](/develop/reference/scenegraph.md#ScrollableGroup) node type and can read the scroll direction(s) and viewport size. Plugins cannot yet create a ScrollableGroup or modify its viewport, however.
+- **Scrollable Groups** -- Plugins will see a new [ScrollableGroup](/develop/reference/ScrollableGroup) node type and can read the scroll direction(s) and viewport size. Plugins cannot yet create a ScrollableGroup or modify its viewport, however.
 
 ### Known Issues
 
@@ -119,9 +134,9 @@ z-index one, from lower to higher
 
 ### New API features
 
-- **[Read & modify Responsive Resize constraints](/develop/reference/scenegraph.md#SceneNode-horizontalConstraints)**
-- **[Set metadata readable by other plugins](/develop/reference/scenegraph.md#SceneNode-sharedPluginData)**
-- [Check if two nodes share the same raster image asset](/develop/reference/ImageFill.md#ImageFill-assetId)
+- **[Read & modify Responsive Resize constraints](/develop/reference/SceneNode/#horizontalconstraints)**
+- **[Set metadata readable by other plugins](/develop/reference/SceneNode/#sharedplugindata)**
+- [Check if two nodes share the same raster image asset](/develop/reference/ImageFill/#assetid)
 
 ### UXP upgrade
 
@@ -164,14 +179,14 @@ Bug fixes:
 
 XD 28 is a minor update for plugin developers:
 
-- `SceneNode.BLEND_MODE_*` constants for use with the [`SceneNode.blendMode`](/develop/reference/scenegraph.md#SceneNode-blendMode) property (which was introduced in XD 27).
-- Quickly look up a scenenode by its GUID with [`scenegraph.getNodeByGUID()`](/develop/reference/scenegraph.md#module_scenegraph-getNodeByGUID).
-- Easily check if a scenenode is currently in scope for editing with [`isInEditContext()`](/develop/reference/selection.md#selection-isInEditContext).
+- `SceneNode.BLEND_MODE_*` constants for use with the [SceneNode.blendMode](/develop/reference/SceneNode/#blendmode) property (which was introduced in XD 27).
+- Quickly look up a scenenode by its GUID with [scenegraph.getNodeByGUID()](/develop/reference/scenegraph/#getnodebyguid).
+- Easily check if a scenenode is currently in scope for editing with [isInEditContext()](/develop/reference/selection/#isineditcontext).
 
 ### Known Issues
 
 - XD 28 introduces two new types of interaction actions: audio-file playback, and "scroll to" actions. Interactions using these features are not visible to plugins yet (_speech_
-  playback interactions _are_ exposed though). See the [interactions API documentation](/develop/reference/interactions.md#module_interactions-allInteractions) for a complete list of
+  playback interactions _are_ exposed though). See the [interactions API documentation](/develop/reference/interactions) for a complete list of
   which interaction types are & aren't exposed to plugins at this time.
 
 [Read more about XD 28 new features for end users on the Adobe blog](https://theblog.adobe.com/xd-march-2020-audio-prototyping-anchor-links-more).
@@ -180,7 +195,7 @@ XD 28 is a minor update for plugin developers:
 
 XD 27 is a minor update for plugin developers, with one new added API:
 
-- Get and set [`SceneNode.blendMode`](/develop/reference/scenegraph.md#SceneNode-blendMode)
+- Get and set [SceneNode.blendMode](/develop/reference/SceneNode/#blendmode)
 
 [Read more about XD 27 new features for end users on the Adobe blog](https://theblog.adobe.com/announcing-mac-os-voice-control-adobe-xd).
 
@@ -195,7 +210,7 @@ UXP now supports the [HTML5 Drag & Drop specification](https://html.spec.whatwg.
   - On the drop target in your UI, defined `dragenter`, `dragover`, and `drop` event handlers that react appropriately.
 - **Drag from plugin panel UI into XD document**
   - Only bitmap images, SVG content, or text can be dropped into the document.
-  - Provide the mimetype `text/uri-list` and populate it only with local file paths (see [`File.nativePath`](/develop/reference/uxp/module/storage.md#module-storage-entry-nativepath)) and/or `data:` image URIs.
+  - Provide the mimetype `text/uri-list` and populate it only with local file paths (see [File.nativePath](/develop/reference/uxp/module/storage.md#module-storage-entry-nativepath)) and/or `data:` image URIs.
   - This will behave exactly the same as if the user had dropped files onto XD -- dropping an image onto a shape will use it as a mask, dropping multiline text onto a Repeat Grid text node will populate each grid cell with each line from the text content, etc.
 - It is not yet supported to drag content _onto_ your plugin from an outside source (e.g. dropping files on your plugin UI, or dragging images from another app into your plugin UI).
 
@@ -224,13 +239,13 @@ You can now use the Chrome DevTools UI (CDT) to debug your JS code -- and _to a 
 
 ### Other API updates
 
-- Polygon scenenodes can now take on a star shape - see [`Polygon.starRatio`](/develop/reference/scenegraph.md#Polygon-starRatio)
+- Polygon scenenodes can now take on a star shape - see [Polygon.starRatio](/develop/reference/Polygon/#starratio)
 
 ## XD Release 25.1.12 (December 2019)
 
 XD 25 is a minor bug-fix release with no new features for end users. But it adds two small improvements for plugins:
 
-- New [`application.activeDocument` API](/develop/reference/application.md#module_application-activeDocument) providing information about the document.
+- New [application.activeDocument API](/develop/reference/application/#activedocument) providing information about the document.
 - Fixed bug where `scenegraph.root.guid` did not return a valid guid; it now returns the same value as `application.activeDocument.guid`.
 
 ## XD Release 24.0.22 (November 2019)
@@ -249,7 +264,7 @@ XD 25 is a minor bug-fix release with no new features for end users. But it adds
 
   - For each Component instance, only the currently active state is visible in the scenegraph hierarchy. Content in other, non-visible states is not accessible to plugins yet.
   - Hover and state-change interactions are not exposed to plugins yet, but will be in the future. If your plugin is reading interactions/prototyping data, be sure to always have a default case if your code encounters unexpected types.
-  - Reminder: a single scenenode can return multiple interactions from [`node.triggeredInteractions`](/develop/reference/scenegraph.md#SceneNode-triggeredInteractions). This was possible before in some cases, but is allowed in more cases now (for example, one node can have a click/tap trigger, a drag trigger, _and_ a hover trigger).
+  - Reminder: a single scenenode can return multiple interactions from [node.triggeredInteractions](/develop/reference/SceneNode/#triggeredinteractions). This was possible before in some cases, but is allowed in more cases now (for example, one node can have a click/tap trigger, a drag trigger, _and_ a hover trigger).
 
 - **New Plugin Manager UI**
 
@@ -259,7 +274,7 @@ XD 25 is a minor bug-fix release with no new features for end users. But it adds
   - If you have a plugin in development _and_ an installed plugin with the same id, Plugin Manager now shows both for clarity. You can still only enable one of them at a time, though.
 
 - **Sharing enhancements**
-  - The [`cloud.getSharedArtifacts()` API](/develop/reference/cloud.md#module_cloud-getSharedArtifacts) may now return an arbitrary number of shared links, and there may be more than one link of the same type (e.g. multiple specs links).
+  - The [cloud.getSharedArtifacts() API](/develop/reference/cloud/#getsharedartifacts) may now return an arbitrary number of shared links, and there may be more than one link of the same type (e.g. multiple specs links).
   - The distinction between link types has blurred a bit: links that are `ArtifactType.SPECS` may _also_ include access to an interactive prototype view, just like links of type `ArtifactType.PROTOTYPE`.
 
 ### Smaller fixes and improvements
@@ -286,7 +301,7 @@ Information shown in the plugin listing has moved out of `manifest.json` and is 
 
 - Submitting a plugin also now requires at least one _screenshot image_.
 - Icons seen in the Plugin Manager list must be provided online during submission, but icons seen in the Plugins side panel must still be part of the plugin package folder.
-- As of XD 23, the Plugin Manager UI ignores description, author, links, etc. in `manifest.json`. Submitting to the public listing is now the _only_ way to display this info in Plugin Manager. See [updated manifest documentation](/develop/plugin-development/plugin-structure/manifest).
+- As of XD 23, the Plugin Manager UI ignores description, author, links, etc. in `manifest.json`. Submitting to the public listing is now the _only_ way to display this info in Plugin Manager. See [updated manifest documentation](/develop/plugin-development/plugin-structure/manifest-v3).
 - As of September 24, submitting a new or updated plugin to the public listing requires supplying all these details via the developer submission portal online. See [How to submit to Plugin Manager](/distribution/submission-checklist).
 
 ### Smaller fixes and improvements
@@ -386,7 +401,7 @@ See the [Known Issues page](/develop/known-issues/) for a comprehensive list of 
 
 ### API Improvements
 
-- **Text scenenode super/subscript** -- Work with Text nodes and style assets using the new [textScript](/develop/reference/scenegraph.md#Text-textScript)
+- **Text scenenode super/subscript** -- Work with Text nodes and style assets using the new [textScript](/develop/reference/Text/#textscript)
   feature.
 
 ### Known Issues
@@ -399,9 +414,9 @@ No new known issues. See the [Known Issues page](/develop/known-issues/) for a c
 
 ### New API Features
 
-- **[Read prototyping interactions](/develop/reference/interactions.md)** -- Read-only access to the interactivity settings in the document (e.g. the blue "wires"
+- **[Read prototyping interactions](/develop/reference/interactions)** -- Read-only access to the interactivity settings in the document (e.g. the blue "wires"
   seen in XD's prototyping UI).
-- **New [Polygon](/develop/reference/scenegraph.md#Polygon) node type**
+- **New [Polygon](/develop/reference/Polygon) node type**
 
 ### Breaking Changes
 
@@ -414,13 +429,13 @@ No new known issues. See the [Known Issues page](/develop/known-issues/) for a c
 
   In many cases, this partial application of your plugin's changes will feel natural to users as an expected consequence of the overrides they have authored.
   However, you can also choose to mitigate potential confusion by warning users or disabling some editing features while the user is editing a Component
-  "master" by checking [`isMaster`](/develop/reference/scenegraph.md#SymbolInstance-isMaster) on `selection.editContext` and its parent chain. There is currently
+  "master" by checking [isMaster](/develop/reference/SymbolInstance/#ismaster) on `selection.editContext` and its parent chain. There is currently
   no way to force all changes made by your plugin command to be applied atomically (i.e. all or nothing).
 
 ### Fixes and improvements
 
-- **Additional Text scenenode styles** -- Work with Text nodes and style assets using the new [strikethrough](/develop/reference/scenegraph.md#Text-strikethrough)
-  and [text transform](/develop/reference/scenegraph.md#Text-textTransform) features.
+- **Additional Text scenenode styles** -- Work with Text nodes and style assets using the new [strikethrough](/develop/reference/Text/#strikethrough)
+  and [text transform](/develop/reference/Text/#texttransform) features.
 
 ### User-facing plugin features
 
@@ -481,7 +496,7 @@ No new known issues. See the [Known Issues page](/develop/known-issues/) for a c
 
 ### User-facing plugin features
 
-- **Plugin listing displays new fields** -- The `summary`, `languages`, and `website` fields that were recently added to the [manifest](https://adobexdplatform.com/plugin-docs/reference/structure/manifest.html)
+- **Plugin listing displays new fields** -- The `summary`, `languages`, and `website` fields that were recently added to the [manifest](/develop/plugin-development/plugin-structure/manifest-v3)
   are now displayed in the Discover/Manage Plugins UI.
 
 ### Known Issues
@@ -503,7 +518,7 @@ No new known issues. See the [Known Issues page](/develop/known-issues/) for a c
   - _Plugins still cannot edit globally across the entire document at once, even though in very simple testing it may \_appear_ that this works. Non-Group containers act as blockades that
     the edit scope cannot cross - if the selection is outside such a container, you cannot edit inside it; and if the selection is inside such a container, you cannot edit outside it.
 - **Additional manifest fields required for publishing:** As of March 5, submitting a new or updated plugin for the in-app plugins listing requires providing new `summary`, `author`, and `languages`
-  fields, as well as several additional icon sizes. See [manifest documentation](/develop/plugin-development/plugin-structure/manifest).
+  fields, as well as several additional icon sizes. See [manifest documentation](/develop/plugin-development/plugin-structure/manifest-v3).
 
 ### Breaking Changes
 
@@ -549,7 +564,7 @@ No new known issues. See the [Known Issues page](/develop/known-issues/) for a c
 
 ### New API Features
 
-- **[Assets panel colors & text styles](/develop/reference/assets.md):** Get/add/remove any colors, gradients, and text styles saved in the Assets panel.
+- **[Assets panel colors & text styles](/develop/reference/assets):** Get/add/remove any colors, gradients, and text styles saved in the Assets panel.
 - **[Deep link to plugin listings](/distribution/how-to-create-deep-links.md):** Link from web sites, social media, etc. directly to your plugin listing in XD's UI so users can easily install the plugin.
 
 ### Breaking Changes
@@ -580,10 +595,10 @@ See the [Known Issues page](/develop/known-issues/) for a comprehensive list of 
 
 ### New API Features
 
-- **[Document & node metadata](/develop/reference/scenegraph.md#SceneNode-pluginData):** Store plugin-specific info on individual scenegraph nodes or in the document in general.
-- **[Viewport](/develop/reference/viewport.md):** Pan and zoom the view of the document, and get information about the current viewport bounds.
-- **[Text](/develop/reference/scenegraph.md#Text):** Get/set paragraph spacing; create/modify area text; more easily work with uniform-styled text via convenience getter/setter APIs for character attributes.
-- **[Published links](/develop/reference/cloud.md):** Get latest links for prototypes & design specs that have been shared from the current document.
+- **[Document & node metadata](/develop/reference/SceneNode/#plugindata):** Store plugin-specific info on individual scenegraph nodes or in the document in general.
+- **[Viewport](/develop/reference/viewport):** Pan and zoom the view of the document, and get information about the current viewport bounds.
+- **[Text](/develop/reference/Text):** Get/set paragraph spacing; create/modify area text; more easily work with uniform-styled text via convenience getter/setter APIs for character attributes.
+- **[Published links](/develop/reference/cloud):** Get latest links for prototypes & design specs that have been shared from the current document.
 
 ### Breaking Changes
 
@@ -591,7 +606,7 @@ See the [Known Issues page](/develop/known-issues/) for a comprehensive list of 
 
 ### Fixes and improvements
 
-- For convenience, the arguments passed to plugin commands are now also available as [`scenegraph.selection`](reference/scenegraph.md#module_scenegraph-selection) and [`scenegraph.root`](reference/scenegraph.md#module_scenegraph-root).
+- For convenience, the arguments passed to plugin commands are now also available as [scenegraph.selection](/develop/reference/scenegraph/#selection) and [scenegraph.root](/develop/reference/scenegraph/#root).
 - Exporting renditions to a folder _created by_ your plugin now works reliably on Windows if the folder name contains spaces or other special characters.
 - `Rectangle.cornerRadii` now returns correct values if the corners are not all the same radius.
 

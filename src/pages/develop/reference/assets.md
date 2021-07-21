@@ -5,7 +5,7 @@ there's no guarantee that these styles are currently used anywhere in the docume
 
 **Since**: XD 15
 
-### Enums
+## Enums
 
 <dl>
 <dt><a name="GradientType"></a> GradientType : </dt><dd>LINEAR, RADIAL - Type of gradient color element: linear gradient or radial gradient</dd>
@@ -20,17 +20,17 @@ Assets library entry representing a solid color.
 | Property | Type    | Description                                                                                                         |
 | -------- | ------- | ------------------------------------------------------------------------------------------------------------------- |
 | name     | ?string | Name of the Assets entry, if it is explicitly named. (The UI shows an auto-generated label for any unnamed assets). |
-| color    | !Color  | Color of the asset                                                                                                  |
+| color    | Color  | Color of the asset                                                                                                  |
 
 ### Typedef GradientAsset
 
 Assets library entry representing a linear or radial gradient.
 
-| Property     | Type                                     | Description                                                                                                                                                                                                                       |
-| ------------ | ---------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| name         | ?string                                  | Name of the Assets entry, if it is explicitly named. (The UI shows an auto-generated label for any unnamed assets).                                                                                                               |
-| gradientType | !GradientType                            | Either `GradientType.LINEAR` or `GradientType.RADIAL`                                                                                                                                                                             |
-| colorStops   | !Array.< {stop: number, color: !Color} > | Array of color stops used in the gradient, where `stop` >= 0 and <= 1, and the values are strictly increasing. Same format as the `colorStops` property of a [LinearGradientFill](/develop/reference/LinearGradientFill/) object. |
+| Property     | Type                                   | Description                                                                                                                                                                                                                       |
+| ------------ | -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name         | ?string                                | Name of the Assets entry, if it is explicitly named. (The UI shows an auto-generated label for any unnamed assets).                                                                                                               |
+| gradientType | GradientType                           | Either `GradientType.LINEAR` or `GradientType.RADIAL`                                                                                                                                                                             |
+| colorStops   | Array.< {stop: number, color: Color} > | Array of color stops used in the gradient, where `stop` >= 0 and <= 1, and the values are strictly increasing. Same format as the `colorStops` property of a [LinearGradient](/develop/reference/LinearGradient/) object. |
 
 ### Typedef CharacterStyleAsset
 
@@ -39,48 +39,49 @@ Assets library entry representing a set of text character styles.
 | Property | Type            | Description                                                                                                         |
 | -------- | --------------- | ------------------------------------------------------------------------------------------------------------------- |
 | name     | ?string         | Name of the Assets entry, if it is explicitly named. (The UI shows an auto-generated label for any unnamed assets). |
-| style    | !CharacterStyle | Object containing the style properties                                                                              |
+| style    | CharacterStyle | Object containing the style properties                                                                              |
 
 ### Typedef CharacterStyle
 
-Character style properties. See documentation for the [Text](/develop/reference/scenegraph/#text) node type for more details.
+Character style properties. See documentation for the [Text](/develop/reference/Text) node type for more details.
 
 When creating a new character style, all properties are mandatory except those with default values specified here. When deleting
-an existing character style, always pass the exact object returned by [`characterStyles.get()`](#module_assets-characterStyles-get) (with all properties fully
+an existing character style, always pass the exact object returned by [characterStyles.get()](#characterstylesget) (with all properties fully
 specified) to avoid any ambiguity.
 
 | Property      | Type     | Description                                                                                |
 | ------------- | -------- | ------------------------------------------------------------------------------------------ |
-| fontFamily    | !string  | the font family                                                                            |
-| fontStyle     | !string  | the style of the font                                                                      |
-| fontSize      | !number  | the size of the font                                                                       |
-| fill          | !Color   | the Color of the font fill                                                                 |
-| charSpacing   | !number  | the character spacing                                                                      |
-| lineSpacing   | !number  | the line spacing                                                                           |
-| underline     | !boolean | whether underline is turned on                                                             |
+| fontFamily    | string   | the font family                                                                            |
+| fontStyle     | string   | the style of the font                                                                      |
+| fontSize      | number   | the size of the font                                                                       |
+| fill          | Color    | the Color of the font fill                                                                 |
+| charSpacing   | number   | the character spacing                                                                      |
+| lineSpacing   | number   | the line spacing                                                                           |
+| underline     | boolean  | whether underline is turned on                                                             |
 | strikethrough | ?boolean | (**Since**: XD 19) Default false; whether strikethrough is turned on                       |
 | textTransform | ?string  | (**Since**: XD 19) Default "none"; one of "none", "uppercase", "lowercase", or "titlecase" |
 | textScript    | ?string  | (**Since**: XD 20) Default "none"; one of "none", "superscript", or "subscript"            |
 
-### assets.colors
+## colors
+
+▸ **colors**
 
 The collection of colors and gradients saved in this document's Assets library.
 
 - [.colors](#module_assets-colors)
-  - [.get()](#module_assets-colors-get) ⇒ `!Array.<ColorAsset|GradientAsset>`
-  - [.add(colorAssets)](#module_assets-colors-add) ⇒ `number`
-  - [.delete(colorAssets)](#module_assets-colors-delete) ⇒ `number`
+  - [.get()](#colorsget): `Array.<ColorAsset|GradientAsset>`
+  - [.add(colorAssets)](#colorsadd): `number`
+  - [.delete(colorAssets)](#colorsdelete): `number`
 
-### assets.colors.get() ⇒ `!Array.<ColorAsset|GradientAsset>`
+---
+### colors.get()
+
+▸ **colors.get**(): `Array.<ColorAsset|GradientAsset>`
 
 Get a list of all color/gradient assets, in the order they appear in the Assets panel.
 
 The list may contain a mix of solid Color assets and/or gradient assets.
 If there are no color/gradient assets, an empty array is returned.
-
-**Kind**: static method of [`colors`](#module_assets-colors)
-
-**Returns**: `!Array.<ColorAsset|GradientAsset>`
 
 **Example**
 
@@ -89,20 +90,21 @@ var assets = require("assets"),
   allColors = assets.colors.get();
 ```
 
-### assets.colors.add(colorAssets) ⇒ `number`
+**Kind**: static method of [colors](#module_assets-colors)
 
-Add color/gradient assets to the collection.
+---
+### colors.add()
+
+▸ **colors.add**(`colorAssets`): `number`
+
+Add color/gradient assets to the collection.  Returns the number of assets added (may be less than requested if duplicates already exist).
 
 The list may contain a mix of solid Color assets and/or gradient assets. Items are not added if a duplicate
 color/gradient already exists in the collection, _regardless of its name_.
 
-**Kind**: static method of [`colors`](#module_assets-colors)
-
-**Returns**: `number` - number of assets added (may be less than requested if duplicates already exist)
-
 | Param       | Type                                                                                                                                                                                                         |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| colorAssets | `! Color &#124; ColorAsset &#124; LinearGradientFill &#124; RadialGradientFill &#124; GradientAsset &#124; Array.<Color&#124;ColorAsset&#124;LinearGradientFill&#124;RadialGradientFill&#124;GradientAsset>` |
+| colorAssets | `Color` &#124; `ColorAsset` &#124; `LinearGradient` &#124; `RadialGradient` &#124; `GradientAsset` &#124; `Array.<Color` &#124; `ColorAsset` &#124; `LinearGradient` &#124; `RadialGradient` &#124; `GradientAsset`> |
 
 **Example**
 
@@ -125,21 +127,22 @@ var assets = require("assets"),
   ]);
 ```
 
-### assets.colors.delete(colorAssets) ⇒ `number`
+**Kind**: static method of [colors](#module_assets-colors)
 
-Delete color/gradient assets from the collection.
+---
+### colors.delete()
+
+▸ **colors.delete**(`colorAssets`): `number`
+
+Delete color/gradient assets from the collection.  Returns the number of assets deleted (may be less than requested if some didn't exist).
 
 The list may contain a mix of solid Color assets and/or gradient assets. Assets with the same color/gradient are
 removed _even if their names differ_. Assets that already don't exist in the collection are silently ignored.
-Typically you will pass asset objects returned from [`get()`](#module_assets-colors-get) directly to this function.
-
-**Kind**: static method of [`colors`](#module_assets-colors)
-
-**Returns**: `number` - number of assets deleted (may be less than requested if some didn't exist)
+Typically you will pass asset objects returned from [get()](#colorsget) directly to this function.
 
 | Param       | Type                                                                                                                                                                                                         |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| colorAssets | `! Color &#124; ColorAsset &#124; LinearGradientFill &#124; RadialGradientFill &#124; GradientAsset &#124; Array.<Color&#124;ColorAsset&#124;LinearGradientFill&#124;RadialGradientFill&#124;GradientAsset>` |
+| colorAssets | `Color` &#124; `ColorAsset` &#124; `LinearGradient` &#124; `RadialGradient` &#124; `GradientAsset` &#124; `Array.<Color` &#124; `ColorAsset` &#124; `LinearGradient` &#124; `RadialGradient` &#124; `GradientAsset`> |
 
 **Example**
 
@@ -148,24 +151,27 @@ var assets = require("assets"),
   numDeleted = assets.colors.delete(new Color("red"));
 ```
 
-### assets.characterStyles
+**Kind**: static method of [colors](#module_assets-colors)
+
+## characterStyles
+
+▸ **characterStyles**
 
 The collection of character styles saved in this document's Assets library.
 
 - [.characterStyles](#module_assets-characterStyles)
-  - [.get()](#module_assets-characterStyles-get) ⇒ `!Array.<CharacterStyleAsset>`
-  - [.add(charStyleAssets)](#module_assets-characterStyles-add) ⇒ `number`
-  - [.delete(charStyleAssets)](#module_assets-characterStyles-delete) ⇒ `number`
+  - [.get()](#characterstylesget): `Array.<CharacterStyleAsset>`
+  - [.add(charStyleAssets)](#characterstylesadd): `number`
+  - [.delete(charStyleAssets)](#characterstylesdelete): `number`
 
-### assets.characterStyles.get() ⇒ `!Array.<CharacterStyleAsset>`
+---
+### characterStyles.get()
+
+▸ **characterStyles.get**(): `Array.<CharacterStyleAsset>`
 
 Get a list of all character style assets, in the order they appear in the Assets panel.
 
 If there are no character style assets, an empty array is returned.
-
-**Kind**: static method of [`characterStyles`](#module_assets-characterStyles)
-
-**Returns**: `!Array.<CharacterStyleAsset>`
 
 **Example**
 
@@ -174,20 +180,21 @@ var assets = require("assets"),
   allCharacterStyles = assets.characterStyles.get();
 ```
 
-### assets.characterStyles.add(charStyleAssets) ⇒ `number`
+**Kind**: static method of [characterStyles](#module_assets-characterStyles)
 
-Add one or more character style assets to the collection.
+---
+### characterStyles.add()
+
+▸ **characterStyles.add**(`charStyleAssets`): `number`
+
+Add one or more character style assets to the collection.  Returns the number of assets added (may be less than requested if duplicates already exist).
 
 Items are not added if a duplicate character style already exists in the collection, _regardless of its name_.
 All character style properties must be fully specified (no properties are optional).
 
-**Kind**: static method of [`characterStyles`](#module_assets-characterStyles)
-
-**Returns**: `number` - number of assets added (may be less than requested if duplicates already exist)
-
 | Param           | Type                                                       |
 | --------------- | ---------------------------------------------------------- |
-| charStyleAssets | `! CharacterStyleAsset &#124; Array.<CharacterStyleAsset>` |
+| charStyleAssets | `CharacterStyleAsset` &#124; `Array.<CharacterStyleAsset>` |
 
 **Example**
 
@@ -220,23 +227,24 @@ var assets = require("assets"),
   ]);
 ```
 
-### assets.characterStyles.delete(charStyleAssets) ⇒ `number`
+**Kind**: static method of [characterStyles](#module_assets-characterStyles)
 
-Delete one or more character style assets from the collection.
+---
+### characterStyles.delete()
+
+▸ **characterStyles.delete**(`charStyleAssets`): `number`
+
+Delete one or more character style assets from the collection.  Returns the number of assets deleted (may be less than requested if some didn't exist).
 
 Assets with the same character style are removed _even if their names differ_. Assets that already don't exist in the
 collection are silently ignored. All character style properties must be fully specified (no properties are optional).
 
-To avoid ambiguity, pass the exact asset objects returned from [`get()`](#module_assets-characterStyles-get) directly
+To avoid ambiguity, pass the exact asset objects returned from [get()](#characterstylesget) directly
 to this function.
-
-**Kind**: static method of [`characterStyles`](#module_assets-characterStyles)
-
-**Returns**: `number` - number of assets deleted (may be less than requested if some didn't exist)
 
 | Param           | Type                                                       |
 | --------------- | ---------------------------------------------------------- |
-| charStyleAssets | `! CharacterStyleAsset &#124; Array.<CharacterStyleAsset>` |
+| charStyleAssets | `CharacterStyleAsset` &#124; `Array.<CharacterStyleAsset>` |
 
 **Example**
 
@@ -246,3 +254,5 @@ var assets = require("assets"),
   allCharacterStyles = assets.characterStyles.get(),
   numDeleted = assets.characterStyles.delete(allCharacterStyles);
 ```
+
+**Kind**: static method of [characterStyles](#module_assets-characterStyles)

@@ -28,7 +28,7 @@ module.exports = [
                 title: "Folder Structure",
               },
               {
-                path: "/develop/plugin-development/plugin-structure/manifest/",
+                path: "/develop/plugin-development/plugin-structure/manifest-v3/",
                 title: "Manifest",
               },
               {
@@ -105,7 +105,7 @@ module.exports = [
           {
             title: "Developer Tool",
             path: "/develop/plugin-development/devtool/",
-            header: true, 
+            header: true,
             pages: require("./reference-devtool.js")
           },
           {
@@ -263,8 +263,16 @@ module.exports = [
         header: true,
         pages: [
           {
+            path: "/develop/reference/AngularGradient/",
+            title: "AngularGradient",
+          },
+          {
             path: "/develop/reference/application/",
             title: "Application",
+          },
+          {
+            path: "/develop/reference/Artboard/",
+            title: "Artboard",
           },
           {
             path: "/develop/reference/assets/",
@@ -273,6 +281,10 @@ module.exports = [
           {
             path: "/develop/reference/Blur/",
             title: "Blur",
+          },
+          {
+            path: "/develop/reference/BooleanGroup/",
+            title: "BooleanGroup",
           },
           {
             path: "/develop/reference/clipboard/",
@@ -291,40 +303,108 @@ module.exports = [
             title: "Commands",
           },
           {
+            path: "/develop/reference/Ellipse/",
+            title: "Ellipse",
+          },
+          {
+            path: "/develop/reference/GraphicNode/",
+            title: "GraphicNode",
+          },
+          {
+            path: "/develop/reference/Group/",
+            title: "Group",
+          },
+          {
             path: "/develop/reference/ImageFill/",
             title: "ImageFill",
+          },
+          {
+            path: "/develop/reference/InnerShadow/",
+            title: "InnerShadow",
           },
           {
             path: "/develop/reference/interactions/",
             title: "Interactions",
           },
           {
-            path: "/develop/reference/LinearGradientFill/",
-            title: "LinearGradientFill",
+            path: "/develop/reference/Line/",
+            title: "Line",
+          },
+          {
+            path: "/develop/reference/LinearGradient/",
+            title: "LinearGradient",
+          },
+          {
+            path: "/develop/reference/LinkedGraphic/",
+            title: "LinkedGraphic",
           },
           {
             path: "/develop/reference/Matrix/",
             title: "Matrix",
           },
           {
+            path: "/develop/reference/Matrix3D/",
+            title: "Matrix3D",
+          },
+          {
+            path: "/develop/reference/Path/",
+            title: "Path",
+          },
+          {
             path: "/develop/reference/PerPluginStorage/",
             title: "PerPluginStorage",
+          },
+          {
+            path: "/develop/reference/Polygon/",
+            title: "Polygon",
+          },
+          {
+            path: "/develop/reference/RadialGradient/",
+            title: "RadialGradient",
+          },
+          {
+            path: "/develop/reference/Rectangle/",
+            title: "Rectangle",
+          },
+          {
+            path: "/develop/reference/RepeatGrid/",
+            title: "RepeatGrid",
+          },
+          {
+            path: "/develop/reference/RootNode/",
+            title: "RootNode",
           },
           {
             path: "/develop/reference/scenegraph/",
             title: "Scenegraph",
           },
           {
+            path: "/develop/reference/SceneNode/",
+            title: "SceneNode",
+          },
+          {
             path: "/develop/reference/SceneNodeList/",
             title: "SceneNodeList",
+          },
+          {
+            path: "/develop/reference/ScrollableGroup/",
+            title: "ScrollableGroup",
+          },
+          {
+            path: "/develop/reference/selection/",
+            title: "Selection",
           },
           {
             path: "/develop/reference/Shadow/",
             title: "Shadow",
           },
           {
-            path: "/develop/reference/selection/",
-            title: "Selection",
+            path: "/develop/reference/SymbolInstance/",
+            title: "SymbolInstance",
+          },
+          {
+            path: "/develop/reference/Text/",
+            title: "Text",
           },
           {
             path: "/develop/reference/viewport/",

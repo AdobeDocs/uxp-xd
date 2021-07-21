@@ -10,12 +10,14 @@ let clipboard = require("clipboard");
 clipboard.copyText(selection.items[0].name);
 ```
 
-### clipboard.copyText()
+## copyText()
+
+▸ **copyText**(`text`)
 
 Write plain text to the clipboard.
-
-**Kind**: static method of [`clipboard`](#module_clipboard)
 
 | Param | Type   | Description                                                             |
 | ----- | ------ | ----------------------------------------------------------------------- |
 | text  | string | Will be automatically converted to string if a different type is passed |
+
+**Kind**: static method of [clipboard](#module_clipboard)

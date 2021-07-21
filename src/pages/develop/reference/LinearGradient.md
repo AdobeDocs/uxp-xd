@@ -1,62 +1,98 @@
-# LinearGradientFill
+# LinearGradient
 
 **Kind**: class
 
 In a linear gradient, colors blend smoothly along a straight line, extending out perpendicularly from that line. The gradient fills the entire area of the shape it is
 applied to.
 
-## new LinearGradientFill()
+## new LinearGradient()
 
-Create a new LinearGradientFill instance.
+▸ **new LinearGradient**(): [LinearGradient](#LinearGradient)
 
-### _linearGradientFill.clone() ⇒ `!LinearGradientFill`_
+Create a new LinearGradient instance.
+
+## clone()
+
+▸ **clone()**: [LinearGradient](#LinearGradient)
 
 Returns a copy of this instance.
 
-**Kind**: instance method of [`LinearGradientFill`](#LinearGradientFill)
+**Kind**: instance method of [LinearGradient](#LinearGradient)
 
-### _linearGradientFill.colorStops : `!Array<{stop:number, color:\![Color](Color/)}>`_
+## colorStops
+
+▸ **colorStops**: `Array<{stop:number, color:`[Color](/develop/reference/Color)`}>`
 
 Array of objects representing each color and its position along the gradient line. The position (`stop` value) is a number 0.0 - 1.0.
 
-**Kind**: instance property of [`LinearGradientFill`](#LinearGradientFill)
+**Example**
+```js
+let gradient = new LinearGradient();
+gradient.colorStops = [{ stop: 0, color: new Color("Red") },
+    { stop: 1, color: new Color("Blue") }];
+selection.items[0].fill = gradient;
+```
 
-### _linearGradientFill.startX : `number`_
+**Kind**: instance property of [LinearGradient](#LinearGradient)
+
+## startX
+
+▸ **startX**: `number`
 
 X position of the start of the gradient line, as a multiple of the object's bounding box: X=0 indicates the left edge of the bounding box and X=1 indicates the right edge.
 The gradient line _may_ start or end outside the object's bounding box, so values may be < 0 or > 1.
 
-**Kind**: instance property of [`LinearGradientFill`](#LinearGradientFill)
+**Kind**: instance property of [LinearGradient](#LinearGradient)
 
-### _linearGradientFill.startY : `number`_
+## startY
+
+▸ **startY**: `number`
 
 Y position of the start of the gradient line, as a multiple of the object's bounding box: Y=0 indicates the top edge of the bounding box and Y=1 indicates the bottom edge.
 The gradient line _may_ start or end outside the object's bounding box, so values may be < 0 or > 1.
 
-**Kind**: instance property of [`LinearGradientFill`](#LinearGradientFill)
+**Kind**: instance property of [LinearGradient](#LinearGradient)
 
-### _linearGradientFill.endX : `number`_
+## endX
+
+▸ **endX**: `number`
 
 X position of the end of the gradient line, as a multiple of the object's bounding box: X=0 indicates the left edge of the bounding box and X=1 indicates the right edge.
 The gradient line _may_ start or end outside the object's bounding box, so values may be < 0 or > 1.
 
-**Kind**: instance property of [`LinearGradientFill`](#LinearGradientFill)
+**Kind**: instance property of [LinearGradient](#LinearGradient)
 
-### _linearGradientFill.endY : `number`_
+## endY
+
+▸ **endY**: `number`
 
 Y position of the end of the gradient line, as a multiple of the object's bounding box: Y=0 indicates the top edge of the bounding box and Y=1 indicates the bottom edge.
 The gradient line _may_ start or end outside the object's bounding box, so values may be < 0 or > 1.
 
-**Kind**: instance property of [`LinearGradientFill`](#LinearGradientFill)
+**Kind**: instance property of [LinearGradient](#LinearGradient)
 
-### _linearGradientFill.getEndPoints() ⇒ `!Array<number>`_
+## getEndPoints()
+
+▸ **getEndPoints()**: `Array<number>`
 
 Returns an array of \[startX, startY, endX, endY\].
 
-**Kind**: instance method of [`LinearGradientFill`](#LinearGradientFill)
+**Kind**: instance method of [LinearGradient](#LinearGradient)
 
-### \*linearGradientFill.setEndPoints(startX, startY, endX, endY)
+## setEndPoints()
+
+▸ **setEndPoints**(`startX`, `startY`, `endX`, `endY`)
 
 Shorthand for setting all four start/endpoint properties.
 
-**Kind**: instance method of [`LinearGradientFill`](#LinearGradientFill)
+**Kind**: instance method of [LinearGradient](#LinearGradient)
+
+## type
+
+▸ **type**: `string`
+
+**Since**: XD 42
+
+String representing the type of the gradient, in this case linear gradient.
+
+**Kind**: instance property of [LinearGradient](#LinearGradient)
