@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # viewport
 
 The `viewport` module represents the current UI view of the XD document's content.

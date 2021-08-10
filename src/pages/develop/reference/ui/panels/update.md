@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # Panel update() callback
 
 The `update()` function is an _optional_ lifecycle method in [panel objects](/develop/plugin-development/plugin-structure/handlers/#panel). XD calls `update()` whenever your panel UI content should be refreshed:

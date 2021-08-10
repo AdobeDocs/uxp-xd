@@ -1,4 +1,9 @@
 ---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
 title: Design - UX Patterns - Onboarding
 description: This is the page for onboaring UX patterns 
 contributors:

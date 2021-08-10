@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 
 <a name="module-storage" id="module-storage"></a>
 

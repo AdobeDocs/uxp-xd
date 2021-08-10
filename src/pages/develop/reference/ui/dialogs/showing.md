@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # Showing a Modal Dialog
 
 Dialogs are shown using the [`HTMLDialogElement#showModal`](/develop/reference/uxp/class/HTMLDialogElement/#htmldialogelement-showmodal) method. This method will render the dialog. The method will return a `Promise`, which you can use to easily wait for the dialog to be dismissed.

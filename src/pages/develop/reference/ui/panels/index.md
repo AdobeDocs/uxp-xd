@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # Panel
 
 A panel is used to display information and options that are persistent and can be shown without blocking user interactions with the active document.

@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # Panel show() callback
 
 The `show()` function is the one lifecycle method in [panel objects](/develop/plugin-development/plugin-structure/handlers/#panel) that is **required**. XD calls `show()` each time the user opens your panel.

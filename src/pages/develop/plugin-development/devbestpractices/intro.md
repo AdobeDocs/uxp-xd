@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # XD Plugin Experience Guidelines
 
 The **XD Plugin Experience Guidelines** (XDPEGs) can be used to ensure that your plugin is functional in a variety of edge cases and provides a good experience to your end users. While it’s not a hard-and-fast requirement that you follow the XDPEGs when submitting your plugin for review to the Plugin Manager, it is highly suggested that you try to follow the guidelines when and where it makes sense. Doing so ensures that your users have a good experience with both your plugin and Adobe XD itself.

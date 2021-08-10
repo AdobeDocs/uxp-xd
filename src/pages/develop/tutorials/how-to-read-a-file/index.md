@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # How to read a file
 
 This tutorial will show you how an XD plugin can read in a file from the file system. As one of example of what you can do with a file, we'll extract text from the file and add that text to the scenegraph.

@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # About the tutorials
 
 Do you like to learn by following step-by-step examples? If so, this is the section for you!

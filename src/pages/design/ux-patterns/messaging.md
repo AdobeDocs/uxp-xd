@@ -1,4 +1,9 @@
 ---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
 title: Design - UX Patterns - Messaging
 description: This is the page for messaging UX patterns 
 contributors:

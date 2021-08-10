@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # How to create a deep link for a plugin listing
 
 This tutorial walks through the process of deep-linking to an XD plugin listing. Deep-linking is a method by which you can get users into a specific part of an application using a custom URL.

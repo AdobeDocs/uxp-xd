@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # Sync and Async
 
 XD plugin APIs support both synchronous and asynchronous code (commonly referred to as _sync_ and _async_).

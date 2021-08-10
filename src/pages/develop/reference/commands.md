@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # commands
 
 You can make structural changes to the scenegraph, and perform other complex operations, by programmatically invoking the same

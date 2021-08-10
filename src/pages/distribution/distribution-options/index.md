@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # Distribution options
 
 Once you have a packaged plugin, you're ready to distribute. You can make your plugin available to users through the XD in-app plugin manager or via direct distribution.

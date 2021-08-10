@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # Dialogs
 
 A modal dialog is used to display important information and ask for user input. XD Plugins can display user interface in the form of **modal dialogs**.

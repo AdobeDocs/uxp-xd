@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # Edit context rules
 
 The **edit context** is the scope within which your plugin is allowed to make edits or set the selection. It is a "neighborhood"

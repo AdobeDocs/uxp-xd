@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # Plugin location
 
 For XD to know your plugin exists, you'll need to put it in a certain folder on your computer and give it a name. On this page, you can learn where plugins are stored on your machine..

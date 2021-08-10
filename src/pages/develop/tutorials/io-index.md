@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # Working with I/O
 
 If you want your plugin to go beyond the document to work with local files or web services, you'll want to learn about our file I/O and network I/O APIs. These tutorials will help you connect your XD plugin with the wider world: import from and export to the local machine, integrate with OAuth, or make network requests.

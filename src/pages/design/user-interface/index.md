@@ -1,4 +1,9 @@
 ---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
 title: Design - User interface
 description: This is the page for the introduction to User interface
 contributors:

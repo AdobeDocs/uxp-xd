@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # Folder structure
 
 When you have the right structure for your XD plugin, it will look like this:

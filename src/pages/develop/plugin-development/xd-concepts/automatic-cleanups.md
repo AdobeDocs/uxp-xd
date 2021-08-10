@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # Automatic cleanups
 
 To make writing your plugin simpler, XD performs a number of automated cleanups after each plugin command finishes:

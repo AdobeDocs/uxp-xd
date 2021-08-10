@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # Working with React
 
 When working with React, other frameworks, or bundlers like Webpack and Parcel, you'll need to understand how to effectively use them inside the developer tool. There are various options available to you, depending on your workflow needs.

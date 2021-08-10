@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # How to style text
 
 Creating styled text in Adobe XD is easy! In this tutorial, we'll show you how to create a text element with a specific color and font size, and also a text element with multiple inline colors.

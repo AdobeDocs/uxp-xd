@@ -1,4 +1,9 @@
 ---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
 title: Documentation-Adobe XD
 description: Build UXP plugins for Adobe XD with HTML, CSS, and JavaScript. Automate workflows, build new features, and more.
 ---

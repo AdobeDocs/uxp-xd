@@ -1,4 +1,9 @@
 ---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
 title: Share and publish your Photoshop UXP plugin
 description: Learn how to share or publish and market your Photoshop plugin. Then get ready for our review process.
 ---

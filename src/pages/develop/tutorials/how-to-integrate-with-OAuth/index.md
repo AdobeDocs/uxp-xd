@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # How to Integrate with OAuth
 
 This tutorial will show you how to implement the OAuth workflow in an XD plugin, using the Dropbox API as an example.

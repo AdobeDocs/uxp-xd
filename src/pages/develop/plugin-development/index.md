@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # Plugin Development 101
 
 On this page, we'll give you a quick overview of some basic concepts you need to know to build a successfull XD plugin.

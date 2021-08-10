@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # How to draw lines
 
 This sample demonstrates how to create a plugin that adds colored lines to the user's document.

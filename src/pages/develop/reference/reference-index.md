@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # API References
 
 There are two main types of APIs you can use to create your XD plugin. While Unified Extensibility Platform (UXP) provides commonly used APIs across different Creative Cloud applications, Host APIs enable developers to extend XD specific features.

@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # Plugin lifecycle
 
 Here's an overview of how plugins are loaded, when plugin code runs, and how plugin "edit operations" work.

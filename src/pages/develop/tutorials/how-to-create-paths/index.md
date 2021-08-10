@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # How to create paths
 
 This sample demonstrates how to create path objects in XD. The path objects are used to construct a pie chart.

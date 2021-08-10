@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # Plugin Structure
 
 One folder and two files: that's all it takes to create an XD plugin!

@@ -1,4 +1,9 @@
 ---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
 title: Design - UX Patterns - Branding
 description: This is the page for branding UX patterns 
 contributors:

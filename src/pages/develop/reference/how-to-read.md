@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # How to read the reference documentation
 
 Please take a moment to familiarize yourself with the types of symbols you'll see throughout the technical documentation.

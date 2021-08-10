@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # Quick Start: Make your first XD panel plugin
 
 Let’s walk through creating your first Adobe XD panel plugin together.

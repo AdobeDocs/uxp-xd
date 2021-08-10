@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # Dialog Dismissal
 
 Dialogs can be dismissed in the following ways:

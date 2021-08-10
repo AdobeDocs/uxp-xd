@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # application
 
 The `application` module exposes APIs for exporting content, initiating edits from panel UI, and getting version / locale info.

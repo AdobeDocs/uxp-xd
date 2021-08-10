@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # Quick Start - React: Make your first XD plugin with React
 
 While there are many choices when it comes to picking a JavaScript framework to build an XD plugin, we want to cover one of the most popular frameworks, React, first.

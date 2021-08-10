@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # Plugin management
 
 The UXP Developer Tool allows you to create plugins from templates and add existing ones to your developer workspace.

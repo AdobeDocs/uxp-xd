@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # How to export a rendition
 
 This sample describes how an XD plugin can invoke the default folder picker and generate a rendition of the selected artboard for export.

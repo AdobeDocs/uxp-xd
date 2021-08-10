@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 
 <a name="wheelevent-wheelevent" id="wheelevent-wheelevent"></a>
 

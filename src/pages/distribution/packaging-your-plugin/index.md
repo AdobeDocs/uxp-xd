@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # Packaging your plugin
 
 Before you share your plugin, you'll need to package it up.

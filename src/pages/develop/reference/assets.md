@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # assets
 
 Represents the document styles listed in the Assets panel. Styles can be added and removed manually by the user, so

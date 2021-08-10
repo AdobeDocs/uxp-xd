@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # Modal UX
 
 This section will have recommendations when using a Modal Dialog -  Blocking UI. If the plugin needs to run an action before the user starts a new action then the modal would be recommended for that use case. 

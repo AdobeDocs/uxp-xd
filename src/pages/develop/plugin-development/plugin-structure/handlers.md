@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # The `main.js` file
 
 Every _UI entry point_ you declare in [`manifest.json`](/develop/plugin-development/plugin-structure/manifest/) must be fulfilled by a definition exported from your `main.js` module.

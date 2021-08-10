@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 ## Join the developer community
 
 Don't build it alone! We've got an awesome community that you can interact with during your journey to creating your XD plugin.

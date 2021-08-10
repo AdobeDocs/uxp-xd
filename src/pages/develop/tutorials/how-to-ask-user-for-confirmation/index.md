@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # Asking the user for confirmation
 
 There are many times when a plugin will need to ask the user whether or not it should proceed with a given course of action. This tutorial will show you an easy way to get user confirmation before proceeding with a task.

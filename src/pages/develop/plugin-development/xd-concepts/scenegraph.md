@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # Scenegraph
 
 The XD document is represented as a hierarchical tree of nodes called the **scenegraph**. Some scenenodes may contain children (e.g. a

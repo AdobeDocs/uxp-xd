@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # Technical Reference
 
 Use this section to access the API references, know what are the currently known issues, and learn what is new and what has changed.

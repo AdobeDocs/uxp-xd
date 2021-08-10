@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # How to Debug Your Plugin
 
 Bugs happen! In this tutorial, you will learn how to debug your Adobe XD plugin.

@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # 5.0 User Interface
 
 Not all plugins will require any user interface, but many will need to at least render error messages and such. Be sure to review the guidelines in this section to ensure that you’re providing a good user experience in your user interfaces.

@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # scenegraph
 
 The scenegraph is a node tree which represents the structure of the XD document. It closely matches the hierarchy seen in the Layers panel

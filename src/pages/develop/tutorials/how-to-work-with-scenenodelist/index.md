@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # How to work with a SceneNodeList
 
 This sample demonstrates how to work with a SceneNodeList in Adobe XD. The short version of this story is that a `SceneNodeList` is _not an Array_. Read on for details.

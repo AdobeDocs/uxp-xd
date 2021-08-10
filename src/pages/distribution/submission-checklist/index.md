@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # Submission Checklist
 
 Adobe XD users can discover plugins directly within the app via the XD Plugin Manager. All XD plugins listed in the Plugin Manager must first go through a review process before being published.

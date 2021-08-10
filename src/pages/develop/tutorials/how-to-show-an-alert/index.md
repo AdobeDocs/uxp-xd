@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # How to show an alert
 
 There will be times when you need to show a simple message to your user. This tutorial will show you an easy way to display an informational message like the following:

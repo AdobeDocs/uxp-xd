@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # Navigation
 
 These guidelines provide clarity on the different entry points a plugin can have. An entry point is how users access your plugin, users can access a plugin through the menu bar or a keyboard shortcut.

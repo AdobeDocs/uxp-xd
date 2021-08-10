@@ -1,3 +1,11 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+---
+
 # UX Patterns
 
 UX Patterns will include UX requirements and/or UX best practices these will ensure your plugin follows XD user experience patterns.

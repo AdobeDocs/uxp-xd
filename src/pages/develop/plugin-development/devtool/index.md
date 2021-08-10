@@ -1,4 +1,9 @@
 ---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
 title: Adobe UXP Developer Tool
 description: The Adobe UXP Developer Tool makes it easy to create, load, debug, and package UXP-based plugins for Adobe XD.
 contributors:
