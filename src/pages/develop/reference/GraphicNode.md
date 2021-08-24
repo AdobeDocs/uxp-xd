@@ -108,7 +108,7 @@ Position of the stroke relative to the shape's path outline: GraphicNode.INNER_S
 
 ▸ **strokeEndCaps**: `string`
 
-**Default**: `STROKE_CAP_SQUARE`
+**Default**: `STROKE_CAP_NONE`
 
 For Lines and non-closed Paths, how the dangling ends of the stroke are rendered: GraphicNode.STROKE_CAP_NONE, STROKE_CAP_SQUARE, or STROKE_CAP_ROUND.
 
