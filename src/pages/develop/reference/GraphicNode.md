@@ -54,10 +54,12 @@ If false, the `fill` is not rendered. The user can toggle this via a checkbox in
 
 ▸ **stroke**: [Color](/develop/reference/Color)
 
-**Default**: `Color(0)`
+**Default**: `Color(0)` or `null`
 
 The stroke color applied to this shape, if any. If this property is null _or_ `strokeEnabled` is false, no stroke is drawn.
-Freshly created nodes have a transparent stroke (RGBA value of 0) by default. Artboard objects ignore stroke settings.
+Freshly created rectangles, polygons, and ellipses have a transparent stroke (RGBA value of 0) by default.
+For new lines and paths, the default stroke is null.
+Artboard objects ignore stroke settings.
 
 Depending on the [strokeWidth](#strokewidth) and [strokePosition](#strokeposition), the path outline
 of a node may need to be positioned on fractional pixels in order for the stroke itself to be crisply aligned to the pixel grid.
