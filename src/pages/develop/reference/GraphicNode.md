@@ -54,10 +54,10 @@ If false, the `fill` is not rendered. The user can toggle this via a checkbox in
 
 ▸ **stroke**: [Color](/develop/reference/Color)
 
-**Default**: `null`
+**Default**: `Color(0)`
 
 The stroke color applied to this shape, if any. If this property is null _or_ `strokeEnabled` is false, no stroke is drawn.
-Freshly created nodes have no stroke by default. Artboard objects ignore stroke settings.
+Freshly created nodes have a transparent stroke (RGBA value of 0) by default. Artboard objects ignore stroke settings.
 
 Depending on the [strokeWidth](#strokewidth) and [strokePosition](#strokeposition), the path outline
 of a node may need to be positioned on fractional pixels in order for the stroke itself to be crisply aligned to the pixel grid.
@@ -78,7 +78,7 @@ See ["Properties with object values"](/develop/plugin-development/xd-concepts/pr
 
 ▸ **strokeEnabled**: `boolean`
 
-**Default**: `false`
+**Default**: `true`
 
 If false, the `stroke` is not rendered. The user can toggle this via a checkbox in the Properties panel.
 
