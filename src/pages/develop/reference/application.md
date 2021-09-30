@@ -128,7 +128,7 @@ application.createRenditions(renditions).then(function (results) {
 **Since**: XD 45
 
 Equivalent to _File > Import_.  Brings assets into the XD document, including images, videos, and _Adobe Photoshop_ or _Adobe Illustrator_ files.
-Assets will added as a child of the [artboard](/develop/reference/Artboard) that is the parent of the current [selection](/develop/reference/selection) (or to the [document root](/develop/reference/RootNode) if nothing is selected).
+Assets will be added as a child of the [artboard](/develop/reference/Artboard) that is the parent of the current [selection](/develop/reference/selection) (or to the [document root](/develop/reference/RootNode) if nothing is selected).
 
 Supported import file extensions: AI (_Illustrator_), BMP, GIF, JPG, JPEG, JSON ([Lottie](/develop/reference/Lottie)), MP4 ([Video](/develop/reference/Video)), PNG, PSD (_Photoshop_), TIF, TIFF, TXT
 
