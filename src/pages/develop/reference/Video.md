@@ -18,10 +18,6 @@ Supported videos:
 * Format: MP4
 * Codec: H.264
 * Audio: AAC
-* Maximum size: 15 MB
+* Maximum file size: 15 MB
 * Maximum resolution: 4K
 * Maximum videos per document: 20
-
-
-dave add note about how to move and resize?
-
