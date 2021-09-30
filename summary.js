@@ -339,6 +339,10 @@ module.exports = [
             title: "LinkedGraphic",
           },
           {
+            path: "/develop/reference/Lottie/",
+            title: "Lottie",
+          },
+          {
             path: "/develop/reference/Matrix/",
             title: "Matrix",
           },
@@ -405,6 +409,10 @@ module.exports = [
           {
             path: "/develop/reference/Text/",
             title: "Text",
+          },
+          {
+            path: "/develop/reference/Video/",
+            title: "Video",
           },
           {
             path: "/develop/reference/viewport/",

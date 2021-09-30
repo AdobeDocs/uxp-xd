@@ -8,6 +8,14 @@ keywords:
 
 # Changelog
 
+## XD Release 45 (October 2021)
+
+### New API Features
+
+* [application.import()](/develop/reference/application/#import) command
+* [Lottie](/develop/reference/Lottie) SceneNode type
+* [Video](/develop/reference/Video) SceneNode type
+
 ## XD Release 42 (July 2021)
 
 ### New API Features
