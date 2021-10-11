@@ -132,8 +132,6 @@ Assets will be added as a child of the [artboard](/develop/reference/Artboard) t
 
 Supported import file extensions: AI (_Illustrator_), BMP, GIF, JPG, JPEG, JSON ([Lottie](/develop/reference/Lottie)), MP4 ([Video](/develop/reference/Video)), PNG, PSD (_Photoshop_), TIF, TIFF, TXT
 
-Note: SVG support is coming soon.
-
 An error will be thrown if a passed file does not exist or has an unsupported file extension.
 Parsing errors or other import problems that are specific to formats supported by XD are displayed to the user in the same way the _File > Import_ action informs users.
 
