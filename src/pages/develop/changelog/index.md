@@ -8,6 +8,12 @@ keywords:
 
 # Changelog
 
+## XD Release 46 (November 2021)
+
+### New API Features
+
+* [reset3DTransforms()](/develop/reference/commands/#reset3dtransforms) command
+
 ## XD Release 42 (July 2021)
 
 ### New API Features
