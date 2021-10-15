@@ -65,11 +65,21 @@ If the edit throws an exception, or its Promise is rejected, the entire edit bat
 
 #### Initiating an edit operation from panel UI
 
-Although menu commands automatically trigger an edit batch, panel UI events must opt into initiating one by specifically calling the [`application.editDocument()` API](/develop/reference/application/#module_application-editDocument). The function passed to `editDocument()` is treated just like a menu command handler at that point.
+Although menu commands automatically trigger an edit batch, panel UI events must opt into initiating one by specifically calling the [_application.editDocument()_ API](/develop/reference/application/#editdocument). The function passed to `editDocument()` is treated just like a menu command handler at that point.
 
-You can only call `editDocument()` while handling a panel UI event which corresponds to an explicit user action (e.g. a `"click"` or `"input"` event).
+You can only call `editDocument()` while handling one of these panel UI events which correspond to explicit user actions:
+* _blur_
+* _change_
+* _click_
+* _drop_ (since XD 46)
+* _input_
+* _keydown_
+* _keypress_
+* _keyup_
+* _mousedown_
+* _mouseup_
 
-Consecutive edit operations triggered by the same UI and applying to the same selected nodes may get merged into a single Undo step by XD. See [discussion of `editDocument()`'s `mergeId` option](/develop/reference/application/#module_application-editDocument) for details.
+Consecutive edit operations triggered by the same UI and applying to the same selected nodes may get merged into a single Undo step by XD. See [discussion of _editDocument()'s_ _mergeId_ option](/develop/reference/application/#editdocument) for details.
 
 #### Modal/exclusive UI
 
