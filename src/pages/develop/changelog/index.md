@@ -16,8 +16,6 @@ keywords:
 * [Lottie](/develop/reference/Lottie) SceneNode type
 * [Video](/develop/reference/Video) SceneNode type
 
-Note: The [Developer Console](/develop/tutorials/debugging/#quick-debugging-with-developer-console-deprecated) has been deprecated in favor of [debugging with the UXP Developer Tool](/develop/tutorials/debugging/#debugging-with-the-uxp-developer-tool)
-
 ## XD Release 42 (July 2021)
 
 ### New API Features

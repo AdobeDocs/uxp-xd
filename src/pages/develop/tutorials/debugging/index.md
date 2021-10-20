@@ -46,7 +46,7 @@ Currently, you **can**...
 - You may see a blank white panel to the left of the DevTools UI. Ignore this, as it does nothing.
 - If debugging exposes any private fields and methods, do not attempt to use them. Plugins referring to private APIs may be rejected or removed from the plugin marketplace.
 
-## Quick debugging with Developer Console (_deprecated_)
+## Quick debugging with Developer Console
 
 ### 1. Check the Developer Console
 
