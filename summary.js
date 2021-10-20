@@ -19,10 +19,6 @@ module.exports = [
             header: true,
             pages: [
               {
-                path: "/develop/plugin-development/plugin-structure/location/",
-                title: "Location",
-              },
-              {
                 path:
                   "/develop/plugin-development/plugin-structure/folder-structure/",
                 title: "Folder Structure",

@@ -16,6 +16,8 @@ keywords:
 * [Lottie](/develop/reference/Lottie) SceneNode type
 * [Video](/develop/reference/Video) SceneNode type
 
+Note: The [Developer Console](/develop/tutorials/debugging/#quick-debugging-with-developer-console-deprecated) has been deprecated in favor of [debugging with the UXP Developer Tool](/develop/tutorials/debugging/#debugging-with-the-uxp-developer-tool)
+
 ## XD Release 42 (July 2021)
 
 ### New API Features
@@ -232,7 +234,7 @@ UXP now supports the [HTML5 Drag & Drop specification](https://html.spec.whatwg.
 
 For more, [see this **sample plugin code**](https://github.com/AdobeXD/plugin-samples/tree/master/ui-panel-simple-drag-and-drop).
 
-### Debugging with Chrome DevTools _(beta)_
+### Debugging with Chrome DevTools _(deprecated)_
 
 You can now use the Chrome DevTools UI (CDT) to debug your JS code -- and _to a limited extent_, inspect your UI DOM structure. **Read the updated [debugging tutorial](/develop/tutorials/debugging/index.md)** for details.
 
