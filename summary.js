@@ -19,10 +19,6 @@ module.exports = [
             header: true,
             pages: [
               {
-                path: "/develop/plugin-development/plugin-structure/location/",
-                title: "Location",
-              },
-              {
                 path:
                   "/develop/plugin-development/plugin-structure/folder-structure/",
                 title: "Folder Structure",
@@ -339,6 +335,10 @@ module.exports = [
             title: "LinkedGraphic",
           },
           {
+            path: "/develop/reference/Lottie/",
+            title: "Lottie",
+          },
+          {
             path: "/develop/reference/Matrix/",
             title: "Matrix",
           },
@@ -405,6 +405,10 @@ module.exports = [
           {
             path: "/develop/reference/Text/",
             title: "Text",
+          },
+          {
+            path: "/develop/reference/Video/",
+            title: "Video",
           },
           {
             path: "/develop/reference/viewport/",

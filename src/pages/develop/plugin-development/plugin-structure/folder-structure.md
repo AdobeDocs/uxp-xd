@@ -16,10 +16,6 @@ my-plugin-folder
 └── manifest.json
 ```
 
-## Your plugin's parent folder
-
-In [the `develop` folder](/develop/plugin-development/plugin-structure/location/#the-develop-folder), create a new folder for your plugin with any name you like.
-
 ## Your plugin files
 
 Within the parent folder, you'll need _at minimum_ two files, with these _exact_ names:

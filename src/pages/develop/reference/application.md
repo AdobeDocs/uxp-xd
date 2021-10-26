@@ -68,10 +68,11 @@ A single `createRenditions()` call can generate any number of renditions, includ
 different output settings) or renditions of multiple different nodes. Only one `createRenditions()` call can be executing at any
 given time, so wait for the Promise it returns before calling it again.
 
-**Kind**: static method of [application](#module_application)
 **Returns**: `Promise<Array<RenditionResult>, string>` - Promise which is fulfilled with an array of RenditionResults (pointing to
 the same `outputFile`s that were originally passed in, or rejected with an error string if one or more renditions failed for
 any reason.
+
+**Kind**: static method of [application](#module_application)
 
 | Param        | Type                       | Description                    |
 | ----------   | -------------------------- | ------------------------------ |
@@ -119,6 +120,50 @@ application.createRenditions(renditions).then(function (results) {
   // ...do something with outputFiles on disk...
 });
 ```
+
+## import()
+
+▸ **import**(`entries`)
+
+**Since**: XD 45
+
+Equivalent to _File > Import_.  Brings assets into the XD document, including images, videos, and _Adobe Photoshop_ or _Adobe Illustrator_ files.
+Assets will be added as a child of the [artboard](/develop/reference/Artboard) that is the parent of the current [selection](/develop/reference/selection) (or to the [document root](/develop/reference/RootNode) if nothing is selected).
+
+Supported import file extensions: AI (_Illustrator_), BMP, GIF, JPG, JPEG, JSON ([Lottie](/develop/reference/Lottie)), MP4 ([Video](/develop/reference/Video)), PNG, PSD (_Photoshop_), TIF, TIFF, TXT
+
+An error will be thrown if a passed file does not exist or has an unsupported file extension.
+Parsing errors or other import problems that are specific to formats supported by XD are displayed to the user in the same way the _File > Import_ action informs users.
+
+**Kind**: static method of [application](#module_application)
+
+| Param        | Type                       | Description                    |
+| ----------   | -------------------------- | ------------------------------ |
+| `entries` | Array&lt;[uxp.storage.File](https://www.adobe.io/xd/uxp/uxp/reference-js/Modules/uxp/Persistent%20File%20Storage/File/)&gt; | List of files to be imported |
+
+**Example**
+
+```js
+const application = require("application");
+const fs = require("uxp").storage.localFileSystem;
+
+// Import all files in the plugin's temporary folder
+application.editDocument({ editLabel: "Importing assets" }, async function () {
+    let tempFolder = await fs.getTemporaryFolder();
+    let entries = await tempFolder.getEntries();
+    application.import(entries);
+});
+
+// Import one file selected by the user
+application.editDocument({ editLabel: "Importing asset" }, async function () {
+    let importTypes = ["ai", "bmp", "gif", "jpeg", "jpg", "json", "mp4", "png", "psd", "tif", "tiff", "txt"];
+    let fileAsset = await fs.getFileForOpening({ types: importTypes });
+    if (fileAsset) {
+        application.import([fileAsset]);
+    }
+});
+```
+
 
 ## version
 

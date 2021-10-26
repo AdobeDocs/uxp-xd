@@ -8,6 +8,14 @@ keywords:
 
 # Changelog
 
+## XD Release 45 (October 2021)
+
+### New API Features
+
+* [application.import()](/develop/reference/application/#import) command
+* [Lottie](/develop/reference/Lottie) SceneNode type
+* [Video](/develop/reference/Video) SceneNode type
+
 ## XD Release 42 (July 2021)
 
 ### New API Features
@@ -224,7 +232,7 @@ UXP now supports the [HTML5 Drag & Drop specification](https://html.spec.whatwg.
 
 For more, [see this **sample plugin code**](https://github.com/AdobeXD/plugin-samples/tree/master/ui-panel-simple-drag-and-drop).
 
-### Debugging with Chrome DevTools _(beta)_
+### Debugging with Chrome DevTools _(deprecated)_
 
 You can now use the Chrome DevTools UI (CDT) to debug your JS code -- and _to a limited extent_, inspect your UI DOM structure. **Read the updated [debugging tutorial](/develop/tutorials/debugging/index.md)** for details.
 
