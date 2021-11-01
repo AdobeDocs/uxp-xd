@@ -69,6 +69,8 @@ function myCommand(selection) {
     - [Path](/develop/reference/Path)
     - [BooleanGroup](/develop/reference/BooleanGroup)
     - [Text](/develop/reference/Text)
+  - [Lottie](/develop/reference/Lottie)
+  - [Video](/develop/reference/Video)
   - [Group](/develop/reference/Group)
   - [SymbolInstance](/develop/reference/SymbolInstance)
   - [RepeatGrid](/develop/reference/RepeatGrid)
