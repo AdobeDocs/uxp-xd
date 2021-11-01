@@ -15,6 +15,14 @@ keywords:
 * [reset3DTransforms()](/develop/reference/commands/#reset3dtransforms) command
 * Added _drop_ to panel UI events that can call [application.editDocument()](/develop/reference/application/#editdocument)
 
+## XD Release 45 (October 2021)
+
+### New API Features
+
+* [application.import()](/develop/reference/application/#import) command
+* [Lottie](/develop/reference/Lottie) SceneNode type
+* [Video](/develop/reference/Video) SceneNode type
+
 ## XD Release 42 (July 2021)
 
 ### New API Features
