@@ -44,6 +44,7 @@ Defines size of the RepeatGrid. Cells are created and destroyed as necessary to 
 Number of grid columns
 
 **Kind**: instance property of [RepeatGrid](#repeatgrid)
+**Read only**: true
 
 ## numRows
 
@@ -52,6 +53,7 @@ Number of grid columns
 Number of grid rows
 
 **Kind**: instance property of [RepeatGrid](#repeatgrid)
+**Read only**: true
 
 ## paddingX
 
@@ -60,6 +62,7 @@ Number of grid rows
 Horizontal spacing between grid cells/columns
 
 **Kind**: instance property of [RepeatGrid](#repeatgrid)
+**Read only**: true
 
 ## paddingY
 
@@ -68,6 +71,7 @@ Horizontal spacing between grid cells/columns
 Vertical spacing between grid cells/rows
 
 **Kind**: instance property of [RepeatGrid](#repeatgrid)
+**Read only**: true
 
 ## cellSize
 
@@ -76,6 +80,7 @@ Vertical spacing between grid cells/rows
 The size of each grid cell. The size of each cell's content can vary slightly due to text overrides; the cell size is always set to the width of the widest cell content and the height of the tallest cell content.
 
 **Kind**: instance property of [RepeatGrid](#repeatgrid)
+**Read only**: true
 
 ## attachTextDataSeries()
 
