@@ -50,3 +50,105 @@ those changes are synced to all other instances of the component (unless blocked
 
 **Kind**: instance property of [SymbolInstance](#symbolinstance)
 **Read only**: true
+
+## stateId
+
+▸ **stateId**: `?string`
+
+**Since**: XD 47
+
+Returns a unique GUID string representing the state identification, or null if there is only one state. The GUID string will be a combination of digits, lower-case letters, and dashes. All instances of a component will have the same state IDs for the same states.
+
+**Kind**: instance property of [SymbolInstance](#symbolinstance)
+**Read only**: true
+
+## stateName
+
+▸ **stateName**: `string`
+
+**Since**: XD 47
+
+Returns the name of the currently active state of the component.
+
+**Kind**: instance property of [SymbolInstance](#symbolinstance)
+**Read only**: true
+
+## hasOverrides
+
+▸ **hasOverrides**: `boolean`
+
+**Since**: XD 47
+
+Returns true if the currently active state has one or more overrides that differ from the master instance of the component.
+
+**Kind**: instance property of [SymbolInstance](#symbolinstance)
+**Read only**: true
+
+## isDefaultState
+
+▸ **isDefaultState**: `boolean`
+
+**Since**: XD 47
+
+Returns true if the currently active state is displaying the default state of the component.
+
+**Kind**: instance property of [SymbolInstance](#symbolinstance)
+**Read only**: true
+
+## defaultState
+
+▸ **defaultState**: [SymbolInstance](#symbolinstance)
+
+**Since**: XD 47
+
+Returns a [SymbolInstance](#symbolinstance) that is the default state of the component.
+
+**Kind**: instance property of [SymbolInstance](#symbolinstance)
+**Read only**: true
+
+## isActiveState
+
+▸ **isActiveState**: `boolean`
+
+**Since**: XD 47
+
+Returns true if the component state is the currently active state (being displayed on canvas).
+
+**Kind**: instance property of [SymbolInstance](#symbolinstance)
+**Read only**: true
+
+## activeState
+
+▸ **activeState**: [SymbolInstance](#symbolinstance)
+
+**Since**: XD 47
+
+Returns a [SymbolInstance](#symbolinstance) that is the active state of the component.
+
+**Kind**: instance property of [SymbolInstance](#symbolinstance)
+**Read only**: true
+
+## getState()
+
+▸ **getState(stateId)**: [SymbolInstance](#symbolinstance)
+
+**Since**: XD 47
+
+Returns a [SymbolInstance](#symbolinstance) that is the state with the given state ID. Returns null if the state ID is not valid, or if the state is not found in the component.
+
+| Param     | Type                |
+| --------- | ------------------- |
+| `stateId` | `string`            |
+
+**Kind**: instance method of [SymbolInstance](#symbolinstance)
+
+## statesInfo
+
+▸ **statesInfo**: `Array.<!{stateId: ?string, name: string, isDefaultState: boolean}>`
+
+**Since**: XD 47
+
+Returns an array containing information about all the states in the component. For each state it returns an object containing the state ID, state name and whether it is the default state.
+
+**Kind**: instance property of [SymbolInstance](#symbolinstance)
+**Read only**: true
