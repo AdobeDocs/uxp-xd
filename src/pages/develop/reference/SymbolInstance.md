@@ -101,7 +101,7 @@ Returns true if the currently active state is displaying the default state of th
 
 **Since**: XD 47
 
-Returns a [SymbolInstance](#symbolinstance) that is the default state of the component.
+Returns a [SymbolInstance](#symbolinstance) that is the default state of the component.  The SymbolInstance returned may or may not be in the scenegraph, therefore it cannot be relied upon for traversing the SceneNode hierarchy.
 
 **Kind**: instance property of [SymbolInstance](#symbolinstance)
 **Read only**: true
