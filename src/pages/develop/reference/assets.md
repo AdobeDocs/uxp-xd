@@ -264,3 +264,36 @@ var assets = require("assets"),
 ```
 
 **Kind**: static method of [characterStyles](#module_assets-characterStyles)
+
+## symbols
+
+▸ **symbols**
+
+**Since**: XD 47
+
+The collection of [Components](/develop/reference/SymbolInstance) (previously known as "Symbols" in XD's UI) saved in this document's assets library.
+
+- [.symbols](#module_assets-symbols)
+  - [.get()](#symbolsget): Array.<[SymbolInstance](/develop/reference/SymbolInstance)>
+
+---
+### symbols.get()
+
+▸ **symbols.get**(): Array.<[SymbolInstance](/develop/reference/SymbolInstance)>
+
+**Since**: XD 47
+
+Get a list of all canonical [component](/develop/reference/SymbolInstance) assets in the order they appear in the Assets panel.
+
+If there are no component assets, an empty array is returned.
+
+**Example**
+
+```js
+const assets = require("assets");
+const allComponentAssets = assets.symbols.get();
+```
+
+**Kind**: static method of [symbols](#symbols)
+
+---

@@ -8,6 +8,13 @@ keywords:
 
 # Changelog
 
+## XD Release 47 (December 2021)
+
+### New API Features
+
+* [SymbolInstance](/develop/reference/SymbolInstance) APIs to get read-only information on Components
+* [assets.symbols.get()](/develop/reference/assets/#symbolsget) function to list Component assets
+
 ## XD Release 45 (October 2021)
 
 ### New API Features
