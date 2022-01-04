@@ -71,7 +71,7 @@ You can only call `editDocument()` while handling one of these panel UI events w
 * _blur_
 * _change_
 * _click_
-* _drop_ (since XD 46)
+* _drop_ (since XD 47)
 * _input_
 * _keydown_
 * _keypress_
