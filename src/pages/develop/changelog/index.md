@@ -8,6 +8,12 @@ keywords:
 
 # Changelog
 
+## XD Release 48 (February 2022)
+
+### New API Features
+
+* [Text.updateText()](/develop/reference/Text/#updatetext) method
+
 ## XD Release 45 (October 2021)
 
 ### New API Features
