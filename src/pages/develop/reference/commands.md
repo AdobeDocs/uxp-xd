@@ -314,7 +314,7 @@ if (stack.layout.type === scenegraph.SceneNode.LAYOUT_STACK && stack.contentChil
 
 ▸ **reset3DTransforms**()
 
-**Since**: XD 46
+**Since**: XD 47
 
 Resets the 3D properties (X rotation, Y rotation, Z position) of selected objects (but not their content) to 0.
 Equivalent to _Object > Transform > Reset 3D Transforms_.
