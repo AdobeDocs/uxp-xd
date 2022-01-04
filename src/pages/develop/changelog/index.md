@@ -8,7 +8,7 @@ keywords:
 
 # Changelog
 
-## XD Release 46 (November 2021)
+## XD Release 47 (January 2022)
 
 ### New API Features
 
