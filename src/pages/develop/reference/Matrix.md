@@ -110,7 +110,7 @@ Modifies this matrix object and also returns it so calls can be chained.
 
 **Kind**: instance method of [Matrix](#Matrix)
 
-## matrix.scale()
+## scale()
 
 ▸ **scale**(`sx`, `sy`, `cx`, `cy`): [Matrix](#Matrix)
 
@@ -128,7 +128,7 @@ Note: scale transforms are not generally permitted in XD.
 
 **Kind**: instance method of [Matrix](#Matrix)
 
-## matrix.rotate()
+## rotate()
 
 ▸ **rotate**(`angle`, `cx`, `cy`): [Matrix](#Matrix)
 

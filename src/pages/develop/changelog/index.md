@@ -8,6 +8,13 @@ keywords:
 
 # Changelog
 
+## XD Release 47 (January 2022)
+
+### New API Features
+
+* [reset3DTransforms()](/develop/reference/commands/#reset3dtransforms) command
+* Added _drop_ to panel UI events that can call [application.editDocument()](/develop/reference/application/#editdocument)
+
 ## XD Release 45 (October 2021)
 
 ### New API Features

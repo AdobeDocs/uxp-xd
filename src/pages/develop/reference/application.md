@@ -22,6 +22,17 @@ XD calls the `editFunction()` synchronously (before `editDocument()` returns). T
 - It can return a Promise to extend the duration of the edit asynchronously
 
 You can _only_ call `editDocument()` in response to a user action, such as a button `"click"` event or a text input's `"input"` event. This generally means you must call it while a UI event handler is on the call stack.
+For a plugin's panel, these UI events can trigger a call to `editDocument()`:
+* _blur_
+* _change_
+* _click_
+* _drop_ (since XD 47)
+* _input_
+* _keydown_
+* _keypress_
+* _keyup_
+* _mousedown_
+* _mouseup_
 
 For UI events that often occur in rapid-fire clusters, such as dragging a slider or pressing keys in a text field, XD tries to smartly merge consecutive edits into a single atomic Undo step. See the `mergeId` option below to customize this behavior.
 
@@ -53,6 +64,50 @@ panelButton.addEventListener("click", (event) => {
     selection.items[0].fill = new Color("red");
   });
 });
+```
+
+**Example**
+
+```js
+const { editDocument } = require("application");
+const { Color, selection } = require("scenegraph");
+var panel;
+
+// Illustrates editing the selected document content in response to a "drop" event in the panel UI
+function show(event) {
+    if (!panel) {
+        panel = document.createElement("div");
+
+        // Specify plugin panel to have a draggable source div and a target div
+        panel.innerHTML = `
+            <div id="divDragSource" style="height: 50px; width: 50%; background-color: aqua" data-color="aqua" draggable=true>Drag Source</div>
+            <div id="divDragTarget" style="height: 50px; width: 50%; background-color: black">Drag Target</div>`;
+
+        // Upon starting drag, set custom data from drag source
+        panel.querySelector("#divDragSource").addEventListener("dragstart", (event) => {
+            event.dataTransfer.setData("text", event.target.getAttribute("data-color"));
+        });
+
+        // Upon dragging over target, change mouse cursor
+        panel.querySelector("#divDragTarget").addEventListener("dragover", (event) => {
+            event.preventDefault();
+            event.dataTransfer.dropEffect = "link";
+        });
+
+        // Upon dropping onto target, get custom data from drag source
+        panel.querySelector("#divDragTarget").addEventListener("drop", (event) => {
+            event.preventDefault();
+            let colorName = event.dataTransfer.getData("text");
+
+            // Set the fill color of everything selected in the document
+            editDocument(() => {
+                selection.items.forEach(item => item.fill = new Color(colorName));
+            });
+        });
+
+        event.node.appendChild(panel);
+    }
+}
 ```
 
 > **Info**
