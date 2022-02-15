@@ -12,7 +12,7 @@ keywords:
 
 ## new Matrix3D()
 
-▸ **new Matrix3D**(`a`, `b`, `c`, `d`, `e`, `f`, `m20`, `m21`, `m02`, `m12`, `m22`, `z`): [Matrix3D](#Matrix3D)
+▸ **new Matrix3D**(`a`, `b`, `c`, `d`, `e`, `f`, `m20`, `m21`, `m02`, `m12`, `m22`, `mz`): [Matrix3D](#Matrix3D)
 
 Creates a new 3D transform matrix with the following structure:
 
@@ -351,18 +351,6 @@ Transform the point (0, 0).
 
 **Kind**: instance method of [Matrix3D](#Matrix3D)
 
-## transformPoint3D()
-
-▸ **transformPoint3D**(`point`): `{x:number, y:number, z:number}`
-
-Transforms a 3D point using the matrix.
-
-| Param | Type                              |
-| ----- | --------------------------------- |
-| point | `{x:number, y:number, z:number}` |
-
-**Kind**: instance method of [Matrix3D](#Matrix3D)
-
 ## transformRect()
 
 ▸ **transformRect**(`rect`): `{x:number, y:number, width:number, height:number}`
@@ -433,7 +421,7 @@ Performs a flip to the matrix according to the passed FlipInfo. If the width and
 
 ▸ **equals**(`otherMatrix`): `boolean`
 
-Compare a matrix for equality with a tolerance.  Returns true if current matrix is identical upto ZERO_TOLERANCE with otherMatrix.
+Compare a matrix for equality with a tolerance.  Returns true if current matrix is identical up to ZERO_TOLERANCE with otherMatrix.
 
 | Param       | Type                      | Description                 |
 | ----------- | ------------------------- | --------------------------- |
