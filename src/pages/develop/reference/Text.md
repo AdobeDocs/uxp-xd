@@ -46,8 +46,7 @@ Text bounds and layout work differently depending on the type of text:
 
 The plaintext content of the node, including any hard line breaks but excluding soft line wrap breaks.
 
-Setting text does not change styleRanges, so styles aligned with the old text's string indices will continue to be applied to
-the new string's indices unless you explicitly change styleRanges as well.
+Note: Setting text removes [styleRanges](#styleranges), meaning the entire string is formatted with the first style.  To retain the [styleRanges](#styleranges), instead use the [Text.updateText()](/develop/reference/Text/#updatetext) method.
 
 **Kind**: instance property of [Text](#text)
 
@@ -292,3 +291,16 @@ For area text, true if the text does not fit in the content box and its bottom i
 **Kind**: instance property of [Text](#text)
 **Read only**: true
 
+## updateText()
+
+▸ **updateText**(`textValue`)
+
+**Since**: XD 48
+
+Sets the [text](#text-1) property without changing the Text's [styleRanges](#styleranges).  Styles aligned with the old text's string indices will continue to be applied to the new string's indices unless you explicitly change [styleRanges](#styleranges) as well.
+
+| Param  | Type     | Description |
+| ------ | -------- | -------- |
+| textValue | `string` | The plain text content of the node, including any hard line breaks but excluding soft line wrap breaks. |
+
+**Kind**: instance method of [Text](#text)
