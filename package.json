@@ -15,7 +15,7 @@
     "@adobe/gatsby-theme-aio": "^3.23.11",
     "gatsby": "^3.6.0",
     "imagemin-pngquant": "^9.0.2",
-    "pngquant": "^4.0.0",
+    "pngquant": "^4.1.0",
     "pngquant-bin": "^6.0.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
