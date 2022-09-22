@@ -12,13 +12,10 @@
     "url": "https://github.com/icaraps"
   },
   "dependencies": {
-    "@adobe/gatsby-theme-aio": "^3.23.11",
-    "gatsby": "^3.6.0",
-    "imagemin-pngquant": "^9.0.2",
-    "pngquant": "^4.0.0",
-    "pngquant-bin": "^6.0.0",
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0",
+    "@adobe/gatsby-theme-aio": "^4.6.2",
+    "gatsby": "4.22.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "uxp-documentation": "github:adobedocs/uxp"
   },
   "scripts": {
@@ -30,5 +27,6 @@
     "build:incremental": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
-  }
+  },
+  "packageManager": "yarn@3.2.2"
 }
