@@ -1,12 +1,8 @@
----
-keywords:
-  - Creative Cloud
-  - API Documentation
-  - UXP
-  - Plugin
----
+# UXP API Reference
 
-# UXP
+* [JavaScript Reference](reference-js/index.md) : Technical documentation regarding the functions, classes, and modules available globally (on window, for example) and via `require`.
+* [CSS Reference](reference-css/index.md) : Technical documentation regarding the kinds of CSS styles and features available in UXP.
+* [HTML Reference](reference-html/index.md) : Technical documentation regarding some of the HTML elements and attributes that are supported.
+* [Spectrum UXP Reference](reference-spectrum/index.md) : Information on the Spectrum UXP Web Component widgets and their capabilities.
+* [Known Issues](known-issues.md): List of known issues in UXP
 
-In this section, you can learn all about UXP in Adobe XD, including how to work with HTML, CSS, and JavaScript APIs, as well as how to work with
-Spectrum UXP components for your plugin UI.
