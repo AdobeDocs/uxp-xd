@@ -85,11 +85,6 @@ jobs:
         with:
           cmd: install
 
-      - name: Prepare UXP docs
-        uses: borales/actions-yarn@v3
-        with:
-          cmd: prepare-uxp
-
       - name: Build site
         if: ${{ success() }}
         uses: borales/actions-yarn@v3

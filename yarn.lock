@@ -4202,9 +4202,9 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*, @types/node@npm:>=10.0.0":
-  version: 18.11.0
-  resolution: "@types/node@npm:18.11.0"
-  checksum: f27f899ab428e5732f04fadadc9203f44bdf3abf56474540ee27da90e4f2ba133faf87263cada4d2271955f92ee6a142bd50683c86290fe5070c19aac44fd654
+  version: 18.11.2
+  resolution: "@types/node@npm:18.11.2"
+  checksum: 0ff5c90fb9ab653e018b858479aea4d2f763b07b31f9502383d408936f525ca37cac82ea27774a0dd0356ff9badba2792a6a3fff94f79fd7c82ee2a892c43ed5
   languageName: node
   linkType: hard
 
@@ -6050,9 +6050,9 @@ __metadata:
   linkType: hard
 
 "caniuse-lite@npm:^1.0.0, caniuse-lite@npm:^1.0.30001400, caniuse-lite@npm:^1.0.30001407":
-  version: 1.0.30001420
-  resolution: "caniuse-lite@npm:1.0.30001420"
-  checksum: dfa5027b2aeaba3ab1731735a46aecf62f286cdeec7f8ccb0f8cce0a3d02447e640e944d9bf5d9ea98b53fac6c2b168bb18f4c9ad598d92a2da7b05e2aea06e2
+  version: 1.0.30001422
+  resolution: "caniuse-lite@npm:1.0.30001422"
+  checksum: 29c950944b33ce242068402e679a5651d1289033381dcad7295cf14b589a6bd93d5bf32aa458bacaba9b25597731e0278c84ee588910ae774eab0585be88df62
   languageName: node
   linkType: hard
 
@@ -11305,11 +11305,11 @@ __metadata:
   linkType: hard
 
 "is-core-module@npm:^2.8.1, is-core-module@npm:^2.9.0":
-  version: 2.10.0
-  resolution: "is-core-module@npm:2.10.0"
+  version: 2.11.0
+  resolution: "is-core-module@npm:2.11.0"
   dependencies:
     has: ^1.0.3
-  checksum: 0f3f77811f430af3256fa7bbc806f9639534b140f8ee69476f632c3e1eb4e28a38be0b9d1b8ecf596179c841b53576129279df95e7051d694dac4ceb6f967593
+  checksum: f96fd490c6b48eb4f6d10ba815c6ef13f410b0ba6f7eb8577af51697de523e5f2cd9de1c441b51d27251bf0e4aebc936545e33a5d26d5d51f28d25698d4a8bab
   languageName: node
   linkType: hard
 
@@ -13737,11 +13737,11 @@ __metadata:
   linkType: hard
 
 "node-abi@npm:^3.3.0":
-  version: 3.26.0
-  resolution: "node-abi@npm:3.26.0"
+  version: 3.28.0
+  resolution: "node-abi@npm:3.28.0"
   dependencies:
     semver: ^7.3.5
-  checksum: 01271cf7b7e5b62a1d3d556efa4756a625b63b085dfd20558107abff3458082bfb0aed82a2985b1f82ccacd400bf3959ead5c0d1249aaf167fc88b82280f1764
+  checksum: ed8db5e58fc9e1400a3f74d8815b6981208a4fca2031e2c5f5986f58f7e3a1f4161dae82c655f9114892b3f46c21c02feec10fbac0f8ffcfd26a3d57447093d1
   languageName: node
   linkType: hard
 
@@ -19188,8 +19188,8 @@ __metadata:
 
 "uxp-documentation@github:adobedocs/uxp":
   version: 0.0.17
-  resolution: "uxp-documentation@https://github.com/adobedocs/uxp.git#commit=47510097aaf62876dfe00a01e00461ce5018e6cc"
-  checksum: 805c4dd4e242e77ef7e0e93df0d44955491df088568cbf560e7047444d1d6e04406d7254995bd7d9d45894bad6bc1bf7ed91d98aff303248880ea1116b883c84
+  resolution: "uxp-documentation@https://github.com/adobedocs/uxp.git#commit=298e0ff38071de30282a4671828407bd06a24ae8"
+  checksum: 12ef9868c84329e655a278378ae0e015ba5f3af4714ba02a6ff0a91c354485c160875397f786a57ef29a7378d869485d9333c84bbc02402911b139efc008fc5f
   languageName: node
   linkType: hard
 
