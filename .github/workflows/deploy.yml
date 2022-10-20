@@ -113,11 +113,6 @@ jobs:
         uses: borales/actions-yarn@v3
         with:
           cmd: clean
-      
-      - name: Pre Build
-        uses: borales/actions-yarn@v3
-        with:
-          cmd: prebuild
 
       - name: Build site
         uses: borales/actions-yarn@v3
@@ -223,11 +218,6 @@ jobs:
         uses: borales/actions-yarn@v3
         with:
           cmd: clean
-
-      - name: Pre Build
-        uses: borales/actions-yarn@v3
-        with:
-          cmd: prebuild
 
       - name: Build site
         uses: borales/actions-yarn@v3
