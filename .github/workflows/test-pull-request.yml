@@ -85,11 +85,11 @@ jobs:
         with:
           cmd: install
       
-      - name: Build site
+      - name: Pre build
         if: ${{ success() }}
         uses: borales/actions-yarn@v3
         with:
-          cmd: prepare-uxp
+          cmd: prebuild
 
       - name: Build site
         if: ${{ success() }}

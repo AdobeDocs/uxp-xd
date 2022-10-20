@@ -115,6 +115,7 @@ jobs:
           cmd: clean
       
       - name: Pre Build
+        uses: borales/actions-yarn@v3
         with:
           cmd: prebuild
 
@@ -224,6 +225,7 @@ jobs:
           cmd: clean
 
       - name: Pre Build
+        uses: borales/actions-yarn@v3
         with:
           cmd: prebuild
 
