@@ -19,11 +19,12 @@
     "uxp-documentation": "github:adobedocs/uxp"
   },
   "scripts": {
-    "postinstall": "npm run prepare-uxp",
     "start": "gatsby build && gatsby serve",
     "start:prefix": "gatsby build --prefix-paths && gatsby serve --prefix-paths",
+    "predev": "npm run prepare-uxp",
     "dev": "gatsby develop",
     "dev:https": "gatsby develop --https --host localhost.corp.adobe.com --port 9000",
+    "prebuild": "npm run prepare-uxp",
     "build": "NODE_OPTIONS=--max-old-space-size=4096 gatsby build",
     "build:incremental": "GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES=true gatsby build --log-pages",
     "serve": "gatsby serve",
