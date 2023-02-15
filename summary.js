@@ -544,19 +544,7 @@ module.exports = [
       {
         title: "Distribution Options",
         path: "/distribution/distribution-options/",
-      },
-      {
-        title: "Submission and Review",
-        path: "/distribution/submission-checklist/",
-      },
-      {
-        title: "Marketing Your Plugin",
-        path: "/distribution/marketing/",
-      },
-      {
-        title: "Creating Deep Links",
-        path: "/distribution/deep-links/",
-      },
+      }
     ],
   },
   {
