@@ -19183,10 +19183,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"uxp-documentation@github:adobedocs/uxp":
+"uxp-documentation@github:AdobeDocs/uxp#v6.3":
   version: 0.0.17
-  resolution: "uxp-documentation@https://github.com/adobedocs/uxp.git#commit=9be617f3c41e6d02e92d6bb8fb4b5765720dcf5c"
-  checksum: 00b313a88adf57313bb5703773889631d08f53e26030145f9055ff264170ece926cf7ed01c14eba48e83fb4b2e94d35e4eb5a41fc141fe998fcd503fdb6da838
+  resolution: "uxp-documentation@https://github.com/AdobeDocs/uxp.git#commit=9be617f3c41e6d02e92d6bb8fb4b5765720dcf5c"
+  checksum: b533ecfb7297b08963065cb9302fd7b7cdd5d38921d54365a1a2f07137836eb9232b48573a3c7117823b55060f791e8c06393177e1b1e1c1ff3e1f68ff164823
   languageName: node
   linkType: hard
 
@@ -19198,7 +19198,7 @@ __metadata:
     gatsby: 4.22.0
     react: ^17.0.2
     react-dom: ^17.0.2
-    uxp-documentation: "github:adobedocs/uxp"
+    uxp-documentation: "github:AdobeDocs/uxp#v6.3"
   languageName: unknown
   linkType: soft
 
