@@ -17,7 +17,7 @@ You can, of course, create a plugin manually -- but using a template can be the 
 * Click **Create Plugin...*.
 * A "Create Plugin" dialog appears.
 * Supply a plugin name in the **Plugin Name** field.
-* Supply a plugin ID in the **Plugin Id** field. During development you can use any identifier you want (as long as it's unique from any other plugin on your system), but for publication, you'll need one from the [Adobe Developer Console](https://console.adobe.io/home).
+* Supply a plugin ID in the **Plugin Id** field. During development you can use any identifier you want (as long as it's unique from any other plugin on your system), but for publication, you'll need one from the [Developer Distribution portal](https://developer.adobe.com/developer-distribution/creative-cloud/docs/guides/).
 * Enter the plugin's version in the **Plugin Version** field.
 * From the **Host Application** field, select **Adobe XD**.
 * Enter `38.0.0` as the minimum version in the **Host Application Version** field. You can use any version that makes sense for your plugin, but earlier versions of Adobe XD do not support debugging plugins using the UXP Developer Tool.
