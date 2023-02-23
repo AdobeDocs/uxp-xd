@@ -18,7 +18,7 @@ Once you have a packaged plugin, you're ready to distribute. You can make your p
 Use the Developer Distribution portal to submit your plugin to the Plugin Marketplace to reach a large number of users.
 Users can download your plugin directly in the Creative Cloud desktop app.
 
-- [Developer Distribution Documentation](https://developer.adobe.com/developer-distribution/creative-cloud/overview/)
+- [Developer Distribution Documentation](https://developer.adobe.com/developer-distribution/creative-cloud/docs/guides/)
 
 ## Direct distribution
 
