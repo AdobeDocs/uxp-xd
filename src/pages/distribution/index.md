@@ -14,6 +14,3 @@ Unless you've written a plugin solely for yourself, you're probably going to wan
 
 - [Packaging Your Plugin](/distribution/packaging-your-plugin/)
 - [Options for Distribution](/distribution/distribution-options/)
-- [Submission and Review](/distribution/submission-checklist/)
-- [Marketing Your Plugin](/distribution/marketing/)
-- [Creating Deep Links](/distribution/deep-links/)

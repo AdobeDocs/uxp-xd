@@ -24,7 +24,7 @@ UXP (**U**nified E**x**tensibility **P**latform) lets you build plugins for XD a
 
 - [Develop: API documentation, code tutorials, and samples](/develop/)
 - [Design: UX patterns, UI elements, and design guidelines](/design/)
-- [Share: Submission checklist, packaging, and marketing](/distribution/)
+- [Share: Plugin distribution, and packaging](/distribution/)
 
 ## Overview
 
@@ -111,17 +111,5 @@ Packaging your UXP plugin is a breeze. In many cases, it's just one click away.
 [Options for Distribution](distribution/distribution-options/)
 
 Did you build a plugin just for yourself, your friends, or your employer? Or do you want to distribute through the Creative Cloud Plugin Marketplace on millions of desktops? Read this section to help you decide.
-
-<DiscoverBlock slots="link, text"/>
-
-[Submission and Review](distribution/submission-checklist/)
-
-Learn about the review process and associated timelines for Creative Cloud plugins and integrations, and follow our review submission checklist.
-
-<DiscoverBlock slots="link, text"/>
-
-[Marketing Your Plugin](distribution/marketing/)
-
-Submitting your plugin is only half the battle. Now you have to tell people about it. Read this for some ideas on how to best market your plugin.
 
 <Community />
