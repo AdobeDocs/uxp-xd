@@ -12,7 +12,7 @@
     "url": "https://github.com/icaraps"
   },
   "dependencies": {
-    "@adobe/gatsby-theme-aio": "^4.6.2",
+    "@adobe/gatsby-theme-aio": "^4.9.7",
     "gatsby": "4.22.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -35,7 +35,18 @@
     "_copy-uxp-css": "rm -rf src/pages/uxp/reference-css && cp -r node_modules/uxp-documentation/_transclusions/xd/uxp/reference-css src/pages/uxp/ && cp node_modules/uxp-documentation/reference-css.js reference-css.js",
     "_copy-uxp": "npm run _copy-uxp-js && npm run _copy-uxp-css && npm run _copy-uxp-html && npm run _copy-uxp-spectrum",
     "_copy-uxp-files": "cp node_modules/uxp-documentation/src/pages/uxp/*.md src/pages/uxp/",
-    "prepare-uxp": "npm run _copy-uxp && npm run _copy-uxp-files"
+    "prepare-uxp": "npm run _copy-uxp && npm run _copy-uxp-files",
+    "test:links": "remark src/pages --quiet --frail",
+    "lint": "docker run --rm -e RUN_LOCAL=true --env-file '.github/super-linter.env' -v \"$PWD\":/tmp/lint github/super-linter:slim-v4.10.1"
   },
-  "packageManager": "yarn@3.2.2"
+  "remarkConfig": {
+    "plugins": [
+      "remark-validate-links"
+    ]
+  },
+  "packageManager": "yarn@3.2.2",
+  "devDependencies": {
+    "remark-cli": "^11.0.0",
+    "remark-validate-links": "^12.1.0"
+  }
 }
