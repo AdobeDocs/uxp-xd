@@ -26,6 +26,18 @@ UXP (**U**nified E**x**tensibility **P**latform) lets you build plugins for XD a
 - [Design: UX patterns, UI elements, and design guidelines](/design/)
 - [Share: Submission checklist, packaging, and marketing](/distribution/)
 
+<InlineAlert variant="warning" slots="header, text1, text2, text3" />
+
+Important Changes for XD Plugin Distribution in the Marketplace
+
+On November 15th, 2024, we will stop accepting <i>new</i> plugins for Adobe XD in [our Marketplace](http://exchange.adobe.com/creativecloud). 
+
+Existing published plugins can continue to be managed and updated via the Developer Distribution portal. The UXP Developer Tool (UDT) will continue to support plugin development. 
+
+Visit the [FAQs](https://developer.adobe.com/xd/uxp/plugins/faq/) page for more details and refer to [this document](https://helpx.adobe.com/in/support/xd.html) for the overall plans for Adobe XD. 
+
+<br></br><br></br><br></br>
+
 ## Overview
 
 This documentation helps developers build UXP plugins for Adobe XD versions 35 and later. If you're building UXP plugins for earlier versions of XD, see the [Adobe XD Platform page](https://adobexdplatform.com).
