@@ -6,6 +6,18 @@ keywords:
   - Plugin
 ---
 
+<InlineAlert variant="warning" slots="header, text1, text2, text3" />
+
+Important Changes for XD Plugin Distribution in the Marketplace
+
+On November 15th, 2024, we will stop accepting <i>new</i> plugins for Adobe XD in [our Marketplace](http://exchange.adobe.com/creativecloud). 
+
+Existing published plugins can continue to be managed and updated via the Developer Distribution portal. The UXP Developer Tool (UDT) will continue to support plugin development. 
+
+Visit the [FAQs](https://developer.adobe.com/xd/uxp/faq/) page for more details and refer to [this document](https://helpx.adobe.com/in/support/xd.html) for the overall plans for Adobe XD. 
+
+<br></br><br></br><br></br> 
+
 # Develop
 
 XD plugins extend the capabilities of [Adobe XD](https://www.adobe.com/products/xd.html) by adding new features to the app, automating workflows, connecting the app to external services, and more.
