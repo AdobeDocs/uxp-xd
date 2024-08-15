@@ -24,7 +24,19 @@ UXP (**U**nified E**x**tensibility **P**latform) lets you build plugins for XD a
 
 - [Develop: API documentation, code tutorials, and samples](/develop/)
 - [Design: UX patterns, UI elements, and design guidelines](/design/)
-- [Share: Plugin distribution, and packaging](/distribution/)
+- [Share: Submission checklist, packaging, and marketing](/distribution/)
+
+<InlineAlert variant="warning" slots="header, text1, text2, text3" />
+
+Important Changes for XD Plugin Distribution in the Marketplace
+
+On November 15th, 2024, we will stop accepting <i>new</i> plugins for Adobe XD in [our Marketplace](http://exchange.adobe.com/creativecloud). 
+
+Existing published plugins can continue to be managed and updated via the Developer Distribution portal. The UXP Developer Tool (UDT) will continue to support plugin development. 
+
+Visit the [FAQs](https://developer.adobe.com/xd/uxp/faq/) page for more details and refer to [this document](https://helpx.adobe.com/in/support/xd.html) for the overall plans for Adobe XD. 
+
+<br></br><br></br><br></br>
 
 ## Overview
 
@@ -111,5 +123,17 @@ Packaging your UXP plugin is a breeze. In many cases, it's just one click away.
 [Options for Distribution](distribution/distribution-options/)
 
 Did you build a plugin just for yourself, your friends, or your employer? Or do you want to distribute through the Creative Cloud Plugin Marketplace on millions of desktops? Read this section to help you decide.
+
+<DiscoverBlock slots="link, text"/>
+
+[Submission and Review](distribution/submission-checklist/)
+
+Learn about the review process and associated timelines for Creative Cloud plugins and integrations, and follow our review submission checklist.
+
+<DiscoverBlock slots="link, text"/>
+
+[Marketing Your Plugin](distribution/marketing/)
+
+Submitting your plugin is only half the battle. Now you have to tell people about it. Read this for some ideas on how to best market your plugin.
 
 <Community />
