@@ -12,7 +12,7 @@ description: Learn how to share or publish and market your Photoshop plugin. The
 
 Important Changes for XD Plugin Distribution in the Marketplace
 
-We are no longer accepting <i>new</i> plugins for Adobe XD in [our Marketplace](http://exchange.adobe.com/creativecloud). 
+We are no longer accepting <i>new</i> plugins for Adobe XD in [our Marketplace](http://exchange.adobe.com/creativecloud).
 
 Existing published plugins can continue to be managed and updated via the Developer Distribution portal. The UXP Developer Tool (UDT) will continue to support plugin development.
 
