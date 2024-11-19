@@ -30,7 +30,7 @@ UXP (**U**nified E**x**tensibility **P**latform) lets you build plugins for XD a
 
 Important Changes for XD Plugin Distribution in the Marketplace
 
-On November 15th, 2024, we will stop accepting <i>new</i> plugins for Adobe XD in [our Marketplace](http://exchange.adobe.com/creativecloud). 
+We are no longer accepting <i>new</i> plugins for Adobe XD in [our Marketplace](http://exchange.adobe.com/creativecloud). 
 
 Existing published plugins can continue to be managed and updated via the Developer Distribution portal. The UXP Developer Tool (UDT) will continue to support plugin development. 
 
