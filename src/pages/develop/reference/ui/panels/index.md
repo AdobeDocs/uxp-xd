@@ -210,7 +210,7 @@ module.exports = {
 
 {% endtabs %}
 
-Note: you can either reuse your panel's UI nodes, or destroy and recreate the panel each time it's closed. For examples of both approaches, see the [detailed documentation on the `show()` method](./show/).
+Note: you can either reuse your panel's UI nodes, or destroy and recreate the panel each time it's closed. For examples of both approaches, see the [detailed documentation on the `show()` method](show.md).
 
 ## Handling Selection Change
 
@@ -406,6 +406,6 @@ module.exports = {
 
 Refer to the panel lifecycle method documentation to learn more about these methods:
 
-- [Show](./show/)
-- [Hide](./hide/)
-- [Update](./update/)
+- [Show](show.md)
+- [Hide](hide.md)
+- [Update](update.md)

@@ -12,7 +12,7 @@
     "url": "https://github.com/icaraps"
   },
   "dependencies": {
-    "uxp-documentation": "github:AdobeDocs/uxp#v6.3"
+    "uxp-documentation": "github:AdobeDocs/uxp#eds-migration"
   },
   "scripts": {
     "dev": "node ./dev.mjs",
@@ -24,7 +24,7 @@
     "lint": "npx --yes github:AdobeDocs/adp-devsite-utils runLint -v",
     "lint:errorOnly": "npx --yes github:AdobeDocs/adp-devsite-utils runLint",
     "link:skipdeadlinks": "npx --yes github:AdobeDocs/adp-devsite-utils runLint --skip-dead-links -v",
-    "link:deadlinkonly": "npx --yes github:AdobeDocs/adp-devsite-utils runLint --dead-links-only -v",
+    "link:deadlinkonly": "npx --yes github:AdobeDocs/adp-devsite-utils runLint --external-links-only -v",
     "redirectCheck:stage": "npx --yes github:AdobeDocs/adp-devsite-utils redirectChecker stage --verbose",
     "redirectCheck:prod": "npx --yes github:AdobeDocs/adp-devsite-utils redirectChecker prod --verbose",
     "predev": "npm run prepare-uxp",
@@ -33,7 +33,7 @@
     "_copy-uxp-js": "rm -rf src/pages/uxp/reference-js && cp -r node_modules/uxp-documentation/_transclusions/xd/uxp/reference-js src/pages/uxp/ && cp node_modules/uxp-documentation/reference-js.js reference-js.js",
     "_copy-uxp-css": "rm -rf src/pages/uxp/reference-css && cp -r node_modules/uxp-documentation/_transclusions/xd/uxp/reference-css src/pages/uxp/ && cp node_modules/uxp-documentation/reference-css.js reference-css.js",
     "_copy-uxp": "npm run _copy-uxp-js && npm run _copy-uxp-css && npm run _copy-uxp-html && npm run _copy-uxp-spectrum",
-    "_copy-uxp-files": "cp node_modules/uxp-documentation/src/pages/uxp/*.md src/pages/uxp/",
+    "_copy-uxp-files": "cp node_modules/uxp-documentation/src/pages/uxp-api/*.md src/pages/uxp/",
     "prepare-uxp": "npm run _copy-uxp && npm run _copy-uxp-files"
   },
   "devDependencies": {

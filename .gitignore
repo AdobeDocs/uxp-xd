@@ -10,13 +10,14 @@
 # npm yarn
 node_modules
 package.lock
+package-lock.json
+yarn.lock
 yarn-error.log
 .pnp.*
 .yarn/*
 
 # keep in repo
 !.gitignore
-!.yarn.lock
 !.yarnrc.yml
 !.yarn/patches
 !.yarn/plugins

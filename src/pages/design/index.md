@@ -42,11 +42,11 @@ Plugins can interact with the user at different levels, for example, some plugin
 
 User Experience patterns will provide guidence on how to interact with your plugin users within XD, this will highlight UX requirements and best practices.
 
-[View UX Patterns](ux-patterns/)
+[View UX Patterns](ux-patterns/index.md)
 
  
 ## User Interface
 
 UI Resources will have information on UI components, examples and a sticker sheet you can use to build your plugin 
 
-[View User Interface](user-interface/)
+[View User Interface](user-interface/index.md)

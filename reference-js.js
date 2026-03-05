@@ -5,7 +5,7 @@ module.exports=[
     "pages": [
       {
         "title": "Crypto",
-        "path": "/uxp/reference-js/Global Members/Crypto/"
+        "path": "/uxp-api/reference-js/Global Members/Crypto/"
       },
       {
         "title": "Data Transfers",
@@ -13,26 +13,42 @@ module.exports=[
         "pages": [
           {
             "title": "Blob",
-            "path": "/uxp/reference-js/Global Members/Data Transfers/Blob/"
+            "path": "/uxp-api/reference-js/Global Members/Data Transfers/Blob/"
           },
           {
             "title": "Clipboard",
-            "path": "/uxp/reference-js/Global Members/Data Transfers/Clipboard/"
+            "path": "/uxp-api/reference-js/Global Members/Data Transfers/Clipboard/"
           },
           {
             "title": "XMLHttpRequest",
-            "path": "/uxp/reference-js/Global Members/Data Transfers/XMLHttpRequest/"
+            "path": "/uxp-api/reference-js/Global Members/Data Transfers/XMLHttpRequest/"
           },
           {
             "title": "WebSocket",
-            "path": "/uxp/reference-js/Global Members/Data Transfers/WebSocket/"
+            "path": "/uxp-api/reference-js/Global Members/Data Transfers/WebSocket/"
           },
           {
             "title": "fetch",
-            "path": "/uxp/reference-js/Global Members/Data Transfers/fetch/"
+            "path": "/uxp-api/reference-js/Global Members/Data Transfers/fetch/"
+          },
+          {
+            "title": "FormData",
+            "path": "/uxp-api/reference-js/Global Members/Data Transfers/FormData/"
+          },
+          {
+            "title": "Headers",
+            "path": "/uxp-api/reference-js/Global Members/Data Transfers/Headers/"
+          },
+          {
+            "title": "Request",
+            "path": "/uxp-api/reference-js/Global Members/Data Transfers/Request/"
+          },
+          {
+            "title": "Response",
+            "path": "/uxp-api/reference-js/Global Members/Data Transfers/Response/"
           }
         ],
-        "path": "/uxp/reference-js/Global Members/Data Transfers/"
+        "path": "/uxp-api/reference-js/Global Members/Data Transfers/"
       },
       {
         "title": "Data Storage",
@@ -40,14 +56,14 @@ module.exports=[
         "pages": [
           {
             "title": "LocalStorage",
-            "path": "/uxp/reference-js/Global Members/Data Storage/LocalStorage/"
+            "path": "/uxp-api/reference-js/Global Members/Data Storage/LocalStorage/"
           },
           {
             "title": "SessionStorage",
-            "path": "/uxp/reference-js/Global Members/Data Storage/SessionStorage/"
+            "path": "/uxp-api/reference-js/Global Members/Data Storage/SessionStorage/"
           }
         ],
-        "path": "/uxp/reference-js/Global Members/Data Storage/"
+        "path": "/uxp-api/reference-js/Global Members/Data Storage/"
       },
       {
         "title": "HTML Events",
@@ -55,50 +71,50 @@ module.exports=[
         "pages": [
           {
             "title": "BaseUIEvent",
-            "path": "/uxp/reference-js/Global Members/HTML Events/BaseUIEvent/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Events/BaseUIEvent/"
           },
           {
             "title": "CloseEvent",
-            "path": "/uxp/reference-js/Global Members/HTML Events/CloseEvent/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Events/CloseEvent/"
           },
           {
             "title": "DragEvent",
-            "path": "/uxp/reference-js/Global Members/HTML Events/DragEvent/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Events/DragEvent/"
           },
           {
             "title": "Event",
-            "path": "/uxp/reference-js/Global Members/HTML Events/Event/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Events/Event/"
           },
           {
             "title": "EventTarget",
-            "path": "/uxp/reference-js/Global Members/HTML Events/EventTarget/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Events/EventTarget/"
           },
           {
             "title": "GestureEvent",
-            "path": "/uxp/reference-js/Global Members/HTML Events/GestureEvent/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Events/GestureEvent/"
           },
           {
             "title": "KeyboardEvent",
-            "path": "/uxp/reference-js/Global Members/HTML Events/KeyboardEvent/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Events/KeyboardEvent/"
           },
           {
             "title": "MessageEvent",
-            "path": "/uxp/reference-js/Global Members/HTML Events/MessageEvent/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Events/MessageEvent/"
           },
           {
             "title": "PointerEvent",
-            "path": "/uxp/reference-js/Global Members/HTML Events/PointerEvent/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Events/PointerEvent/"
           },
           {
             "title": "ProgressEvent",
-            "path": "/uxp/reference-js/Global Members/HTML Events/ProgressEvent/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Events/ProgressEvent/"
           },
           {
             "title": "ErrorEvent",
-            "path": "/uxp/reference-js/Global Members/HTML Events/ErrorEvent/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Events/ErrorEvent/"
           }
         ],
-        "path": "/uxp/reference-js/Global Members/HTML Events/"
+        "path": "/uxp-api/reference-js/Global Members/HTML Events/"
       },
       {
         "title": "HTML DOM",
@@ -106,58 +122,126 @@ module.exports=[
         "pages": [
           {
             "title": "DOMTokenList",
-            "path": "/uxp/reference-js/Global Members/HTML DOM/DOMTokenList/"
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/DOMTokenList/"
           },
           {
             "title": "ClassList",
-            "path": "/uxp/reference-js/Global Members/HTML DOM/ClassList/"
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/ClassList/"
+          },
+          {
+            "title": "AbortController",
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/AbortController/"
+          },
+          {
+            "title": "AbortSignal",
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/AbortSignal/"
+          },
+          {
+            "title": "Alerts - Alert",
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/alert/"
+          },
+          {
+            "title": "Alerts - Confirm",
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/confirm/"
+          },
+          {
+            "title": "Alerts - Prompt",
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/prompt/"
           },
           {
             "title": "Attr",
-            "path": "/uxp/reference-js/Global Members/HTML DOM/Attr/"
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/Attr/"
+          },
+          {
+            "title": "CanvasGradient",
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/CanvasGradient/"
+          },
+          {
+            "title": "CanvasRenderingContext2D",
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/CanvasRenderingContext2D/"
           },
           {
             "title": "CharacterData",
-            "path": "/uxp/reference-js/Global Members/HTML DOM/CharacterData/"
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/CharacterData/"
           },
           {
             "title": "Comment",
-            "path": "/uxp/reference-js/Global Members/HTML DOM/Comment/"
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/Comment/"
+          },
+          {
+            "title": "CustomElementRegistry",
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/CustomElementRegistry/"
           },
           {
             "title": "Document",
-            "path": "/uxp/reference-js/Global Members/HTML DOM/Document/"
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/Document/"
           },
           {
             "title": "DocumentFragment",
-            "path": "/uxp/reference-js/Global Members/HTML DOM/DocumentFragment/"
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/DocumentFragment/"
           },
           {
             "title": "Element",
-            "path": "/uxp/reference-js/Global Members/HTML DOM/Element/"
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/Element/"
           },
           {
             "title": "HTMLCollection",
-            "path": "/uxp/reference-js/Global Members/HTML DOM/HTMLCollection/"
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/HTMLCollection/"
+          },
+          {
+            "title": "IntersectionObserver",
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/IntersectionObserver/"
+          },
+          {
+            "title": "IntersectionObserverEntry",
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/IntersectionObserverEntry/"
           },
           {
             "title": "NamedNodeMap",
-            "path": "/uxp/reference-js/Global Members/HTML DOM/NamedNodeMap/"
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/NamedNodeMap/"
           },
           {
             "title": "Node",
-            "path": "/uxp/reference-js/Global Members/HTML DOM/Node/"
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/Node/"
+          },
+          {
+            "title": "NodeFilter",
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/NodeFilter/"
           },
           {
             "title": "NodeList",
-            "path": "/uxp/reference-js/Global Members/HTML DOM/NodeList/"
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/NodeList/"
+          },
+          {
+            "title": "Path2D",
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/Path2D/"
+          },
+          {
+            "title": "ResizeObserver",
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/ResizeObserver/"
+          },
+          {
+            "title": "ResizeObserverEntry",
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/ResizeObserverEntry/"
+          },
+          {
+            "title": "ResizeObserverSize",
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/ResizeObserverSize/"
+          },
+          {
+            "title": "ShadowRoot",
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/ShadowRoot/"
           },
           {
             "title": "Text",
-            "path": "/uxp/reference-js/Global Members/HTML DOM/Text/"
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/Text/"
+          },
+          {
+            "title": "TreeWalker",
+            "path": "/uxp-api/reference-js/Global Members/HTML DOM/TreeWalker/"
           }
         ],
-        "path": "/uxp/reference-js/Global Members/HTML DOM/"
+        "path": "/uxp-api/reference-js/Global Members/HTML DOM/"
       },
       {
         "title": "HTML Elements",
@@ -165,89 +249,156 @@ module.exports=[
         "pages": [
           {
             "title": "HTMLAnchorElement",
-            "path": "/uxp/reference-js/Global Members/HTML Elements/HTMLAnchorElement/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Elements/HTMLAnchorElement/"
           },
           {
             "title": "HTMLBodyElement",
-            "path": "/uxp/reference-js/Global Members/HTML Elements/HTMLBodyElement/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Elements/HTMLBodyElement/"
           },
           {
             "title": "HTMLButtonElement",
-            "path": "/uxp/reference-js/Global Members/HTML Elements/HTMLButtonElement/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Elements/HTMLButtonElement/"
+          },
+          {
+            "title": "HTMLCanvasElement",
+            "path": "/uxp-api/reference-js/Global Members/HTML Elements/HTMLCanvasElement/"
           },
           {
             "title": "HTMLDialogElement",
-            "path": "/uxp/reference-js/Global Members/HTML Elements/HTMLDialogElement/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Elements/HTMLDialogElement/"
           },
           {
             "title": "HTMLElement",
-            "path": "/uxp/reference-js/Global Members/HTML Elements/HTMLElement/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Elements/HTMLElement/"
           },
           {
             "title": "HTMLHeadElement",
-            "path": "/uxp/reference-js/Global Members/HTML Elements/HTMLHeadElement/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Elements/HTMLHeadElement/"
           },
           {
             "title": "HTMLHtmlElement",
-            "path": "/uxp/reference-js/Global Members/HTML Elements/HTMLHtmlElement/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Elements/HTMLHtmlElement/"
           },
           {
             "title": "HTMLImageElement",
-            "path": "/uxp/reference-js/Global Members/HTML Elements/HTMLImageElement/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Elements/HTMLImageElement/"
           },
           {
             "title": "HTMLInputElement",
-            "path": "/uxp/reference-js/Global Members/HTML Elements/HTMLInputElement/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Elements/HTMLInputElement/"
           },
           {
             "title": "HTMLLabelElement",
-            "path": "/uxp/reference-js/Global Members/HTML Elements/HTMLLabelElement/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Elements/HTMLLabelElement/"
           },
           {
             "title": "HTMLLinkElement",
-            "path": "/uxp/reference-js/Global Members/HTML Elements/HTMLLinkElement/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Elements/HTMLLinkElement/"
           },
           {
             "title": "HTMLMenuElement",
-            "path": "/uxp/reference-js/Global Members/HTML Elements/HTMLMenuElement/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Elements/HTMLMenuElement/"
           },
           {
             "title": "HTMLMenuItemElement",
-            "path": "/uxp/reference-js/Global Members/HTML Elements/HTMLMenuItemElement/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Elements/HTMLMenuItemElement/"
           },
           {
             "title": "HTMLOptionElement",
-            "path": "/uxp/reference-js/Global Members/HTML Elements/HTMLOptionElement/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Elements/HTMLOptionElement/"
           },
           {
             "title": "HTMLProgressElement",
-            "path": "/uxp/reference-js/Global Members/HTML Elements/HTMLProgressElement/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Elements/HTMLProgressElement/"
           },
           {
             "title": "HTMLScriptElement",
-            "path": "/uxp/reference-js/Global Members/HTML Elements/HTMLScriptElement/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Elements/HTMLScriptElement/"
           },
           {
             "title": "HTMLSelectElement",
-            "path": "/uxp/reference-js/Global Members/HTML Elements/HTMLSelectElement/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Elements/HTMLSelectElement/"
+          },
+          {
+            "title": "HTMLSlotElement",
+            "path": "/uxp-api/reference-js/Global Members/HTML Elements/HTMLSlotElement/"
           },
           {
             "title": "HTMLStyleElement",
-            "path": "/uxp/reference-js/Global Members/HTML Elements/HTMLStyleElement/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Elements/HTMLStyleElement/"
+          },
+          {
+            "title": "HTMLTemplateElement",
+            "path": "/uxp-api/reference-js/Global Members/HTML Elements/HTMLTemplateElement/"
           },
           {
             "title": "HTMLTextAreaElement",
-            "path": "/uxp/reference-js/Global Members/HTML Elements/HTMLTextAreaElement/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Elements/HTMLTextAreaElement/"
+          },
+          {
+            "title": "HTMLVideoElement",
+            "path": "/uxp-api/reference-js/Global Members/HTML Elements/HTMLVideoElement/"
           },
           {
             "title": "HTMLWebViewElement",
-            "path": "/uxp/reference-js/Global Members/HTML Elements/HTMLWebViewElement/"
+            "path": "/uxp-api/reference-js/Global Members/HTML Elements/HTMLWebViewElement/"
           }
         ],
-        "path": "/uxp/reference-js/Global Members/HTML Elements/"
-      }
+        "path": "/uxp-api/reference-js/Global Members/HTML Elements/"
+      },
+      {
+        "title": "ImageBlob",
+        "path": "/uxp-api/reference-js/Global Members/ImageBlob/"
+      },
+      {
+        "title": "Path",
+        "path": "/uxp-api/reference-js/Global Members/Path/"
+      },
+      {
+        "title": "Streams",
+        "header": true,
+        "pages": [
+          {
+            "title": "CountQueuingStrategy",
+            "path": "/uxp-api/reference-js/Global Members/Streams/CountQueuingStrategy/"
+          },
+          {
+            "title": "ReadableStream",
+            "path": "/uxp-api/reference-js/Global Members/Streams/ReadableStream/"
+          },
+          {
+            "title": "ReadableStreamDefaultController",
+            "path": "/uxp-api/reference-js/Global Members/Streams/ReadableStreamDefaultController/"
+          },
+          {
+            "title": "ReadableStreamDefaultReader",
+            "path": "/uxp-api/reference-js/Global Members/Streams/ReadableStreamDefaultReader/"
+          },
+          {
+            "title": "TransformStream",
+            "path": "/uxp-api/reference-js/Global Members/Streams/TransformStream/"
+          },
+          {
+            "title": "TransformStreamDefaultController",
+            "path": "/uxp-api/reference-js/Global Members/Streams/TransformStreamDefaultController/"
+          },
+          {
+            "title": "WritableStream",
+            "path": "/uxp-api/reference-js/Global Members/Streams/WritableStream/"
+          },
+          {
+            "title": "WritableStreamDefaultController",
+            "path": "/uxp-api/reference-js/Global Members/Streams/WritableStreamDefaultController/"
+          },
+          {
+            "title": "WritableStreamDefaultWriter",
+            "path": "/uxp-api/reference-js/Global Members/Streams/WritableStreamDefaultWriter/"
+          }
+        ],
+        "path": "/uxp-api/reference-js/Global Members/Streams/"
+      },
     ],
-    "path": "/uxp/reference-js/Global Members/"
+    "path": "/uxp-api/reference-js/Global Members/"
   },
   {
     "title": "Modules",
@@ -255,29 +406,11 @@ module.exports=[
     "pages": [
       {
         "title": "fs",
-        "path": "/uxp/reference-js/Modules/FileSystem/"
+        "path": "/uxp-api/reference-js/Modules/fs/"
       },
       {
         "title": "os",
-        "header": true,
-        "pages": [
-          {
-            "title": "OS",
-            "path": "/uxp/reference-js/Modules/os/OS/"
-          }
-        ],
-        "path": "/uxp/reference-js/Modules/os/OS/"
-      },
-      {
-        "title": "shell",
-        "header": true,
-        "pages": [
-          {
-            "title": "Shell",
-            "path": "/uxp/reference-js/Modules/shell/Shell/"
-          }
-        ],
-        "path": "/uxp/reference-js/Modules/shell/Shell/"
+        "path": "/uxp-api/reference-js/Modules/os/OS"
       },
       {
         "title": "uxp",
@@ -289,34 +422,34 @@ module.exports=[
             "pages": [
               {
                 "title": "EntryPoints",
-                "path": "/uxp/reference-js/Modules/uxp/Entry Points/EntryPoints/"
+                "path": "/uxp-api/reference-js/Modules/uxp/Entry Points/EntryPoints/"
               },
               {
                 "title": "EntryPointsError",
-                "path": "/uxp/reference-js/Modules/uxp/Entry Points/EntryPointsError/"
+                "path": "/uxp-api/reference-js/Modules/uxp/Entry Points/EntryPointsError/"
               },
               {
                 "title": "UxpCommandInfo",
-                "path": "/uxp/reference-js/Modules/uxp/Entry Points/UxpCommandInfo/"
+                "path": "/uxp-api/reference-js/Modules/uxp/Entry Points/UxpCommandInfo/"
               },
               {
                 "title": "UxpMenuItem",
-                "path": "/uxp/reference-js/Modules/uxp/Entry Points/UxpMenuItem/"
+                "path": "/uxp-api/reference-js/Modules/uxp/Entry Points/UxpMenuItem/"
               },
               {
                 "title": "UxpMenuItems",
-                "path": "/uxp/reference-js/Modules/uxp/Entry Points/UxpMenuItems/"
+                "path": "/uxp-api/reference-js/Modules/uxp/Entry Points/UxpMenuItems/"
               },
               {
                 "title": "UxpPanelInfo",
-                "path": "/uxp/reference-js/Modules/uxp/Entry Points/UxpPanelInfo/"
+                "path": "/uxp-api/reference-js/Modules/uxp/Entry Points/UxpPanelInfo/"
               },
               {
                 "title": "UxpPluginInfo",
-                "path": "/uxp/reference-js/Modules/uxp/Entry Points/UxpPluginInfo/"
+                "path": "/uxp-api/reference-js/Modules/uxp/Entry Points/UxpPluginInfo/"
               }
             ],
-            "path": "/uxp/reference-js/Modules/uxp/Entry Points/"
+            "path": "/uxp-api/reference-js/Modules/uxp/Entry Points/"
           },
           {
             "title": "Persistent File Storage",
@@ -324,54 +457,54 @@ module.exports=[
             "pages": [
               {
                 "title": "localFileSystem",
-                "path": "/uxp/reference-js/Modules/uxp/Persistent File Storage/localFileSystem/"
+                "path": "/uxp-api/reference-js/Modules/uxp/Persistent File Storage/localFileSystem/"
               },
               {
                 "title": "Entry",
-                "path": "/uxp/reference-js/Modules/uxp/Persistent File Storage/Entry/"
+                "path": "/uxp-api/reference-js/Modules/uxp/Persistent File Storage/Entry/"
               },
               {
                 "title": "EntryMetadata",
-                "path": "/uxp/reference-js/Modules/uxp/Persistent File Storage/EntryMetadata/"
+                "path": "/uxp-api/reference-js/Modules/uxp/Persistent File Storage/EntryMetadata/"
               },
               {
                 "title": "File",
-                "path": "/uxp/reference-js/Modules/uxp/Persistent File Storage/File/"
+                "path": "/uxp-api/reference-js/Modules/uxp/Persistent File Storage/File/"
               },
               {
                 "title": "Folder",
-                "path": "/uxp/reference-js/Modules/uxp/Persistent File Storage/Folder/"
+                "path": "/uxp-api/reference-js/Modules/uxp/Persistent File Storage/Folder/"
               },
               {
                 "title": "FileSystemProvider",
-                "path": "/uxp/reference-js/Modules/uxp/Persistent File Storage/FileSystemProvider/"
+                "path": "/uxp-api/reference-js/Modules/uxp/Persistent File Storage/FileSystemProvider/"
               },
               {
                 "title": "domains",
-                "path": "/uxp/reference-js/Modules/uxp/Persistent File Storage/domains/"
+                "path": "/uxp-api/reference-js/Modules/uxp/Persistent File Storage/domains/"
               },
               {
                 "title": "types",
-                "path": "/uxp/reference-js/Modules/uxp/Persistent File Storage/types/"
+                "path": "/uxp-api/reference-js/Modules/uxp/Persistent File Storage/types/"
               },
               {
                 "title": "formats",
-                "path": "/uxp/reference-js/Modules/uxp/Persistent File Storage/formats/"
+                "path": "/uxp-api/reference-js/Modules/uxp/Persistent File Storage/formats/"
               },
               {
                 "title": "modes",
-                "path": "/uxp/reference-js/Modules/uxp/Persistent File Storage/modes/"
+                "path": "/uxp-api/reference-js/Modules/uxp/Persistent File Storage/modes/"
               },
               {
                 "title": "fileTypes",
-                "path": "/uxp/reference-js/Modules/uxp/Persistent File Storage/fileTypes/"
+                "path": "/uxp-api/reference-js/Modules/uxp/Persistent File Storage/fileTypes/"
               },
               {
                 "title": "errors",
-                "path": "/uxp/reference-js/Modules/uxp/Persistent File Storage/errors/"
+                "path": "/uxp-api/reference-js/Modules/uxp/Persistent File Storage/errors/"
               }
             ],
-            "path": "/uxp/reference-js/Modules/uxp/Persistent File Storage/"
+            "path": "/uxp-api/reference-js/Modules/uxp/Persistent File Storage/"
           },
           {
             "title": "Plugin Manager",
@@ -379,18 +512,18 @@ module.exports=[
             "pages": [
               {
                 "title": "Plugin",
-                "path": "/uxp/reference-js/Modules/uxp/Plugin Manager/Plugin/"
+                "path": "/uxp-api/reference-js/Modules/uxp/Plugin Manager/Plugin/"
               },
               {
                 "title": "Plugin Manager",
-                "path": "/uxp/reference-js/Modules/uxp/Plugin Manager/PluginManager/"
+                "path": "/uxp-api/reference-js/Modules/uxp/Plugin Manager/PluginManager/"
               },
               {
                 "title": "Script",
-                "path": "/uxp/reference-js/Modules/uxp/Plugin Manager/Script/"
+                "path": "/uxp-api/reference-js/Modules/uxp/Plugin Manager/Script/"
               }
             ],
-            "path": "/uxp/reference-js/Modules/uxp/Plugin Manager/"
+            "path": "/uxp-api/reference-js/Modules/uxp/Plugin Manager/"
           },
           {
             "title": "Key-Value Storage",
@@ -398,10 +531,10 @@ module.exports=[
             "pages": [
               {
                 "title": "SecureStorage",
-                "path": "/uxp/reference-js/Modules/uxp/Key-Value Storage/SecureStorage/"
+                "path": "/uxp-api/reference-js/Modules/uxp/Key-Value Storage/SecureStorage/"
               }
             ],
-            "path": "/uxp/reference-js/Modules/uxp/Key-Value Storage/SecureStorage/"
+            "path": "/uxp-api/reference-js/Modules/uxp/Key-Value Storage/SecureStorage/"
           },
           {
             "title": "Versions",
@@ -409,10 +542,10 @@ module.exports=[
             "pages": [
               {
                 "title": "Versions",
-                "path": "/uxp/reference-js/Modules/uxp/Versions/Versions/"
+                "path": "/uxp-api/reference-js/Modules/uxp/Versions/Versions/"
               }
             ],
-            "path": "/uxp/reference-js/Modules/uxp/Versions/Versions/"
+            "path": "/uxp-api/reference-js/Modules/uxp/Versions/Versions/"
           },
           {
             "title": "Host Information",
@@ -420,15 +553,66 @@ module.exports=[
             "pages": [
               {
                 "title": "Host",
-                "path": "/uxp/reference-js/Modules/uxp/Host Information/Host/"
+                "path": "/uxp-api/reference-js/Modules/uxp/Host Information/Host/"
               }
             ],
-            "path": "/uxp/reference-js/Modules/uxp/Host Information/Host/"
+            "path": "/uxp-api/reference-js/Modules/uxp/Host Information/Host/"
+          },
+          {
+            "title": "shell",
+            "path": "/uxp-api/reference-js/Modules/uxp/shell/Shell"
+          },
+          {
+            "title": "User Information",
+            "path": "/uxp-api/reference-js/Modules/uxp/User Information/"
+          },
+          {
+            "title": "XMP",
+            "header": true,
+            "pages": [
+              {
+                "title": "XMPMeta",
+                "path": "/uxp-api/reference-js/Modules/uxp/XMP/XMP Classes/XMPMeta/"
+              },
+              {
+                "title": "XMPFile",
+                "path": "/uxp-api/reference-js/Modules/uxp/XMP/XMP Classes/XMPFile/"
+              },
+              {
+                "title": "XMPUtils",
+                "path": "/uxp-api/reference-js/Modules/uxp/XMP/XMP Classes/XMPUtils/"
+              },
+              {
+                "title": "XMPDateTime",
+                "path": "/uxp-api/reference-js/Modules/uxp/XMP/XMP Classes/XMPDateTime/"
+              },
+              {
+                "title": "XMPConst",
+                "path": "/uxp-api/reference-js/Modules/uxp/XMP/XMP Classes/XMPConst/"
+              },
+              {
+                "title": "XMPIterator",
+                "path": "/uxp-api/reference-js/Modules/uxp/XMP/XMP Classes/XMPIterator/"
+              },
+              {
+                "title": "XMPProperty",
+                "path": "/uxp-api/reference-js/Modules/uxp/XMP/XMP Classes/XMPProperty/"
+              },
+              {
+                "title": "XMPFileInfo",
+                "path": "/uxp-api/reference-js/Modules/uxp/XMP/XMP Classes/XMPFileInfo/"
+              },
+              {
+                "title": "XMPPacketInfo",
+                "path": "/uxp-api/reference-js/Modules/uxp/XMP/XMP Classes/XMPPacketInfo/"
+              },
+            ],
+            "path": "/uxp-api/reference-js/Modules/uxp/XMP/getting-started/"
           }
         ],
-        "path": "/uxp/reference-js/Modules/uxp/"
+        "path": "/uxp-api/reference-js/Modules/uxp/"
       }
     ],
-    "path": "/uxp/reference-js/Modules/"
+    "path": "/uxp-api/reference-js/Modules/"
   }
 ]
