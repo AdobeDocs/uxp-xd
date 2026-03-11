@@ -14,7 +14,7 @@ Each of the tutorials contained within will teach you a specific skill related t
 
 To get the most out of the tutorials, follow along with them from top to bottom. If you get stuck while coding along, don't worry! We have code-complete sample repos on GitHub for each tutorial.
 
-Before you jump in, a quick note to save you some time: the tutorials will all assume you have completed our [Quick Start tutorial](/develop/tutorials/quick-start/). Make sure to do that before you jump in.
+Before you jump in, a quick note to save you some time: the tutorials will all assume you have completed our [Quick Start tutorial](/develop/tutorials/quick-start/index.md). Make sure to do that before you jump in.
 
 Our tutorials are divided into these main areas:
 

@@ -1,4 +1,16 @@
+---
+jsDoc: true
+---
+# Adjacent Sibling combinator
 
-import Content from "uxp-documentation/src/pages/uxp/reference-css/Selectors/Adjacent Sibling combinator";
+**Since** UXP v3.0
 
-<Content query="product=xd"/>
+**See**: https://developer.mozilla.org/en-US/docs/Web/CSS/Adjacent_sibling_combinator
+
+**Example**
+
+```css
+sp-action-button + sp-action-button {
+    margin-right: 0;
+}
+```

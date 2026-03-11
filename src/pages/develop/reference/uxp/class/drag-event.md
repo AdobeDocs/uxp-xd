@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-<a name="dragevent" id="dragevent"></a>
+\<a name="dragevent" id="dragevent"\>\</a\>
 
 ## DragEvent
 
@@ -59,7 +59,7 @@ keywords:
     * [.stopImmediatePropagation()](#event-stopimmediatepropagation)
     * [.stopPropagation()](#event-stoppropagation)
 
-<a name="new-dragevent-new" id="new-dragevent-new"></a>
+\<a name="new-dragevent-new" id="new-dragevent-new"\>\</a\>
 
 ### new DragEvent(type, eventInit)
 Creates an instance of DragEvent.
@@ -69,241 +69,241 @@ Creates an instance of DragEvent.
 | type | `\*` |
 | eventInit | `\*` |
 
-<a name="dragevent-datatransfer" id="dragevent-datatransfer"></a>
+\<a name="dragevent-datatransfer" id="dragevent-datatransfer"\>\</a\>
 
 ### dragEvent.dataTransfer
 
 **Read only**
 
-<a name="baseuievent-pointerid" id="baseuievent-pointerid"></a>
+\<a name="baseuievent-pointerid" id="baseuievent-pointerid"\>\</a\>
 
 ### dragEvent.pointerId
 
 **Read only**
 
-<a name="baseuievent-width" id="baseuievent-width"></a>
+\<a name="baseuievent-width" id="baseuievent-width"\>\</a\>
 
 ### dragEvent.width : `number`
 
 **Read only**
 
-<a name="baseuievent-height" id="baseuievent-height"></a>
+\<a name="baseuievent-height" id="baseuievent-height"\>\</a\>
 
 ### dragEvent.height : `number`
 
 **Read only**
 
-<a name="baseuievent-pressure" id="baseuievent-pressure"></a>
+\<a name="baseuievent-pressure" id="baseuievent-pressure"\>\</a\>
 
 ### dragEvent.pressure : `number`
 
 **Read only**
 
-<a name="baseuievent-tangentialpressure" id="baseuievent-tangentialpressure"></a>
+\<a name="baseuievent-tangentialpressure" id="baseuievent-tangentialpressure"\>\</a\>
 
 ### dragEvent.tangentialPressure : `number`
 
 **Read only**
 
-<a name="baseuievent-tiltx" id="baseuievent-tiltx"></a>
+\<a name="baseuievent-tiltx" id="baseuievent-tiltx"\>\</a\>
 
 ### dragEvent.tiltX : `number`
 
 **Read only**
 
-<a name="baseuievent-tilty" id="baseuievent-tilty"></a>
+\<a name="baseuievent-tilty" id="baseuievent-tilty"\>\</a\>
 
 ### dragEvent.tiltY : `number`
 
 **Read only**
 
-<a name="baseuievent-twist" id="baseuievent-twist"></a>
+\<a name="baseuievent-twist" id="baseuievent-twist"\>\</a\>
 
 ### dragEvent.twist : `number`
 
 **Read only**
 
-<a name="baseuievent-clientx" id="baseuievent-clientx"></a>
+\<a name="baseuievent-clientx" id="baseuievent-clientx"\>\</a\>
 
 ### dragEvent.clientX : `number`
 
 **Read only**
 
-<a name="baseuievent-clienty" id="baseuievent-clienty"></a>
+\<a name="baseuievent-clienty" id="baseuievent-clienty"\>\</a\>
 
 ### dragEvent.clientY : `number`
 
 **Read only**
 
-<a name="baseuievent-offsetx" id="baseuievent-offsetx"></a>
+\<a name="baseuievent-offsetx" id="baseuievent-offsetx"\>\</a\>
 
 ### dragEvent.offsetX : `number`
 
 **Read only**
 
-<a name="baseuievent-offsety" id="baseuievent-offsety"></a>
+\<a name="baseuievent-offsety" id="baseuievent-offsety"\>\</a\>
 
 ### dragEvent.offsetY : `number`
 
 **Read only**
 
-<a name="baseuievent-pagex" id="baseuievent-pagex"></a>
+\<a name="baseuievent-pagex" id="baseuievent-pagex"\>\</a\>
 
 ### dragEvent.pageX : `number`
 
 **Read only**
 
-<a name="baseuievent-pagey" id="baseuievent-pagey"></a>
+\<a name="baseuievent-pagey" id="baseuievent-pagey"\>\</a\>
 
 ### dragEvent.pageY : `number`
 
 **Read only**
 
-<a name="baseuievent-screenx" id="baseuievent-screenx"></a>
+\<a name="baseuievent-screenx" id="baseuievent-screenx"\>\</a\>
 
 ### dragEvent.screenX : `number`
 
 **Read only**
 
-<a name="baseuievent-screeny" id="baseuievent-screeny"></a>
+\<a name="baseuievent-screeny" id="baseuievent-screeny"\>\</a\>
 
 ### dragEvent.screenY : `number`
 
 **Read only**
 
-<a name="baseuievent-movementx" id="baseuievent-movementx"></a>
+\<a name="baseuievent-movementx" id="baseuievent-movementx"\>\</a\>
 
 ### dragEvent.movementX : `number`
 
 **Read only**
 
-<a name="baseuievent-movementy" id="baseuievent-movementy"></a>
+\<a name="baseuievent-movementy" id="baseuievent-movementy"\>\</a\>
 
 ### dragEvent.movementY : `number`
 
 **Read only**
 
-<a name="baseuievent-button" id="baseuievent-button"></a>
+\<a name="baseuievent-button" id="baseuievent-button"\>\</a\>
 
 ### dragEvent.button : `number`
 
 **Read only**
 
-<a name="baseuievent-buttons" id="baseuievent-buttons"></a>
+\<a name="baseuievent-buttons" id="baseuievent-buttons"\>\</a\>
 
 ### dragEvent.buttons
 
 **Read only**
 
-<a name="baseuievent-detail" id="baseuievent-detail"></a>
+\<a name="baseuievent-detail" id="baseuievent-detail"\>\</a\>
 
 ### dragEvent.detail
 
 **Read only**
 
-<a name="baseuievent-pointertype" id="baseuievent-pointertype"></a>
+\<a name="baseuievent-pointertype" id="baseuievent-pointertype"\>\</a\>
 
 ### dragEvent.pointerType
 
 **Read only**
 
-<a name="baseuievent-altkey" id="baseuievent-altkey"></a>
+\<a name="baseuievent-altkey" id="baseuievent-altkey"\>\</a\>
 
 ### dragEvent.altKey
 
 **Read only**
 
-<a name="baseuievent-shiftkey" id="baseuievent-shiftkey"></a>
+\<a name="baseuievent-shiftkey" id="baseuievent-shiftkey"\>\</a\>
 
 ### dragEvent.shiftKey
 
 **Read only**
 
-<a name="baseuievent-metakey" id="baseuievent-metakey"></a>
+\<a name="baseuievent-metakey" id="baseuievent-metakey"\>\</a\>
 
 ### dragEvent.metaKey
 
 **Read only**
 
-<a name="baseuievent-ctrlkey" id="baseuievent-ctrlkey"></a>
+\<a name="baseuievent-ctrlkey" id="baseuievent-ctrlkey"\>\</a\>
 
 ### dragEvent.ctrlKey
 
 **Read only**
 
-<a name="baseuievent-isprimary" id="baseuievent-isprimary"></a>
+\<a name="baseuievent-isprimary" id="baseuievent-isprimary"\>\</a\>
 
 ### dragEvent.isPrimary
 
 **Read only**
 
-<a name="baseuievent-which" id="baseuievent-which"></a>
+\<a name="baseuievent-which" id="baseuievent-which"\>\</a\>
 
 ### dragEvent.which
 
 **Read only**
 
-<a name="event-type" id="event-type"></a>
+\<a name="event-type" id="event-type"\>\</a\>
 
 ### dragEvent.type
 
 **Read only**
 
-<a name="event-istrusted" id="event-istrusted"></a>
+\<a name="event-istrusted" id="event-istrusted"\>\</a\>
 
 ### dragEvent.isTrusted : `boolean`
 
 **Read only**
 
-<a name="event-target" id="event-target"></a>
+\<a name="event-target" id="event-target"\>\</a\>
 
 ### dragEvent.target : [`Node`](#node)
 
 **Read only**
 
-<a name="event-currenttarget" id="event-currenttarget"></a>
+\<a name="event-currenttarget" id="event-currenttarget"\>\</a\>
 
 ### dragEvent.currentTarget : [`Node`](#node)
 
 **Read only**
 
-<a name="event-bubbles" id="event-bubbles"></a>
+\<a name="event-bubbles" id="event-bubbles"\>\</a\>
 
 ### dragEvent.bubbles : `boolean`
 
 **Read only**
 
-<a name="event-cancelable" id="event-cancelable"></a>
+\<a name="event-cancelable" id="event-cancelable"\>\</a\>
 
 ### dragEvent.cancelable : `boolean`
 
 **Read only**
 
-<a name="event-eventphase" id="event-eventphase"></a>
+\<a name="event-eventphase" id="event-eventphase"\>\</a\>
 
 ### dragEvent.eventPhase
 
 **Read only**
 
-<a name="event-defaultprevented" id="event-defaultprevented"></a>
+\<a name="event-defaultprevented" id="event-defaultprevented"\>\</a\>
 
 ### dragEvent.defaultPrevented : `boolean`
 
 **Read only**
 
-<a name="event-returnvalue" id="event-returnvalue"></a>
+\<a name="event-returnvalue" id="event-returnvalue"\>\</a\>
 
 ### dragEvent.returnValue : `\*`
 
-<a name="event-preventdefault" id="event-preventdefault"></a>
+\<a name="event-preventdefault" id="event-preventdefault"\>\</a\>
 
 ### dragEvent.preventDefault()
 
-<a name="event-stopimmediatepropagation" id="event-stopimmediatepropagation"></a>
+\<a name="event-stopimmediatepropagation" id="event-stopimmediatepropagation"\>\</a\>
 
 ### dragEvent.stopImmediatePropagation()
 
-<a name="event-stoppropagation" id="event-stoppropagation"></a>
+\<a name="event-stoppropagation" id="event-stoppropagation"\>\</a\>
 
 ### dragEvent.stopPropagation()
 

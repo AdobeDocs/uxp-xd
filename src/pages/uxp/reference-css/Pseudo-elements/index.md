@@ -1,4 +1,3 @@
-
-import Content from "uxp-documentation/src/pages/uxp/reference-css//Pseudo-elements/index.md";
-
-<Content query="product=xd"/>
+# Pseudo-elements
+* [after](../pseudo-elements/after.md)
+* [before](../pseudo-elements/before.md)

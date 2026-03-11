@@ -22,7 +22,7 @@ Creates an InnerShadow object with the x, y, blur and color properties. You may 
 | `x`       | `number`          |
 | `y`       | `number`          |
 | `blur`    | `number`          |
-| `color`   | [Color](/develop/reference/Color) |
+| `color`   | [Color](/develop/reference/color.md) |
 | `visible` | `?boolean`        |
 
 ## setShadow()
@@ -36,7 +36,7 @@ Sets the x, y, blur, color, visible members for the InnerShadow object. The `vis
 | `x`       | `number`          |
 | `y`       | `number`          |
 | `blur`    | `number`          |
-| `color`   | [Color](/develop/reference/Color) |
+| `color`   | [Color](/develop/reference/color.md) |
 | `visible` | `?boolean`        |
 
 **Kind**: instance method of [InnerShadow](#InnerShadow)

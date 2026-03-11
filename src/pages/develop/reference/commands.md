@@ -12,7 +12,7 @@ You can make structural changes to the scenegraph, and perform other complex ope
 commands as XD users have access to in the UI. Because structural changes have many nuanced rules and behaviors in XD, these calls
 function more like automating the UI than like low-level APIs.
 
-For example, these methods do not take arguments. Instead, set the [selection](/develop/reference/selection/) to the objects you want the command to target, then
+For example, these methods do not take arguments. Instead, set the [selection](/develop/reference/selection.md) to the objects you want the command to target, then
 invoke the command. Commands may also change the selection when run - for example, `group()` selects the newly created Group node.
 
 **Example**
@@ -28,7 +28,7 @@ console.log(selection.items); // [Group]
 
 ▸ **group**()
 
-Wraps the selected objects in a [Group](/develop/reference/Group), leaving the Group selected afterward. Equivalent to _Object >
+Wraps the selected objects in a [Group](/develop/reference/group.md), leaving the Group selected afterward. Equivalent to _Object >
 Group_ in the UI.
 
 **Kind**: static method of [commands](#module_commands)
@@ -255,7 +255,7 @@ Equivalent to _Object > Make Background_, which is available when selecting a si
 - belongs to a Stack that has no background
 - the Stack contains at least two stack cells
 
-For the example below, see [layout](/develop/reference/SceneNode/#layout) for examples of creating Stack without background.
+For the example below, see [layout](/develop/reference/scene-node.md#layout) for examples of creating Stack without background.
 
 **Example**
 ```js
@@ -288,7 +288,7 @@ Equivalent to _Object > Replace Background_, which is available when selecting a
 - belongs to a Stack that has a background, which is different from the selected stack cell
 - the Stack contains at least two stack cells
 
-For the example below, see [layout](/develop/reference/SceneNode/#layout) for examples of creating Stack without background.
+For the example below, see [layout](/develop/reference/scene-node.md#layout) for examples of creating Stack without background.
 
 **Example**
 ```js

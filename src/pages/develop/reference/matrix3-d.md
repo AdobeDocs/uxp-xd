@@ -31,7 +31,7 @@ Create a new Matrix3D object starting from the given Matrix2D or Matrix3D parame
 
 | Param    | Type                                            | Description          |
 | -------- | ----------------------------------------------- | -------------------- |
-| m        | [Matrix](/develop/reference/Matrix/) &#124; [Matrix3D](#Matrix3D) | The matrix to clone. |
+| m        | [Matrix](/develop/reference/matrix.md) &#124; [Matrix3D](#Matrix3D) | The matrix to clone. |
 
 **Kind**: instance method of [Matrix3D](#Matrix3D)
 
@@ -43,7 +43,7 @@ Copies another matrix's values into this matrix.
 
 | Param       | Type                                            | Description                     |
 | ----------- | ----------------------------------------------- | ------------------------------- |
-| otherMatrix | [Matrix](/develop/reference/Matrix/) &#124; [Matrix3D](#Matrix3D) | The matrix to copy values from. |
+| otherMatrix | [Matrix](/develop/reference/matrix.md) &#124; [Matrix3D](#Matrix3D) | The matrix to copy values from. |
 
 **Kind**: instance method of [Matrix3D](#Matrix3D)
 
@@ -57,16 +57,16 @@ Clone the matrix
 
 ## add()
 
-▸ **add**(`m1`, `m2`): [Matrix](/develop/reference/Matrix/) | [Matrix3D](#Matrix3D)
+▸ **add**(`m1`, `m2`): [Matrix](/develop/reference/matrix.md) | [Matrix3D](#Matrix3D)
 
 Safely add a mixture of Matrix and Matrix3D without dropping the 3D part.
 
-Returns the addition result which is [Matrix](/develop/reference/Matrix/) if both were Matrix, and [Matrix3D](#Matrix3D) otherwise.
+Returns the addition result which is [Matrix](/develop/reference/matrix.md) if both were Matrix, and [Matrix3D](#Matrix3D) otherwise.
 
 | Param   | Type                                            | Description        |
 | ------- | ----------------------------------------------- | ------------------ |
-| m1      | [Matrix](/develop/reference/Matrix/) &#124; [Matrix3D](#Matrix3D) | The first matrix.  |
-| m2      | [Matrix](/develop/reference/Matrix/) &#124; [Matrix3D](#Matrix3D) | The second matrix. |
+| m1      | [Matrix](/develop/reference/matrix.md) &#124; [Matrix3D](#Matrix3D) | The first matrix.  |
+| m2      | [Matrix](/develop/reference/matrix.md) &#124; [Matrix3D](#Matrix3D) | The second matrix. |
 
 **Kind**: instance method of [Matrix3D](#Matrix3D)
 
@@ -157,7 +157,7 @@ Multiplies a passed affine transform to the right: this * M.
 
 | Param | Type                           | Description                                        |
 | ----- | ------------------------------ | -------------------------------------------------- |
-| a    | [Matrix](/develop/reference/Matrix/) &#124; [Matrix3D](#Matrix3D) | A Matrix or the a component of a affine transform. |
+| a    | [Matrix](/develop/reference/matrix.md) &#124; [Matrix3D](#Matrix3D) | A Matrix or the a component of a affine transform. |
 | b    | `?number`                       | The b component of a affine transform.             |
 | c    | `?number`                       | The c component of a affine transform.             |
 | d    | `?number`                       | The d component of a affine transform.             |
@@ -174,7 +174,7 @@ Multiplies a passed affine transform to the left: this * M.
 
 | Param | Type                           | Description                                        |
 | ----- | ------------------------------ | -------------------------------------------------- |
-| a    | [Matrix](/develop/reference/Matrix/) &#124; [Matrix3D](#Matrix3D) | A Matrix or the a component of a affine transform. |
+| a    | [Matrix](/develop/reference/matrix.md) &#124; [Matrix3D](#Matrix3D) | A Matrix or the a component of a affine transform. |
 | b    | `?number`                       | The b component of a affine transform.             |
 | c    | `?number`                       | The c component of a affine transform.             |
 | d    | `?number`                       | The d component of a affine transform.             |
@@ -411,7 +411,7 @@ Performs a flip to the matrix according to the passed FlipInfo. If the width and
 
 | Param    | Type                             | Description                                                                                                    |
 | -------- | -------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| flipInfo | {flipX: boolean, flipY: boolean} | flipX - Specifies if the object is flipped horizontally, FlipY - Specifies if the object is flipped vertically |
+| flipInfo | \{flipX: boolean, flipY: boolean\} | flipX - Specifies if the object is flipped horizontally, FlipY - Specifies if the object is flipped vertically |
 | width    | `?number`                        | The width of the node on which the matrix is to be applied                                                     |
 | height   | `?number`                        | The height of the node on which the matrix is to be applied                                                    |
 

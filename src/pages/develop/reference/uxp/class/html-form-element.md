@@ -6,7 +6,7 @@ keywords:
   - Plugin
 ---
 
-<a name="htmlformelement" id="htmlformelement"></a>
+\<a name="htmlformelement" id="htmlformelement"\>\</a\>
 
 ## HTMLFormElement
 
@@ -97,7 +97,7 @@ keywords:
   - [.removeEventListener(eventName, callback, [capture])](#eventtarget-removeeventlistener)
   - [.dispatchEvent(event)](#eventtarget-dispatchevent)
 
-<a name="htmlformelement-elements" id="htmlformelement-elements"></a>
+\<a name="htmlformelement-elements" id="htmlformelement-elements"\>\</a\>
 
 ### htmlFormElement.elements
 
@@ -106,7 +106,7 @@ It should technicaly be an HTMLFormControlsCollection which subclasses HTMLColle
 
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/HTMLFormElement/elements
 
-<a name="htmlelement-dataset" id="htmlelement-dataset"></a>
+\<a name="htmlelement-dataset" id="htmlelement-dataset"\>\</a\>
 
 ### htmlFormElement.dataset
 
@@ -114,275 +114,275 @@ Access to all the custom data attributes (data-\*) set.
 
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset
 
-<a name="element-nodename" id="element-nodename"></a>
+\<a name="element-nodename" id="element-nodename"\>\</a\>
 
 ### htmlFormElement.nodeName : `string`
 
 **Read only**
 
-<a name="element-localname" id="element-localname"></a>
+\<a name="element-localname" id="element-localname"\>\</a\>
 
 ### htmlFormElement.localName : `string`
 
 **Read only**
 
-<a name="element-tagname" id="element-tagname"></a>
+\<a name="element-tagname" id="element-tagname"\>\</a\>
 
 ### htmlFormElement.tagName : `string`
 
 **Read only**
 
-<a name="element-nodetype" id="element-nodetype"></a>
+\<a name="element-nodetype" id="element-nodetype"\>\</a\>
 
 ### htmlFormElement.nodeType : `number`
 
 **Read only**
 
-<a name="element-namespaceuri" id="element-namespaceuri"></a>
+\<a name="element-namespaceuri" id="element-namespaceuri"\>\</a\>
 
 ### htmlFormElement.namespaceURI : `string`
 
 **Read only**
 
-<a name="element-id" id="element-id"></a>
+\<a name="element-id" id="element-id"\>\</a\>
 
 ### htmlFormElement.id : `string`
 
-<a name="element-tabindex" id="element-tabindex"></a>
+\<a name="element-tabindex" id="element-tabindex"\>\</a\>
 
 ### htmlFormElement.tabIndex : `number`
 
-<a name="element-classname" id="element-classname"></a>
+\<a name="element-classname" id="element-classname"\>\</a\>
 
 ### htmlFormElement.className : `string`
 
-<a name="element-attributes" id="element-attributes"></a>
+\<a name="element-attributes" id="element-attributes"\>\</a\>
 
 ### htmlFormElement.attributes : [`NamedNodeMap`](#namednodemap)
 
 **Read only**
 
-<a name="element-style" id="element-style"></a>
+\<a name="element-style" id="element-style"\>\</a\>
 
 ### htmlFormElement.style : `Style`
 
 **Read only**
 
-<a name="element-clientleft" id="element-clientleft"></a>
+\<a name="element-clientleft" id="element-clientleft"\>\</a\>
 
 ### htmlFormElement.clientLeft : `number`
 
 **Read only**
 
-<a name="element-clienttop" id="element-clienttop"></a>
+\<a name="element-clienttop" id="element-clienttop"\>\</a\>
 
 ### htmlFormElement.clientTop : `number`
 
 **Read only**
 
-<a name="element-clientwidth" id="element-clientwidth"></a>
+\<a name="element-clientwidth" id="element-clientwidth"\>\</a\>
 
 ### htmlFormElement.clientWidth : `number`
 
 **Read only**
 
-<a name="element-clientheight" id="element-clientheight"></a>
+\<a name="element-clientheight" id="element-clientheight"\>\</a\>
 
 ### htmlFormElement.clientHeight : `number`
 
 **Read only**
 
-<a name="element-height" id="element-height"></a>
+\<a name="element-height" id="element-height"\>\</a\>
 
 ### htmlFormElement.height : `string` \| `Number`
 
 The height of the element
 
-<a name="element-width" id="element-width"></a>
+\<a name="element-width" id="element-width"\>\</a\>
 
 ### htmlFormElement.width : `string` \| `Number`
 
 The width of the element
 
-<a name="element-offsetparent" id="element-offsetparent"></a>
+\<a name="element-offsetparent" id="element-offsetparent"\>\</a\>
 
 ### htmlFormElement.offsetParent : [`Element`](#element)
 
 **Read only**
 
-<a name="element-offsetleft" id="element-offsetleft"></a>
+\<a name="element-offsetleft" id="element-offsetleft"\>\</a\>
 
 ### htmlFormElement.offsetLeft : `number`
 
 **Read only**
 
-<a name="element-offsettop" id="element-offsettop"></a>
+\<a name="element-offsettop" id="element-offsettop"\>\</a\>
 
 ### htmlFormElement.offsetTop : `number`
 
 **Read only**
 
-<a name="element-offsetwidth" id="element-offsetwidth"></a>
+\<a name="element-offsetwidth" id="element-offsetwidth"\>\</a\>
 
 ### htmlFormElement.offsetWidth : `number`
 
 **Read only**
 
-<a name="element-offsetheight" id="element-offsetheight"></a>
+\<a name="element-offsetheight" id="element-offsetheight"\>\</a\>
 
 ### htmlFormElement.offsetHeight : `number`
 
 **Read only**
 
-<a name="element-scrollleft" id="element-scrollleft"></a>
+\<a name="element-scrollleft" id="element-scrollleft"\>\</a\>
 
 ### htmlFormElement.scrollLeft : `number`
 
-<a name="element-scrolltop" id="element-scrolltop"></a>
+\<a name="element-scrolltop" id="element-scrolltop"\>\</a\>
 
 ### htmlFormElement.scrollTop : `number`
 
-<a name="element-scrollwidth" id="element-scrollwidth"></a>
+\<a name="element-scrollwidth" id="element-scrollwidth"\>\</a\>
 
 ### htmlFormElement.scrollWidth : `number`
 
 **Read only**
 
-<a name="element-scrollheight" id="element-scrollheight"></a>
+\<a name="element-scrollheight" id="element-scrollheight"\>\</a\>
 
 ### htmlFormElement.scrollHeight : `number`
 
 **Read only**
 
-<a name="element-uxpcontainer" id="element-uxpcontainer"></a>
+\<a name="element-uxpcontainer" id="element-uxpcontainer"\>\</a\>
 
 ### htmlFormElement.uxpContainer : [`UXPContainer`](#uxpcontainer)
 
 **Read only**
 
-<a name="element-disabled" id="element-disabled"></a>
+\<a name="element-disabled" id="element-disabled"\>\</a\>
 
 ### htmlFormElement.disabled : `boolean`
 
-<a name="element-innerhtml" id="element-innerhtml"></a>
+\<a name="element-innerhtml" id="element-innerhtml"\>\</a\>
 
 ### htmlFormElement.innerHTML : `string`
 
-<a name="element-outerhtml" id="element-outerhtml"></a>
+\<a name="element-outerhtml" id="element-outerhtml"\>\</a\>
 
 ### htmlFormElement.outerHTML : `string`
 
-<a name="node-contenteditable" id="node-contenteditable"></a>
+\<a name="node-contenteditable" id="node-contenteditable"\>\</a\>
 
 ### htmlFormElement.contentEditable
 
 **Read only**
 
-<a name="node-isconnected" id="node-isconnected"></a>
+\<a name="node-isconnected" id="node-isconnected"\>\</a\>
 
 ### htmlFormElement.isConnected : `boolean`
 
 **Read only**
 
-<a name="node-parentnode" id="node-parentnode"></a>
+\<a name="node-parentnode" id="node-parentnode"\>\</a\>
 
 ### htmlFormElement.parentNode : [`Node`](#node)
 
 **Read only**
 
-<a name="node-parentelement" id="node-parentelement"></a>
+\<a name="node-parentelement" id="node-parentelement"\>\</a\>
 
 ### htmlFormElement.parentElement : [`Element`](#element)
 
 **Read only**
 
-<a name="node-firstchild" id="node-firstchild"></a>
+\<a name="node-firstchild" id="node-firstchild"\>\</a\>
 
 ### htmlFormElement.firstChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-lastchild" id="node-lastchild"></a>
+\<a name="node-lastchild" id="node-lastchild"\>\</a\>
 
 ### htmlFormElement.lastChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-previoussibling" id="node-previoussibling"></a>
+\<a name="node-previoussibling" id="node-previoussibling"\>\</a\>
 
 ### htmlFormElement.previousSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-nextsibling" id="node-nextsibling"></a>
+\<a name="node-nextsibling" id="node-nextsibling"\>\</a\>
 
 ### htmlFormElement.nextSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-firstelementchild" id="node-firstelementchild"></a>
+\<a name="node-firstelementchild" id="node-firstelementchild"\>\</a\>
 
 ### htmlFormElement.firstElementChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-lastelementchild" id="node-lastelementchild"></a>
+\<a name="node-lastelementchild" id="node-lastelementchild"\>\</a\>
 
 ### htmlFormElement.lastElementChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-previouselementsibling" id="node-previouselementsibling"></a>
+\<a name="node-previouselementsibling" id="node-previouselementsibling"\>\</a\>
 
 ### htmlFormElement.previousElementSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-nextelementsibling" id="node-nextelementsibling"></a>
+\<a name="node-nextelementsibling" id="node-nextelementsibling"\>\</a\>
 
 ### htmlFormElement.nextElementSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-textcontent" id="node-textcontent"></a>
+\<a name="node-textcontent" id="node-textcontent"\>\</a\>
 
 ### htmlFormElement.textContent : `string`
 
-<a name="node-childnodes" id="node-childnodes"></a>
+\<a name="node-childnodes" id="node-childnodes"\>\</a\>
 
 ### htmlFormElement.childNodes : [`NodeList`](#nodelist)
 
 **Read only**
 
-<a name="node-children" id="node-children"></a>
+\<a name="node-children" id="node-children"\>\</a\>
 
 ### htmlFormElement.children : [`HTMLCollection`](#htmlcollection)
 
 **Read only**
 
-<a name="node-ownerdocument" id="node-ownerdocument"></a>
+\<a name="node-ownerdocument" id="node-ownerdocument"\>\</a\>
 
 ### htmlFormElement.ownerDocument
 
 **Read only**
 
-<a name="element-scrollintoview" id="element-scrollintoview"></a>
+\<a name="element-scrollintoview" id="element-scrollintoview"\>\</a\>
 
 ### htmlFormElement.scrollIntoView()
 
-<a name="element-scrollintoviewifneeded" id="element-scrollintoviewifneeded"></a>
+\<a name="element-scrollintoviewifneeded" id="element-scrollintoviewifneeded"\>\</a\>
 
 ### htmlFormElement.scrollIntoViewIfNeeded()
 
-<a name="element-focus" id="element-focus"></a>
+\<a name="element-focus" id="element-focus"\>\</a\>
 
 ### htmlFormElement.focus()
 
-<a name="element-blur" id="element-blur"></a>
+\<a name="element-blur" id="element-blur"\>\</a\>
 
 ### htmlFormElement.blur()
 
-<a name="element-getattribute" id="element-getattribute"></a>
+\<a name="element-getattribute" id="element-getattribute"\>\</a\>
 
 ### htmlFormElement.getAttribute(name)
 
@@ -390,7 +390,7 @@ The width of the element
 | ----- | -------- |
 | name  | `string` |
 
-<a name="element-setattribute" id="element-setattribute"></a>
+\<a name="element-setattribute" id="element-setattribute"\>\</a\>
 
 ### htmlFormElement.setAttribute(name, value)
 
@@ -399,7 +399,7 @@ The width of the element
 | name  | `string` |
 | value | `string` |
 
-<a name="element-removeattribute" id="element-removeattribute"></a>
+\<a name="element-removeattribute" id="element-removeattribute"\>\</a\>
 
 ### htmlFormElement.removeAttribute(name)
 
@@ -407,7 +407,7 @@ The width of the element
 | ----- | -------- |
 | name  | `string` |
 
-<a name="element-hasattribute" id="element-hasattribute"></a>
+\<a name="element-hasattribute" id="element-hasattribute"\>\</a\>
 
 ### htmlFormElement.hasAttribute(name)
 
@@ -415,7 +415,7 @@ The width of the element
 | ----- | -------- |
 | name  | `string` |
 
-<a name="element-getattributenode" id="element-getattributenode"></a>
+\<a name="element-getattributenode" id="element-getattributenode"\>\</a\>
 
 ### htmlFormElement.getAttributeNode(name)
 
@@ -423,7 +423,7 @@ The width of the element
 | ----- | -------- |
 | name  | `string` |
 
-<a name="element-setattributenode" id="element-setattributenode"></a>
+\<a name="element-setattributenode" id="element-setattributenode"\>\</a\>
 
 ### htmlFormElement.setAttributeNode(newAttr)
 
@@ -431,7 +431,7 @@ The width of the element
 | ------- | ---- |
 | newAttr | `\*` |
 
-<a name="element-removeattributenode" id="element-removeattributenode"></a>
+\<a name="element-removeattributenode" id="element-removeattributenode"\>\</a\>
 
 ### htmlFormElement.removeAttributeNode(oldAttr)
 
@@ -439,11 +439,11 @@ The width of the element
 | ------- | ---- |
 | oldAttr | `\*` |
 
-<a name="element-click" id="element-click"></a>
+\<a name="element-click" id="element-click"\>\</a\>
 
 ### htmlFormElement.click()
 
-<a name="element-getelementsbyclassname" id="element-getelementsbyclassname"></a>
+\<a name="element-getelementsbyclassname" id="element-getelementsbyclassname"\>\</a\>
 
 ### htmlFormElement.getElementsByClassName(name)
 
@@ -451,7 +451,7 @@ The width of the element
 | ----- | -------- |
 | name  | `string` |
 
-<a name="element-getelementsbytagname" id="element-getelementsbytagname"></a>
+\<a name="element-getelementsbytagname" id="element-getelementsbytagname"\>\</a\>
 
 ### htmlFormElement.getElementsByTagName(name)
 
@@ -459,7 +459,7 @@ The width of the element
 | ----- | -------- |
 | name  | `string` |
 
-<a name="element-queryselector" id="element-queryselector"></a>
+\<a name="element-queryselector" id="element-queryselector"\>\</a\>
 
 ### htmlFormElement.querySelector(selector)
 
@@ -467,7 +467,7 @@ The width of the element
 | -------- | -------- |
 | selector | `string` |
 
-<a name="element-queryselectorall" id="element-queryselectorall"></a>
+\<a name="element-queryselectorall" id="element-queryselectorall"\>\</a\>
 
 ### htmlFormElement.querySelectorAll(selector)
 
@@ -475,11 +475,11 @@ The width of the element
 | -------- | -------- |
 | selector | `string` |
 
-<a name="element-getboundingclientrect" id="element-getboundingclientrect"></a>
+\<a name="element-getboundingclientrect" id="element-getboundingclientrect"\>\</a\>
 
 ### htmlFormElement.getBoundingClientRect()
 
-<a name="element-insertadjacenthtml" id="element-insertadjacenthtml"></a>
+\<a name="element-insertadjacenthtml" id="element-insertadjacenthtml"\>\</a\>
 
 ### htmlFormElement.insertAdjacentHTML(position, value)
 
@@ -488,7 +488,7 @@ The width of the element
 | position |          |
 | value    | `string` |
 
-<a name="element-insertadjacentelement" id="element-insertadjacentelement"></a>
+\<a name="element-insertadjacentelement" id="element-insertadjacentelement"\>\</a\>
 
 ### htmlFormElement.insertAdjacentElement(position, node)
 
@@ -497,7 +497,7 @@ The width of the element
 | position | `\*` |
 | node     | `\*` |
 
-<a name="element-insertadjacenttext" id="element-insertadjacenttext"></a>
+\<a name="element-insertadjacenttext" id="element-insertadjacenttext"\>\</a\>
 
 ### htmlFormElement.insertAdjacentText(position, text)
 
@@ -506,11 +506,11 @@ The width of the element
 | position | `\*` |
 | text     | `\*` |
 
-<a name="node-haschildnodes" id="node-haschildnodes"></a>
+\<a name="node-haschildnodes" id="node-haschildnodes"\>\</a\>
 
 ### htmlFormElement.hasChildNodes()
 
-<a name="node-clonenode" id="node-clonenode"></a>
+\<a name="node-clonenode" id="node-clonenode"\>\</a\>
 
 ### htmlFormElement.cloneNode(deep)
 
@@ -518,7 +518,7 @@ The width of the element
 | ----- | --------- |
 | deep  | `boolean` |
 
-<a name="node-appendchild" id="node-appendchild"></a>
+\<a name="node-appendchild" id="node-appendchild"\>\</a\>
 
 ### htmlFormElement.appendChild(child)
 
@@ -526,7 +526,7 @@ The width of the element
 | ----- | --------------- |
 | child | [`Node`](#node) |
 
-<a name="node-insertbefore" id="node-insertbefore"></a>
+\<a name="node-insertbefore" id="node-insertbefore"\>\</a\>
 
 ### htmlFormElement.insertBefore(child, before)
 
@@ -535,7 +535,7 @@ The width of the element
 | child  | [`Node`](#node) |
 | before | [`Node`](#node) |
 
-<a name="node-replacechild" id="node-replacechild"></a>
+\<a name="node-replacechild" id="node-replacechild"\>\</a\>
 
 ### htmlFormElement.replaceChild(newChild, oldChild)
 
@@ -544,7 +544,7 @@ The width of the element
 | newChild | [`Node`](#node) |
 | oldChild | [`Node`](#node) |
 
-<a name="node-removechild" id="node-removechild"></a>
+\<a name="node-removechild" id="node-removechild"\>\</a\>
 
 ### htmlFormElement.removeChild(child)
 
@@ -552,11 +552,11 @@ The width of the element
 | ----- | --------------- |
 | child | [`Node`](#node) |
 
-<a name="node-remove" id="node-remove"></a>
+\<a name="node-remove" id="node-remove"\>\</a\>
 
 ### htmlFormElement.remove()
 
-<a name="node-before" id="node-before"></a>
+\<a name="node-before" id="node-before"\>\</a\>
 
 ### htmlFormElement.before(...nodes)
 
@@ -564,7 +564,7 @@ The width of the element
 | -------- | ----------------------- |
 | ...nodes | [`Array.<Node>`](#node) |
 
-<a name="node-after" id="node-after"></a>
+\<a name="node-after" id="node-after"\>\</a\>
 
 ### htmlFormElement.after(...nodes)
 
@@ -572,7 +572,7 @@ The width of the element
 | -------- | ----------------------- |
 | ...nodes | [`Array.<Node>`](#node) |
 
-<a name="node-replacewith" id="node-replacewith"></a>
+\<a name="node-replacewith" id="node-replacewith"\>\</a\>
 
 ### htmlFormElement.replaceWith(...nodes)
 
@@ -580,7 +580,7 @@ The width of the element
 | -------- | ----------------------- |
 | ...nodes | [`Array.<Node>`](#node) |
 
-<a name="node-contains" id="node-contains"></a>
+\<a name="node-contains" id="node-contains"\>\</a\>
 
 ### htmlFormElement.contains(node)
 
@@ -588,7 +588,7 @@ The width of the element
 | ----- | --------------- |
 | node  | [`Node`](#node) |
 
-<a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"></a>
+\<a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"\>\</a\>
 
 ### htmlFormElement.addEventListener(eventName, callback, [capture])
 
@@ -598,7 +598,7 @@ The width of the element
 | callback  | `\*`      |         |
 | [capture] | `boolean` | `false` |
 
-<a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"></a>
+\<a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"\>\</a\>
 
 ### htmlFormElement.removeEventListener(eventName, callback, [capture])
 
@@ -608,7 +608,7 @@ The width of the element
 | callback  | `\*`      |         |
 | [capture] | `boolean` | `false` |
 
-<a name="eventtarget-dispatchevent" id="eventtarget-dispatchevent"></a>
+\<a name="eventtarget-dispatchevent" id="eventtarget-dispatchevent"\>\</a\>
 
 ### htmlFormElement.dispatchEvent(event)
 

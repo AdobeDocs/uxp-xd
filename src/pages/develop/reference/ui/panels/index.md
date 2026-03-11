@@ -20,7 +20,7 @@ Panels appear on the left-hand side of the app when user clicks on the Plugins i
 
 ## Usage
 
-Building the user interface for panels is very similar to modals. Refer to [Modal dialog usage](/develop/reference/ui/dialogs/#usage).
+Building the user interface for panels is very similar to modals. Refer to [Modal dialog usage](/develop/reference/ui/dialogs/index.md#usage).
 
 ## Building Panels
 

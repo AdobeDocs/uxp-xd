@@ -1,4 +1,19 @@
+---
+jsDoc: true
+---
+# :only-child
 
-import Content from "uxp-documentation/src/pages/uxp/reference-css/Pseudo-classes/only-child";
+**Since** UXP v3.0
 
-<Content query="product=xd"/>
+Matches only an element with no siblings.
+
+**See:** https://developer.mozilla.org/en-US/docs/Web/CSS/:only-child
+
+**Example:**
+
+```css
+.item:only-child {     
+    background-color: red;
+}
+```
+

@@ -9,7 +9,7 @@ keywords:
 # GraphicNode
 
 **Kind**: abstract class
-**Extends**: [SceneNode](/develop/reference/SceneNode)
+**Extends**: [SceneNode](/develop/reference/scene-node.md)
 
 Base class for nodes that have a stroke and/or fill. This includes leaf nodes such as Rectangle, as well as BooleanGroup
 which is a container node. If you create a shape node, it will not be visible unless you explicitly give it either a stroke
@@ -17,7 +17,7 @@ or a fill.
 
 ## fill
 
-▸ **fill**: [Color](/develop/reference/Color) | [LinearGradient](/develop/reference/LinearGradient) | [RadialGradient](/develop/reference/RadialGradient) | [AngularGradient](/develop/reference/AngularGradient) | [ImageFill](/develop/reference/ImageFill)
+▸ **fill**: [Color](/develop/reference/color.md) | [LinearGradient](/develop/reference/linear-gradient.md) | [RadialGradient](/develop/reference/radial-gradient.md) | [AngularGradient](/develop/reference/angular-gradient.md) | [ImageFill](/develop/reference/image-fill.md)
 
 **Updated** XD 42
 
@@ -36,7 +36,7 @@ ellipse.fill = new Color("red");
 ```
 
 To modify an existing fill, always be sure to re-invoke the `fill` setter rather than just changing the fill object's properties inline.
-See ["Properties with object values"](/develop/plugin-development/xd-concepts/properties-with-object-values/).
+See ["Properties with object values"](/develop/plugin-development/xd-concepts/properties-with-object-values.md).
 
 **Kind**: instance property of [GraphicNode](#graphicnode)
 
@@ -52,7 +52,7 @@ If false, the `fill` is not rendered. The user can toggle this via a checkbox in
 
 ## stroke
 
-▸ **stroke**: [Color](/develop/reference/Color)
+▸ **stroke**: [Color](/develop/reference/color.md)
 
 **Default**: `Color(0)` or `null`
 
@@ -72,7 +72,7 @@ ellipse.stroke = new Color("red");
 ```
 
 To modify an existing stroke, always be sure to re-invoke the `stroke` setter rather than just changing the Color object's properties inline.
-See ["Properties with object values"](/develop/plugin-development/xd-concepts/properties-with-object-values/).
+See ["Properties with object values"](/develop/plugin-development/xd-concepts/properties-with-object-values.md).
 
 **Kind**: instance property of [GraphicNode](#graphicnode)
 
@@ -163,20 +163,20 @@ Ignored unless `strokeDashArray` is non-empty. Shifts the "phase" of the repeati
 
 ## shadow
 
-▸ **shadow**: ?[Shadow](/develop/reference/Shadow)
+▸ **shadow**: ?[Shadow](/develop/reference/shadow.md)
 
 **Default**: `null`
 
 The node's drop shadow, if any. If there is no shadow applied, this property may be null _or_ `shadow.visible` may be false.
 
 To modify an existing shadow, always be sure to re-invoke the `shadow` setter rather than just changing the Shadow object's properties inline.
-See ["Properties with object values"](/develop/plugin-development/xd-concepts/properties-with-object-values/).
+See ["Properties with object values"](/develop/plugin-development/xd-concepts/properties-with-object-values.md).
 
 **Kind**: instance property of [GraphicNode](#graphicnode)
 
 ## blur
 
-▸ **blur**: ?[Blur](/develop/reference/Blur)
+▸ **blur**: ?[Blur](/develop/reference/blur.md)
 
 **Default**: `null`
 
@@ -184,7 +184,7 @@ The node's object blur or background blur settings, if applicable (a node may no
 effect applied, this property may be null _or_ `blur.visible` may be false.
 
 To modify an existing blur, always be sure to re-invoke the `blur` setter rather than just changing the Blur object's properties inline.
-See ["Properties with object values"](/develop/plugin-development/xd-concepts/properties-with-object-values/).
+See ["Properties with object values"](/develop/plugin-development/xd-concepts/properties-with-object-values.md).
 
 **Kind**: instance property of [GraphicNode](#graphicnode)
 

@@ -9,7 +9,7 @@ keywords:
 # SymbolInstance
 
 **Kind**: class
-**Extends**: [SceneNode](/develop/reference/SceneNode)
+**Extends**: [SceneNode](/develop/reference/scene-node.md)
 
 Container node representing one instance of a Component (previously known as "Symbols" in XD's UI). Changes made to the contents of a
 SymbolInstance are treated in one of two ways:
@@ -30,7 +30,7 @@ Note that overrides vary somewhat in granularity. In some but not all cases, ove
 on the same node from receiving future updates from the master instance.
 
 It is not currently possible for plugins to _create_ a new component definition or a new SymbolInstance node, aside from using
-[commands.duplicate](/develop/reference/commands/#duplicate) to clone existing SymbolInstances.
+[commands.duplicate](/develop/reference/commands.md#duplicate) to clone existing SymbolInstances.
 
 ## symbolId
 

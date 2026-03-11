@@ -9,13 +9,13 @@ keywords:
 # Line
 
 **Kind**: class
-**Extends**: [GraphicNode](/develop/reference/GraphicNode)
+**Extends**: [GraphicNode](/develop/reference/graphic-node.md)
 
 Line leaf node shape. Lines have a stroke but no fill.
 
 ## start
 
-▸ **start**: [Point](/develop/reference/scenegraph/#typedef-point)
+▸ **start**: [Point](/develop/reference/scenegraph.md#typedef-point)
 
 Start point of the Line in local coordinate space. To change the start point, use [setStartEnd](#setstartend).
 
@@ -24,7 +24,7 @@ Start point of the Line in local coordinate space. To change the start point, us
 
 ## end
 
-▸ **end**: [Point](/develop/reference/scenegraph/#typedef-point)
+▸ **end**: [Point](/develop/reference/scenegraph.md#typedef-point)
 
 Endpoint of the Line in local coordinate space. To change the endpoint, use [setStartEnd](#setstartend).
 

@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-<a name="htmlcollection" id="htmlcollection"></a>
+\<a name="htmlcollection" id="htmlcollection"\>\</a\>
 
 ## HTMLCollection
 
@@ -23,13 +23,13 @@ keywords:
     * [.entries()](#nodelist-entries)
     * [.forEach(callback)](#nodelist-foreach)
 
-<a name="nodelist-length" id="nodelist-length"></a>
+\<a name="nodelist-length" id="nodelist-length"\>\</a\>
 
 ### htmlCollection.length : `number`
 
 **Read only**
 
-<a name="nodelist-item" id="nodelist-item"></a>
+\<a name="nodelist-item" id="nodelist-item"\>\</a\>
 
 ### htmlCollection.item(index)
 
@@ -37,19 +37,19 @@ keywords:
 | --- | --- |
 | index | `number` |
 
-<a name="nodelist-keys" id="nodelist-keys"></a>
+\<a name="nodelist-keys" id="nodelist-keys"\>\</a\>
 
 ### htmlCollection.keys()
 
-<a name="nodelist-values" id="nodelist-values"></a>
+\<a name="nodelist-values" id="nodelist-values"\>\</a\>
 
 ### htmlCollection.values()
 
-<a name="nodelist-entries" id="nodelist-entries"></a>
+\<a name="nodelist-entries" id="nodelist-entries"\>\</a\>
 
 ### htmlCollection.entries()
 
-<a name="nodelist-foreach" id="nodelist-foreach"></a>
+\<a name="nodelist-foreach" id="nodelist-foreach"\>\</a\>
 
 ### htmlCollection.forEach(callback)
 

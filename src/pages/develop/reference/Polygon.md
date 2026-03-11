@@ -9,7 +9,7 @@ keywords:
 # Polygon
 
 **Kind**: class
-**Extends**: [GraphicNode](/develop/reference/GraphicNode)
+**Extends**: [GraphicNode](/develop/reference/graphic-node.md)
 **Since**: XD 19
 
 Leaf node shape that is either a convex polygon _or_ a star shape. May have rounded corners. The sides are not necessarily all equal in length:

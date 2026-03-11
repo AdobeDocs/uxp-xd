@@ -10,7 +10,7 @@ description: Build UXP plugins for Adobe XD with HTML, CSS, and JavaScript. Auto
 
 import Community from "./community/index.md"
 
-<Hero slots="image, heading, text" background="rgb(64, 34, 138)"/>
+<Superhero slots="image, heading, text" background="rgb(64, 34, 138)"/>
 
 ![Hero image](./illustration.png)
 
@@ -26,17 +26,15 @@ UXP (**U**nified E**x**tensibility **P**latform) lets you build plugins for XD a
 - [Design: UX patterns, UI elements, and design guidelines](/design/)
 - [Share: Submission checklist, packaging, and marketing](/distribution/)
 
-<InlineAlert variant="warning" slots="header, text1, text2, text3" />
+<InlineAlert variant="warning" slots="heading, text1, text2, text3" />
 
 Important Changes for XD Plugin Distribution in the Marketplace
 
-We are no longer accepting <i>new</i> plugins for Adobe XD in [our Marketplace](http://exchange.adobe.com/creativecloud). 
+We are no longer accepting \<i\>new\</i\> plugins for Adobe XD in [our Marketplace](http://exchange.adobe.com/creativecloud). 
 
 Existing published plugins can continue to be managed and updated via the Developer Distribution portal. The UXP Developer Tool (UDT) will continue to support plugin development. 
 
-Visit the [FAQs](https://developer.adobe.com/xd/uxp/faq/) page for more details and refer to [this document](https://helpx.adobe.com/in/support/xd.html) for the overall plans for Adobe XD. 
-
-<br></br><br></br><br></br>
+Visit the [FAQs](https://developer.adobe.com/xd/uxp/faq/) page for more details and refer to [this document](https://helpx.adobe.com/in/support/xd.html) for the overall plans for Adobe XD.
 
 ## Overview
 
@@ -56,7 +54,7 @@ With UXP, you can develop:
 
 ### Get started
 
-[Quick Start: Direct Action](/develop/tutorials/quick-start/)
+[Quick Start: Direct Action](/develop/tutorials/quick-start/index.md)
 
 With this Quick Start, you'll get a solid grasp of how to create your own XD plugin.
 

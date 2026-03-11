@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-<a name="text" id="text"></a>
+\<a name="text" id="text"\>\</a\>
 
 ## Text
 
@@ -59,7 +59,7 @@ keywords:
     * [.removeEventListener(eventName, callback, [capture])](#eventtarget-removeeventlistener)
     * [.dispatchEvent(event)](#eventtarget-dispatchevent)
 
-<a name="new-text-new" id="new-text-new"></a>
+\<a name="new-text-new" id="new-text-new"\>\</a\>
 
 ### new Text(document, textContent)
 Creates an instance of Text.
@@ -69,7 +69,7 @@ Creates an instance of Text.
 | document | `\*` |
 | textContent | `\*` |
 
-<a name="text-nodename" id="text-nodename"></a>
+\<a name="text-nodename" id="text-nodename"\>\</a\>
 
 ### text.nodeName : `string`
 
@@ -77,7 +77,7 @@ Creates an instance of Text.
 
 **Read only**
 
-<a name="text-nodetype" id="text-nodetype"></a>
+\<a name="text-nodetype" id="text-nodetype"\>\</a\>
 
 ### text.nodeType : `number`
 
@@ -85,121 +85,121 @@ Creates an instance of Text.
 
 **Read only**
 
-<a name="characterdata-data" id="characterdata-data"></a>
+\<a name="characterdata-data" id="characterdata-data"\>\</a\>
 
 ### text.data : `string`
 
-<a name="characterdata-textcontent" id="characterdata-textcontent"></a>
+\<a name="characterdata-textcontent" id="characterdata-textcontent"\>\</a\>
 
 ### text.textContent : `string`
 
-<a name="characterdata-nodevalue" id="characterdata-nodevalue"></a>
+\<a name="characterdata-nodevalue" id="characterdata-nodevalue"\>\</a\>
 
 ### text.nodeValue : `string`
 
-<a name="characterdata-length" id="characterdata-length"></a>
+\<a name="characterdata-length" id="characterdata-length"\>\</a\>
 
 ### text.length : `number`
 
 **Read only**
 
-<a name="node-contenteditable" id="node-contenteditable"></a>
+\<a name="node-contenteditable" id="node-contenteditable"\>\</a\>
 
 ### text.contentEditable
 
 **Read only**
 
-<a name="node-isconnected" id="node-isconnected"></a>
+\<a name="node-isconnected" id="node-isconnected"\>\</a\>
 
 ### text.isConnected : `boolean`
 
 **Read only**
 
-<a name="node-parentnode" id="node-parentnode"></a>
+\<a name="node-parentnode" id="node-parentnode"\>\</a\>
 
 ### text.parentNode : [`Node`](#node)
 
 **Read only**
 
-<a name="node-parentelement" id="node-parentelement"></a>
+\<a name="node-parentelement" id="node-parentelement"\>\</a\>
 
 ### text.parentElement : [`Element`](#element)
 
 **Read only**
 
-<a name="node-firstchild" id="node-firstchild"></a>
+\<a name="node-firstchild" id="node-firstchild"\>\</a\>
 
 ### text.firstChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-lastchild" id="node-lastchild"></a>
+\<a name="node-lastchild" id="node-lastchild"\>\</a\>
 
 ### text.lastChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-previoussibling" id="node-previoussibling"></a>
+\<a name="node-previoussibling" id="node-previoussibling"\>\</a\>
 
 ### text.previousSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-nextsibling" id="node-nextsibling"></a>
+\<a name="node-nextsibling" id="node-nextsibling"\>\</a\>
 
 ### text.nextSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-firstelementchild" id="node-firstelementchild"></a>
+\<a name="node-firstelementchild" id="node-firstelementchild"\>\</a\>
 
 ### text.firstElementChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-lastelementchild" id="node-lastelementchild"></a>
+\<a name="node-lastelementchild" id="node-lastelementchild"\>\</a\>
 
 ### text.lastElementChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-previouselementsibling" id="node-previouselementsibling"></a>
+\<a name="node-previouselementsibling" id="node-previouselementsibling"\>\</a\>
 
 ### text.previousElementSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-nextelementsibling" id="node-nextelementsibling"></a>
+\<a name="node-nextelementsibling" id="node-nextelementsibling"\>\</a\>
 
 ### text.nextElementSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-childnodes" id="node-childnodes"></a>
+\<a name="node-childnodes" id="node-childnodes"\>\</a\>
 
 ### text.childNodes : [`NodeList`](#nodelist)
 
 **Read only**
 
-<a name="node-children" id="node-children"></a>
+\<a name="node-children" id="node-children"\>\</a\>
 
 ### text.children : [`HTMLCollection`](#htmlcollection)
 
 **Read only**
 
-<a name="node-ownerdocument" id="node-ownerdocument"></a>
+\<a name="node-ownerdocument" id="node-ownerdocument"\>\</a\>
 
 ### text.ownerDocument
 
 **Read only**
 
-<a name="node-attributes" id="node-attributes"></a>
+\<a name="node-attributes" id="node-attributes"\>\</a\>
 
 ### text.attributes
 
 **Read only**
 
-<a name="characterdata-substringdata" id="characterdata-substringdata"></a>
+\<a name="characterdata-substringdata" id="characterdata-substringdata"\>\</a\>
 
 ### text.substringData(offset, count)
 
@@ -208,7 +208,7 @@ Creates an instance of Text.
 | offset | `\*` |
 | count | `\*` |
 
-<a name="characterdata-appenddata" id="characterdata-appenddata"></a>
+\<a name="characterdata-appenddata" id="characterdata-appenddata"\>\</a\>
 
 ### text.appendData(arg)
 
@@ -216,7 +216,7 @@ Creates an instance of Text.
 | --- | --- |
 | arg | `string` |
 
-<a name="characterdata-insertdata" id="characterdata-insertdata"></a>
+\<a name="characterdata-insertdata" id="characterdata-insertdata"\>\</a\>
 
 ### text.insertData(offset, arg)
 
@@ -225,7 +225,7 @@ Creates an instance of Text.
 | offset | `number` |
 | arg | `string` |
 
-<a name="characterdata-deletedata" id="characterdata-deletedata"></a>
+\<a name="characterdata-deletedata" id="characterdata-deletedata"\>\</a\>
 
 ### text.deleteData(offset, count)
 
@@ -234,7 +234,7 @@ Creates an instance of Text.
 | offset | `number` |
 | count | `number` |
 
-<a name="characterdata-replacedata" id="characterdata-replacedata"></a>
+\<a name="characterdata-replacedata" id="characterdata-replacedata"\>\</a\>
 
 ### text.replaceData(offset, count, arg)
 
@@ -244,11 +244,11 @@ Creates an instance of Text.
 | count | `number` |
 | arg | `string` |
 
-<a name="node-haschildnodes" id="node-haschildnodes"></a>
+\<a name="node-haschildnodes" id="node-haschildnodes"\>\</a\>
 
 ### text.hasChildNodes()
 
-<a name="node-clonenode" id="node-clonenode"></a>
+\<a name="node-clonenode" id="node-clonenode"\>\</a\>
 
 ### text.cloneNode(deep)
 
@@ -256,7 +256,7 @@ Creates an instance of Text.
 | --- | --- |
 | deep | `boolean` |
 
-<a name="node-appendchild" id="node-appendchild"></a>
+\<a name="node-appendchild" id="node-appendchild"\>\</a\>
 
 ### text.appendChild(child)
 
@@ -264,7 +264,7 @@ Creates an instance of Text.
 | --- | --- |
 | child | [`Node`](#node) |
 
-<a name="node-insertbefore" id="node-insertbefore"></a>
+\<a name="node-insertbefore" id="node-insertbefore"\>\</a\>
 
 ### text.insertBefore(child, before)
 
@@ -273,7 +273,7 @@ Creates an instance of Text.
 | child | [`Node`](#node) |
 | before | [`Node`](#node) |
 
-<a name="node-replacechild" id="node-replacechild"></a>
+\<a name="node-replacechild" id="node-replacechild"\>\</a\>
 
 ### text.replaceChild(newChild, oldChild)
 
@@ -282,7 +282,7 @@ Creates an instance of Text.
 | newChild | [`Node`](#node) |
 | oldChild | [`Node`](#node) |
 
-<a name="node-removechild" id="node-removechild"></a>
+\<a name="node-removechild" id="node-removechild"\>\</a\>
 
 ### text.removeChild(child)
 
@@ -290,11 +290,11 @@ Creates an instance of Text.
 | --- | --- |
 | child | [`Node`](#node) |
 
-<a name="node-remove" id="node-remove"></a>
+\<a name="node-remove" id="node-remove"\>\</a\>
 
 ### text.remove()
 
-<a name="node-before" id="node-before"></a>
+\<a name="node-before" id="node-before"\>\</a\>
 
 ### text.before(...nodes)
 
@@ -302,7 +302,7 @@ Creates an instance of Text.
 | --- | --- |
 | ...nodes | [`Array.<Node>`](#node) |
 
-<a name="node-after" id="node-after"></a>
+\<a name="node-after" id="node-after"\>\</a\>
 
 ### text.after(...nodes)
 
@@ -310,7 +310,7 @@ Creates an instance of Text.
 | --- | --- |
 | ...nodes | [`Array.<Node>`](#node) |
 
-<a name="node-replacewith" id="node-replacewith"></a>
+\<a name="node-replacewith" id="node-replacewith"\>\</a\>
 
 ### text.replaceWith(...nodes)
 
@@ -318,7 +318,7 @@ Creates an instance of Text.
 | --- | --- |
 | ...nodes | [`Array.<Node>`](#node) |
 
-<a name="node-contains" id="node-contains"></a>
+\<a name="node-contains" id="node-contains"\>\</a\>
 
 ### text.contains(node)
 
@@ -326,7 +326,7 @@ Creates an instance of Text.
 | --- | --- |
 | node | [`Node`](#node) |
 
-<a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"></a>
+\<a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"\>\</a\>
 
 ### text.addEventListener(eventName, callback, [capture])
 
@@ -336,7 +336,7 @@ Creates an instance of Text.
 | callback | `\*` |  |
 | [capture] | `boolean` | `false` |
 
-<a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"></a>
+\<a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"\>\</a\>
 
 ### text.removeEventListener(eventName, callback, [capture])
 
@@ -346,7 +346,7 @@ Creates an instance of Text.
 | callback | `\*` |  |
 | [capture] | `boolean` | `false` |
 
-<a name="eventtarget-dispatchevent" id="eventtarget-dispatchevent"></a>
+\<a name="eventtarget-dispatchevent" id="eventtarget-dispatchevent"\>\</a\>
 
 ### text.dispatchEvent(event)
 

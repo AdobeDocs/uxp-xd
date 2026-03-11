@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-<a name="messageevent" id="messageevent"></a>
+\<a name="messageevent" id="messageevent"\>\</a\>
 
 ## MessageEvent
 
@@ -33,7 +33,7 @@ keywords:
     * [.stopImmediatePropagation()](#event-stopimmediatepropagation)
     * [.stopPropagation()](#event-stoppropagation)
 
-<a name="new-messageevent-new" id="new-messageevent-new"></a>
+\<a name="new-messageevent-new" id="new-messageevent-new"\>\</a\>
 
 ### new MessageEvent(data, origin, source, eventInit)
 Creates an instance of MessageEvent.
@@ -45,85 +45,85 @@ Creates an instance of MessageEvent.
 | source | `\*` |
 | eventInit | `\*` |
 
-<a name="messageevent-data" id="messageevent-data"></a>
+\<a name="messageevent-data" id="messageevent-data"\>\</a\>
 
 ### messageEvent.data
 
 **Returns**: `string` - returns the data sent by the server.
 
-<a name="messageevent-origin" id="messageevent-origin"></a>
+\<a name="messageevent-origin" id="messageevent-origin"\>\</a\>
 
 ### messageEvent.origin
 
 **Returns**: `string` - returns the origin of the message.
 
-<a name="messageevent-source" id="messageevent-source"></a>
+\<a name="messageevent-source" id="messageevent-source"\>\</a\>
 
 ### messageEvent.source
 
 **Returns**: `string` - returns the string indicating the messageEventSource.
 
-<a name="event-type" id="event-type"></a>
+\<a name="event-type" id="event-type"\>\</a\>
 
 ### messageEvent.type
 
 **Read only**
 
-<a name="event-istrusted" id="event-istrusted"></a>
+\<a name="event-istrusted" id="event-istrusted"\>\</a\>
 
 ### messageEvent.isTrusted : `boolean`
 
 **Read only**
 
-<a name="event-target" id="event-target"></a>
+\<a name="event-target" id="event-target"\>\</a\>
 
 ### messageEvent.target : [`Node`](#node)
 
 **Read only**
 
-<a name="event-currenttarget" id="event-currenttarget"></a>
+\<a name="event-currenttarget" id="event-currenttarget"\>\</a\>
 
 ### messageEvent.currentTarget : [`Node`](#node)
 
 **Read only**
 
-<a name="event-bubbles" id="event-bubbles"></a>
+\<a name="event-bubbles" id="event-bubbles"\>\</a\>
 
 ### messageEvent.bubbles : `boolean`
 
 **Read only**
 
-<a name="event-cancelable" id="event-cancelable"></a>
+\<a name="event-cancelable" id="event-cancelable"\>\</a\>
 
 ### messageEvent.cancelable : `boolean`
 
 **Read only**
 
-<a name="event-eventphase" id="event-eventphase"></a>
+\<a name="event-eventphase" id="event-eventphase"\>\</a\>
 
 ### messageEvent.eventPhase
 
 **Read only**
 
-<a name="event-defaultprevented" id="event-defaultprevented"></a>
+\<a name="event-defaultprevented" id="event-defaultprevented"\>\</a\>
 
 ### messageEvent.defaultPrevented : `boolean`
 
 **Read only**
 
-<a name="event-returnvalue" id="event-returnvalue"></a>
+\<a name="event-returnvalue" id="event-returnvalue"\>\</a\>
 
 ### messageEvent.returnValue : `\*`
 
-<a name="event-preventdefault" id="event-preventdefault"></a>
+\<a name="event-preventdefault" id="event-preventdefault"\>\</a\>
 
 ### messageEvent.preventDefault()
 
-<a name="event-stopimmediatepropagation" id="event-stopimmediatepropagation"></a>
+\<a name="event-stopimmediatepropagation" id="event-stopimmediatepropagation"\>\</a\>
 
 ### messageEvent.stopImmediatePropagation()
 
-<a name="event-stoppropagation" id="event-stoppropagation"></a>
+\<a name="event-stoppropagation" id="event-stoppropagation"\>\</a\>
 
 ### messageEvent.stopPropagation()
 

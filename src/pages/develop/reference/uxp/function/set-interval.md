@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-<a name="setinterval" id="setinterval"></a>
+\<a name="setinterval" id="setinterval"\>\</a\>
 
 ## setInterval(callback, delta)
 Creates a request to call `callback` repeatedly every `delta` milliseconds.

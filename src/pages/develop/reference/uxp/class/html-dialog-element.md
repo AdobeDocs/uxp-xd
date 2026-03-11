@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-<a name="htmldialogelement" id="htmldialogelement"></a>
+\<a name="htmldialogelement" id="htmldialogelement"\>\</a\>
 
 ## HTMLDialogElement
 
@@ -104,7 +104,7 @@ keywords:
     * [.removeEventListener(eventName, callback, [capture])](#eventtarget-removeeventlistener)
     * [.dispatchEvent(event)](#eventtarget-dispatchevent)
 
-<a name="new-htmldialogelement-new" id="new-htmldialogelement-new"></a>
+\<a name="new-htmldialogelement-new" id="new-htmldialogelement-new"\>\</a\>
 
 ### new HTMLDialogElement(document, nodeName, namespaceURI)
 Creates an instance of HTMLDialogElement.
@@ -115,286 +115,286 @@ Creates an instance of HTMLDialogElement.
 | nodeName | `\*` |
 | namespaceURI | `\*` |
 
-<a name="htmldialogelement-open" id="htmldialogelement-open"></a>
+\<a name="htmldialogelement-open" id="htmldialogelement-open"\>\</a\>
 
 ### htmlDialogElement.open : `boolean`
 
 **Read only**
 
-<a name="htmldialogelement-returnvalue" id="htmldialogelement-returnvalue"></a>
+\<a name="htmldialogelement-returnvalue" id="htmldialogelement-returnvalue"\>\</a\>
 
 ### htmlDialogElement.returnValue : `\*`
 
-<a name="htmldialogelement-rejection-reason-not-allowed" id="htmldialogelement-rejection-reason-not-allowed"></a>
+\<a name="htmldialogelement-rejection-reason-not-allowed" id="htmldialogelement-rejection-reason-not-allowed"\>\</a\>
 
 ### htmlDialogElement.REJECTION\_REASON\_NOT\_ALLOWED
 When the promise returned from openDialog() is rejected, error.code can be equal to this value,
 which means that the application does not allow showing dialogs (e.g. only one dialog is allowed).
 
-<a name="htmldialogelement-rejection-reason-detached" id="htmldialogelement-rejection-reason-detached"></a>
+\<a name="htmldialogelement-rejection-reason-detached" id="htmldialogelement-rejection-reason-detached"\>\</a\>
 
 ### htmlDialogElement.REJECTION\_REASON\_DETACHED
 When the promise returned from openDialog() is rejected, error.code can be equal to this value,
 which means that the node has been detached from DOM tree.
 
-<a name="htmlelement-dataset" id="htmlelement-dataset"></a>
+\<a name="htmlelement-dataset" id="htmlelement-dataset"\>\</a\>
 
 ### htmlDialogElement.dataset
 Access to all the custom data attributes (data-*) set.
 
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset
 
-<a name="element-nodename" id="element-nodename"></a>
+\<a name="element-nodename" id="element-nodename"\>\</a\>
 
 ### htmlDialogElement.nodeName : `string`
 
 **Read only**
 
-<a name="element-localname" id="element-localname"></a>
+\<a name="element-localname" id="element-localname"\>\</a\>
 
 ### htmlDialogElement.localName : `string`
 
 **Read only**
 
-<a name="element-tagname" id="element-tagname"></a>
+\<a name="element-tagname" id="element-tagname"\>\</a\>
 
 ### htmlDialogElement.tagName : `string`
 
 **Read only**
 
-<a name="element-nodetype" id="element-nodetype"></a>
+\<a name="element-nodetype" id="element-nodetype"\>\</a\>
 
 ### htmlDialogElement.nodeType : `number`
 
 **Read only**
 
-<a name="element-namespaceuri" id="element-namespaceuri"></a>
+\<a name="element-namespaceuri" id="element-namespaceuri"\>\</a\>
 
 ### htmlDialogElement.namespaceURI : `string`
 
 **Read only**
 
-<a name="element-id" id="element-id"></a>
+\<a name="element-id" id="element-id"\>\</a\>
 
 ### htmlDialogElement.id : `string`
 
-<a name="element-tabindex" id="element-tabindex"></a>
+\<a name="element-tabindex" id="element-tabindex"\>\</a\>
 
 ### htmlDialogElement.tabIndex : `number`
 
-<a name="element-classname" id="element-classname"></a>
+\<a name="element-classname" id="element-classname"\>\</a\>
 
 ### htmlDialogElement.className : `string`
 
-<a name="element-attributes" id="element-attributes"></a>
+\<a name="element-attributes" id="element-attributes"\>\</a\>
 
 ### htmlDialogElement.attributes : [`NamedNodeMap`](#namednodemap)
 
 **Read only**
 
-<a name="element-style" id="element-style"></a>
+\<a name="element-style" id="element-style"\>\</a\>
 
 ### htmlDialogElement.style : `Style`
 
 **Read only**
 
-<a name="element-clientleft" id="element-clientleft"></a>
+\<a name="element-clientleft" id="element-clientleft"\>\</a\>
 
 ### htmlDialogElement.clientLeft : `number`
 
 **Read only**
 
-<a name="element-clienttop" id="element-clienttop"></a>
+\<a name="element-clienttop" id="element-clienttop"\>\</a\>
 
 ### htmlDialogElement.clientTop : `number`
 
 **Read only**
 
-<a name="element-clientwidth" id="element-clientwidth"></a>
+\<a name="element-clientwidth" id="element-clientwidth"\>\</a\>
 
 ### htmlDialogElement.clientWidth : `number`
 
 **Read only**
 
-<a name="element-clientheight" id="element-clientheight"></a>
+\<a name="element-clientheight" id="element-clientheight"\>\</a\>
 
 ### htmlDialogElement.clientHeight : `number`
 
 **Read only**
 
-<a name="element-height" id="element-height"></a>
+\<a name="element-height" id="element-height"\>\</a\>
 
 ### htmlDialogElement.height : `string` \| `Number`
 The height of the element
 
-<a name="element-width" id="element-width"></a>
+\<a name="element-width" id="element-width"\>\</a\>
 
 ### htmlDialogElement.width : `string` \| `Number`
 The width of the element
 
-<a name="element-offsetparent" id="element-offsetparent"></a>
+\<a name="element-offsetparent" id="element-offsetparent"\>\</a\>
 
 ### htmlDialogElement.offsetParent : [`Element`](#element)
 
 **Read only**
 
-<a name="element-offsetleft" id="element-offsetleft"></a>
+\<a name="element-offsetleft" id="element-offsetleft"\>\</a\>
 
 ### htmlDialogElement.offsetLeft : `number`
 
 **Read only**
 
-<a name="element-offsettop" id="element-offsettop"></a>
+\<a name="element-offsettop" id="element-offsettop"\>\</a\>
 
 ### htmlDialogElement.offsetTop : `number`
 
 **Read only**
 
-<a name="element-offsetwidth" id="element-offsetwidth"></a>
+\<a name="element-offsetwidth" id="element-offsetwidth"\>\</a\>
 
 ### htmlDialogElement.offsetWidth : `number`
 
 **Read only**
 
-<a name="element-offsetheight" id="element-offsetheight"></a>
+\<a name="element-offsetheight" id="element-offsetheight"\>\</a\>
 
 ### htmlDialogElement.offsetHeight : `number`
 
 **Read only**
 
-<a name="element-scrollleft" id="element-scrollleft"></a>
+\<a name="element-scrollleft" id="element-scrollleft"\>\</a\>
 
 ### htmlDialogElement.scrollLeft : `number`
 
-<a name="element-scrolltop" id="element-scrolltop"></a>
+\<a name="element-scrolltop" id="element-scrolltop"\>\</a\>
 
 ### htmlDialogElement.scrollTop : `number`
 
-<a name="element-scrollwidth" id="element-scrollwidth"></a>
+\<a name="element-scrollwidth" id="element-scrollwidth"\>\</a\>
 
 ### htmlDialogElement.scrollWidth : `number`
 
 **Read only**
 
-<a name="element-scrollheight" id="element-scrollheight"></a>
+\<a name="element-scrollheight" id="element-scrollheight"\>\</a\>
 
 ### htmlDialogElement.scrollHeight : `number`
 
 **Read only**
 
-<a name="element-uxpcontainer" id="element-uxpcontainer"></a>
+\<a name="element-uxpcontainer" id="element-uxpcontainer"\>\</a\>
 
 ### htmlDialogElement.uxpContainer : [`UXPContainer`](#uxpcontainer)
 
 **Read only**
 
-<a name="element-disabled" id="element-disabled"></a>
+\<a name="element-disabled" id="element-disabled"\>\</a\>
 
 ### htmlDialogElement.disabled : `boolean`
 
-<a name="element-innerhtml" id="element-innerhtml"></a>
+\<a name="element-innerhtml" id="element-innerhtml"\>\</a\>
 
 ### htmlDialogElement.innerHTML : `string`
 
-<a name="element-outerhtml" id="element-outerhtml"></a>
+\<a name="element-outerhtml" id="element-outerhtml"\>\</a\>
 
 ### htmlDialogElement.outerHTML : `string`
 
-<a name="node-contenteditable" id="node-contenteditable"></a>
+\<a name="node-contenteditable" id="node-contenteditable"\>\</a\>
 
 ### htmlDialogElement.contentEditable
 
 **Read only**
 
-<a name="node-isconnected" id="node-isconnected"></a>
+\<a name="node-isconnected" id="node-isconnected"\>\</a\>
 
 ### htmlDialogElement.isConnected : `boolean`
 
 **Read only**
 
-<a name="node-parentnode" id="node-parentnode"></a>
+\<a name="node-parentnode" id="node-parentnode"\>\</a\>
 
 ### htmlDialogElement.parentNode : [`Node`](#node)
 
 **Read only**
 
-<a name="node-parentelement" id="node-parentelement"></a>
+\<a name="node-parentelement" id="node-parentelement"\>\</a\>
 
 ### htmlDialogElement.parentElement : [`Element`](#element)
 
 **Read only**
 
-<a name="node-firstchild" id="node-firstchild"></a>
+\<a name="node-firstchild" id="node-firstchild"\>\</a\>
 
 ### htmlDialogElement.firstChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-lastchild" id="node-lastchild"></a>
+\<a name="node-lastchild" id="node-lastchild"\>\</a\>
 
 ### htmlDialogElement.lastChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-previoussibling" id="node-previoussibling"></a>
+\<a name="node-previoussibling" id="node-previoussibling"\>\</a\>
 
 ### htmlDialogElement.previousSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-nextsibling" id="node-nextsibling"></a>
+\<a name="node-nextsibling" id="node-nextsibling"\>\</a\>
 
 ### htmlDialogElement.nextSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-firstelementchild" id="node-firstelementchild"></a>
+\<a name="node-firstelementchild" id="node-firstelementchild"\>\</a\>
 
 ### htmlDialogElement.firstElementChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-lastelementchild" id="node-lastelementchild"></a>
+\<a name="node-lastelementchild" id="node-lastelementchild"\>\</a\>
 
 ### htmlDialogElement.lastElementChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-previouselementsibling" id="node-previouselementsibling"></a>
+\<a name="node-previouselementsibling" id="node-previouselementsibling"\>\</a\>
 
 ### htmlDialogElement.previousElementSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-nextelementsibling" id="node-nextelementsibling"></a>
+\<a name="node-nextelementsibling" id="node-nextelementsibling"\>\</a\>
 
 ### htmlDialogElement.nextElementSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-textcontent" id="node-textcontent"></a>
+\<a name="node-textcontent" id="node-textcontent"\>\</a\>
 
 ### htmlDialogElement.textContent : `string`
 
-<a name="node-childnodes" id="node-childnodes"></a>
+\<a name="node-childnodes" id="node-childnodes"\>\</a\>
 
 ### htmlDialogElement.childNodes : [`NodeList`](#nodelist)
 
 **Read only**
 
-<a name="node-children" id="node-children"></a>
+\<a name="node-children" id="node-children"\>\</a\>
 
 ### htmlDialogElement.children : [`HTMLCollection`](#htmlcollection)
 
 **Read only**
 
-<a name="node-ownerdocument" id="node-ownerdocument"></a>
+\<a name="node-ownerdocument" id="node-ownerdocument"\>\</a\>
 
 ### htmlDialogElement.ownerDocument
 
 **Read only**
 
-<a name="htmldialogelement-showmodal" id="htmldialogelement-showmodal"></a>
+\<a name="htmldialogelement-showmodal" id="htmldialogelement-showmodal"\>\</a\>
 
 ### htmlDialogElement.showModal()
 Show the modal dialog.
@@ -407,7 +407,7 @@ Show the modal dialog.
                    does not allow showing the dialog. The error parameter will give more details.
                    error.code will be one of the values from HTMLDialogElement.rejectionReasons.
 
-<a name="htmldialogelement-close" id="htmldialogelement-close"></a>
+\<a name="htmldialogelement-close" id="htmldialogelement-close"\>\</a\>
 
 ### htmlDialogElement.close([returnValue])
 Closes the dialog; setting the return value (optional)
@@ -416,23 +416,23 @@ Closes the dialog; setting the return value (optional)
 | --- | --- |
 | [returnValue] | `\*` |
 
-<a name="element-scrollintoview" id="element-scrollintoview"></a>
+\<a name="element-scrollintoview" id="element-scrollintoview"\>\</a\>
 
 ### htmlDialogElement.scrollIntoView()
 
-<a name="element-scrollintoviewifneeded" id="element-scrollintoviewifneeded"></a>
+\<a name="element-scrollintoviewifneeded" id="element-scrollintoviewifneeded"\>\</a\>
 
 ### htmlDialogElement.scrollIntoViewIfNeeded()
 
-<a name="element-focus" id="element-focus"></a>
+\<a name="element-focus" id="element-focus"\>\</a\>
 
 ### htmlDialogElement.focus()
 
-<a name="element-blur" id="element-blur"></a>
+\<a name="element-blur" id="element-blur"\>\</a\>
 
 ### htmlDialogElement.blur()
 
-<a name="element-getattribute" id="element-getattribute"></a>
+\<a name="element-getattribute" id="element-getattribute"\>\</a\>
 
 ### htmlDialogElement.getAttribute(name)
 
@@ -440,7 +440,7 @@ Closes the dialog; setting the return value (optional)
 | --- | --- |
 | name | `string` |
 
-<a name="element-setattribute" id="element-setattribute"></a>
+\<a name="element-setattribute" id="element-setattribute"\>\</a\>
 
 ### htmlDialogElement.setAttribute(name, value)
 
@@ -449,7 +449,7 @@ Closes the dialog; setting the return value (optional)
 | name | `string` |
 | value | `string` |
 
-<a name="element-removeattribute" id="element-removeattribute"></a>
+\<a name="element-removeattribute" id="element-removeattribute"\>\</a\>
 
 ### htmlDialogElement.removeAttribute(name)
 
@@ -457,7 +457,7 @@ Closes the dialog; setting the return value (optional)
 | --- | --- |
 | name | `string` |
 
-<a name="element-hasattribute" id="element-hasattribute"></a>
+\<a name="element-hasattribute" id="element-hasattribute"\>\</a\>
 
 ### htmlDialogElement.hasAttribute(name)
 
@@ -465,7 +465,7 @@ Closes the dialog; setting the return value (optional)
 | --- | --- |
 | name | `string` |
 
-<a name="element-getattributenode" id="element-getattributenode"></a>
+\<a name="element-getattributenode" id="element-getattributenode"\>\</a\>
 
 ### htmlDialogElement.getAttributeNode(name)
 
@@ -473,7 +473,7 @@ Closes the dialog; setting the return value (optional)
 | --- | --- |
 | name | `string` |
 
-<a name="element-setattributenode" id="element-setattributenode"></a>
+\<a name="element-setattributenode" id="element-setattributenode"\>\</a\>
 
 ### htmlDialogElement.setAttributeNode(newAttr)
 
@@ -481,7 +481,7 @@ Closes the dialog; setting the return value (optional)
 | --- | --- |
 | newAttr | `\*` |
 
-<a name="element-removeattributenode" id="element-removeattributenode"></a>
+\<a name="element-removeattributenode" id="element-removeattributenode"\>\</a\>
 
 ### htmlDialogElement.removeAttributeNode(oldAttr)
 
@@ -489,11 +489,11 @@ Closes the dialog; setting the return value (optional)
 | --- | --- |
 | oldAttr | `\*` |
 
-<a name="element-click" id="element-click"></a>
+\<a name="element-click" id="element-click"\>\</a\>
 
 ### htmlDialogElement.click()
 
-<a name="element-getelementsbyclassname" id="element-getelementsbyclassname"></a>
+\<a name="element-getelementsbyclassname" id="element-getelementsbyclassname"\>\</a\>
 
 ### htmlDialogElement.getElementsByClassName(name)
 
@@ -501,7 +501,7 @@ Closes the dialog; setting the return value (optional)
 | --- | --- |
 | name | `string` |
 
-<a name="element-getelementsbytagname" id="element-getelementsbytagname"></a>
+\<a name="element-getelementsbytagname" id="element-getelementsbytagname"\>\</a\>
 
 ### htmlDialogElement.getElementsByTagName(name)
 
@@ -509,7 +509,7 @@ Closes the dialog; setting the return value (optional)
 | --- | --- |
 | name | `string` |
 
-<a name="element-queryselector" id="element-queryselector"></a>
+\<a name="element-queryselector" id="element-queryselector"\>\</a\>
 
 ### htmlDialogElement.querySelector(selector)
 
@@ -517,7 +517,7 @@ Closes the dialog; setting the return value (optional)
 | --- | --- |
 | selector | `string` |
 
-<a name="element-queryselectorall" id="element-queryselectorall"></a>
+\<a name="element-queryselectorall" id="element-queryselectorall"\>\</a\>
 
 ### htmlDialogElement.querySelectorAll(selector)
 
@@ -525,11 +525,11 @@ Closes the dialog; setting the return value (optional)
 | --- | --- |
 | selector | `string` |
 
-<a name="element-getboundingclientrect" id="element-getboundingclientrect"></a>
+\<a name="element-getboundingclientrect" id="element-getboundingclientrect"\>\</a\>
 
 ### htmlDialogElement.getBoundingClientRect()
 
-<a name="element-insertadjacenthtml" id="element-insertadjacenthtml"></a>
+\<a name="element-insertadjacenthtml" id="element-insertadjacenthtml"\>\</a\>
 
 ### htmlDialogElement.insertAdjacentHTML(position, value)
 
@@ -538,7 +538,7 @@ Closes the dialog; setting the return value (optional)
 | position |  |
 | value | `string` |
 
-<a name="element-insertadjacentelement" id="element-insertadjacentelement"></a>
+\<a name="element-insertadjacentelement" id="element-insertadjacentelement"\>\</a\>
 
 ### htmlDialogElement.insertAdjacentElement(position, node)
 
@@ -547,7 +547,7 @@ Closes the dialog; setting the return value (optional)
 | position | `\*` |
 | node | `\*` |
 
-<a name="element-insertadjacenttext" id="element-insertadjacenttext"></a>
+\<a name="element-insertadjacenttext" id="element-insertadjacenttext"\>\</a\>
 
 ### htmlDialogElement.insertAdjacentText(position, text)
 
@@ -556,11 +556,11 @@ Closes the dialog; setting the return value (optional)
 | position | `\*` |
 | text | `\*` |
 
-<a name="node-haschildnodes" id="node-haschildnodes"></a>
+\<a name="node-haschildnodes" id="node-haschildnodes"\>\</a\>
 
 ### htmlDialogElement.hasChildNodes()
 
-<a name="node-clonenode" id="node-clonenode"></a>
+\<a name="node-clonenode" id="node-clonenode"\>\</a\>
 
 ### htmlDialogElement.cloneNode(deep)
 
@@ -568,7 +568,7 @@ Closes the dialog; setting the return value (optional)
 | --- | --- |
 | deep | `boolean` |
 
-<a name="node-appendchild" id="node-appendchild"></a>
+\<a name="node-appendchild" id="node-appendchild"\>\</a\>
 
 ### htmlDialogElement.appendChild(child)
 
@@ -576,7 +576,7 @@ Closes the dialog; setting the return value (optional)
 | --- | --- |
 | child | [`Node`](#node) |
 
-<a name="node-insertbefore" id="node-insertbefore"></a>
+\<a name="node-insertbefore" id="node-insertbefore"\>\</a\>
 
 ### htmlDialogElement.insertBefore(child, before)
 
@@ -585,7 +585,7 @@ Closes the dialog; setting the return value (optional)
 | child | [`Node`](#node) |
 | before | [`Node`](#node) |
 
-<a name="node-replacechild" id="node-replacechild"></a>
+\<a name="node-replacechild" id="node-replacechild"\>\</a\>
 
 ### htmlDialogElement.replaceChild(newChild, oldChild)
 
@@ -594,7 +594,7 @@ Closes the dialog; setting the return value (optional)
 | newChild | [`Node`](#node) |
 | oldChild | [`Node`](#node) |
 
-<a name="node-removechild" id="node-removechild"></a>
+\<a name="node-removechild" id="node-removechild"\>\</a\>
 
 ### htmlDialogElement.removeChild(child)
 
@@ -602,11 +602,11 @@ Closes the dialog; setting the return value (optional)
 | --- | --- |
 | child | [`Node`](#node) |
 
-<a name="node-remove" id="node-remove"></a>
+\<a name="node-remove" id="node-remove"\>\</a\>
 
 ### htmlDialogElement.remove()
 
-<a name="node-before" id="node-before"></a>
+\<a name="node-before" id="node-before"\>\</a\>
 
 ### htmlDialogElement.before(...nodes)
 
@@ -614,7 +614,7 @@ Closes the dialog; setting the return value (optional)
 | --- | --- |
 | ...nodes | [`Array.<Node>`](#node) |
 
-<a name="node-after" id="node-after"></a>
+\<a name="node-after" id="node-after"\>\</a\>
 
 ### htmlDialogElement.after(...nodes)
 
@@ -622,7 +622,7 @@ Closes the dialog; setting the return value (optional)
 | --- | --- |
 | ...nodes | [`Array.<Node>`](#node) |
 
-<a name="node-replacewith" id="node-replacewith"></a>
+\<a name="node-replacewith" id="node-replacewith"\>\</a\>
 
 ### htmlDialogElement.replaceWith(...nodes)
 
@@ -630,7 +630,7 @@ Closes the dialog; setting the return value (optional)
 | --- | --- |
 | ...nodes | [`Array.<Node>`](#node) |
 
-<a name="node-contains" id="node-contains"></a>
+\<a name="node-contains" id="node-contains"\>\</a\>
 
 ### htmlDialogElement.contains(node)
 
@@ -638,7 +638,7 @@ Closes the dialog; setting the return value (optional)
 | --- | --- |
 | node | [`Node`](#node) |
 
-<a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"></a>
+\<a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"\>\</a\>
 
 ### htmlDialogElement.addEventListener(eventName, callback, [capture])
 
@@ -648,7 +648,7 @@ Closes the dialog; setting the return value (optional)
 | callback | `\*` |  |
 | [capture] | `boolean` | `false` |
 
-<a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"></a>
+\<a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"\>\</a\>
 
 ### htmlDialogElement.removeEventListener(eventName, callback, [capture])
 
@@ -658,7 +658,7 @@ Closes the dialog; setting the return value (optional)
 | callback | `\*` |  |
 | [capture] | `boolean` | `false` |
 
-<a name="eventtarget-dispatchevent" id="eventtarget-dispatchevent"></a>
+\<a name="eventtarget-dispatchevent" id="eventtarget-dispatchevent"\>\</a\>
 
 ### htmlDialogElement.dispatchEvent(event)
 

@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-<a name="cleartimeout" id="cleartimeout"></a>
+\<a name="cleartimeout" id="cleartimeout"\>\</a\>
 
 ## clearTimeout(obj)
 Cancels the specified `setTimeout` request

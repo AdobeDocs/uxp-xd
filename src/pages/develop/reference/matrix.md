@@ -189,7 +189,7 @@ Returns x & y coordinates of the given point after transformation described by t
 
 Transforms a rectangle using this matrix, returning the _axis-aligned_ bounds of the resulting rectangle. If this matrix has
 rotation, then the result will have different width & height from the original rectangle, due to axis alignment. See
-["Coordinate Spaces"](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/) for some illustrations of this.
+["Coordinate Spaces"](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units.md) for some illustrations of this.
 
 | Param | Type                                                 |
 | ----- | ---------------------------------------------------- |

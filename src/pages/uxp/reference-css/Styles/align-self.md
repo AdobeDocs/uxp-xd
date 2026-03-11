@@ -1,4 +1,19 @@
+---
+jsDoc: true
+---
+# align-self
 
-import Content from "uxp-documentation/src/pages/uxp/reference-css/Styles/align-self";
+**Since** UXP v3.0
 
-<Content query="product=xd"/>
+Supported values are `flex-start`, `flex-end`, `center`, `stretch`.
+
+
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/align-self](https://developer.mozilla.org/en/docs/Web/CSS/align-self)
+**Example**
+
+```css
+.someElement {
+    align-self: flex-start;
+}
+```
+

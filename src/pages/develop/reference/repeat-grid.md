@@ -9,7 +9,7 @@ keywords:
 # RepeatGrid
 
 **Kind**: class
-**Extends**: [SceneNode](/develop/reference/SceneNode)
+**Extends**: [SceneNode](/develop/reference/scene-node.md)
 
 Repeat Grid container node containing multiple grid cells, each one a child Group. Changes within one cell are automatically synced
 to all the other cells - with certain exceptions, called "overrides." A Repeat Grid also defines a rectangular clipping mask which
@@ -18,7 +18,7 @@ determines how may cells are visible (new cells are automatically generated as n
 Each grid cell is a Group that is an immediate child of the RepeatGrid. These groups are automatically created and destroyed as
 needed when the RepeatGrid is resized.
 
-It is not currently possible for plugins to _create_ a new RepeatGrid node, aside from using [commands.duplicate](/develop/reference/commands/#duplicate)
+It is not currently possible for plugins to _create_ a new RepeatGrid node, aside from using [commands.duplicate](/develop/reference/commands.md#duplicate)
 to clone existing RepeatGrids.
 
 ## width
@@ -99,7 +99,7 @@ You can call this API from either of _two different edit contexts_:
 
 | Param      | Type            | Description                                                                                                                                                                                                                         |
 | ---------- | ----------------| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| textNode   | [Text](/develop/reference/Text) | A Text node exemplar that would be in scope for editing if the current edit context was one of this RepeatGrid's cells. The data series will be bound to this text node and all corresponding copies of it in the other grid cells. |
+| textNode   | [Text](/develop/reference/text.md) | A Text node exemplar that would be in scope for editing if the current edit context was one of this RepeatGrid's cells. The data series will be bound to this text node and all corresponding copies of it in the other grid cells. |
 | textValues | `Array<string>` | Array of one or more strings. Empty strings are ignored.                                                                                                                                                                            |
 
 **Kind**: instance method of [RepeatGrid](#repeatgrid)
@@ -121,7 +121,7 @@ You can call this API from either of _two different edit contexts_:
 
 | Param     | Type               | Description                                                                                                                                                                                                                                                                                                            |
 | --------- | -------------------| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| shapeNode | [GraphicNode](/develop/reference/GraphicNode) | A shape node exemplar that would be in scope for editing if the current edit context was one of this RepeatGrid's cells. The image series will be bound to this node and all corresponding copies of it in the other grid cells. Must be a node type that supports image fills (e.g. Rectangle, but not Text or Line). |
-| images    | `Array<`[ImageFill](/develop/reference/ImageFill)`>` | Array of one or more ImageFills.                                                                                                                                                                                                                                                                                       |
+| shapeNode | [GraphicNode](/develop/reference/graphic-node.md) | A shape node exemplar that would be in scope for editing if the current edit context was one of this RepeatGrid's cells. The image series will be bound to this node and all corresponding copies of it in the other grid cells. Must be a node type that supports image fills (e.g. Rectangle, but not Text or Line). |
+| images    | `Array<`[ImageFill](/develop/reference/image-fill.md)`>` | Array of one or more ImageFills.                                                                                                                                                                                                                                                                                       |
 
 **Kind**: instance method of [RepeatGrid](#repeatgrid)

@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-<a name="module-global-fetch" id="module-global-fetch"></a>
+\<a name="module-global-fetch" id="module-global-fetch"\>\</a\>
 
 ## fetch(input, [init])
 

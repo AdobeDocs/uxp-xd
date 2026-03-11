@@ -16,9 +16,9 @@ This section will have recommendations when using a Modal Dialog -  Blocking UI.
 
 ![Example of Modal](../ux-images/Modal-UX-1-Example.png)
 
-----------
+<HorizontalLine />
 
- <br />
+ \<br/\>
 
 ## Overview
 
@@ -50,7 +50,7 @@ Include a modal dismissal button to allow the user to cancel/close the modal and
 **Plugin Icon**.  
 You can include a plugin icon to let the user know they are interacting with your plugin in the modal dialog
 
- <br />
+ \<br/\>
 
 ## Modal Dialog UI
 
@@ -66,7 +66,7 @@ You can include a plugin icon to let the user know they are interacting with you
 
 ![Loader](../ux-images/Modal-UX-5-Loader.png)
 
- <br />
+ \<br/\>
 
 ## Dialog buttons and key commands
 

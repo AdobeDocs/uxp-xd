@@ -11,14 +11,14 @@ keywords:
 **Kind**: object
 
 The `selection` object represents the currently selected set of nodes in the UI. You can change the selection to use it as input
-for [commands](/develop/reference/commands/), or to control what is left selected for the user when your plugin's edit operation completes.
+for [commands](/develop/reference/commands.md), or to control what is left selected for the user when your plugin's edit operation completes.
 
 **Selected items might not all have the same parent node.** For example, the selection could be split between two sibling
 Group nodes, or half the selection could be inside a Group and half inside its parent. Or the selection could be split between
 multiple different artboards along with items on the pasteboard (immediate children of the root node).
 
 Your plugin can only modify nodes in the "neighborhood" of the user's selection, a subset of the scenegraph tree called the
-**_[edit context](/develop/plugin-development/xd-concepts/edit-context/)_**. You can only set the selection to other nodes within the edit context.
+**_[edit context](/develop/plugin-development/xd-concepts/edit-context.md)_**. You can only set the selection to other nodes within the edit context.
 The edit context does not update to reflect any changes to the selection until after a plugin operation completes.
 
 **Other restrictions on selection**
@@ -46,11 +46,11 @@ module.exports = {
 };
 ```
 
-You can also access this object from the [scenegraph.selection](/develop/reference/scenegraph/#selection) property.
+You can also access this object from the [scenegraph.selection](/develop/reference/scenegraph.md#selection) property.
 
 ## items
 
-▸ **items**: `Array<`[SceneNode](/develop/reference/SceneNode)`>`
+▸ **items**: `Array<`[SceneNode](/develop/reference/scene-node.md)`>`
 
 Array representing the current selection. Empty array if nothing is selected (never null). _Items might not all have the same
 parent node._ Never includes locked nodes. Never mixes artboards with other nodes: a selection is either all artboards or all
@@ -64,7 +64,7 @@ If the user selected by other means, e.g. dragging a marquee, the order has no m
 Returns a fresh array each time, so modifying the array returned by the getter does not change the selection -- only invoking
 the 'items' setter changes selection.
 
-The selection can only contain items which are in the current _[edit context](/develop/plugin-development/xd-concepts/edit-context/)._
+The selection can only contain items which are in the current _[edit context](/develop/plugin-development/xd-concepts/edit-context.md)._
 
 **Example**
 
@@ -81,7 +81,7 @@ selection.items = null; // deselect all (convenience)
 
 ## itemsIncludingLocked
 
-▸ **itemsIncludingLocked**: `Array<`[SceneNode](/develop/reference/SceneNode)`>`
+▸ **itemsIncludingLocked**: `Array<`[SceneNode](/develop/reference/scene-node.md)`>`
 
 Array representing the current selection _plus_ any locked items that the user has attempted to select.
 
@@ -121,19 +121,19 @@ True if the selection isn’t empty and consists of one or more Artboards. Never
 
 ## insertionParent
 
-▸ **insertionParent**: [SceneNode](/develop/reference/SceneNode)
+▸ **insertionParent**: [SceneNode](/develop/reference/scene-node.md)
 
 The preferred parent to insert newly added content into. Takes into account the current edit context as well as the "focused artboard" if in the root context.
 Typically this is the same parent where, for example, XD's shape drawing tools would add items.
 
-_Selected items are not necessarily all immediate children of the `insertionParent`._ They can be anywhere within the [edit context's](/develop/plugin-development/xd-concepts/edit-context/) scope.
+_Selected items are not necessarily all immediate children of the `insertionParent`._ They can be anywhere within the [edit context's](/develop/plugin-development/xd-concepts/edit-context.md) scope.
 
 **Kind**: instance property of [selection](#selection)
 **Read only**: true
 
 ## focusedArtboard
 
-▸ **focusedArtboard**: ?[Artboard](/develop/reference/Artboard)
+▸ **focusedArtboard**: ?[Artboard](/develop/reference/artboard.md)
 
 The artboard the user is currently most focused on (via recent selection or edit operations). May be null, for example if no artboards exist or if the user just deleted an artboard.
 
@@ -142,9 +142,9 @@ The artboard the user is currently most focused on (via recent selection or edit
 
 ## editContext
 
-▸ **editContext**: [SceneNode](/develop/reference/SceneNode)
+▸ **editContext**: [SceneNode](/develop/reference/scene-node.md)
 
-The common ancestor node of all selected items - also the root node of the subtree containing the "[edit context](/develop/plugin-development/xd-concepts/edit-context/),"
+The common ancestor node of all selected items - also the root node of the subtree containing the "[edit context](/develop/plugin-development/xd-concepts/edit-context.md),"
 which is the scope in which selection and edit operations must occur for the current plugin command. The scope does not
 necessarily cover the entire subtree rooted at the editContext root node -- it may only cover a subset of this tree. See
 edit context documentation page for more details.

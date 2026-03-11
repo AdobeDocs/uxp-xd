@@ -29,7 +29,7 @@ Returns a copy of this instance.
 
 ## colorStops
 
-▸ **colorStops**: `Array<{stop:number, color:`[Color](/develop/reference/Color)`}>`
+▸ **colorStops**: `Array<{stop:number, color:`[Color](/develop/reference/color.md)`}>`
 
 Array of objects representing each color and its position along the gradient circle. The position (`stop` value) is a number 0.0 - 1.0.
 

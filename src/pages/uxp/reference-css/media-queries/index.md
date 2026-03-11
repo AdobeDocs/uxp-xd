@@ -1,4 +1,4 @@
-
-import Content from "uxp-documentation/src/pages/uxp/reference-css//Media Queries/index.md";
-
-<Content query="product=xd"/>
+# Media Queries
+* [height](height.md)
+* [prefers-color-scheme](prefers-color-scheme.md)
+* [width](width.md)

@@ -28,12 +28,12 @@ Several different situations can cause code in your plugin to get executed:
 
 ##### Direct-action menu commands
 
-- Invocation -- Each time one of your plugin's menu commands is invoked, XD calls your [_command handler function_ for the relevant `commandId`](/develop/plugin-development/plugin-structure/handlers/#command). Your command handler can edit the document or open a dialog box; if you return a Promise, these privileges extend until the Promise completes. See ["Edit operations"](#edit-operations) for details.
+- Invocation -- Each time one of your plugin's menu commands is invoked, XD calls your [_command handler function_ for the relevant `commandId`](/develop/plugin-development/plugin-structure/handlers.md#command). Your command handler can edit the document or open a dialog box; if you return a Promise, these privileges extend until the Promise completes. See ["Edit operations"](#edit-operations) for details.
 - Dialog box DOM events -- Since dialogs are typically open during an [edit operation](#edit-operations), this event handler code can edit the document too.
 
 ##### Panel UI
 
-- Panel lifecycle callbacks -- XD invokes your plugin's [panel callbacks](/develop/plugin-development/plugin-structure/handlers/#panel) when a panel is shown, hidden, or needs updating. These callbacks can update the UI only; you cannot edit the document.
+- Panel lifecycle callbacks -- XD invokes your plugin's [panel callbacks](/develop/plugin-development/plugin-structure/handlers.md#panel) when a panel is shown, hidden, or needs updating. These callbacks can update the UI only; you cannot edit the document.
 - Panel UI DOM events -- Most UI events in panels allow you to edit the document, but you must [initiate an edit operation _explicitly_](#initiating-an-edit-operation-from-panel-ui).
 
 ##### Network responses and timers
@@ -43,7 +43,7 @@ Other events can happen at any time, such as a network call finishing or a `setT
 - If you've engineered an async edit operation's Promise to wait for these events before resolving, then these handlers can also edit the document.
 - You can also run network requests and timers entirely in the background, outside of any edit operation, though this is discouraged. Plugin code running in the background can make XD slow. And although you'll have read-only access to the scenegraph, this is unsafe since your background code may run _in the middle of_ some other asynchronous edit operation (whether from a built-in XD command, another plugin, etc.) -- so your code might see an incorect intermediate state of the document.
 
-<a name="edit-operations"></a>
+\<a name="edit-operations"\>\</a\>
 
 ## Edit operations
 
@@ -56,7 +56,7 @@ Edit operations can only occur via user-initiated actions in your plugin: invoki
 #### Edit operation duration
 
 - An edit operation begins when:
-  - a) Your plugin's menu [command handler](/develop/plugin-development/plugin-structure/handlers/#command) is called (this is automatically wrapped in an edit operation)
+  - a) Your plugin's menu [command handler](/develop/plugin-development/plugin-structure/handlers.md#command) is called (this is automatically wrapped in an edit operation)
   - a) Your plugin's panel UI code explicitly [calls `application.editDocument()`](#initiating-an-edit-operation-from-panel-ui)
 - If the edit code returns synchronously, the edit operation is done as soon as it returns.
 - If the edit code returns a Promise, the edit operation continues asynchronously until the Promise completes. _The user can't do anything else in XD_ until the operation completes, so normally you'd only return a Promise if your plugin has a dialog box open that the user is interacting with or that is showing a progress indicator.
@@ -65,7 +65,7 @@ If the edit throws an exception, or its Promise is rejected, the entire edit bat
 
 #### Initiating an edit operation from panel UI
 
-Although menu commands automatically trigger an edit batch, panel UI events must opt into initiating one by specifically calling the [_application.editDocument()_ API](/develop/reference/application/#editdocument). The function passed to `editDocument()` is treated just like a menu command handler at that point.
+Although menu commands automatically trigger an edit batch, panel UI events must opt into initiating one by specifically calling the [_application.editDocument()_ API](/develop/reference/application.md#editdocument). The function passed to `editDocument()` is treated just like a menu command handler at that point.
 
 You can only call `editDocument()` while handling one of these panel UI events which correspond to explicit user actions:
 * _blur_
@@ -79,7 +79,7 @@ You can only call `editDocument()` while handling one of these panel UI events w
 * _mousedown_
 * _mouseup_
 
-Consecutive edit operations triggered by the same UI and applying to the same selected nodes may get merged into a single Undo step by XD. See [discussion of _editDocument()'s_ _mergeId_ option](/develop/reference/application/#editdocument) for details.
+Consecutive edit operations triggered by the same UI and applying to the same selected nodes may get merged into a single Undo step by XD. See [discussion of _editDocument()'s_ _mergeId_ option](/develop/reference/application.md#editdocument) for details.
 
 #### Modal/exclusive UI
 

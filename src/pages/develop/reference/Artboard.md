@@ -9,7 +9,7 @@ keywords:
 # Artboard
 
 **Kind**: class
-**Extends**: [GraphicNode](/develop/reference/GraphicNode)
+**Extends**: [GraphicNode](/develop/reference/graphic-node.md)
 
 Artboard container node. All Artboards must be children of the root node (they cannot be nested), and they must be placed _below_ all
 pasteboard content in the z order.
@@ -49,21 +49,21 @@ If Artboard is scrollable, this is the height of the viewport (e.g. mobile devic
 
 ## incomingInteractions
 
-▸ **incomingInteractions**: `Array<{ triggerNode: `[SceneNode](/develop/reference/SceneNode)`, interactions: Array<`[Interaction](/develop/reference/interactions/#typedef-interaction)`> }>`
+▸ **incomingInteractions**: `Array<{ triggerNode: `[SceneNode](/develop/reference/scene-node.md)`, interactions: Array<`[Interaction](/develop/reference/interactions.md#typedef-interaction)`> }>`
 
 **Since**: XD 19
 
 Get all interactions whose destination is this artboard (either navigating the entire view, i.e. a `"goToArtboard"` action, or
-showing this artboard as an overlay, i.e. an `"overlay"` action). Each element in the array is an [Interaction object](/develop/reference/interactions/#typedef-interaction)
+showing this artboard as an overlay, i.e. an `"overlay"` action). Each element in the array is an [Interaction object](/develop/reference/interactions.md#typedef-interaction)
 which describes a gesture/event plus the action it produces.
 
 May include interactions that are impossible to trigger because the trigger node (or one of its ancestors) has `visible` = false.
 
 Note: currently, this API excludes any applicable keyboard/gamepad interactions.
 
-**See**: [SceneNode.triggeredInteractions](/develop/reference/SceneNode/#triggeredinteractions)
+**See**: [SceneNode.triggeredInteractions](/develop/reference/scene-node.md#triggeredinteractions)
 
-**See**: [interactions.allInteractions](/develop/reference/interactions/#allinteractions)
+**See**: [interactions.allInteractions](/develop/reference/interactions.md#allinteractions)
 
 **Kind**: instance property of [Artboard](#Artboard)
 **Read only**: true
@@ -72,7 +72,7 @@ Note: currently, this API excludes any applicable keyboard/gamepad interactions.
 
 ▸ **isHomeArtboard**: `boolean`
 
-**Deprecated**: XD 33 - Please use [flows](/develop/reference/interactions/#flows) which supports multple flows.
+**Deprecated**: XD 33 - Please use [flows](/develop/reference/interactions.md#flows) which supports multple flows.
 
 **Since**: XD 19
 
@@ -82,7 +82,7 @@ True if this is the starting Artboard seen when the interactive prototype is lau
 
 In case there are multiple interactive prototype experiences (flows), implying multiple home artboards, this API returns true only for the top-left artboard among all of those home artboards.
 
-**See**: [interactions.homeArtboard](/develop/reference/interactions/#homeartboard)
+**See**: [interactions.homeArtboard](/develop/reference/interactions.md#homeartboard)
 
 **Kind**: instance property of [Artboard](#Artboard)
 **Read only**: true

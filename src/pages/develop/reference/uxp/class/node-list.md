@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-<a name="nodelist" id="nodelist"></a>
+\<a name="nodelist" id="nodelist"\>\</a\>
 
 ## NodeList
 
@@ -22,7 +22,7 @@ keywords:
     * [.entries()](#nodelist-entries)
     * [.forEach(callback)](#nodelist-foreach)
 
-<a name="new-nodelist-new" id="new-nodelist-new"></a>
+\<a name="new-nodelist-new" id="new-nodelist-new"\>\</a\>
 
 ### new NodeList(staticList, updater)
 Creates an instance of NodeList.
@@ -32,13 +32,13 @@ Creates an instance of NodeList.
 | staticList | `\*` |
 | updater | `\*` |
 
-<a name="nodelist-length" id="nodelist-length"></a>
+\<a name="nodelist-length" id="nodelist-length"\>\</a\>
 
 ### nodeList.length : `number`
 
 **Read only**
 
-<a name="nodelist-item" id="nodelist-item"></a>
+\<a name="nodelist-item" id="nodelist-item"\>\</a\>
 
 ### nodeList.item(index)
 
@@ -46,19 +46,19 @@ Creates an instance of NodeList.
 | --- | --- |
 | index | `number` |
 
-<a name="nodelist-keys" id="nodelist-keys"></a>
+\<a name="nodelist-keys" id="nodelist-keys"\>\</a\>
 
 ### nodeList.keys()
 
-<a name="nodelist-values" id="nodelist-values"></a>
+\<a name="nodelist-values" id="nodelist-values"\>\</a\>
 
 ### nodeList.values()
 
-<a name="nodelist-entries" id="nodelist-entries"></a>
+\<a name="nodelist-entries" id="nodelist-entries"\>\</a\>
 
 ### nodeList.entries()
 
-<a name="nodelist-foreach" id="nodelist-foreach"></a>
+\<a name="nodelist-foreach" id="nodelist-foreach"\>\</a\>
 
 ### nodeList.forEach(callback)
 

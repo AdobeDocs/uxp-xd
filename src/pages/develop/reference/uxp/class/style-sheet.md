@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-<a name="stylesheet" id="stylesheet"></a>
+\<a name="stylesheet" id="stylesheet"\>\</a\>
 
 ## StyleSheet
 
@@ -20,18 +20,18 @@ keywords:
     * [.href](#stylesheet-href) : `DOMString`
     * [.type](#stylesheet-type) : `DOMString`
 
-<a name="new-stylesheet-new" id="new-stylesheet-new"></a>
+\<a name="new-stylesheet-new" id="new-stylesheet-new"\>\</a\>
 
 ### new StyleSheet()
 Represents a single style sheet. **INCOMPLETE**
 
-<a name="stylesheet-href" id="stylesheet-href"></a>
+\<a name="stylesheet-href" id="stylesheet-href"\>\</a\>
 
 ### styleSheet.href : `DOMString`
 
 **Read only**
 
-<a name="stylesheet-type" id="stylesheet-type"></a>
+\<a name="stylesheet-type" id="stylesheet-type"\>\</a\>
 
 ### styleSheet.type : `DOMString`
 

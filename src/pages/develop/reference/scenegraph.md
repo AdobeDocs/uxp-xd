@@ -15,12 +15,12 @@ contained by any artboard).
 
 ![example of scenegraph tree](../images/scenegraphExample.png)
 
-You can modify properties on any scenenodes within the current [_edit context_](/develop/plugin-development/xd-concepts/edit-context/),
+You can modify properties on any scenenodes within the current [_edit context_](/develop/plugin-development/xd-concepts/edit-context.md),
 and add leaf nodes to the current edit context, but you cannot make structural changes directly to the scenegraph tree. Instead, use
-[commands](/develop/reference/commands/).
+[commands](/develop/reference/commands.md).
 
-Typically, you access scenegraph nodes via the [selection](/develop/reference/selection/) argument that is passed to your plugin command, or by
-traversing the entire document tree using the [documentRoot](/develop/reference/RootNode) argument that is passed to your plugin command. These
+Typically, you access scenegraph nodes via the [selection](/develop/reference/selection.md) argument that is passed to your plugin command, or by
+traversing the entire document tree using the [documentRoot](/develop/reference/root-node.md) argument that is passed to your plugin command. These
 objects are also accessible on the scenegraph module for convenience.
 
 **Example**
@@ -59,24 +59,24 @@ function myCommand(selection) {
 > Additional subclasses may be added in the future. Always be sure to have a default case for unknown scenenode classes
 > when traversing the scenegraph.
 
-- [SceneNode](/develop/reference/SceneNode)
-  - [GraphicNode](/develop/reference/GraphicNode)
-    - [Artboard](/develop/reference/Artboard)
-    - [Rectangle](/develop/reference/Rectangle)
+- [SceneNode](/develop/reference/scene-node.md)
+  - [GraphicNode](/develop/reference/graphic-node.md)
+    - [Artboard](/develop/reference/artboard.md)
+    - [Rectangle](/develop/reference/rectangle.md)
     - [Ellipse](/develop/reference/Ellipse)
-    - [Polygon](/develop/reference/Polygon)
+    - [Polygon](/develop/reference/polygon.md)
     - [Line](/develop/reference/Line)
     - [Path](/develop/reference/Path)
     - [BooleanGroup](/develop/reference/BooleanGroup)
-    - [Text](/develop/reference/Text)
-  - [Lottie](/develop/reference/Lottie)
-  - [Video](/develop/reference/Video)
+    - [Text](/develop/reference/text.md)
+  - [Lottie](/develop/reference/lottie.md)
+  - [Video](/develop/reference/video.md)
   - [Group](/develop/reference/Group)
-  - [SymbolInstance](/develop/reference/SymbolInstance)
+  - [SymbolInstance](/develop/reference/symbol-instance.md)
   - [RepeatGrid](/develop/reference/RepeatGrid)
-  - [ScrollableGroup](/develop/reference/ScrollableGroup)
+  - [ScrollableGroup](/develop/reference/scrollable-group.md)
   - [LinkedGraphic](/develop/reference/LinkedGraphic)
-  - [RootNode](/develop/reference/RootNode)
+  - [RootNode](/develop/reference/root-node.md)
 
 ## Typedefs
 
@@ -92,14 +92,14 @@ function myCommand(selection) {
 
 **Since**: XD 14
 
-Object representing the current selection state and [edit context](/develop/plugin-development/xd-concepts/edit-context/). Also available as the first argument passed to your plugin command handler function.
+Object representing the current selection state and [edit context](/develop/plugin-development/xd-concepts/edit-context.md). Also available as the first argument passed to your plugin command handler function.
 
 **Kind**: static property of [scenegraph](#scenegraph)
 **Read only**: true
 
 ## root
 
-▸ **root**: [RootNode](/develop/reference/RootNode)
+▸ **root**: [RootNode](/develop/reference/root-node.md)
 
 **Since**: XD 14
 
@@ -110,17 +110,17 @@ Root node of the current document's scenegraph. Also available as the second arg
 
 ## getNodeByGUID()
 
-▸ **getNodeByGUID**(`guid`): [SceneNode](/develop/reference/SceneNode)
+▸ **getNodeByGUID**(`guid`): [SceneNode](/develop/reference/scene-node.md)
 
 **Since**: XD 28
 
-Returns the scenenode in this document that has the given [node GUID](/develop/reference/SceneNode/#guid). Returns undefined if no such node exists connected
+Returns the scenenode in this document that has the given [node GUID](/develop/reference/scene-node.md#guid). Returns undefined if no such node exists connected
 to the scenegraph tree (detached/orphan nodes will not be found). This provides a fast way of persistently remembering a node across plugin
 operations and even across document open/closes.
 
 | Param | Type   | Description                                                                                   |
 | ----- | ------ | --------------------------------------------------------------------------------------------- |
-| guid  | string | SceneNode GUID -- must be all lowercase, as returned by the [guid getter](/develop/reference/SceneNode/#guid) |
+| guid  | string | SceneNode GUID -- must be all lowercase, as returned by the [guid getter](/develop/reference/scene-node.md#guid) |
 
 **Example**
 

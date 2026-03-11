@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-<a name="shell" id="shell"></a>
+\<a name="shell" id="shell"\>\</a\>
 
 ## Shell
 To get an instance: `require("uxp").shell`
@@ -15,7 +15,7 @@ To get an instance: `require("uxp").shell`
 
 
 
-<a name="shell-openexternal" id="shell-openexternal"></a>
+\<a name="shell-openexternal" id="shell-openexternal"\>\</a\>
 
 ### shell.openExternal(url)
 Opens the url in an the system browser.

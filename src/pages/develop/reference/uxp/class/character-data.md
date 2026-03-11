@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-<a name="characterdata" id="characterdata"></a>
+\<a name="characterdata" id="characterdata"\>\</a\>
 
 ## CharacterData
 
@@ -57,7 +57,7 @@ keywords:
     * [.removeEventListener(eventName, callback, [capture])](#eventtarget-removeeventlistener)
     * [.dispatchEvent(event)](#eventtarget-dispatchevent)
 
-<a name="new-characterdata-new" id="new-characterdata-new"></a>
+\<a name="new-characterdata-new" id="new-characterdata-new"\>\</a\>
 
 ### new CharacterData(document, textContent)
 Creates an instance of CharacterData.
@@ -67,123 +67,123 @@ Creates an instance of CharacterData.
 | document | `\*` |
 | textContent | `\*` |
 
-<a name="characterdata-data" id="characterdata-data"></a>
+\<a name="characterdata-data" id="characterdata-data"\>\</a\>
 
 ### characterData.data : `string`
 
-<a name="characterdata-textcontent" id="characterdata-textcontent"></a>
+\<a name="characterdata-textcontent" id="characterdata-textcontent"\>\</a\>
 
 ### characterData.textContent : `string`
 
 **Overrides**: [`textContent`](#node-textcontent)
 
-<a name="characterdata-nodevalue" id="characterdata-nodevalue"></a>
+\<a name="characterdata-nodevalue" id="characterdata-nodevalue"\>\</a\>
 
 ### characterData.nodeValue : `string`
 
-<a name="characterdata-length" id="characterdata-length"></a>
+\<a name="characterdata-length" id="characterdata-length"\>\</a\>
 
 ### characterData.length : `number`
 
 **Read only**
 
-<a name="node-contenteditable" id="node-contenteditable"></a>
+\<a name="node-contenteditable" id="node-contenteditable"\>\</a\>
 
 ### characterData.contentEditable
 
 **Read only**
 
-<a name="node-isconnected" id="node-isconnected"></a>
+\<a name="node-isconnected" id="node-isconnected"\>\</a\>
 
 ### characterData.isConnected : `boolean`
 
 **Read only**
 
-<a name="node-parentnode" id="node-parentnode"></a>
+\<a name="node-parentnode" id="node-parentnode"\>\</a\>
 
 ### characterData.parentNode : [`Node`](#node)
 
 **Read only**
 
-<a name="node-parentelement" id="node-parentelement"></a>
+\<a name="node-parentelement" id="node-parentelement"\>\</a\>
 
 ### characterData.parentElement : [`Element`](#element)
 
 **Read only**
 
-<a name="node-firstchild" id="node-firstchild"></a>
+\<a name="node-firstchild" id="node-firstchild"\>\</a\>
 
 ### characterData.firstChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-lastchild" id="node-lastchild"></a>
+\<a name="node-lastchild" id="node-lastchild"\>\</a\>
 
 ### characterData.lastChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-previoussibling" id="node-previoussibling"></a>
+\<a name="node-previoussibling" id="node-previoussibling"\>\</a\>
 
 ### characterData.previousSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-nextsibling" id="node-nextsibling"></a>
+\<a name="node-nextsibling" id="node-nextsibling"\>\</a\>
 
 ### characterData.nextSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-firstelementchild" id="node-firstelementchild"></a>
+\<a name="node-firstelementchild" id="node-firstelementchild"\>\</a\>
 
 ### characterData.firstElementChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-lastelementchild" id="node-lastelementchild"></a>
+\<a name="node-lastelementchild" id="node-lastelementchild"\>\</a\>
 
 ### characterData.lastElementChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-previouselementsibling" id="node-previouselementsibling"></a>
+\<a name="node-previouselementsibling" id="node-previouselementsibling"\>\</a\>
 
 ### characterData.previousElementSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-nextelementsibling" id="node-nextelementsibling"></a>
+\<a name="node-nextelementsibling" id="node-nextelementsibling"\>\</a\>
 
 ### characterData.nextElementSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-childnodes" id="node-childnodes"></a>
+\<a name="node-childnodes" id="node-childnodes"\>\</a\>
 
 ### characterData.childNodes : [`NodeList`](#nodelist)
 
 **Read only**
 
-<a name="node-children" id="node-children"></a>
+\<a name="node-children" id="node-children"\>\</a\>
 
 ### characterData.children : [`HTMLCollection`](#htmlcollection)
 
 **Read only**
 
-<a name="node-ownerdocument" id="node-ownerdocument"></a>
+\<a name="node-ownerdocument" id="node-ownerdocument"\>\</a\>
 
 ### characterData.ownerDocument
 
 **Read only**
 
-<a name="node-attributes" id="node-attributes"></a>
+\<a name="node-attributes" id="node-attributes"\>\</a\>
 
 ### characterData.attributes
 
 **Read only**
 
-<a name="characterdata-substringdata" id="characterdata-substringdata"></a>
+\<a name="characterdata-substringdata" id="characterdata-substringdata"\>\</a\>
 
 ### characterData.substringData(offset, count)
 
@@ -192,7 +192,7 @@ Creates an instance of CharacterData.
 | offset | `\*` |
 | count | `\*` |
 
-<a name="characterdata-appenddata" id="characterdata-appenddata"></a>
+\<a name="characterdata-appenddata" id="characterdata-appenddata"\>\</a\>
 
 ### characterData.appendData(arg)
 
@@ -200,7 +200,7 @@ Creates an instance of CharacterData.
 | --- | --- |
 | arg | `string` |
 
-<a name="characterdata-insertdata" id="characterdata-insertdata"></a>
+\<a name="characterdata-insertdata" id="characterdata-insertdata"\>\</a\>
 
 ### characterData.insertData(offset, arg)
 
@@ -209,7 +209,7 @@ Creates an instance of CharacterData.
 | offset | `number` |
 | arg | `string` |
 
-<a name="characterdata-deletedata" id="characterdata-deletedata"></a>
+\<a name="characterdata-deletedata" id="characterdata-deletedata"\>\</a\>
 
 ### characterData.deleteData(offset, count)
 
@@ -218,7 +218,7 @@ Creates an instance of CharacterData.
 | offset | `number` |
 | count | `number` |
 
-<a name="characterdata-replacedata" id="characterdata-replacedata"></a>
+\<a name="characterdata-replacedata" id="characterdata-replacedata"\>\</a\>
 
 ### characterData.replaceData(offset, count, arg)
 
@@ -228,11 +228,11 @@ Creates an instance of CharacterData.
 | count | `number` |
 | arg | `string` |
 
-<a name="node-haschildnodes" id="node-haschildnodes"></a>
+\<a name="node-haschildnodes" id="node-haschildnodes"\>\</a\>
 
 ### characterData.hasChildNodes()
 
-<a name="node-clonenode" id="node-clonenode"></a>
+\<a name="node-clonenode" id="node-clonenode"\>\</a\>
 
 ### characterData.cloneNode(deep)
 
@@ -240,7 +240,7 @@ Creates an instance of CharacterData.
 | --- | --- |
 | deep | `boolean` |
 
-<a name="node-appendchild" id="node-appendchild"></a>
+\<a name="node-appendchild" id="node-appendchild"\>\</a\>
 
 ### characterData.appendChild(child)
 
@@ -248,7 +248,7 @@ Creates an instance of CharacterData.
 | --- | --- |
 | child | [`Node`](#node) |
 
-<a name="node-insertbefore" id="node-insertbefore"></a>
+\<a name="node-insertbefore" id="node-insertbefore"\>\</a\>
 
 ### characterData.insertBefore(child, before)
 
@@ -257,7 +257,7 @@ Creates an instance of CharacterData.
 | child | [`Node`](#node) |
 | before | [`Node`](#node) |
 
-<a name="node-replacechild" id="node-replacechild"></a>
+\<a name="node-replacechild" id="node-replacechild"\>\</a\>
 
 ### characterData.replaceChild(newChild, oldChild)
 
@@ -266,7 +266,7 @@ Creates an instance of CharacterData.
 | newChild | [`Node`](#node) |
 | oldChild | [`Node`](#node) |
 
-<a name="node-removechild" id="node-removechild"></a>
+\<a name="node-removechild" id="node-removechild"\>\</a\>
 
 ### characterData.removeChild(child)
 
@@ -274,11 +274,11 @@ Creates an instance of CharacterData.
 | --- | --- |
 | child | [`Node`](#node) |
 
-<a name="node-remove" id="node-remove"></a>
+\<a name="node-remove" id="node-remove"\>\</a\>
 
 ### characterData.remove()
 
-<a name="node-before" id="node-before"></a>
+\<a name="node-before" id="node-before"\>\</a\>
 
 ### characterData.before(...nodes)
 
@@ -286,7 +286,7 @@ Creates an instance of CharacterData.
 | --- | --- |
 | ...nodes | [`Array.<Node>`](#node) |
 
-<a name="node-after" id="node-after"></a>
+\<a name="node-after" id="node-after"\>\</a\>
 
 ### characterData.after(...nodes)
 
@@ -294,7 +294,7 @@ Creates an instance of CharacterData.
 | --- | --- |
 | ...nodes | [`Array.<Node>`](#node) |
 
-<a name="node-replacewith" id="node-replacewith"></a>
+\<a name="node-replacewith" id="node-replacewith"\>\</a\>
 
 ### characterData.replaceWith(...nodes)
 
@@ -302,7 +302,7 @@ Creates an instance of CharacterData.
 | --- | --- |
 | ...nodes | [`Array.<Node>`](#node) |
 
-<a name="node-contains" id="node-contains"></a>
+\<a name="node-contains" id="node-contains"\>\</a\>
 
 ### characterData.contains(node)
 
@@ -310,7 +310,7 @@ Creates an instance of CharacterData.
 | --- | --- |
 | node | [`Node`](#node) |
 
-<a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"></a>
+\<a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"\>\</a\>
 
 ### characterData.addEventListener(eventName, callback, [capture])
 
@@ -320,7 +320,7 @@ Creates an instance of CharacterData.
 | callback | `\*` |  |
 | [capture] | `boolean` | `false` |
 
-<a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"></a>
+\<a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"\>\</a\>
 
 ### characterData.removeEventListener(eventName, callback, [capture])
 
@@ -330,7 +330,7 @@ Creates an instance of CharacterData.
 | callback | `\*` |  |
 | [capture] | `boolean` | `false` |
 
-<a name="eventtarget-dispatchevent" id="eventtarget-dispatchevent"></a>
+\<a name="eventtarget-dispatchevent" id="eventtarget-dispatchevent"\>\</a\>
 
 ### characterData.dispatchEvent(event)
 

@@ -14,9 +14,9 @@ The `application` module exposes APIs for exporting content, initiating edits fr
 
 ▸ **editDocument**(`options`, `editFunction`) | (`editFunction`)
 
-Call `editDocument()` from a **plugin panel UI** event listener to initiate an [edit operation](/develop/plugin-development/xd-concepts/lifecycle/#edit-operations) batch in order to modify the XD document. This API is irrelevant for plugin menu item commands, which are wrapped in an edit batch automatically.
+Call `editDocument()` from a **plugin panel UI** event listener to initiate an [edit operation](/develop/plugin-development/xd-concepts/lifecycle.md#edit-operations) batch in order to modify the XD document. This API is irrelevant for plugin menu item commands, which are wrapped in an edit batch automatically.
 
-XD calls the `editFunction()` synchronously (before `editDocument()` returns). This function is treated the same as a [menu command handler](/develop/plugin-development/plugin-structure/handlers/#direct-action-commands-commandid):
+XD calls the `editFunction()` synchronously (before `editDocument()` returns). This function is treated the same as a [menu command handler](/develop/plugin-development/plugin-structure/handlers.md#direct-action-commands-commandid):
 
 - It is passed two arguments, the selection and the root node of the scenegraph
 - It can return a Promise to extend the duration of the edit asynchronously
@@ -111,7 +111,7 @@ function show(event) {
 ```
 
 > **Info**
-> For comparison, plugin [menu command handlers](/develop/plugin-development/plugin-structure/handlers/#direct-action-commands-commandid) are effectively run as if they were passed to `editDocument()` with `editLabel` set to the menu item's label and `mergeId` set to null.
+> For comparison, plugin [menu command handlers](/develop/plugin-development/plugin-structure/handlers.md#direct-action-commands-commandid) are effectively run as if they were passed to `editDocument()` with `editLabel` set to the menu item's label and `mergeId` set to null.
 
 ## createRenditions()
 
@@ -183,9 +183,9 @@ application.createRenditions(renditions).then(function (results) {
 **Since**: XD 45
 
 Equivalent to _File > Import_.  Brings assets into the XD document, including images, videos, and _Adobe Photoshop_ or _Adobe Illustrator_ files.
-Assets will be added as a child of the [artboard](/develop/reference/Artboard) that is the parent of the current [selection](/develop/reference/selection) (or to the [document root](/develop/reference/RootNode) if nothing is selected).
+Assets will be added as a child of the [artboard](/develop/reference/artboard.md) that is the parent of the current [selection](/develop/reference/selection.md) (or to the [document root](/develop/reference/root-node.md) if nothing is selected).
 
-Supported import file extensions: AI (_Illustrator_), BMP, GIF, JPG, JPEG, JSON ([Lottie](/develop/reference/Lottie)), MP4 ([Video](/develop/reference/Video)), PNG, PSD (_Photoshop_), TIF, TIFF, TXT
+Supported import file extensions: AI (_Illustrator_), BMP, GIF, JPG, JPEG, JSON ([Lottie](/develop/reference/lottie.md)), MP4 ([Video](/develop/reference/video.md)), PNG, PSD (_Photoshop_), TIF, TIFF, TXT
 
 An error will be thrown if a passed file does not exist or has an unsupported file extension.
 Parsing errors or other import problems that are specific to formats supported by XD are displayed to the user in the same way the _File > Import_ action informs users.
@@ -275,7 +275,7 @@ console.log("OS locale:", application.systemLocale); // e.g. "en_US"
 Information about the document which this instance of the plugin is attached to.
 
 > **Tip** > _This does **not** indicate the frontmost "active" document window in the XD application._
-> In XD, each document window [loads a separate copy of your plugin](/develop/plugin-development/xd-concepts/lifecycle/#plugin-loading). When a given instance of your plugin calls this API, you will always receive information about the document that this instance of the plugin is attached to, even if it's not the active window.
+> In XD, each document window [loads a separate copy of your plugin](/develop/plugin-development/xd-concepts/lifecycle.md#plugin-loading). When a given instance of your plugin calls this API, you will always receive information about the document that this instance of the plugin is attached to, even if it's not the active window.
 
 **Kind**: static property of [application](#module_application)
 **Read only**: true
@@ -285,7 +285,7 @@ Information about the document which this instance of the plugin is attached to.
 | Property | Type   | Description                                                                                                                                                                                                                                                                                                                                                                                |
 | -------- | ------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | name     | string | Document name as displayed in the titlebar. For untitled documents, this will be a localized string such as "Untitled-1."                                                                                                                                                                                                                                                                  |
-| guid     | string | _Semi_-unique document identifier. Duplicating an .xd file on disk will result in two files with the same GUID. Duplicating a document via "Save As" will change its GUID; thus two _cloud_ documents will never have the same GUID. The GUID of an Untitled document doesn't change when it is saved for the first time. <br/><br/>This returns the same value as `scenegraph.root.guid`. |
+| guid     | string | _Semi_-unique document identifier. Duplicating an .xd file on disk will result in two files with the same GUID. Duplicating a document via "Save As" will change its GUID; thus two _cloud_ documents will never have the same GUID. The GUID of an Untitled document doesn't change when it is saved for the first time. \<br/\>\<br/\>This returns the same value as `scenegraph.root.guid`. |
 
 **Example**
 

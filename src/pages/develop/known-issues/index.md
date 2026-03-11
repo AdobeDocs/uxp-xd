@@ -119,7 +119,7 @@ keywords:
 ## Debugging
 
 - XD may be unstable while debugging a plugin. Don't debug when you have important XD documents open.
-- Debugging on Windows requires some extra steps run with admin rights -- see [tutorial](/develop/tutorials/debugging/) for details.
+- Debugging on Windows requires some extra steps run with admin rights -- see [tutorial](/develop/tutorials/debugging/index.md) for details.
 - Elements tab:
   - If you leave CDT on the Elements tab, XD will crash the next time you open it. If this happens, keep CDT open after XD crashes and switch to a different tab. Then close CDT, restart XD, and begin debugging again.
   - The CSS pane on the right is missing some data and cannot be used to edit CSS.

@@ -23,7 +23,7 @@ The `visible` argument is optional and defaults to true.
 | x       | `number`            |
 | y       | `number`            |
 | blur    | `number`            |
-| color   | [Color](/develop/reference/Color) |
+| color   | [Color](/develop/reference/color.md) |
 | visible | `?boolean`          |
 
 ## x
@@ -54,7 +54,7 @@ parent's rotation). May be negative.
 
 ## color
 
-▸ **color**: [Color](/develop/reference/Color)
+▸ **color**: [Color](/develop/reference/color.md)
 
 **Kind**: instance property of [Shadow](#Shadow)
 

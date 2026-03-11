@@ -9,7 +9,7 @@ keywords:
 # Text
 
 **Kind**: class
-**Extends**: [GraphicNode](/develop/reference/GraphicNode)
+**Extends**: [GraphicNode](/develop/reference/graphic-node.md)
 
 Text leaf node shape. Text can have a fill and/or stroke, but only a solid-color fill is allowed (gradient or image
 fill will be rejected).
@@ -46,13 +46,13 @@ Text bounds and layout work differently depending on the type of text:
 
 The plaintext content of the node, including any hard line breaks but excluding soft line wrap breaks.
 
-Note: Setting text removes [styleRanges](#styleranges), meaning the entire string is formatted with the first style.  To retain the [styleRanges](#styleranges), instead use the [Text.updateText()](/develop/reference/Text/#updatetext) method.
+Note: Setting text removes [styleRanges](#styleranges), meaning the entire string is formatted with the first style.  To retain the [styleRanges](#styleranges), instead use the [Text.updateText()](/develop/reference/text.md#updatetext) method.
 
 **Kind**: instance property of [Text](#text)
 
 ## styleRanges
 
-▸ **styleRanges**: `Array<{length:number`, `fontFamily:string`, `fontStyle:string`, `fontSize:number`, `fill:`[Color](/develop/reference/Color), `charSpacing:number`, `underline:boolean`, `strikethrough:boolean`, `textTransform:string`, `textScript:string}>`
+▸ **styleRanges**: `Array<{length:number`, `fontFamily:string`, `fontStyle:string`, `fontSize:number`, `fill:`[Color](/develop/reference/color.md), `charSpacing:number`, `underline:boolean`, `strikethrough:boolean`, `textTransform:string`, `textScript:string}>`
 
 Array of text ranges and their character style settings. Each range covers a set number of characters in the text content. Ranges
 are contiguous, with each one starting immediately after the previous one. Any characters past the end of the last range use the
@@ -101,7 +101,7 @@ fontSize.
 
 ## fill
 
-▸ **fill**: ?[Color](/develop/reference/Color)
+▸ **fill**: ?[Color](/develop/reference/color.md)
 
 **Default**: `null`
 
@@ -271,7 +271,7 @@ Width: number between 0-999999. This is ignored and can be omitted for Text.POIN
 
 Height: number between 0-999999. This is ignored and can be omitted for Text.POINT and Text.AUTO_HEIGHT
 
-Changing POINT text to FIXED_HEIGHT or AUTO_HEIGHT text or vice versa will change the origin / anchor point of the text, thus changing its localBounds, but it will also automatically change the node's transform so its [globalBounds](/develop/reference/SceneNode/#globalbounds) and [boundsInParent](/develop/reference/SceneNode/#boundsinparent) origins remain unchanged.
+Changing POINT text to FIXED_HEIGHT or AUTO_HEIGHT text or vice versa will change the origin / anchor point of the text, thus changing its localBounds, but it will also automatically change the node's transform so its [globalBounds](/develop/reference/scene-node.md#globalbounds) and [boundsInParent](/develop/reference/scene-node.md#boundsinparent) origins remain unchanged.
 
 Changing FIXED_HEIGHT or AUTO_HEIGHT text to POINT text will automatically insert hard line break ("\n") into the text to match the previous line wrapping's appearance exactly.
 

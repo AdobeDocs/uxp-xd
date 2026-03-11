@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-<a name="uxpcontainer" id="uxpcontainer"></a>
+\<a name="uxpcontainer" id="uxpcontainer"\>\</a\>
 
 ## UXPContainer
 
@@ -22,19 +22,19 @@ keywords:
     * [.removeEventListener(eventName, callback, [capture])](#eventtarget-removeeventlistener)
     * [.dispatchEvent(event)](#eventtarget-dispatchevent)
 
-<a name="new-uxpcontainer-new" id="new-uxpcontainer-new"></a>
+\<a name="new-uxpcontainer-new" id="new-uxpcontainer-new"\>\</a\>
 
 ### new UXPContainer()
 Describes information regarding the UXP container for the attached element.
 
-<a name="uxpcontainer-devicepixelratio" id="uxpcontainer-devicepixelratio"></a>
+\<a name="uxpcontainer-devicepixelratio" id="uxpcontainer-devicepixelratio"\>\</a\>
 
 ### uxpContainer.devicePixelRatio : `number`
 Returns the device pixel ratio for this element
 
 **Read only**
 
-<a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"></a>
+\<a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"\>\</a\>
 
 ### uxpContainer.addEventListener(eventName, callback, [capture])
 
@@ -44,7 +44,7 @@ Returns the device pixel ratio for this element
 | callback | `\*` |  |
 | [capture] | `boolean` | `false` |
 
-<a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"></a>
+\<a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"\>\</a\>
 
 ### uxpContainer.removeEventListener(eventName, callback, [capture])
 
@@ -54,7 +54,7 @@ Returns the device pixel ratio for this element
 | callback | `\*` |  |
 | [capture] | `boolean` | `false` |
 
-<a name="eventtarget-dispatchevent" id="eventtarget-dispatchevent"></a>
+\<a name="eventtarget-dispatchevent" id="eventtarget-dispatchevent"\>\</a\>
 
 ### uxpContainer.dispatchEvent(event)
 

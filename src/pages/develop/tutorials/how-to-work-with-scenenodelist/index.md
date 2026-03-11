@@ -13,7 +13,7 @@ This sample demonstrates how to work with a SceneNodeList in Adobe XD. The short
 ## Prerequisites
 
 - Basic knowledge of HTML, CSS, and JavaScript.
-- [Quick Start Tutorial](/develop/tutorials/quick-start/)
+- [Quick Start Tutorial](/develop/tutorials/quick-start/index.md)
 - [Debugging Tutorial](/develop/tutorials/debugging/)
 
 ## Development Steps
@@ -23,7 +23,7 @@ This sample demonstrates how to work with a SceneNodeList in Adobe XD. The short
 
 ### 1. Prepare your plugin scaffold
 
-First, edit the manifest file for the plugin you created in our [Quick Start Tutorial](/develop/tutorials/quick-start/).
+First, edit the manifest file for the plugin you created in our [Quick Start Tutorial](/develop/tutorials/quick-start/index.md).
 
 Replace the `uiEntryPoints` field of the manifest with the following:
 
@@ -65,7 +65,7 @@ module.exports = {
 };
 ```
 
-Note the different use of [contextual arguments](/develop/plugin-development/plugin-structure/handlers/#contextual-arguments) in each function: the first function only makes use of `selection`, which the second makes use of both `selection` and `documentRoot`. We'll look at why `documentRoot` is used in a later step.
+Note the different use of [contextual arguments](/develop/plugin-development/plugin-structure/handlers.md#contextual-arguments) in each function: the first function only makes use of `selection`, which the second makes use of both `selection` and `documentRoot`. We'll look at why `documentRoot` is used in a later step.
 
 The remaining steps in this tutorial describe additional edits to the `main.js` file.
 
@@ -128,12 +128,12 @@ So let's take a look at working with a `SceneNodeList`!
 
 The function we create in this step will filter all content on the artboard for rectangles, and then color only the rectangles red.
 
-Recall that in the first step, we made a note of [contextual arguments in command handlers](/develop/plugin-development/plugin-structure/handlers/#contextual-arguments), and particularly that this `filterAndColor` function makes use of the second `documentRoot` argument.
+Recall that in the first step, we made a note of [contextual arguments in command handlers](/develop/plugin-development/plugin-structure/handlers.md#contextual-arguments), and particularly that this `filterAndColor` function makes use of the second `documentRoot` argument.
 
-Like any [`SceneNode`](/develop/reference/scenegraph/#scenenode), `documentRoot` has a `.children` property that returns a `SceneNodeList`.
+Like any [`SceneNode`](/develop/reference/scenegraph.md#scenenode), `documentRoot` has a `.children` property that returns a `SceneNodeList`.
 
 > **info**
-> A `SceneNodeList` is _not an Array_. One notable difference is that, with a `SceneNodeList`, you access elements in the list using the `#at` method (for example, `node.children.at(0)` to get the first node in the list). [You can learn more about the `SceneNodeList` class here](/develop/reference/SceneNodeList/).
+> A `SceneNodeList` is _not an Array_. One notable difference is that, with a `SceneNodeList`, you access elements in the list using the `#at` method (for example, `node.children.at(0)` to get the first node in the list). [You can learn more about the `SceneNodeList` class here](/develop/reference/scene-node.mdList/).
 
 Let's fill out our handler function. Each of the numbered comments are explained below the code:
 

@@ -16,7 +16,7 @@ This tutorial will show you how to implement the OAuth workflow in an XD plugin,
 ## Prerequisites
 
 - Basic knowledge of HTML, CSS, and JavaScript.
-- [Quick Start Tutorial](/develop/tutorials/quick-start/)
+- [Quick Start Tutorial](/develop/tutorials/quick-start/index.md)
 - [Debugging Tutorial](/develop/tutorials/debugging/)
 - Familiarity with your OS's command line application
 - Familiarity with [OAuth](https://oauth.net/2/)

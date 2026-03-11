@@ -26,7 +26,7 @@ Direct distribution lets you choose how to provide users with access to your plu
 
 If you distribute a .XDX file, installation is as simple as one double-click.
 
-<InlineAlert variant="help" slots="header, text1, text2, text3" />
+<InlineAlert variant="help" slots="heading, text1, text2, text3" />
 
 Info
 

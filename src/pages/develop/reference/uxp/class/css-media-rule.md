@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-<a name="cssmediarule" id="cssmediarule"></a>
+\<a name="cssmediarule" id="cssmediarule"\>\</a\>
 
 ## CSSMediaRule
 
@@ -22,21 +22,21 @@ keywords:
     * [.media](#CSSMediaRule+media) : [`CSSMediaList`](#cssmedialist)
     * [.mediaText](#cssmediarule-mediatext) : `DOMString`
 
-<a name="cssmediarule-type" id="cssmediarule-type"></a>
+\<a name="cssmediarule-type" id="cssmediarule-type"\>\</a\>
 
 ### cssMediaRule.type
 Gets the type of this rule
 
 **Read only**
 
-<a name="cssmediarule-media" id="cssmediarule-media"></a>
+\<a name="cssmediarule-media" id="cssmediarule-media"\>\</a\>
 
 ### cssMediaRule.media : [`CSSMediaList`](#cssmedialist)
 Returns the list of media rules
 
 **Read only**
 
-<a name="cssmediarule-mediatext" id="cssmediarule-mediatext"></a>
+\<a name="cssmediarule-mediatext" id="cssmediarule-mediatext"\>\</a\>
 
 ### cssMediaRule.mediaText : `DOMString`
 Returns the text of the media rules

@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-<a name="node" id="node"></a>
+\<a name="node" id="node"\>\</a\>
 
 ## Node
 
@@ -57,7 +57,7 @@ keywords:
         * [.DOCUMENT_FRAGMENT_NODE](#node-document-fragment-node)
         * [.COMMENT_NODE](#node-comment-node)
 
-<a name="new-node-new" id="new-node-new"></a>
+\<a name="new-node-new" id="new-node-new"\>\</a\>
 
 ### new Node(ownerDocument)
 Creates an instance of Node.
@@ -66,111 +66,111 @@ Creates an instance of Node.
 | --- | --- |
 | ownerDocument | `\*` |
 
-<a name="node-contenteditable" id="node-contenteditable"></a>
+\<a name="node-contenteditable" id="node-contenteditable"\>\</a\>
 
 ### node.contentEditable
 
 **Read only**
 
-<a name="node-isconnected" id="node-isconnected"></a>
+\<a name="node-isconnected" id="node-isconnected"\>\</a\>
 
 ### node.isConnected : `boolean`
 
 **Read only**
 
-<a name="node-parentnode" id="node-parentnode"></a>
+\<a name="node-parentnode" id="node-parentnode"\>\</a\>
 
 ### node.parentNode : [`Node`](#node)
 
 **Read only**
 
-<a name="node-parentelement" id="node-parentelement"></a>
+\<a name="node-parentelement" id="node-parentelement"\>\</a\>
 
 ### node.parentElement : [`Element`](#element)
 
 **Read only**
 
-<a name="node-firstchild" id="node-firstchild"></a>
+\<a name="node-firstchild" id="node-firstchild"\>\</a\>
 
 ### node.firstChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-lastchild" id="node-lastchild"></a>
+\<a name="node-lastchild" id="node-lastchild"\>\</a\>
 
 ### node.lastChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-previoussibling" id="node-previoussibling"></a>
+\<a name="node-previoussibling" id="node-previoussibling"\>\</a\>
 
 ### node.previousSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-nextsibling" id="node-nextsibling"></a>
+\<a name="node-nextsibling" id="node-nextsibling"\>\</a\>
 
 ### node.nextSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-firstelementchild" id="node-firstelementchild"></a>
+\<a name="node-firstelementchild" id="node-firstelementchild"\>\</a\>
 
 ### node.firstElementChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-lastelementchild" id="node-lastelementchild"></a>
+\<a name="node-lastelementchild" id="node-lastelementchild"\>\</a\>
 
 ### node.lastElementChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-previouselementsibling" id="node-previouselementsibling"></a>
+\<a name="node-previouselementsibling" id="node-previouselementsibling"\>\</a\>
 
 ### node.previousElementSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-nextelementsibling" id="node-nextelementsibling"></a>
+\<a name="node-nextelementsibling" id="node-nextelementsibling"\>\</a\>
 
 ### node.nextElementSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-textcontent" id="node-textcontent"></a>
+\<a name="node-textcontent" id="node-textcontent"\>\</a\>
 
 ### node.textContent : `string`
 
-<a name="node-childnodes" id="node-childnodes"></a>
+\<a name="node-childnodes" id="node-childnodes"\>\</a\>
 
 ### node.childNodes : [`NodeList`](#nodelist)
 
 **Read only**
 
-<a name="node-children" id="node-children"></a>
+\<a name="node-children" id="node-children"\>\</a\>
 
 ### node.children : [`HTMLCollection`](#htmlcollection)
 
 **Read only**
 
-<a name="node-ownerdocument" id="node-ownerdocument"></a>
+\<a name="node-ownerdocument" id="node-ownerdocument"\>\</a\>
 
 ### node.ownerDocument
 
 **Read only**
 
-<a name="node-attributes" id="node-attributes"></a>
+\<a name="node-attributes" id="node-attributes"\>\</a\>
 
 ### node.attributes
 
 **Read only**
 
-<a name="node-haschildnodes" id="node-haschildnodes"></a>
+\<a name="node-haschildnodes" id="node-haschildnodes"\>\</a\>
 
 ### node.hasChildNodes()
 
-<a name="node-clonenode" id="node-clonenode"></a>
+\<a name="node-clonenode" id="node-clonenode"\>\</a\>
 
 ### node.cloneNode(deep)
 
@@ -178,7 +178,7 @@ Creates an instance of Node.
 | --- | --- |
 | deep | `boolean` |
 
-<a name="node-appendchild" id="node-appendchild"></a>
+\<a name="node-appendchild" id="node-appendchild"\>\</a\>
 
 ### node.appendChild(child)
 
@@ -186,7 +186,7 @@ Creates an instance of Node.
 | --- | --- |
 | child | [`Node`](#node) |
 
-<a name="node-insertbefore" id="node-insertbefore"></a>
+\<a name="node-insertbefore" id="node-insertbefore"\>\</a\>
 
 ### node.insertBefore(child, before)
 
@@ -195,7 +195,7 @@ Creates an instance of Node.
 | child | [`Node`](#node) |
 | before | [`Node`](#node) |
 
-<a name="node-replacechild" id="node-replacechild"></a>
+\<a name="node-replacechild" id="node-replacechild"\>\</a\>
 
 ### node.replaceChild(newChild, oldChild)
 
@@ -204,7 +204,7 @@ Creates an instance of Node.
 | newChild | [`Node`](#node) |
 | oldChild | [`Node`](#node) |
 
-<a name="node-removechild" id="node-removechild"></a>
+\<a name="node-removechild" id="node-removechild"\>\</a\>
 
 ### node.removeChild(child)
 
@@ -212,11 +212,11 @@ Creates an instance of Node.
 | --- | --- |
 | child | [`Node`](#node) |
 
-<a name="node-remove" id="node-remove"></a>
+\<a name="node-remove" id="node-remove"\>\</a\>
 
 ### node.remove()
 
-<a name="node-before" id="node-before"></a>
+\<a name="node-before" id="node-before"\>\</a\>
 
 ### node.before(...nodes)
 
@@ -224,7 +224,7 @@ Creates an instance of Node.
 | --- | --- |
 | ...nodes | [`Array.<Node>`](#node) |
 
-<a name="node-after" id="node-after"></a>
+\<a name="node-after" id="node-after"\>\</a\>
 
 ### node.after(...nodes)
 
@@ -232,7 +232,7 @@ Creates an instance of Node.
 | --- | --- |
 | ...nodes | [`Array.<Node>`](#node) |
 
-<a name="node-replacewith" id="node-replacewith"></a>
+\<a name="node-replacewith" id="node-replacewith"\>\</a\>
 
 ### node.replaceWith(...nodes)
 
@@ -240,7 +240,7 @@ Creates an instance of Node.
 | --- | --- |
 | ...nodes | [`Array.<Node>`](#node) |
 
-<a name="node-contains" id="node-contains"></a>
+\<a name="node-contains" id="node-contains"\>\</a\>
 
 ### node.contains(node)
 
@@ -248,7 +248,7 @@ Creates an instance of Node.
 | --- | --- |
 | node | [`Node`](#node) |
 
-<a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"></a>
+\<a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"\>\</a\>
 
 ### node.addEventListener(eventName, callback, [capture])
 
@@ -258,7 +258,7 @@ Creates an instance of Node.
 | callback | `\*` |  |
 | [capture] | `boolean` | `false` |
 
-<a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"></a>
+\<a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"\>\</a\>
 
 ### node.removeEventListener(eventName, callback, [capture])
 
@@ -268,7 +268,7 @@ Creates an instance of Node.
 | callback | `\*` |  |
 | [capture] | `boolean` | `false` |
 
-<a name="eventtarget-dispatchevent" id="eventtarget-dispatchevent"></a>
+\<a name="eventtarget-dispatchevent" id="eventtarget-dispatchevent"\>\</a\>
 
 ### node.dispatchEvent(event)
 
@@ -276,27 +276,27 @@ Creates an instance of Node.
 | --- | --- |
 | event | `\*` |
 
-<a name="node-element-node" id="node-element-node"></a>
+\<a name="node-element-node" id="node-element-node"\>\</a\>
 
 ### Node.ELEMENT\_NODE
 
-<a name="node-attribute-node" id="node-attribute-node"></a>
+\<a name="node-attribute-node" id="node-attribute-node"\>\</a\>
 
 ### Node.ATTRIBUTE\_NODE
 
-<a name="node-text-node" id="node-text-node"></a>
+\<a name="node-text-node" id="node-text-node"\>\</a\>
 
 ### Node.TEXT\_NODE
 
-<a name="node-document-node" id="node-document-node"></a>
+\<a name="node-document-node" id="node-document-node"\>\</a\>
 
 ### Node.DOCUMENT\_NODE
 
-<a name="node-document-fragment-node" id="node-document-fragment-node"></a>
+\<a name="node-document-fragment-node" id="node-document-fragment-node"\>\</a\>
 
 ### Node.DOCUMENT\_FRAGMENT\_NODE
 
-<a name="node-comment-node" id="node-comment-node"></a>
+\<a name="node-comment-node" id="node-comment-node"\>\</a\>
 
 ### Node.COMMENT\_NODE
 

@@ -23,7 +23,7 @@ Other times you'll need to display an _error_ alert, which looks like this:
 ## Prerequisites
 
 - Basic knowledge of HTML, CSS, and JavaScript.
-- [Quick Start Tutorial](/develop/tutorials/quick-start/)
+- [Quick Start Tutorial](/develop/tutorials/quick-start/index.md)
 - [Debugging Tutorial](/develop/tutorials/debugging/)
 
 ## Development Steps

@@ -14,7 +14,7 @@ This tutorial describes how to package the files of an XD plugin. It's a simple 
 
 ## Prerequisite
 
-- A code-complete plugin (if you don't have one yet, try our [Quick Start Tutorial](/develop/tutorials/quick-start/))
+- A code-complete plugin (if you don't have one yet, try our [Quick Start Tutorial](/develop/tutorials/quick-start/index.md))
 
 ## Workflow
 

@@ -15,9 +15,9 @@ there's no guarantee that these styles are currently used anywhere in the docume
 
 ## Enums
 
-<dl>
-<dt><a name="GradientType"></a> GradientType : </dt><dd>LINEAR, RADIAL - Type of gradient color element: linear gradient or radial gradient</dd>
-</dl>
+\<dl\>
+\<dt\>\<a name="GradientType"\>\</a\> GradientType : \</dt\>\<dd\>LINEAR, RADIAL - Type of gradient color element: linear gradient or radial gradient\</dd\>
+\</dl\>
 
 ## Typedefs
 
@@ -34,11 +34,11 @@ Assets library entry representing a solid color.
 
 Assets library entry representing a linear or radial gradient.
 
-| Property     | Type                                   | Description                                                                                                                                                                                                                       |
-| ------------ | -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| name         | ?string                                | Name of the Assets entry, if it is explicitly named. (The UI shows an auto-generated label for any unnamed assets).                                                                                                               |
-| gradientType | GradientType                           | Either `GradientType.LINEAR` or `GradientType.RADIAL`                                                                                                                                                                             |
-| colorStops   | Array.< {stop: number, color: Color} > | Array of color stops used in the gradient, where `stop` >= 0 and <= 1, and the values are strictly increasing. Same format as the `colorStops` property of a [LinearGradient](/develop/reference/LinearGradient/) object. |
+| Property     | Type                                       | Description                                                                                                                                                                                                                      |
+| ------------ |--------------------------------------------| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| name         | ?string                                    | Name of the Assets entry, if it is explicitly named. (The UI shows an auto-generated label for any unnamed assets).                                                                                                              |
+| gradientType | GradientType                               | Either `GradientType.LINEAR` or `GradientType.RADIAL`                                                                                                                                                                            |
+| colorStops   | Array.\< \{stop: number, color: Color\} \> | Array of color stops used in the gradient, where `stop` >= 0 and <= 1, and the values are strictly increasing. Same format as the `colorStops` property of a [LinearGradient](/develop/reference/linear-gradient.md) object. |
 
 ### Typedef CharacterStyleAsset
 
@@ -51,7 +51,7 @@ Assets library entry representing a set of text character styles.
 
 ### Typedef CharacterStyle
 
-Character style properties. See documentation for the [Text](/develop/reference/Text) node type for more details.
+Character style properties. See documentation for the [Text](/develop/reference/text.md) node type for more details.
 
 When creating a new character style, all properties are mandatory except those with default values specified here. When deleting
 an existing character style, always pass the exact object returned by [characterStyles.get()](#characterstylesget) (with all properties fully
@@ -81,7 +81,8 @@ The collection of colors and gradients saved in this document's Assets library.
   - [.add(colorAssets)](#colorsadd): `number`
   - [.delete(colorAssets)](#colorsdelete): `number`
 
----
+<HorizontalLine />
+
 ### colors.get()
 
 ▸ **colors.get**(): `Array.<ColorAsset|GradientAsset>`
@@ -100,7 +101,8 @@ var assets = require("assets"),
 
 **Kind**: static method of [colors](#module_assets-colors)
 
----
+<HorizontalLine />
+
 ### colors.add()
 
 ▸ **colors.add**(`colorAssets`): `number`
@@ -137,7 +139,8 @@ var assets = require("assets"),
 
 **Kind**: static method of [colors](#module_assets-colors)
 
----
+<HorizontalLine />
+
 ### colors.delete()
 
 ▸ **colors.delete**(`colorAssets`): `number`
@@ -172,7 +175,8 @@ The collection of character styles saved in this document's Assets library.
   - [.add(charStyleAssets)](#characterstylesadd): `number`
   - [.delete(charStyleAssets)](#characterstylesdelete): `number`
 
----
+<HorizontalLine />
+
 ### characterStyles.get()
 
 ▸ **characterStyles.get**(): `Array.<CharacterStyleAsset>`
@@ -190,7 +194,8 @@ var assets = require("assets"),
 
 **Kind**: static method of [characterStyles](#module_assets-characterStyles)
 
----
+<HorizontalLine />
+
 ### characterStyles.add()
 
 ▸ **characterStyles.add**(`charStyleAssets`): `number`
@@ -237,7 +242,8 @@ var assets = require("assets"),
 
 **Kind**: static method of [characterStyles](#module_assets-characterStyles)
 
----
+<HorizontalLine />
+
 ### characterStyles.delete()
 
 ▸ **characterStyles.delete**(`charStyleAssets`): `number`

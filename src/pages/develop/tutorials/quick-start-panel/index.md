@@ -220,7 +220,7 @@ This code does the following:
 3. Gets a reference to the `editDocument` method available in the `application` module.
 4. Gets user input value from the "height" input element.
 5. Gets user input value from the "width" input element.
-6. Makes a request XD to manipulate the active document by using the [`editDocument`](/develop/reference/application/) method.
+6. Makes a request XD to manipulate the active document by using the [`editDocument`](/develop/reference/application.md) method.
 7. Gets the first currently selected node. (Some UI logic will be added later to ensure this is a rectangle.)
 8. Modifies the `width` and `height` of the selected rectangle.
 9. Creates a `div` element to serve as a container for your panel UI.

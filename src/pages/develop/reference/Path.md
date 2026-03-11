@@ -9,7 +9,7 @@ keywords:
 # Path
 
 **Kind**: class
-**Extends**: [GraphicNode](/develop/reference/GraphicNode)
+**Extends**: [GraphicNode](/develop/reference/graphic-node.md)
 
 Arbitrary vector Path leaf node shape. Paths can be open or closed, and a Path may include multiple disjoint sections (a.k.a. a "compound
 path"). Even open Paths may have a fill - the fill is drawn as if the Path were closed with a final "Z" segment.

@@ -9,7 +9,7 @@ keywords:
 # Ellipse
 
 **Kind**: class
-**Extends**: [GraphicNode](/develop/reference/GraphicNode)
+**Extends**: [GraphicNode](/develop/reference/graphic-node.md)
 
 Ellipse leaf node shape.
 

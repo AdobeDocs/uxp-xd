@@ -1,4 +1,17 @@
+---
+jsDoc: true
+---
+# height
 
-import Content from "uxp-documentation/src/pages/uxp/reference-css/Styles/height";
+**Since** UXP v2.0
 
-<Content query="product=xd"/>
+Specifies the height for an element.
+
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/height](https://developer.mozilla.org/en/docs/Web/CSS/height)
+**Example**:
+
+```css
+.someElement {
+    height: 100vh;
+}
+```

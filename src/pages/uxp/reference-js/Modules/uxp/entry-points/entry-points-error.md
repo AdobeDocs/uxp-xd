@@ -1,4 +1,8 @@
 
-import Content from "uxp-documentation/src/pages/uxp/reference-js/Modules/uxp/Entry Points/EntryPointsError";
+\<a name="entrypointserror" id="entrypointserror"\>\</a\>
 
-<Content query="product=xd"/>
+# EntryPointsError
+Thrown whenever a call to `entrypoints.setup` fails or is executed more than once.
+
+
+  

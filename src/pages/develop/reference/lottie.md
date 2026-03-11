@@ -8,9 +8,9 @@ keywords:
 # Lottie
 
 **Kind**: class
-**Extends**: [SceneNode](/develop/reference/SceneNode)
+**Extends**: [SceneNode](/develop/reference/scene-node.md)
 
 **Since**: XD 45
 
-Lottie is a vector animation format that can be [imported](/develop/reference/application/#import) into XD from a JSON file.
+Lottie is a vector animation format that can be [imported](/develop/reference/application.md#import) into XD from a JSON file.
 Within XD, a user will be able to control the playback of Lottie animation. Lottie files are limited to 15 MB.

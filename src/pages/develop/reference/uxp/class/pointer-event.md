@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-<a name="pointerevent" id="pointerevent"></a>
+\<a name="pointerevent" id="pointerevent"\>\</a\>
 
 ## PointerEvent
 
@@ -58,7 +58,7 @@ keywords:
     * [.stopImmediatePropagation()](#event-stopimmediatepropagation)
     * [.stopPropagation()](#event-stoppropagation)
 
-<a name="new-pointerevent-new" id="new-pointerevent-new"></a>
+\<a name="new-pointerevent-new" id="new-pointerevent-new"\>\</a\>
 
 ### new PointerEvent(type, eventInit)
 Creates an instance of PointerEvent.
@@ -68,235 +68,235 @@ Creates an instance of PointerEvent.
 | type | `\*` |
 | eventInit | `\*` |
 
-<a name="baseuievent-pointerid" id="baseuievent-pointerid"></a>
+\<a name="baseuievent-pointerid" id="baseuievent-pointerid"\>\</a\>
 
 ### pointerEvent.pointerId
 
 **Read only**
 
-<a name="baseuievent-width" id="baseuievent-width"></a>
+\<a name="baseuievent-width" id="baseuievent-width"\>\</a\>
 
 ### pointerEvent.width : `number`
 
 **Read only**
 
-<a name="baseuievent-height" id="baseuievent-height"></a>
+\<a name="baseuievent-height" id="baseuievent-height"\>\</a\>
 
 ### pointerEvent.height : `number`
 
 **Read only**
 
-<a name="baseuievent-pressure" id="baseuievent-pressure"></a>
+\<a name="baseuievent-pressure" id="baseuievent-pressure"\>\</a\>
 
 ### pointerEvent.pressure : `number`
 
 **Read only**
 
-<a name="baseuievent-tangentialpressure" id="baseuievent-tangentialpressure"></a>
+\<a name="baseuievent-tangentialpressure" id="baseuievent-tangentialpressure"\>\</a\>
 
 ### pointerEvent.tangentialPressure : `number`
 
 **Read only**
 
-<a name="baseuievent-tiltx" id="baseuievent-tiltx"></a>
+\<a name="baseuievent-tiltx" id="baseuievent-tiltx"\>\</a\>
 
 ### pointerEvent.tiltX : `number`
 
 **Read only**
 
-<a name="baseuievent-tilty" id="baseuievent-tilty"></a>
+\<a name="baseuievent-tilty" id="baseuievent-tilty"\>\</a\>
 
 ### pointerEvent.tiltY : `number`
 
 **Read only**
 
-<a name="baseuievent-twist" id="baseuievent-twist"></a>
+\<a name="baseuievent-twist" id="baseuievent-twist"\>\</a\>
 
 ### pointerEvent.twist : `number`
 
 **Read only**
 
-<a name="baseuievent-clientx" id="baseuievent-clientx"></a>
+\<a name="baseuievent-clientx" id="baseuievent-clientx"\>\</a\>
 
 ### pointerEvent.clientX : `number`
 
 **Read only**
 
-<a name="baseuievent-clienty" id="baseuievent-clienty"></a>
+\<a name="baseuievent-clienty" id="baseuievent-clienty"\>\</a\>
 
 ### pointerEvent.clientY : `number`
 
 **Read only**
 
-<a name="baseuievent-offsetx" id="baseuievent-offsetx"></a>
+\<a name="baseuievent-offsetx" id="baseuievent-offsetx"\>\</a\>
 
 ### pointerEvent.offsetX : `number`
 
 **Read only**
 
-<a name="baseuievent-offsety" id="baseuievent-offsety"></a>
+\<a name="baseuievent-offsety" id="baseuievent-offsety"\>\</a\>
 
 ### pointerEvent.offsetY : `number`
 
 **Read only**
 
-<a name="baseuievent-pagex" id="baseuievent-pagex"></a>
+\<a name="baseuievent-pagex" id="baseuievent-pagex"\>\</a\>
 
 ### pointerEvent.pageX : `number`
 
 **Read only**
 
-<a name="baseuievent-pagey" id="baseuievent-pagey"></a>
+\<a name="baseuievent-pagey" id="baseuievent-pagey"\>\</a\>
 
 ### pointerEvent.pageY : `number`
 
 **Read only**
 
-<a name="baseuievent-screenx" id="baseuievent-screenx"></a>
+\<a name="baseuievent-screenx" id="baseuievent-screenx"\>\</a\>
 
 ### pointerEvent.screenX : `number`
 
 **Read only**
 
-<a name="baseuievent-screeny" id="baseuievent-screeny"></a>
+\<a name="baseuievent-screeny" id="baseuievent-screeny"\>\</a\>
 
 ### pointerEvent.screenY : `number`
 
 **Read only**
 
-<a name="baseuievent-movementx" id="baseuievent-movementx"></a>
+\<a name="baseuievent-movementx" id="baseuievent-movementx"\>\</a\>
 
 ### pointerEvent.movementX : `number`
 
 **Read only**
 
-<a name="baseuievent-movementy" id="baseuievent-movementy"></a>
+\<a name="baseuievent-movementy" id="baseuievent-movementy"\>\</a\>
 
 ### pointerEvent.movementY : `number`
 
 **Read only**
 
-<a name="baseuievent-button" id="baseuievent-button"></a>
+\<a name="baseuievent-button" id="baseuievent-button"\>\</a\>
 
 ### pointerEvent.button : `number`
 
 **Read only**
 
-<a name="baseuievent-buttons" id="baseuievent-buttons"></a>
+\<a name="baseuievent-buttons" id="baseuievent-buttons"\>\</a\>
 
 ### pointerEvent.buttons
 
 **Read only**
 
-<a name="baseuievent-detail" id="baseuievent-detail"></a>
+\<a name="baseuievent-detail" id="baseuievent-detail"\>\</a\>
 
 ### pointerEvent.detail
 
 **Read only**
 
-<a name="baseuievent-pointertype" id="baseuievent-pointertype"></a>
+\<a name="baseuievent-pointertype" id="baseuievent-pointertype"\>\</a\>
 
 ### pointerEvent.pointerType
 
 **Read only**
 
-<a name="baseuievent-altkey" id="baseuievent-altkey"></a>
+\<a name="baseuievent-altkey" id="baseuievent-altkey"\>\</a\>
 
 ### pointerEvent.altKey
 
 **Read only**
 
-<a name="baseuievent-shiftkey" id="baseuievent-shiftkey"></a>
+\<a name="baseuievent-shiftkey" id="baseuievent-shiftkey"\>\</a\>
 
 ### pointerEvent.shiftKey
 
 **Read only**
 
-<a name="baseuievent-metakey" id="baseuievent-metakey"></a>
+\<a name="baseuievent-metakey" id="baseuievent-metakey"\>\</a\>
 
 ### pointerEvent.metaKey
 
 **Read only**
 
-<a name="baseuievent-ctrlkey" id="baseuievent-ctrlkey"></a>
+\<a name="baseuievent-ctrlkey" id="baseuievent-ctrlkey"\>\</a\>
 
 ### pointerEvent.ctrlKey
 
 **Read only**
 
-<a name="baseuievent-isprimary" id="baseuievent-isprimary"></a>
+\<a name="baseuievent-isprimary" id="baseuievent-isprimary"\>\</a\>
 
 ### pointerEvent.isPrimary
 
 **Read only**
 
-<a name="baseuievent-which" id="baseuievent-which"></a>
+\<a name="baseuievent-which" id="baseuievent-which"\>\</a\>
 
 ### pointerEvent.which
 
 **Read only**
 
-<a name="event-type" id="event-type"></a>
+\<a name="event-type" id="event-type"\>\</a\>
 
 ### pointerEvent.type
 
 **Read only**
 
-<a name="event-istrusted" id="event-istrusted"></a>
+\<a name="event-istrusted" id="event-istrusted"\>\</a\>
 
 ### pointerEvent.isTrusted : `boolean`
 
 **Read only**
 
-<a name="event-target" id="event-target"></a>
+\<a name="event-target" id="event-target"\>\</a\>
 
 ### pointerEvent.target : [`Node`](#node)
 
 **Read only**
 
-<a name="event-currenttarget" id="event-currenttarget"></a>
+\<a name="event-currenttarget" id="event-currenttarget"\>\</a\>
 
 ### pointerEvent.currentTarget : [`Node`](#node)
 
 **Read only**
 
-<a name="event-bubbles" id="event-bubbles"></a>
+\<a name="event-bubbles" id="event-bubbles"\>\</a\>
 
 ### pointerEvent.bubbles : `boolean`
 
 **Read only**
 
-<a name="event-cancelable" id="event-cancelable"></a>
+\<a name="event-cancelable" id="event-cancelable"\>\</a\>
 
 ### pointerEvent.cancelable : `boolean`
 
 **Read only**
 
-<a name="event-eventphase" id="event-eventphase"></a>
+\<a name="event-eventphase" id="event-eventphase"\>\</a\>
 
 ### pointerEvent.eventPhase
 
 **Read only**
 
-<a name="event-defaultprevented" id="event-defaultprevented"></a>
+\<a name="event-defaultprevented" id="event-defaultprevented"\>\</a\>
 
 ### pointerEvent.defaultPrevented : `boolean`
 
 **Read only**
 
-<a name="event-returnvalue" id="event-returnvalue"></a>
+\<a name="event-returnvalue" id="event-returnvalue"\>\</a\>
 
 ### pointerEvent.returnValue : `\*`
 
-<a name="event-preventdefault" id="event-preventdefault"></a>
+\<a name="event-preventdefault" id="event-preventdefault"\>\</a\>
 
 ### pointerEvent.preventDefault()
 
-<a name="event-stopimmediatepropagation" id="event-stopimmediatepropagation"></a>
+\<a name="event-stopimmediatepropagation" id="event-stopimmediatepropagation"\>\</a\>
 
 ### pointerEvent.stopImmediatePropagation()
 
-<a name="event-stoppropagation" id="event-stoppropagation"></a>
+\<a name="event-stoppropagation" id="event-stoppropagation"\>\</a\>
 
 ### pointerEvent.stopPropagation()
 

@@ -13,7 +13,7 @@ This sample demonstrates how to create a plugin that adds colored lines to the u
 ## Prerequisites
 
 - Basic knowledge of HTML, CSS, and JavaScript
-- [Quick Start Tutorial](/develop/tutorials/quick-start/)
+- [Quick Start Tutorial](/develop/tutorials/quick-start/index.md)
 - [Debugging Tutorial](/develop/tutorials/debugging/)
 
 ## Development Steps
@@ -23,7 +23,7 @@ This sample demonstrates how to create a plugin that adds colored lines to the u
 
 ### 1. Prepare your plugin scaffold
 
-First, edit the manifest file for the plugin you created in our [Quick Start Tutorial](/develop/tutorials/quick-start/).
+First, edit the manifest file for the plugin you created in our [Quick Start Tutorial](/develop/tutorials/quick-start/index.md).
 
 Replace the `uiEntryPoints` field of the manifest with the following:
 
@@ -151,7 +151,7 @@ function createLinesCommand(selection) {
 }
 ```
 
-1. This function only needs the first [contextual argument](/develop/plugin-development/plugin-structure/handlers/#contextual-arguments), `selection`, which gives access to the selection object inside XD.
+1. This function only needs the first [contextual argument](/develop/plugin-development/plugin-structure/handlers.md#contextual-arguments), `selection`, which gives access to the selection object inside XD.
 2. Create an empty array to contain all the `Line` objects we'll create. This array will be used in a later step.
 3. Loop over the `lineData` array, getting an individual `data` object each time through the loop.
 4. For each `data` object:

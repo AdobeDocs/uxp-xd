@@ -46,7 +46,7 @@ The region can be defined by passing a SceneNode, or by explicitly specifying a 
 
 | Param | Type       |
 | ----- | ---------- |
-| node  | [SceneNode](/develop/reference/SceneNode) |
+| node  | [SceneNode](/develop/reference/scene-node.md) |
 
 ### scrollIntoView(x, y, width, height)
 
@@ -87,7 +87,7 @@ The region can be defined by passing a SceneNode, or by explicitly specifying a 
 
 | Param | Type       |
 | ----- | ---------- |
-| node  | [SceneNode](/develop/reference/SceneNode) |
+| node  | [SceneNode](/develop/reference/scene-node.md) |
 
 ### zoomToRect(x, y, width, height)
 
@@ -104,7 +104,7 @@ The region can be defined by passing a SceneNode, or by explicitly specifying a 
 
 ▸ **bounds**: `{x:number, y:number, width:number, height:number}`
 
-The current viewport bounds expressed in [global coordinates](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/).
+The current viewport bounds expressed in [global coordinates](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units.md).
 
 **Kind**: static property of [viewport](#viewport)
 **Read only**: true

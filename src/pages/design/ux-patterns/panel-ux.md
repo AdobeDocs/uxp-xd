@@ -18,8 +18,8 @@ This section has recommendations when using a Plugins Panel - Non-Blocking UI. I
 
 ![XD frame example with panel](../ux-images/Panel-XDapplication-frame.png)
 
-----------
- <br />
+<HorizontalLine />
+ \<br/\>
 
 ## Overview
 
@@ -46,7 +46,7 @@ If the user has to login then provide a way for them to log out through the plug
 **Refresh**  
 If the plugin needs to refresh for the user to see new information then provide a way for the user to refresh/sync through the plugin UI
 
- <br />
+ \<br/\>
 
 ## Plugin launch pad and UI
 #### Launch Pad - built-in 
@@ -57,7 +57,7 @@ If the plugin needs to refresh for the user to see new information then provide 
 #### Panel UI
 ![Panel UI example](../ux-images/Panel-pattern-3.png)
 
- <br />
+ \<br/\>
 
 ## Contextual Feedback
 #### Selection based actions
@@ -118,7 +118,7 @@ This can also be a great opportunity to brand your empty states.
 
 ![Running an action and providing feedback example](../ux-images/Panel-pattern-8.png)
 
- <br />
+ \<br/\>
 
 ## Adaptive Layouts
 

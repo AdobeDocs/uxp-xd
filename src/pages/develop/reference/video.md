@@ -8,11 +8,11 @@ keywords:
 # Video
 
 **Kind**: class
-**Extends**: [SceneNode](/develop/reference/SceneNode)
+**Extends**: [SceneNode](/develop/reference/scene-node.md)
 
 **Since**: XD 45
 
-Video files can be [imported](/develop/reference/application/#import) into XD. Within XD, a user can control playback, mute/unmute audio, loop or trim video.
+Video files can be [imported](/develop/reference/application.md#import) into XD. Within XD, a user can control playback, mute/unmute audio, loop or trim video.
 
 Supported videos:
 * Format: MP4

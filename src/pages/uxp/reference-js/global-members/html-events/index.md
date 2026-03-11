@@ -1,4 +1,12 @@
-
-import Content from "uxp-documentation/src/pages/uxp/reference-js/Global Members/HTML Events/index.md";
-
-<Content query="product=xd"/>
+# HTML Events
+* [BaseUIEvent](base-ui-event.md)
+* [CloseEvent](close-event.md)
+* [DragEvent](drag-event.md)
+* [ErrorEvent](error-event.md)
+* [Event](event.md)
+* [EventTarget](event-target.md)
+* [GestureEvent](gesture-event.md)
+* [KeyboardEvent](keyboard-event.md)
+* [MessageEvent](message-event.md)
+* [PointerEvent](pointer-event.md)
+* [ProgressEvent](progress-event.md)

@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-<a name="attr" id="attr"></a>
+\<a name="attr" id="attr"\>\</a\>
 
 ## Attr
 
@@ -57,7 +57,7 @@ keywords:
     * [.removeEventListener(eventName, callback, [capture])](#eventtarget-removeeventlistener)
     * [.dispatchEvent(event)](#eventtarget-dispatchevent)
 
-<a name="new-attr-new" id="new-attr-new"></a>
+\<a name="new-attr-new" id="new-attr-new"\>\</a\>
 
 ### new Attr(document, nodeName)
 Creates an instance of Attr.
@@ -67,161 +67,161 @@ Creates an instance of Attr.
 | document | [`Document`](#document) |
 | nodeName | `string` |
 
-<a name="attr-nodename" id="attr-nodename"></a>
+\<a name="attr-nodename" id="attr-nodename"\>\</a\>
 
 ### attr.nodeName : `string`
 
 **Read only**
 
-<a name="attr-localname" id="attr-localname"></a>
+\<a name="attr-localname" id="attr-localname"\>\</a\>
 
 ### attr.localName : `string`
 
 **Read only**
 
-<a name="attr-name" id="attr-name"></a>
+\<a name="attr-name" id="attr-name"\>\</a\>
 
 ### attr.name : `string`
 
 **Read only**
 
-<a name="attr-specified" id="attr-specified"></a>
+\<a name="attr-specified" id="attr-specified"\>\</a\>
 
 ### attr.specified : `boolean`
 
 **Read only**
 
-<a name="attr-value" id="attr-value"></a>
+\<a name="attr-value" id="attr-value"\>\</a\>
 
 ### attr.value : `\*`
 
-<a name="attr-nodetype" id="attr-nodetype"></a>
+\<a name="attr-nodetype" id="attr-nodetype"\>\</a\>
 
 ### attr.nodeType : `number`
 
 **Read only**
 
-<a name="attr-nodevalue" id="attr-nodevalue"></a>
+\<a name="attr-nodevalue" id="attr-nodevalue"\>\</a\>
 
 ### attr.nodeValue : `\*`
 
-<a name="attr-ownerelement" id="attr-ownerelement"></a>
+\<a name="attr-ownerelement" id="attr-ownerelement"\>\</a\>
 
 ### attr.ownerElement : [`Element`](#element)
 
 **Read only**
 
-<a name="node-contenteditable" id="node-contenteditable"></a>
+\<a name="node-contenteditable" id="node-contenteditable"\>\</a\>
 
 ### attr.contentEditable
 
 **Read only**
 
-<a name="node-isconnected" id="node-isconnected"></a>
+\<a name="node-isconnected" id="node-isconnected"\>\</a\>
 
 ### attr.isConnected : `boolean`
 
 **Read only**
 
-<a name="node-parentnode" id="node-parentnode"></a>
+\<a name="node-parentnode" id="node-parentnode"\>\</a\>
 
 ### attr.parentNode : [`Node`](#node)
 
 **Read only**
 
-<a name="node-parentelement" id="node-parentelement"></a>
+\<a name="node-parentelement" id="node-parentelement"\>\</a\>
 
 ### attr.parentElement : [`Element`](#element)
 
 **Read only**
 
-<a name="node-firstchild" id="node-firstchild"></a>
+\<a name="node-firstchild" id="node-firstchild"\>\</a\>
 
 ### attr.firstChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-lastchild" id="node-lastchild"></a>
+\<a name="node-lastchild" id="node-lastchild"\>\</a\>
 
 ### attr.lastChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-previoussibling" id="node-previoussibling"></a>
+\<a name="node-previoussibling" id="node-previoussibling"\>\</a\>
 
 ### attr.previousSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-nextsibling" id="node-nextsibling"></a>
+\<a name="node-nextsibling" id="node-nextsibling"\>\</a\>
 
 ### attr.nextSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-firstelementchild" id="node-firstelementchild"></a>
+\<a name="node-firstelementchild" id="node-firstelementchild"\>\</a\>
 
 ### attr.firstElementChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-lastelementchild" id="node-lastelementchild"></a>
+\<a name="node-lastelementchild" id="node-lastelementchild"\>\</a\>
 
 ### attr.lastElementChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-previouselementsibling" id="node-previouselementsibling"></a>
+\<a name="node-previouselementsibling" id="node-previouselementsibling"\>\</a\>
 
 ### attr.previousElementSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-nextelementsibling" id="node-nextelementsibling"></a>
+\<a name="node-nextelementsibling" id="node-nextelementsibling"\>\</a\>
 
 ### attr.nextElementSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-textcontent" id="node-textcontent"></a>
+\<a name="node-textcontent" id="node-textcontent"\>\</a\>
 
 ### attr.textContent : `string`
 
-<a name="node-childnodes" id="node-childnodes"></a>
+\<a name="node-childnodes" id="node-childnodes"\>\</a\>
 
 ### attr.childNodes : [`NodeList`](#nodelist)
 
 **Read only**
 
-<a name="node-children" id="node-children"></a>
+\<a name="node-children" id="node-children"\>\</a\>
 
 ### attr.children : [`HTMLCollection`](#htmlcollection)
 
 **Read only**
 
-<a name="node-ownerdocument" id="node-ownerdocument"></a>
+\<a name="node-ownerdocument" id="node-ownerdocument"\>\</a\>
 
 ### attr.ownerDocument
 
 **Read only**
 
-<a name="node-attributes" id="node-attributes"></a>
+\<a name="node-attributes" id="node-attributes"\>\</a\>
 
 ### attr.attributes
 
 **Read only**
 
-<a name="attr-remove" id="attr-remove"></a>
+\<a name="attr-remove" id="attr-remove"\>\</a\>
 
 ### attr.remove()
 
 **Overrides**: [`remove`](#node-remove)
 
-<a name="node-haschildnodes" id="node-haschildnodes"></a>
+\<a name="node-haschildnodes" id="node-haschildnodes"\>\</a\>
 
 ### attr.hasChildNodes()
 
-<a name="node-clonenode" id="node-clonenode"></a>
+\<a name="node-clonenode" id="node-clonenode"\>\</a\>
 
 ### attr.cloneNode(deep)
 
@@ -229,7 +229,7 @@ Creates an instance of Attr.
 | --- | --- |
 | deep | `boolean` |
 
-<a name="node-appendchild" id="node-appendchild"></a>
+\<a name="node-appendchild" id="node-appendchild"\>\</a\>
 
 ### attr.appendChild(child)
 
@@ -237,7 +237,7 @@ Creates an instance of Attr.
 | --- | --- |
 | child | [`Node`](#node) |
 
-<a name="node-insertbefore" id="node-insertbefore"></a>
+\<a name="node-insertbefore" id="node-insertbefore"\>\</a\>
 
 ### attr.insertBefore(child, before)
 
@@ -246,7 +246,7 @@ Creates an instance of Attr.
 | child | [`Node`](#node) |
 | before | [`Node`](#node) |
 
-<a name="node-replacechild" id="node-replacechild"></a>
+\<a name="node-replacechild" id="node-replacechild"\>\</a\>
 
 ### attr.replaceChild(newChild, oldChild)
 
@@ -255,7 +255,7 @@ Creates an instance of Attr.
 | newChild | [`Node`](#node) |
 | oldChild | [`Node`](#node) |
 
-<a name="node-removechild" id="node-removechild"></a>
+\<a name="node-removechild" id="node-removechild"\>\</a\>
 
 ### attr.removeChild(child)
 
@@ -263,7 +263,7 @@ Creates an instance of Attr.
 | --- | --- |
 | child | [`Node`](#node) |
 
-<a name="node-before" id="node-before"></a>
+\<a name="node-before" id="node-before"\>\</a\>
 
 ### attr.before(...nodes)
 
@@ -271,7 +271,7 @@ Creates an instance of Attr.
 | --- | --- |
 | ...nodes | [`Array.<Node>`](#node) |
 
-<a name="node-after" id="node-after"></a>
+\<a name="node-after" id="node-after"\>\</a\>
 
 ### attr.after(...nodes)
 
@@ -279,7 +279,7 @@ Creates an instance of Attr.
 | --- | --- |
 | ...nodes | [`Array.<Node>`](#node) |
 
-<a name="node-replacewith" id="node-replacewith"></a>
+\<a name="node-replacewith" id="node-replacewith"\>\</a\>
 
 ### attr.replaceWith(...nodes)
 
@@ -287,7 +287,7 @@ Creates an instance of Attr.
 | --- | --- |
 | ...nodes | [`Array.<Node>`](#node) |
 
-<a name="node-contains" id="node-contains"></a>
+\<a name="node-contains" id="node-contains"\>\</a\>
 
 ### attr.contains(node)
 
@@ -295,7 +295,7 @@ Creates an instance of Attr.
 | --- | --- |
 | node | [`Node`](#node) |
 
-<a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"></a>
+\<a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"\>\</a\>
 
 ### attr.addEventListener(eventName, callback, [capture])
 
@@ -305,7 +305,7 @@ Creates an instance of Attr.
 | callback | `\*` |  |
 | [capture] | `boolean` | `false` |
 
-<a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"></a>
+\<a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"\>\</a\>
 
 ### attr.removeEventListener(eventName, callback, [capture])
 
@@ -315,7 +315,7 @@ Creates an instance of Attr.
 | callback | `\*` |  |
 | [capture] | `boolean` | `false` |
 
-<a name="eventtarget-dispatchevent" id="eventtarget-dispatchevent"></a>
+\<a name="eventtarget-dispatchevent" id="eventtarget-dispatchevent"\>\</a\>
 
 ### attr.dispatchEvent(event)
 

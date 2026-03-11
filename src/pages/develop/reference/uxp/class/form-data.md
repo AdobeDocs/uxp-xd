@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-<a name="module-global-formdata" id="module-global-formdata"></a>
+\<a name="module-global-formdata" id="module-global-formdata"\>\</a\>
 
 ## FormData
 
@@ -16,12 +16,12 @@ keywords:
     * [.append(key, value, [fileName])](#module-global-formdata-append)
     * [.entries()](#module-global-formdata-entries)
 
-<a name="new-module-global-formdata-new" id="new-module-global-formdata-new"></a>
+\<a name="new-module-global-formdata-new" id="new-module-global-formdata-new"\>\</a\>
 
 ### new FormData()
 The constructor initializes a FormData object.
 
-<a name="module-global-formdata-append" id="module-global-formdata-append"></a>
+\<a name="module-global-formdata-append" id="module-global-formdata-append"\>\</a\>
 
 ### formData.append(key, value, [fileName])
 Appends a key value pair into FormData.
@@ -35,7 +35,7 @@ Consequently, the File object and the cloned one refer to the same content.
 | value | `string` \| `ArrayBuffer` \| `TypedArray` \| `File` |  | a value for the pair |
 | [fileName] | `string` | `null` | the optional file name to use for a File object value. If not present, the file name would be taken from the name property of the File object. |
 
-<a name="module-global-formdata-entries" id="module-global-formdata-entries"></a>
+\<a name="module-global-formdata-entries" id="module-global-formdata-entries"\>\</a\>
 
 ### formData.entries()
 

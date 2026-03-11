@@ -10,21 +10,21 @@ keywords:
 
 UX Patterns will include UX requirements and/or UX best practices these will ensure your plugin follows XD user experience patterns.
 
-[Panel UX](/design/ux-patterns/panel-ux/)
+[Panel UX](/design/ux-patterns/panel-ux.md)
 
-[Modal UX](/design/ux-patterns/modal-ux/)
+[Modal UX](/design/ux-patterns/modal-ux.md)
 
-[Onboarding](/design/ux-patterns/onboarding/)
+[Onboarding](/design/ux-patterns/onboarding.md)
 
-[Navigation](/design/ux-patterns/navigation/)
+[Navigation](/design/ux-patterns/navigation.md)
 
-[Messaging](/design/ux-patterns/messaging/)
+[Messaging](/design/ux-patterns/messaging.md)
 
-[Branding](/design/ux-patterns/branding/)
+[Branding](/design/ux-patterns/branding.md)
 
-----------
+<HorizontalLine />
 
- <br />
+ \<br/\>
  
 ## Documentation
 

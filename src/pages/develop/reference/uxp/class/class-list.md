@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-<a name="classlist" id="classlist"></a>
+\<a name="classlist" id="classlist"\>\</a\>
 
 ## ClassList
 
@@ -33,18 +33,18 @@ keywords:
         * [.ClassList](#classlist-classlist)
             * [new ClassList(node)](#new-classlist-classlist-new)
 
-<a name="new-classlist-new" id="new-classlist-new"></a>
+\<a name="new-classlist-new" id="new-classlist-new"\>\</a\>
 
 ### new ClassList()
 Implements classlist
 
-<a name="classlist-value" id="classlist-value"></a>
+\<a name="classlist-value" id="classlist-value"\>\</a\>
 
 ### classList.value : `string`
 
 **Overrides**: [`value`](#domtokenlist-value)
 
-<a name="domtokenlist-length" id="domtokenlist-length"></a>
+\<a name="domtokenlist-length" id="domtokenlist-length"\>\</a\>
 
 ### classList.length
 Returns the number of tokens in the list
@@ -53,7 +53,7 @@ Returns the number of tokens in the list
 
 **See**: https://dom.spec.whatwg.org/#dom-domtokenlist-length
 
-<a name="domtokenlist-add" id="domtokenlist-add"></a>
+\<a name="domtokenlist-add" id="domtokenlist-add"\>\</a\>
 
 ### classList.add(...tokens)
 Adds the specified tokens to the token list. If the token is already present, no error is thrown.
@@ -68,7 +68,7 @@ Adds the specified tokens to the token list. If the token is already present, no
 | --- | --- |
 | ...tokens | `string` |
 
-<a name="domtokenlist-remove" id="domtokenlist-remove"></a>
+\<a name="domtokenlist-remove" id="domtokenlist-remove"\>\</a\>
 
 ### classList.remove(...tokens)
 Removes the specified items from the token list. If the token is not present, no error is thrown.
@@ -83,7 +83,7 @@ Removes the specified items from the token list. If the token is not present, no
 | --- | --- |
 | ...tokens | `string` |
 
-<a name="domtokenlist-replace" id="domtokenlist-replace"></a>
+\<a name="domtokenlist-replace" id="domtokenlist-replace"\>\</a\>
 
 ### classList.replace(oldToken, newToken)
 Replaces an old token with a new token. If the old token doesn't exist,
@@ -100,7 +100,7 @@ no action occurs, and `false` is returned.
 | oldToken | `any` |
 | newToken | `any` |
 
-<a name="domtokenlist-toggle" id="domtokenlist-toggle"></a>
+\<a name="domtokenlist-toggle" id="domtokenlist-toggle"\>\</a\>
 
 ### classList.toggle(token, force)
 Toggles a token within the list. If `force` is not present, then the following
@@ -127,7 +127,7 @@ If `force` is supplied, then:
 | token | `string` |
 | force | `boolean` |
 
-<a name="domtokenlist-item" id="domtokenlist-item"></a>
+\<a name="domtokenlist-item" id="domtokenlist-item"\>\</a\>
 
 ### classList.item(index)
 Return the item at the specified index, or `null` if the index is out-of-range
@@ -144,7 +144,7 @@ Return the item at the specified index, or `null` if the index is out-of-range
 | --- | --- |
 | index | `number` |
 
-<a name="domtokenlist-contains" id="domtokenlist-contains"></a>
+\<a name="domtokenlist-contains" id="domtokenlist-contains"\>\</a\>
 
 ### classList.contains(token)
 Returns whether the token is in the list or not.
@@ -161,7 +161,7 @@ Returns whether the token is in the list or not.
 | --- | --- |
 | token | `any` |
 
-<a name="domtokenlist-supports" id="domtokenlist-supports"></a>
+\<a name="domtokenlist-supports" id="domtokenlist-supports"\>\</a\>
 
 ### classList.supports(token)
 Returns `true` if the token is acceptable to the list; otherwise returns `false`.
@@ -176,11 +176,11 @@ any other method.
 | --- | --- |
 | token | `string` |
 
-<a name="classlist-classlist" id="classlist-classlist"></a>
+\<a name="classlist-classlist" id="classlist-classlist"\>\</a\>
 
 ### ClassList.ClassList
 
-<a name="new-classlist-classlist-new" id="new-classlist-classlist-new"></a>
+\<a name="new-classlist-classlist-new" id="new-classlist-classlist-new"\>\</a\>
 
 #### new ClassList(node)
 Creates an instance of ClassList.

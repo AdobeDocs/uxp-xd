@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-<a name="htmllabelelement" id="htmllabelelement"></a>
+\<a name="htmllabelelement" id="htmllabelelement"\>\</a\>
 
 ## HTMLLabelElement
 
@@ -99,7 +99,7 @@ keywords:
     * [.removeEventListener(eventName, callback, [capture])](#eventtarget-removeeventlistener)
     * [.dispatchEvent(event)](#eventtarget-dispatchevent)
 
-<a name="new-htmllabelelement-new" id="new-htmllabelelement-new"></a>
+\<a name="new-htmllabelelement-new" id="new-htmllabelelement-new"\>\</a\>
 
 ### new HTMLLabelElement(document, nodeName, namespaceURI)
 Creates an instance of HTMLLabelElement.
@@ -110,286 +110,286 @@ Creates an instance of HTMLLabelElement.
 | nodeName | `\*` |
 | namespaceURI | `\*` |
 
-<a name="htmllabelelement-control" id="htmllabelelement-control"></a>
+\<a name="htmllabelelement-control" id="htmllabelelement-control"\>\</a\>
 
 ### htmlLabelElement.control : [`HTMLElement`](#htmlelement)
 
 **Read only**
 
-<a name="htmlelement-dataset" id="htmlelement-dataset"></a>
+\<a name="htmlelement-dataset" id="htmlelement-dataset"\>\</a\>
 
 ### htmlLabelElement.dataset
 Access to all the custom data attributes (data-*) set.
 
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset
 
-<a name="element-nodename" id="element-nodename"></a>
+\<a name="element-nodename" id="element-nodename"\>\</a\>
 
 ### htmlLabelElement.nodeName : `string`
 
 **Read only**
 
-<a name="element-localname" id="element-localname"></a>
+\<a name="element-localname" id="element-localname"\>\</a\>
 
 ### htmlLabelElement.localName : `string`
 
 **Read only**
 
-<a name="element-tagname" id="element-tagname"></a>
+\<a name="element-tagname" id="element-tagname"\>\</a\>
 
 ### htmlLabelElement.tagName : `string`
 
 **Read only**
 
-<a name="element-nodetype" id="element-nodetype"></a>
+\<a name="element-nodetype" id="element-nodetype"\>\</a\>
 
 ### htmlLabelElement.nodeType : `number`
 
 **Read only**
 
-<a name="element-namespaceuri" id="element-namespaceuri"></a>
+\<a name="element-namespaceuri" id="element-namespaceuri"\>\</a\>
 
 ### htmlLabelElement.namespaceURI : `string`
 
 **Read only**
 
-<a name="element-id" id="element-id"></a>
+\<a name="element-id" id="element-id"\>\</a\>
 
 ### htmlLabelElement.id : `string`
 
-<a name="element-tabindex" id="element-tabindex"></a>
+\<a name="element-tabindex" id="element-tabindex"\>\</a\>
 
 ### htmlLabelElement.tabIndex : `number`
 
-<a name="element-classname" id="element-classname"></a>
+\<a name="element-classname" id="element-classname"\>\</a\>
 
 ### htmlLabelElement.className : `string`
 
-<a name="element-attributes" id="element-attributes"></a>
+\<a name="element-attributes" id="element-attributes"\>\</a\>
 
 ### htmlLabelElement.attributes : [`NamedNodeMap`](#namednodemap)
 
 **Read only**
 
-<a name="element-style" id="element-style"></a>
+\<a name="element-style" id="element-style"\>\</a\>
 
 ### htmlLabelElement.style : `Style`
 
 **Read only**
 
-<a name="element-clientleft" id="element-clientleft"></a>
+\<a name="element-clientleft" id="element-clientleft"\>\</a\>
 
 ### htmlLabelElement.clientLeft : `number`
 
 **Read only**
 
-<a name="element-clienttop" id="element-clienttop"></a>
+\<a name="element-clienttop" id="element-clienttop"\>\</a\>
 
 ### htmlLabelElement.clientTop : `number`
 
 **Read only**
 
-<a name="element-clientwidth" id="element-clientwidth"></a>
+\<a name="element-clientwidth" id="element-clientwidth"\>\</a\>
 
 ### htmlLabelElement.clientWidth : `number`
 
 **Read only**
 
-<a name="element-clientheight" id="element-clientheight"></a>
+\<a name="element-clientheight" id="element-clientheight"\>\</a\>
 
 ### htmlLabelElement.clientHeight : `number`
 
 **Read only**
 
-<a name="element-height" id="element-height"></a>
+\<a name="element-height" id="element-height"\>\</a\>
 
 ### htmlLabelElement.height : `string` \| `Number`
 The height of the element
 
-<a name="element-width" id="element-width"></a>
+\<a name="element-width" id="element-width"\>\</a\>
 
 ### htmlLabelElement.width : `string` \| `Number`
 The width of the element
 
-<a name="element-offsetparent" id="element-offsetparent"></a>
+\<a name="element-offsetparent" id="element-offsetparent"\>\</a\>
 
 ### htmlLabelElement.offsetParent : [`Element`](#element)
 
 **Read only**
 
-<a name="element-offsetleft" id="element-offsetleft"></a>
+\<a name="element-offsetleft" id="element-offsetleft"\>\</a\>
 
 ### htmlLabelElement.offsetLeft : `number`
 
 **Read only**
 
-<a name="element-offsettop" id="element-offsettop"></a>
+\<a name="element-offsettop" id="element-offsettop"\>\</a\>
 
 ### htmlLabelElement.offsetTop : `number`
 
 **Read only**
 
-<a name="element-offsetwidth" id="element-offsetwidth"></a>
+\<a name="element-offsetwidth" id="element-offsetwidth"\>\</a\>
 
 ### htmlLabelElement.offsetWidth : `number`
 
 **Read only**
 
-<a name="element-offsetheight" id="element-offsetheight"></a>
+\<a name="element-offsetheight" id="element-offsetheight"\>\</a\>
 
 ### htmlLabelElement.offsetHeight : `number`
 
 **Read only**
 
-<a name="element-scrollleft" id="element-scrollleft"></a>
+\<a name="element-scrollleft" id="element-scrollleft"\>\</a\>
 
 ### htmlLabelElement.scrollLeft : `number`
 
-<a name="element-scrolltop" id="element-scrolltop"></a>
+\<a name="element-scrolltop" id="element-scrolltop"\>\</a\>
 
 ### htmlLabelElement.scrollTop : `number`
 
-<a name="element-scrollwidth" id="element-scrollwidth"></a>
+\<a name="element-scrollwidth" id="element-scrollwidth"\>\</a\>
 
 ### htmlLabelElement.scrollWidth : `number`
 
 **Read only**
 
-<a name="element-scrollheight" id="element-scrollheight"></a>
+\<a name="element-scrollheight" id="element-scrollheight"\>\</a\>
 
 ### htmlLabelElement.scrollHeight : `number`
 
 **Read only**
 
-<a name="element-uxpcontainer" id="element-uxpcontainer"></a>
+\<a name="element-uxpcontainer" id="element-uxpcontainer"\>\</a\>
 
 ### htmlLabelElement.uxpContainer : [`UXPContainer`](#uxpcontainer)
 
 **Read only**
 
-<a name="element-disabled" id="element-disabled"></a>
+\<a name="element-disabled" id="element-disabled"\>\</a\>
 
 ### htmlLabelElement.disabled : `boolean`
 
-<a name="element-innerhtml" id="element-innerhtml"></a>
+\<a name="element-innerhtml" id="element-innerhtml"\>\</a\>
 
 ### htmlLabelElement.innerHTML : `string`
 
-<a name="element-outerhtml" id="element-outerhtml"></a>
+\<a name="element-outerhtml" id="element-outerhtml"\>\</a\>
 
 ### htmlLabelElement.outerHTML : `string`
 
-<a name="node-contenteditable" id="node-contenteditable"></a>
+\<a name="node-contenteditable" id="node-contenteditable"\>\</a\>
 
 ### htmlLabelElement.contentEditable
 
 **Read only**
 
-<a name="node-isconnected" id="node-isconnected"></a>
+\<a name="node-isconnected" id="node-isconnected"\>\</a\>
 
 ### htmlLabelElement.isConnected : `boolean`
 
 **Read only**
 
-<a name="node-parentnode" id="node-parentnode"></a>
+\<a name="node-parentnode" id="node-parentnode"\>\</a\>
 
 ### htmlLabelElement.parentNode : [`Node`](#node)
 
 **Read only**
 
-<a name="node-parentelement" id="node-parentelement"></a>
+\<a name="node-parentelement" id="node-parentelement"\>\</a\>
 
 ### htmlLabelElement.parentElement : [`Element`](#element)
 
 **Read only**
 
-<a name="node-firstchild" id="node-firstchild"></a>
+\<a name="node-firstchild" id="node-firstchild"\>\</a\>
 
 ### htmlLabelElement.firstChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-lastchild" id="node-lastchild"></a>
+\<a name="node-lastchild" id="node-lastchild"\>\</a\>
 
 ### htmlLabelElement.lastChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-previoussibling" id="node-previoussibling"></a>
+\<a name="node-previoussibling" id="node-previoussibling"\>\</a\>
 
 ### htmlLabelElement.previousSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-nextsibling" id="node-nextsibling"></a>
+\<a name="node-nextsibling" id="node-nextsibling"\>\</a\>
 
 ### htmlLabelElement.nextSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-firstelementchild" id="node-firstelementchild"></a>
+\<a name="node-firstelementchild" id="node-firstelementchild"\>\</a\>
 
 ### htmlLabelElement.firstElementChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-lastelementchild" id="node-lastelementchild"></a>
+\<a name="node-lastelementchild" id="node-lastelementchild"\>\</a\>
 
 ### htmlLabelElement.lastElementChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-previouselementsibling" id="node-previouselementsibling"></a>
+\<a name="node-previouselementsibling" id="node-previouselementsibling"\>\</a\>
 
 ### htmlLabelElement.previousElementSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-nextelementsibling" id="node-nextelementsibling"></a>
+\<a name="node-nextelementsibling" id="node-nextelementsibling"\>\</a\>
 
 ### htmlLabelElement.nextElementSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-textcontent" id="node-textcontent"></a>
+\<a name="node-textcontent" id="node-textcontent"\>\</a\>
 
 ### htmlLabelElement.textContent : `string`
 
-<a name="node-childnodes" id="node-childnodes"></a>
+\<a name="node-childnodes" id="node-childnodes"\>\</a\>
 
 ### htmlLabelElement.childNodes : [`NodeList`](#nodelist)
 
 **Read only**
 
-<a name="node-children" id="node-children"></a>
+\<a name="node-children" id="node-children"\>\</a\>
 
 ### htmlLabelElement.children : [`HTMLCollection`](#htmlcollection)
 
 **Read only**
 
-<a name="node-ownerdocument" id="node-ownerdocument"></a>
+\<a name="node-ownerdocument" id="node-ownerdocument"\>\</a\>
 
 ### htmlLabelElement.ownerDocument
 
 **Read only**
 
-<a name="element-scrollintoview" id="element-scrollintoview"></a>
+\<a name="element-scrollintoview" id="element-scrollintoview"\>\</a\>
 
 ### htmlLabelElement.scrollIntoView()
 
-<a name="element-scrollintoviewifneeded" id="element-scrollintoviewifneeded"></a>
+\<a name="element-scrollintoviewifneeded" id="element-scrollintoviewifneeded"\>\</a\>
 
 ### htmlLabelElement.scrollIntoViewIfNeeded()
 
-<a name="element-focus" id="element-focus"></a>
+\<a name="element-focus" id="element-focus"\>\</a\>
 
 ### htmlLabelElement.focus()
 
-<a name="element-blur" id="element-blur"></a>
+\<a name="element-blur" id="element-blur"\>\</a\>
 
 ### htmlLabelElement.blur()
 
-<a name="element-getattribute" id="element-getattribute"></a>
+\<a name="element-getattribute" id="element-getattribute"\>\</a\>
 
 ### htmlLabelElement.getAttribute(name)
 
@@ -397,7 +397,7 @@ The width of the element
 | --- | --- |
 | name | `string` |
 
-<a name="element-setattribute" id="element-setattribute"></a>
+\<a name="element-setattribute" id="element-setattribute"\>\</a\>
 
 ### htmlLabelElement.setAttribute(name, value)
 
@@ -406,7 +406,7 @@ The width of the element
 | name | `string` |
 | value | `string` |
 
-<a name="element-removeattribute" id="element-removeattribute"></a>
+\<a name="element-removeattribute" id="element-removeattribute"\>\</a\>
 
 ### htmlLabelElement.removeAttribute(name)
 
@@ -414,7 +414,7 @@ The width of the element
 | --- | --- |
 | name | `string` |
 
-<a name="element-hasattribute" id="element-hasattribute"></a>
+\<a name="element-hasattribute" id="element-hasattribute"\>\</a\>
 
 ### htmlLabelElement.hasAttribute(name)
 
@@ -422,7 +422,7 @@ The width of the element
 | --- | --- |
 | name | `string` |
 
-<a name="element-getattributenode" id="element-getattributenode"></a>
+\<a name="element-getattributenode" id="element-getattributenode"\>\</a\>
 
 ### htmlLabelElement.getAttributeNode(name)
 
@@ -430,7 +430,7 @@ The width of the element
 | --- | --- |
 | name | `string` |
 
-<a name="element-setattributenode" id="element-setattributenode"></a>
+\<a name="element-setattributenode" id="element-setattributenode"\>\</a\>
 
 ### htmlLabelElement.setAttributeNode(newAttr)
 
@@ -438,7 +438,7 @@ The width of the element
 | --- | --- |
 | newAttr | `\*` |
 
-<a name="element-removeattributenode" id="element-removeattributenode"></a>
+\<a name="element-removeattributenode" id="element-removeattributenode"\>\</a\>
 
 ### htmlLabelElement.removeAttributeNode(oldAttr)
 
@@ -446,11 +446,11 @@ The width of the element
 | --- | --- |
 | oldAttr | `\*` |
 
-<a name="element-click" id="element-click"></a>
+\<a name="element-click" id="element-click"\>\</a\>
 
 ### htmlLabelElement.click()
 
-<a name="element-getelementsbyclassname" id="element-getelementsbyclassname"></a>
+\<a name="element-getelementsbyclassname" id="element-getelementsbyclassname"\>\</a\>
 
 ### htmlLabelElement.getElementsByClassName(name)
 
@@ -458,7 +458,7 @@ The width of the element
 | --- | --- |
 | name | `string` |
 
-<a name="element-getelementsbytagname" id="element-getelementsbytagname"></a>
+\<a name="element-getelementsbytagname" id="element-getelementsbytagname"\>\</a\>
 
 ### htmlLabelElement.getElementsByTagName(name)
 
@@ -466,7 +466,7 @@ The width of the element
 | --- | --- |
 | name | `string` |
 
-<a name="element-queryselector" id="element-queryselector"></a>
+\<a name="element-queryselector" id="element-queryselector"\>\</a\>
 
 ### htmlLabelElement.querySelector(selector)
 
@@ -474,7 +474,7 @@ The width of the element
 | --- | --- |
 | selector | `string` |
 
-<a name="element-queryselectorall" id="element-queryselectorall"></a>
+\<a name="element-queryselectorall" id="element-queryselectorall"\>\</a\>
 
 ### htmlLabelElement.querySelectorAll(selector)
 
@@ -482,11 +482,11 @@ The width of the element
 | --- | --- |
 | selector | `string` |
 
-<a name="element-getboundingclientrect" id="element-getboundingclientrect"></a>
+\<a name="element-getboundingclientrect" id="element-getboundingclientrect"\>\</a\>
 
 ### htmlLabelElement.getBoundingClientRect()
 
-<a name="element-insertadjacenthtml" id="element-insertadjacenthtml"></a>
+\<a name="element-insertadjacenthtml" id="element-insertadjacenthtml"\>\</a\>
 
 ### htmlLabelElement.insertAdjacentHTML(position, value)
 
@@ -495,7 +495,7 @@ The width of the element
 | position |  |
 | value | `string` |
 
-<a name="element-insertadjacentelement" id="element-insertadjacentelement"></a>
+\<a name="element-insertadjacentelement" id="element-insertadjacentelement"\>\</a\>
 
 ### htmlLabelElement.insertAdjacentElement(position, node)
 
@@ -504,7 +504,7 @@ The width of the element
 | position | `\*` |
 | node | `\*` |
 
-<a name="element-insertadjacenttext" id="element-insertadjacenttext"></a>
+\<a name="element-insertadjacenttext" id="element-insertadjacenttext"\>\</a\>
 
 ### htmlLabelElement.insertAdjacentText(position, text)
 
@@ -513,11 +513,11 @@ The width of the element
 | position | `\*` |
 | text | `\*` |
 
-<a name="node-haschildnodes" id="node-haschildnodes"></a>
+\<a name="node-haschildnodes" id="node-haschildnodes"\>\</a\>
 
 ### htmlLabelElement.hasChildNodes()
 
-<a name="node-clonenode" id="node-clonenode"></a>
+\<a name="node-clonenode" id="node-clonenode"\>\</a\>
 
 ### htmlLabelElement.cloneNode(deep)
 
@@ -525,7 +525,7 @@ The width of the element
 | --- | --- |
 | deep | `boolean` |
 
-<a name="node-appendchild" id="node-appendchild"></a>
+\<a name="node-appendchild" id="node-appendchild"\>\</a\>
 
 ### htmlLabelElement.appendChild(child)
 
@@ -533,7 +533,7 @@ The width of the element
 | --- | --- |
 | child | [`Node`](#node) |
 
-<a name="node-insertbefore" id="node-insertbefore"></a>
+\<a name="node-insertbefore" id="node-insertbefore"\>\</a\>
 
 ### htmlLabelElement.insertBefore(child, before)
 
@@ -542,7 +542,7 @@ The width of the element
 | child | [`Node`](#node) |
 | before | [`Node`](#node) |
 
-<a name="node-replacechild" id="node-replacechild"></a>
+\<a name="node-replacechild" id="node-replacechild"\>\</a\>
 
 ### htmlLabelElement.replaceChild(newChild, oldChild)
 
@@ -551,7 +551,7 @@ The width of the element
 | newChild | [`Node`](#node) |
 | oldChild | [`Node`](#node) |
 
-<a name="node-removechild" id="node-removechild"></a>
+\<a name="node-removechild" id="node-removechild"\>\</a\>
 
 ### htmlLabelElement.removeChild(child)
 
@@ -559,11 +559,11 @@ The width of the element
 | --- | --- |
 | child | [`Node`](#node) |
 
-<a name="node-remove" id="node-remove"></a>
+\<a name="node-remove" id="node-remove"\>\</a\>
 
 ### htmlLabelElement.remove()
 
-<a name="node-before" id="node-before"></a>
+\<a name="node-before" id="node-before"\>\</a\>
 
 ### htmlLabelElement.before(...nodes)
 
@@ -571,7 +571,7 @@ The width of the element
 | --- | --- |
 | ...nodes | [`Array.<Node>`](#node) |
 
-<a name="node-after" id="node-after"></a>
+\<a name="node-after" id="node-after"\>\</a\>
 
 ### htmlLabelElement.after(...nodes)
 
@@ -579,7 +579,7 @@ The width of the element
 | --- | --- |
 | ...nodes | [`Array.<Node>`](#node) |
 
-<a name="node-replacewith" id="node-replacewith"></a>
+\<a name="node-replacewith" id="node-replacewith"\>\</a\>
 
 ### htmlLabelElement.replaceWith(...nodes)
 
@@ -587,7 +587,7 @@ The width of the element
 | --- | --- |
 | ...nodes | [`Array.<Node>`](#node) |
 
-<a name="node-contains" id="node-contains"></a>
+\<a name="node-contains" id="node-contains"\>\</a\>
 
 ### htmlLabelElement.contains(node)
 
@@ -595,7 +595,7 @@ The width of the element
 | --- | --- |
 | node | [`Node`](#node) |
 
-<a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"></a>
+\<a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"\>\</a\>
 
 ### htmlLabelElement.addEventListener(eventName, callback, [capture])
 
@@ -605,7 +605,7 @@ The width of the element
 | callback | `\*` |  |
 | [capture] | `boolean` | `false` |
 
-<a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"></a>
+\<a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"\>\</a\>
 
 ### htmlLabelElement.removeEventListener(eventName, callback, [capture])
 
@@ -615,7 +615,7 @@ The width of the element
 | callback | `\*` |  |
 | [capture] | `boolean` | `false` |
 
-<a name="eventtarget-dispatchevent" id="eventtarget-dispatchevent"></a>
+\<a name="eventtarget-dispatchevent" id="eventtarget-dispatchevent"\>\</a\>
 
 ### htmlLabelElement.dispatchEvent(event)
 

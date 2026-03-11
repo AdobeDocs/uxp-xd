@@ -10,8 +10,8 @@ keywords:
 
 Use this section to access the API references, know what are the currently known issues, and learn what is new and what has changed.
 
-- [API references](/develop/reference/how-to-read/)
-- [Known issues](/develop/known-issues/)
+- [API references](/develop/reference/how-to-read.md)
+- [Known issues](/develop/known-issues/index.md)
 - [Change log](/develop/changelog/)
 
 Here are some of the recommended next steps for you:

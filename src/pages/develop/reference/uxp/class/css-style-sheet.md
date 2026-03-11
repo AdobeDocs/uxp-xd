@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-<a name="cssstylesheet" id="cssstylesheet"></a>
+\<a name="cssstylesheet" id="cssstylesheet"\>\</a\>
 
 ## CSSStyleSheet
 
@@ -26,32 +26,32 @@ keywords:
     * [.insertRule(rule, [index])](#cssstylesheet-insertrule)
     * [.deleteRule(index)](#cssstylesheet-deleterule)
 
-<a name="new-cssstylesheet-new" id="new-cssstylesheet-new"></a>
+\<a name="new-cssstylesheet-new" id="new-cssstylesheet-new"\>\</a\>
 
 ### new CSSStyleSheet()
 Represents a CSS style sheet
 
-<a name="cssstylesheet-cssrules" id="cssstylesheet-cssrules"></a>
+\<a name="cssstylesheet-cssrules" id="cssstylesheet-cssrules"\>\</a\>
 
 ### cssStyleSheet.cssRules : [`CSSRuleList`](#cssrulelist)
 Return the list of CSS Rules
 
 **Read only**
 
-<a name="cssstylesheet-rules" id="cssstylesheet-rules"></a>
+\<a name="cssstylesheet-rules" id="cssstylesheet-rules"\>\</a\>
 
 ### cssStyleSheet.rules : [`CSSRuleList`](#cssrulelist)
 Return the list of CSS Rules
 
 **Read only**
 
-<a name="stylesheet-href" id="stylesheet-href"></a>
+\<a name="stylesheet-href" id="stylesheet-href"\>\</a\>
 
 ### cssStyleSheet.href : `DOMString`
 
 **Read only**
 
-<a name="stylesheet-type" id="stylesheet-type"></a>
+\<a name="stylesheet-type" id="stylesheet-type"\>\</a\>
 
 ### cssStyleSheet.type : `DOMString`
 
@@ -59,7 +59,7 @@ Return the list of CSS Rules
 
 **Read only**
 
-<a name="cssstylesheet-insertrule" id="cssstylesheet-insertrule"></a>
+\<a name="cssstylesheet-insertrule" id="cssstylesheet-insertrule"\>\</a\>
 
 ### cssStyleSheet.insertRule(rule, [index])
 Insert a CSS Rule at the specified index.
@@ -69,7 +69,7 @@ Insert a CSS Rule at the specified index.
 | rule | `\*` |  |
 | [index] | `number` | `0` |
 
-<a name="cssstylesheet-deleterule" id="cssstylesheet-deleterule"></a>
+\<a name="cssstylesheet-deleterule" id="cssstylesheet-deleterule"\>\</a\>
 
 ### cssStyleSheet.deleteRule(index)
 Delete the rule at the specified index

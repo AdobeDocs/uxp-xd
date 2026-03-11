@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-<a name="clearinterval" id="clearinterval"></a>
+\<a name="clearinterval" id="clearinterval"\>\</a\>
 
 ## clearInterval(obj)
 Cancels the requested interval.

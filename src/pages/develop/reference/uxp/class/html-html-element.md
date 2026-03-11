@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-<a name="htmlhtmlelement" id="htmlhtmlelement"></a>
+\<a name="htmlhtmlelement" id="htmlhtmlelement"\>\</a\>
 
 ## HTMLHtmlElement
 
@@ -98,7 +98,7 @@ keywords:
     * [.removeEventListener(eventName, callback, [capture])](#eventtarget-removeeventlistener)
     * [.dispatchEvent(event)](#eventtarget-dispatchevent)
 
-<a name="new-htmlhtmlelement-new" id="new-htmlhtmlelement-new"></a>
+\<a name="new-htmlhtmlelement-new" id="new-htmlhtmlelement-new"\>\</a\>
 
 ### new HTMLHtmlElement(document, nodeName, namespaceURI)
 Creates an instance of HTMLHtmlElement.
@@ -109,152 +109,152 @@ Creates an instance of HTMLHtmlElement.
 | nodeName | `\*` |
 | namespaceURI | `\*` |
 
-<a name="htmlelement-dataset" id="htmlelement-dataset"></a>
+\<a name="htmlelement-dataset" id="htmlelement-dataset"\>\</a\>
 
 ### htmlHtmlElement.dataset
 Access to all the custom data attributes (data-*) set.
 
 **See**: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset
 
-<a name="element-nodename" id="element-nodename"></a>
+\<a name="element-nodename" id="element-nodename"\>\</a\>
 
 ### htmlHtmlElement.nodeName : `string`
 
 **Read only**
 
-<a name="element-localname" id="element-localname"></a>
+\<a name="element-localname" id="element-localname"\>\</a\>
 
 ### htmlHtmlElement.localName : `string`
 
 **Read only**
 
-<a name="element-tagname" id="element-tagname"></a>
+\<a name="element-tagname" id="element-tagname"\>\</a\>
 
 ### htmlHtmlElement.tagName : `string`
 
 **Read only**
 
-<a name="element-nodetype" id="element-nodetype"></a>
+\<a name="element-nodetype" id="element-nodetype"\>\</a\>
 
 ### htmlHtmlElement.nodeType : `number`
 
 **Read only**
 
-<a name="element-namespaceuri" id="element-namespaceuri"></a>
+\<a name="element-namespaceuri" id="element-namespaceuri"\>\</a\>
 
 ### htmlHtmlElement.namespaceURI : `string`
 
 **Read only**
 
-<a name="element-id" id="element-id"></a>
+\<a name="element-id" id="element-id"\>\</a\>
 
 ### htmlHtmlElement.id : `string`
 
-<a name="element-tabindex" id="element-tabindex"></a>
+\<a name="element-tabindex" id="element-tabindex"\>\</a\>
 
 ### htmlHtmlElement.tabIndex : `number`
 
-<a name="element-classname" id="element-classname"></a>
+\<a name="element-classname" id="element-classname"\>\</a\>
 
 ### htmlHtmlElement.className : `string`
 
-<a name="element-attributes" id="element-attributes"></a>
+\<a name="element-attributes" id="element-attributes"\>\</a\>
 
 ### htmlHtmlElement.attributes : [`NamedNodeMap`](#namednodemap)
 
 **Read only**
 
-<a name="element-style" id="element-style"></a>
+\<a name="element-style" id="element-style"\>\</a\>
 
 ### htmlHtmlElement.style : `Style`
 
 **Read only**
 
-<a name="element-clientleft" id="element-clientleft"></a>
+\<a name="element-clientleft" id="element-clientleft"\>\</a\>
 
 ### htmlHtmlElement.clientLeft : `number`
 
 **Read only**
 
-<a name="element-clienttop" id="element-clienttop"></a>
+\<a name="element-clienttop" id="element-clienttop"\>\</a\>
 
 ### htmlHtmlElement.clientTop : `number`
 
 **Read only**
 
-<a name="element-clientwidth" id="element-clientwidth"></a>
+\<a name="element-clientwidth" id="element-clientwidth"\>\</a\>
 
 ### htmlHtmlElement.clientWidth : `number`
 
 **Read only**
 
-<a name="element-clientheight" id="element-clientheight"></a>
+\<a name="element-clientheight" id="element-clientheight"\>\</a\>
 
 ### htmlHtmlElement.clientHeight : `number`
 
 **Read only**
 
-<a name="element-height" id="element-height"></a>
+\<a name="element-height" id="element-height"\>\</a\>
 
 ### htmlHtmlElement.height : `string` \| `Number`
 The height of the element
 
-<a name="element-width" id="element-width"></a>
+\<a name="element-width" id="element-width"\>\</a\>
 
 ### htmlHtmlElement.width : `string` \| `Number`
 The width of the element
 
-<a name="element-offsetparent" id="element-offsetparent"></a>
+\<a name="element-offsetparent" id="element-offsetparent"\>\</a\>
 
 ### htmlHtmlElement.offsetParent : [`Element`](#element)
 
 **Read only**
 
-<a name="element-offsetleft" id="element-offsetleft"></a>
+\<a name="element-offsetleft" id="element-offsetleft"\>\</a\>
 
 ### htmlHtmlElement.offsetLeft : `number`
 
 **Read only**
 
-<a name="element-offsettop" id="element-offsettop"></a>
+\<a name="element-offsettop" id="element-offsettop"\>\</a\>
 
 ### htmlHtmlElement.offsetTop : `number`
 
 **Read only**
 
-<a name="element-offsetwidth" id="element-offsetwidth"></a>
+\<a name="element-offsetwidth" id="element-offsetwidth"\>\</a\>
 
 ### htmlHtmlElement.offsetWidth : `number`
 
 **Read only**
 
-<a name="element-offsetheight" id="element-offsetheight"></a>
+\<a name="element-offsetheight" id="element-offsetheight"\>\</a\>
 
 ### htmlHtmlElement.offsetHeight : `number`
 
 **Read only**
 
-<a name="element-scrollleft" id="element-scrollleft"></a>
+\<a name="element-scrollleft" id="element-scrollleft"\>\</a\>
 
 ### htmlHtmlElement.scrollLeft : `number`
 
-<a name="element-scrolltop" id="element-scrolltop"></a>
+\<a name="element-scrolltop" id="element-scrolltop"\>\</a\>
 
 ### htmlHtmlElement.scrollTop : `number`
 
-<a name="element-scrollwidth" id="element-scrollwidth"></a>
+\<a name="element-scrollwidth" id="element-scrollwidth"\>\</a\>
 
 ### htmlHtmlElement.scrollWidth : `number`
 
 **Read only**
 
-<a name="element-scrollheight" id="element-scrollheight"></a>
+\<a name="element-scrollheight" id="element-scrollheight"\>\</a\>
 
 ### htmlHtmlElement.scrollHeight : `number`
 
 **Read only**
 
-<a name="element-uxpcontainer" id="element-uxpcontainer"></a>
+\<a name="element-uxpcontainer" id="element-uxpcontainer"\>\</a\>
 
 ### htmlHtmlElement.uxpContainer : [`UXPContainer`](#uxpcontainer)
 
@@ -262,129 +262,129 @@ The width of the element
 
 **Read only**
 
-<a name="element-disabled" id="element-disabled"></a>
+\<a name="element-disabled" id="element-disabled"\>\</a\>
 
 ### htmlHtmlElement.disabled : `boolean`
 
-<a name="element-innerhtml" id="element-innerhtml"></a>
+\<a name="element-innerhtml" id="element-innerhtml"\>\</a\>
 
 ### htmlHtmlElement.innerHTML : `string`
 
-<a name="element-outerhtml" id="element-outerhtml"></a>
+\<a name="element-outerhtml" id="element-outerhtml"\>\</a\>
 
 ### htmlHtmlElement.outerHTML : `string`
 
-<a name="node-contenteditable" id="node-contenteditable"></a>
+\<a name="node-contenteditable" id="node-contenteditable"\>\</a\>
 
 ### htmlHtmlElement.contentEditable
 
 **Read only**
 
-<a name="node-isconnected" id="node-isconnected"></a>
+\<a name="node-isconnected" id="node-isconnected"\>\</a\>
 
 ### htmlHtmlElement.isConnected : `boolean`
 
 **Read only**
 
-<a name="node-parentnode" id="node-parentnode"></a>
+\<a name="node-parentnode" id="node-parentnode"\>\</a\>
 
 ### htmlHtmlElement.parentNode : [`Node`](#node)
 
 **Read only**
 
-<a name="node-parentelement" id="node-parentelement"></a>
+\<a name="node-parentelement" id="node-parentelement"\>\</a\>
 
 ### htmlHtmlElement.parentElement : [`Element`](#element)
 
 **Read only**
 
-<a name="node-firstchild" id="node-firstchild"></a>
+\<a name="node-firstchild" id="node-firstchild"\>\</a\>
 
 ### htmlHtmlElement.firstChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-lastchild" id="node-lastchild"></a>
+\<a name="node-lastchild" id="node-lastchild"\>\</a\>
 
 ### htmlHtmlElement.lastChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-previoussibling" id="node-previoussibling"></a>
+\<a name="node-previoussibling" id="node-previoussibling"\>\</a\>
 
 ### htmlHtmlElement.previousSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-nextsibling" id="node-nextsibling"></a>
+\<a name="node-nextsibling" id="node-nextsibling"\>\</a\>
 
 ### htmlHtmlElement.nextSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-firstelementchild" id="node-firstelementchild"></a>
+\<a name="node-firstelementchild" id="node-firstelementchild"\>\</a\>
 
 ### htmlHtmlElement.firstElementChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-lastelementchild" id="node-lastelementchild"></a>
+\<a name="node-lastelementchild" id="node-lastelementchild"\>\</a\>
 
 ### htmlHtmlElement.lastElementChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-previouselementsibling" id="node-previouselementsibling"></a>
+\<a name="node-previouselementsibling" id="node-previouselementsibling"\>\</a\>
 
 ### htmlHtmlElement.previousElementSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-nextelementsibling" id="node-nextelementsibling"></a>
+\<a name="node-nextelementsibling" id="node-nextelementsibling"\>\</a\>
 
 ### htmlHtmlElement.nextElementSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-textcontent" id="node-textcontent"></a>
+\<a name="node-textcontent" id="node-textcontent"\>\</a\>
 
 ### htmlHtmlElement.textContent : `string`
 
-<a name="node-childnodes" id="node-childnodes"></a>
+\<a name="node-childnodes" id="node-childnodes"\>\</a\>
 
 ### htmlHtmlElement.childNodes : [`NodeList`](#nodelist)
 
 **Read only**
 
-<a name="node-children" id="node-children"></a>
+\<a name="node-children" id="node-children"\>\</a\>
 
 ### htmlHtmlElement.children : [`HTMLCollection`](#htmlcollection)
 
 **Read only**
 
-<a name="node-ownerdocument" id="node-ownerdocument"></a>
+\<a name="node-ownerdocument" id="node-ownerdocument"\>\</a\>
 
 ### htmlHtmlElement.ownerDocument
 
 **Read only**
 
-<a name="element-scrollintoview" id="element-scrollintoview"></a>
+\<a name="element-scrollintoview" id="element-scrollintoview"\>\</a\>
 
 ### htmlHtmlElement.scrollIntoView()
 
-<a name="element-scrollintoviewifneeded" id="element-scrollintoviewifneeded"></a>
+\<a name="element-scrollintoviewifneeded" id="element-scrollintoviewifneeded"\>\</a\>
 
 ### htmlHtmlElement.scrollIntoViewIfNeeded()
 
-<a name="element-focus" id="element-focus"></a>
+\<a name="element-focus" id="element-focus"\>\</a\>
 
 ### htmlHtmlElement.focus()
 
-<a name="element-blur" id="element-blur"></a>
+\<a name="element-blur" id="element-blur"\>\</a\>
 
 ### htmlHtmlElement.blur()
 
-<a name="element-getattribute" id="element-getattribute"></a>
+\<a name="element-getattribute" id="element-getattribute"\>\</a\>
 
 ### htmlHtmlElement.getAttribute(name)
 
@@ -392,7 +392,7 @@ The width of the element
 | --- | --- |
 | name | `string` |
 
-<a name="element-setattribute" id="element-setattribute"></a>
+\<a name="element-setattribute" id="element-setattribute"\>\</a\>
 
 ### htmlHtmlElement.setAttribute(name, value)
 
@@ -401,7 +401,7 @@ The width of the element
 | name | `string` |
 | value | `string` |
 
-<a name="element-removeattribute" id="element-removeattribute"></a>
+\<a name="element-removeattribute" id="element-removeattribute"\>\</a\>
 
 ### htmlHtmlElement.removeAttribute(name)
 
@@ -409,7 +409,7 @@ The width of the element
 | --- | --- |
 | name | `string` |
 
-<a name="element-hasattribute" id="element-hasattribute"></a>
+\<a name="element-hasattribute" id="element-hasattribute"\>\</a\>
 
 ### htmlHtmlElement.hasAttribute(name)
 
@@ -417,7 +417,7 @@ The width of the element
 | --- | --- |
 | name | `string` |
 
-<a name="element-getattributenode" id="element-getattributenode"></a>
+\<a name="element-getattributenode" id="element-getattributenode"\>\</a\>
 
 ### htmlHtmlElement.getAttributeNode(name)
 
@@ -425,7 +425,7 @@ The width of the element
 | --- | --- |
 | name | `string` |
 
-<a name="element-setattributenode" id="element-setattributenode"></a>
+\<a name="element-setattributenode" id="element-setattributenode"\>\</a\>
 
 ### htmlHtmlElement.setAttributeNode(newAttr)
 
@@ -433,7 +433,7 @@ The width of the element
 | --- | --- |
 | newAttr | `\*` |
 
-<a name="element-removeattributenode" id="element-removeattributenode"></a>
+\<a name="element-removeattributenode" id="element-removeattributenode"\>\</a\>
 
 ### htmlHtmlElement.removeAttributeNode(oldAttr)
 
@@ -441,11 +441,11 @@ The width of the element
 | --- | --- |
 | oldAttr | `\*` |
 
-<a name="element-click" id="element-click"></a>
+\<a name="element-click" id="element-click"\>\</a\>
 
 ### htmlHtmlElement.click()
 
-<a name="element-getelementsbyclassname" id="element-getelementsbyclassname"></a>
+\<a name="element-getelementsbyclassname" id="element-getelementsbyclassname"\>\</a\>
 
 ### htmlHtmlElement.getElementsByClassName(name)
 
@@ -453,7 +453,7 @@ The width of the element
 | --- | --- |
 | name | `string` |
 
-<a name="element-getelementsbytagname" id="element-getelementsbytagname"></a>
+\<a name="element-getelementsbytagname" id="element-getelementsbytagname"\>\</a\>
 
 ### htmlHtmlElement.getElementsByTagName(name)
 
@@ -461,7 +461,7 @@ The width of the element
 | --- | --- |
 | name | `string` |
 
-<a name="element-queryselector" id="element-queryselector"></a>
+\<a name="element-queryselector" id="element-queryselector"\>\</a\>
 
 ### htmlHtmlElement.querySelector(selector)
 
@@ -469,7 +469,7 @@ The width of the element
 | --- | --- |
 | selector | `string` |
 
-<a name="element-queryselectorall" id="element-queryselectorall"></a>
+\<a name="element-queryselectorall" id="element-queryselectorall"\>\</a\>
 
 ### htmlHtmlElement.querySelectorAll(selector)
 
@@ -477,11 +477,11 @@ The width of the element
 | --- | --- |
 | selector | `string` |
 
-<a name="element-getboundingclientrect" id="element-getboundingclientrect"></a>
+\<a name="element-getboundingclientrect" id="element-getboundingclientrect"\>\</a\>
 
 ### htmlHtmlElement.getBoundingClientRect()
 
-<a name="element-insertadjacenthtml" id="element-insertadjacenthtml"></a>
+\<a name="element-insertadjacenthtml" id="element-insertadjacenthtml"\>\</a\>
 
 ### htmlHtmlElement.insertAdjacentHTML(position, value)
 
@@ -490,7 +490,7 @@ The width of the element
 | position |  |
 | value | `string` |
 
-<a name="element-insertadjacentelement" id="element-insertadjacentelement"></a>
+\<a name="element-insertadjacentelement" id="element-insertadjacentelement"\>\</a\>
 
 ### htmlHtmlElement.insertAdjacentElement(position, node)
 
@@ -499,7 +499,7 @@ The width of the element
 | position | `\*` |
 | node | `\*` |
 
-<a name="element-insertadjacenttext" id="element-insertadjacenttext"></a>
+\<a name="element-insertadjacenttext" id="element-insertadjacenttext"\>\</a\>
 
 ### htmlHtmlElement.insertAdjacentText(position, text)
 
@@ -508,11 +508,11 @@ The width of the element
 | position | `\*` |
 | text | `\*` |
 
-<a name="node-haschildnodes" id="node-haschildnodes"></a>
+\<a name="node-haschildnodes" id="node-haschildnodes"\>\</a\>
 
 ### htmlHtmlElement.hasChildNodes()
 
-<a name="node-clonenode" id="node-clonenode"></a>
+\<a name="node-clonenode" id="node-clonenode"\>\</a\>
 
 ### htmlHtmlElement.cloneNode(deep)
 
@@ -520,7 +520,7 @@ The width of the element
 | --- | --- |
 | deep | `boolean` |
 
-<a name="node-appendchild" id="node-appendchild"></a>
+\<a name="node-appendchild" id="node-appendchild"\>\</a\>
 
 ### htmlHtmlElement.appendChild(child)
 
@@ -528,7 +528,7 @@ The width of the element
 | --- | --- |
 | child | [`Node`](#node) |
 
-<a name="node-insertbefore" id="node-insertbefore"></a>
+\<a name="node-insertbefore" id="node-insertbefore"\>\</a\>
 
 ### htmlHtmlElement.insertBefore(child, before)
 
@@ -537,7 +537,7 @@ The width of the element
 | child | [`Node`](#node) |
 | before | [`Node`](#node) |
 
-<a name="node-replacechild" id="node-replacechild"></a>
+\<a name="node-replacechild" id="node-replacechild"\>\</a\>
 
 ### htmlHtmlElement.replaceChild(newChild, oldChild)
 
@@ -546,7 +546,7 @@ The width of the element
 | newChild | [`Node`](#node) |
 | oldChild | [`Node`](#node) |
 
-<a name="node-removechild" id="node-removechild"></a>
+\<a name="node-removechild" id="node-removechild"\>\</a\>
 
 ### htmlHtmlElement.removeChild(child)
 
@@ -554,11 +554,11 @@ The width of the element
 | --- | --- |
 | child | [`Node`](#node) |
 
-<a name="node-remove" id="node-remove"></a>
+\<a name="node-remove" id="node-remove"\>\</a\>
 
 ### htmlHtmlElement.remove()
 
-<a name="node-before" id="node-before"></a>
+\<a name="node-before" id="node-before"\>\</a\>
 
 ### htmlHtmlElement.before(...nodes)
 
@@ -566,7 +566,7 @@ The width of the element
 | --- | --- |
 | ...nodes | [`Array.<Node>`](#node) |
 
-<a name="node-after" id="node-after"></a>
+\<a name="node-after" id="node-after"\>\</a\>
 
 ### htmlHtmlElement.after(...nodes)
 
@@ -574,7 +574,7 @@ The width of the element
 | --- | --- |
 | ...nodes | [`Array.<Node>`](#node) |
 
-<a name="node-replacewith" id="node-replacewith"></a>
+\<a name="node-replacewith" id="node-replacewith"\>\</a\>
 
 ### htmlHtmlElement.replaceWith(...nodes)
 
@@ -582,7 +582,7 @@ The width of the element
 | --- | --- |
 | ...nodes | [`Array.<Node>`](#node) |
 
-<a name="node-contains" id="node-contains"></a>
+\<a name="node-contains" id="node-contains"\>\</a\>
 
 ### htmlHtmlElement.contains(node)
 
@@ -590,7 +590,7 @@ The width of the element
 | --- | --- |
 | node | [`Node`](#node) |
 
-<a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"></a>
+\<a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"\>\</a\>
 
 ### htmlHtmlElement.addEventListener(eventName, callback, [capture])
 
@@ -600,7 +600,7 @@ The width of the element
 | callback | `\*` |  |
 | [capture] | `boolean` | `false` |
 
-<a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"></a>
+\<a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"\>\</a\>
 
 ### htmlHtmlElement.removeEventListener(eventName, callback, [capture])
 
@@ -610,7 +610,7 @@ The width of the element
 | callback | `\*` |  |
 | [capture] | `boolean` | `false` |
 
-<a name="eventtarget-dispatchevent" id="eventtarget-dispatchevent"></a>
+\<a name="eventtarget-dispatchevent" id="eventtarget-dispatchevent"\>\</a\>
 
 ### htmlHtmlElement.dispatchEvent(event)
 

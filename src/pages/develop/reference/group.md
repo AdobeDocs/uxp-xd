@@ -9,7 +9,7 @@ keywords:
 # Group
 
 **Kind**: class
-**Extends**: [SceneNode](/develop/reference/SceneNode)
+**Extends**: [SceneNode](/develop/reference/scene-node.md)
 
 Group nodes represent two types of simple containers in XD:
 
@@ -19,7 +19,7 @@ Group nodes represent two types of simple containers in XD:
 
 Groups and other containers cannot be created directly using scenenode constructors, since you can't add a populated Group to the
 scenegraph (you can't add subtrees all at once) nor can you add an empty Group and then add children to it (can't add nodes outside
-the scope of the current _edit context_). Instead, to create Groups and other nested structures, use [commands](/develop/reference/commands/).
+the scope of the current _edit context_). Instead, to create Groups and other nested structures, use [commands](/develop/reference/commands.md).
 
 Plain Groups (as well as some other node types, like SymbolInstances) can have dynamic layout features enabled such as padding and
 stack layouts. These are sometimes referred to as Content-Aware Groups or Stack containers, but ultimately these appear in the API as
@@ -52,7 +52,7 @@ let group = selection.items[0];  // selection has been set to the new Group node
 ▸ **addChild**(`node`, `index`)
 
 Adds a child node to this container node. You can only add leaf nodes this way; to create structured subtrees of content,
-use [commands](/develop/reference/commands/).
+use [commands](/develop/reference/commands.md).
 
 | Param | Type         | Description                                                                                               |
 | ----- | ------------ | --------------------------------------------------------------------------------------------------------- |
@@ -103,18 +103,18 @@ Removes all children from this node. Equivalent to calling removeFromParent() on
 
 If true, Responsive Resize is enabled, and this node's children will use an intelligent layout algorithm whenever this node is resized.
 
-Returns undefined on node types that do not support Responsive Resize (such as RepeatGrid; see [horizontalConstraints](/develop/reference/SceneNode/#horizontalconstraints) docs for a
+Returns undefined on node types that do not support Responsive Resize (such as RepeatGrid; see [horizontalConstraints](/develop/reference/scene-node.md#horizontalconstraints) docs for a
 complete list). Attempting to set this property on such node types results in an error.
 
 **See**:
-- [horizontalConstraints](/develop/reference/SceneNode/#horizontalconstraints)
-- [verticalConstraints](/develop/reference/SceneNode/#verticalconstraints)
+- [horizontalConstraints](/develop/reference/scene-node.md#horizontalconstraints)
+- [verticalConstraints](/develop/reference/scene-node.md#verticalconstraints)
 
 **Kind**: instance property of [Group](#group)
 
 ## mask
 
-▸ **mask**: ?[SceneNode](/develop/reference/SceneNode)
+▸ **mask**: ?[SceneNode](/develop/reference/scene-node.md)
 
 The mask shape applied to this group, if any. This object is also present in the group's `children` list. Though it has no direct visual appearance of its own, the mask affects the entire group's appearance by clipping all its other content.
 
@@ -127,7 +127,7 @@ let group = ...;
 console.log("Type of group is: " + (group.mask ? "Masked Group" : "Plain Group"));
 ```
 
-To create a Masked Group, use [commands.createMaskGroup](/develop/reference/commands/#createmaskgroup) instead of [commands.group](/develop/reference/commands/#group).
+To create a Masked Group, use [commands.createMaskGroup](/develop/reference/commands.md#createmaskgroup) instead of [commands.group](/develop/reference/commands.md#group).
 
 **Kind**: instance property of [Group](#group)
 **Read only**: true

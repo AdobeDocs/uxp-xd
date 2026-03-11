@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-<a name="namednodemap" id="namednodemap"></a>
+\<a name="namednodemap" id="namednodemap"\>\</a\>
 
 ## NamedNodeMap
 
@@ -21,7 +21,7 @@ keywords:
     * [.removeNamedItem(name)](#namednodemap-removenameditem)
     * [.item(index)](#namednodemap-item)
 
-<a name="new-namednodemap-new" id="new-namednodemap-new"></a>
+\<a name="new-namednodemap-new" id="new-namednodemap-new"\>\</a\>
 
 ### new NamedNodeMap(node)
 Creates an instance of NamedNodeMap.
@@ -30,13 +30,13 @@ Creates an instance of NamedNodeMap.
 | --- | --- |
 | node | [`Node`](#node) |
 
-<a name="namednodemap-length" id="namednodemap-length"></a>
+\<a name="namednodemap-length" id="namednodemap-length"\>\</a\>
 
 ### namedNodeMap.length : `number`
 
 **Read only**
 
-<a name="namednodemap-getnameditem" id="namednodemap-getnameditem"></a>
+\<a name="namednodemap-getnameditem" id="namednodemap-getnameditem"\>\</a\>
 
 ### namedNodeMap.getNamedItem(name)
 
@@ -44,7 +44,7 @@ Creates an instance of NamedNodeMap.
 | --- | --- |
 | name | `\*` |
 
-<a name="namednodemap-setnameditem" id="namednodemap-setnameditem"></a>
+\<a name="namednodemap-setnameditem" id="namednodemap-setnameditem"\>\</a\>
 
 ### namedNodeMap.setNamedItem(attr)
 
@@ -52,7 +52,7 @@ Creates an instance of NamedNodeMap.
 | --- | --- |
 | attr | `\*` |
 
-<a name="namednodemap-removenameditem" id="namednodemap-removenameditem"></a>
+\<a name="namednodemap-removenameditem" id="namednodemap-removenameditem"\>\</a\>
 
 ### namedNodeMap.removeNamedItem(name)
 
@@ -60,7 +60,7 @@ Creates an instance of NamedNodeMap.
 | --- | --- |
 | name | `\*` |
 
-<a name="namednodemap-item" id="namednodemap-item"></a>
+\<a name="namednodemap-item" id="namednodemap-item"\>\</a\>
 
 ### namedNodeMap.item(index)
 

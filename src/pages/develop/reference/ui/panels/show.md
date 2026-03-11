@@ -8,7 +8,7 @@ keywords:
 
 # Panel show() callback
 
-The `show()` function is the one lifecycle method in [panel objects](/develop/plugin-development/plugin-structure/handlers/#panel) that is **required**. XD calls `show()` each time the user opens your panel.
+The `show()` function is the one lifecycle method in [panel objects](/develop/plugin-development/plugin-structure/handlers.md#panel) that is **required**. XD calls `show()` each time the user opens your panel.
 
 To populate the panel with UI elements, add DOM nodes to the `event.node` root node that is provided. There are two ways you can use `show()` to create your panel UI:
 
@@ -60,4 +60,4 @@ Note: once the panel has been created you don't need to touch the DOM at all for
 
 ### Panel content updating
 
-Whichever method you use, you'll typically also need to implement the [update() callback](/develop/reference/ui/panels/update/) in order to update your panel UI if the selection or XD document content changes while the panel is already open.
+Whichever method you use, you'll typically also need to implement the [update() callback](/develop/reference/ui/panels/update.md) in order to update your panel UI if the selection or XD document content changes while the panel is already open.

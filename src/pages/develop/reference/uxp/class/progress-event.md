@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-<a name="progressevent" id="progressevent"></a>
+\<a name="progressevent" id="progressevent"\>\</a\>
 
 ## ProgressEvent
 
@@ -40,75 +40,75 @@ keywords:
         * [.total](#progressevent-total)
         * [.initEvent(typeArg, bubbles, cancelable)](#progressevent-initevent)
 
-<a name="event-type" id="event-type"></a>
+\<a name="event-type" id="event-type"\>\</a\>
 
 ### progressEvent.type
 
 **Read only**
 
-<a name="event-istrusted" id="event-istrusted"></a>
+\<a name="event-istrusted" id="event-istrusted"\>\</a\>
 
 ### progressEvent.isTrusted : `boolean`
 
 **Read only**
 
-<a name="event-target" id="event-target"></a>
+\<a name="event-target" id="event-target"\>\</a\>
 
 ### progressEvent.target : [`Node`](#node)
 
 **Read only**
 
-<a name="event-currenttarget" id="event-currenttarget"></a>
+\<a name="event-currenttarget" id="event-currenttarget"\>\</a\>
 
 ### progressEvent.currentTarget : [`Node`](#node)
 
 **Read only**
 
-<a name="event-bubbles" id="event-bubbles"></a>
+\<a name="event-bubbles" id="event-bubbles"\>\</a\>
 
 ### progressEvent.bubbles : `boolean`
 
 **Read only**
 
-<a name="event-cancelable" id="event-cancelable"></a>
+\<a name="event-cancelable" id="event-cancelable"\>\</a\>
 
 ### progressEvent.cancelable : `boolean`
 
 **Read only**
 
-<a name="event-eventphase" id="event-eventphase"></a>
+\<a name="event-eventphase" id="event-eventphase"\>\</a\>
 
 ### progressEvent.eventPhase
 
 **Read only**
 
-<a name="event-defaultprevented" id="event-defaultprevented"></a>
+\<a name="event-defaultprevented" id="event-defaultprevented"\>\</a\>
 
 ### progressEvent.defaultPrevented : `boolean`
 
 **Read only**
 
-<a name="event-returnvalue" id="event-returnvalue"></a>
+\<a name="event-returnvalue" id="event-returnvalue"\>\</a\>
 
 ### progressEvent.returnValue : `\*`
 
-<a name="event-preventdefault" id="event-preventdefault"></a>
+\<a name="event-preventdefault" id="event-preventdefault"\>\</a\>
 
 ### progressEvent.preventDefault()
 
-<a name="event-stopimmediatepropagation" id="event-stopimmediatepropagation"></a>
+\<a name="event-stopimmediatepropagation" id="event-stopimmediatepropagation"\>\</a\>
 
 ### progressEvent.stopImmediatePropagation()
 
-<a name="event-stoppropagation" id="event-stoppropagation"></a>
+\<a name="event-stoppropagation" id="event-stoppropagation"\>\</a\>
 
 ### progressEvent.stopPropagation()
 
-<a name="progressevent-module-exports" id="progressevent-module-exports"></a>
+\<a name="progressevent-module-exports" id="progressevent-module-exports"\>\</a\>
 
 ### ProgressEvent.module.exports
 
-<a name="new-progressevent-module-exports-new" id="new-progressevent-module-exports-new"></a>
+\<a name="new-progressevent-module-exports-new" id="new-progressevent-module-exports-new"\>\</a\>
 
 #### new module.exports(typeArg, [eventInit])
 Creates an instance of ProgressEvent.
@@ -118,25 +118,25 @@ Creates an instance of ProgressEvent.
 | typeArg | `\*` |  |
 | [eventInit] | `\*` | `{}` |
 
-<a name="progressevent-lengthcomputable" id="progressevent-lengthcomputable"></a>
+\<a name="progressevent-lengthcomputable" id="progressevent-lengthcomputable"\>\</a\>
 
 ### ProgressEvent.lengthComputable
 
 **Read only**
 
-<a name="progressevent-loaded" id="progressevent-loaded"></a>
+\<a name="progressevent-loaded" id="progressevent-loaded"\>\</a\>
 
 ### ProgressEvent.loaded
 
 **Read only**
 
-<a name="progressevent-total" id="progressevent-total"></a>
+\<a name="progressevent-total" id="progressevent-total"\>\</a\>
 
 ### ProgressEvent.total
 
 **Read only**
 
-<a name="progressevent-initevent" id="progressevent-initevent"></a>
+\<a name="progressevent-initevent" id="progressevent-initevent"\>\</a\>
 
 ### ProgressEvent.initEvent(typeArg, bubbles, cancelable)
 

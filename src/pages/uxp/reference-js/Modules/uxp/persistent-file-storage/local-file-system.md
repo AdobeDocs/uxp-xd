@@ -1,4 +1,6 @@
 
-import Content from "uxp-documentation/src/pages/uxp/reference-js/Modules/uxp/Persistent File Storage/localFileSystem";
+\<a name="module-storage--localfilesystem" id="module-storage--localfilesystem"\>\</a\>
 
-<Content query="product=xd"/>
+# require('uxp').storage.localFileSystem
+
+  

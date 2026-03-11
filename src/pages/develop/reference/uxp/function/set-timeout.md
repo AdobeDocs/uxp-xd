@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-<a name="settimeout" id="settimeout"></a>
+\<a name="settimeout" id="settimeout"\>\</a\>
 
 ## setTimeout(callback, delta)
 Creates a request to call `callback` after `delta` milliseconds. The

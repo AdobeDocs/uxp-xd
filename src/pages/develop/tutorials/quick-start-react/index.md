@@ -16,7 +16,7 @@ Once you're done, you'll have a solid grasp of the steps to take when starting t
 
 - Basic knowledge of HTML, CSS, JavaScript, and React
 - A text editor to write your code in (like VSCode, Sublime Text, Brackets, Atom, etc)
-- [Quick Start tutorial](/develop/tutorials/quick-start/)
+- [Quick Start tutorial](/develop/tutorials/quick-start/index.md)
 - [node](https://nodejs.org/en/) and [npm](https://www.npmjs.com/get-npm) installed
 
 ## Development Steps
@@ -173,7 +173,7 @@ Be sure to replace the `id` value with the unique plugin ID you get from the Ado
 ```
 
 > **Info**
-> Make sure to read [Quick Start tutorial](/develop/tutorials/quick-start/) to learn how to get your unique plugin ID from the Adobe Developer Console.
+> Make sure to read [Quick Start tutorial](/develop/tutorials/quick-start/index.md) to learn how to get your unique plugin ID from the Adobe Developer Console.
 
 If you're curious about what each entry in the manifest means, [see the manifest documentation](/develop/plugin-development/plugin-structure/manifest/), where you can also learn about all manifest requirements for a plugin to be published in the XD Plugin Manager.
 
@@ -181,7 +181,7 @@ The value of the `commandId` property may be any string; in this case, it's `mai
 
 ### 4. Create your plugin’s code
 
-Next, we need to create the JavaScript code for our plugin. As noted in the [Quick Start tutorial](/develop/tutorials/quick-start/), the code lives in a file named `main.js`. This file will be automatically created when Webpack compiles all JavaScript files in your `src` folder.
+Next, we need to create the JavaScript code for our plugin. As noted in the [Quick Start tutorial](/develop/tutorials/quick-start/index.md), the code lives in a file named `main.js`. This file will be automatically created when Webpack compiles all JavaScript files in your `src` folder.
 
 In this tutorial, the `src` folder will contain the following:
 

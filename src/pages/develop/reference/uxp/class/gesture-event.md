@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-<a name="gestureevent" id="gestureevent"></a>
+\<a name="gestureevent" id="gestureevent"\>\</a\>
 
 ## GestureEvent
 
@@ -67,7 +67,7 @@ keywords:
     * [.stopImmediatePropagation()](#event-stopimmediatepropagation)
     * [.stopPropagation()](#event-stoppropagation)
 
-<a name="new-gestureevent-new" id="new-gestureevent-new"></a>
+\<a name="new-gestureevent-new" id="new-gestureevent-new"\>\</a\>
 
 ### new GestureEvent(type, eventInit)
 Creates an instance of GestureEvent.
@@ -77,289 +77,289 @@ Creates an instance of GestureEvent.
 | type | `\*` |
 | eventInit | `\*` |
 
-<a name="gestureevent-expansion" id="gestureevent-expansion"></a>
+\<a name="gestureevent-expansion" id="gestureevent-expansion"\>\</a\>
 
 ### gestureEvent.expansion : `number`
 
 **Read only**
 
-<a name="gestureevent-rotation" id="gestureevent-rotation"></a>
+\<a name="gestureevent-rotation" id="gestureevent-rotation"\>\</a\>
 
 ### gestureEvent.rotation : `number`
 
 **Read only**
 
-<a name="gestureevent-scale" id="gestureevent-scale"></a>
+\<a name="gestureevent-scale" id="gestureevent-scale"\>\</a\>
 
 ### gestureEvent.scale : `number`
 
 **Read only**
 
-<a name="gestureevent-translationx" id="gestureevent-translationx"></a>
+\<a name="gestureevent-translationx" id="gestureevent-translationx"\>\</a\>
 
 ### gestureEvent.translationX : `number`
 
 **Read only**
 
-<a name="gestureevent-translationy" id="gestureevent-translationy"></a>
+\<a name="gestureevent-translationy" id="gestureevent-translationy"\>\</a\>
 
 ### gestureEvent.translationY : `number`
 
 **Read only**
 
-<a name="gestureevent-velocityangular" id="gestureevent-velocityangular"></a>
+\<a name="gestureevent-velocityangular" id="gestureevent-velocityangular"\>\</a\>
 
 ### gestureEvent.velocityAngular : `number`
 
 **Read only**
 
-<a name="gestureevent-velocityexpansion" id="gestureevent-velocityexpansion"></a>
+\<a name="gestureevent-velocityexpansion" id="gestureevent-velocityexpansion"\>\</a\>
 
 ### gestureEvent.velocityExpansion : `number`
 
 **Read only**
 
-<a name="gestureevent-velocityx" id="gestureevent-velocityx"></a>
+\<a name="gestureevent-velocityx" id="gestureevent-velocityx"\>\</a\>
 
 ### gestureEvent.velocityX : `number`
 
 **Read only**
 
-<a name="gestureevent-velocityy" id="gestureevent-velocityy"></a>
+\<a name="gestureevent-velocityy" id="gestureevent-velocityy"\>\</a\>
 
 ### gestureEvent.velocityY : `number`
 
 **Read only**
 
-<a name="baseuievent-pointerid" id="baseuievent-pointerid"></a>
+\<a name="baseuievent-pointerid" id="baseuievent-pointerid"\>\</a\>
 
 ### gestureEvent.pointerId
 
 **Read only**
 
-<a name="baseuievent-width" id="baseuievent-width"></a>
+\<a name="baseuievent-width" id="baseuievent-width"\>\</a\>
 
 ### gestureEvent.width : `number`
 
 **Read only**
 
-<a name="baseuievent-height" id="baseuievent-height"></a>
+\<a name="baseuievent-height" id="baseuievent-height"\>\</a\>
 
 ### gestureEvent.height : `number`
 
 **Read only**
 
-<a name="baseuievent-pressure" id="baseuievent-pressure"></a>
+\<a name="baseuievent-pressure" id="baseuievent-pressure"\>\</a\>
 
 ### gestureEvent.pressure : `number`
 
 **Read only**
 
-<a name="baseuievent-tangentialpressure" id="baseuievent-tangentialpressure"></a>
+\<a name="baseuievent-tangentialpressure" id="baseuievent-tangentialpressure"\>\</a\>
 
 ### gestureEvent.tangentialPressure : `number`
 
 **Read only**
 
-<a name="baseuievent-tiltx" id="baseuievent-tiltx"></a>
+\<a name="baseuievent-tiltx" id="baseuievent-tiltx"\>\</a\>
 
 ### gestureEvent.tiltX : `number`
 
 **Read only**
 
-<a name="baseuievent-tilty" id="baseuievent-tilty"></a>
+\<a name="baseuievent-tilty" id="baseuievent-tilty"\>\</a\>
 
 ### gestureEvent.tiltY : `number`
 
 **Read only**
 
-<a name="baseuievent-twist" id="baseuievent-twist"></a>
+\<a name="baseuievent-twist" id="baseuievent-twist"\>\</a\>
 
 ### gestureEvent.twist : `number`
 
 **Read only**
 
-<a name="baseuievent-clientx" id="baseuievent-clientx"></a>
+\<a name="baseuievent-clientx" id="baseuievent-clientx"\>\</a\>
 
 ### gestureEvent.clientX : `number`
 
 **Read only**
 
-<a name="baseuievent-clienty" id="baseuievent-clienty"></a>
+\<a name="baseuievent-clienty" id="baseuievent-clienty"\>\</a\>
 
 ### gestureEvent.clientY : `number`
 
 **Read only**
 
-<a name="baseuievent-offsetx" id="baseuievent-offsetx"></a>
+\<a name="baseuievent-offsetx" id="baseuievent-offsetx"\>\</a\>
 
 ### gestureEvent.offsetX : `number`
 
 **Read only**
 
-<a name="baseuievent-offsety" id="baseuievent-offsety"></a>
+\<a name="baseuievent-offsety" id="baseuievent-offsety"\>\</a\>
 
 ### gestureEvent.offsetY : `number`
 
 **Read only**
 
-<a name="baseuievent-pagex" id="baseuievent-pagex"></a>
+\<a name="baseuievent-pagex" id="baseuievent-pagex"\>\</a\>
 
 ### gestureEvent.pageX : `number`
 
 **Read only**
 
-<a name="baseuievent-pagey" id="baseuievent-pagey"></a>
+\<a name="baseuievent-pagey" id="baseuievent-pagey"\>\</a\>
 
 ### gestureEvent.pageY : `number`
 
 **Read only**
 
-<a name="baseuievent-screenx" id="baseuievent-screenx"></a>
+\<a name="baseuievent-screenx" id="baseuievent-screenx"\>\</a\>
 
 ### gestureEvent.screenX : `number`
 
 **Read only**
 
-<a name="baseuievent-screeny" id="baseuievent-screeny"></a>
+\<a name="baseuievent-screeny" id="baseuievent-screeny"\>\</a\>
 
 ### gestureEvent.screenY : `number`
 
 **Read only**
 
-<a name="baseuievent-movementx" id="baseuievent-movementx"></a>
+\<a name="baseuievent-movementx" id="baseuievent-movementx"\>\</a\>
 
 ### gestureEvent.movementX : `number`
 
 **Read only**
 
-<a name="baseuievent-movementy" id="baseuievent-movementy"></a>
+\<a name="baseuievent-movementy" id="baseuievent-movementy"\>\</a\>
 
 ### gestureEvent.movementY : `number`
 
 **Read only**
 
-<a name="baseuievent-button" id="baseuievent-button"></a>
+\<a name="baseuievent-button" id="baseuievent-button"\>\</a\>
 
 ### gestureEvent.button : `number`
 
 **Read only**
 
-<a name="baseuievent-buttons" id="baseuievent-buttons"></a>
+\<a name="baseuievent-buttons" id="baseuievent-buttons"\>\</a\>
 
 ### gestureEvent.buttons
 
 **Read only**
 
-<a name="baseuievent-detail" id="baseuievent-detail"></a>
+\<a name="baseuievent-detail" id="baseuievent-detail"\>\</a\>
 
 ### gestureEvent.detail
 
 **Read only**
 
-<a name="baseuievent-pointertype" id="baseuievent-pointertype"></a>
+\<a name="baseuievent-pointertype" id="baseuievent-pointertype"\>\</a\>
 
 ### gestureEvent.pointerType
 
 **Read only**
 
-<a name="baseuievent-altkey" id="baseuievent-altkey"></a>
+\<a name="baseuievent-altkey" id="baseuievent-altkey"\>\</a\>
 
 ### gestureEvent.altKey
 
 **Read only**
 
-<a name="baseuievent-shiftkey" id="baseuievent-shiftkey"></a>
+\<a name="baseuievent-shiftkey" id="baseuievent-shiftkey"\>\</a\>
 
 ### gestureEvent.shiftKey
 
 **Read only**
 
-<a name="baseuievent-metakey" id="baseuievent-metakey"></a>
+\<a name="baseuievent-metakey" id="baseuievent-metakey"\>\</a\>
 
 ### gestureEvent.metaKey
 
 **Read only**
 
-<a name="baseuievent-ctrlkey" id="baseuievent-ctrlkey"></a>
+\<a name="baseuievent-ctrlkey" id="baseuievent-ctrlkey"\>\</a\>
 
 ### gestureEvent.ctrlKey
 
 **Read only**
 
-<a name="baseuievent-isprimary" id="baseuievent-isprimary"></a>
+\<a name="baseuievent-isprimary" id="baseuievent-isprimary"\>\</a\>
 
 ### gestureEvent.isPrimary
 
 **Read only**
 
-<a name="baseuievent-which" id="baseuievent-which"></a>
+\<a name="baseuievent-which" id="baseuievent-which"\>\</a\>
 
 ### gestureEvent.which
 
 **Read only**
 
-<a name="event-type" id="event-type"></a>
+\<a name="event-type" id="event-type"\>\</a\>
 
 ### gestureEvent.type
 
 **Read only**
 
-<a name="event-istrusted" id="event-istrusted"></a>
+\<a name="event-istrusted" id="event-istrusted"\>\</a\>
 
 ### gestureEvent.isTrusted : `boolean`
 
 **Read only**
 
-<a name="event-target" id="event-target"></a>
+\<a name="event-target" id="event-target"\>\</a\>
 
 ### gestureEvent.target : [`Node`](#node)
 
 **Read only**
 
-<a name="event-currenttarget" id="event-currenttarget"></a>
+\<a name="event-currenttarget" id="event-currenttarget"\>\</a\>
 
 ### gestureEvent.currentTarget : [`Node`](#node)
 
 **Read only**
 
-<a name="event-bubbles" id="event-bubbles"></a>
+\<a name="event-bubbles" id="event-bubbles"\>\</a\>
 
 ### gestureEvent.bubbles : `boolean`
 
 **Read only**
 
-<a name="event-cancelable" id="event-cancelable"></a>
+\<a name="event-cancelable" id="event-cancelable"\>\</a\>
 
 ### gestureEvent.cancelable : `boolean`
 
 **Read only**
 
-<a name="event-eventphase" id="event-eventphase"></a>
+\<a name="event-eventphase" id="event-eventphase"\>\</a\>
 
 ### gestureEvent.eventPhase
 
 **Read only**
 
-<a name="event-defaultprevented" id="event-defaultprevented"></a>
+\<a name="event-defaultprevented" id="event-defaultprevented"\>\</a\>
 
 ### gestureEvent.defaultPrevented : `boolean`
 
 **Read only**
 
-<a name="event-returnvalue" id="event-returnvalue"></a>
+\<a name="event-returnvalue" id="event-returnvalue"\>\</a\>
 
 ### gestureEvent.returnValue : `\*`
 
-<a name="event-preventdefault" id="event-preventdefault"></a>
+\<a name="event-preventdefault" id="event-preventdefault"\>\</a\>
 
 ### gestureEvent.preventDefault()
 
-<a name="event-stopimmediatepropagation" id="event-stopimmediatepropagation"></a>
+\<a name="event-stopimmediatepropagation" id="event-stopimmediatepropagation"\>\</a\>
 
 ### gestureEvent.stopImmediatePropagation()
 
-<a name="event-stoppropagation" id="event-stoppropagation"></a>
+\<a name="event-stoppropagation" id="event-stoppropagation"\>\</a\>
 
 ### gestureEvent.stopPropagation()
 

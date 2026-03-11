@@ -7,7 +7,7 @@ keywords:
 ---
 
 
-<a name="eventtarget" id="eventtarget"></a>
+\<a name="eventtarget" id="eventtarget"\>\</a\>
 
 ## EventTarget
 
@@ -18,7 +18,7 @@ keywords:
     * [.removeEventListener(eventName, callback, [capture])](#eventtarget-removeeventlistener)
     * [.dispatchEvent(event)](#eventtarget-dispatchevent)
 
-<a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"></a>
+\<a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"\>\</a\>
 
 ### eventTarget.addEventListener(eventName, callback, [capture])
 
@@ -28,7 +28,7 @@ keywords:
 | callback | `\*` |  |
 | [capture] | `boolean` | `false` |
 
-<a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"></a>
+\<a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"\>\</a\>
 
 ### eventTarget.removeEventListener(eventName, callback, [capture])
 
@@ -38,7 +38,7 @@ keywords:
 | callback | `\*` |  |
 | [capture] | `boolean` | `false` |
 
-<a name="eventtarget-dispatchevent" id="eventtarget-dispatchevent"></a>
+\<a name="eventtarget-dispatchevent" id="eventtarget-dispatchevent"\>\</a\>
 
 ### eventTarget.dispatchEvent(event)
 

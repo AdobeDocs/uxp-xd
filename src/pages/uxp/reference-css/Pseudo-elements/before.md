@@ -1,4 +1,18 @@
+---
+jsDoc: true
+---
+# ::before
 
-import Content from "uxp-documentation/src/pages/uxp/reference-css/Pseudo-elements/before";
+**Since** UXP v3.0
 
-<Content query="product=xd"/>
+Creates a pseudo-element before the matched element. 
+
+**See:** https://developer.mozilla.org/en-US/docs/Web/CSS/::before
+
+**Example:**
+
+```css
+.addBullet > *::before 
+    content: "•";
+}
+```

@@ -1,4 +1,16 @@
+---
+jsDoc: true
+---
+# Identifier selector
 
-import Content from "uxp-documentation/src/pages/uxp/reference-css/Selectors/Identifier selector";
+**Since** UXP v3.0
 
-<Content query="product=xd"/>
+**See**: https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors
+
+**Example**
+
+```css
+#danger {
+    background-color: red;
+}
+```

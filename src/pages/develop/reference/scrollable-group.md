@@ -9,7 +9,7 @@ keywords:
 # ScrollableGroup
 
 **Kind**: class
-**Extends**: [SceneNode](/develop/reference/SceneNode)
+**Extends**: [SceneNode](/develop/reference/scene-node.md)
 **Since:** XD 30
 
 ScrollableGroup nodes are content that users can interactively scroll around. Content is viewed through a [viewport](#viewport),
@@ -35,14 +35,14 @@ PANNING enables scrolling on both axes.
 The viewport is a rectangle whose bounds are defined explicitly on scrolling axes and fit automatically to the
 content on non-scrolling axes:
 
-- On a scrolling axis, the bounds are specified in [local coordinates](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units/)
+- On a scrolling axis, the bounds are specified in [local coordinates](/develop/plugin-development/xd-concepts/coordinate-spaces-and-units.md)
   using the `viewport` values specified here.
 - On a non-scrolling axis, the bounds are automatically calculated to exactly fit the content (just like the blue
   selection rectangle seen when you select a plain Group).
 
 For example, if scrollingType == VERTICAL, the top of the viewport is `viewport.offsetY` in the ScrollableGroup's
 local coordinates, the bottom of the viewport is `viewport.offsetY + viewport.viewportHeight` in local coordinates,
-and horizontally there is no viewport clipping -- the entire current [localBounds](/develop/reference/SceneNode/#localbounds) range is visible. The
+and horizontally there is no viewport clipping -- the entire current [localBounds](/develop/reference/scene-node.md#localbounds) range is visible. The
 `viewport` object will only contain `offsetY` and `viewportHeight` properties in this case.
 
 **Kind**: instance property of [ScrollableGroup](#scrollablegroup)

@@ -9,13 +9,13 @@ keywords:
 # BooleanGroup
 
 **Kind**: class
-**Extends**: [GraphicNode](/develop/reference/GraphicNode)
+**Extends**: [GraphicNode](/develop/reference/graphic-node.md)
 
 BooleanGroup container node - although it has fill/stroke/etc. properties like a leaf shape node, it is a container
 with children. Its visual appearance is determined by generating a path via a nondestructive boolean operation on all
 its children's paths.
 
-It is not currently possible for plugins to _create_ a new BooleanGroup node, aside from using [commands.duplicate()](/develop/reference/commands/#duplicate)
+It is not currently possible for plugins to _create_ a new BooleanGroup node, aside from using [commands.duplicate()](/develop/reference/commands.md#duplicate)
 to clone existing BooleanGroups.
 
 ## pathOp
