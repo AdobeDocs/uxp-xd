@@ -35,8 +35,9 @@
     "_copy-uxp-css": "rm -rf src/pages/uxp/reference-css && cp -r node_modules/uxp-documentation/_transclusions/xd/uxp/reference-css src/pages/uxp/ && cp node_modules/uxp-documentation/reference-css.js reference-css.js",
     "_copy-uxp": "npm run _copy-uxp-js && npm run _copy-uxp-css && npm run _copy-uxp-html && npm run _copy-uxp-spectrum",
     "_copy-uxp-files": "cp node_modules/uxp-documentation/src/pages/uxp/*.md src/pages/uxp/",
+    "_inline-uxp-transclusions": "node scripts/inline-uxp-transclusions.js",
     "_webpack-uxp-transclusions": "webpack --config webpack.transclusions.config.cjs",
-    "prepare-uxp": "npm run _copy-uxp && npm run _webpack-uxp-transclusions && npm run _copy-uxp-files",
+    "prepare-uxp": "npm run _copy-uxp && npm run _copy-uxp-files && npm run _inline-uxp-transclusions && npm run _webpack-uxp-transclusions",
     "test:links": "remark src/pages --quiet --frail",
     "lint": "docker run --rm -e RUN_LOCAL=true --env-file '.github/super-linter.env' -v \"$PWD\":/tmp/lint github/super-linter:slim-v4.10.1"
   },

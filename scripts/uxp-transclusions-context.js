@@ -1,6 +1,6 @@
 /**
- * Webpack entry: pulls in every XD transclusion .md under src/pages/uxp so
- * webpack resolves and compiles all import graphs from uxp-documentation.
+ * Webpack entry: pulls in every XD reference .md under src/pages/uxp so
+ * MDX compiles after prepare-uxp (stubs are inlined by inline-uxp-transclusions.js).
  */
 const ctx = require.context(
   "../src/pages/uxp",
