@@ -29,6 +29,9 @@ yarn-error.log
 .cache
 public
 
+# webpack transclusion compile (prepare-uxp)
+.uxp-webpack-cache
+
 # cypress
 cypress/videos
 cypress/screenshots
