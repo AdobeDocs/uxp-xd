@@ -34,16 +34,15 @@
     "_copy-uxp-js": "rm -rf src/pages/uxp/reference-js && cp -r node_modules/uxp-documentation/src/pages/uxp-api/reference-js src/pages/uxp/ && cp node_modules/uxp-documentation/reference-js.js reference-js.js",
     "_copy-uxp-css": "rm -rf src/pages/uxp/reference-css && cp -r node_modules/uxp-documentation/src/pages/uxp-api/reference-css src/pages/uxp/ && cp node_modules/uxp-documentation/reference-css.js reference-css.js",
     "_copy-uxp": "npm run _copy-uxp-js && npm run _copy-uxp-css && npm run _copy-uxp-html && npm run _copy-uxp-spectrum",
-    "fix-reference-links": "node fix-reference-links.mjs"
+    "fix-reference-links": "node fix-reference-links.mjs",
     "_copy-uxp-files": "cp node_modules/uxp-documentation/src/pages/uxp/*.md src/pages/uxp/",
     "_inline-uxp-transclusions": "node scripts/inline-uxp-transclusions.js",
     "_webpack-uxp-transclusions": "webpack --config webpack.transclusions.config.cjs",
     "prepare-uxp": "npm run _copy-uxp && npm run _copy-uxp-files && npm run _inline-uxp-transclusions && npm run _webpack-uxp-transclusions",
-    "test:links": "remark src/pages --quiet --frail",
-    "lint": "docker run --rm -e RUN_LOCAL=true --env-file '.github/super-linter.env' -v \"$PWD\":/tmp/lint github/super-linter:slim-v4.10.1"
+    "test:links": "remark src/pages --quiet --frail"
   },
   "devDependencies": {
-    "express": "5.1.0"
+    "express": "5.1.0",
     "@babel/core": "^7.23.0",
     "@babel/preset-react": "^7.22.0",
     "@mdx-js/loader": "1.6.22",
