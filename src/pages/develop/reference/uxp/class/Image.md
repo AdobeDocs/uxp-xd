@@ -14,7 +14,7 @@ description: a name="image" id="image"/a
 
 **Extends**: [`HTMLImageElement`](#htmlimageelement)
 
-**See**: https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image
+**See**: [https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image](https://developer.mozilla.org/en-US/docs/Web/API/HTMLImageElement/Image)
 
 * [Image](#Image)
     * [.src](#htmlimageelement-src) : `string` \| `File`
@@ -107,7 +107,7 @@ The source of the image
 ### image.dataset
 Access to all the custom data attributes (data-*) set.
 
-**See**: https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset
+**See**: [https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/dataset)
 
 
 ### image.nodeName : `string`

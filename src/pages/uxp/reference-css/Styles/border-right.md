@@ -14,7 +14,7 @@ Shorthand for specifying the [style](./../styles/border-right-style.md), [color]
 > An element's border can only consist of a single color. If you specify
 > multiple border colors, you'll see a warning on the JavaScript console.
 
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/border-right  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/border-right](https://developer.mozilla.org/en/docs/Web/CSS/border-right)  
 
 ## Quirks and Exceptions
 

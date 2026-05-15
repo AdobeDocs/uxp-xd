@@ -47,4 +47,4 @@ Unsupported portions of the surface:
 
 ## Fetch Support
 
-Fetch is polyfilled on top of the XHR implementation using https://github.com/github/fetch.
+Fetch is polyfilled on top of the XHR implementation using [https://github.com/github/fetch](https://github.com/github/fetch).

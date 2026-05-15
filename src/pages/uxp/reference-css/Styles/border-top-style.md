@@ -9,7 +9,7 @@ description: "Since:  UXP v2.0"
 
 Specifies the [style](./../styles/border-style.md) of top border to render.
 
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/border-top-style  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/border-top-style](https://developer.mozilla.org/en/docs/Web/CSS/border-top-style)  
 
 **Example**
 

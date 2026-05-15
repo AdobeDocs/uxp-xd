@@ -9,7 +9,7 @@ description: Matches when the selected element is checked.
 
 Matches when the selected element is checked. 
 
-**See:** https://developer.mozilla.org/en-US/docs/Web/CSS/:checked
+**See:** [https://developer.mozilla.org/en-US/docs/Web/CSS/:checked](https://developer.mozilla.org/en-US/docs/Web/CSS/:checked)
 
 **Example:**
 

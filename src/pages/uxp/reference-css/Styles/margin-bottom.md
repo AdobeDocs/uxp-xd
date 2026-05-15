@@ -9,7 +9,7 @@ description: "Since:  UXP v2.0"
 
 Specifies the bottom margin for an element.
 
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/margin-bottom
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/margin-bottom](https://developer.mozilla.org/en/docs/Web/CSS/margin-bottom)
 
 **Example**:
 

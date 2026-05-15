@@ -9,7 +9,7 @@ description: Specifies the minimum height for an element.
 
 Specifies the minimum height for an element.
 
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/min-height
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/min-height](https://developer.mozilla.org/en/docs/Web/CSS/min-height)
 
 **Example**:
 

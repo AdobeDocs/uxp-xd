@@ -9,7 +9,7 @@ description: Aligns text within its parent container. Supports `left`, `center`,
 
 Aligns text within its parent container. Supports `left`, `center`, `right`.
 
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/text-align.
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/text-align](https://developer.mozilla.org/en/docs/Web/CSS/text-align).
 
 **Example**
 

@@ -9,7 +9,7 @@ description: Creates a pseudo-element before the matched element.
 
 Creates a pseudo-element before the matched element. 
 
-**See:** https://developer.mozilla.org/en-US/docs/Web/CSS/::before
+**See:** [https://developer.mozilla.org/en-US/docs/Web/CSS/::before](https://developer.mozilla.org/en-US/docs/Web/CSS/::before)
 
 **Example:**
 

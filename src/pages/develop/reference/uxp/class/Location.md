@@ -14,7 +14,7 @@ description: a name="location" id="location"/a
 
 **Category**: browser, shim
 
-**See**: https://developer.mozilla.org/en-US/docs/Web/API/Location
+**See**: [https://developer.mozilla.org/en-US/docs/Web/API/Location](https://developer.mozilla.org/en-US/docs/Web/API/Location)
 
 
 ### new Location()

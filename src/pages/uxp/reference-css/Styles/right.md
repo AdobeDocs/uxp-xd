@@ -9,7 +9,7 @@ description: "Since:  UXP v2.0"
 
 Sets the right position for an element that is relatively or absolutely positioned.
 
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/right
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/right](https://developer.mozilla.org/en/docs/Web/CSS/right)
 
 **Example**:
 

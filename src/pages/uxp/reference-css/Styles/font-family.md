@@ -9,7 +9,7 @@ description: Sets the font family for a given element's text.
 
 Sets the font family for a given element's text.
 
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/font-family
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/font-family](https://developer.mozilla.org/en/docs/Web/CSS/font-family)
 
 **Example**
 

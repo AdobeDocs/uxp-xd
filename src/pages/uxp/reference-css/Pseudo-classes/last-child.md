@@ -9,7 +9,7 @@ description: Matches only the last child.
 
 Matches only the last child.
 
-**See:** https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child
+**See:** [https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child)
 
 **Example:**
 

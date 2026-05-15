@@ -9,7 +9,7 @@ description: Indicates the root element of an UXP plugin's UI.
 
 Indicates the root element of an UXP plugin's UI.
 
-**See**: https://developer.mozilla.org/en/docs/Web/HTML/Element/html
+**See**: [https://developer.mozilla.org/en/docs/Web/HTML/Element/html](https://developer.mozilla.org/en/docs/Web/HTML/Element/html)
 
 **Example**
 

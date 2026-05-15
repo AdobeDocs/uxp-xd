@@ -58,7 +58,7 @@ If you're curious about what each entry means, [see the manifest documentation](
 
 ### 2. Add the "plugin helpers" library
 
-Creating dialogs can take a lot of boilerplate code, but we've created a small library that makes it simple to display simple dialogs in the form of a "helper" library. This library is located at https://github.com/AdobeXD/plugin-toolkit.
+Creating dialogs can take a lot of boilerplate code, but we've created a small library that makes it simple to display simple dialogs in the form of a "helper" library. This library is located at [https://github.com/AdobeXD/plugin-toolkit](https://github.com/AdobeXD/plugin-toolkit).
 
 To add the library to your project, you can:
 

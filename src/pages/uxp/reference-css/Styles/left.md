@@ -9,7 +9,7 @@ description: "Since:  UXP v2.0"
 
 Sets the left position for an element that is relatively or absolutely positioned.
 
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/left
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/left](https://developer.mozilla.org/en/docs/Web/CSS/left)
 
 **Example**:
 

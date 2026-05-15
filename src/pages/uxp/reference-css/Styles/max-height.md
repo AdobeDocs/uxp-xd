@@ -9,7 +9,7 @@ description: Specifies the maximum height for an element.
 
 Specifies the maximum height for an element.
 
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/max-height
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/max-height](https://developer.mozilla.org/en/docs/Web/CSS/max-height)
 
 **Example**:
 

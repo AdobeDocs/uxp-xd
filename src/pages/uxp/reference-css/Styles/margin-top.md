@@ -9,7 +9,7 @@ description: "Since:  UXP v2.0"
 
 Specifies the top margin for an element.
 
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/margin-top
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/margin-top](https://developer.mozilla.org/en/docs/Web/CSS/margin-top)
 
 **Example**:
 

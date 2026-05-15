@@ -9,7 +9,7 @@ description: Specifies the minimum width for an element.
 
 Specifies the minimum width for an element.
 
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/min-width
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/min-width](https://developer.mozilla.org/en/docs/Web/CSS/min-width)
 
 **Example**:
 

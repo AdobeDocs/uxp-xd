@@ -5,7 +5,7 @@ description: a name="os" id="os"/a
 
 
 # require('os')
-**See**: https://nodejs.org/api/os.html  
+**See**: [https://nodejs.org/api/os.html](https://nodejs.org/api/os.html)  
 
 
 

@@ -14,7 +14,7 @@ description: a name="attr" id="attr"/a
 
 **Extends**: [`Node`](#node)
 
-**See**: https://developer.mozilla.org/en-US/docs/Web/API/Attr
+**See**: [https://developer.mozilla.org/en-US/docs/Web/API/Attr](https://developer.mozilla.org/en-US/docs/Web/API/Attr)
 
 * [Attr](#Attr)
     * [new Attr(document, nodeName)](#new-attr-new)

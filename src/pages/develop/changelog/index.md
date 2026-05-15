@@ -202,7 +202,7 @@ Bug fixes:
 
 ### Plugin submission process
 
-- The "Adobe I/O Console" has been renamed "Adobe Developer Console," with a new link: https://console.adobe.io/projects
+- The "Adobe I/O Console" has been renamed "Adobe Developer Console," with a new link: [https://console.adobe.io/projects](https://console.adobe.io/projects)
 - Preview how your listing will look in XD before submitting it for review.
 - Publish updates at a specific time of your choosing by opting out of instant publishing when your plugin submission is approved.
 

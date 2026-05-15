@@ -9,7 +9,7 @@ description: Sets the width inserted between letters.
 
 Sets the width inserted between letters.
 
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/letter-spacing
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/letter-spacing](https://developer.mozilla.org/en/docs/Web/CSS/letter-spacing)
 
 **Example**
 

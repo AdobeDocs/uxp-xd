@@ -9,7 +9,7 @@ description: "Since:  UXP v2.0"
 
 Sets the bottom left border radius.
 
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-left-radius  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-left-radius](https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-left-radius)  
 
 ## Quirks and Exceptions
 

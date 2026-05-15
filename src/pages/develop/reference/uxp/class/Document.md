@@ -14,7 +14,7 @@ description: a name="document" id="document"/a
 
 **Extends**: [`Node`](#node)
 
-**See**: https://developer.mozilla.org/en-US/docs/Web/API/Document
+**See**: [https://developer.mozilla.org/en-US/docs/Web/API/Document](https://developer.mozilla.org/en-US/docs/Web/API/Document)
 
 * [Document](#Document)
     * [new Document()](#new-document-new)

@@ -9,7 +9,7 @@ description: Sets the width of the left border.
 
 Sets the width of the left border.
 
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/border-left-width
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/border-left-width](https://developer.mozilla.org/en/docs/Web/CSS/border-left-width)
 
 ## Quirks and Exceptions
 

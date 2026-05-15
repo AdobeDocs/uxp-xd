@@ -101,7 +101,7 @@ Specifies the text color for an element.
 
 Supported color formats are as follows:
 
-* Named Colors (See https://github.com/colorjs/color-name/blob/master/index.js)
+* Named Colors (See [https://github.com/colorjs/color-name/blob/master/index.js](https://github.com/colorjs/color-name/blob/master/index.js))
 * Hex colors
 * RGB and RGBA colors
 * HSL and HSLA colors
@@ -109,8 +109,8 @@ Supported color formats are as follows:
 **Kind**: static property of [`css`](#css)  
 **See**
 
-- https://developer.mozilla.org/en/docs/Web/CSS/color
-- https://github.com/colorjs/color-name/blob/master/index.js
+- [https://developer.mozilla.org/en/docs/Web/CSS/color](https://developer.mozilla.org/en/docs/Web/CSS/color)
+- [https://github.com/colorjs/color-name/blob/master/index.js](https://github.com/colorjs/color-name/blob/master/index.js)
 
 
 
@@ -119,7 +119,7 @@ Specifies the border color for an element's top border.
 
 Supported color formats are as follows:
 
-* Named Colors (See https://github.com/colorjs/color-name/blob/master/index.js)
+* Named Colors (See [https://github.com/colorjs/color-name/blob/master/index.js](https://github.com/colorjs/color-name/blob/master/index.js))
 * Hex colors
 * RGB and RGBA colors
 
@@ -131,8 +131,8 @@ Supported color formats are as follows:
 **Kind**: static property of [`css`](#css)  
 **See**
 
-- https://developer.mozilla.org/en/docs/Web/CSS/border-top-color
-- https://github.com/colorjs/color-name/blob/master/index.js
+- [https://developer.mozilla.org/en/docs/Web/CSS/border-top-color](https://developer.mozilla.org/en/docs/Web/CSS/border-top-color)
+- [https://github.com/colorjs/color-name/blob/master/index.js](https://github.com/colorjs/color-name/blob/master/index.js)
 
 
 
@@ -141,7 +141,7 @@ Specifies the border color for an element's left border.
 
 Supported color formats are as follows:
 
-* Named Colors (See https://github.com/colorjs/color-name/blob/master/index.js)
+* Named Colors (See [https://github.com/colorjs/color-name/blob/master/index.js](https://github.com/colorjs/color-name/blob/master/index.js))
 * Hex colors
 * RGB and RGBA colors
 
@@ -153,8 +153,8 @@ Supported color formats are as follows:
 **Kind**: static property of [`css`](#css)  
 **See**
 
-- https://developer.mozilla.org/en/docs/Web/CSS/border-left-color
-- https://github.com/colorjs/color-name/blob/master/index.js
+- [https://developer.mozilla.org/en/docs/Web/CSS/border-left-color](https://developer.mozilla.org/en/docs/Web/CSS/border-left-color)
+- [https://github.com/colorjs/color-name/blob/master/index.js](https://github.com/colorjs/color-name/blob/master/index.js)
 
 
 
@@ -163,7 +163,7 @@ Specifies the border color for an element's right border.
 
 Supported color formats are as follows:
 
-* Named Colors (See https://github.com/colorjs/color-name/blob/master/index.js)
+* Named Colors (See [https://github.com/colorjs/color-name/blob/master/index.js](https://github.com/colorjs/color-name/blob/master/index.js))
 * Hex colors
 * RGB and RGBA colors
 
@@ -175,8 +175,8 @@ Supported color formats are as follows:
 **Kind**: static property of [`css`](#css)  
 **See**
 
-- https://developer.mozilla.org/en/docs/Web/CSS/border-right-color
-- https://github.com/colorjs/color-name/blob/master/index.js
+- [https://developer.mozilla.org/en/docs/Web/CSS/border-right-color](https://developer.mozilla.org/en/docs/Web/CSS/border-right-color)
+- [https://github.com/colorjs/color-name/blob/master/index.js](https://github.com/colorjs/color-name/blob/master/index.js)
 
 
 
@@ -185,7 +185,7 @@ Specifies the border color for an element's bottom border.
 
 Supported color formats are as follows:
 
-* Named Colors (See https://github.com/colorjs/color-name/blob/master/index.js)
+* Named Colors (See [https://github.com/colorjs/color-name/blob/master/index.js](https://github.com/colorjs/color-name/blob/master/index.js))
 * Hex colors
 * RGB and RGBA colors
 
@@ -197,8 +197,8 @@ Supported color formats are as follows:
 **Kind**: static property of [`css`](#css)  
 **See**
 
-- https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-color
-- https://github.com/colorjs/color-name/blob/master/index.js
+- [https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-color](https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-color)
+- [https://github.com/colorjs/color-name/blob/master/index.js](https://github.com/colorjs/color-name/blob/master/index.js)
 
 
 
@@ -207,7 +207,7 @@ Specifies the background color for an element.
 
 Supported color formats are as follows:
 
-* Named Colors (See https://github.com/colorjs/color-name/blob/master/index.js)
+* Named Colors (See [https://github.com/colorjs/color-name/blob/master/index.js](https://github.com/colorjs/color-name/blob/master/index.js))
 * Hex colors
 * RGB and RGBA colors
 * HSL and HSLA colors
@@ -215,8 +215,8 @@ Supported color formats are as follows:
 **Kind**: static property of [`css`](#css)  
 **See**
 
-- https://developer.mozilla.org/en/docs/Web/CSS/background-color
-- https://github.com/colorjs/color-name/blob/master/index.js
+- [https://developer.mozilla.org/en/docs/Web/CSS/background-color](https://developer.mozilla.org/en/docs/Web/CSS/background-color)
+- [https://github.com/colorjs/color-name/blob/master/index.js](https://github.com/colorjs/color-name/blob/master/index.js)
 
 
 
@@ -231,7 +231,7 @@ Shorthand for specifying the style, color, and width of the top border.
 > The only visible border style that is supported is `solid`.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/border-top  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/border-top](https://developer.mozilla.org/en/docs/Web/CSS/border-top)  
 
 
 ### css.border-left
@@ -245,7 +245,7 @@ Shorthand for specifying the style, color, and width of the left border.
 > The only visible border style that is supported is `solid`.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/border-left  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/border-left](https://developer.mozilla.org/en/docs/Web/CSS/border-left)  
 
 
 ### css.border-right
@@ -259,7 +259,7 @@ Shorthand for specifying the style, color, and width of the right border.
 > The only visible border style that is supported is `solid`.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/border-right  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/border-right](https://developer.mozilla.org/en/docs/Web/CSS/border-right)  
 
 
 ### css.border-bottom
@@ -273,7 +273,7 @@ Shorthand for specifying the style, color, and width of the bottom border.
 > The only visible border style that is supported is `solid`.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/border-bottom  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/border-bottom](https://developer.mozilla.org/en/docs/Web/CSS/border-bottom)  
 
 
 ### css.border-top-style
@@ -284,7 +284,7 @@ Specifies the style of the top border.
 > The only visible border style that is supported is `solid`.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/border-top-style  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/border-top-style](https://developer.mozilla.org/en/docs/Web/CSS/border-top-style)  
 
 
 ### css.border-left-style
@@ -295,7 +295,7 @@ Specifies the style of the left border.
 > The only visible border style that is supported is `solid`.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/border-left-style  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/border-left-style](https://developer.mozilla.org/en/docs/Web/CSS/border-left-style)  
 
 
 ### css.border-right-style
@@ -306,7 +306,7 @@ Specifies the style of the right border.
 > The only visible border style that is supported is `solid`.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/border-right-style  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/border-right-style](https://developer.mozilla.org/en/docs/Web/CSS/border-right-style)  
 
 
 ### css.border-bottom-style
@@ -317,7 +317,7 @@ Specifies the style of the bottom border.
 > The only visible border style that is supported is `solid`.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-style  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-style](https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-style)  
 
 
 ### css.border-top-left-radius
@@ -328,7 +328,7 @@ Sets the top left border radius.
 > If you need to clip an image, be sure to set `overflow: hidden`.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/border-top-left-radius  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/border-top-left-radius](https://developer.mozilla.org/en/docs/Web/CSS/border-top-left-radius)  
 
 
 ### css.border-top-right-radius
@@ -339,7 +339,7 @@ Sets the top right border radius.
 > If you need to clip an image, be sure to set `overflow: hidden`.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/border-top-right-radius  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/border-top-right-radius](https://developer.mozilla.org/en/docs/Web/CSS/border-top-right-radius)  
 
 
 ### css.border-bottom-left-radius
@@ -350,7 +350,7 @@ Sets the bottom left border radius.
 > If you need to clip an image, be sure to set `overflow: hidden`.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-left-radius  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-left-radius](https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-left-radius)  
 
 
 ### css.border-bottom-right-radius
@@ -361,14 +361,14 @@ Sets the bottom right border radius.
 > If you need to clip an image, be sure to set `overflow: hidden`.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-right-radius  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-right-radius](https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-right-radius)  
 
 
 ### css.opacity : `float`
 Sets the opacity of an element. The value is between 0 (transparent) and 1 (opaque).
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/opacity  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/opacity](https://developer.mozilla.org/en/docs/Web/CSS/opacity)  
 
 
 ### css.overflow
@@ -377,7 +377,7 @@ Shorthand which determines what is done with content that overflows the element'
 Supports `visible`, hidden`, `auto`, and `scroll`.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/overflow  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/overflow](https://developer.mozilla.org/en/docs/Web/CSS/overflow)  
 
 
 ### css.overflow-x
@@ -386,7 +386,7 @@ Determines what is done with content that overflows the element's horizontal bou
 Supports `visible`, hidden`, `auto`, and `scroll`.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/overflow-x  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/overflow-x](https://developer.mozilla.org/en/docs/Web/CSS/overflow-x)  
 
 
 ### css.overflow-y
@@ -395,14 +395,14 @@ Determines what is done with content that overflows the element's vertical bound
 Supports `visible`, hidden`, `auto`, and `scroll`.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/overflow-y  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/overflow-y](https://developer.mozilla.org/en/docs/Web/CSS/overflow-y)  
 
 
 ### css.background-image
 Specifies a background image.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/background-image  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/background-image](https://developer.mozilla.org/en/docs/Web/CSS/background-image)  
 
 
 ### css.border-color
@@ -410,7 +410,7 @@ Specifies the border color for an element.
 
 Supported color formats are as follows:
 
-* Named Colors (See https://github.com/colorjs/color-name/blob/master/index.js)
+* Named Colors (See [https://github.com/colorjs/color-name/blob/master/index.js](https://github.com/colorjs/color-name/blob/master/index.js))
 * Hex colors
 * RGB and RGBA colors
 
@@ -422,8 +422,8 @@ Supported color formats are as follows:
 **Kind**: static property of [`css`](#css)  
 **See**
 
-- https://developer.mozilla.org/en/docs/Web/CSS/border-color
-- https://github.com/colorjs/color-name/blob/master/index.js
+- [https://developer.mozilla.org/en/docs/Web/CSS/border-color](https://developer.mozilla.org/en/docs/Web/CSS/border-color)
+- [https://github.com/colorjs/color-name/blob/master/index.js](https://github.com/colorjs/color-name/blob/master/index.js)
 
 
 
@@ -431,7 +431,7 @@ Supported color formats are as follows:
 Shorthand for specifying the border radius
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/border-radius  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/border-radius](https://developer.mozilla.org/en/docs/Web/CSS/border-radius)  
 
 
 ### css.border-radius
@@ -439,7 +439,7 @@ Shorthand for specifying the border width, color, and style.
 
 Supported color formats are as follows:
 
-* Named Colors (See https://github.com/colorjs/color-name/blob/master/index.js)
+* Named Colors (See [https://github.com/colorjs/color-name/blob/master/index.js](https://github.com/colorjs/color-name/blob/master/index.js))
 * Hex colors
 * RGB and RGBA colors
 
@@ -451,8 +451,8 @@ Supported color formats are as follows:
 **Kind**: static property of [`css`](#css)  
 **See**
 
-- https://developer.mozilla.org/en/docs/Web/CSS/border-radius
-- https://github.com/colorjs/color-name/blob/master/index.js
+- [https://developer.mozilla.org/en/docs/Web/CSS/border-radius](https://developer.mozilla.org/en/docs/Web/CSS/border-radius)
+- [https://github.com/colorjs/color-name/blob/master/index.js](https://github.com/colorjs/color-name/blob/master/index.js)
 
 
 
@@ -460,217 +460,217 @@ Supported color formats are as follows:
 Shorthand for specifying the background of an element. Supports colors, images, and linear gradients.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/background  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/background](https://developer.mozilla.org/en/docs/Web/CSS/background)  
 
 
 ### css.margin-top
 Specifies the top margin.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/margin-top  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/margin-top](https://developer.mozilla.org/en/docs/Web/CSS/margin-top)  
 
 
 ### css.margin-left
 Specifies the left margin.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/margin-left  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/margin-left](https://developer.mozilla.org/en/docs/Web/CSS/margin-left)  
 
 
 ### css.margin-right
 Specifies the right margin.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/margin-right  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/margin-right](https://developer.mozilla.org/en/docs/Web/CSS/margin-right)  
 
 
 ### css.margin-bottom
 Specifies the bottom margin.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/margin-bottom  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/margin-bottom](https://developer.mozilla.org/en/docs/Web/CSS/margin-bottom)  
 
 
 ### css.width
 Specifies the width of an element.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/width  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/width](https://developer.mozilla.org/en/docs/Web/CSS/width)  
 
 
 ### css.height
 Specifies the height of an element.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/height  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/height](https://developer.mozilla.org/en/docs/Web/CSS/height)  
 
 
 ### css.max-width
 Specifies the maximum width of an element.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/max-width  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/max-width](https://developer.mozilla.org/en/docs/Web/CSS/max-width)  
 
 
 ### css.max-height
 Specifies the maximum height of an element.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/max-height  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/max-height](https://developer.mozilla.org/en/docs/Web/CSS/max-height)  
 
 
 ### css.min-width
 Specifies the minimum width of an element.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/min-width  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/min-width](https://developer.mozilla.org/en/docs/Web/CSS/min-width)  
 
 
 ### css.min-height
 Specifies the minimum height of an element.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/min-height  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/min-height](https://developer.mozilla.org/en/docs/Web/CSS/min-height)  
 
 
 ### css.top
 Sets the top position of the element when relatively or absolutely positioned.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/top  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/top](https://developer.mozilla.org/en/docs/Web/CSS/top)  
 
 
 ### css.left
 Sets the left position of the element when relatively or absolutely positioned.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/left  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/left](https://developer.mozilla.org/en/docs/Web/CSS/left)  
 
 
 ### css.right
 Sets the right position of the element when relatively or absolutely positioned.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/right  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/right](https://developer.mozilla.org/en/docs/Web/CSS/right)  
 
 
 ### css.bottom
 Sets the bottom position of the element when relatively or absolutely positioned.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/bottom  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/bottom](https://developer.mozilla.org/en/docs/Web/CSS/bottom)  
 
 
 ### css.padding-top
 Specifies the top padding.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/padding-top  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/padding-top](https://developer.mozilla.org/en/docs/Web/CSS/padding-top)  
 
 
 ### css.padding-left
 Specifies the left padding.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/padding-left  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/padding-left](https://developer.mozilla.org/en/docs/Web/CSS/padding-left)  
 
 
 ### css.padding-right
 Specifies the right padding.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/padding-right  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/padding-right](https://developer.mozilla.org/en/docs/Web/CSS/padding-right)  
 
 
 ### css.padding-bottom
 Specifies the bottom padding.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/padding-bottom  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/padding-bottom](https://developer.mozilla.org/en/docs/Web/CSS/padding-bottom)  
 
 
 ### css.border-top-width
 Specifies the width of the top border.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/border-top-width  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/border-top-width](https://developer.mozilla.org/en/docs/Web/CSS/border-top-width)  
 
 
 ### css.border-left-width
 Specifies the width of the left border.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/border-left-width  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/border-left-width](https://developer.mozilla.org/en/docs/Web/CSS/border-left-width)  
 
 
 ### css.border-right-width
 Specifies the width of the right border.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/border-right-width  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/border-right-width](https://developer.mozilla.org/en/docs/Web/CSS/border-right-width)  
 
 
 ### css.border-bottom-width
 Specifies the width of the bottom border.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-width  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-width](https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-width)  
 
 
 ### css.flex-basis
 Specifies the value used for calculating the flex basis.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/flex-basis  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/flex-basis](https://developer.mozilla.org/en/docs/Web/CSS/flex-basis)  
 
 
 ### css.flex-grow
 Sets the flex grow factor.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/flex-grow  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/flex-grow](https://developer.mozilla.org/en/docs/Web/CSS/flex-grow)  
 
 
 ### css.flex-shrink
 Sets the flex shrink factor.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/flex-shrink  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/flex-shrink](https://developer.mozilla.org/en/docs/Web/CSS/flex-shrink)  
 
 
 ### css.order
 Sets the order of display for this flex element.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/order  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/order](https://developer.mozilla.org/en/docs/Web/CSS/order)  
 
 
 ### css.flex
 Shorthand for setting `flex-grow`, `flex-shrink`, and `flex-basis`.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/flex  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/flex](https://developer.mozilla.org/en/docs/Web/CSS/flex)  
 
 
 ### css.border-width
 Specifies the width of the element's border.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/border-width  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/border-width](https://developer.mozilla.org/en/docs/Web/CSS/border-width)  
 
 
 ### css.margin
 Shorthand for setting the element's margins.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/margin  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/margin](https://developer.mozilla.org/en/docs/Web/CSS/margin)  
 
 
 ### css.padding
 Shorthand for setting the element's padding.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/padding  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/padding](https://developer.mozilla.org/en/docs/Web/CSS/padding)  
 
 
 ### css.font-family
@@ -681,21 +681,21 @@ Renders the element using the specified font family, if installed on the user's 
 > Fallbacks are not supported. Don't use quotes with this value.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/font-family  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/font-family](https://developer.mozilla.org/en/docs/Web/CSS/font-family)  
 
 
 ### css.letter-spacing
 Sets the distance between letters.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/letter-spacing  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/letter-spacing](https://developer.mozilla.org/en/docs/Web/CSS/letter-spacing)  
 
 
 ### css.font-size
 Sets the font size.
 
 **Kind**: static property of [`css`](#css)  
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/font-size  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/font-size](https://developer.mozilla.org/en/docs/Web/CSS/font-size)  
 
 
 ### css.align-content

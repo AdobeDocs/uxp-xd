@@ -9,7 +9,7 @@ description: Sets the font style for the element. Supports `normal` (default) an
 
 Sets the font style for the element. Supports `normal` (default) and `italic`.
 
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/font-style
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/font-style](https://developer.mozilla.org/en/docs/Web/CSS/font-style)
 
 **Example**
 

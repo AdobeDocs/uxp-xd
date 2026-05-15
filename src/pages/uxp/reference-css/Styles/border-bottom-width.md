@@ -9,7 +9,7 @@ description: Sets the width of the bottom border.
 
 Sets the width of the bottom border.
 
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-width
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-width](https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-width)
 
 ## Quirks and Exceptions
 

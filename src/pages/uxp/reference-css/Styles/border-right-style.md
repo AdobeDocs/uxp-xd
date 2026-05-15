@@ -9,7 +9,7 @@ description: "Since:  UXP v2.0"
 
 Specifies the [style](./../styles/border-style.md) of right border to render.
 
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/border-right-style  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/border-right-style](https://developer.mozilla.org/en/docs/Web/CSS/border-right-style)  
 
 **Example**
 

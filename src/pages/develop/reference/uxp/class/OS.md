@@ -14,7 +14,7 @@ description: a name="os" id="os"/a
 
 
 
-**See**:  https://nodejs.org/api/os.html 
+**See**:  [https://nodejs.org/api/os.html](https://nodejs.org/api/os.html) 
 
 * [OS](#os)
     * [.platform()](#os-platform) 

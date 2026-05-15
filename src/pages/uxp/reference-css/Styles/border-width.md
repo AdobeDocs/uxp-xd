@@ -9,7 +9,7 @@ description: Sets the width of the border.
 
 Sets the width of the border.
 
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/border-width
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/border-width](https://developer.mozilla.org/en/docs/Web/CSS/border-width)
 
 ## Quirks and Exceptions
 

@@ -9,7 +9,7 @@ description: "Since:  UXP v2.0"
 
 Specifies the right padding for an element.
 
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/padding-right
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/padding-right](https://developer.mozilla.org/en/docs/Web/CSS/padding-right)
 
 **Example**:
 

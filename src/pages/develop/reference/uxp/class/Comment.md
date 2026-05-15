@@ -14,7 +14,7 @@ description: a name="comment" id="comment"/a
 
 **Extends**: [`CharacterData`](#characterdata)
 
-**See**: https://developer.mozilla.org/en-US/docs/Web/API/Comment
+**See**: [https://developer.mozilla.org/en-US/docs/Web/API/Comment](https://developer.mozilla.org/en-US/docs/Web/API/Comment)
 
 * [Comment](#Comment)
     * [new Comment(document, comment)](#new-comment-new)

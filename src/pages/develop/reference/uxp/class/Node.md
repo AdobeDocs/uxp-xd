@@ -14,7 +14,7 @@ description: a name="node" id="node"/a
 
 **Extends**: [`EventTarget`](#eventtarget)
 
-**See**: https://developer.mozilla.org/en-US/docs/Web/API/Node
+**See**: [https://developer.mozilla.org/en-US/docs/Web/API/Node](https://developer.mozilla.org/en-US/docs/Web/API/Node)
 
 * [Node](#Node)
     * [new Node(ownerDocument)](#new-node-new)

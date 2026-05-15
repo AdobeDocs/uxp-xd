@@ -14,7 +14,7 @@ description: a name="element" id="element"/a
 
 **Extends**: [`Node`](#node)
 
-**See**: https://developer.mozilla.org/en-US/docs/Web/API/Element
+**See**: [https://developer.mozilla.org/en-US/docs/Web/API/Element](https://developer.mozilla.org/en-US/docs/Web/API/Element)
 
 * [Element](#Element)
     * [new Element(document, nodeName, namespaceURI)](#new-element-new)

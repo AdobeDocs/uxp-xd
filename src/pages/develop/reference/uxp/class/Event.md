@@ -12,7 +12,7 @@ description: a name="event" id="event"/a
 
 ## Event
 
-**See**: https://developer.mozilla.org/en-US/docs/Web/API/Event
+**See**: [https://developer.mozilla.org/en-US/docs/Web/API/Event](https://developer.mozilla.org/en-US/docs/Web/API/Event)
 
 * [Event](#event)
     * [new Event(eventType, eventInit)](#new-event-new)

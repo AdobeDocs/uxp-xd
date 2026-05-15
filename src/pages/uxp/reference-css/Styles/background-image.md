@@ -9,7 +9,7 @@ description: "Since:  UXP v2.0"
 
 Specifies a background image. Supports multiple background images, as well as linear and radial gradients.
 
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/background-image  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/background-image](https://developer.mozilla.org/en/docs/Web/CSS/background-image)  
 
 **Example**:
 

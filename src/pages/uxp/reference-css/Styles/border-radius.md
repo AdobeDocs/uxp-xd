@@ -9,7 +9,7 @@ description: "Since:  UXP v2.0"
 
 Shorthand for setting the border radius.
 
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/border-radius  
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/border-radius](https://developer.mozilla.org/en/docs/Web/CSS/border-radius)  
 
 **Example**
 

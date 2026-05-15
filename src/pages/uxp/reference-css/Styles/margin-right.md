@@ -9,7 +9,7 @@ description: "Since:  UXP v2.0"
 
 Specifies the right margin for an element.
 
-**See**: https://developer.mozilla.org/en/docs/Web/CSS/margin-right
+**See**: [https://developer.mozilla.org/en/docs/Web/CSS/margin-right](https://developer.mozilla.org/en/docs/Web/CSS/margin-right)
 
 **Example**:
 

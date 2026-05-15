@@ -9,7 +9,7 @@ description: Creates a pseudo-element after the matched element.
 
 Creates a pseudo-element after the matched element. 
 
-**See:** https://developer.mozilla.org/en-US/docs/Web/CSS/::after
+**See:** [https://developer.mozilla.org/en-US/docs/Web/CSS/::after](https://developer.mozilla.org/en-US/docs/Web/CSS/::after)
 
 **Example:**
 
