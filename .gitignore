@@ -44,3 +44,5 @@ local-test.yml
 # yalc
 .yalc
 yalc.lock
+linter-report.txt
+package-lock.json

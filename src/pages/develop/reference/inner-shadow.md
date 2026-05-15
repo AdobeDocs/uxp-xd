@@ -1,0 +1,44 @@
+---
+keywords:
+  - Creative Cloud
+  - API Documentation
+  - UXP
+  - Plugin
+title: InnerShadow
+description: "▸ new InnerShadow: InnerShadow"
+---
+
+# InnerShadow
+
+**Kind**: class
+**Since**: XD 41
+
+## new InnerShadow()
+
+▸ new InnerShadow(`?x`, `?y`, `?blur`, `?color`, `?visible`): [InnerShadow](#InnerShadow)
+
+Creates an InnerShadow object with the x, y, blur and color properties. You may omit all properties to create an InnerShadow with default values. The `visible` argument is always optional and defaults to true.
+
+| Param   | Type                |
+| ------- | ------------------- |
+| `x`       | `number`          |
+| `y`       | `number`          |
+| `blur`    | `number`          |
+| `color`   | [Color](/develop/reference/color.md) |
+| `visible` | `?boolean`        |
+
+## setShadow()
+
+▸ setShadow(`x`, `y`, `blur`, `color`, `?visible`)
+
+Sets the x, y, blur, color, visible members for the InnerShadow object. The `visible` argument is optional and defaults to true.
+
+| Param   | Type                |
+| ------- | ------------------- |
+| `x`       | `number`          |
+| `y`       | `number`          |
+| `blur`    | `number`          |
+| `color`   | [Color](/develop/reference/color.md) |
+| `visible` | `?boolean`        |
+
+**Kind**: instance method of [InnerShadow](#InnerShadow)
