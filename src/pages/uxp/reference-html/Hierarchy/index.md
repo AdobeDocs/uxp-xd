@@ -1,3 +1,8 @@
+---
+title: Hierarchy
+description: footer(../hierarchy/footer.md)
+---
+
 # Hierarchy
 * [footer](../hierarchy/footer.md)
 * [h1](../hierarchy/h1.md)

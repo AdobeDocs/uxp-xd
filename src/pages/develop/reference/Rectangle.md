@@ -1,15 +1,17 @@
 ---
+title: Rectangle
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: "Extends: GraphicNode(/develop/reference/graphic-node.md)"
 ---
 
 # Rectangle
 
 **Kind**: class
-**Extends**: [GraphicNode](/develop/reference/GraphicNode)
+**Extends**: [GraphicNode](/develop/reference/graphic-node.md)
 
 Rectangle leaf node shape, with or without rounded corners. Like all shape nodes, has no fill or stroke by default unless you set one.
 

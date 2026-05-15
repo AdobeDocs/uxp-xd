@@ -1,9 +1,11 @@
 ---
+title: 4.0 File I/O
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: In many cases, your plugin may need to create, read, and write files on the user’s persistent storage mediums. Your plugin should be respectful of the
 ---
 
 

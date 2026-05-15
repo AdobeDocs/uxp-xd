@@ -1,5 +1,7 @@
 ---
+title: padding-right
 jsDoc: true
+description: "Since:  UXP v2.0"
 ---
 # padding-right
 

@@ -1,16 +1,18 @@
+---
+title: require('shell')
+description: a name="shell" id="shell"/a
+---
 
-<a name="shell" id="shell"></a>
 
 # require('shell')
-To get an instance: `require("uxp").shell`<br/>
+To get an instance: `require("uxp").shell`\<br/\>
 These APIs require UXP Manifest v5 configurations. see [Launch Process](https://developer.adobe.com/photoshop/uxp/2022/guides/uxp_guide/uxp-misc/manifest-v5/#launch-process)
 
 
 
-<a name="shell-openpath" id="shell-openpath"></a>
 
 ## openPath(path, developerText)
-Opens the given file or folder path in the system default application.<br/>
+Opens the given file or folder path in the system default application.\<br/\>
 NOTE: UWP can access only files in the UWP App sandbox. see [File access permissions in UWP](https://docs.microsoft.com/en-us/windows/uwp/files/file-access-permissions)
 
 **Returns**: `Promise<String>` - A promise that resolves with "" if succeeded or a string containing the error message if failed.  
@@ -32,10 +34,9 @@ shell.openPath("C:\Users\[username]\AppData\Local\...\sample.txt");
 ```
 
 
-<a name="shell-openexternal" id="shell-openexternal"></a>
 
 ## openExternal(url, developerText)
-Opens the url in the dedicated system applications for the scheme.<br/>
+Opens the url in the dedicated system applications for the scheme.\<br/\>
 NOTE: file scheme is not allowed for openExternal. Use openPath for those cases.
 
 **Returns**: `Promise<String>` - A promise that resolves with "" if succeeded or a string containing the error message if failed.  

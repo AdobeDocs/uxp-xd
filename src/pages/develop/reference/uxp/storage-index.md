@@ -1,14 +1,16 @@
 ---
+title: Storage
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: "XD provides a simple, cross-platform API surface that makes it easy to read and write text and binary files. Three key things to note:"
 ---
 
 # Storage
 
-# Using the File API
+## Using the File API
 
 XD provides a simple, cross-platform API surface that makes it easy to read and write text and binary files. Three key things to note:
 
@@ -18,7 +20,7 @@ XD provides a simple, cross-platform API surface that makes it easy to read and 
 
 ## Getting access to the local file system
 
-Start using the file system APIs by obtaining a [FileSystemProvider](/develop/reference/uxp/module/storage/#filesystemprovider) object (shortened to `fs` in the code here):
+Start using the file system APIs by obtaining a [FileSystemProvider](/develop/reference/uxp/module/storage.md#filesystemprovider) object (shortened to `fs` in the code here):
 
 ```js
 const fs = require("uxp").storage.localFileSystem;
@@ -38,14 +40,14 @@ const aFile = await fs.getFileForOpening(); // "Open" file picker, suitable for 
 const anotherFile = await fs.getFileForSaving("hello.txt"); // "Save" file picker, suitable for writing contents
 ```
 
-If you have a [Folder](/develop/reference/uxp/module/storage/#folder), you can use [`getEntries()`](/develop/reference/uxp/module/storage/#folder-getentries) to enumerate the folder's contents:
+If you have a [Folder](/develop/reference/uxp/module/storage.md#folder), you can use [`getEntries()`](/develop/reference/uxp/module/storage.md#folder-getentries) to enumerate the folder's contents:
 
 ```js
 const entries = await folder.getEntries();
 entries.forEach((entry) => console.log(entry.name));
 ```
 
-If you have a [File](/develop/reference/uxp/module/storage/#file), you can read and write its contents like so:
+If you have a [File](/develop/reference/uxp/module/storage.md#file), you can read and write its contents like so:
 
 ```js
 const contents = await aFile.read();
@@ -59,4 +61,4 @@ const newFile = await folder.createFile("examples.txt", { overwrite: true });
 newFile.write("Hello, world!");
 ```
 
-See the [full reference](/develop/reference/uxp/module/storage/).
+See the [full reference](/develop/reference/uxp/module/storage.md).

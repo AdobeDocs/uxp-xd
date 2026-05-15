@@ -1,13 +1,14 @@
 ---
+title: Storage
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: a name="module-storage" id="module-storage"/a
 ---
 
 
-<a name="module-storage" id="module-storage"></a>
 
 ## storage
 
@@ -82,7 +83,6 @@ keywords:
         * [.folder](#module-storage-types-folder) : `Symbol`
 
 
-<a name="module-storage-entry" id="module-storage-entry"></a>
 
 ### storage.Entry
 An `Entry` is the base class for `File` and `Folder`. You'll
@@ -117,7 +117,6 @@ share.
     * [.getMetadata()](#module-storage-entry-getmetadata) ⇒ `Promise.<EntryMetadata>`
 
 
-<a name="module-storage-entry-name" id="module-storage-entry-name"></a>
 
 #### entry.name : `string`
 The name of this entry. Read-only.
@@ -130,7 +129,6 @@ The name of this entry. Read-only.
 console.log(anEntry.name);
 ```
 
-<a name="module-storage-entry-provider" id="module-storage-entry-provider"></a>
 
 #### entry.provider : `FileSystemProvider`
 The associated provider that services this entry. Read-only.
@@ -145,7 +143,6 @@ if (entryOne.provider !== entryTwo.provider) {
 }
 ```
 
-<a name="module-storage-entry-url" id="module-storage-entry-url"></a>
 
 #### entry.url : `URL`
 The url of this entry. You can use this url as the `src` attribute of an `<img>` tag in the UI. Read-only.
@@ -158,7 +155,6 @@ The url of this entry. You can use this url as the `src` attribute of an `<img>`
 console.log(anEntry.url);
 ```
 
-<a name="module-storage-entry-nativepath" id="module-storage-entry-nativepath"></a>
 
 #### entry.nativePath : `string`
 The platform native file-system path of this entry. Read-only
@@ -182,7 +178,6 @@ if (something.isEntry) {
 }
 ```
 
-<a name="module-storage-entry-isfile" id="module-storage-entry-isfile"></a>
 
 #### entry.isFile : `boolean`
 Indicates that this instance is **not** a `File`. Useful for type-
@@ -197,7 +192,6 @@ if (!anEntry.isFile) {
 }
 ```
 
-<a name="module-storage-entry-isfolder" id="module-storage-entry-isfolder"></a>
 
 #### entry.isFolder : `boolean`
 Indicates that this instance is **not** a folder. Useful for type-
@@ -212,7 +206,6 @@ if (!anEntry.isFolder) {
 }
 ```
 
-<a name="module-storage-entry-tostring" id="module-storage-entry-tostring"></a>
 
 #### entry.toString() ⇒ `string`
 Returns the details of the given entry like name, type and native path in a readable string format.
@@ -220,7 +213,6 @@ Returns the details of the given entry like name, type and native path in a read
 **Kind**: instance method of [`Entry`](#module-storage-entry)
 **Since**: XD 13
 
-<a name="module-storage-entry-copyto" id="module-storage-entry-copyto"></a>
 
 #### entry.copyTo(folder, options) ⇒ `Promise`
 Copies this entry to the specified `folder`.
@@ -241,7 +233,7 @@ original item - it is _not_ updated to reference the copy.
 | --- | --- | --- | --- |
 | folder | `Folder` |  | the folder to which to copy this entry |
 | options | `\*` |  |  |
-| [options.overwrite] | `boolean` | `false` | if `true`, allows overwriting existing entries |
+| \[options.overwrite] | `boolean` | `false` | if `true`, allows overwriting existing entries |
 
 **Example**
 ```js
@@ -256,7 +248,6 @@ await someFile.copyTo(someFolder, {overwrite: true});
 await someFolder.copyTo(anotherFolder, {overwrite: true});
 ```
 
-<a name="module-storage-entry-moveto" id="module-storage-entry-moveto"></a>
 
 #### entry.moveTo(folder, options) ⇒ `Promise`
 Moves this entry to the target folder, optionally specifying a new name.
@@ -273,8 +264,8 @@ longer point to an item that exists on disk.
 | --- | --- | --- | --- |
 | folder | `Folder` |  | the folder to which to move this entry |
 | options | `\*` |  |  |
-| [options.overwrite] | `boolean` | `false` | If `true` allows the move to overwrite existing files |
-| [options.newName] | `string` |  | If specified, the entry is renamed to this name |
+| \[options.overwrite] | `boolean` | `false` | If `true` allows the move to overwrite existing files |
+| \[options.newName] | `string` |  | If specified, the entry is renamed to this name |
 
 **Example**
 ```js
@@ -297,7 +288,6 @@ await someFile.moveTo(someFolder, {newName: 'masterpiece.txt'})
 await someFile.moveTo(someFolder, {newName: 'novel.txt', {overwrite: true})
 ```
 
-<a name="module-storage-entry-delete" id="module-storage-entry-delete"></a>
 
 #### entry.delete() ⇒ `Promise`
 Removes this entry from the file system. If the entry is a folder, you must remove the files inside before removing the folder.
@@ -309,7 +299,6 @@ Removes this entry from the file system. If the entry is a folder, you must remo
 await aFile.delete();
 ```
 
-<a name="module-storage-entry-getmetadata" id="module-storage-entry-getmetadata"></a>
 
 #### entry.getMetadata() ⇒ `Promise.<EntryMetadata>`
 Returns this entry's metadata.
@@ -321,7 +310,6 @@ Returns this entry's metadata.
 const metadata = await aFile.getMetadata();
 ```
 
-<a name="module-storage-entrymetadata" id="module-storage-entrymetadata"></a>
 
 ### storage.EntryMetadata
 Metadata for an entry. It includes useful information such as:
@@ -346,49 +334,42 @@ specific File or Folder entry.
     * [.isFolder](#module-storage-entrymetadata-isfolder) : `boolean`
 
 
-<a name="module-storage-entrymetadata-name" id="module-storage-entrymetadata-name"></a>
 
 #### entryMetadata.name : `string`
 The name of the entry.
 
 **Kind**: instance property of [`EntryMetadata`](#module-storage-entrymetadata)
 
-<a name="module-storage-entrymetadata-size" id="module-storage-entrymetadata-size"></a>
 
 #### entryMetadata.size : `number`
 The size of the entry, if a file. Zero if a folder.
 
 **Kind**: instance property of [`EntryMetadata`](#module-storage-entrymetadata)
 
-<a name="module-storage-entrymetadata-datecreated" id="module-storage-entrymetadata-datecreated"></a>
 
 #### entryMetadata.dateCreated : `Date`
 The date this entry was created.
 
 **Kind**: instance property of [`EntryMetadata`](#module-storage-entrymetadata)
 
-<a name="module-storage-entrymetadata-datemodified" id="module-storage-entrymetadata-datemodified"></a>
 
 #### entryMetadata.dateModified : `Date`
 The date this entry was modified.
 
 **Kind**: instance property of [`EntryMetadata`](#module-storage-entrymetadata)
 
-<a name="module-storage-entrymetadata-isfile" id="module-storage-entrymetadata-isfile"></a>
 
 #### entryMetadata.isFile : `boolean`
 Indicates if the entry is a file
 
 **Kind**: instance property of [`EntryMetadata`](#module-storage-entrymetadata)
 
-<a name="module-storage-entrymetadata-isfolder" id="module-storage-entrymetadata-isfolder"></a>
 
 #### entryMetadata.isFolder : `boolean`
 Indicates if the entry is a folder
 
 **Kind**: instance property of [`EntryMetadata`](#module-storage-entrymetadata)
 
-<a name="module-storage-file" id="module-storage-file"></a>
 
 ### storage.File
 Represents a file on a file system. Provides methods for reading from and
@@ -414,7 +395,6 @@ method such as [`getFileForOpening()`](#module-storage-filesystemprovider-getfil
     * [.write(data, options)](#module-storage-file-write)
 
 
-<a name="module-storage-file-mode" id="module-storage-file-mode"></a>
 
 #### file.mode : `Symbol`
 Indicates whether this File object supports read-only or read-write
@@ -429,7 +409,6 @@ if (aFile.mode === modes.readOnly) {
 }
 ```
 
-<a name="module-storage-file-read" id="module-storage-file-read"></a>
 
 #### file.read(options) ⇒ `Promise.<(string\|ArrayBuffer)>`
 Reads data from the file and returns it. The file format can be specified
@@ -443,7 +422,7 @@ to be a text file using UTF8 encoding.
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | options | `Object` |  |  |
-| [options.format] | `Symbol` | `formats.utf8` | Optional. Format to read: one of [`storage.formats.utf8`](#module-storage-formats-utf8) or [`storage.formats.binary`](#module-storage-formats-binary). |
+| \[options.format] | `Symbol` | `formats.utf8` | Optional. Format to read: one of [`storage.formats.utf8`](#module-storage-formats-utf8) or [`storage.formats.binary`](#module-storage-formats-binary). |
 
 **Example**
 ```js
@@ -455,7 +434,6 @@ const data = await myNovel.read({format: formats.binary}); // 'data' is an Array
 console.log("File is " + data.byteLength + " bytes long.");
 ```
 
-<a name="module-storage-file-write" id="module-storage-file-write"></a>
 
 #### file.write(data, options)
 Writes data to a file, appending if desired. The format of the file
@@ -473,7 +451,7 @@ is controlled via the `format` option, and defaults to UTF8.
 | --- | --- | --- | --- |
 | data | `string` \| `ArrayBuffer` |  | Data to write to the file |
 | options | `Object` |  |  |
-| [options.format] | `Symbol` | `formats.utf8` | Optional. Format to write: [`storage.formats.utf8`](#module-storage-formats-utf8) or [`storage.formats.binary`](#module-storage-formats-binary). |
+| \[options.format] | `Symbol` | `formats.utf8` | Optional. Format to write: [`storage.formats.utf8`](#module-storage-formats-utf8) or [`storage.formats.binary`](#module-storage-formats-binary). |
 
 **Example**
 ```js
@@ -485,7 +463,6 @@ const data = new Uint8Array([0xFF, 0xA1]);
 await aDataFile.write(data, {format: formats.binary});  // writes a 2-byte file
 ```
 
-<a name="module-storage-filesystemprovider" id="module-storage-filesystemprovider"></a>
 
 ### storage.FileSystemProvider
 Provides access to files and folders on a file system. You don't instantiate
@@ -506,7 +483,6 @@ you.
     * [.getNativePath(entry)](#module-storage-filesystemprovider-getnativepath) ⇒ `string`
 
 
-<a name="module-storage-filesystemprovider-getfileforopening" id="module-storage-filesystemprovider-getfileforopening"></a>
 
 #### fileSystemProvider.getFileForOpening(options) ⇒ `Promise.<File>` \| `Promise.<Array.<File>>`
 Gets a file (or files) suitable for reading by displaying an "Open" file
@@ -523,8 +499,8 @@ The user can select multiple files only if the `allowMultiple` option is `true`.
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | options | `Object` |  |  |
-| [options.types] | `Array.<string>` | `[&#x27;*&#x27;]` | Optional. Allowed file extensions, with no "." prefix; use [`storage.fileTypes.all`](#module-storage-filetypes-all) to allow any file to be picked |
-| [options.allowMultiple] | `boolean` | `false` | Optional. If true, multiple files can be selected and this API returns `Array<File>`.<br/><br/>If false, only one file can be selected and this API returns a `File` directly. |
+| \[options.types] | `Array.<string>` | `\[&#x27;*&#x27;]` | Optional. Allowed file extensions, with no "." prefix; use [`storage.fileTypes.all`](#module-storage-filetypes-all) to allow any file to be picked |
+| \[options.allowMultiple] | `boolean` | `false` | Optional. If true, multiple files can be selected and this API returns `Array<File>`.\<br/\>\<br/\>If false, only one file can be selected and this API returns a `File` directly. |
 
 **Example**
 ```js
@@ -543,7 +519,6 @@ if (files.length === 0) {
 }
 ```
 
-<a name="module-storage-filesystemprovider-getfileforsaving" id="module-storage-filesystemprovider-getfileforsaving"></a>
 
 #### fileSystemProvider.getFileForSaving(suggestedName, options) ⇒ `Promise.<?File>`
 Gets a file reference suitable for read-write by displaying a "Save" file
@@ -560,7 +535,7 @@ will prompt the user to confirm before returning a result to you.
 | --- | --- | --- |
 | suggestedName | `string` | Required. The file extension should match one of the options specified in the `types` option. |
 | options | `Object` |  |
-| [options.types] | `Array.<string>` | Required. Allowed file extensions, with no "." prefix. |
+| \[options.types] | `Array.<string>` | Required. Allowed file extensions, with no "." prefix. |
 
 **Example**
 ```js
@@ -572,7 +547,6 @@ if (!file) {
 await file.write("It was a dark and stormy night");
 ```
 
-<a name="module-storage-filesystemprovider-getfolder" id="module-storage-filesystemprovider-getfolder"></a>
 
 #### fileSystemProvider.getFolder() ⇒ `Promise.<?Folder>`
 Gets a folder from the file system via a folder picker dialog. The files
@@ -591,7 +565,6 @@ const myNovel = (await fs.getEntries()).find(entry => entry.name.includes('novel
 const text = await myNovel.read();
 ```
 
-<a name="module-storage-filesystemprovider-gettemporaryfolder" id="module-storage-filesystemprovider-gettemporaryfolder"></a>
 
 #### fileSystemProvider.getTemporaryFolder() ⇒ `Promise.<Folder>`
 Returns a temporary folder. The contents of the folder may be lost when
@@ -604,7 +577,6 @@ the host application is closed.
 const temp = await fs.getTemporaryFolder();
 ```
 
-<a name="module-storage-filesystemprovider-getdatafolder" id="module-storage-filesystemprovider-getdatafolder"></a>
 
 #### fileSystemProvider.getDataFolder() ⇒ `Promise.<Folder>`
 Returns a folder that can be used for storing plugin-specific data without needing user
@@ -614,7 +586,6 @@ application is updated _and_ when your plugin is updated.
 **Kind**: instance method of [`FileSystemProvider`](#module-storage-filesystemprovider)
 **Since**: XD 13
 
-<a name="module-storage-filesystemprovider-getpluginfolder" id="module-storage-filesystemprovider-getpluginfolder"></a>
 
 #### fileSystemProvider.getPluginFolder() ⇒ `Promise.<Folder>`
 Returns an plugin's folder – this folder and everything within it are read only.
@@ -623,7 +594,6 @@ This contains all the Plugin related packaged assets.
 **Kind**: instance method of [`FileSystemProvider`](#module-storage-filesystemprovider)
 **Since**: XD 13
 
-<a name="module-storage-filesystemprovider-getfsurl" id="module-storage-filesystemprovider-getfsurl"></a>
 
 #### fileSystemProvider.getFsUrl(entry) ⇒ `URL`
 Returns the fs url of given entry.
@@ -635,7 +605,6 @@ Returns the fs url of given entry.
 | entry | `Entry` |
 
 
-<a name="module-storage-filesystemprovider-getnativepath" id="module-storage-filesystemprovider-getnativepath"></a>
 
 #### fileSystemProvider.getNativePath(entry) ⇒ `string`
 Returns the platform native file system path of given entry.
@@ -647,7 +616,6 @@ Returns the platform native file system path of given entry.
 | entry | `Entry` |
 
 
-<a name="module-storage-folder" id="module-storage-folder"></a>
 
 ### storage.Folder ⇐ `Entry`
 Represents a folder on a file system. You'll never instantiate this directly,
@@ -676,7 +644,6 @@ but will get it by calling [getTemporaryFolder](#module-storage-filesystemprovid
     * [.renameEntry(entry, newName, options)](#module-storage-folder-renameentry) ⇒ `Promise`
 
 
-<a name="module-storage-folder-getentries" id="module-storage-folder-getentries"></a>
 
 #### folder.getEntries() ⇒ `Promise.<Array.<Entry>>`
 Returns an array of entries contained within this folder.
@@ -690,7 +657,6 @@ const entries = await aFolder.getEntries();
 const allFiles = entries.filter(entry => entry.isFile);
 ```
 
-<a name="module-storage-folder-createfile" id="module-storage-folder-createfile"></a>
 
 #### folder.createFile(name, options) ⇒ `Promise.<File>`
 Creates a File object within this folder, which need not correspond to a file that exists on disk
@@ -714,14 +680,13 @@ yet.
 | --- | --- | --- | --- |
 | name | `string` |  | the name of the file to create. |
 | options | `Object` |  |  |
-| [options.overwrite] | `boolean` | `false` | If `false`, the call will fail if the file already exists. If `true`, the call will succeed regardless of whether the file currently exists on disk. |
+| \[options.overwrite] | `boolean` | `false` | If `false`, the call will fail if the file already exists. If `true`, the call will succeed regardless of whether the file currently exists on disk. |
 
 **Example**
 ```js
 const myNovelTxtFile = await aFolder.createFile("mynovel.txt");
 ```
 
-<a name="module-storage-folder-createfolder" id="module-storage-folder-createfolder"></a>
 
 #### folder.createFolder(name) ⇒ `Folder`
 Creates a Folder object within this folder _and_ creates the folder on disk. Unlike `createFile()`,
@@ -749,7 +714,6 @@ this call _does_ modify the disk, and it cannot be used if the folder already ex
 const myCollectionsFolder = await aFolder.createFolder("collections");
 ```
 
-<a name="module-storage-folder-getentry" id="module-storage-folder-getentry"></a>
 
 #### folder.getEntry(filePath) ⇒ `Promise.<(File\|Folder)>`
 Returns a File or Folder entry for an item that already exists on disk within this folder or
@@ -768,7 +732,6 @@ its hierarchy of subfolders. Fails if no entry with the given name/path currentl
 const myNovel = await aFolder.getEntry("mynovel.txt");
 ```
 
-<a name="module-storage-folder-renameentry" id="module-storage-folder-renameentry"></a>
 
 #### folder.renameEntry(entry, newName, options) ⇒ `Promise`
 Renames an item on disk to a new name within the same folder. The Entry object passed to this
@@ -784,19 +747,17 @@ exists on disk.
 | entry | `Entry` |  | entry to rename (File or Folder). Must exist. |
 | newName | `string` |  | the new name to assign |
 | options | `any` |  |  |
-| [options.overwrite] | `boolean` | `false` | if `true`, renaming can overwrite an existing entry |
+| \[options.overwrite] | `boolean` | `false` | if `true`, renaming can overwrite an existing entry |
 
 **Example**
 ```js
 await myNovels.rename(myNovel, "myFantasticNovel.txt");
 ```
 
-<a name="module-storage-localfilesystem" id="module-storage-localfilesystem"></a>
 
 ### storage.localFileSystem : `LocalFileSystemProvider`
 **Kind**: static property of [`storage`](#module-storage)
 
-<a name="module-storage-errors" id="module-storage-errors"></a>
 
 ### storage.errors : `Errors`
 **Kind**: static property of [`storage`](#module-storage)
@@ -816,7 +777,6 @@ await myNovels.rename(myNovel, "myFantasticNovel.txt");
     * [.InvalidFileNameError](#module-storage-errors-invalidfilenameerror) ⇐ `Error`
 
 
-<a name="module-storage-errors-abstractmethodinvocationerror" id="module-storage-errors-abstractmethodinvocationerror"></a>
 
 #### errors.AbstractMethodInvocationError ⇐ `Error`
 Attempted to invoke an abstract method.
@@ -824,7 +784,6 @@ Attempted to invoke an abstract method.
 **Kind**: static class of [`errors`](#module-storage-errors)
 **Extends**: `Error`
 
-<a name="module-storage-errors-providermismatcherror" id="module-storage-errors-providermismatcherror"></a>
 
 #### errors.ProviderMismatchError ⇐ `Error`
 Attempted to execute a command that required the providers of all
@@ -833,7 +792,6 @@ entries to match.
 **Kind**: static class of [`errors`](#module-storage-errors)
 **Extends**: `Error`
 
-<a name="module-storage-errors-entryisnotanentryerror" id="module-storage-errors-entryisnotanentryerror"></a>
 
 #### errors.EntryIsNotAnEntryError ⇐ `Error`
 The object passed as an entry is not actually an `Entry`.
@@ -841,7 +799,6 @@ The object passed as an entry is not actually an `Entry`.
 **Kind**: static class of [`errors`](#module-storage-errors)
 **Extends**: `Error`
 
-<a name="module-storage-errors-entryisnotafoldererror" id="module-storage-errors-entryisnotafoldererror"></a>
 
 #### errors.EntryIsNotAFolderError ⇐ `Error`
 The entry is not a folder, but was expected to be a folder.
@@ -849,7 +806,6 @@ The entry is not a folder, but was expected to be a folder.
 **Kind**: static class of [`errors`](#module-storage-errors)
 **Extends**: `Error`
 
-<a name="module-storage-errors-entryisnotafileerror" id="module-storage-errors-entryisnotafileerror"></a>
 
 #### errors.EntryIsNotAFileError ⇐ `Error`
 The entry is not a file, but was expected to be.
@@ -857,7 +813,6 @@ The entry is not a file, but was expected to be.
 **Kind**: static class of [`errors`](#module-storage-errors)
 **Extends**: `Error`
 
-<a name="module-storage-errors-notafilesystemerror" id="module-storage-errors-notafilesystemerror"></a>
 
 #### errors.NotAFileSystemError ⇐ `Error`
 The instance was expected to be a file system, but wasn't.
@@ -865,7 +820,6 @@ The instance was expected to be a file system, but wasn't.
 **Kind**: static class of [`errors`](#module-storage-errors)
 **Extends**: `Error`
 
-<a name="module-storage-errors-outofspaceerror" id="module-storage-errors-outofspaceerror"></a>
 
 #### errors.OutOfSpaceError ⇐ `Error`
 The file system is out of space (or quota has been exceeded)
@@ -873,7 +827,6 @@ The file system is out of space (or quota has been exceeded)
 **Kind**: static class of [`errors`](#module-storage-errors)
 **Extends**: `Error`
 
-<a name="module-storage-errors-permissiondeniederror" id="module-storage-errors-permissiondeniederror"></a>
 
 #### errors.PermissionDeniedError ⇐ `Error`
 The file system revoked permission to complete the requested
@@ -882,7 +835,6 @@ action.
 **Kind**: static class of [`errors`](#module-storage-errors)
 **Extends**: `Error`
 
-<a name="module-storage-errors-entryexistserror" id="module-storage-errors-entryexistserror"></a>
 
 #### errors.EntryExistsError ⇐ `Error`
 An attempt was made to overwrite an entry without indicating
@@ -891,7 +843,6 @@ that it was safe to do so via `overwrite: true`.
 **Kind**: static class of [`errors`](#module-storage-errors)
 **Extends**: `Error`
 
-<a name="module-storage-errors-fileisreadonlyerror" id="module-storage-errors-fileisreadonlyerror"></a>
 
 #### errors.FileIsReadOnlyError ⇐ `Error`
 An attempt was made to write to a file that was opened as
@@ -900,7 +851,6 @@ read-only.
 **Kind**: static class of [`errors`](#module-storage-errors)
 **Extends**: `Error`
 
-<a name="module-storage-errors-domainnotsupportederror" id="module-storage-errors-domainnotsupportederror"></a>
 
 #### errors.DomainNotSupportedError ⇐ `Error`
 Domain is not supported by the current FileSystemProvider
@@ -909,7 +859,6 @@ instance.
 **Kind**: static class of [`errors`](#module-storage-errors)
 **Extends**: `Error`
 
-<a name="module-storage-errors-invalidfilenameerror" id="module-storage-errors-invalidfilenameerror"></a>
 
 #### errors.InvalidFileNameError ⇐ `Error`
 The file name contains invalid characters
@@ -917,7 +866,6 @@ The file name contains invalid characters
 **Kind**: static class of [`errors`](#module-storage-errors)
 **Extends**: `Error`
 
-<a name="module-storage-filetypes" id="module-storage-filetypes"></a>
 
 ### storage.fileTypes
 This namespace describes the various file type extensions that can used be used in some FS file open methods.
@@ -930,28 +878,24 @@ This namespace describes the various file type extensions that can used be used 
     * [.all](#module-storage-filetypes-all)
 
 
-<a name="module-storage-filetypes-text" id="module-storage-filetypes-text"></a>
 
 #### fileTypes.text
 Text file extensions
 
 **Kind**: static property of [`fileTypes`](#module-storage-filetypes)
 
-<a name="module-storage-filetypes-images" id="module-storage-filetypes-images"></a>
 
 #### fileTypes.images
 Image file extensions
 
 **Kind**: static property of [`fileTypes`](#module-storage-filetypes)
 
-<a name="module-storage-filetypes-all" id="module-storage-filetypes-all"></a>
 
 #### fileTypes.all
 All file types
 
 **Kind**: static property of [`fileTypes`](#module-storage-filetypes)
 
-<a name="module-storage-formats" id="module-storage-formats"></a>
 
 ### storage.formats
 This namespace describes the file content formats supported in FS methods like read and write.
@@ -963,21 +907,18 @@ This namespace describes the file content formats supported in FS methods like r
     * [.binary](#module-storage-formats-binary) : `Symbol`
 
 
-<a name="module-storage-formats-utf8" id="module-storage-formats-utf8"></a>
 
 #### formats.utf8 : `Symbol`
 UTF8 File encoding
 
 **Kind**: static property of [`formats`](#module-storage-formats)
 
-<a name="module-storage-formats-binary" id="module-storage-formats-binary"></a>
 
 #### formats.binary : `Symbol`
 Binary file encoding
 
 **Kind**: static property of [`formats`](#module-storage-formats)
 
-<a name="module-storage-modes" id="module-storage-modes"></a>
 
 ### storage.modes
 This namespace describes the access modes that can be supported by a given File entry.
@@ -989,21 +930,18 @@ This namespace describes the access modes that can be supported by a given File 
     * [.readWrite](#module-storage-modes-readwrite) : `Symbol`
 
 
-<a name="module-storage-modes-readonly" id="module-storage-modes-readonly"></a>
 
 #### modes.readOnly : `Symbol`
 The file is read-only; attempts to write will fail.
 
 **Kind**: static property of [`modes`](#module-storage-modes)
 
-<a name="module-storage-modes-readwrite" id="module-storage-modes-readwrite"></a>
 
 #### modes.readWrite : `Symbol`
 The file is read-write.
 
 **Kind**: static property of [`modes`](#module-storage-modes)
 
-<a name="module-storage-types" id="module-storage-types"></a>
 
 ### storage.types
 This namespace describes the type of the entry. Whether file or folder etc.
@@ -1015,14 +953,12 @@ This namespace describes the type of the entry. Whether file or folder etc.
     * [.folder](#module-storage-types-folder) : `Symbol`
 
 
-<a name="module-storage-types-file" id="module-storage-types-file"></a>
 
 #### types.file : `Symbol`
 A file; used when creating an entity
 
 **Kind**: static property of [`types`](#module-storage-types)
 
-<a name="module-storage-types-folder" id="module-storage-types-folder"></a>
 
 #### types.folder : `Symbol`
 A folder; used when creating an entity

@@ -1,5 +1,7 @@
 ---
+title: font-size
 jsDoc: true
+description: Specifies the size of the font.
 ---
 # font-size
 

@@ -1,9 +1,11 @@
 ---
+title: 2.0 Interacting with the Scenegraph
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: The scenegraph is a tree structure that represents the user’s document. You can use XD’s `scenegraph` module to manipulate the scenegraph. However, wh
 ---
 
 

@@ -1,5 +1,7 @@
 ---
+title: border-right-color
 jsDoc: true
+description: "Specifies the top border color for an element. Supported color formats are as follows:"
 ---
 # border-right-color
 

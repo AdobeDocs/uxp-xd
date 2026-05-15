@@ -1,16 +1,18 @@
 ---
+title: Index
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: Don't build it alone! We've got an awesome community that you can interact with during your journey to creating your XD plugin.
 ---
 
 ## Join the developer community
 
 Don't build it alone! We've got an awesome community that you can interact with during your journey to creating your XD plugin.
 
-<!-- ![XD Dev Days Event](/images/xd-dev-days.png) -->
+\<!-- ![XD Dev Days Event](/images/xd-dev-days.png) --\>
 
 Whether you're looking for help, community discussion, or want to give us feedback, you've come to the right place!
 

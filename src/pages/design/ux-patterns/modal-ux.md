@@ -1,9 +1,11 @@
 ---
+title: Modal UX
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: This section will have recommendations when using a Modal Dialog -  Blocking UI. If the plugin needs to run an action before the user starts a new act
 ---
 
 # Modal UX
@@ -16,9 +18,8 @@ This section will have recommendations when using a Modal Dialog -  Blocking UI.
 
 ![Example of Modal](../ux-images/modal-ux-1-example.png)
 
-----------
-
- <br />
+<HorizontalLine />
+ \<br/\>
 
 ## Overview
 
@@ -50,7 +51,7 @@ Include a modal dismissal button to allow the user to cancel/close the modal and
 **Plugin Icon**.  
 You can include a plugin icon to let the user know they are interacting with your plugin in the modal dialog
 
- <br />
+ \<br/\>
 
 ## Modal Dialog UI
 
@@ -66,7 +67,7 @@ You can include a plugin icon to let the user know they are interacting with you
 
 ![Loader](../ux-images/modal-ux-5-loader.png)
 
- <br />
+ \<br/\>
 
 ## Dialog buttons and key commands
 

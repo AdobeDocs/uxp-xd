@@ -1,5 +1,7 @@
 ---
+title: width
 jsDoc: true
+description: Specifies the width for an element.
 ---
 # width
 

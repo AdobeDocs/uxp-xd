@@ -1,3 +1,8 @@
+---
+title: Styles
+description: align-content(../styles/align-content.md)
+---
+
 # Styles
 * [align-content](../styles/align-content.md)
 * [align-items](../styles/align-items.md)

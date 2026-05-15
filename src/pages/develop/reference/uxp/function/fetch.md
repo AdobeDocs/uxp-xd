@@ -1,13 +1,14 @@
 ---
+title: Fetch
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: a name="module-global-fetch" id="module-global-fetch"/a
 ---
 
 
-<a name="module-global-fetch" id="module-global-fetch"></a>
 
 ## fetch(input, [init])
 
@@ -23,9 +24,9 @@ keywords:
 | Param | Type | Default | Description |
 | --- | --- | --- | --- |
 | input | `string` \| `Request` |  | either the URL string to connect with or a Request object having the URL and the init option in the below. |
-| [init] | `Object` |  | custom options for a HTTP request. |
-| [init.method] | `Object` | `&quot;GET&quot;` | the HTTP request method. |
-| [init.headers] | `Headers` |  | the HTTP request headers to add. |
-| [init.body] | `string` \| `ArrayBuffer` \| `TypedArray` \| `FormData` |  | the body that is included in the HTTP request body. There is a caveat for sending a FormData object. @see XMLHttpRequest.send. |
-| [init.credentials] | `string` | `&quot;\&quot;omit\&quot;&quot;` | indicates whether to send cookies. Possible values and functions are as follows: "omit" : cookies are NOT sent, "same-origin" and "include" : cookies are sent. |
+| \[init] | `Object` |  | custom options for a HTTP request. |
+| \[init.method] | `Object` | `&quot;GET&quot;` | the HTTP request method. |
+| \[init.headers] | `Headers` |  | the HTTP request headers to add. |
+| \[init.body] | `string` \| `ArrayBuffer` \| `TypedArray` \| `FormData` |  | the body that is included in the HTTP request body. There is a caveat for sending a FormData object. @see XMLHttpRequest.send. |
+| \[init.credentials] | `string` | `&quot;\&quot;omit\&quot;&quot;` | indicates whether to send cookies. Possible values and functions are as follows: "omit" : cookies are NOT sent, "same-origin" and "include" : cookies are sent. |
 

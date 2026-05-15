@@ -1,16 +1,18 @@
 ---
+title: Panel
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: A panel is used to display information and options that are persistent and can be shown without blocking user interactions with the active document.
 ---
 
 # Panel
 
 A panel is used to display information and options that are persistent and can be shown without blocking user interactions with the active document.
 
-![Example of a panel](./assets/panel.png)
+![Example of a panel](assets/panel.png)
 
 Panels appear on the left-hand side of the app when user clicks on the Plugins icon at the bottom-left side. Panels do not prevent user interaction with the underlying document and can listen for the user's selection changes. Panels are dismissed in any one of the following manners:
 
@@ -20,7 +22,7 @@ Panels appear on the left-hand side of the app when user clicks on the Plugins i
 
 ## Usage
 
-Building the user interface for panels is very similar to modals. Refer to [Modal dialog usage](/develop/reference/ui/dialogs/#usage).
+Building the user interface for panels is very similar to modals. Refer to [Modal dialog usage](/develop/reference/ui/dialogs/index.md#usage).
 
 ## Building Panels
 
@@ -28,13 +30,13 @@ You can build panels using any method that creates an HTML5 DOM structure. This 
 
 Let's examine a simple panel and how we might create it:
 
-{% tabs sample="Sample", html="HTML", js="JS" %}
+\{% tabs sample="Sample", html="HTML", js="JS" %}
 
-{% content "sample" %}
+\{% content "sample" %}
 
-![A Simple panel](./assets/panel-example.png)
+![A Simple panel](assets/panel-example.png)
 
-{% content "html" %}
+\{% content "html" %}
 
 ```html
 <style>
@@ -116,7 +118,7 @@ Let's examine a simple panel and how we might create it:
 </form>
 ```
 
-{% content "js" %}
+\{% content "js" %}
 
 ```js
 let panel;
@@ -208,7 +210,7 @@ module.exports = {
 };
 ```
 
-{% endtabs %}
+\{% endtabs %}
 
 Note: you can either reuse your panel's UI nodes, or destroy and recreate the panel each time it's closed. For examples of both approaches, see the [detailed documentation on the `show()` method](show.md).
 
@@ -216,13 +218,13 @@ Note: you can either reuse your panel's UI nodes, or destroy and recreate the pa
 
 As you can see in the example above, every time the user's `selection` changes, your (optional) lifecycle method `update` will trigger. You will have access to both `selection` and `root` as parameters in the function. This means that your panel can display dynamic content based on what user has selected in the document.
 
-{% tabs sampleselection="Sample", htmlselection="HTML", jsselection="JS" %}
+\{% tabs sampleselection="Sample", htmlselection="HTML", jsselection="JS" %}
 
-{% content "sampleselection" %}
+\{% content "sampleselection" %}
 
-![Error message](./assets/error.png)
+![Error message](assets/error.png)
 
-{% content "htmlselection" %}
+\{% content "htmlselection" %}
 
 ```html
 <style>
@@ -304,7 +306,7 @@ As you can see in the example above, every time the user's `selection` changes, 
 </form>
 ```
 
-{% content "jsselection" %}
+\{% content "jsselection" %}
 
 ```js
 let panel;
@@ -400,7 +402,7 @@ module.exports = {
 };
 ```
 
-{% endtabs %}
+\{% endtabs %}
 
 ## Further Reading
 

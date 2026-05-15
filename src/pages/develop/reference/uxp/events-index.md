@@ -1,9 +1,11 @@
 ---
+title: Events
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: Adobe XD supports a subset of HTML events.
 ---
 
 # Events

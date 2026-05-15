@@ -1,9 +1,11 @@
 ---
+title: Plugin workflows
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: Once you've added a plugin to your developer workspace, there are several things you can do with it. All of the following features are accessed via th
 ---
 
 # Plugin workflows
@@ -48,7 +50,7 @@ Sometimes with a lot of plugins it may be tricky to navigate your file system to
 
 Sometimes it's useful to "break on start" when debugging your plugins. When this option is checked, the plugin will immediately break into the debugger when it is loaded so that you can trace through the plugin's initialization routines.
 
-The **Advanced** section allows you to specify the plugin's build folder, relative to its `manifest.json` file. This is useful when [working with React](../working-with-react/) or other bundlers.
+The **Advanced** section allows you to specify the plugin's build folder, relative to its `manifest.json` file. This is useful when [working with React](./working-with-react.md) or other bundlers.
 
 To save changes to these settings, click the **Save** button.
 

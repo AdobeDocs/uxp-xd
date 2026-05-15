@@ -1,20 +1,22 @@
 ---
+title: How to show an alert
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: There will be times when you need to show a simple message to your user. This tutorial will show you an easy way to display an informational message l
 ---
 
 # How to show an alert
 
 There will be times when you need to show a simple message to your user. This tutorial will show you an easy way to display an informational message like the following:
 
-![A typical alert message](./assets/our-alert.png)
+![A typical alert message](assets/our-alert.png)
 
 Other times you'll need to display an _error_ alert, which looks like this:
 
-![An error alert](./assets/error-alert.png)
+![An error alert](assets/error-alert.png)
 
 ## Technology Used
 
@@ -23,8 +25,8 @@ Other times you'll need to display an _error_ alert, which looks like this:
 ## Prerequisites
 
 - Basic knowledge of HTML, CSS, and JavaScript.
-- [Quick Start Tutorial](/develop/tutorials/quick-start/)
-- [Debugging Tutorial](/develop/tutorials/debugging/)
+- [Quick Start Tutorial](/develop/tutorials/quick-start/index.md)
+- [Debugging Tutorial](/develop/tutorials/debugging/index.md)
 
 ## Development Steps
 
@@ -33,7 +35,7 @@ Other times you'll need to display an _error_ alert, which looks like this:
 
 ### 1. Prepare your manifest.json file
 
-First, edit the manifest file for the plugin you created in our [Quick Start Tutorial](/develop/tutorials/quick-start).
+First, edit the manifest file for the plugin you created in our [Quick Start Tutorial](/develop/tutorials/quick-start/index.md).
 
 Replace the `uiEntryPoints` field of the manifest with the following:
 
@@ -52,7 +54,7 @@ Replace the `uiEntryPoints` field of the manifest with the following:
   ]
 ```
 
-If you're curious about what each entry means, [see the manifest documentation](/develop/plugin-development/plugin-structure/manifest/), where you can also learn about all manifest requirements for a plugin to be published in the XD Plugin Manager.
+If you're curious about what each entry means, [see the manifest documentation](/develop/plugin-development/plugin-structure/manifest.md), where you can also learn about all manifest requirements for a plugin to be published in the XD Plugin Manager.
 
 ### 2. Add the "plugin helpers" library
 

@@ -1,3 +1,8 @@
+---
+title: Spectrum UXP Reference
+description: "Spectrum UXP is an implementation of the Spectrum Web Components(https://opensource.adobe.com/spectrum-web-components/) API and the Spectrum(https"
+---
+
 # Spectrum UXP Reference
 
 Spectrum UXP is an implementation of the [Spectrum Web Components](https://opensource.adobe.com/spectrum-web-components/) API and the [Spectrum](https://spectrum.adobe.com/) Design System.
@@ -23,4 +28,4 @@ Using a Spectrum UXP component in a UXP plugin is easy. There are no libraries o
 ## Pages in this section
 * [Overview](overview/index.md)
 * [Typography](typography/index.md)
-* [User Interface](User%20Interface/index.md)
+* [User Interface](user-interface/index.md)

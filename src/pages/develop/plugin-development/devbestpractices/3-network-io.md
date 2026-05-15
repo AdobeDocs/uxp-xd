@@ -1,9 +1,11 @@
 ---
+title: 3.0 Network I/O
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: Interacting with the network is a useful feature — you can communicate with remote or local servers to transmit data, images, and more. However, this
 ---
 
 

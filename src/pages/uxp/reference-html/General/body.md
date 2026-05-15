@@ -1,5 +1,7 @@
 ---
+title: body
 jsDoc: true
+description: The body element of the plugin. When a plugin has multiple panels, the `body` tag represents the first panel's contents, and additional panels will
 ---
 # body
 

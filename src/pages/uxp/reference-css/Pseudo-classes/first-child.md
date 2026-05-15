@@ -1,5 +1,7 @@
 ---
+title: ":first-child"
 jsDoc: true
+description: Matches only the first child.
 ---
 # :first-child
 

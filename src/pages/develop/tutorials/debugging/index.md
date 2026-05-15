@@ -1,9 +1,11 @@
 ---
+title: How to Debug Your Plugin
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: Bugs happen! In this tutorial, you will learn how to debug your Adobe XD plugin.
 ---
 
 # How to Debug Your Plugin
@@ -12,17 +14,17 @@ Bugs happen! In this tutorial, you will learn how to debug your Adobe XD plugin.
 
 ### Prerequisite
 
-At least one plugin created and added to the [UXP Developer Tool](/develop/plugin-development/devtool).
+At least one plugin created and added to the [UXP Developer Tool](/develop/plugin-development/devtool/index.md).
 
 ### Debugging Options
 
-To debug your Adobe XD plugins, you'll be using the [UXP Developer Tool](/develop/plugin-development/devtool). However, you can glean some useful information by using the built-in Developer Console provided by Adobe XD. (Note that this is a legacy feature and _will_ be going away in the future.)
+To debug your Adobe XD plugins, you'll be using the [UXP Developer Tool](/develop/plugin-development/devtool/index.md). However, you can glean some useful information by using the built-in Developer Console provided by Adobe XD. (Note that this is a legacy feature and _will_ be going away in the future.)
 
 ## Debugging with the UXP Developer Tool
 
 ### 1. Load your plugin
 
-1. If you haven't already, launch the [UXP Developer Tool](/develop/plugin-development/devtool) application.
+1. If you haven't already, launch the [UXP Developer Tool](/develop/plugin-development/devtool/index.md) application.
 2. Next to the plugin you want to debug, find the **•••** button and click it. Select **Load** to load this into XD.
 
 ### 2. Launch Debugger

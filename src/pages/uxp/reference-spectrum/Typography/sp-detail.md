@@ -1,5 +1,7 @@
 ---
+title: sp-detail
 jsDoc: true
+description: Renders detail text in a smaller font.
 ---
 # sp-detail
 

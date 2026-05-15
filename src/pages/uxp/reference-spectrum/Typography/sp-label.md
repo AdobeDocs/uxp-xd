@@ -1,5 +1,7 @@
 ---
+title: sp-label
 jsDoc: true
+description: Renders a text label. Can also be used to add a label to many Spectrum UXP UI elements when using the `slot="label"` attribute.
 ---
 # sp-label
 

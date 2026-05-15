@@ -1,5 +1,7 @@
 ---
+title: ":root"
 jsDoc: true
+description: Matches the root of the plugin's document. This is a useful element to attach custom properties and CSS variables to.
 ---
 # :root
 

@@ -1,7 +1,12 @@
+---
+title: uxp
+description: Entry Points(../../modules/uxp/entry-points/index.md)
+---
+
 # uxp
-* [Entry Points](Entry%20Points/index.md)
-* [Host Information](Host%20Information/index.md)
-* [Key-Value Storage](Key-Value%20Storage/index.md)
-* [Persistent File Storage](Persistent%20File%20Storage/index.md)
-* [Plugin Manager](Plugin%20Manager/index.md)
+* [Entry Points](../../modules/uxp/entry-points/index.md)
+* [Host Information](../../modules/uxp/host-information/index.md)
+* [Key-Value Storage](../../modules/uxp/key-value-storage/index.md)
+* [Persistent File Storage](../../modules/uxp/persistent-file-storage/index.md)
+* [Plugin Manager](../../modules/uxp/plugin-manager/index.md)
 * [Versions](../../modules/uxp/versions/index.md)

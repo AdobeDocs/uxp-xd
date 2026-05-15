@@ -1,9 +1,11 @@
 ---
+title: clipboard
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: This module lets you copy text to the clipboard. It is not yet possible to copy other content types, or to handle paste events.
 ---
 
 # clipboard

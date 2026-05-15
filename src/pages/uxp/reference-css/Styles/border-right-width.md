@@ -1,5 +1,7 @@
 ---
+title: border-right-width
 jsDoc: true
+description: Sets the width of the right border.
 ---
 # border-right-width
 

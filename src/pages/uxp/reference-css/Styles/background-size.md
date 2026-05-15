@@ -1,5 +1,7 @@
 ---
+title: background-size
 jsDoc: true
+description: "Since:  UXP v3.0"
 ---
 # background-size
 

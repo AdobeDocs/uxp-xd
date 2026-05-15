@@ -1,5 +1,7 @@
 ---
+title: "::after"
 jsDoc: true
+description: Creates a pseudo-element after the matched element.
 ---
 # ::after
 

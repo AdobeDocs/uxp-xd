@@ -1,9 +1,11 @@
 ---
+title: JavaScript version and feature support
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: XD plugin APIs support "modern JavaScript"... but what does that mean exactly?
 ---
 
 # JavaScript version and feature support

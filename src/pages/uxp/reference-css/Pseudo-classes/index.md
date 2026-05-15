@@ -1,3 +1,8 @@
+---
+title: Pseudo-classes
+description: active(../pseudo-classes/active.md)
+---
+
 # Pseudo-classes
 * [active](../pseudo-classes/active.md)
 * [checked](../pseudo-classes/checked.md)

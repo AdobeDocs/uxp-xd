@@ -1,5 +1,7 @@
 ---
+title: align-items
 jsDoc: true
+description: Supported values are `flex-start`, `flex-end`, `center`, `stretch`.
 ---
 # align-items
 

@@ -1,11 +1,13 @@
 ---
+title: border-right
 jsDoc: true
+description: Shorthand for specifying the style(./../styles/border-right-style.md), color(./../styles/border-right-color.md), and width(./../styles/border-ri
 ---
 # border-right
 
 **Since:** UXP v2.0
 
-Shorthand for specifying the [style](../border-right-style/), [color](../border-right-color/), and [width](../border-right-width) of the top border.
+Shorthand for specifying the [style](./../styles/border-right-style.md), [color](./../styles/border-right-color.md), and [width](./../styles/border-right-width.md) of the top border.
 
 > **Warning**
 >

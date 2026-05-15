@@ -1,9 +1,11 @@
 ---
+title: XD concepts
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: "These important concepts are specific to plugins for XD:"
 ---
 
 # XD concepts

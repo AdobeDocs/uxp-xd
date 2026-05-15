@@ -1,5 +1,7 @@
 ---
+title: max-width
 jsDoc: true
+description: Specifies the maximum width for an element.
 ---
 # max-width
 

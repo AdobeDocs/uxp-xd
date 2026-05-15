@@ -1,17 +1,17 @@
 ---
+title: Shell
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: a name="module-shell" id="module-shell"/a
 ---
 
 
-<a name="module-shell" id="module-shell"></a>
 
 ## shell
 
-<a name="module-shell-openexternal" id="module-shell-openexternal"></a>
 
 ### shell.openExternal(url)
 Opens the url in an the system browser.

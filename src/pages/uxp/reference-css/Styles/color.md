@@ -1,5 +1,7 @@
 ---
+title: color
 jsDoc: true
+description: "Specifies the text color for an element. Supported color formats are as follows:"
 ---
 # color
 

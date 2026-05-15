@@ -1,9 +1,11 @@
 ---
+title: cloud
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: The `cloud` module lets you get information about shared prototypes and design specs.
 ---
 
 # cloud
@@ -42,12 +44,12 @@ specs.forEach((artifact) => {
 
 ## Enums
 
-<dl>
-<dt><a name="ArtifactType"></a> ArtifactType : </dt><dd>`PROTOTYPE, SPECS` - Type of shared artifact: interactive prototype only, or developer-focused specs view (which may <i>also</i> include access to an interactive prototype view)</dd>
-<dt><a name="TargetPlatform"></a> TargetPlatform : </dt><dd>`WEB, IOS, ANDROID` - Target platform for published design specs</dd>
-<dt><a name="AccessLevel"></a> AccessLevel : </dt><dd>`LINKABLE, PASSWORD_PROTECTED, INVITE_ONLY` - Access level of the shared link: accessible to anyone with the link, anyone with the link + password, or only specific
-Creative Cloud user accounts</dd>
-</dl>
+\<dl\>
+\<dt\> ArtifactType : \</dt\>\<dd\>`PROTOTYPE, SPECS` - Type of shared artifact: interactive prototype only, or developer-focused specs view (which may *also* include access to an interactive prototype view)\</dd\>
+\<dt\> TargetPlatform : \</dt\>\<dd\>`WEB, IOS, ANDROID` - Target platform for published design specs\</dd\>
+\<dt\> AccessLevel : \</dt\>\<dd\>`LINKABLE, PASSWORD_PROTECTED, INVITE_ONLY` - Access level of the shared link: accessible to anyone with the link, anyone with the link + password, or only specific
+Creative Cloud user accounts\</dd\>
+\</dl\>
 
 ## Typedefs
 

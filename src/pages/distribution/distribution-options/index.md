@@ -1,9 +1,11 @@
 ---
+title: Distribution options
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: Once you have a packaged plugin, you're ready to distribute. You can make your plugin available to users through the Creative Cloud Plugin Marketplace
 ---
 
 
@@ -11,7 +13,7 @@ keywords:
 
 Once you have a packaged plugin, you're ready to distribute. You can make your plugin available to users through the Creative Cloud Plugin Marketplace or via direct distribution.
 
-<SummaryBlock slots="heading, text, buttons" background="rgb(141, 52, 78)" />
+\<SummaryBlock slots="heading, text, buttons" background="rgb(141, 52, 78)" /\>
 
 ## Distribute on Creative Cloud Plugin Marketplace
 

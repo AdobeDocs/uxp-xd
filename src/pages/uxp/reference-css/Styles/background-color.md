@@ -1,5 +1,7 @@
 ---
+title: background-color
 jsDoc: true
+description: "Specifies the background color for an element. Supported color formats are as follows:"
 ---
 # background-color
 

@@ -1,5 +1,7 @@
 ---
+title: flex-grow
 jsDoc: true
+description: Determines if a flexible item can grow, and if so, how it grows relative to other items in the flexible container.
 ---
 # flex-grow
 

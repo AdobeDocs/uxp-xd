@@ -1,5 +1,7 @@
 ---
+title: ":nth-last-child"
 jsDoc: true
+description: Matches only the Nth child from the end. Can use an expression or `even` or `odd`.
 ---
 # :nth-last-child
 

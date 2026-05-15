@@ -1,9 +1,11 @@
 ---
+title: Coordinate spaces & units
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: Sizes and distances in XD are specified in DPI-independent pixels, equivalent to pixels on a 1x display. This is similar to the "CSS
 ---
 
 # Coordinate spaces & units
@@ -17,8 +19,8 @@ a rotated rectangle that is inside an artboard:
 
 ![diagram of coordinate spaces](../../images/coord-spaces.png)
 
-The top-left corner of a node is not always located at (0,0) in its own local coordinate space. Use [`localBounds`](../scenegraph/#SceneNode-localBounds)
-to get the true top-left of a node. For example, the baseline of a [Point Text node](../scenegraph/#Text) is at Y=0 in its local coordinates, so its
+The top-left corner of a node is not always located at (0,0) in its own local coordinate space. Use [`localBounds`](../../reference/scenegraph.md#SceneNode-localBounds)
+to get the true top-left of a node. For example, the baseline of a [Point Text node](../../reference/scenegraph.md#Text) is at Y=0 in its local coordinates, so its
 upper-left corner is at a negative Y value. Similarly, centered or right-aligned text will start at a negative X value in local coordinates.
 
 Here are some examples of nodes where the local origin is not the node's visual top-left corner:
@@ -31,6 +33,6 @@ For example, a center or outside stroke protrudes beyond the path outline, as do
 
 ![examples of path bounds vs. draw bounds](../../images/path-bounds.png)
 
-If you need a bounding box that encompasses _all_ visible pixels of an object, use [`globalDrawBounds`](../scenegraph/#SceneNode-globalDrawBounds).
+If you need a bounding box that encompasses _all_ visible pixels of an object, use [`globalDrawBounds`](../../reference/scenegraph.md#SceneNode-globalDrawBounds).
 The draw bounds are the bounds used when exporting a bitmap image, for example. However, in most other cases (including align/snapping), XD uses the
 path outline bounds.

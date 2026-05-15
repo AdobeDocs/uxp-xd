@@ -1,3 +1,8 @@
+---
+title: HTML Reference
+description: Technical documentation regarding some of the HTML elements and attributes that are supported.
+---
+
 # HTML Reference
 
 Technical documentation regarding some of the HTML elements and attributes that are supported.

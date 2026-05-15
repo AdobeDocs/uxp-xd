@@ -1,9 +1,11 @@
 ---
+title: Packaging your plugin
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: Before you share your plugin, you'll need to package it up.
 ---
 
 # Packaging your plugin
@@ -14,7 +16,7 @@ This tutorial describes how to package the files of an XD plugin. It's a simple 
 
 ## Prerequisite
 
-- A code-complete plugin (if you don't have one yet, try our [Quick Start Tutorial](/develop/tutorials/quick-start/))
+- A code-complete plugin (if you don't have one yet, try our [Quick Start Tutorial](/develop/tutorials/quick-start/index.md))
 
 ## Workflow
 

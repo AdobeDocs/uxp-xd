@@ -1,5 +1,7 @@
 ---
+title: border-left-width
 jsDoc: true
+description: Sets the width of the left border.
 ---
 # border-left-width
 

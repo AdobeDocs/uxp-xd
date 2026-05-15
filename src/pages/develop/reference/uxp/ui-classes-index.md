@@ -1,9 +1,11 @@
 ---
+title: UI Classes
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: Attr(class/attr.md)
 ---
 
 # UI Classes

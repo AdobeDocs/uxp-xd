@@ -1,9 +1,11 @@
 ---
+title: How to create paths
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: This sample demonstrates how to create path objects in XD. The path objects are used to construct a pie chart.
 ---
 
 # How to create paths
@@ -14,8 +16,8 @@ This sample demonstrates how to create path objects in XD. The path objects are 
 
 - Basic knowledge of HTML, CSS, and JavaScript
 - Basic knowledge of [Paths](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Paths)
-- [Quick Start Tutorial](/develop/tutorials/quick-start/)
-- [Debugging Tutorial](/develop/tutorials/debugging/)
+- [Quick Start Tutorial](/develop/tutorials/quick-start/index.md)
+- [Debugging Tutorial](/develop/tutorials/debugging/index.md)
 
 ## Development Steps
 
@@ -24,7 +26,7 @@ This sample demonstrates how to create path objects in XD. The path objects are 
 
 ### 1. Create plugin scaffold
 
-First, edit the manifest file for the plugin you created in our [Quick Start Tutorial](/develop/tutorials/quick-start/).
+First, edit the manifest file for the plugin you created in our [Quick Start Tutorial](/develop/tutorials/quick-start/index.md).
 
 Replace the `uiEntryPoints` field of the manifest with the following:
 
@@ -38,7 +40,7 @@ Replace the `uiEntryPoints` field of the manifest with the following:
 ]
 ```
 
-If you're curious about what each entry means, [see the manifest documentation](/develop/plugin-development/plugin-structure/manifest/), where you can also learn about all manifest requirements for a plugin to be published in the XD Plugin Manager.
+If you're curious about what each entry means, [see the manifest documentation](/develop/plugin-development/plugin-structure/manifest.md), where you can also learn about all manifest requirements for a plugin to be published in the XD Plugin Manager.
 
 Then, update your `main.js` file, mapping the manifest's `commandId` to a handler function.
 

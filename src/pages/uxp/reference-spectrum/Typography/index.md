@@ -1,3 +1,8 @@
+---
+title: Typography
+description: sp-body(../typography/sp-body.md)
+---
+
 # Typography
 * [sp-body](../typography/sp-body.md)
 * [sp-detail](../typography/sp-detail.md)

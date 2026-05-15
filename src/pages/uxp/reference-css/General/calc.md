@@ -1,5 +1,7 @@
 ---
+title: calc
 jsDoc: true
+description: You can use `calc` to evaluate arbitrary expressions in the context of a CSS style rule.
 ---
 # calc
 

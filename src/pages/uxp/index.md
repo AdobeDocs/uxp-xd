@@ -1,3 +1,8 @@
+---
+title: UXP API Reference
+description: "JavaScript Reference(reference-js/index.md) : Technical documentation regarding the functions, classes, and modules available globally (on window,"
+---
+
 # UXP API Reference
 
 * [JavaScript Reference](reference-js/index.md) : Technical documentation regarding the functions, classes, and modules available globally (on window, for example) and via `require`.

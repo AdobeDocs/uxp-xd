@@ -1,5 +1,7 @@
 ---
+title: ":disabled"
 jsDoc: true
+description: Matches when the selected element is disabled.
 ---
 # :disabled
 

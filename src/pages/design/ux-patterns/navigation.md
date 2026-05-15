@@ -1,9 +1,11 @@
 ---
+title: Navigation
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: These guidelines provide clarity on the different entry points a plugin can have. An entry point is how users access your plugin, users can access a p
 ---
 
 # Navigation
@@ -14,9 +16,8 @@ These guidelines provide clarity on the different entry points a plugin can have
 - Menu architecture - Top menu and Submenu items
 - Keyboard shortcuts
 
-----------
-
- <br />
+<HorizontalLine />
+ \<br/\>
  
 ## Entry Points
 
@@ -28,7 +29,7 @@ These guidelines provide clarity on the different entry points a plugin can have
 
 ![Panel launch pad example in XD](../ux-images/navigation-plugin-launchpad-1.png)
 
- <br />
+ \<br/\>
 
 ## Menu architecture - Top menu and Submenu items
 
@@ -86,7 +87,7 @@ D. Submenu labels - action labels should have a descriptive name (i.e: Copy CSS)
 E. When a plugin needs further user action in order to continue, then at the end of the submenu label should use “…”
 F. Limit the use of emoji’s as part of the label
 
- <br />
+ \<br/\>
 
 ## Keyboard shortcuts
 

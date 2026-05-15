@@ -1,5 +1,7 @@
 ---
+title: border-color
 jsDoc: true
+description: "Specifies the border color for an element. Supported color formats are as follows:"
 ---
 # border-color
 

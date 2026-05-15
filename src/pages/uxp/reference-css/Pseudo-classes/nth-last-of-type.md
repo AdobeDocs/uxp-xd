@@ -1,5 +1,7 @@
 ---
+title: ":nth-last-of-type"
 jsDoc: true
+description: Matches only the Nth child of a given type from the end. Can use an expression or `even` or `odd`.
 ---
 # :nth-last-of-type
 

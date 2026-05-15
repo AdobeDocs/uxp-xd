@@ -1,6 +1,11 @@
-<!--
+---
+title: Known Issues
+description: "index_desc: List of known issues in UXP"
+---
+
+\<!--
 index_desc: List of known issues in UXP
--->
+--\>
 
 # Known Issues
 

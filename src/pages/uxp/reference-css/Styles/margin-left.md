@@ -1,5 +1,7 @@
 ---
+title: margin-left
 jsDoc: true
+description: "Since:  UXP v2.0"
 ---
 # margin-left
 

@@ -1,5 +1,7 @@
 ---
+title: head
 jsDoc: true
+description: Specifies various metadata about the UXP HTML document, including additional styles, scripts, etc.
 ---
 # head
 

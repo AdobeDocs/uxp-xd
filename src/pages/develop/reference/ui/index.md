@@ -1,9 +1,11 @@
 ---
+title: User Interface Components
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: While plenty of XD plugins are perfectly suited to run like headless scripts, many plugin creators will want to offer the user a way to interact. XD p
 ---
 
 # User Interface Components 
@@ -28,10 +30,7 @@ An **insertion point** is an area within XD that can accept custom user interfac
 
 Within an insertion point, you can create rich, custom user interfaces. Read the following for more information:
 
-* [Styles](./styles/)
-* [Layout](./layout/)
-* [Elements](./elements/)
 
 ## UI Sticker Sheet
 
-[View Sticker Sheet](/design/user-interface/sticker-sheet/)
+[Plugin Distribution](/distribution/index.md)

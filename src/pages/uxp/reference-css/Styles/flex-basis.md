@@ -1,5 +1,7 @@
 ---
+title: flex-basis
 jsDoc: true
+description: Sets the basis for determining the size of an item in a flexible layout container.
 ---
 # flex-basis
 

@@ -1,5 +1,7 @@
 ---
+title: border-bottom-left-radius
 jsDoc: true
+description: "Since:  UXP v2.0"
 ---
 # border-bottom-left-radius
 

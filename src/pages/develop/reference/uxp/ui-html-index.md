@@ -1,14 +1,16 @@
 ---
+title: UI HTML Elements
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: Any tag not listed below will be treated as a `div` tag.
 ---
 
 # UI HTML Elements
 
-# Supported HTML Tags
+## Supported HTML Tags
 
 > **Tip**
 >

@@ -1,9 +1,11 @@
 ---
+title: Blur
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: "▸ new Blur(): Blur(Blur)"
 ---
 
 # Blur

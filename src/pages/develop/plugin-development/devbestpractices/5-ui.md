@@ -1,9 +1,11 @@
 ---
+title: 5.0 User Interface
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: Not all plugins will require any user interface, but many will need to at least render error messages and such. Be sure to review the guidelines in th
 ---
 
 # 5.0 User Interface

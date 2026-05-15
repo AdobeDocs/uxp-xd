@@ -1,5 +1,7 @@
 ---
+title: font-weight
 jsDoc: true
+description: "Sets the font weight for the element. Supports `normal` (default), `bold`, `lighter`, and `bolder`, as well as the following numeric weights: `50`, `1"
 ---
 # font-weight
 

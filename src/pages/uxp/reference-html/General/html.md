@@ -1,5 +1,7 @@
 ---
+title: html
 jsDoc: true
+description: Indicates the root element of an UXP plugin's UI.
 ---
 # html
 

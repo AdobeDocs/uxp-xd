@@ -1,9 +1,11 @@
 ---
+title: User interface Reference
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: "See the following references:"
 ---
 
 # User interface Reference

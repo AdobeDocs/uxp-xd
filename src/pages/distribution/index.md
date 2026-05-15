@@ -12,20 +12,17 @@ description: Learn how to share or publish and market your Photoshop plugin. The
 
 Important Changes for XD Plugin Distribution in the Marketplace
 
-We are no longer accepting <i>new</i> plugins for Adobe XD in [our Marketplace](http://exchange.adobe.com/creativecloud).
+We are no longer accepting *new* plugins for Adobe XD in [our Marketplace](http://exchange.adobe.com/creativecloud).
 
 Existing published plugins can continue to be managed and updated via the Developer Distribution portal. The UXP Developer Tool (UDT) will continue to support plugin development.
 
 Visit the [FAQs](https://developer.adobe.com/xd/uxp/faq/) page for more details and refer to [this document](https://helpx.adobe.com/in/support/xd.html) for the overall plans for Adobe XD. 
 
-<br></br><br></br><br></br>
+
 
 # Sharing Your Plugin
 
 Unless you've written a plugin solely for yourself, you're probably going to want to share it with others. This section explains how to take your plugin into the wider world, and let other users know about it.
 
-- [Packaging Your Plugin](/distribution/packaging-your-plugin/)
-- [Options for Distribution](/distribution/distribution-options/)
-- [Submission and Review](/distribution/submission-checklist/)
-- [Marketing Your Plugin](/distribution/marketing/)
-- [Creating Deep Links](/distribution/deep-links/)
+- [Packaging Your Plugin](/distribution/packaging-your-plugin/index.md)
+- [Options for Distribution](/distribution/distribution-options/index.md)

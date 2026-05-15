@@ -1,6 +1,11 @@
-<!--
+---
+title: Versions
+description: "index_desc: General information on UXP and its dependencies"
+---
+
+\<!--
 index_desc: General information on UXP and its dependencies
--->
+--\>
 
 ###  UXP General Information
 - ECMAScript Version in UXP v6.3 : ECMA-262

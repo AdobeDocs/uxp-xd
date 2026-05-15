@@ -1,5 +1,7 @@
 ---
+title: footer
 jsDoc: true
+description: The `footer` element is used in dialogs to help align buttons to the right-side of a dialog. You aren't required to use this element, and you can ov
 ---
 # footer
 

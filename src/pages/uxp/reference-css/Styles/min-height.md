@@ -1,5 +1,7 @@
 ---
+title: min-height
 jsDoc: true
+description: Specifies the minimum height for an element.
 ---
 # min-height
 

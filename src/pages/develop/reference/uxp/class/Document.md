@@ -1,13 +1,14 @@
 ---
+title: Document
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: a name="document" id="document"/a
 ---
 
 
-<a name="document" id="document"></a>
 
 ## Document
 
@@ -72,171 +73,142 @@ keywords:
     * [.removeEventListener(eventName, callback, [capture])](#eventtarget-removeeventlistener)
     * [.dispatchEvent(event)](#eventtarget-dispatchevent)
 
-<a name="new-document-new" id="new-document-new"></a>
 
 ### new Document()
 Creates an instance of Document.
 
-<a name="document-online" id="document-online"></a>
 
 ### document.onLine : `boolean`
 Indicates if the computer is online
 
 **Read only**
 
-<a name="document-nodename" id="document-nodename"></a>
 
 ### document.nodeName : `string`
 
 **Read only**
 
-<a name="document-nodetype" id="document-nodetype"></a>
 
 ### document.nodeType : `number`
 
 **Read only**
 
-<a name="document-uxpcontainer" id="document-uxpcontainer"></a>
 
 ### document.uxpContainer
 
-<a name="document-activeelement" id="document-activeelement"></a>
 
 ### document.activeElement : [`Node`](#node)
 
 **Read only**
 
-<a name="document-documentelement" id="document-documentelement"></a>
 
 ### document.documentElement : [`Document`](#document)
 
 **Read only**
 
-<a name="document-head" id="document-head"></a>
 
 ### document.head : [`HTMLHeadElement`](#htmlheadelement)
 
 **Read only**
 
-<a name="document-body" id="document-body"></a>
 
 ### document.body : [`HTMLBodyElement`](#htmlbodyelement)
 
 **Read only**
 
-<a name="document-clipboard" id="document-clipboard"></a>
 
 ### document.clipboard : `Clippoard`
 
 **Read only**
 
-<a name="document-stylesheets" id="document-stylesheets"></a>
 
 ### document.styleSheets : [`StyleSheetList`](#stylesheetlist)
 
 **Read only**
 
-<a name="node-contenteditable" id="node-contenteditable"></a>
 
 ### document.contentEditable
 
 **Read only**
 
-<a name="node-isconnected" id="node-isconnected"></a>
 
 ### document.isConnected : `boolean`
 
 **Read only**
 
-<a name="node-parentnode" id="node-parentnode"></a>
 
 ### document.parentNode : [`Node`](#node)
 
 **Read only**
 
-<a name="node-parentelement" id="node-parentelement"></a>
 
 ### document.parentElement : [`Element`](#element)
 
 **Read only**
 
-<a name="node-firstchild" id="node-firstchild"></a>
 
 ### document.firstChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-lastchild" id="node-lastchild"></a>
 
 ### document.lastChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-previoussibling" id="node-previoussibling"></a>
 
 ### document.previousSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-nextsibling" id="node-nextsibling"></a>
 
 ### document.nextSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-firstelementchild" id="node-firstelementchild"></a>
 
 ### document.firstElementChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-lastelementchild" id="node-lastelementchild"></a>
 
 ### document.lastElementChild : [`Node`](#node)
 
 **Read only**
 
-<a name="node-previouselementsibling" id="node-previouselementsibling"></a>
 
 ### document.previousElementSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-nextelementsibling" id="node-nextelementsibling"></a>
 
 ### document.nextElementSibling : [`Node`](#node)
 
 **Read only**
 
-<a name="node-textcontent" id="node-textcontent"></a>
 
 ### document.textContent : `string`
 
-<a name="node-childnodes" id="node-childnodes"></a>
 
 ### document.childNodes : [`NodeList`](#nodelist)
 
 **Read only**
 
-<a name="node-children" id="node-children"></a>
 
 ### document.children : [`HTMLCollection`](#htmlcollection)
 
 **Read only**
 
-<a name="node-ownerdocument" id="node-ownerdocument"></a>
 
 ### document.ownerDocument
 
 **Read only**
 
-<a name="node-attributes" id="node-attributes"></a>
 
 ### document.attributes
 
 **Read only**
 
-<a name="document-createelement" id="document-createelement"></a>
 
 ### document.createElement(nodeName)
 
@@ -244,7 +216,6 @@ Indicates if the computer is online
 | --- | --- |
 | nodeName | `string` |
 
-<a name="document-createelementns" id="document-createelementns"></a>
 
 ### document.createElementNS(ns, nodeName)
 
@@ -253,7 +224,6 @@ Indicates if the computer is online
 | ns | `string` |
 | nodeName | `string` |
 
-<a name="document-createattribute" id="document-createattribute"></a>
 
 ### document.createAttribute(nodeName)
 
@@ -261,27 +231,23 @@ Indicates if the computer is online
 | --- | --- |
 | nodeName | `string` |
 
-<a name="document-createtextnode" id="document-createtextnode"></a>
 
 ### document.createTextNode([text])
 
 | Param | Type | Default |
 | --- | --- | --- |
-| [text] | `string` | `&quot;&quot;` |
+| \[text] | `string` | `&quot;&quot;` |
 
-<a name="document-createcomment" id="document-createcomment"></a>
 
 ### document.createComment([comment])
 
 | Param | Type | Default |
 | --- | --- | --- |
-| [comment] | `string` | `&quot;&quot;` |
+| \[comment] | `string` | `&quot;&quot;` |
 
-<a name="document-createdocumentfragment" id="document-createdocumentfragment"></a>
 
 ### document.createDocumentFragment()
 
-<a name="document-clonenode" id="document-clonenode"></a>
 
 ### document.cloneNode(deep)
 
@@ -291,7 +257,6 @@ Indicates if the computer is online
 | --- | --- |
 | deep | `boolean` |
 
-<a name="document-adoptnode" id="document-adoptnode"></a>
 
 ### document.adoptNode(externalNode, deep)
 
@@ -300,7 +265,6 @@ Indicates if the computer is online
 | externalNode | [`Node`](#node) |
 | deep | `boolean` |
 
-<a name="document-importnode" id="document-importnode"></a>
 
 ### document.importNode(externalNode, deep)
 
@@ -309,7 +273,6 @@ Indicates if the computer is online
 | externalNode | [`Node`](#node) |
 | deep | `boolean` |
 
-<a name="document-queryselector" id="document-queryselector"></a>
 
 ### document.querySelector(selector)
 
@@ -317,7 +280,6 @@ Indicates if the computer is online
 | --- | --- |
 | selector | `string` |
 
-<a name="document-queryselectorall" id="document-queryselectorall"></a>
 
 ### document.querySelectorAll(selector)
 
@@ -325,7 +287,6 @@ Indicates if the computer is online
 | --- | --- |
 | selector | `string` |
 
-<a name="document-getelementsbyclassname" id="document-getelementsbyclassname"></a>
 
 ### document.getElementsByClassName(name)
 
@@ -333,7 +294,6 @@ Indicates if the computer is online
 | --- | --- |
 | name | `string` |
 
-<a name="document-getelementsbytagname" id="document-getelementsbytagname"></a>
 
 ### document.getElementsByTagName(name)
 
@@ -341,7 +301,6 @@ Indicates if the computer is online
 | --- | --- |
 | name | `string` |
 
-<a name="document-getelementbyid" id="document-getelementbyid"></a>
 
 ### document.getElementById(id)
 
@@ -349,11 +308,9 @@ Indicates if the computer is online
 | --- | --- |
 | id | `string` |
 
-<a name="node-haschildnodes" id="node-haschildnodes"></a>
 
 ### document.hasChildNodes()
 
-<a name="node-appendchild" id="node-appendchild"></a>
 
 ### document.appendChild(child)
 
@@ -361,7 +318,6 @@ Indicates if the computer is online
 | --- | --- |
 | child | [`Node`](#node) |
 
-<a name="node-insertbefore" id="node-insertbefore"></a>
 
 ### document.insertBefore(child, before)
 
@@ -370,7 +326,6 @@ Indicates if the computer is online
 | child | [`Node`](#node) |
 | before | [`Node`](#node) |
 
-<a name="node-replacechild" id="node-replacechild"></a>
 
 ### document.replaceChild(newChild, oldChild)
 
@@ -379,7 +334,6 @@ Indicates if the computer is online
 | newChild | [`Node`](#node) |
 | oldChild | [`Node`](#node) |
 
-<a name="node-removechild" id="node-removechild"></a>
 
 ### document.removeChild(child)
 
@@ -387,11 +341,9 @@ Indicates if the computer is online
 | --- | --- |
 | child | [`Node`](#node) |
 
-<a name="node-remove" id="node-remove"></a>
 
 ### document.remove()
 
-<a name="node-before" id="node-before"></a>
 
 ### document.before(...nodes)
 
@@ -399,7 +351,6 @@ Indicates if the computer is online
 | --- | --- |
 | ...nodes | [`Array.<Node>`](#node) |
 
-<a name="node-after" id="node-after"></a>
 
 ### document.after(...nodes)
 
@@ -407,7 +358,6 @@ Indicates if the computer is online
 | --- | --- |
 | ...nodes | [`Array.<Node>`](#node) |
 
-<a name="node-replacewith" id="node-replacewith"></a>
 
 ### document.replaceWith(...nodes)
 
@@ -415,7 +365,6 @@ Indicates if the computer is online
 | --- | --- |
 | ...nodes | [`Array.<Node>`](#node) |
 
-<a name="node-contains" id="node-contains"></a>
 
 ### document.contains(node)
 
@@ -423,7 +372,6 @@ Indicates if the computer is online
 | --- | --- |
 | node | [`Node`](#node) |
 
-<a name="eventtarget-addeventlistener" id="eventtarget-addeventlistener"></a>
 
 ### document.addEventListener(eventName, callback, [capture])
 
@@ -431,9 +379,8 @@ Indicates if the computer is online
 | --- | --- | --- |
 | eventName | `\*` |  |
 | callback | `\*` |  |
-| [capture] | `boolean` | `false` |
+| \[capture] | `boolean` | `false` |
 
-<a name="eventtarget-removeeventlistener" id="eventtarget-removeeventlistener"></a>
 
 ### document.removeEventListener(eventName, callback, [capture])
 
@@ -441,9 +388,8 @@ Indicates if the computer is online
 | --- | --- | --- |
 | eventName | `\*` |  |
 | callback | `\*` |  |
-| [capture] | `boolean` | `false` |
+| \[capture] | `boolean` | `false` |
 
-<a name="eventtarget-dispatchevent" id="eventtarget-dispatchevent"></a>
 
 ### document.dispatchEvent(event)
 

@@ -1,13 +1,14 @@
 ---
+title: Css
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: a name="css" id="css"/a
 ---
 
 
-<a name="css" id="css"></a>
 
 ## css : `object`
 **Kind**: global namespace  
@@ -94,7 +95,6 @@ keywords:
     * [.white-space](#css-white-space)
 
 
-<a name="css-color" id="css-color"></a>
 
 ### css.color
 Specifies the text color for an element.
@@ -113,7 +113,6 @@ Supported color formats are as follows:
 - https://github.com/colorjs/color-name/blob/master/index.js
 
 
-<a name="css-border-top-color" id="css-border-top-color"></a>
 
 ### css.border-top-color
 Specifies the border color for an element's top border.
@@ -136,7 +135,6 @@ Supported color formats are as follows:
 - https://github.com/colorjs/color-name/blob/master/index.js
 
 
-<a name="css-border-left-color" id="css-border-left-color"></a>
 
 ### css.border-left-color
 Specifies the border color for an element's left border.
@@ -159,7 +157,6 @@ Supported color formats are as follows:
 - https://github.com/colorjs/color-name/blob/master/index.js
 
 
-<a name="css-border-right-color" id="css-border-right-color"></a>
 
 ### css.border-right-color
 Specifies the border color for an element's right border.
@@ -182,7 +179,6 @@ Supported color formats are as follows:
 - https://github.com/colorjs/color-name/blob/master/index.js
 
 
-<a name="css-border-bottom-color" id="css-border-bottom-color"></a>
 
 ### css.border-bottom-color
 Specifies the border color for an element's bottom border.
@@ -205,7 +201,6 @@ Supported color formats are as follows:
 - https://github.com/colorjs/color-name/blob/master/index.js
 
 
-<a name="css-background-color" id="css-background-color"></a>
 
 ### css.background-color
 Specifies the background color for an element.
@@ -224,7 +219,6 @@ Supported color formats are as follows:
 - https://github.com/colorjs/color-name/blob/master/index.js
 
 
-<a name="css-border-top" id="css-border-top"></a>
 
 ### css.border-top
 Shorthand for specifying the style, color, and width of the top border.
@@ -239,7 +233,6 @@ Shorthand for specifying the style, color, and width of the top border.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/border-top  
 
-<a name="css-border-left" id="css-border-left"></a>
 
 ### css.border-left
 Shorthand for specifying the style, color, and width of the left border.
@@ -254,7 +247,6 @@ Shorthand for specifying the style, color, and width of the left border.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/border-left  
 
-<a name="css-border-right" id="css-border-right"></a>
 
 ### css.border-right
 Shorthand for specifying the style, color, and width of the right border.
@@ -269,7 +261,6 @@ Shorthand for specifying the style, color, and width of the right border.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/border-right  
 
-<a name="css-border-bottom" id="css-border-bottom"></a>
 
 ### css.border-bottom
 Shorthand for specifying the style, color, and width of the bottom border.
@@ -284,7 +275,6 @@ Shorthand for specifying the style, color, and width of the bottom border.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/border-bottom  
 
-<a name="css-border-top-style" id="css-border-top-style"></a>
 
 ### css.border-top-style
 Specifies the style of the top border.
@@ -296,7 +286,6 @@ Specifies the style of the top border.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/border-top-style  
 
-<a name="css-border-left-style" id="css-border-left-style"></a>
 
 ### css.border-left-style
 Specifies the style of the left border.
@@ -308,7 +297,6 @@ Specifies the style of the left border.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/border-left-style  
 
-<a name="css-border-right-style" id="css-border-right-style"></a>
 
 ### css.border-right-style
 Specifies the style of the right border.
@@ -320,7 +308,6 @@ Specifies the style of the right border.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/border-right-style  
 
-<a name="css-border-bottom-style" id="css-border-bottom-style"></a>
 
 ### css.border-bottom-style
 Specifies the style of the bottom border.
@@ -332,7 +319,6 @@ Specifies the style of the bottom border.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-style  
 
-<a name="css-border-top-left-radius" id="css-border-top-left-radius"></a>
 
 ### css.border-top-left-radius
 Sets the top left border radius.
@@ -344,7 +330,6 @@ Sets the top left border radius.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/border-top-left-radius  
 
-<a name="css-border-top-right-radius" id="css-border-top-right-radius"></a>
 
 ### css.border-top-right-radius
 Sets the top right border radius.
@@ -356,7 +341,6 @@ Sets the top right border radius.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/border-top-right-radius  
 
-<a name="css-border-bottom-left-radius" id="css-border-bottom-left-radius"></a>
 
 ### css.border-bottom-left-radius
 Sets the bottom left border radius.
@@ -368,7 +352,6 @@ Sets the bottom left border radius.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-left-radius  
 
-<a name="css-border-bottom-right-radius" id="css-border-bottom-right-radius"></a>
 
 ### css.border-bottom-right-radius
 Sets the bottom right border radius.
@@ -380,7 +363,6 @@ Sets the bottom right border radius.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-right-radius  
 
-<a name="css-opacity" id="css-opacity"></a>
 
 ### css.opacity : `float`
 Sets the opacity of an element. The value is between 0 (transparent) and 1 (opaque).
@@ -388,7 +370,6 @@ Sets the opacity of an element. The value is between 0 (transparent) and 1 (opaq
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/opacity  
 
-<a name="css-overflow" id="css-overflow"></a>
 
 ### css.overflow
 Shorthand which determines what is done with content that overflows the element's bounds.
@@ -398,7 +379,6 @@ Supports `visible`, hidden`, `auto`, and `scroll`.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/overflow  
 
-<a name="css-overflow-x" id="css-overflow-x"></a>
 
 ### css.overflow-x
 Determines what is done with content that overflows the element's horizontal bounds.
@@ -408,7 +388,6 @@ Supports `visible`, hidden`, `auto`, and `scroll`.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/overflow-x  
 
-<a name="css-overflow-y" id="css-overflow-y"></a>
 
 ### css.overflow-y
 Determines what is done with content that overflows the element's vertical bounds.
@@ -418,7 +397,6 @@ Supports `visible`, hidden`, `auto`, and `scroll`.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/overflow-y  
 
-<a name="css-background-image" id="css-background-image"></a>
 
 ### css.background-image
 Specifies a background image.
@@ -426,7 +404,6 @@ Specifies a background image.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/background-image  
 
-<a name="css-border-color" id="css-border-color"></a>
 
 ### css.border-color
 Specifies the border color for an element.
@@ -449,7 +426,6 @@ Supported color formats are as follows:
 - https://github.com/colorjs/color-name/blob/master/index.js
 
 
-<a name="css-border-radius" id="css-border-radius"></a>
 
 ### css.border-radius
 Shorthand for specifying the border radius
@@ -457,7 +433,6 @@ Shorthand for specifying the border radius
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/border-radius  
 
-<a name="css-border-radius" id="css-border-radius"></a>
 
 ### css.border-radius
 Shorthand for specifying the border width, color, and style.
@@ -480,7 +455,6 @@ Supported color formats are as follows:
 - https://github.com/colorjs/color-name/blob/master/index.js
 
 
-<a name="css-background" id="css-background"></a>
 
 ### css.background
 Shorthand for specifying the background of an element. Supports colors, images, and linear gradients.
@@ -488,7 +462,6 @@ Shorthand for specifying the background of an element. Supports colors, images, 
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/background  
 
-<a name="css-margin-top" id="css-margin-top"></a>
 
 ### css.margin-top
 Specifies the top margin.
@@ -496,7 +469,6 @@ Specifies the top margin.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/margin-top  
 
-<a name="css-margin-left" id="css-margin-left"></a>
 
 ### css.margin-left
 Specifies the left margin.
@@ -504,7 +476,6 @@ Specifies the left margin.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/margin-left  
 
-<a name="css-margin-right" id="css-margin-right"></a>
 
 ### css.margin-right
 Specifies the right margin.
@@ -512,7 +483,6 @@ Specifies the right margin.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/margin-right  
 
-<a name="css-margin-bottom" id="css-margin-bottom"></a>
 
 ### css.margin-bottom
 Specifies the bottom margin.
@@ -520,7 +490,6 @@ Specifies the bottom margin.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/margin-bottom  
 
-<a name="css-width" id="css-width"></a>
 
 ### css.width
 Specifies the width of an element.
@@ -528,7 +497,6 @@ Specifies the width of an element.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/width  
 
-<a name="css-height" id="css-height"></a>
 
 ### css.height
 Specifies the height of an element.
@@ -536,7 +504,6 @@ Specifies the height of an element.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/height  
 
-<a name="css-max-width" id="css-max-width"></a>
 
 ### css.max-width
 Specifies the maximum width of an element.
@@ -544,7 +511,6 @@ Specifies the maximum width of an element.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/max-width  
 
-<a name="css-max-height" id="css-max-height"></a>
 
 ### css.max-height
 Specifies the maximum height of an element.
@@ -552,7 +518,6 @@ Specifies the maximum height of an element.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/max-height  
 
-<a name="css-min-width" id="css-min-width"></a>
 
 ### css.min-width
 Specifies the minimum width of an element.
@@ -560,7 +525,6 @@ Specifies the minimum width of an element.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/min-width  
 
-<a name="css-min-height" id="css-min-height"></a>
 
 ### css.min-height
 Specifies the minimum height of an element.
@@ -568,7 +532,6 @@ Specifies the minimum height of an element.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/min-height  
 
-<a name="css-top" id="css-top"></a>
 
 ### css.top
 Sets the top position of the element when relatively or absolutely positioned.
@@ -576,7 +539,6 @@ Sets the top position of the element when relatively or absolutely positioned.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/top  
 
-<a name="css-left" id="css-left"></a>
 
 ### css.left
 Sets the left position of the element when relatively or absolutely positioned.
@@ -584,7 +546,6 @@ Sets the left position of the element when relatively or absolutely positioned.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/left  
 
-<a name="css-right" id="css-right"></a>
 
 ### css.right
 Sets the right position of the element when relatively or absolutely positioned.
@@ -592,7 +553,6 @@ Sets the right position of the element when relatively or absolutely positioned.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/right  
 
-<a name="css-bottom" id="css-bottom"></a>
 
 ### css.bottom
 Sets the bottom position of the element when relatively or absolutely positioned.
@@ -600,7 +560,6 @@ Sets the bottom position of the element when relatively or absolutely positioned
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/bottom  
 
-<a name="css-padding-top" id="css-padding-top"></a>
 
 ### css.padding-top
 Specifies the top padding.
@@ -608,7 +567,6 @@ Specifies the top padding.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/padding-top  
 
-<a name="css-padding-left" id="css-padding-left"></a>
 
 ### css.padding-left
 Specifies the left padding.
@@ -616,7 +574,6 @@ Specifies the left padding.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/padding-left  
 
-<a name="css-padding-right" id="css-padding-right"></a>
 
 ### css.padding-right
 Specifies the right padding.
@@ -624,7 +581,6 @@ Specifies the right padding.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/padding-right  
 
-<a name="css-padding-bottom" id="css-padding-bottom"></a>
 
 ### css.padding-bottom
 Specifies the bottom padding.
@@ -632,7 +588,6 @@ Specifies the bottom padding.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/padding-bottom  
 
-<a name="css-border-top-width" id="css-border-top-width"></a>
 
 ### css.border-top-width
 Specifies the width of the top border.
@@ -640,7 +595,6 @@ Specifies the width of the top border.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/border-top-width  
 
-<a name="css-border-left-width" id="css-border-left-width"></a>
 
 ### css.border-left-width
 Specifies the width of the left border.
@@ -648,7 +602,6 @@ Specifies the width of the left border.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/border-left-width  
 
-<a name="css-border-right-width" id="css-border-right-width"></a>
 
 ### css.border-right-width
 Specifies the width of the right border.
@@ -656,7 +609,6 @@ Specifies the width of the right border.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/border-right-width  
 
-<a name="css-border-bottom-width" id="css-border-bottom-width"></a>
 
 ### css.border-bottom-width
 Specifies the width of the bottom border.
@@ -664,7 +616,6 @@ Specifies the width of the bottom border.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-width  
 
-<a name="css-flex-basis" id="css-flex-basis"></a>
 
 ### css.flex-basis
 Specifies the value used for calculating the flex basis.
@@ -672,7 +623,6 @@ Specifies the value used for calculating the flex basis.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/flex-basis  
 
-<a name="css-flex-grow" id="css-flex-grow"></a>
 
 ### css.flex-grow
 Sets the flex grow factor.
@@ -680,7 +630,6 @@ Sets the flex grow factor.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/flex-grow  
 
-<a name="css-flex-shrink" id="css-flex-shrink"></a>
 
 ### css.flex-shrink
 Sets the flex shrink factor.
@@ -688,7 +637,6 @@ Sets the flex shrink factor.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/flex-shrink  
 
-<a name="css-order" id="css-order"></a>
 
 ### css.order
 Sets the order of display for this flex element.
@@ -696,7 +644,6 @@ Sets the order of display for this flex element.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/order  
 
-<a name="css-flex" id="css-flex"></a>
 
 ### css.flex
 Shorthand for setting `flex-grow`, `flex-shrink`, and `flex-basis`.
@@ -704,7 +651,6 @@ Shorthand for setting `flex-grow`, `flex-shrink`, and `flex-basis`.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/flex  
 
-<a name="css-border-width" id="css-border-width"></a>
 
 ### css.border-width
 Specifies the width of the element's border.
@@ -712,7 +658,6 @@ Specifies the width of the element's border.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/border-width  
 
-<a name="css-margin" id="css-margin"></a>
 
 ### css.margin
 Shorthand for setting the element's margins.
@@ -720,7 +665,6 @@ Shorthand for setting the element's margins.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/margin  
 
-<a name="css-padding" id="css-padding"></a>
 
 ### css.padding
 Shorthand for setting the element's padding.
@@ -728,7 +672,6 @@ Shorthand for setting the element's padding.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/padding  
 
-<a name="css-font-family" id="css-font-family"></a>
 
 ### css.font-family
 Renders the element using the specified font family, if installed on the user's machine.
@@ -740,7 +683,6 @@ Renders the element using the specified font family, if installed on the user's 
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/font-family  
 
-<a name="css-letter-spacing" id="css-letter-spacing"></a>
 
 ### css.letter-spacing
 Sets the distance between letters.
@@ -748,7 +690,6 @@ Sets the distance between letters.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/letter-spacing  
 
-<a name="css-font-size" id="css-font-size"></a>
 
 ### css.font-size
 Sets the font size.
@@ -756,7 +697,6 @@ Sets the font size.
 **Kind**: static property of [`css`](#css)  
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/font-size  
 
-<a name="css-align-content" id="css-align-content"></a>
 
 ### css.align-content
 **Kind**: static enum of [`css`](#css)  
@@ -772,7 +712,6 @@ Sets the font size.
 | stretch | `5` | Stretch content |
 
 
-<a name="css-align-items" id="css-align-items"></a>
 
 ### css.align-items
 **Kind**: static enum of [`css`](#css)  
@@ -787,7 +726,6 @@ Sets the font size.
 | stretch | `4` | Stretch items |
 
 
-<a name="css-align-self" id="css-align-self"></a>
 
 ### css.align-self
 **Kind**: static enum of [`css`](#css)  
@@ -803,7 +741,6 @@ Sets the font size.
 | stretch | `5` | Stretch |
 
 
-<a name="css-units" id="css-units"></a>
 
 ### css.units
 **Kind**: static enum of [`css`](#css)  
@@ -815,7 +752,6 @@ Sets the font size.
 | "%" | `1` | Percentage |
 
 
-<a name="css-background-attachment" id="css-background-attachment"></a>
 
 ### css.background-attachment
 **Kind**: static enum of [`css`](#css)  
@@ -828,7 +764,6 @@ Sets the font size.
 | local | `2` | UNSUPPORTED. |
 
 
-<a name="css-background-repeat" id="css-background-repeat"></a>
 
 ### css.background-repeat
 **Kind**: static enum of [`css`](#css)  
@@ -842,7 +777,6 @@ Sets the font size.
 | "repeat-y" | `3` | Repeat the background image in vertically. UNSUPPORTED. |
 
 
-<a name="css-background-size" id="css-background-size"></a>
 
 ### css.background-size
 **Kind**: static enum of [`css`](#css)  
@@ -855,7 +789,6 @@ Sets the font size.
 | cover | `2` | Ensure that the image fills the bounds of the element without altering the aspect ratio. |
 
 
-<a name="css-border-style" id="css-border-style"></a>
 
 ### css.border-style
 **Kind**: static enum of [`css`](#css)  
@@ -875,7 +808,6 @@ Sets the font size.
 | outset | `9` | Outset border; UNSUPPORTED |
 
 
-<a name="css-display" id="css-display"></a>
 
 ### css.display
 **Kind**: static enum of [`css`](#css)  
@@ -891,7 +823,6 @@ Sets the font size.
 | "inline-flex" | `5` | Display using inline-flex layout; UNSUPPORTED. |
 
 
-<a name="css-flex-direction" id="css-flex-direction"></a>
 
 ### css.flex-direction
 **Kind**: static enum of [`css`](#css)  
@@ -905,7 +836,6 @@ Sets the font size.
 | "column-reverse" | `3` | layout in a vertical (column) direction, but reverse the order of elements |
 
 
-<a name="css-flex-wrap" id="css-flex-wrap"></a>
 
 ### css.flex-wrap
 **Kind**: static enum of [`css`](#css)  
@@ -918,7 +848,6 @@ Sets the font size.
 | "wrap-reverse" | `2` | Wrap, reverse; UNSUPPORTED. |
 
 
-<a name="css-font-style" id="css-font-style"></a>
 
 ### css.font-style
 **Kind**: static enum of [`css`](#css)  
@@ -930,7 +859,6 @@ Sets the font size.
 | italic | `1` | Italic (if the font supports it). |
 
 
-<a name="css-font-weight" id="css-font-weight"></a>
 
 ### css.font-weight
 **Kind**: static enum of [`css`](#css)  
@@ -958,7 +886,6 @@ Sets the font size.
 | 1000 | `17` |  |
 
 
-<a name="css-justify-content" id="css-justify-content"></a>
 
 ### css.justify-content
 **Kind**: static enum of [`css`](#css)  
@@ -973,7 +900,6 @@ Sets the font size.
 | "space-around" | `4` | Add space around elements |
 
 
-<a name="css-position" id="css-position"></a>
 
 ### css.position
 **Kind**: static enum of [`css`](#css)  
@@ -986,7 +912,6 @@ Sets the font size.
 | relative | `2` | Element is positioned relative to where it would have been positioned when using `static`. |
 
 
-<a name="css-text-align" id="css-text-align"></a>
 
 ### css.text-align
 **Kind**: static enum of [`css`](#css)  
@@ -1000,7 +925,6 @@ Sets the font size.
 | justify | `3` | Justify; UNSUPPORTED |
 
 
-<a name="css-text-overflow" id="css-text-overflow"></a>
 
 ### css.text-overflow
 **Kind**: static enum of [`css`](#css)  
@@ -1012,7 +936,6 @@ Sets the font size.
 | ellipsis | `1` | Show an ellipsis. |
 
 
-<a name="css-visibility" id="css-visibility"></a>
 
 ### css.visibility
 **Kind**: static enum of [`css`](#css)  
@@ -1024,7 +947,6 @@ Sets the font size.
 | hidden | `1` | Hide the element. Layout is unaffected, so space is reserved for the element. |
 
 
-<a name="css-white-space" id="css-white-space"></a>
 
 ### css.white-space
 **Kind**: static enum of [`css`](#css)  

@@ -1,5 +1,7 @@
 ---
+title: sp-body
 jsDoc: true
+description: Renders body text that is theme aware
 ---
 # sp-body
 

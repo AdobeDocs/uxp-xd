@@ -1,5 +1,7 @@
 ---
+title: ":hover"
 jsDoc: true
+description: Matches when the selected element is underneath the mouse cursor.
 ---
 # :hover
 

@@ -1,9 +1,11 @@
 ---
+title: Properties with object values
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: Some scenegraph properties have values that are not simple primitive types (e.g. numbers), but rather are objects with sub-properties of
 ---
 
 # Properties with object values

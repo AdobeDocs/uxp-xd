@@ -1,5 +1,7 @@
 ---
+title: flex-direction
 jsDoc: true
+description: Determines the direction items are stacked in the flexible container. The default is `row`, and `row`, `row-reverse`, `column`, and `column-reverse` a
 ---
 # flex-direction
 

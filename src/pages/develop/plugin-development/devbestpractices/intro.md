@@ -1,9 +1,11 @@
 ---
+title: XD Plugin Experience Guidelines
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: The XD Plugin Experience Guidelines (XDPEGs) can be used to ensure that your plugin is functional in a variety of edge cases and provides a good e
 ---
 
 # XD Plugin Experience Guidelines

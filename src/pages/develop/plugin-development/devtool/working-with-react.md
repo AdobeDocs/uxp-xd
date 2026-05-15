@@ -1,9 +1,11 @@
 ---
+title: Working with React
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: When working with React, other frameworks, or bundlers like Webpack and Parcel, you'll need to understand how to effectively use them inside the devel
 ---
 
 # Working with React

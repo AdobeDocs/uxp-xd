@@ -1,5 +1,7 @@
 ---
+title: background
 jsDoc: true
+description: "Since:  UXP v2.0"
 ---
 # background
 

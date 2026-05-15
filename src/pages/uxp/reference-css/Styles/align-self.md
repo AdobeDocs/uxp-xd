@@ -1,5 +1,7 @@
 ---
+title: align-self
 jsDoc: true
+description: Supported values are `flex-start`, `flex-end`, `center`, `stretch`.
 ---
 # align-self
 

@@ -1,16 +1,18 @@
 ---
+title: Dialogs
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: A modal dialog is used to display important information and ask for user input. XD Plugins can display user interface in the form of modal dialogs
 ---
 
 # Dialogs
 
 A modal dialog is used to display important information and ask for user input. XD Plugins can display user interface in the form of **modal dialogs**.
 
-![Example of a Modal Dialog](./assets/dialog.png)
+![Example of a Modal Dialog](assets/dialog.png)
 
 Dialogs appear over the XD document, and prevent further interaction with the underlying document. Dialogs are dismissed in any one of the following manners:
 
@@ -22,21 +24,21 @@ Dialogs are highly intrusive, and should only be used when absolutely necessary.
 
 ## Anatomy
 
-{% tabs anatomy="Dialog", examplesmac="macOS", examplesuwp="Windows" %}
+\{% tabs anatomy="Dialog", examplesmac="macOS", examplesuwp="Windows" %}
 
-{% content "anatomy" %}
+\{% content "anatomy" %}
 
-![Dialog Anatomy](./assets/dialog-anatomy.png)
+![Dialog Anatomy](assets/dialog-anatomy.png)
 
-{% content "examplesmac" %}
+\{% content "examplesmac" %}
 
-![macOS Dialog Example](./assets/example-about-dialog.png)
+![macOS Dialog Example](assets/example-about-dialog.png)
 
-{% content "examplesuwp" %}
+\{% content "examplesuwp" %}
 
-![Windows Dialog Example](./assets/example-about-dialog-on-uwp.png)
+![Windows Dialog Example](assets/example-about-dialog-on-uwp.png)
 
-{% endtabs %}
+\{% endtabs %}
 
 ## Usage
 
@@ -65,13 +67,13 @@ You can build modal dialogs using any method that creates an HTML5 DOM structure
 
 Let's examine a simple dialog and how we might create it.
 
-{% tabs sample="Sample", html="HTML", js="JS", react="React" %}
+\{% tabs sample="Sample", html="HTML", js="JS", react="React" %}
 
-{% content "sample" %}
+\{% content "sample" %}
 
-![A Simple Dialog](./assets/dialog.png)
+![A Simple Dialog](assets/dialog.png)
 
-{% content "html" %}
+\{% content "html" %}
 
 ```html
 <style>
@@ -111,7 +113,7 @@ Let's examine a simple dialog and how we might create it.
 </dialog>
 ```
 
-{% content "js" %}
+\{% content "js" %}
 
 ```js
 let ourDialog;
@@ -158,7 +160,7 @@ function showOurDialog() {
 }
 ```
 
-{% content "react" %}
+\{% content "react" %}
 
 ```js
 const React = require("react");
@@ -218,7 +220,7 @@ function render() {
 }
 ```
 
-{% endtabs %}
+\{% endtabs %}
 
 Once a dialog is built, you will need to manage its lifecycle:
 
@@ -231,19 +233,19 @@ Once a dialog is built, you will need to manage its lifecycle:
 
 A simple "alert" can be used to display a message along with a **Close** button. You can customize the content of the title and message, but you cannot customize the button itself.
 
-![Example Alert](../../ui/assets/helper-alert.png)
+![Example Alert](../assets/helper-alert.png)
 
 ### Error
 
 An error "alert" (with a red heading). These are useful for rendering error messages. Just like regular alerts, you cannot customize the button itself.
 
-![Example Error Alert](./assets/example-error-alert.png)
+![Example Error Alert](assets/example-error-alert.png)
 
 ### Confirmation
 
 Confirmation dialogs display a message and _two_ buttons. The user is free to pick which of the buttons they wish to invoke.
 
-![Example Confirmation Dialog](./assets/example-confirmation-dialog.png)
+![Example Confirmation Dialog](assets/example-confirmation-dialog.png)
 
 > **Danger**
 >
@@ -253,19 +255,19 @@ Confirmation dialogs display a message and _two_ buttons. The user is free to pi
 
 Warning dialogs display a message and _two_ buttons, one of which is destructive. Pressing **ENTER** in this case should _not_ invoke the destructive action. Otherwise it is the same as a confirmation dialog.
 
-![Example Warning Dialog](./assets/example-warning-dialog.png)
+![Example Warning Dialog](assets/example-warning-dialog.png)
 
 ### Prompt
 
 Prompts display a single line text field in addition to a message and two buttons.
 
-![Example Prompt Dialog](./assets/example-prompt-dialog.png)
+![Example Prompt Dialog](assets/example-prompt-dialog.png)
 
 ## Guidelines
 
 You should always strive to provide a good user experience with a modal dialog. That means providing easy access to dismissive buttons, avoiding dark patterns, and ensuring that your dialog doesn't block the user from forward progress in their work.
 
-You should definitely read up on our [UX patterns for modals](/design/ux-patterns/modal-ux/) to learn more about what to do and what not to do.
+You should definitely read up on our [UX patterns for modals](/design/ux-patterns/modal-ux.md) to learn more about what to do and what not to do.
 
 ##### When to Use Dialogs
 

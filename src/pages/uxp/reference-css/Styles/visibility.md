@@ -1,5 +1,7 @@
 ---
+title: visibility
 jsDoc: true
+description: "Since:  UXP v3.0"
 ---
 # visibility
 

@@ -1,9 +1,11 @@
 ---
+title: XD Plugin API Known Issues
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: - Icons may be blurry or missing in the plugin panel if you don't include the full set of sizes (24px, 48px, 96px, 144px, 192px) in your plugin bundle
 ---
 
 # XD Plugin API Known Issues
@@ -119,7 +121,7 @@ keywords:
 ## Debugging
 
 - XD may be unstable while debugging a plugin. Don't debug when you have important XD documents open.
-- Debugging on Windows requires some extra steps run with admin rights -- see [tutorial](/develop/tutorials/debugging/) for details.
+- Debugging on Windows requires some extra steps run with admin rights -- see [tutorial](/develop/tutorials/debugging/index.md) for details.
 - Elements tab:
   - If you leave CDT on the Elements tab, XD will crash the next time you open it. If this happens, keep CDT open after XD crashes and switch to a different tab. Then close CDT, restart XD, and begin debugging again.
   - The CSS pane on the right is missing some data and cannot be used to edit CSS.

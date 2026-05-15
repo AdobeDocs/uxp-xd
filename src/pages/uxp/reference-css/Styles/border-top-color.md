@@ -1,5 +1,7 @@
 ---
+title: border-top-color
 jsDoc: true
+description: "Specifies the top border color for an element. Supported color formats are as follows:"
 ---
 # border-top-color
 

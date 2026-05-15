@@ -1,5 +1,7 @@
 ---
+title: white-space
 jsDoc: true
+description: "Since:  UXP v3.0"
 ---
 # white-space
 

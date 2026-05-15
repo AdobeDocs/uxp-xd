@@ -1,11 +1,13 @@
 ---
+title: border-left
 jsDoc: true
+description: Shorthand for specifying the style(./../styles/border-left-style.md), color(./../styles/border-left-color.md), and width(./../styles/border-left
 ---
 # border-left
 
 **Since:** UXP v2.0
 
-Shorthand for specifying the [style](../border-left-style/), [color](../border-left-color/), and [width](../border-left-width) of the top border.
+Shorthand for specifying the [style](./../styles/border-left-style.md), [color](./../styles/border-left-color.md), and [width](./../styles/border-left-width.md) of the top border.
 
 > **Warning**
 >

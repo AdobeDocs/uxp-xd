@@ -1,9 +1,11 @@
 ---
+title: "Quick Start: Make your first XD plugin"
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: Let’s walk through creating your first Adobe XD plugin together.
 ---
 
 # Quick Start: Make your first XD plugin
@@ -53,13 +55,13 @@ Now, let's create your plugin files. Open your favorite text editor and create t
 
     This file includes information about the plugin, such as its name, the menu item(s) it adds to XD, and so on.
 
-    [Learn about the manifest here](/develop/reference/structure/manifest/).
+    [Learn about the manifest here](/develop/plugin-development/plugin-structure/manifest.md).
 
 2.  `main.js`
 
     This file contains your JavaScript code that implements your plugin's functionality.
 
-    [Learn more about `main.js` here](/develop/plugin-development/plugin-structure/handlers/).
+    [Learn more about `main.js` here](/develop/plugin-development/plugin-structure/handlers.md).
 
 These two files go into your plugin's parent directory. When you have the right structure, it will look like this:
 
@@ -105,7 +107,7 @@ Be sure to replace the `id` value with the unique plugin ID you got from the Ado
 "id": "1234ABCD",
 ```
 
-If you're curious about what each entry means, [see the manifest documentation](/develop/plugin-development/plugin-structure/manifest/), where you can also learn about all manifest requirements for a plugin to be published in the XD Plugin Manager.
+If you're curious about what each entry means, [see the manifest documentation](/develop/plugin-development/plugin-structure/manifest.md), where you can also learn about all manifest requirements for a plugin to be published in the XD Plugin Manager.
 
 The value of the `commandId` property may be any string; in this case, it's `createRectangle`. In the next section, we will see how this string is associated with the code for our plugin.
 
@@ -143,7 +145,7 @@ module.exports = {
 
 This code does the following:
 
-1.  Gets references to the `Rectangle` and `Color` classes from XD’s `scenegraph` module. There are several different [API modules you can load using `require()`](/develop/plugin-development/xd-concepts/apis).
+1.  Gets references to the `Rectangle` and `Color` classes from XD’s `scenegraph` module. There are several different [API modules you can load using `require()`](/develop/plugin-development/xd-concepts/apis.md).
 2.  Defines our handler function. The handler function will run when the user selects the _Plugins > Create Rectangle_ menu item.
 3.  Creates a new `Rectangle` object with width, height, and color properties.
 4.  Adds the `Rectangle` object to the scenegraph at the top-left (coordinates `0, 0`).

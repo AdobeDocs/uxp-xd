@@ -1,11 +1,13 @@
 ---
+title: border-bottom-style
 jsDoc: true
+description: "Since:  UXP v2.0"
 ---
 # border-bottom-style
 
 **Since:**  UXP v2.0
 
-Specifies the [style](../border-style/) of bottom border to render.
+Specifies the [style](./../styles/border-style.md) of bottom border to render.
 
 **See**: https://developer.mozilla.org/en/docs/Web/CSS/border-bottom-style  
 

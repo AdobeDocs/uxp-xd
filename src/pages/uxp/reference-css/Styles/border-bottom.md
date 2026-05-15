@@ -1,11 +1,13 @@
 ---
+title: border-bottom
 jsDoc: true
+description: Shorthand for specifying the style(./../styles/border-bottom-style.md), color(./../styles/border-bottom-color.md), and width(./../styles/border-
 ---
 # border-bottom
 
 **Since:** UXP v2.0
 
-Shorthand for specifying the [style](../border-bottom-style/), [color](../border-bottom-color/), and [width](../border-bottom-width) of the top border.
+Shorthand for specifying the [style](./../styles/border-bottom-style.md), [color](./../styles/border-bottom-color.md), and [width](./../styles/border-bottom-width.md) of the top border.
 
 > **Warning**
 >

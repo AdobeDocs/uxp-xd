@@ -1,5 +1,7 @@
 ---
+title: overflow-x
 jsDoc: true
+description: Shorthand which determines what is done with content that overflows the element's bounds.
 ---
 # overflow-x
 

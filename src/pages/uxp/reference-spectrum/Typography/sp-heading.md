@@ -1,5 +1,7 @@
 ---
+title: sp-heading
 jsDoc: true
+description: Renders heading text that is theme aware.
 ---
 # sp-heading
 

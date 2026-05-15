@@ -1,15 +1,17 @@
 ---
+title: Ellipse
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: "Extends: GraphicNode(/develop/reference/graphic-node.md)"
 ---
 
 # Ellipse
 
 **Kind**: class
-**Extends**: [GraphicNode](/develop/reference/GraphicNode)
+**Extends**: [GraphicNode](/develop/reference/graphic-node.md)
 
 Ellipse leaf node shape.
 

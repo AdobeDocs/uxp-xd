@@ -1,9 +1,11 @@
 ---
+title: 1.0 Performance
 keywords:
   - Creative Cloud
   - API Documentation
   - UXP
   - Plugin
+description: One of Adobe XD's core tenants is performance. As such, your plugin should be as performant as possible, and should avoid introducing bottlenecks or i
 ---
 
 
