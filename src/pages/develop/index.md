@@ -5,10 +5,10 @@ keywords:
   - API Documentation
   - UXP
   - Plugin
-description: InlineAlert variant="warning" slots="header, text1, text2, text3" /
+description: Developer documentation for building Adobe XD plugins.
 ---
 
-<InlineAlert variant="warning" slots="header, text1, text2, text3" />
+<InlineAlert variant="warning" slots="heading, text1, text2, text3" />
 
 Important Changes for XD Plugin Distribution in the Marketplace
 

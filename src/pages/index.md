@@ -10,7 +10,7 @@ description: Build UXP plugins for Adobe XD with HTML, CSS, and JavaScript. Auto
 
 import Community from "./community/index.md"
 
-<Hero slots="image, heading, text" background="rgb(64, 34, 138)"/>
+<Superhero slots="image, heading, text" background="rgb(64, 34, 138)"/>
 
 ![Hero image](illustration.png)
 
@@ -26,7 +26,7 @@ UXP (**U**nified E**x**tensibility **P**latform) lets you build plugins for XD a
 - [Design: UX patterns, UI elements, and design guidelines](/design/index.md)
 - [Share: Submission checklist, packaging, and marketing](/distribution/index.md)
 
-<InlineAlert variant="warning" slots="header, text1, text2, text3" />
+<InlineAlert variant="warning" slots="heading, text1, text2, text3" />
 
 Important Changes for XD Plugin Distribution in the Marketplace
 

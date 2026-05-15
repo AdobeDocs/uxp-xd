@@ -8,7 +8,7 @@ title: Share and publish your Photoshop UXP plugin
 description: Learn how to share or publish and market your Photoshop plugin. Then get ready for our review process.
 ---
 
-<InlineAlert variant="warning" slots="header, text1, text2, text3" />
+<InlineAlert variant="warning" slots="heading, text1, text2, text3" />
 
 Important Changes for XD Plugin Distribution in the Marketplace
 
