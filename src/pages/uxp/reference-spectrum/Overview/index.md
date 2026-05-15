@@ -1,4 +1,3 @@
-
-import Content from "uxp-documentation/src/pages/uxp/reference-spectrum//Overview/index.md";
-
-<Content query="product=xd"/>
+# Overview
+* [About Spectrum UXP](About%20Spectrum%20UXP.md)
+* [Using with React](Using%20with%20React.md)

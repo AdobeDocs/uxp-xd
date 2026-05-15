@@ -1,4 +1,5 @@
-
-import Content from "uxp-documentation/src/pages/uxp/reference-js//Modules/index.md";
-
-<Content query="product=xd"/>
+# Modules
+* [OS](../modules/os/index.md)
+* [shell](../modules/shell/index.md)
+* [uxp](../modules/uxp/index.md)
+* [fs](../modules/file-system.md)

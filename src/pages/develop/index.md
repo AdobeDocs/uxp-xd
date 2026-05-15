@@ -42,7 +42,7 @@ The XD plugin APIs enable you to build plugins for a number of use cases, to hel
 
 ### User's workflow in XD
 
-![Example of a user's workflow with plugins](../images/users_workflow_plugins.png)
+![Example of a user's workflow with plugins](../images/users-workflow-plugins.png)
 
 ## Getting Started
 

@@ -30,11 +30,11 @@ Dialogs are highly intrusive, and should only be used when absolutely necessary.
 
 {% content "examplesmac" %}
 
-![macOS Dialog Example](./assets/Example-About-Dialog.png)
+![macOS Dialog Example](./assets/example-about-dialog.png)
 
 {% content "examplesuwp" %}
 
-![Windows Dialog Example](./assets/Example-About-Dialog-on-UWP.png)
+![Windows Dialog Example](./assets/example-about-dialog-on-uwp.png)
 
 {% endtabs %}
 
@@ -222,8 +222,8 @@ function render() {
 
 Once a dialog is built, you will need to manage its lifecycle:
 
-* [Showing a Modal Dialog](./showing/)
-* [Dismissing a Modal Dialog](./dismissal/)
+* [Showing a Modal Dialog](showing.md)
+* [Dismissing a Modal Dialog](dismissal.md)
 
 ## Variations
 
@@ -237,13 +237,13 @@ A simple "alert" can be used to display a message along with a **Close** button.
 
 An error "alert" (with a red heading). These are useful for rendering error messages. Just like regular alerts, you cannot customize the button itself.
 
-![Example Error Alert](./assets/Example-Error-Alert.png)
+![Example Error Alert](./assets/example-error-alert.png)
 
 ### Confirmation
 
 Confirmation dialogs display a message and _two_ buttons. The user is free to pick which of the buttons they wish to invoke.
 
-![Example Confirmation Dialog](./assets/Example-Confirmation-Dialog.png)
+![Example Confirmation Dialog](./assets/example-confirmation-dialog.png)
 
 > **Danger**
 >
@@ -253,13 +253,13 @@ Confirmation dialogs display a message and _two_ buttons. The user is free to pi
 
 Warning dialogs display a message and _two_ buttons, one of which is destructive. Pressing **ENTER** in this case should _not_ invoke the destructive action. Otherwise it is the same as a confirmation dialog.
 
-![Example Warning Dialog](./assets/Example-Warning-Dialog.png)
+![Example Warning Dialog](./assets/example-warning-dialog.png)
 
 ### Prompt
 
 Prompts display a single line text field in addition to a message and two buttons.
 
-![Example Prompt Dialog](./assets/Example-Prompt-Dialog.png)
+![Example Prompt Dialog](./assets/example-prompt-dialog.png)
 
 ## Guidelines
 

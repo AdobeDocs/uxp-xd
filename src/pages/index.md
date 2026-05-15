@@ -114,13 +114,13 @@ You've built the world's greatest plugin. What do you do now? This section expla
 
 <DiscoverBlock slots="link, text"/>
 
-[Packaging Your Plugin](distribution/packaging-your-plugin/)
+[Packaging Your Plugin](distribution/packaging-your-plugin/index.md)
 
 Packaging your UXP plugin is a breeze. In many cases, it's just one click away.
 
 <DiscoverBlock slots="link, text"/>
 
-[Options for Distribution](distribution/distribution-options/)
+[Options for Distribution](distribution/distribution-options/index.md)
 
 Did you build a plugin just for yourself, your friends, or your employer? Or do you want to distribute through the Creative Cloud Plugin Marketplace on millions of desktops? Read this section to help you decide.
 

@@ -17,8 +17,8 @@ The tutorials contained in this section will give you an in-depth look at UI fea
 
 An **insertion point** is an area within XD that can accept custom user interface. The following insertion points are available:
 
-* [Modal Dialogs](./dialogs/)
-* [Panels](./panels/)
+* [Modal Dialogs](dialogs/index.md)
+* [Panels](panels/index.md)
 
 > **Info**
 >

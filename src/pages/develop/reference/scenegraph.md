@@ -13,7 +13,7 @@ inside XD. Some scenenodes may contain children (e.g., a Group or Artboard), whi
 The root of the scenegraph contains all Artboards that exist in the document, as well as all _pasteboard_ content (nodes that are not
 contained by any artboard).
 
-![example of scenegraph tree](../images/scenegraphExample.png)
+![example of scenegraph tree](../images/scenegraph-example.png)
 
 You can modify properties on any scenenodes within the current [_edit context_](/develop/plugin-development/xd-concepts/edit-context/),
 and add leaf nodes to the current edit context, but you cannot make structural changes directly to the scenegraph tree. Instead, use

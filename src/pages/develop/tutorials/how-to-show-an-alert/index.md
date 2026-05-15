@@ -10,11 +10,11 @@ keywords:
 
 There will be times when you need to show a simple message to your user. This tutorial will show you an easy way to display an informational message like the following:
 
-![A typical alert message](./assets/OurAlert.png)
+![A typical alert message](./assets/our-alert.png)
 
 Other times you'll need to display an _error_ alert, which looks like this:
 
-![An error alert](./assets/ErrorAlert.png)
+![An error alert](./assets/error-alert.png)
 
 ## Technology Used
 
