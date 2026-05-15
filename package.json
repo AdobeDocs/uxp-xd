@@ -31,12 +31,12 @@
     "link:checkAllLinks": "npx --yes --prefer-online github:AdobeDocs/adp-devsite-utils runLint --internal-links-only --external-links-only -v",
     "redirectCheck:stage": "npx --yes --prefer-online github:AdobeDocs/adp-devsite-utils redirectChecker stage --verbose",
     "redirectCheck:prod": "npx --yes --prefer-online github:AdobeDocs/adp-devsite-utils redirectChecker prod --verbose",
-    "_copy-uxp-html": "rm -rf src/pages/uxp/reference-html && cp -r node_modules/uxp-documentation/_transclusions/xd/uxp/reference-html src/pages/uxp/",
-    "_copy-uxp-spectrum": "rm -rf src/pages/uxp/reference-spectrum && cp -r node_modules/uxp-documentation/_transclusions/xd/uxp/reference-spectrum src/pages/uxp/",
-    "_copy-uxp-js": "rm -rf src/pages/uxp/reference-js && cp -r node_modules/uxp-documentation/_transclusions/xd/uxp/reference-js src/pages/uxp/",
-    "_copy-uxp-css": "rm -rf src/pages/uxp/reference-css && cp -r node_modules/uxp-documentation/_transclusions/xd/uxp/reference-css src/pages/uxp/",
+    "_copy-uxp-html": "rm -rf src/pages/uxp/reference-html && cp -r node_modules/uxp-documentation/src/pages/uxp/reference-html src/pages/uxp/",
+    "_copy-uxp-spectrum": "rm -rf src/pages/uxp/reference-spectrum && cp -r node_modules/uxp-documentation/src/pages/uxp/reference-spectrum src/pages/uxp/",
+    "_copy-uxp-js": "rm -rf src/pages/uxp/reference-js && cp -r node_modules/uxp-documentation/src/pages/uxp/reference-js src/pages/uxp/",
+    "_copy-uxp-css": "rm -rf src/pages/uxp/reference-css && cp -r node_modules/uxp-documentation/src/pages/uxp/reference-css src/pages/uxp/",
     "_copy-uxp": "npm run _copy-uxp-js && npm run _copy-uxp-css && npm run _copy-uxp-html && npm run _copy-uxp-spectrum",
-    "_copy-uxp-misc-files": "cp node_modules/uxp-documentation/src/pages/uxp-api/*.md src/pages/uxp/",
+    "_copy-uxp-misc-files": "cp node_modules/uxp-documentation/src/pages/uxp/*.md src/pages/uxp/",
     "prepare-uxp": "npm run _copy-uxp && npm run _copy-uxp-misc-files"
   }
 }
