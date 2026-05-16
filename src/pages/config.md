@@ -196,6 +196,7 @@
                     - [Folder](/uxp/reference-js/modules/uxp/persistent-file-storage/folder.md)
                     - [FileSystemProvider](/uxp/reference-js/modules/uxp/persistent-file-storage/file-system-provider.md)
                     - [domains](/uxp/reference-js/modules/uxp/persistent-file-storage/domains.md)
+                    - [storage](/uxp/reference-js/modules/uxp/persistent-file-storage/storage.md)
                     - [types](/uxp/reference-js/modules/uxp/persistent-file-storage/types.md)
                     - [formats](/uxp/reference-js/modules/uxp/persistent-file-storage/formats.md)
                     - [modes](/uxp/reference-js/modules/uxp/persistent-file-storage/modes.md)
