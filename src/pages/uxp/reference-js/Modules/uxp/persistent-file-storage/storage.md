@@ -389,7 +389,7 @@ entry is `null` or `undefined`.
 
 ## FileSystemProvider
 Provides access to files and folders on a file system. You'll typically not
-instantiate this directlArray<ead you'll use an instance of one that has
+instantiate this directlArray\<ead you'll use an instance of one that has
 already been created for you. This class is abstract, meaning that you'll
 need to provide your own implementation in order to use it effectively.
 
@@ -420,7 +420,7 @@ if (fs.supportedDomains.contains(domains.userDocuments)) {
 
 
 ## getFileForOpening(options)
-Gets a file (or filesArray<the file system provider for the purpose of
+Gets a file (or filesArray\<the file system provider for the purpose of
 opening them. Files are read-only.
 
 Multiple files can be returned if the `allowMultiple` option` is `true`.
@@ -529,7 +529,7 @@ Returns a folder that can be used for extension's data storage without user inte
 It is persistent across host-app version upgrades.
 
 
-Array<
+Array\<
 
 
 ## getPluginFolder()
