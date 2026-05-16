@@ -13,7 +13,7 @@ description: Once you have a packaged plugin, you're ready to distribute. You ca
 
 Once you have a packaged plugin, you're ready to distribute. You can make your plugin available to users through the Creative Cloud Plugin Marketplace or via direct distribution.
 
-\<SummaryBlock slots="heading, text, buttons" background="rgb(141, 52, 78)" /\>
+<Announcement slots="heading, text, buttons" backgroundColor="background-color-gray" />
 
 ## Distribute on Creative Cloud Plugin Marketplace
 

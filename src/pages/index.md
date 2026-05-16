@@ -8,8 +8,6 @@ title: Documentation-Adobe XD
 description: Build UXP plugins for Adobe XD with HTML, CSS, and JavaScript. Automate workflows, build new features, and more.
 ---
 
-import Community from "./community/index.md"
-
 <Superhero slots="image, heading, text" background="rgb(64, 34, 138)"/>
 
 ![Hero image](illustration.png)
@@ -124,4 +122,4 @@ Packaging your UXP plugin is a breeze. In many cases, it's just one click away.
 
 Did you build a plugin just for yourself, your friends, or your employer? Or do you want to distribute through the Creative Cloud Plugin Marketplace on millions of desktops? Read this section to help you decide.
 
-\<Community /\>
+<Fragment src="./community/index.md" />

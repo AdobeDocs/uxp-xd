@@ -36,11 +36,11 @@ Assets library entry representing a solid color.
 
 Assets library entry representing a linear or radial gradient.
 
-| Property     | Type                                   | Description                                                                                                                                                                                                                       |
-| ------------ | -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| name         | ?string                                | Name of the Assets entry, if it is explicitly named. (The UI shows an auto-generated label for any unnamed assets).                                                                                                               |
-| gradientType | GradientType                           | Either `GradientType.LINEAR` or `GradientType.RADIAL`                                                                                                                                                                             |
-| colorStops   | Array.\< \{stop: number, color: Color\} \> | Array of color stops used in the gradient, where `stop` >= 0 and <= 1, and the values are strictly increasing. Same format as the `colorStops` property of a [LinearGradient](/develop/reference/linear-gradient.md) object. |
+| Property     | Type                                   | Description                                                                                                                                                                                                                    |
+| ------------ | -------------------------------------- |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| name         | ?string                                | Name of the Assets entry, if it is explicitly named. (The UI shows an auto-generated label for any unnamed assets).                                                                                                            |
+| gradientType | GradientType                           | Either `GradientType.LINEAR` or `GradientType.RADIAL`                                                                                                                                                                          |
+| colorStops   | Array.\< \{stop: number, color: Color\} \> | Array of color stops used in the gradient, where `stop` \>= 0 and \<= 1, and the values are strictly increasing. Same format as the `colorStops` property of a [LinearGradient](/develop/reference/linear-gradient.md) object. |
 
 ### Typedef CharacterStyleAsset
 

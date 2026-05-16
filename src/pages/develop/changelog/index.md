@@ -419,7 +419,7 @@ See the [Known Issues page](/develop/known-issues/index.md) for a comprehensive 
 ### UI Changes
 
 - **"Launchpad" UI and menu structure changes** -- XD 20 introduces a new, easier way for users to run plugins -- the "launchpad" sidebar menu:
-  \\<div\>\</div\>
+  \<div\>\</div\>
 
   This panel lists all installed plugins, with quick access to all the same commands as the Plugins menu. In addition, XD now arranges plugin menu items more cleanly:
 
